@@ -109,6 +109,12 @@ python -m sqltranslate.cli evaluate source.sqlite target.sqlite llm.json --queri
 
 The baseline makes one OpenAI-compatible Chat Completions request, asks for a JSON mapping, checks completeness, one-to-one constraints and table/column consistency, and fails explicitly for invalid output. It does not automatically retry or correct invalid outputs: record those failures. `--endpoint` can select another compatible service; never send private schemas to a service without authorization. Record model/version, prompt, examples, token usage and cost externally. This is a full-schema mapping baseline, evaluated through the same rewriter; direct SQL prompting is not implemented.
 
+## Batch evaluation and few-shot baseline
+
+See [the evaluation workflow](docs/EVALUATION.md) for batch mapping/query evaluation,
+changed-column accuracy, query groups, saved model predictions, and auditable
+few-shot LLM requests with a no-cost dry run.
+
 ## Experimental limitations
 
 The code is a starting research implementation, not finished experimental results. It does not download datasets, prove data splits are independent, automatically perform sweeps or statistical significance testing, validate name difficulty, or evaluate all SQL constructs. FK relationships do not disambiguate graph-symmetric columns/tables by themselves. The FK reranker, type scores and one-to-one assumption are specific to structure-preserving renaming and do not model table splits, merges, missing columns or general database migration. Inspect code and generated data before use in a paper.
