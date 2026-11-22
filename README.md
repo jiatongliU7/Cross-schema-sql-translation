@@ -17,8 +17,8 @@ The existing experiment is an **initial exploratory run**, not a final benchmark
 ### Which evaluation script should I use?
 
 - **`evaluate_pipeline.py`** runs the team's complete baseline/evaluation workflow, including saved mappings and the few-shot LLM interface. See [Evaluation workflow](docs/EVALUATION.md).
-- **`evaluate.py`** evaluates prediction files using the handoff format, including top-k candidates, selected mappings, and generated SQL. The existing `experiments/spider-run` results were produced by this workflow; see [Handoff format](docs/HANDOFF.md).
-- **`evaluate_models.py`** compares pretrained and fine-tuned SBERT column retrieval on a manifest of held-out schema pairs. It does not evaluate SQL translation; see [Neural mapping guide](docs/NEURAL_MAPPING.md).
+- **`python -m handoff.evaluate`** evaluates prediction files using the handoff format, including top-k candidates, selected mappings, and generated SQL. The existing `experiments/spider-run` results were produced by this workflow; see [Handoff format](docs/HANDOFF.md).
+- **`python -m scripts.evaluate_models`** compares pretrained and fine-tuned SBERT column retrieval on a manifest of held-out schema pairs. It does not evaluate SQL translation; see [Neural mapping guide](docs/NEURAL_MAPPING.md).
 
 These scripts measure different parts of the task. Check their metric definitions and input formats before comparing results.
 
@@ -44,6 +44,21 @@ The public `rewrite.py` module is shared by data generation and evaluation:
 `rewrite(q_A, gold_mapping)` creates `gold_q_B`, while
 `rewrite(q_A, predicted_mapping)` creates a model prediction. This keeps SQL
 rewriting fixed while only the mapping source changes.
+
+## Project layout
+
+```text
+train_sbert.py, matcher.py     # Neural training and matching entry points
+evaluate_pipeline.py          # Team evaluation and baseline entry point
+rewrite.py                    # Public SQL rewriting API
+sqltranslate/                 # Core implementation
+handoff/                      # Handoff prediction and evaluation tools
+scripts/                      # Dataset and experiment utilities
+tests/fixtures/               # Toy data generator for tests
+data/                         # Schema pairs and splits
+docs/                         # Detailed workflows
+experiments/spider-run/        # Preliminary results, errors, and predictions
+```
 
 ## Files and data format
 

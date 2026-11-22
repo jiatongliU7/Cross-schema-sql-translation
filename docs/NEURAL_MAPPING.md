@@ -55,7 +55,7 @@ python matcher.py --source <source.sqlite> --target <target.sqlite> \
 ## 4. Evaluate on held-out databases
 
 ```bash
-python evaluate_models.py --test-manifest test_manifest.json \
+python -m scripts.evaluate_models --test-manifest test_manifest.json \
   --finetuned models/schema-matcher --top-k 3 --outdir results
 ```
 

@@ -1,6 +1,6 @@
 # Shared handoff format
 
-This contract supports the toy example and future Spider/Dr.Spider pairs. Database names and labels in the toy are artificial. The toy databases are created locally with `make_toy.py`; they are not Spider data.
+This contract supports the toy example and future Spider/Dr.Spider pairs. Database names and labels in the toy are artificial. The toy databases are created locally with `tests/fixtures/make_toy.py`; they are not Spider data.
 
 ```text
 data/
@@ -27,17 +27,17 @@ Each prediction JSON contains `tables` and `columns` mapping source identifiers 
 ## Run the handoff smoke test
 
 ```bash
-python make_toy.py --data /tmp/handoff-data --pred /tmp/handoff-predictions/mock
-python evaluate.py --data /tmp/handoff-data --pred /tmp/handoff-predictions/mock --outdir /tmp/handoff-results/mock
-python predict_handoff.py --data /tmp/handoff-data --pred /tmp/handoff-predictions/lexical --method lexical
-python evaluate.py --data /tmp/handoff-data --pred /tmp/handoff-predictions/lexical --outdir /tmp/handoff-results/lexical
+python -m tests.fixtures.make_toy --data /tmp/handoff-data --pred /tmp/handoff-predictions/mock
+python -m handoff.evaluate --data /tmp/handoff-data --pred /tmp/handoff-predictions/mock --outdir /tmp/handoff-results/mock
+python -m handoff.predict --data /tmp/handoff-data --pred /tmp/handoff-predictions/lexical --method lexical
+python -m handoff.evaluate --data /tmp/handoff-data --pred /tmp/handoff-predictions/lexical --outdir /tmp/handoff-results/lexical
 ```
 
 For pretrained SBERT use `--method sbert`. For the fine-tuned model add `--model models/schema-matcher`; for explicit type/FK reranking add `--type-weight 0.15 --fk-weight 0.3`. Model downloads may be required. Current model descriptions include type and primary/foreign-key roles, including when explicit reranking weights are zero. A true no-metadata ablation requires different descriptions.
 
 ```bash
-python predict_handoff.py --data /tmp/handoff-data --pred /tmp/handoff-predictions/pretrained_sbert --method sbert
-python evaluate.py --data /tmp/handoff-data --pred /tmp/handoff-predictions/pretrained_sbert --outdir /tmp/handoff-results/pretrained_sbert
+python -m handoff.predict --data /tmp/handoff-data --pred /tmp/handoff-predictions/pretrained_sbert --method sbert
+python -m handoff.evaluate --data /tmp/handoff-data --pred /tmp/handoff-predictions/pretrained_sbert --outdir /tmp/handoff-results/pretrained_sbert
 ```
 
 The evaluator writes `results.csv`, `error_analysis.json`, and `query_results.json`. The first CSV row is an overall method summary, followed by query-level `level` and `is_join` breakdown rows. Mapping accuracy and column Top-1/Top-3 are aggregated across schema elements, so they are reported in the overall row rather than incorrectly attributing a whole-schema score to individual queries. Run the evaluator once per method; combine the overall rows for the final comparison table.

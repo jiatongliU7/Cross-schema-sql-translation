@@ -1,6 +1,6 @@
 import json, subprocess, sys, tempfile, unittest
 from pathlib import Path
-from evaluate import run
+from handoff.evaluate import run
 from handoff.interface import load_splits, write_json
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]
 class HandoffTests(unittest.TestCase):
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory(); self.base=Path(self.tmp.name); self.data=self.base/'data'; self.pred=self.base/'pred'
-        subprocess.run([sys.executable,str(ROOT/'make_toy.py'),'--data',str(self.data),'--pred',str(self.pred)],check=True,capture_output=True)
+        subprocess.run([sys.executable,'-m','tests.fixtures.make_toy','--data',str(self.data),'--pred',str(self.pred)],cwd=ROOT,check=True,capture_output=True)
     def tearDown(self): self.tmp.cleanup()
     def test_correct_and_missing_prediction(self):
         rows,errors,queries=run(self.data,self.pred,'test','mock')
