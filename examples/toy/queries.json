@@ -1,0 +1,5 @@
+[
+  "SELECT c.customer_name, o.amount FROM customers c JOIN orders o ON c.customer_id=o.customer_id WHERE o.amount > 50",
+  "SELECT COUNT(*) FROM orders",
+  "SELECT customer_name FROM customers ORDER BY customer_name"
+]

@@ -1,0 +1,15 @@
+{
+  "tables": {
+    "customers": "clients",
+    "orders": "purchases"
+  },
+  "columns": {
+    "customers.customer_id": "clients.client_key",
+    "customers.customer_name": "clients.client_full_name",
+    "orders.order_id": "purchases.purchase_key",
+    "orders.customer_id": "purchases.client_key",
+    "orders.amount": "purchases.total"
+  },
+  "difficulty": "easy",
+  "seed": 42
+}

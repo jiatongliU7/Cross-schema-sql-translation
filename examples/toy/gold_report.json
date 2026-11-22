@@ -1,0 +1,43 @@
+{
+  "n_queries": 3,
+  "execution_success_rate": 1.0,
+  "execution_equivalence": 1.0,
+  "fk_consistency": 1.0,
+  "results": [
+    {
+      "execution_success": true,
+      "equivalent": true,
+      "ordered": false,
+      "source_rows": 1,
+      "target_rows": 1,
+      "error": null,
+      "target_sql": "SELECT \"c\".\"client_full_name\" AS \"customer_name\", \"o\".\"total\" AS \"amount\" FROM \"clients\" AS \"c\" JOIN \"purchases\" AS \"o\" ON \"c\".\"client_key\" = \"o\".\"client_key\" WHERE \"o\".\"total\" > 50",
+      "id": 0,
+      "source_sql": "SELECT c.customer_name, o.amount FROM customers c JOIN orders o ON c.customer_id=o.customer_id WHERE o.amount > 50"
+    },
+    {
+      "execution_success": true,
+      "equivalent": true,
+      "ordered": false,
+      "source_rows": 1,
+      "target_rows": 1,
+      "error": null,
+      "target_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"purchases\" AS \"orders\"",
+      "id": 1,
+      "source_sql": "SELECT COUNT(*) FROM orders"
+    },
+    {
+      "execution_success": true,
+      "equivalent": true,
+      "ordered": true,
+      "source_rows": 2,
+      "target_rows": 2,
+      "error": null,
+      "target_sql": "SELECT \"customers\".\"client_full_name\" AS \"customer_name\" FROM \"clients\" AS \"customers\" ORDER BY \"customer_name\"",
+      "id": 2,
+      "source_sql": "SELECT customer_name FROM customers ORDER BY customer_name"
+    }
+  ],
+  "tables_accuracy": 1.0,
+  "columns_accuracy": 1.0
+}

@@ -1,0 +1,87 @@
+{
+  "tables": {
+    "customers": "clients",
+    "orders": "purchases"
+  },
+  "columns": {
+    "customers.customer_id": "clients.client_key",
+    "customers.customer_name": "clients.client_full_name",
+    "orders.order_id": "purchases.purchase_key",
+    "orders.customer_id": "purchases.client_key",
+    "orders.amount": "purchases.total"
+  },
+  "score": 0.5930798197492162,
+  "fk_consistency": 1.0,
+  "candidates": {
+    "customers.customer_id": [
+      {
+        "column": "purchases.purchase_key",
+        "score": 0.34782608695652173
+      },
+      {
+        "column": "clients.client_full_name",
+        "score": 0.2962962962962963
+      },
+      {
+        "column": "clients.client_key",
+        "score": 0.2857142857142857
+      }
+    ],
+    "customers.customer_name": [
+      {
+        "column": "clients.client_full_name",
+        "score": 0.4827586206896552
+      },
+      {
+        "column": "purchases.purchase_key",
+        "score": 0.4
+      },
+      {
+        "column": "purchases.total",
+        "score": 0.3333333333333333
+      }
+    ],
+    "orders.order_id": [
+      {
+        "column": "purchases.purchase_key",
+        "score": 0.3
+      },
+      {
+        "column": "clients.client_key",
+        "score": 0.2222222222222222
+      },
+      {
+        "column": "purchases.client_key",
+        "score": 0.2222222222222222
+      }
+    ],
+    "orders.customer_id": [
+      {
+        "column": "purchases.purchase_key",
+        "score": 0.34782608695652173
+      },
+      {
+        "column": "clients.client_full_name",
+        "score": 0.2962962962962963
+      },
+      {
+        "column": "clients.client_key",
+        "score": 0.2857142857142857
+      }
+    ],
+    "orders.amount": [
+      {
+        "column": "clients.client_key",
+        "score": 0.25
+      },
+      {
+        "column": "purchases.client_key",
+        "score": 0.25
+      },
+      {
+        "column": "clients.client_full_name",
+        "score": 0.18181818181818182
+      }
+    ]
+  }
+}
