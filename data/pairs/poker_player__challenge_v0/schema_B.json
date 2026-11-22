@@ -1,0 +1,69 @@
+{
+  "db_id": "poker_player_challenge_0",
+  "tables": [
+    {
+      "name": "card_competitor",
+      "columns": [
+        {
+          "name": "card_competitor_key",
+          "type": "number"
+        },
+        {
+          "name": "person_key",
+          "type": "number"
+        },
+        {
+          "name": "Final_Table_Made",
+          "type": "number"
+        },
+        {
+          "name": "earnings_position",
+          "type": "number"
+        },
+        {
+          "name": "top_placement",
+          "type": "number"
+        },
+        {
+          "name": "Earnings",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "persons",
+      "columns": [
+        {
+          "name": "label",
+          "type": "text"
+        },
+        {
+          "name": "person_key",
+          "type": "number"
+        },
+        {
+          "name": "stature_value",
+          "type": "number"
+        },
+        {
+          "name": "Nationality",
+          "type": "text"
+        },
+        {
+          "name": "nativity_day",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "card_competitor.card_competitor_key",
+    "persons.person_key"
+  ],
+  "foreign_keys": [
+    {
+      "from": "card_competitor.person_key",
+      "to": "persons.person_key"
+    }
+  ]
+}

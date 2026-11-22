@@ -1,0 +1,71 @@
+{
+  "db_id": "voter_1_challenge_0",
+  "tables": [
+    {
+      "name": "dialing_region",
+      "columns": [
+        {
+          "name": "region_tag",
+          "type": "number"
+        },
+        {
+          "name": "province",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "ballots",
+      "columns": [
+        {
+          "name": "contact_number",
+          "type": "number"
+        },
+        {
+          "name": "province",
+          "type": "text"
+        },
+        {
+          "name": "established",
+          "type": "time"
+        },
+        {
+          "name": "ballot_key",
+          "type": "number"
+        },
+        {
+          "name": "candidate_count",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "candidates",
+      "columns": [
+        {
+          "name": "candidate_label",
+          "type": "text"
+        },
+        {
+          "name": "candidate_count",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "dialing_region.region_tag",
+    "candidates.candidate_count",
+    "ballots.ballot_key"
+  ],
+  "foreign_keys": [
+    {
+      "from": "ballots.candidate_count",
+      "to": "candidates.candidate_count"
+    },
+    {
+      "from": "ballots.province",
+      "to": "dialing_region.province"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "db_id": "singer",
+  "tables": [
+    {
+      "name": "singer",
+      "columns": [
+        {
+          "name": "Singer_ID",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "Birth_Year",
+          "type": "number"
+        },
+        {
+          "name": "Net_Worth_Millions",
+          "type": "number"
+        },
+        {
+          "name": "Citizenship",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "song",
+      "columns": [
+        {
+          "name": "Song_ID",
+          "type": "number"
+        },
+        {
+          "name": "Title",
+          "type": "text"
+        },
+        {
+          "name": "Singer_ID",
+          "type": "number"
+        },
+        {
+          "name": "Sales",
+          "type": "number"
+        },
+        {
+          "name": "Highest_Position",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "singer.Singer_ID",
+    "song.Song_ID"
+  ],
+  "foreign_keys": [
+    {
+      "from": "song.Singer_ID",
+      "to": "singer.Singer_ID"
+    }
+  ]
+}

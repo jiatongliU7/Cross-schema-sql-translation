@@ -1,0 +1,384 @@
+{
+  "status": "generated; run validate_pair_dataset.py --execute before use",
+  "pair_count": 20,
+  "base_database_count": 20,
+  "query_count": 1034,
+  "split_pair_counts": {
+    "dev": 3,
+    "test": 3,
+    "train": 14
+  },
+  "split_query_counts": {
+    "dev": 190,
+    "test": 216,
+    "train": 628
+  },
+  "ordinary_table_count": 80,
+  "renamed_table_count": 80,
+  "table_rename_rate": 1.0,
+  "renamed_table_token_overlap_rate": 0.025,
+  "ordinary_column_count": 439,
+  "renamed_column_count": 406,
+  "column_rename_rate": 0.9248291571753986,
+  "renamed_column_token_overlap_rate": 0.229064039408867,
+  "sqlite_sequence_note": "SQLite internal table and its columns remain unchanged.",
+  "independence_limit": "Challenge pairs reuse the same 20 Spider-dev base databases and therefore increase renaming difficulty, not independent schema diversity.",
+  "pairs": {
+    "battle_death__challenge_v0": {
+      "base_db_id": "battle_death",
+      "target_db_id": "battle_death_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "dev",
+      "query_count": 16,
+      "join_query_count": 6,
+      "level_counts": {
+        "L2": 2,
+        "L3": 14
+      },
+      "changed_table_count": 3,
+      "changed_column_count": 13,
+      "ordinary_table_count": 3,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 18,
+      "renamed_column_token_overlap_count": 3
+    },
+    "car_1__challenge_v0": {
+      "base_db_id": "car_1",
+      "target_db_id": "car_1_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "dev",
+      "query_count": 92,
+      "join_query_count": 58,
+      "level_counts": {
+        "L2": 4,
+        "L3": 88
+      },
+      "changed_table_count": 6,
+      "changed_column_count": 23,
+      "ordinary_table_count": 6,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 23,
+      "renamed_column_token_overlap_count": 1
+    },
+    "concert_singer__challenge_v0": {
+      "base_db_id": "concert_singer",
+      "target_db_id": "concert_singer_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 45,
+      "join_query_count": 14,
+      "level_counts": {
+        "L2": 2,
+        "L3": 43
+      },
+      "changed_table_count": 4,
+      "changed_column_count": 21,
+      "ordinary_table_count": 4,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 21,
+      "renamed_column_token_overlap_count": 0
+    },
+    "course_teach__challenge_v0": {
+      "base_db_id": "course_teach",
+      "target_db_id": "course_teach_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 30,
+      "join_query_count": 10,
+      "level_counts": {
+        "L2": 8,
+        "L3": 22
+      },
+      "changed_table_count": 3,
+      "changed_column_count": 8,
+      "ordinary_table_count": 3,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 10,
+      "renamed_column_token_overlap_count": 1
+    },
+    "cre_Doc_Template_Mgt__challenge_v0": {
+      "base_db_id": "cre_Doc_Template_Mgt",
+      "target_db_id": "cre_Doc_Template_Mgt_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 84,
+      "join_query_count": 28,
+      "level_counts": {
+        "L2": 6,
+        "L3": 78
+      },
+      "changed_table_count": 4,
+      "changed_column_count": 17,
+      "ordinary_table_count": 4,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 17,
+      "renamed_column_token_overlap_count": 5
+    },
+    "dog_kennels__challenge_v0": {
+      "base_db_id": "dog_kennels",
+      "target_db_id": "dog_kennels_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "dev",
+      "query_count": 82,
+      "join_query_count": 38,
+      "level_counts": {
+        "L3": 82
+      },
+      "changed_table_count": 8,
+      "changed_column_count": 48,
+      "ordinary_table_count": 8,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 49,
+      "renamed_column_token_overlap_count": 11
+    },
+    "employee_hire_evaluation__challenge_v0": {
+      "base_db_id": "employee_hire_evaluation",
+      "target_db_id": "employee_hire_evaluation_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 38,
+      "join_query_count": 8,
+      "level_counts": {
+        "L2": 6,
+        "L3": 32
+      },
+      "changed_table_count": 4,
+      "changed_column_count": 14,
+      "ordinary_table_count": 4,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 17,
+      "renamed_column_token_overlap_count": 4
+    },
+    "flight_2__challenge_v0": {
+      "base_db_id": "flight_2",
+      "target_db_id": "flight_2_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 80,
+      "join_query_count": 46,
+      "level_counts": {
+        "L2": 6,
+        "L3": 74
+      },
+      "changed_table_count": 3,
+      "changed_column_count": 13,
+      "ordinary_table_count": 3,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 13,
+      "renamed_column_token_overlap_count": 0
+    },
+    "museum_visit__challenge_v0": {
+      "base_db_id": "museum_visit",
+      "target_db_id": "museum_visit_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "test",
+      "query_count": 18,
+      "join_query_count": 7,
+      "level_counts": {
+        "L3": 18
+      },
+      "changed_table_count": 3,
+      "changed_column_count": 11,
+      "ordinary_table_count": 3,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 12,
+      "renamed_column_token_overlap_count": 4
+    },
+    "network_1__challenge_v0": {
+      "base_db_id": "network_1",
+      "target_db_id": "network_1_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 56,
+      "join_query_count": 28,
+      "level_counts": {
+        "L2": 12,
+        "L3": 44
+      },
+      "changed_table_count": 3,
+      "changed_column_count": 6,
+      "ordinary_table_count": 3,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 7,
+      "renamed_column_token_overlap_count": 0
+    },
+    "orchestra__challenge_v0": {
+      "base_db_id": "orchestra",
+      "target_db_id": "orchestra_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 40,
+      "join_query_count": 10,
+      "level_counts": {
+        "L2": 6,
+        "L3": 34
+      },
+      "changed_table_count": 4,
+      "changed_column_count": 21,
+      "ordinary_table_count": 4,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 23,
+      "renamed_column_token_overlap_count": 5
+    },
+    "pets_1__challenge_v0": {
+      "base_db_id": "pets_1",
+      "target_db_id": "pets_1_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 42,
+      "join_query_count": 24,
+      "level_counts": {
+        "L3": 42
+      },
+      "changed_table_count": 3,
+      "changed_column_count": 12,
+      "ordinary_table_count": 3,
+      "table_token_overlap_count": 1,
+      "ordinary_column_count": 14,
+      "renamed_column_token_overlap_count": 1
+    },
+    "poker_player__challenge_v0": {
+      "base_db_id": "poker_player",
+      "target_db_id": "poker_player_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 40,
+      "join_query_count": 14,
+      "level_counts": {
+        "L2": 16,
+        "L3": 24
+      },
+      "changed_table_count": 2,
+      "changed_column_count": 8,
+      "ordinary_table_count": 2,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 11,
+      "renamed_column_token_overlap_count": 0
+    },
+    "real_estate_properties__challenge_v0": {
+      "base_db_id": "real_estate_properties",
+      "target_db_id": "real_estate_properties_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 4,
+      "join_query_count": 2,
+      "level_counts": {
+        "L2": 1,
+        "L3": 3
+      },
+      "changed_table_count": 5,
+      "changed_column_count": 37,
+      "ordinary_table_count": 5,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 37,
+      "renamed_column_token_overlap_count": 21
+    },
+    "singer__challenge_v0": {
+      "base_db_id": "singer",
+      "target_db_id": "singer_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 30,
+      "join_query_count": 8,
+      "level_counts": {
+        "L2": 6,
+        "L3": 24
+      },
+      "changed_table_count": 2,
+      "changed_column_count": 8,
+      "ordinary_table_count": 2,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 10,
+      "renamed_column_token_overlap_count": 1
+    },
+    "student_transcripts_tracking__challenge_v0": {
+      "base_db_id": "student_transcripts_tracking",
+      "target_db_id": "student_transcripts_tracking_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "test",
+      "query_count": 78,
+      "join_query_count": 34,
+      "level_counts": {
+        "L2": 4,
+        "L3": 74
+      },
+      "changed_table_count": 11,
+      "changed_column_count": 56,
+      "ordinary_table_count": 11,
+      "table_token_overlap_count": 1,
+      "ordinary_column_count": 56,
+      "renamed_column_token_overlap_count": 14
+    },
+    "tvshow__challenge_v0": {
+      "base_db_id": "tvshow",
+      "target_db_id": "tvshow_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 62,
+      "join_query_count": 14,
+      "level_counts": {
+        "L2": 4,
+        "L3": 58
+      },
+      "changed_table_count": 3,
+      "changed_column_count": 21,
+      "ordinary_table_count": 3,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 25,
+      "renamed_column_token_overlap_count": 5
+    },
+    "voter_1__challenge_v0": {
+      "base_db_id": "voter_1",
+      "target_db_id": "voter_1_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 15,
+      "join_query_count": 5,
+      "level_counts": {
+        "L2": 1,
+        "L3": 14
+      },
+      "changed_table_count": 3,
+      "changed_column_count": 9,
+      "ordinary_table_count": 3,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 9,
+      "renamed_column_token_overlap_count": 1
+    },
+    "world_1__challenge_v0": {
+      "base_db_id": "world_1",
+      "target_db_id": "world_1_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "test",
+      "query_count": 120,
+      "join_query_count": 44,
+      "level_counts": {
+        "L3": 120
+      },
+      "changed_table_count": 3,
+      "changed_column_count": 22,
+      "ordinary_table_count": 3,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 24,
+      "renamed_column_token_overlap_count": 2
+    },
+    "wta_1__challenge_v0": {
+      "base_db_id": "wta_1",
+      "target_db_id": "wta_1_challenge_0",
+      "perturbation": "challenge_semantic_table_and_column_rename",
+      "split": "train",
+      "query_count": 62,
+      "join_query_count": 10,
+      "level_counts": {
+        "L2": 6,
+        "L3": 56
+      },
+      "changed_table_count": 3,
+      "changed_column_count": 38,
+      "ordinary_table_count": 3,
+      "table_token_overlap_count": 0,
+      "ordinary_column_count": 43,
+      "renamed_column_token_overlap_count": 14
+    }
+  }
+}

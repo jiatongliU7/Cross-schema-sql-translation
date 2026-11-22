@@ -1,0 +1,144 @@
+{
+  "db_id": "world_1_challenge_0",
+  "tables": [
+    {
+      "name": "sqlite_sequence",
+      "columns": [
+        {
+          "name": "seq",
+          "type": "text"
+        },
+        {
+          "name": "name",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "national_tongue",
+      "columns": [
+        {
+          "name": "tongue",
+          "type": "text"
+        },
+        {
+          "name": "usage_ratio",
+          "type": "number"
+        },
+        {
+          "name": "official_flag",
+          "type": "text"
+        },
+        {
+          "name": "nation_tag",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "municipality",
+      "columns": [
+        {
+          "name": "nation_tag",
+          "type": "text"
+        },
+        {
+          "name": "record_key",
+          "type": "number"
+        },
+        {
+          "name": "resident_count",
+          "type": "number"
+        },
+        {
+          "name": "District",
+          "type": "text"
+        },
+        {
+          "name": "label",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "nation",
+      "columns": [
+        {
+          "name": "independence_annum",
+          "type": "number"
+        },
+        {
+          "name": "resident_count",
+          "type": "number"
+        },
+        {
+          "name": "previous_gross_national_product",
+          "type": "number"
+        },
+        {
+          "name": "Capital",
+          "type": "number"
+        },
+        {
+          "name": "landmass",
+          "type": "text"
+        },
+        {
+          "name": "label",
+          "type": "text"
+        },
+        {
+          "name": "secondary_tag",
+          "type": "text"
+        },
+        {
+          "name": "expected_lifespan",
+          "type": "number"
+        },
+        {
+          "name": "land_area",
+          "type": "number"
+        },
+        {
+          "name": "native_label",
+          "type": "text"
+        },
+        {
+          "name": "national_leader",
+          "type": "text"
+        },
+        {
+          "name": "gross_national_product",
+          "type": "number"
+        },
+        {
+          "name": "territory",
+          "type": "text"
+        },
+        {
+          "name": "governance_structure",
+          "type": "text"
+        },
+        {
+          "name": "tag",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "municipality.record_key",
+    "national_tongue.nation_tag",
+    "nation.tag"
+  ],
+  "foreign_keys": [
+    {
+      "from": "municipality.nation_tag",
+      "to": "nation.tag"
+    },
+    {
+      "from": "national_tongue.nation_tag",
+      "to": "nation.tag"
+    }
+  ]
+}

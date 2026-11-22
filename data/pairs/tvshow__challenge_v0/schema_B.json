@@ -1,0 +1,135 @@
+{
+  "db_id": "tvshow_challenge_0",
+  "tables": [
+    {
+      "name": "television_program",
+      "columns": [
+        {
+          "name": "assessment_score",
+          "type": "text"
+        },
+        {
+          "name": "network",
+          "type": "text"
+        },
+        {
+          "name": "seven_day_position",
+          "type": "number"
+        },
+        {
+          "name": "Episode",
+          "type": "text"
+        },
+        {
+          "name": "portion",
+          "type": "number"
+        },
+        {
+          "name": "adult_demographic_portion",
+          "type": "text"
+        },
+        {
+          "name": "audience_millions",
+          "type": "text"
+        },
+        {
+          "name": "record_key",
+          "type": "number"
+        },
+        {
+          "name": "air_day",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "animated_program",
+      "columns": [
+        {
+          "name": "Written_by",
+          "type": "text"
+        },
+        {
+          "name": "heading",
+          "type": "text"
+        },
+        {
+          "name": "network",
+          "type": "text"
+        },
+        {
+          "name": "record_key",
+          "type": "number"
+        },
+        {
+          "name": "original_air_day",
+          "type": "text"
+        },
+        {
+          "name": "production_tag",
+          "type": "number"
+        },
+        {
+          "name": "Directed_by",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "broadcast_network",
+      "columns": [
+        {
+          "name": "nation",
+          "type": "text"
+        },
+        {
+          "name": "display_pixel_ratio",
+          "type": "text"
+        },
+        {
+          "name": "program_label",
+          "type": "text"
+        },
+        {
+          "name": "body_text",
+          "type": "text"
+        },
+        {
+          "name": "record_key",
+          "type": "text"
+        },
+        {
+          "name": "tongue",
+          "type": "text"
+        },
+        {
+          "name": "Package_Option",
+          "type": "text"
+        },
+        {
+          "name": "paid_viewing_flag",
+          "type": "text"
+        },
+        {
+          "name": "high_definition_flag",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "animated_program.record_key",
+    "television_program.record_key",
+    "broadcast_network.record_key"
+  ],
+  "foreign_keys": [
+    {
+      "from": "animated_program.network",
+      "to": "broadcast_network.record_key"
+    },
+    {
+      "from": "television_program.network",
+      "to": "broadcast_network.record_key"
+    }
+  ]
+}

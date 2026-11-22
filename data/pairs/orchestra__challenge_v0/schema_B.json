@@ -1,0 +1,136 @@
+{
+  "db_id": "orchestra_challenge_0",
+  "tables": [
+    {
+      "name": "rendition",
+      "columns": [
+        {
+          "name": "seven_day_position",
+          "type": "text"
+        },
+        {
+          "name": "certified_audience_millions",
+          "type": "number"
+        },
+        {
+          "name": "portion",
+          "type": "text"
+        },
+        {
+          "name": "event_day",
+          "type": "text"
+        },
+        {
+          "name": "rendition_key",
+          "type": "number"
+        },
+        {
+          "name": "ensemble_key",
+          "type": "number"
+        },
+        {
+          "name": "category",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "production",
+      "columns": [
+        {
+          "name": "production_key",
+          "type": "number"
+        },
+        {
+          "name": "Attendance",
+          "type": "number"
+        },
+        {
+          "name": "rendition_key",
+          "type": "number"
+        },
+        {
+          "name": "if_given_production",
+          "type": "others"
+        },
+        {
+          "name": "outcome",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "ensemble",
+      "columns": [
+        {
+          "name": "major_entry_format",
+          "type": "text"
+        },
+        {
+          "name": "director_key",
+          "type": "number"
+        },
+        {
+          "name": "entry_firm",
+          "type": "text"
+        },
+        {
+          "name": "ensemble_key",
+          "type": "number"
+        },
+        {
+          "name": "annum_of_founded",
+          "type": "number"
+        },
+        {
+          "name": "ensemble",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "music_director",
+      "columns": [
+        {
+          "name": "annum_of_work",
+          "type": "number"
+        },
+        {
+          "name": "years_old",
+          "type": "number"
+        },
+        {
+          "name": "label",
+          "type": "text"
+        },
+        {
+          "name": "Nationality",
+          "type": "text"
+        },
+        {
+          "name": "director_key",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "music_director.director_key",
+    "rendition.rendition_key",
+    "ensemble.ensemble_key"
+  ],
+  "foreign_keys": [
+    {
+      "from": "rendition.ensemble_key",
+      "to": "ensemble.ensemble_key"
+    },
+    {
+      "from": "production.rendition_key",
+      "to": "rendition.rendition_key"
+    },
+    {
+      "from": "ensemble.director_key",
+      "to": "music_director.director_key"
+    }
+  ]
+}

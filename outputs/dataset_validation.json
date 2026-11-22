@@ -2,37 +2,37 @@
   "status": "passed",
   "execute_queries": true,
   "counts": {
-    "join_queries": 2516,
-    "level_L2": 3309,
-    "level_L3": 2163,
-    "pairs": 182,
-    "queries": 5472
+    "join_queries": 2924,
+    "level_L2": 3399,
+    "level_L3": 3107,
+    "pairs": 202,
+    "queries": 6506
   },
   "split_counts": {
     "dev": {
-      "join_queries": 570,
-      "level_L2": 531,
-      "level_L3": 394,
-      "pairs": 29,
-      "queries": 925
+      "join_queries": 672,
+      "level_L2": 537,
+      "level_L3": 578,
+      "pairs": 32,
+      "queries": 1115
     },
     "test": {
-      "join_queries": 666,
-      "level_L2": 823,
-      "level_L3": 692,
-      "pairs": 30,
-      "queries": 1515
+      "join_queries": 751,
+      "level_L2": 827,
+      "level_L3": 904,
+      "pairs": 33,
+      "queries": 1731
     },
     "train": {
-      "join_queries": 1280,
-      "level_L2": 1955,
-      "level_L3": 1077,
-      "pairs": 123,
-      "queries": 3032
+      "join_queries": 1501,
+      "level_L2": 2035,
+      "level_L3": 1625,
+      "pairs": 137,
+      "queries": 3660
     }
   },
   "base_database_count": 20,
-  "unique_sqlite_files_checked": 202,
+  "unique_sqlite_files_checked": 242,
   "execution_failure_count": 0,
   "execution_failures": [],
   "equivalence_failure_count": 0,

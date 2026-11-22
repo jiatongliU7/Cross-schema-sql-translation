@@ -1,0 +1,342 @@
+{
+  "db_id": "student_transcripts_tracking_challenge_0",
+  "tables": [
+    {
+      "name": "qualifications",
+      "columns": [
+        {
+          "name": "qualification_curriculum_key",
+          "type": "number"
+        },
+        {
+          "name": "qualification_summary_label",
+          "type": "text"
+        },
+        {
+          "name": "qualification_summary_summary",
+          "type": "text"
+        },
+        {
+          "name": "unit_key",
+          "type": "number"
+        },
+        {
+          "name": "supplementary_notes",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "academic_records",
+      "columns": [
+        {
+          "name": "record_key",
+          "type": "number"
+        },
+        {
+          "name": "supplementary_notes",
+          "type": "text"
+        },
+        {
+          "name": "record_day",
+          "type": "time"
+        }
+      ]
+    },
+    {
+      "name": "learners",
+      "columns": [
+        {
+          "name": "given_name",
+          "type": "text"
+        },
+        {
+          "name": "additional_name",
+          "type": "text"
+        },
+        {
+          "name": "supplementary_learner_details",
+          "type": "text"
+        },
+        {
+          "name": "family_name",
+          "type": "text"
+        },
+        {
+          "name": "national_identifier",
+          "type": "text"
+        },
+        {
+          "name": "day_left",
+          "type": "time"
+        },
+        {
+          "name": "present_location_key",
+          "type": "number"
+        },
+        {
+          "name": "day_given_registered",
+          "type": "time"
+        },
+        {
+          "name": "electronic_mail",
+          "type": "text"
+        },
+        {
+          "name": "learner_key",
+          "type": "number"
+        },
+        {
+          "name": "lasting_location_key",
+          "type": "number"
+        },
+        {
+          "name": "mobile_contact",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "class_sections",
+      "columns": [
+        {
+          "name": "class_label",
+          "type": "text"
+        },
+        {
+          "name": "class_summary",
+          "type": "text"
+        },
+        {
+          "name": "supplementary_notes",
+          "type": "text"
+        },
+        {
+          "name": "class_key",
+          "type": "number"
+        },
+        {
+          "name": "subject_key",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "registration_subjects",
+      "columns": [
+        {
+          "name": "subject_key",
+          "type": "number"
+        },
+        {
+          "name": "learner_subject_key",
+          "type": "number"
+        },
+        {
+          "name": "learner_registration_key",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "locations",
+      "columns": [
+        {
+          "name": "location_line_three",
+          "type": "text"
+        },
+        {
+          "name": "location_line_two",
+          "type": "text"
+        },
+        {
+          "name": "location_key",
+          "type": "number"
+        },
+        {
+          "name": "municipality",
+          "type": "text"
+        },
+        {
+          "name": "postal_tag",
+          "type": "text"
+        },
+        {
+          "name": "location_line_one",
+          "type": "text"
+        },
+        {
+          "name": "nation",
+          "type": "text"
+        },
+        {
+          "name": "province_province_county",
+          "type": "text"
+        },
+        {
+          "name": "supplementary_location_details",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "academic_units",
+      "columns": [
+        {
+          "name": "supplementary_notes",
+          "type": "text"
+        },
+        {
+          "name": "unit_label",
+          "type": "text"
+        },
+        {
+          "name": "unit_key",
+          "type": "number"
+        },
+        {
+          "name": "unit_summary",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "academic_terms",
+      "columns": [
+        {
+          "name": "term_summary",
+          "type": "text"
+        },
+        {
+          "name": "term_label",
+          "type": "text"
+        },
+        {
+          "name": "supplementary_notes",
+          "type": "text"
+        },
+        {
+          "name": "term_key",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "subjects",
+      "columns": [
+        {
+          "name": "subject_summary",
+          "type": "text"
+        },
+        {
+          "name": "subject_key",
+          "type": "number"
+        },
+        {
+          "name": "supplementary_notes",
+          "type": "text"
+        },
+        {
+          "name": "subject_label",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "registrations",
+      "columns": [
+        {
+          "name": "learner_registration_key",
+          "type": "number"
+        },
+        {
+          "name": "term_key",
+          "type": "number"
+        },
+        {
+          "name": "qualification_curriculum_key",
+          "type": "number"
+        },
+        {
+          "name": "supplementary_notes",
+          "type": "text"
+        },
+        {
+          "name": "learner_key",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "record_entries",
+      "columns": [
+        {
+          "name": "learner_subject_key",
+          "type": "number"
+        },
+        {
+          "name": "record_key",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "subjects.subject_key",
+    "locations.location_key",
+    "qualifications.qualification_curriculum_key",
+    "academic_units.unit_key",
+    "class_sections.class_key",
+    "registrations.learner_registration_key",
+    "academic_records.record_key",
+    "academic_terms.term_key",
+    "learners.learner_key",
+    "registration_subjects.learner_subject_key"
+  ],
+  "foreign_keys": [
+    {
+      "from": "learners.present_location_key",
+      "to": "locations.location_key"
+    },
+    {
+      "from": "class_sections.subject_key",
+      "to": "subjects.subject_key"
+    },
+    {
+      "from": "qualifications.unit_key",
+      "to": "academic_units.unit_key"
+    },
+    {
+      "from": "learners.lasting_location_key",
+      "to": "locations.location_key"
+    },
+    {
+      "from": "registrations.term_key",
+      "to": "academic_terms.term_key"
+    },
+    {
+      "from": "record_entries.record_key",
+      "to": "academic_records.record_key"
+    },
+    {
+      "from": "record_entries.learner_subject_key",
+      "to": "registration_subjects.learner_subject_key"
+    },
+    {
+      "from": "registration_subjects.learner_registration_key",
+      "to": "registrations.learner_registration_key"
+    },
+    {
+      "from": "registration_subjects.subject_key",
+      "to": "subjects.subject_key"
+    },
+    {
+      "from": "registrations.learner_key",
+      "to": "learners.learner_key"
+    },
+    {
+      "from": "registrations.qualification_curriculum_key",
+      "to": "qualifications.qualification_curriculum_key"
+    }
+  ]
+}

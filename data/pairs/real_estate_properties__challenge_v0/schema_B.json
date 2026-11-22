@@ -1,0 +1,202 @@
+{
+  "db_id": "real_estate_properties_challenge_0",
+  "tables": [
+    {
+      "name": "asset_category_lookup",
+      "columns": [
+        {
+          "name": "asset_category_tag",
+          "type": "text"
+        },
+        {
+          "name": "asset_category_summary",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "optional_amenities",
+      "columns": [
+        {
+          "name": "amenity_label",
+          "type": "text"
+        },
+        {
+          "name": "amenity_category_tag",
+          "type": "text"
+        },
+        {
+          "name": "amenity_summary",
+          "type": "text"
+        },
+        {
+          "name": "amenity_key",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "asset_amenities",
+      "columns": [
+        {
+          "name": "asset_key",
+          "type": "number"
+        },
+        {
+          "name": "amenity_key",
+          "type": "number"
+        },
+        {
+          "name": "asset_amenity_summary",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "amenity_category_lookup",
+      "columns": [
+        {
+          "name": "amenity_category_label",
+          "type": "text"
+        },
+        {
+          "name": "amenity_category_tag",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "realty_assets",
+      "columns": [
+        {
+          "name": "apt_amenity_2",
+          "type": "text"
+        },
+        {
+          "name": "hse_amenity_2",
+          "type": "text"
+        },
+        {
+          "name": "buyer_proposed_cost",
+          "type": "number"
+        },
+        {
+          "name": "shp_amenity_2",
+          "type": "text"
+        },
+        {
+          "name": "asset_key",
+          "type": "number"
+        },
+        {
+          "name": "hse_amenity_1",
+          "type": "text"
+        },
+        {
+          "name": "asset_category_tag",
+          "type": "text"
+        },
+        {
+          "name": "supplementary_asset_details",
+          "type": "text"
+        },
+        {
+          "name": "hse_amenity_3",
+          "type": "text"
+        },
+        {
+          "name": "asset_location",
+          "type": "text"
+        },
+        {
+          "name": "space_quantity",
+          "type": "number"
+        },
+        {
+          "name": "fld_amenity_2",
+          "type": "text"
+        },
+        {
+          "name": "agreed_sale_cost",
+          "type": "number"
+        },
+        {
+          "name": "oth_amenity_3",
+          "type": "text"
+        },
+        {
+          "name": "fld_amenity_3",
+          "type": "text"
+        },
+        {
+          "name": "oth_amenity_1",
+          "type": "text"
+        },
+        {
+          "name": "day_sold",
+          "type": "time"
+        },
+        {
+          "name": "fld_amenity_1",
+          "type": "text"
+        },
+        {
+          "name": "oth_amenity_2",
+          "type": "text"
+        },
+        {
+          "name": "apt_amenity_1",
+          "type": "text"
+        },
+        {
+          "name": "shp_amenity_1",
+          "type": "text"
+        },
+        {
+          "name": "vendor_asked_cost",
+          "type": "number"
+        },
+        {
+          "name": "day_on_market",
+          "type": "time"
+        },
+        {
+          "name": "asset_label",
+          "type": "text"
+        },
+        {
+          "name": "apt_amenity_3",
+          "type": "text"
+        },
+        {
+          "name": "shp_amenity_3",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "amenity_category_lookup.amenity_category_tag",
+    "realty_assets.asset_key",
+    "asset_category_lookup.asset_category_tag",
+    "optional_amenities.amenity_key"
+  ],
+  "foreign_keys": [
+    {
+      "from": "realty_assets.asset_category_tag",
+      "to": "asset_category_lookup.asset_category_tag"
+    },
+    {
+      "from": "asset_amenities.asset_key",
+      "to": "realty_assets.asset_key"
+    },
+    {
+      "from": "optional_amenities.amenity_category_tag",
+      "to": "amenity_category_lookup.amenity_category_tag"
+    },
+    {
+      "from": "asset_amenities.amenity_key",
+      "to": "optional_amenities.amenity_key"
+    }
+  ]
+}

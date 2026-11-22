@@ -1,0 +1,90 @@
+{
+  "db_id": "pets_1_challenge_0",
+  "tables": [
+    {
+      "name": "companion_animals",
+      "columns": [
+        {
+          "name": "animal_category",
+          "type": "text"
+        },
+        {
+          "name": "animal_key",
+          "type": "number"
+        },
+        {
+          "name": "animal_age",
+          "type": "number"
+        },
+        {
+          "name": "mass_value",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "learner",
+      "columns": [
+        {
+          "name": "given_name",
+          "type": "text"
+        },
+        {
+          "name": "Advisor",
+          "type": "number"
+        },
+        {
+          "name": "municipality_tag",
+          "type": "text"
+        },
+        {
+          "name": "family_name",
+          "type": "text"
+        },
+        {
+          "name": "years_old",
+          "type": "number"
+        },
+        {
+          "name": "learner_key",
+          "type": "number"
+        },
+        {
+          "name": "Major",
+          "type": "number"
+        },
+        {
+          "name": "gender_category",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "pet_ownership",
+      "columns": [
+        {
+          "name": "learner_key",
+          "type": "number"
+        },
+        {
+          "name": "animal_key",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "companion_animals.animal_key",
+    "learner.learner_key"
+  ],
+  "foreign_keys": [
+    {
+      "from": "pet_ownership.learner_key",
+      "to": "learner.learner_key"
+    },
+    {
+      "from": "pet_ownership.animal_key",
+      "to": "companion_animals.animal_key"
+    }
+  ]
+}

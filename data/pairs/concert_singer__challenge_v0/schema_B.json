@@ -1,0 +1,129 @@
+{
+  "db_id": "concert_singer_challenge_0",
+  "tables": [
+    {
+      "name": "vocalist",
+      "columns": [
+        {
+          "name": "nation",
+          "type": "text"
+        },
+        {
+          "name": "years_old",
+          "type": "number"
+        },
+        {
+          "name": "track_publication_annum",
+          "type": "text"
+        },
+        {
+          "name": "track_label",
+          "type": "text"
+        },
+        {
+          "name": "masculine_flag",
+          "type": "others"
+        },
+        {
+          "name": "label",
+          "type": "text"
+        },
+        {
+          "name": "vocalist_key",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "arena",
+      "columns": [
+        {
+          "name": "mean_value",
+          "type": "number"
+        },
+        {
+          "name": "occupancy_limit",
+          "type": "number"
+        },
+        {
+          "name": "label",
+          "type": "text"
+        },
+        {
+          "name": "maximum_value",
+          "type": "number"
+        },
+        {
+          "name": "arena_key",
+          "type": "number"
+        },
+        {
+          "name": "site",
+          "type": "text"
+        },
+        {
+          "name": "minimum_value",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "recital_lineup",
+      "columns": [
+        {
+          "name": "recital_key",
+          "type": "number"
+        },
+        {
+          "name": "vocalist_key",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "recital",
+      "columns": [
+        {
+          "name": "recital_key",
+          "type": "number"
+        },
+        {
+          "name": "calendar_annum",
+          "type": "text"
+        },
+        {
+          "name": "arena_key",
+          "type": "text"
+        },
+        {
+          "name": "recital_label",
+          "type": "text"
+        },
+        {
+          "name": "topic",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "vocalist.vocalist_key",
+    "recital.recital_key",
+    "arena.arena_key",
+    "recital_lineup.recital_key"
+  ],
+  "foreign_keys": [
+    {
+      "from": "recital_lineup.vocalist_key",
+      "to": "vocalist.vocalist_key"
+    },
+    {
+      "from": "recital_lineup.recital_key",
+      "to": "recital.recital_key"
+    },
+    {
+      "from": "recital.arena_key",
+      "to": "arena.arena_key"
+    }
+  ]
+}

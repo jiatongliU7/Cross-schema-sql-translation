@@ -1,0 +1,113 @@
+{
+  "db_id": "employee_hire_evaluation_challenge_0",
+  "tables": [
+    {
+      "name": "assessment",
+      "columns": [
+        {
+          "name": "staff_key",
+          "type": "text"
+        },
+        {
+          "name": "Bonus",
+          "type": "number"
+        },
+        {
+          "name": "annum_awarded",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "staff_member",
+      "columns": [
+        {
+          "name": "municipality",
+          "type": "text"
+        },
+        {
+          "name": "years_old",
+          "type": "number"
+        },
+        {
+          "name": "staff_key",
+          "type": "number"
+        },
+        {
+          "name": "label",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "recruitment",
+      "columns": [
+        {
+          "name": "Start_from",
+          "type": "text"
+        },
+        {
+          "name": "outlet_key",
+          "type": "number"
+        },
+        {
+          "name": "staff_key",
+          "type": "number"
+        },
+        {
+          "name": "full_schedule_flag",
+          "type": "others"
+        }
+      ]
+    },
+    {
+      "name": "retail_outlet",
+      "columns": [
+        {
+          "name": "outlet_key",
+          "type": "number"
+        },
+        {
+          "name": "label",
+          "type": "text"
+        },
+        {
+          "name": "manager_label",
+          "type": "text"
+        },
+        {
+          "name": "count_products",
+          "type": "number"
+        },
+        {
+          "name": "site",
+          "type": "text"
+        },
+        {
+          "name": "District",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "retail_outlet.outlet_key",
+    "staff_member.staff_key",
+    "assessment.staff_key",
+    "recruitment.staff_key"
+  ],
+  "foreign_keys": [
+    {
+      "from": "recruitment.outlet_key",
+      "to": "retail_outlet.outlet_key"
+    },
+    {
+      "from": "recruitment.staff_key",
+      "to": "staff_member.staff_key"
+    },
+    {
+      "from": "assessment.staff_key",
+      "to": "staff_member.staff_key"
+    }
+  ]
+}

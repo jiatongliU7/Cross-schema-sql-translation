@@ -1,0 +1,157 @@
+{
+  "db_id": "car_1_challenge_0",
+  "tables": [
+    {
+      "name": "vehicle_labels",
+      "columns": [
+        {
+          "name": "brand",
+          "type": "text"
+        },
+        {
+          "name": "manufacturer_key",
+          "type": "number"
+        },
+        {
+          "name": "design",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "vehicle_catalog",
+      "columns": [
+        {
+          "name": "design",
+          "type": "text"
+        },
+        {
+          "name": "manufacturer",
+          "type": "number"
+        },
+        {
+          "name": "design_key",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "landmasses",
+      "columns": [
+        {
+          "name": "landmass_key",
+          "type": "number"
+        },
+        {
+          "name": "landmass",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "vehicle_specifications",
+      "columns": [
+        {
+          "name": "miles_per_gallon",
+          "type": "text"
+        },
+        {
+          "name": "engine_cylinder_count",
+          "type": "number"
+        },
+        {
+          "name": "engine_displacement",
+          "type": "number"
+        },
+        {
+          "name": "calendar_annum",
+          "type": "number"
+        },
+        {
+          "name": "mass_value",
+          "type": "number"
+        },
+        {
+          "name": "engine_power",
+          "type": "text"
+        },
+        {
+          "name": "record_key",
+          "type": "number"
+        },
+        {
+          "name": "acceleration_time",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "automobile_manufacturers",
+      "columns": [
+        {
+          "name": "record_key",
+          "type": "number"
+        },
+        {
+          "name": "nation",
+          "type": "text"
+        },
+        {
+          "name": "manufacturer",
+          "type": "text"
+        },
+        {
+          "name": "complete_name",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "nations",
+      "columns": [
+        {
+          "name": "nation_label",
+          "type": "text"
+        },
+        {
+          "name": "landmass",
+          "type": "number"
+        },
+        {
+          "name": "nation_key",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "landmasses.landmass_key",
+    "vehicle_labels.manufacturer_key",
+    "vehicle_catalog.design_key",
+    "automobile_manufacturers.record_key",
+    "vehicle_specifications.record_key",
+    "nations.nation_key"
+  ],
+  "foreign_keys": [
+    {
+      "from": "vehicle_catalog.manufacturer",
+      "to": "automobile_manufacturers.record_key"
+    },
+    {
+      "from": "automobile_manufacturers.nation",
+      "to": "nations.nation_key"
+    },
+    {
+      "from": "vehicle_specifications.record_key",
+      "to": "vehicle_labels.manufacturer_key"
+    },
+    {
+      "from": "nations.landmass",
+      "to": "landmasses.landmass_key"
+    },
+    {
+      "from": "vehicle_labels.design",
+      "to": "vehicle_catalog.design"
+    }
+  ]
+}

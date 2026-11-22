@@ -5,6 +5,7 @@
     "concert_singer__abbr_v2",
     "concert_singer__abbr_v3",
     "concert_singer__abbr_v4",
+    "concert_singer__challenge_v0",
     "concert_singer__syn_v0",
     "concert_singer__syn_v1",
     "concert_singer__syn_v2",
@@ -15,11 +16,13 @@
     "course_teach__abbr_v2",
     "course_teach__abbr_v3",
     "course_teach__abbr_v4",
+    "course_teach__challenge_v0",
     "cre_Doc_Template_Mgt__abbr_v0",
     "cre_Doc_Template_Mgt__abbr_v1",
     "cre_Doc_Template_Mgt__abbr_v2",
     "cre_Doc_Template_Mgt__abbr_v3",
     "cre_Doc_Template_Mgt__abbr_v4",
+    "cre_Doc_Template_Mgt__challenge_v0",
     "cre_Doc_Template_Mgt__syn_v0",
     "cre_Doc_Template_Mgt__syn_v1",
     "cre_Doc_Template_Mgt__syn_v2",
@@ -29,6 +32,7 @@
     "employee_hire_evaluation__abbr_v1",
     "employee_hire_evaluation__abbr_v3",
     "employee_hire_evaluation__abbr_v4",
+    "employee_hire_evaluation__challenge_v0",
     "employee_hire_evaluation__syn_v0",
     "employee_hire_evaluation__syn_v2",
     "employee_hire_evaluation__syn_v3",
@@ -38,6 +42,7 @@
     "flight_2__abbr_v2",
     "flight_2__abbr_v3",
     "flight_2__abbr_v4",
+    "flight_2__challenge_v0",
     "flight_2__syn_v0",
     "flight_2__syn_v1",
     "flight_2__syn_v2",
@@ -48,6 +53,7 @@
     "network_1__abbr_v3",
     "network_1__abbr_v5",
     "network_1__abbr_v8",
+    "network_1__challenge_v0",
     "network_1__syn_v0",
     "network_1__syn_v1",
     "network_1__syn_v2",
@@ -56,6 +62,7 @@
     "orchestra__abbr_v2",
     "orchestra__abbr_v3",
     "orchestra__abbr_v4",
+    "orchestra__challenge_v0",
     "orchestra__syn_v0",
     "orchestra__syn_v1",
     "orchestra__syn_v2",
@@ -63,6 +70,7 @@
     "orchestra__syn_v4",
     "pets_1__abbr_v1",
     "pets_1__abbr_v2",
+    "pets_1__challenge_v0",
     "pets_1__syn_v0",
     "pets_1__syn_v1",
     "pets_1__syn_v2",
@@ -73,6 +81,7 @@
     "poker_player__abbr_v2",
     "poker_player__abbr_v3",
     "poker_player__abbr_v4",
+    "poker_player__challenge_v0",
     "poker_player__syn_v0",
     "poker_player__syn_v1",
     "poker_player__syn_v2",
@@ -82,6 +91,7 @@
     "real_estate_properties__abbr_v2",
     "real_estate_properties__abbr_v3",
     "real_estate_properties__abbr_v4",
+    "real_estate_properties__challenge_v0",
     "real_estate_properties__syn_v0",
     "real_estate_properties__syn_v1",
     "real_estate_properties__syn_v2",
@@ -89,6 +99,7 @@
     "real_estate_properties__syn_v4",
     "singer__abbr_v0",
     "singer__abbr_v1",
+    "singer__challenge_v0",
     "singer__syn_v0",
     "singer__syn_v1",
     "singer__syn_v2",
@@ -99,6 +110,7 @@
     "tvshow__abbr_v3",
     "tvshow__abbr_v4",
     "tvshow__abbr_v5",
+    "tvshow__challenge_v0",
     "tvshow__syn_v0",
     "tvshow__syn_v1",
     "tvshow__syn_v2",
@@ -109,6 +121,7 @@
     "voter_1__abbr_v2",
     "voter_1__abbr_v3",
     "voter_1__abbr_v4",
+    "voter_1__challenge_v0",
     "voter_1__syn_v0",
     "voter_1__syn_v1",
     "voter_1__syn_v2",
@@ -118,6 +131,7 @@
     "wta_1__abbr_v1",
     "wta_1__abbr_v3",
     "wta_1__abbr_v4",
+    "wta_1__challenge_v0",
     "wta_1__syn_v0",
     "wta_1__syn_v1",
     "wta_1__syn_v2",
@@ -130,6 +144,7 @@
     "battle_death__abbr_v2",
     "battle_death__abbr_v3",
     "battle_death__abbr_v4",
+    "battle_death__challenge_v0",
     "battle_death__syn_v0",
     "battle_death__syn_v1",
     "battle_death__syn_v2",
@@ -140,6 +155,7 @@
     "car_1__abbr_v2",
     "car_1__abbr_v3",
     "car_1__abbr_v4",
+    "car_1__challenge_v0",
     "car_1__syn_v0",
     "car_1__syn_v1",
     "car_1__syn_v2",
@@ -149,6 +165,7 @@
     "dog_kennels__abbr_v2",
     "dog_kennels__abbr_v3",
     "dog_kennels__abbr_v4",
+    "dog_kennels__challenge_v0",
     "dog_kennels__syn_v0",
     "dog_kennels__syn_v1",
     "dog_kennels__syn_v2",
@@ -161,6 +178,7 @@
     "museum_visit__abbr_v2",
     "museum_visit__abbr_v4",
     "museum_visit__abbr_v5",
+    "museum_visit__challenge_v0",
     "museum_visit__syn_v0",
     "museum_visit__syn_v1",
     "museum_visit__syn_v2",
@@ -171,6 +189,7 @@
     "student_transcripts_tracking__abbr_v2",
     "student_transcripts_tracking__abbr_v3",
     "student_transcripts_tracking__abbr_v4",
+    "student_transcripts_tracking__challenge_v0",
     "student_transcripts_tracking__syn_v0",
     "student_transcripts_tracking__syn_v1",
     "student_transcripts_tracking__syn_v2",
@@ -181,6 +200,7 @@
     "world_1__abbr_v2",
     "world_1__abbr_v3",
     "world_1__abbr_v4",
+    "world_1__challenge_v0",
     "world_1__syn_v0",
     "world_1__syn_v1",
     "world_1__syn_v2",
@@ -2721,6 +2741,314 @@
         },
         "changed_table_count": 0,
         "changed_column_count": 8
+      },
+      "concert_singer__challenge_v0": {
+        "base_db_id": "concert_singer",
+        "target_db_id": "concert_singer_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 45,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 2,
+          "L3": 43
+        },
+        "changed_table_count": 4,
+        "changed_column_count": 21
+      },
+      "pets_1__challenge_v0": {
+        "base_db_id": "pets_1",
+        "target_db_id": "pets_1_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 42,
+        "join_query_count": 24,
+        "level_counts": {
+          "L3": 42
+        },
+        "changed_table_count": 3,
+        "changed_column_count": 12
+      },
+      "car_1__challenge_v0": {
+        "base_db_id": "car_1",
+        "target_db_id": "car_1_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "dev",
+        "query_count": 92,
+        "join_query_count": 58,
+        "level_counts": {
+          "L2": 4,
+          "L3": 88
+        },
+        "changed_table_count": 6,
+        "changed_column_count": 23
+      },
+      "flight_2__challenge_v0": {
+        "base_db_id": "flight_2",
+        "target_db_id": "flight_2_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 80,
+        "join_query_count": 46,
+        "level_counts": {
+          "L2": 6,
+          "L3": 74
+        },
+        "changed_table_count": 3,
+        "changed_column_count": 13
+      },
+      "employee_hire_evaluation__challenge_v0": {
+        "base_db_id": "employee_hire_evaluation",
+        "target_db_id": "employee_hire_evaluation_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 38,
+        "join_query_count": 8,
+        "level_counts": {
+          "L2": 6,
+          "L3": 32
+        },
+        "changed_table_count": 4,
+        "changed_column_count": 14
+      },
+      "cre_Doc_Template_Mgt__challenge_v0": {
+        "base_db_id": "cre_Doc_Template_Mgt",
+        "target_db_id": "cre_Doc_Template_Mgt_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 84,
+        "join_query_count": 28,
+        "level_counts": {
+          "L2": 6,
+          "L3": 78
+        },
+        "changed_table_count": 4,
+        "changed_column_count": 17
+      },
+      "course_teach__challenge_v0": {
+        "base_db_id": "course_teach",
+        "target_db_id": "course_teach_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 30,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 8,
+          "L3": 22
+        },
+        "changed_table_count": 3,
+        "changed_column_count": 8
+      },
+      "museum_visit__challenge_v0": {
+        "base_db_id": "museum_visit",
+        "target_db_id": "museum_visit_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "test",
+        "query_count": 18,
+        "join_query_count": 7,
+        "level_counts": {
+          "L3": 18
+        },
+        "changed_table_count": 3,
+        "changed_column_count": 11
+      },
+      "wta_1__challenge_v0": {
+        "base_db_id": "wta_1",
+        "target_db_id": "wta_1_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 62,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 6,
+          "L3": 56
+        },
+        "changed_table_count": 3,
+        "changed_column_count": 38
+      },
+      "battle_death__challenge_v0": {
+        "base_db_id": "battle_death",
+        "target_db_id": "battle_death_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "dev",
+        "query_count": 16,
+        "join_query_count": 6,
+        "level_counts": {
+          "L2": 2,
+          "L3": 14
+        },
+        "changed_table_count": 3,
+        "changed_column_count": 13
+      },
+      "student_transcripts_tracking__challenge_v0": {
+        "base_db_id": "student_transcripts_tracking",
+        "target_db_id": "student_transcripts_tracking_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "test",
+        "query_count": 78,
+        "join_query_count": 34,
+        "level_counts": {
+          "L2": 4,
+          "L3": 74
+        },
+        "changed_table_count": 11,
+        "changed_column_count": 56
+      },
+      "tvshow__challenge_v0": {
+        "base_db_id": "tvshow",
+        "target_db_id": "tvshow_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 62,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 4,
+          "L3": 58
+        },
+        "changed_table_count": 3,
+        "changed_column_count": 21
+      },
+      "poker_player__challenge_v0": {
+        "base_db_id": "poker_player",
+        "target_db_id": "poker_player_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 40,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 16,
+          "L3": 24
+        },
+        "changed_table_count": 2,
+        "changed_column_count": 8
+      },
+      "voter_1__challenge_v0": {
+        "base_db_id": "voter_1",
+        "target_db_id": "voter_1_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 15,
+        "join_query_count": 5,
+        "level_counts": {
+          "L2": 1,
+          "L3": 14
+        },
+        "changed_table_count": 3,
+        "changed_column_count": 9
+      },
+      "world_1__challenge_v0": {
+        "base_db_id": "world_1",
+        "target_db_id": "world_1_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "test",
+        "query_count": 120,
+        "join_query_count": 44,
+        "level_counts": {
+          "L3": 120
+        },
+        "changed_table_count": 3,
+        "changed_column_count": 22
+      },
+      "orchestra__challenge_v0": {
+        "base_db_id": "orchestra",
+        "target_db_id": "orchestra_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 40,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 6,
+          "L3": 34
+        },
+        "changed_table_count": 4,
+        "changed_column_count": 21
+      },
+      "network_1__challenge_v0": {
+        "base_db_id": "network_1",
+        "target_db_id": "network_1_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 56,
+        "join_query_count": 28,
+        "level_counts": {
+          "L2": 12,
+          "L3": 44
+        },
+        "changed_table_count": 3,
+        "changed_column_count": 6
+      },
+      "dog_kennels__challenge_v0": {
+        "base_db_id": "dog_kennels",
+        "target_db_id": "dog_kennels_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "dev",
+        "query_count": 82,
+        "join_query_count": 38,
+        "level_counts": {
+          "L3": 82
+        },
+        "changed_table_count": 8,
+        "changed_column_count": 48
+      },
+      "singer__challenge_v0": {
+        "base_db_id": "singer",
+        "target_db_id": "singer_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 30,
+        "join_query_count": 8,
+        "level_counts": {
+          "L2": 6,
+          "L3": 24
+        },
+        "changed_table_count": 2,
+        "changed_column_count": 8
+      },
+      "real_estate_properties__challenge_v0": {
+        "base_db_id": "real_estate_properties",
+        "target_db_id": "real_estate_properties_challenge_0",
+        "perturbation": "challenge_semantic_table_and_column_rename",
+        "split": "train",
+        "query_count": 4,
+        "join_query_count": 2,
+        "level_counts": {
+          "L2": 1,
+          "L3": 3
+        },
+        "changed_table_count": 5,
+        "changed_column_count": 37
+      }
+    },
+    "dataset_groups": {
+      "standard": {
+        "description": "Dr.Spider synonym and abbreviation variants",
+        "pair_count": 182
+      },
+      "challenge": {
+        "description": "Curated semantic table and column renaming variants",
+        "pair_count": 20,
+        "pair_ids": [
+          "battle_death__challenge_v0",
+          "car_1__challenge_v0",
+          "concert_singer__challenge_v0",
+          "course_teach__challenge_v0",
+          "cre_Doc_Template_Mgt__challenge_v0",
+          "dog_kennels__challenge_v0",
+          "employee_hire_evaluation__challenge_v0",
+          "flight_2__challenge_v0",
+          "museum_visit__challenge_v0",
+          "network_1__challenge_v0",
+          "orchestra__challenge_v0",
+          "pets_1__challenge_v0",
+          "poker_player__challenge_v0",
+          "real_estate_properties__challenge_v0",
+          "singer__challenge_v0",
+          "student_transcripts_tracking__challenge_v0",
+          "tvshow__challenge_v0",
+          "voter_1__challenge_v0",
+          "world_1__challenge_v0",
+          "wta_1__challenge_v0"
+        ]
       }
     }
   }

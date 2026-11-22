@@ -1,0 +1,209 @@
+{
+  "db_id": "wta_1_challenge_0",
+  "tables": [
+    {
+      "name": "competitors",
+      "columns": [
+        {
+          "name": "family_name",
+          "type": "text"
+        },
+        {
+          "name": "nativity_day",
+          "type": "time"
+        },
+        {
+          "name": "hand",
+          "type": "text"
+        },
+        {
+          "name": "competitor_key",
+          "type": "number"
+        },
+        {
+          "name": "given_name",
+          "type": "text"
+        },
+        {
+          "name": "nation_tag",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "standings",
+      "columns": [
+        {
+          "name": "standing_day",
+          "type": "time"
+        },
+        {
+          "name": "competitor_key",
+          "type": "number"
+        },
+        {
+          "name": "standing_points",
+          "type": "number"
+        },
+        {
+          "name": "standing_position",
+          "type": "number"
+        },
+        {
+          "name": "tours",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "contests",
+      "columns": [
+        {
+          "name": "defeated_nation_tag",
+          "type": "text"
+        },
+        {
+          "name": "victor_key",
+          "type": "number"
+        },
+        {
+          "name": "contest_count",
+          "type": "number"
+        },
+        {
+          "name": "minutes",
+          "type": "number"
+        },
+        {
+          "name": "victor_entry_type",
+          "type": "text"
+        },
+        {
+          "name": "defeated_position",
+          "type": "number"
+        },
+        {
+          "name": "defeated_stature",
+          "type": "number"
+        },
+        {
+          "name": "bracket_size",
+          "type": "number"
+        },
+        {
+          "name": "defeated_entry_type",
+          "type": "text"
+        },
+        {
+          "name": "defeated_key",
+          "type": "number"
+        },
+        {
+          "name": "victor_hand",
+          "type": "text"
+        },
+        {
+          "name": "competition_key",
+          "type": "text"
+        },
+        {
+          "name": "competition_tier",
+          "type": "text"
+        },
+        {
+          "name": "victor_age",
+          "type": "number"
+        },
+        {
+          "name": "defeated_hand",
+          "type": "text"
+        },
+        {
+          "name": "victor_label",
+          "type": "text"
+        },
+        {
+          "name": "maximum_rounds",
+          "type": "number"
+        },
+        {
+          "name": "defeated_age",
+          "type": "number"
+        },
+        {
+          "name": "defeated_position_points",
+          "type": "number"
+        },
+        {
+          "name": "victor_nation_tag",
+          "type": "text"
+        },
+        {
+          "name": "victor_position",
+          "type": "number"
+        },
+        {
+          "name": "round",
+          "type": "text"
+        },
+        {
+          "name": "points",
+          "type": "text"
+        },
+        {
+          "name": "defeated_seed",
+          "type": "number"
+        },
+        {
+          "name": "competition_day",
+          "type": "time"
+        },
+        {
+          "name": "victor_seed",
+          "type": "number"
+        },
+        {
+          "name": "surface",
+          "type": "text"
+        },
+        {
+          "name": "defeated_label",
+          "type": "text"
+        },
+        {
+          "name": "victor_position_points",
+          "type": "number"
+        },
+        {
+          "name": "competition_label",
+          "type": "text"
+        },
+        {
+          "name": "victor_stature",
+          "type": "number"
+        },
+        {
+          "name": "calendar_annum",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "competitors.competitor_key"
+  ],
+  "foreign_keys": [
+    {
+      "from": "contests.defeated_key",
+      "to": "competitors.competitor_key"
+    },
+    {
+      "from": "contests.victor_key",
+      "to": "competitors.competitor_key"
+    },
+    {
+      "from": "standings.competitor_key",
+      "to": "competitors.competitor_key"
+    }
+  ]
+}

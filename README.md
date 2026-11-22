@@ -40,6 +40,12 @@ To use Sentence-BERT and training, additionally run `pip install -r requirements
 
 A reproducible toy mapping is included in [`examples/toy`](examples/toy/README.md). For dataset setup and experiments, see the [Spider and Dr.Spider guide](docs/SPIDER_DRSPIDER_GUIDE.md), the [schema-pair dataset guide](docs/DATASET.md), and the [neural mapping training guide](docs/NEURAL_MAPPING.md).
 
+The checked-in benchmark contains 202 schema pairs and 6,506 paired queries.
+Its `standard` group has 182 Dr.Spider synonym/abbreviation pairs; its separate
+`challenge` group has 20 curated variants that rename every ordinary table and
+most columns. Both groups reuse the same 20 Spider-dev databases, so report
+them separately and do not treat the variants as independent databases.
+
 The public `rewrite.py` module is shared by data generation and evaluation:
 `rewrite(q_A, gold_mapping)` creates `gold_q_B`, while
 `rewrite(q_A, predicted_mapping)` creates a model prediction. This keeps SQL

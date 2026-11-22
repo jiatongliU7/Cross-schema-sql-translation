@@ -1,0 +1,87 @@
+{
+  "db_id": "flight_2_challenge_0",
+  "tables": [
+    {
+      "name": "air_carriers",
+      "columns": [
+        {
+          "name": "nation",
+          "type": "text"
+        },
+        {
+          "name": "short_tag",
+          "type": "text"
+        },
+        {
+          "name": "record_key",
+          "type": "number"
+        },
+        {
+          "name": "carrier",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "airfields",
+      "columns": [
+        {
+          "name": "nation_short_tag",
+          "type": "text"
+        },
+        {
+          "name": "airfield_tag",
+          "type": "text"
+        },
+        {
+          "name": "airfield_label",
+          "type": "text"
+        },
+        {
+          "name": "municipality",
+          "type": "text"
+        },
+        {
+          "name": "nation",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "air_trips",
+      "columns": [
+        {
+          "name": "origin_airfield",
+          "type": "text"
+        },
+        {
+          "name": "carrier",
+          "type": "number"
+        },
+        {
+          "name": "trip_number",
+          "type": "number"
+        },
+        {
+          "name": "destination_airfield",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "air_trips.carrier",
+    "airfields.airfield_tag",
+    "air_carriers.record_key"
+  ],
+  "foreign_keys": [
+    {
+      "from": "air_trips.destination_airfield",
+      "to": "airfields.airfield_tag"
+    },
+    {
+      "from": "air_trips.origin_airfield",
+      "to": "airfields.airfield_tag"
+    }
+  ]
+}

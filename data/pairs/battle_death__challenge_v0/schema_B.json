@@ -1,0 +1,107 @@
+{
+  "db_id": "battle_death_challenge_0",
+  "tables": [
+    {
+      "name": "vessel",
+      "columns": [
+        {
+          "name": "vessel_category",
+          "type": "text"
+        },
+        {
+          "name": "tonnage",
+          "type": "text"
+        },
+        {
+          "name": "lost_in_combat",
+          "type": "number"
+        },
+        {
+          "name": "disposition_of_vessel",
+          "type": "text"
+        },
+        {
+          "name": "record_key",
+          "type": "number"
+        },
+        {
+          "name": "site",
+          "type": "text"
+        },
+        {
+          "name": "label",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "casualty",
+      "columns": [
+        {
+          "name": "annotation",
+          "type": "text"
+        },
+        {
+          "name": "record_key",
+          "type": "number"
+        },
+        {
+          "name": "injured",
+          "type": "number"
+        },
+        {
+          "name": "killed",
+          "type": "number"
+        },
+        {
+          "name": "caused_by_vessel_key",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "combat_event",
+      "columns": [
+        {
+          "name": "label",
+          "type": "text"
+        },
+        {
+          "name": "outcome",
+          "type": "text"
+        },
+        {
+          "name": "latin_commander",
+          "type": "text"
+        },
+        {
+          "name": "event_day",
+          "type": "text"
+        },
+        {
+          "name": "record_key",
+          "type": "number"
+        },
+        {
+          "name": "bulgarian_commander",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "combat_event.record_key",
+    "casualty.record_key",
+    "vessel.record_key"
+  ],
+  "foreign_keys": [
+    {
+      "from": "vessel.lost_in_combat",
+      "to": "combat_event.record_key"
+    },
+    {
+      "from": "casualty.caused_by_vessel_key",
+      "to": "vessel.record_key"
+    }
+  ]
+}
