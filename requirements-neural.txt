@@ -1,0 +1,4 @@
+-r requirements.txt
+sentence-transformers>=3,<6
+datasets>=2,<5
+accelerate>=0.26
