@@ -1,0 +1,340 @@
+{
+  "tables": {
+    "employee": [
+      [
+        "employee",
+        1.0
+      ],
+      [
+        "evaluation",
+        0.3333333333333333
+      ],
+      [
+        "shop",
+        0.16666666666666666
+      ]
+    ],
+    "shop": [
+      [
+        "shop",
+        1.0
+      ],
+      [
+        "hiring",
+        0.2
+      ],
+      [
+        "employee",
+        0.16666666666666666
+      ]
+    ],
+    "hiring": [
+      [
+        "hiring",
+        1.0
+      ],
+      [
+        "evaluation",
+        0.25
+      ],
+      [
+        "shop",
+        0.2
+      ]
+    ],
+    "evaluation": [
+      [
+        "evaluation",
+        1.0
+      ],
+      [
+        "employee",
+        0.3333333333333333
+      ],
+      [
+        "hiring",
+        0.25
+      ]
+    ]
+  },
+  "columns": {
+    "employee.Employee_ID": [
+      [
+        "hiring.Employee_ID",
+        1.0
+      ],
+      [
+        "evaluation.Employee_ID",
+        1.0
+      ],
+      [
+        "employee.Employee_ID",
+        1.0
+      ]
+    ],
+    "employee.Name": [
+      [
+        "shop.Name",
+        1.0
+      ],
+      [
+        "employee.Name",
+        1.0
+      ],
+      [
+        "employee.Age",
+        0.5714285714285714
+      ]
+    ],
+    "employee.Age": [
+      [
+        "employee.Age",
+        1.0
+      ],
+      [
+        "shop.Name",
+        0.5714285714285714
+      ],
+      [
+        "employee.Name",
+        0.5714285714285714
+      ]
+    ],
+    "employee.City": [
+      [
+        "employee.City",
+        1.0
+      ],
+      [
+        "shop.District",
+        0.3333333333333333
+      ],
+      [
+        "shop.Location",
+        0.3333333333333333
+      ]
+    ],
+    "shop.Shop_ID": [
+      [
+        "hiring.Shop_ID",
+        1.0
+      ],
+      [
+        "shop.Shop_ID",
+        1.0
+      ],
+      [
+        "hiring.Employee_ID",
+        0.4444444444444444
+      ]
+    ],
+    "shop.Name": [
+      [
+        "shop.Name",
+        1.0
+      ],
+      [
+        "employee.Name",
+        1.0
+      ],
+      [
+        "employee.Age",
+        0.5714285714285714
+      ]
+    ],
+    "shop.Location": [
+      [
+        "shop.Location",
+        1.0
+      ],
+      [
+        "shop.products_number",
+        0.34782608695652173
+      ],
+      [
+        "employee.City",
+        0.3333333333333333
+      ]
+    ],
+    "shop.District": [
+      [
+        "shop.District",
+        1.0
+      ],
+      [
+        "hiring.Start_from",
+        0.4444444444444444
+      ],
+      [
+        "hiring.Is_full_time",
+        0.4
+      ]
+    ],
+    "shop.Number_products": [
+      [
+        "shop.products_number",
+        0.5333333333333333
+      ],
+      [
+        "evaluation.Year_awarded",
+        0.37037037037037035
+      ],
+      [
+        "hiring.Start_from",
+        0.32
+      ]
+    ],
+    "shop.Manager_name": [
+      [
+        "shop.Manager_name",
+        1.0
+      ],
+      [
+        "shop.Name",
+        0.5
+      ],
+      [
+        "employee.Name",
+        0.5
+      ]
+    ],
+    "hiring.Shop_ID": [
+      [
+        "hiring.Shop_ID",
+        1.0
+      ],
+      [
+        "shop.Shop_ID",
+        1.0
+      ],
+      [
+        "hiring.Employee_ID",
+        0.4444444444444444
+      ]
+    ],
+    "hiring.Employee_ID": [
+      [
+        "hiring.Employee_ID",
+        1.0
+      ],
+      [
+        "evaluation.Employee_ID",
+        1.0
+      ],
+      [
+        "employee.Employee_ID",
+        1.0
+      ]
+    ],
+    "hiring.Start_from": [
+      [
+        "hiring.Start_from",
+        1.0
+      ],
+      [
+        "shop.District",
+        0.4444444444444444
+      ],
+      [
+        "hiring.Is_full_time",
+        0.36363636363636365
+      ]
+    ],
+    "hiring.Is_full_time": [
+      [
+        "hiring.Is_full_time",
+        1.0
+      ],
+      [
+        "shop.District",
+        0.4
+      ],
+      [
+        "shop.products_number",
+        0.37037037037037035
+      ]
+    ],
+    "evaluation.Employee_ID": [
+      [
+        "hiring.Employee_ID",
+        1.0
+      ],
+      [
+        "evaluation.Employee_ID",
+        1.0
+      ],
+      [
+        "employee.Employee_ID",
+        1.0
+      ]
+    ],
+    "evaluation.Year_awarded": [
+      [
+        "evaluation.Year_awarded",
+        1.0
+      ],
+      [
+        "shop.Manager_name",
+        0.4166666666666667
+      ],
+      [
+        "hiring.Start_from",
+        0.36363636363636365
+      ]
+    ],
+    "evaluation.Bonus": [
+      [
+        "evaluation.Bonus",
+        1.0
+      ],
+      [
+        "shop.Location",
+        0.3076923076923077
+      ],
+      [
+        "shop.products_number",
+        0.3
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "employee": "employee",
+      "shop": "shop",
+      "hiring": "hiring",
+      "evaluation": "evaluation"
+    },
+    "columns": {
+      "employee.Employee_ID": "employee.Employee_ID",
+      "employee.Name": "employee.Name",
+      "employee.Age": "employee.Age",
+      "employee.City": "employee.City",
+      "shop.Shop_ID": "shop.Shop_ID",
+      "shop.Name": "shop.Name",
+      "shop.Location": "shop.Location",
+      "shop.District": "shop.District",
+      "shop.Number_products": "shop.products_number",
+      "shop.Manager_name": "shop.Manager_name",
+      "hiring.Shop_ID": "hiring.Shop_ID",
+      "hiring.Employee_ID": "hiring.Employee_ID",
+      "hiring.Start_from": "hiring.Start_from",
+      "hiring.Is_full_time": "hiring.Is_full_time",
+      "evaluation.Employee_ID": "evaluation.Employee_ID",
+      "evaluation.Year_awarded": "evaluation.Year_awarded",
+      "evaluation.Bonus": "evaluation.Bonus"
+    }
+  },
+  "q_B": {
+    "employee_hire_evaluation__syn_v2__q0269": "SELECT \"shop\".\"Manager_name\" AS \"manager_name\", \"shop\".\"District\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"products_number\" DESC LIMIT 1",
+    "employee_hire_evaluation__syn_v2__q0270": "SELECT \"shop\".\"Manager_name\" AS \"manager_name\", \"shop\".\"District\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"products_number\" DESC LIMIT 1",
+    "employee_hire_evaluation__syn_v2__q0271": "SELECT MIN(\"shop\".\"products_number\") AS \"_col_0\", MAX(\"shop\".\"products_number\") AS \"_col_1\" FROM \"shop\" AS \"shop\"",
+    "employee_hire_evaluation__syn_v2__q0272": "SELECT MIN(\"shop\".\"products_number\") AS \"_col_0\", MAX(\"shop\".\"products_number\") AS \"_col_1\" FROM \"shop\" AS \"shop\"",
+    "employee_hire_evaluation__syn_v2__q0273": "SELECT \"shop\".\"Name\" AS \"name\", \"shop\".\"Location\" AS \"location\", \"shop\".\"District\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"products_number\" DESC",
+    "employee_hire_evaluation__syn_v2__q0274": "SELECT \"shop\".\"Name\" AS \"name\", \"shop\".\"Location\" AS \"location\", \"shop\".\"District\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"products_number\" DESC",
+    "employee_hire_evaluation__syn_v2__q0275": "SELECT \"shop\".\"Name\" AS \"name\" FROM \"shop\" AS \"shop\" WHERE \"shop\".\"products_number\" > (SELECT AVG(\"shop\".\"products_number\") AS \"_col_0\" FROM \"shop\" AS \"shop\")",
+    "employee_hire_evaluation__syn_v2__q0276": "SELECT \"shop\".\"Name\" AS \"name\" FROM \"shop\" AS \"shop\" WHERE \"shop\".\"products_number\" > (SELECT AVG(\"shop\".\"products_number\") AS \"_col_0\" FROM \"shop\" AS \"shop\")",
+    "employee_hire_evaluation__syn_v2__q0293": "SELECT \"shop\".\"District\" AS \"district\" FROM \"shop\" AS \"shop\" WHERE \"shop\".\"products_number\" < 3000 INTERSECT SELECT \"shop\".\"District\" AS \"district\" FROM \"shop\" AS \"shop\" WHERE \"shop\".\"products_number\" > 10000",
+    "employee_hire_evaluation__syn_v2__q0294": "SELECT \"shop\".\"District\" AS \"district\" FROM \"shop\" AS \"shop\" WHERE \"shop\".\"products_number\" < 3000 INTERSECT SELECT \"shop\".\"District\" AS \"district\" FROM \"shop\" AS \"shop\" WHERE \"shop\".\"products_number\" > 10000"
+  },
+  "rewrite_errors": {}
+}

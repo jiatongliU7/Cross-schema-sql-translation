@@ -1,0 +1,1026 @@
+{
+  "tables": {
+    "Addresses": [
+      [
+        "Addresses",
+        1.000000238418579
+      ],
+      [
+        "Sections",
+        0.3834104537963867
+      ],
+      [
+        "Departments",
+        0.34589874744415283
+      ]
+    ],
+    "Courses": [
+      [
+        "Courses",
+        1.0000004768371582
+      ],
+      [
+        "Student_Enrolment_Courses",
+        0.7993085980415344
+      ],
+      [
+        "Semesters",
+        0.719767689704895
+      ]
+    ],
+    "Departments": [
+      [
+        "Departments",
+        0.9999998807907104
+      ],
+      [
+        "Semesters",
+        0.4788264036178589
+      ],
+      [
+        "Courses",
+        0.46362149715423584
+      ]
+    ],
+    "Degree_Programs": [
+      [
+        "Degree_Programs",
+        0.9999997615814209
+      ],
+      [
+        "Courses",
+        0.6208706498146057
+      ],
+      [
+        "Student_Enrolment_Courses",
+        0.57777339220047
+      ]
+    ],
+    "Sections": [
+      [
+        "Sections",
+        1.0000001192092896
+      ],
+      [
+        "Courses",
+        0.5053389072418213
+      ],
+      [
+        "Departments",
+        0.4425817131996155
+      ]
+    ],
+    "Semesters": [
+      [
+        "Semesters",
+        0.9999998807907104
+      ],
+      [
+        "Students",
+        0.740851640701294
+      ],
+      [
+        "Courses",
+        0.719767689704895
+      ]
+    ],
+    "Students": [
+      [
+        "Students",
+        1.0000001192092896
+      ],
+      [
+        "Semesters",
+        0.740851640701294
+      ],
+      [
+        "Student_Enrolment",
+        0.7091687321662903
+      ]
+    ],
+    "Student_Enrolment": [
+      [
+        "Student_Enrolment",
+        1.0000001192092896
+      ],
+      [
+        "Student_Enrolment_Courses",
+        0.8737596869468689
+      ],
+      [
+        "Students",
+        0.7091687321662903
+      ]
+    ],
+    "Student_Enrolment_Courses": [
+      [
+        "Student_Enrolment_Courses",
+        0.9999998807907104
+      ],
+      [
+        "Student_Enrolment",
+        0.8737596869468689
+      ],
+      [
+        "Courses",
+        0.7993085980415344
+      ]
+    ],
+    "Transcripts": [
+      [
+        "Transcripts",
+        1.000000238418579
+      ],
+      [
+        "Transcript_Contents",
+        0.9418418407440186
+      ],
+      [
+        "Semesters",
+        0.3531854748725891
+      ]
+    ],
+    "Transcript_Contents": [
+      [
+        "Transcript_Contents",
+        1.0
+      ],
+      [
+        "Transcripts",
+        0.9418418407440186
+      ],
+      [
+        "Semesters",
+        0.29698288440704346
+      ]
+    ]
+  },
+  "columns": {
+    "Addresses.address_id": [
+      [
+        "Addresses.address_id",
+        1.0
+      ],
+      [
+        "Addresses.other_address_details",
+        0.6247392892837524
+      ],
+      [
+        "Addresses.line_3",
+        0.6244759559631348
+      ]
+    ],
+    "Addresses.line_1": [
+      [
+        "Addresses.line_1",
+        0.9999999403953552
+      ],
+      [
+        "Addresses.line_2",
+        0.9495508670806885
+      ],
+      [
+        "Addresses.line_3",
+        0.9219461679458618
+      ]
+    ],
+    "Addresses.line_2": [
+      [
+        "Addresses.line_2",
+        1.000000238418579
+      ],
+      [
+        "Addresses.line_1",
+        0.9495508670806885
+      ],
+      [
+        "Addresses.line_3",
+        0.9327659606933594
+      ]
+    ],
+    "Addresses.line_3": [
+      [
+        "Addresses.line_3",
+        1.0000001192092896
+      ],
+      [
+        "Addresses.line_2",
+        0.9327659606933594
+      ],
+      [
+        "Addresses.line_1",
+        0.9219461679458618
+      ]
+    ],
+    "Addresses.city": [
+      [
+        "Addresses.city",
+        1.0
+      ],
+      [
+        "Addresses.country",
+        0.7457970380783081
+      ],
+      [
+        "Addresses.other_address_details",
+        0.7298834323883057
+      ]
+    ],
+    "Addresses.zip_postcode": [
+      [
+        "Addresses.zip_postcode",
+        1.0
+      ],
+      [
+        "Addresses.city",
+        0.6602383852005005
+      ],
+      [
+        "Addresses.other_address_details",
+        0.6148000955581665
+      ]
+    ],
+    "Addresses.state_province_county": [
+      [
+        "Addresses.state_province_county",
+        0.9999998807907104
+      ],
+      [
+        "Addresses.city",
+        0.6856833696365356
+      ],
+      [
+        "Addresses.country",
+        0.6795984506607056
+      ]
+    ],
+    "Addresses.country": [
+      [
+        "Addresses.country",
+        0.9999998807907104
+      ],
+      [
+        "Addresses.line_2",
+        0.755399763584137
+      ],
+      [
+        "Addresses.line_3",
+        0.753402590751648
+      ]
+    ],
+    "Addresses.other_address_details": [
+      [
+        "Addresses.other_address_details",
+        1.000000238418579
+      ],
+      [
+        "Addresses.line_2",
+        0.8507041335105896
+      ],
+      [
+        "Addresses.line_3",
+        0.8378822803497314
+      ]
+    ],
+    "Courses.course_id": [
+      [
+        "Courses.course_id",
+        1.000000238418579
+      ],
+      [
+        "Sections.course_id",
+        0.877453088760376
+      ],
+      [
+        "Student_Enrolment_Courses.course_id",
+        0.8484877347946167
+      ]
+    ],
+    "Courses.course_name": [
+      [
+        "Courses.course_name",
+        1.0
+      ],
+      [
+        "Courses.course_details",
+        0.8823884725570679
+      ],
+      [
+        "Courses.other_details",
+        0.8301589488983154
+      ]
+    ],
+    "Courses.course_description": [
+      [
+        "Courses.course_details",
+        0.8830603361129761
+      ],
+      [
+        "Courses.other_details",
+        0.8469374179840088
+      ],
+      [
+        "Semesters.semester_description",
+        0.8200501799583435
+      ]
+    ],
+    "Courses.other_details": [
+      [
+        "Courses.other_details",
+        1.0000001192092896
+      ],
+      [
+        "Courses.course_details",
+        0.9645839929580688
+      ],
+      [
+        "Courses.course_name",
+        0.8301589488983154
+      ]
+    ],
+    "Departments.department_id": [
+      [
+        "Departments.department_id",
+        0.9999998807907104
+      ],
+      [
+        "Degree_Programs.department_id",
+        0.7543231248855591
+      ],
+      [
+        "Departments.other_details",
+        0.6439226269721985
+      ]
+    ],
+    "Departments.department_name": [
+      [
+        "Departments.department_name",
+        1.0000001192092896
+      ],
+      [
+        "Departments.other_details",
+        0.8403310775756836
+      ],
+      [
+        "Departments.department_description",
+        0.8089560270309448
+      ]
+    ],
+    "Departments.department_description": [
+      [
+        "Departments.department_description",
+        1.000000238418579
+      ],
+      [
+        "Departments.other_details",
+        0.8361826539039612
+      ],
+      [
+        "Departments.department_name",
+        0.8089560270309448
+      ]
+    ],
+    "Departments.other_details": [
+      [
+        "Departments.other_details",
+        0.9999997615814209
+      ],
+      [
+        "Departments.department_name",
+        0.8403310775756836
+      ],
+      [
+        "Departments.department_description",
+        0.8361826539039612
+      ]
+    ],
+    "Degree_Programs.degree_program_id": [
+      [
+        "Degree_Programs.degree_program_id",
+        0.9999998807907104
+      ],
+      [
+        "Degree_Programs.department_id",
+        0.8997325897216797
+      ],
+      [
+        "Student_Enrolment.degree_program_id",
+        0.8320297598838806
+      ]
+    ],
+    "Degree_Programs.department_id": [
+      [
+        "Degree_Programs.department_id",
+        1.0
+      ],
+      [
+        "Degree_Programs.degree_program_id",
+        0.8997325897216797
+      ],
+      [
+        "Student_Enrolment.degree_program_id",
+        0.7742682099342346
+      ]
+    ],
+    "Degree_Programs.degree_summary_name": [
+      [
+        "Degree_Programs.degree_summary_name",
+        1.0000001192092896
+      ],
+      [
+        "Degree_Programs.degree_summary_description",
+        0.8856286406517029
+      ],
+      [
+        "Degree_Programs.other_details",
+        0.8466043472290039
+      ]
+    ],
+    "Degree_Programs.degree_summary_description": [
+      [
+        "Degree_Programs.degree_summary_description",
+        1.000000238418579
+      ],
+      [
+        "Degree_Programs.degree_summary_name",
+        0.8856286406517029
+      ],
+      [
+        "Degree_Programs.other_details",
+        0.862042248249054
+      ]
+    ],
+    "Degree_Programs.other_details": [
+      [
+        "Degree_Programs.other_details",
+        1.0
+      ],
+      [
+        "Degree_Programs.degree_summary_description",
+        0.862042248249054
+      ],
+      [
+        "Degree_Programs.degree_summary_name",
+        0.8466043472290039
+      ]
+    ],
+    "Sections.section_id": [
+      [
+        "Sections.section_id",
+        1.0000004768371582
+      ],
+      [
+        "Sections.course_id",
+        0.7347109913825989
+      ],
+      [
+        "Sections.other_details",
+        0.5659928321838379
+      ]
+    ],
+    "Sections.course_id": [
+      [
+        "Sections.course_id",
+        0.9999998807907104
+      ],
+      [
+        "Courses.course_id",
+        0.877453088760376
+      ],
+      [
+        "Student_Enrolment_Courses.course_id",
+        0.7360032200813293
+      ]
+    ],
+    "Sections.section_name": [
+      [
+        "Sections.section_name",
+        0.9999999403953552
+      ],
+      [
+        "Sections.other_details",
+        0.7465749979019165
+      ],
+      [
+        "Sections.section_description",
+        0.6818740367889404
+      ]
+    ],
+    "Sections.section_description": [
+      [
+        "Sections.section_description",
+        1.0000001192092896
+      ],
+      [
+        "Sections.other_details",
+        0.7782495617866516
+      ],
+      [
+        "Sections.section_name",
+        0.6818740367889404
+      ]
+    ],
+    "Sections.other_details": [
+      [
+        "Sections.other_details",
+        0.9999998807907104
+      ],
+      [
+        "Sections.section_description",
+        0.7782495617866516
+      ],
+      [
+        "Sections.section_name",
+        0.7465749979019165
+      ]
+    ],
+    "Semesters.semester_id": [
+      [
+        "Semesters.semester_id",
+        1.000000238418579
+      ],
+      [
+        "Students.student_id",
+        0.816463828086853
+      ],
+      [
+        "Student_Enrolment.semester_id",
+        0.810950517654419
+      ]
+    ],
+    "Semesters.semester_name": [
+      [
+        "Semesters.semester_name",
+        1.0
+      ],
+      [
+        "Semesters.other_details",
+        0.8575976490974426
+      ],
+      [
+        "Semesters.semester_description",
+        0.8029298186302185
+      ]
+    ],
+    "Semesters.semester_description": [
+      [
+        "Semesters.semester_description",
+        1.0
+      ],
+      [
+        "Semesters.other_details",
+        0.859784722328186
+      ],
+      [
+        "Semesters.semester_name",
+        0.8029298186302185
+      ]
+    ],
+    "Semesters.other_details": [
+      [
+        "Semesters.other_details",
+        1.0000001192092896
+      ],
+      [
+        "Semesters.semester_description",
+        0.859784722328186
+      ],
+      [
+        "Semesters.semester_name",
+        0.8575976490974426
+      ]
+    ],
+    "Students.student_id": [
+      [
+        "Students.student_id",
+        1.0
+      ],
+      [
+        "Semesters.semester_id",
+        0.816463828086853
+      ],
+      [
+        "Student_Enrolment.student_id",
+        0.7761864066123962
+      ]
+    ],
+    "Students.current_address_id": [
+      [
+        "Students.current_address_id",
+        1.000000238418579
+      ],
+      [
+        "Students.permanent_address_id",
+        0.9397610425949097
+      ],
+      [
+        "Students.student_id",
+        0.7429339289665222
+      ]
+    ],
+    "Students.permanent_address_id": [
+      [
+        "Students.permanent_address_id",
+        1.0000001192092896
+      ],
+      [
+        "Students.current_address_id",
+        0.9397610425949097
+      ],
+      [
+        "Students.student_id",
+        0.7348384857177734
+      ]
+    ],
+    "Students.first_name": [
+      [
+        "Students.first_name",
+        0.9999999403953552
+      ],
+      [
+        "Students.middle_name",
+        0.8576453328132629
+      ],
+      [
+        "Students.last_name",
+        0.8282653093338013
+      ]
+    ],
+    "Students.middle_name": [
+      [
+        "Students.middle_name",
+        0.9999997615814209
+      ],
+      [
+        "Students.last_name",
+        0.8786026239395142
+      ],
+      [
+        "Students.first_name",
+        0.8576453328132629
+      ]
+    ],
+    "Students.last_name": [
+      [
+        "Students.last_name",
+        1.000000238418579
+      ],
+      [
+        "Students.middle_name",
+        0.8786026239395142
+      ],
+      [
+        "Students.first_name",
+        0.8282653093338013
+      ]
+    ],
+    "Students.cell_mobile_number": [
+      [
+        "Students.cell_mobile_number",
+        1.0000001192092896
+      ],
+      [
+        "Students.ssn",
+        0.6788345575332642
+      ],
+      [
+        "Students.other_student_details",
+        0.6655956506729126
+      ]
+    ],
+    "Students.email_address": [
+      [
+        "Students.email_address",
+        1.000000238418579
+      ],
+      [
+        "Students.other_student_details",
+        0.7146636843681335
+      ],
+      [
+        "Students.ssn",
+        0.7113388776779175
+      ]
+    ],
+    "Students.ssn": [
+      [
+        "Students.ssn",
+        1.0
+      ],
+      [
+        "Students.other_student_details",
+        0.7851183414459229
+      ],
+      [
+        "Students.email_address",
+        0.7113388776779175
+      ]
+    ],
+    "Students.date_first_registered": [
+      [
+        "Students.date_first_registered",
+        0.9999998807907104
+      ],
+      [
+        "Students.date_left",
+        0.7813135385513306
+      ],
+      [
+        "Students.student_id",
+        0.5994366407394409
+      ]
+    ],
+    "Students.date_left": [
+      [
+        "Students.date_left",
+        1.0
+      ],
+      [
+        "Students.date_first_registered",
+        0.7813135385513306
+      ],
+      [
+        "Students.student_id",
+        0.672777533531189
+      ]
+    ],
+    "Students.other_student_details": [
+      [
+        "Students.other_student_details",
+        1.0
+      ],
+      [
+        "Semesters.other_details",
+        0.806087076663971
+      ],
+      [
+        "Students.ssn",
+        0.7851183414459229
+      ]
+    ],
+    "Student_Enrolment.student_enrolment_id": [
+      [
+        "Student_Enrolment.student_enrolment_id",
+        1.000000238418579
+      ],
+      [
+        "Student_Enrolment.student_id",
+        0.9901015758514404
+      ],
+      [
+        "Student_Enrolment.semester_id",
+        0.9411197304725647
+      ]
+    ],
+    "Student_Enrolment.degree_program_id": [
+      [
+        "Student_Enrolment.degree_program_id",
+        1.0000003576278687
+      ],
+      [
+        "Student_Enrolment.semester_id",
+        0.855955958366394
+      ],
+      [
+        "Student_Enrolment.student_id",
+        0.8506250381469727
+      ]
+    ],
+    "Student_Enrolment.semester_id": [
+      [
+        "Student_Enrolment.semester_id",
+        1.0000001192092896
+      ],
+      [
+        "Student_Enrolment.student_id",
+        0.9510189294815063
+      ],
+      [
+        "Student_Enrolment.student_enrolment_id",
+        0.9411197304725647
+      ]
+    ],
+    "Student_Enrolment.student_id": [
+      [
+        "Student_Enrolment.student_id",
+        1.0
+      ],
+      [
+        "Student_Enrolment.student_enrolment_id",
+        0.9901015758514404
+      ],
+      [
+        "Student_Enrolment.semester_id",
+        0.9510189294815063
+      ]
+    ],
+    "Student_Enrolment.other_details": [
+      [
+        "Student_Enrolment.other_details",
+        1.0
+      ],
+      [
+        "Students.other_student_details",
+        0.7818130850791931
+      ],
+      [
+        "Student_Enrolment.student_id",
+        0.7702683210372925
+      ]
+    ],
+    "Student_Enrolment_Courses.student_course_id": [
+      [
+        "Student_Enrolment_Courses.student_course_id",
+        0.9999998211860657
+      ],
+      [
+        "Student_Enrolment_Courses.course_id",
+        0.994531512260437
+      ],
+      [
+        "Student_Enrolment_Courses.student_enrolment_id",
+        0.981589674949646
+      ]
+    ],
+    "Student_Enrolment_Courses.course_id": [
+      [
+        "Student_Enrolment_Courses.course_id",
+        1.0
+      ],
+      [
+        "Student_Enrolment_Courses.student_course_id",
+        0.994531512260437
+      ],
+      [
+        "Student_Enrolment_Courses.student_enrolment_id",
+        0.9760171175003052
+      ]
+    ],
+    "Student_Enrolment_Courses.student_enrolment_id": [
+      [
+        "Student_Enrolment_Courses.student_enrolment_id",
+        0.9999997019767761
+      ],
+      [
+        "Student_Enrolment_Courses.student_course_id",
+        0.981589674949646
+      ],
+      [
+        "Student_Enrolment_Courses.course_id",
+        0.9760171175003052
+      ]
+    ],
+    "Transcripts.transcript_id": [
+      [
+        "Transcripts.transcript_id",
+        0.9999998807907104
+      ],
+      [
+        "Transcript_Contents.transcript_id",
+        0.9626768827438354
+      ],
+      [
+        "Transcripts.transcript_date",
+        0.8565372824668884
+      ]
+    ],
+    "Transcripts.transcript_date": [
+      [
+        "Transcripts.transcript_date",
+        1.0
+      ],
+      [
+        "Transcripts.transcript_id",
+        0.8565372824668884
+      ],
+      [
+        "Transcript_Contents.transcript_id",
+        0.8155989646911621
+      ]
+    ],
+    "Transcripts.other_details": [
+      [
+        "Transcripts.see_also",
+        0.9200750589370728
+      ],
+      [
+        "Transcript_Contents.transcript_id",
+        0.8175618648529053
+      ],
+      [
+        "Transcripts.transcript_id",
+        0.816996157169342
+      ]
+    ],
+    "Transcript_Contents.student_course_id": [
+      [
+        "Transcript_Contents.student_course_id",
+        0.9999998807907104
+      ],
+      [
+        "Transcript_Contents.transcript_id",
+        0.8049184083938599
+      ],
+      [
+        "Transcripts.transcript_id",
+        0.7649785876274109
+      ]
+    ],
+    "Transcript_Contents.transcript_id": [
+      [
+        "Transcript_Contents.transcript_id",
+        1.0000001192092896
+      ],
+      [
+        "Transcripts.transcript_id",
+        0.9626768827438354
+      ],
+      [
+        "Transcripts.transcript_date",
+        0.8155989646911621
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Addresses": "Addresses",
+      "Courses": "Courses",
+      "Departments": "Departments",
+      "Degree_Programs": "Degree_Programs",
+      "Sections": "Sections",
+      "Semesters": "Semesters",
+      "Students": "Students",
+      "Student_Enrolment": "Student_Enrolment",
+      "Student_Enrolment_Courses": "Student_Enrolment_Courses",
+      "Transcripts": "Transcripts",
+      "Transcript_Contents": "Transcript_Contents"
+    },
+    "columns": {
+      "Addresses.address_id": "Addresses.address_id",
+      "Addresses.line_1": "Addresses.line_1",
+      "Addresses.line_2": "Addresses.line_2",
+      "Addresses.line_3": "Addresses.line_3",
+      "Addresses.city": "Addresses.city",
+      "Addresses.zip_postcode": "Addresses.zip_postcode",
+      "Addresses.state_province_county": "Addresses.state_province_county",
+      "Addresses.country": "Addresses.country",
+      "Addresses.other_address_details": "Addresses.other_address_details",
+      "Courses.course_id": "Courses.course_id",
+      "Courses.course_name": "Courses.course_name",
+      "Courses.course_description": "Courses.course_details",
+      "Courses.other_details": "Courses.other_details",
+      "Departments.department_id": "Departments.department_id",
+      "Departments.department_name": "Departments.department_name",
+      "Departments.department_description": "Departments.department_description",
+      "Departments.other_details": "Departments.other_details",
+      "Degree_Programs.degree_program_id": "Degree_Programs.degree_program_id",
+      "Degree_Programs.department_id": "Degree_Programs.department_id",
+      "Degree_Programs.degree_summary_name": "Degree_Programs.degree_summary_name",
+      "Degree_Programs.degree_summary_description": "Degree_Programs.degree_summary_description",
+      "Degree_Programs.other_details": "Degree_Programs.other_details",
+      "Sections.section_id": "Sections.section_id",
+      "Sections.course_id": "Sections.course_id",
+      "Sections.section_name": "Sections.section_name",
+      "Sections.section_description": "Sections.section_description",
+      "Sections.other_details": "Sections.other_details",
+      "Semesters.semester_id": "Semesters.semester_id",
+      "Semesters.semester_name": "Semesters.semester_name",
+      "Semesters.semester_description": "Semesters.semester_description",
+      "Semesters.other_details": "Semesters.other_details",
+      "Students.student_id": "Students.student_id",
+      "Students.current_address_id": "Students.current_address_id",
+      "Students.permanent_address_id": "Students.permanent_address_id",
+      "Students.first_name": "Students.first_name",
+      "Students.middle_name": "Students.middle_name",
+      "Students.last_name": "Students.last_name",
+      "Students.cell_mobile_number": "Students.cell_mobile_number",
+      "Students.email_address": "Students.email_address",
+      "Students.ssn": "Students.ssn",
+      "Students.date_first_registered": "Students.date_first_registered",
+      "Students.date_left": "Students.date_left",
+      "Students.other_student_details": "Students.other_student_details",
+      "Student_Enrolment.student_enrolment_id": "Student_Enrolment.student_enrolment_id",
+      "Student_Enrolment.degree_program_id": "Student_Enrolment.degree_program_id",
+      "Student_Enrolment.semester_id": "Student_Enrolment.semester_id",
+      "Student_Enrolment.student_id": "Student_Enrolment.student_id",
+      "Student_Enrolment.other_details": "Student_Enrolment.other_details",
+      "Student_Enrolment_Courses.student_course_id": "Student_Enrolment_Courses.student_course_id",
+      "Student_Enrolment_Courses.course_id": "Student_Enrolment_Courses.course_id",
+      "Student_Enrolment_Courses.student_enrolment_id": "Student_Enrolment_Courses.student_enrolment_id",
+      "Transcripts.transcript_id": "Transcripts.transcript_id",
+      "Transcripts.transcript_date": "Transcripts.transcript_date",
+      "Transcripts.other_details": "Transcripts.see_also",
+      "Transcript_Contents.student_course_id": "Transcript_Contents.student_course_id",
+      "Transcript_Contents.transcript_id": "Transcript_Contents.transcript_id"
+    }
+  },
+  "q_B": {
+    "student_transcripts_tracking__syn_v2__q0511": "SELECT \"courses\".\"course_details\" AS \"course_description\" FROM \"Courses\" AS \"courses\" WHERE \"courses\".\"course_name\" = 'math'",
+    "student_transcripts_tracking__syn_v2__q0512": "SELECT \"courses\".\"course_details\" AS \"course_description\" FROM \"Courses\" AS \"courses\" WHERE \"courses\".\"course_name\" = 'math'",
+    "student_transcripts_tracking__syn_v2__q0565": "SELECT \"transcripts\".\"transcript_date\" AS \"transcript_date\", \"transcripts\".\"see_also\" AS \"other_details\" FROM \"Transcripts\" AS \"transcripts\" ORDER BY \"transcript_date\" ASC LIMIT 1",
+    "student_transcripts_tracking__syn_v2__q0566": "SELECT \"transcripts\".\"transcript_date\" AS \"transcript_date\", \"transcripts\".\"see_also\" AS \"other_details\" FROM \"Transcripts\" AS \"transcripts\" ORDER BY \"transcript_date\" ASC LIMIT 1"
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "semantic"
+}

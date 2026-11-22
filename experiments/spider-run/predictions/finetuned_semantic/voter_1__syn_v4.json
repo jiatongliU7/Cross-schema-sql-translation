@@ -1,0 +1,201 @@
+{
+  "tables": {
+    "AREA_CODE_STATE": [
+      [
+        "AREA_CODE_STATE",
+        1.0000003576278687
+      ],
+      [
+        "VOTES",
+        0.1973550021648407
+      ],
+      [
+        "CONTESTANTS",
+        0.14207851886749268
+      ]
+    ],
+    "CONTESTANTS": [
+      [
+        "CONTESTANTS",
+        1.0000004768371582
+      ],
+      [
+        "VOTES",
+        0.5243142247200012
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.14207851886749268
+      ]
+    ],
+    "VOTES": [
+      [
+        "VOTES",
+        1.0
+      ],
+      [
+        "CONTESTANTS",
+        0.5243142247200012
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.1973550021648407
+      ]
+    ]
+  },
+  "columns": {
+    "AREA_CODE_STATE.area_code": [
+      [
+        "AREA_CODE_STATE.area_code",
+        0.9999998807907104
+      ],
+      [
+        "AREA_CODE_STATE.state",
+        0.8685569167137146
+      ],
+      [
+        "VOTES.call_up",
+        0.2269165813922882
+      ]
+    ],
+    "AREA_CODE_STATE.state": [
+      [
+        "AREA_CODE_STATE.state",
+        1.0000003576278687
+      ],
+      [
+        "AREA_CODE_STATE.area_code",
+        0.8685569167137146
+      ],
+      [
+        "VOTES.state",
+        0.4071149230003357
+      ]
+    ],
+    "CONTESTANTS.contestant_number": [
+      [
+        "CONTESTANTS.contestant_number",
+        1.0
+      ],
+      [
+        "VOTES.contestant_number",
+        0.8877992630004883
+      ],
+      [
+        "CONTESTANTS.contestant_name",
+        0.603079080581665
+      ]
+    ],
+    "CONTESTANTS.contestant_name": [
+      [
+        "CONTESTANTS.contestant_name",
+        1.0
+      ],
+      [
+        "CONTESTANTS.contestant_number",
+        0.603079080581665
+      ],
+      [
+        "VOTES.contestant_number",
+        0.5071039795875549
+      ]
+    ],
+    "VOTES.vote_id": [
+      [
+        "VOTES.vote_id",
+        0.9999997615814209
+      ],
+      [
+        "VOTES.call_up",
+        0.8348655700683594
+      ],
+      [
+        "VOTES.made",
+        0.8317486047744751
+      ]
+    ],
+    "VOTES.phone_number": [
+      [
+        "VOTES.call_up",
+        0.8036958575248718
+      ],
+      [
+        "VOTES.vote_id",
+        0.752924382686615
+      ],
+      [
+        "VOTES.made",
+        0.7401617765426636
+      ]
+    ],
+    "VOTES.state": [
+      [
+        "VOTES.state",
+        1.000000238418579
+      ],
+      [
+        "VOTES.vote_id",
+        0.6617735624313354
+      ],
+      [
+        "VOTES.made",
+        0.6502560973167419
+      ]
+    ],
+    "VOTES.contestant_number": [
+      [
+        "VOTES.contestant_number",
+        0.9999998807907104
+      ],
+      [
+        "CONTESTANTS.contestant_number",
+        0.8877992630004883
+      ],
+      [
+        "VOTES.made",
+        0.7540980577468872
+      ]
+    ],
+    "VOTES.created": [
+      [
+        "VOTES.made",
+        0.9075518846511841
+      ],
+      [
+        "VOTES.vote_id",
+        0.777408242225647
+      ],
+      [
+        "VOTES.call_up",
+        0.7579296231269836
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "AREA_CODE_STATE": "AREA_CODE_STATE",
+      "CONTESTANTS": "CONTESTANTS",
+      "VOTES": "VOTES"
+    },
+    "columns": {
+      "AREA_CODE_STATE.area_code": "AREA_CODE_STATE.area_code",
+      "AREA_CODE_STATE.state": "AREA_CODE_STATE.state",
+      "CONTESTANTS.contestant_number": "CONTESTANTS.contestant_number",
+      "CONTESTANTS.contestant_name": "CONTESTANTS.contestant_name",
+      "VOTES.vote_id": "VOTES.vote_id",
+      "VOTES.phone_number": "VOTES.call_up",
+      "VOTES.state": "VOTES.state",
+      "VOTES.contestant_number": "VOTES.contestant_number",
+      "VOTES.created": "VOTES.made"
+    }
+  },
+  "q_B": {
+    "voter_1__syn_v4__q0689": "SELECT \"votes\".\"vote_id\" AS \"vote_id\", \"votes\".\"call_up\" AS \"phone_number\", \"votes\".\"state\" AS \"state\" FROM \"VOTES\" AS \"votes\"",
+    "voter_1__syn_v4__q0691": "SELECT MAX(\"votes\".\"made\") AS \"_col_0\" FROM \"VOTES\" AS \"votes\" WHERE \"votes\".\"state\" = 'CA'",
+    "voter_1__syn_v4__q0693": "SELECT DISTINCT \"votes\".\"state\" AS \"state\", \"votes\".\"made\" AS \"created\" FROM \"VOTES\" AS \"votes\"",
+    "voter_1__syn_v4__q0699": "SELECT \"t2\".\"made\" AS \"created\", \"t2\".\"state\" AS \"state\", \"t2\".\"call_up\" AS \"phone_number\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_number\" WHERE \"t1\".\"contestant_name\" = 'Tabatha Gehling'"
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "semantic"
+}

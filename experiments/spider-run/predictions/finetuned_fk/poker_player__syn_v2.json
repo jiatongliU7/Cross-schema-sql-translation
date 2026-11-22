@@ -1,0 +1,208 @@
+{
+  "tables": {
+    "poker_player": [
+      [
+        "poker_player",
+        1.000000238418579
+      ],
+      [
+        "people",
+        0.39120233058929443
+      ]
+    ],
+    "people": [
+      [
+        "people",
+        0.9999998807907104
+      ],
+      [
+        "poker_player",
+        0.39120233058929443
+      ]
+    ]
+  },
+  "columns": {
+    "poker_player.Poker_Player_ID": [
+      [
+        "poker_player.Poker_Player_ID",
+        1.0
+      ],
+      [
+        "poker_player.People_ID",
+        0.8473939299583435
+      ],
+      [
+        "poker_player.Final_Table_Made",
+        0.829016387462616
+      ]
+    ],
+    "poker_player.People_ID": [
+      [
+        "poker_player.People_ID",
+        0.9999997615814209
+      ],
+      [
+        "poker_player.Poker_Player_ID",
+        0.8473939299583435
+      ],
+      [
+        "poker_player.Final_Table_Made",
+        0.7069296836853027
+      ]
+    ],
+    "poker_player.Final_Table_Made": [
+      [
+        "poker_player.Final_Table_Made",
+        1.0000001192092896
+      ],
+      [
+        "poker_player.Best_Finish",
+        0.8548141717910767
+      ],
+      [
+        "poker_player.Poker_Player_ID",
+        0.829016387462616
+      ]
+    ],
+    "poker_player.Best_Finish": [
+      [
+        "poker_player.Best_Finish",
+        0.9999998807907104
+      ],
+      [
+        "poker_player.Final_Table_Made",
+        0.8548141717910767
+      ],
+      [
+        "poker_player.Poker_Player_ID",
+        0.7583421468734741
+      ]
+    ],
+    "poker_player.Money_Rank": [
+      [
+        "poker_player.money_tier",
+        0.8500412702560425
+      ],
+      [
+        "poker_player.Poker_Player_ID",
+        0.7662296295166016
+      ],
+      [
+        "poker_player.Earnings",
+        0.7434458136558533
+      ]
+    ],
+    "poker_player.Earnings": [
+      [
+        "poker_player.Earnings",
+        1.0000001192092896
+      ],
+      [
+        "poker_player.money_tier",
+        0.7665373086929321
+      ],
+      [
+        "poker_player.Final_Table_Made",
+        0.684179425239563
+      ]
+    ],
+    "people.People_ID": [
+      [
+        "people.People_ID",
+        1.0
+      ],
+      [
+        "poker_player.People_ID",
+        0.6909483075141907
+      ],
+      [
+        "people.Height",
+        0.6616197824478149
+      ]
+    ],
+    "people.Nationality": [
+      [
+        "people.Nationality",
+        1.0
+      ],
+      [
+        "people.Name",
+        0.745969831943512
+      ],
+      [
+        "people.Birth_Date",
+        0.6796841621398926
+      ]
+    ],
+    "people.Name": [
+      [
+        "people.Name",
+        0.9999999403953552
+      ],
+      [
+        "people.Nationality",
+        0.745969831943512
+      ],
+      [
+        "people.Birth_Date",
+        0.6955595016479492
+      ]
+    ],
+    "people.Birth_Date": [
+      [
+        "people.Birth_Date",
+        0.9999998807907104
+      ],
+      [
+        "people.Name",
+        0.6955595016479492
+      ],
+      [
+        "people.Nationality",
+        0.6796841621398926
+      ]
+    ],
+    "people.Height": [
+      [
+        "people.Height",
+        1.0
+      ],
+      [
+        "people.People_ID",
+        0.6616197824478149
+      ],
+      [
+        "people.Name",
+        0.5536375641822815
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "poker_player": "poker_player",
+      "people": "people"
+    },
+    "columns": {
+      "poker_player.Poker_Player_ID": "poker_player.Poker_Player_ID",
+      "poker_player.People_ID": "poker_player.People_ID",
+      "poker_player.Final_Table_Made": "poker_player.Final_Table_Made",
+      "poker_player.Best_Finish": "poker_player.Best_Finish",
+      "poker_player.Money_Rank": "poker_player.money_tier",
+      "poker_player.Earnings": "poker_player.Earnings",
+      "people.People_ID": "people.People_ID",
+      "people.Nationality": "people.Nationality",
+      "people.Name": "people.Name",
+      "people.Birth_Date": "people.Birth_Date",
+      "people.Height": "people.Height"
+    }
+  },
+  "q_B": {
+    "poker_player__syn_v2__q0655": "SELECT \"poker_player\".\"money_tier\" AS \"money_rank\" FROM \"poker_player\" AS \"poker_player\" ORDER BY \"poker_player\".\"Earnings\" DESC LIMIT 1",
+    "poker_player__syn_v2__q0656": "SELECT \"poker_player\".\"money_tier\" AS \"money_rank\" FROM \"poker_player\" AS \"poker_player\" ORDER BY \"poker_player\".\"Earnings\" DESC LIMIT 1",
+    "poker_player__syn_v2__q0667": "SELECT \"t2\".\"money_tier\" AS \"money_rank\" FROM \"people\" AS \"t1\" JOIN \"poker_player\" AS \"t2\" ON \"t1\".\"People_ID\" = \"t2\".\"People_ID\" ORDER BY \"t1\".\"Height\" DESC LIMIT 1",
+    "poker_player__syn_v2__q0668": "SELECT \"t2\".\"money_tier\" AS \"money_rank\" FROM \"people\" AS \"t1\" JOIN \"poker_player\" AS \"t2\" ON \"t1\".\"People_ID\" = \"t2\".\"People_ID\" ORDER BY \"t1\".\"Height\" DESC LIMIT 1"
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "fk"
+}

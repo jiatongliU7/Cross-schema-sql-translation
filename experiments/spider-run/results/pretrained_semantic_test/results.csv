@@ -1,0 +1,6 @@
+method,group,n_queries,gold_sql_errors,pred_sql_executable_rate,execution_equivalence,missing_sql,prediction_sql_errors,table_accuracy,column_accuracy,column_top1_accuracy,column_top3_recall,n_tables,n_columns
+pretrained_semantic,overall,1515,0,1.0,0.920792,0,0,1.0,0.982979,0.812766,0.912766,180,940
+pretrained_semantic,level=L2,823,0,1.0,0.951397,0,0,,,,,,
+pretrained_semantic,level=L3,692,0,1.0,0.884393,0,0,,,,,,
+pretrained_semantic,is_join=false,849,0,1.0,0.912839,0,0,,,,,,
+pretrained_semantic,is_join=true,666,0,1.0,0.930931,0,0,,,,,,

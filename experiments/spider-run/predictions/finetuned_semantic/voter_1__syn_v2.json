@@ -1,0 +1,204 @@
+{
+  "tables": {
+    "AREA_CODE_STATE": [
+      [
+        "AREA_CODE_STATE",
+        1.0000003576278687
+      ],
+      [
+        "VOTES",
+        0.1973550021648407
+      ],
+      [
+        "CONTESTANTS",
+        0.14207851886749268
+      ]
+    ],
+    "CONTESTANTS": [
+      [
+        "CONTESTANTS",
+        1.0000004768371582
+      ],
+      [
+        "VOTES",
+        0.5243142247200012
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.14207851886749268
+      ]
+    ],
+    "VOTES": [
+      [
+        "VOTES",
+        1.0
+      ],
+      [
+        "CONTESTANTS",
+        0.5243142247200012
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.1973550021648407
+      ]
+    ]
+  },
+  "columns": {
+    "AREA_CODE_STATE.area_code": [
+      [
+        "AREA_CODE_STATE.area_code",
+        0.9999998807907104
+      ],
+      [
+        "AREA_CODE_STATE.state",
+        0.8685569167137146
+      ],
+      [
+        "VOTES.phone_number",
+        0.30504071712493896
+      ]
+    ],
+    "AREA_CODE_STATE.state": [
+      [
+        "AREA_CODE_STATE.state",
+        1.0000003576278687
+      ],
+      [
+        "AREA_CODE_STATE.area_code",
+        0.8685569167137146
+      ],
+      [
+        "VOTES.state",
+        0.4071149230003357
+      ]
+    ],
+    "CONTESTANTS.contestant_number": [
+      [
+        "CONTESTANTS.contestant_number",
+        1.0
+      ],
+      [
+        "VOTES.contestant_number",
+        0.8877992630004883
+      ],
+      [
+        "CONTESTANTS.participant",
+        0.6813724040985107
+      ]
+    ],
+    "CONTESTANTS.contestant_name": [
+      [
+        "CONTESTANTS.participant",
+        0.8422242999076843
+      ],
+      [
+        "CONTESTANTS.contestant_number",
+        0.603079080581665
+      ],
+      [
+        "VOTES.contestant_number",
+        0.5071039795875549
+      ]
+    ],
+    "VOTES.vote_id": [
+      [
+        "VOTES.vote_id",
+        0.9999997615814209
+      ],
+      [
+        "VOTES.created",
+        0.777408242225647
+      ],
+      [
+        "VOTES.phone_number",
+        0.752924382686615
+      ]
+    ],
+    "VOTES.phone_number": [
+      [
+        "VOTES.phone_number",
+        0.9999998807907104
+      ],
+      [
+        "VOTES.vote_id",
+        0.752924382686615
+      ],
+      [
+        "VOTES.contestant_number",
+        0.7326101064682007
+      ]
+    ],
+    "VOTES.state": [
+      [
+        "VOTES.state",
+        1.000000238418579
+      ],
+      [
+        "VOTES.vote_id",
+        0.6617735624313354
+      ],
+      [
+        "VOTES.created",
+        0.5948090553283691
+      ]
+    ],
+    "VOTES.contestant_number": [
+      [
+        "VOTES.contestant_number",
+        0.9999998807907104
+      ],
+      [
+        "CONTESTANTS.contestant_number",
+        0.8877992630004883
+      ],
+      [
+        "VOTES.vote_id",
+        0.7387349605560303
+      ]
+    ],
+    "VOTES.created": [
+      [
+        "VOTES.created",
+        1.0
+      ],
+      [
+        "VOTES.vote_id",
+        0.777408242225647
+      ],
+      [
+        "VOTES.phone_number",
+        0.6945390701293945
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "AREA_CODE_STATE": "AREA_CODE_STATE",
+      "CONTESTANTS": "CONTESTANTS",
+      "VOTES": "VOTES"
+    },
+    "columns": {
+      "AREA_CODE_STATE.area_code": "AREA_CODE_STATE.area_code",
+      "AREA_CODE_STATE.state": "AREA_CODE_STATE.state",
+      "CONTESTANTS.contestant_number": "CONTESTANTS.contestant_number",
+      "CONTESTANTS.contestant_name": "CONTESTANTS.participant",
+      "VOTES.vote_id": "VOTES.vote_id",
+      "VOTES.phone_number": "VOTES.phone_number",
+      "VOTES.state": "VOTES.state",
+      "VOTES.contestant_number": "VOTES.contestant_number",
+      "VOTES.created": "VOTES.created"
+    }
+  },
+  "q_B": {
+    "voter_1__syn_v2__q0688": "SELECT \"contestants\".\"contestant_number\" AS \"contestant_number\", \"contestants\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"contestants\" ORDER BY \"contestant_name\" DESC",
+    "voter_1__syn_v2__q0692": "SELECT \"contestants\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"contestants\" WHERE \"contestants\".\"participant\" <> 'Jessie Alloway'",
+    "voter_1__syn_v2__q0694": "SELECT \"t1\".\"contestant_number\" AS \"contestant_number\", \"t1\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_number\" GROUP BY \"t1\".\"contestant_number\" HAVING COUNT(*) >= 2",
+    "voter_1__syn_v2__q0695": "SELECT \"t1\".\"contestant_number\" AS \"contestant_number\", \"t1\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_number\" GROUP BY \"t1\".\"contestant_number\" ORDER BY COUNT(*) ASC LIMIT 1",
+    "voter_1__syn_v2__q0699": "SELECT \"t2\".\"created\" AS \"created\", \"t2\".\"state\" AS \"state\", \"t2\".\"phone_number\" AS \"phone_number\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_number\" WHERE \"t1\".\"participant\" = 'Tabatha Gehling'",
+    "voter_1__syn_v2__q0700": "SELECT \"t3\".\"area_code\" AS \"area_code\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_number\" JOIN \"AREA_CODE_STATE\" AS \"t3\" ON \"t2\".\"state\" = \"t3\".\"state\" WHERE \"t1\".\"participant\" = 'Tabatha Gehling' INTERSECT SELECT \"t3\".\"area_code\" AS \"area_code\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_number\" JOIN \"AREA_CODE_STATE\" AS \"t3\" ON \"t2\".\"state\" = \"t3\".\"state\" WHERE \"t1\".\"participant\" = 'Kelly Clauss'",
+    "voter_1__syn_v2__q0701": "SELECT \"contestants\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"contestants\" WHERE \"contestants\".\"participant\" LIKE '%al%'"
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "semantic"
+}

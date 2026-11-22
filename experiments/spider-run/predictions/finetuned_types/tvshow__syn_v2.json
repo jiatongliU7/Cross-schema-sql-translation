@@ -1,0 +1,457 @@
+{
+  "tables": {
+    "TV_Channel": [
+      [
+        "TV_Channel",
+        1.0
+      ],
+      [
+        "TV_series",
+        0.6941375732421875
+      ],
+      [
+        "Cartoon",
+        0.35530829429626465
+      ]
+    ],
+    "TV_series": [
+      [
+        "TV_series",
+        0.9999998807907104
+      ],
+      [
+        "TV_Channel",
+        0.6941375732421875
+      ],
+      [
+        "Cartoon",
+        0.49986281991004944
+      ]
+    ],
+    "Cartoon": [
+      [
+        "Cartoon",
+        1.000000238418579
+      ],
+      [
+        "TV_series",
+        0.49986281991004944
+      ],
+      [
+        "TV_Channel",
+        0.35530829429626465
+      ]
+    ]
+  },
+  "columns": {
+    "TV_Channel.id": [
+      [
+        "TV_Channel.id",
+        1.0
+      ],
+      [
+        "TV_Channel.Content",
+        0.8416573405265808
+      ],
+      [
+        "TV_series.Channel",
+        0.7558974027633667
+      ]
+    ],
+    "TV_Channel.series_name": [
+      [
+        "TV_Channel.series_name",
+        1.0000001192092896
+      ],
+      [
+        "TV_series.Channel",
+        0.858601450920105
+      ],
+      [
+        "TV_series.Episode",
+        0.7268573045730591
+      ]
+    ],
+    "TV_Channel.Country": [
+      [
+        "TV_Channel.Country",
+        1.000000238418579
+      ],
+      [
+        "TV_Channel.Language",
+        0.7748702764511108
+      ],
+      [
+        "TV_Channel.Content",
+        0.756845235824585
+      ]
+    ],
+    "TV_Channel.Language": [
+      [
+        "TV_Channel.Language",
+        0.9999998807907104
+      ],
+      [
+        "TV_Channel.Content",
+        0.7905437350273132
+      ],
+      [
+        "TV_Channel.Country",
+        0.7748702764511108
+      ]
+    ],
+    "TV_Channel.Content": [
+      [
+        "TV_Channel.Content",
+        1.0
+      ],
+      [
+        "TV_series.Channel",
+        0.8551690578460693
+      ],
+      [
+        "TV_Channel.id",
+        0.8416573405265808
+      ]
+    ],
+    "TV_Channel.Pixel_aspect_ratio_PAR": [
+      [
+        "TV_Channel.Pixel_aspect_ratio_PAR",
+        1.0
+      ],
+      [
+        "TV_Channel.Content",
+        0.6219310760498047
+      ],
+      [
+        "TV_series.Channel",
+        0.5841120481491089
+      ]
+    ],
+    "TV_Channel.Hight_definition_TV": [
+      [
+        "TV_Channel.Hight_definition_TV",
+        1.0
+      ],
+      [
+        "TV_Channel.Content",
+        0.8130542039871216
+      ],
+      [
+        "TV_Channel.Package_Option",
+        0.7342907786369324
+      ]
+    ],
+    "TV_Channel.Pay_per_view_PPV": [
+      [
+        "TV_Channel.Pay_per_view_PPV",
+        1.0000001192092896
+      ],
+      [
+        "TV_Channel.Content",
+        0.6990695595741272
+      ],
+      [
+        "TV_Channel.Package_Option",
+        0.6722626686096191
+      ]
+    ],
+    "TV_Channel.Package_Option": [
+      [
+        "TV_Channel.Package_Option",
+        1.000000238418579
+      ],
+      [
+        "TV_Channel.Content",
+        0.807538628578186
+      ],
+      [
+        "TV_Channel.Language",
+        0.7352108955383301
+      ]
+    ],
+    "TV_series.id": [
+      [
+        "TV_series.id",
+        1.0000001192092896
+      ],
+      [
+        "TV_series.Share",
+        0.7823470830917358
+      ],
+      [
+        "TV_series.Channel",
+        0.6727281808853149
+      ]
+    ],
+    "TV_series.Episode": [
+      [
+        "TV_series.Episode",
+        1.0000001192092896
+      ],
+      [
+        "TV_series.Channel",
+        0.8262768387794495
+      ],
+      [
+        "TV_series.Viewers_m",
+        0.7867636680603027
+      ]
+    ],
+    "TV_series.Air_Date": [
+      [
+        "TV_series.Air_Date",
+        1.0000001192092896
+      ],
+      [
+        "TV_series.Channel",
+        0.6950926780700684
+      ],
+      [
+        "Cartoon.Original_air_date",
+        0.6919352412223816
+      ]
+    ],
+    "TV_series.Rating": [
+      [
+        "TV_series.Rating",
+        1.000000238418579
+      ],
+      [
+        "TV_series.18_49_Rating_Share",
+        0.8572847843170166
+      ],
+      [
+        "TV_series.Viewers_m",
+        0.6906389594078064
+      ]
+    ],
+    "TV_series.Share": [
+      [
+        "TV_series.Share",
+        0.9999998211860657
+      ],
+      [
+        "TV_series.id",
+        0.7823470830917358
+      ],
+      [
+        "TV_series.Channel",
+        0.6818288564682007
+      ]
+    ],
+    "TV_series.18_49_Rating_Share": [
+      [
+        "TV_series.18_49_Rating_Share",
+        1.000000238418579
+      ],
+      [
+        "TV_series.Rating",
+        0.8572847843170166
+      ],
+      [
+        "TV_series.Share",
+        0.6351327300071716
+      ]
+    ],
+    "TV_series.Viewers_m": [
+      [
+        "TV_series.Viewers_m",
+        0.9999998807907104
+      ],
+      [
+        "TV_series.Channel",
+        0.7945740222930908
+      ],
+      [
+        "TV_series.Episode",
+        0.7867636680603027
+      ]
+    ],
+    "TV_series.Weekly_Rank": [
+      [
+        "TV_series.Weekly_Rank",
+        0.9999999403953552
+      ],
+      [
+        "TV_series.id",
+        0.6309077739715576
+      ],
+      [
+        "TV_series.Share",
+        0.6308429837226868
+      ]
+    ],
+    "TV_series.Channel": [
+      [
+        "TV_series.Channel",
+        0.9999999403953552
+      ],
+      [
+        "TV_Channel.series_name",
+        0.858601450920105
+      ],
+      [
+        "TV_Channel.Content",
+        0.8551690578460693
+      ]
+    ],
+    "Cartoon.id": [
+      [
+        "Cartoon.id",
+        1.0000001192092896
+      ],
+      [
+        "Cartoon.Production_code",
+        0.7255306243896484
+      ],
+      [
+        "Cartoon.scripted_by",
+        0.7039419412612915
+      ]
+    ],
+    "Cartoon.Title": [
+      [
+        "Cartoon.Title",
+        1.0
+      ],
+      [
+        "Cartoon.scripted_by",
+        0.7366025447845459
+      ],
+      [
+        "Cartoon.Channel",
+        0.7265911102294922
+      ]
+    ],
+    "Cartoon.Directed_by": [
+      [
+        "Cartoon.scripted_by",
+        0.8418853878974915
+      ],
+      [
+        "Cartoon.Channel",
+        0.8179875612258911
+      ],
+      [
+        "Cartoon.director",
+        0.7917216420173645
+      ]
+    ],
+    "Cartoon.Written_by": [
+      [
+        "Cartoon.scripted_by",
+        0.8947495222091675
+      ],
+      [
+        "Cartoon.Channel",
+        0.8479753732681274
+      ],
+      [
+        "Cartoon.Title",
+        0.7839370369911194
+      ]
+    ],
+    "Cartoon.Original_air_date": [
+      [
+        "Cartoon.Original_air_date",
+        1.0
+      ],
+      [
+        "TV_series.Air_Date",
+        0.6919352412223816
+      ],
+      [
+        "Cartoon.scripted_by",
+        0.5630638599395752
+      ]
+    ],
+    "Cartoon.Production_code": [
+      [
+        "Cartoon.Production_code",
+        1.0
+      ],
+      [
+        "Cartoon.id",
+        0.7255306243896484
+      ],
+      [
+        "Cartoon.scripted_by",
+        0.6718669533729553
+      ]
+    ],
+    "Cartoon.Channel": [
+      [
+        "Cartoon.Channel",
+        1.0
+      ],
+      [
+        "Cartoon.scripted_by",
+        0.8321578502655029
+      ],
+      [
+        "Cartoon.Title",
+        0.7265911102294922
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "TV_Channel": "TV_Channel",
+      "TV_series": "TV_series",
+      "Cartoon": "Cartoon"
+    },
+    "columns": {
+      "TV_Channel.id": "TV_Channel.id",
+      "TV_Channel.series_name": "TV_Channel.series_name",
+      "TV_Channel.Country": "TV_Channel.Country",
+      "TV_Channel.Language": "TV_Channel.Language",
+      "TV_Channel.Content": "TV_Channel.Content",
+      "TV_Channel.Pixel_aspect_ratio_PAR": "TV_Channel.Pixel_aspect_ratio_PAR",
+      "TV_Channel.Hight_definition_TV": "TV_Channel.Hight_definition_TV",
+      "TV_Channel.Pay_per_view_PPV": "TV_Channel.Pay_per_view_PPV",
+      "TV_Channel.Package_Option": "TV_Channel.Package_Option",
+      "TV_series.id": "TV_series.id",
+      "TV_series.Episode": "TV_series.Episode",
+      "TV_series.Air_Date": "TV_series.Air_Date",
+      "TV_series.Rating": "TV_series.Rating",
+      "TV_series.Share": "TV_series.Share",
+      "TV_series.18_49_Rating_Share": "TV_series.18_49_Rating_Share",
+      "TV_series.Viewers_m": "TV_series.Viewers_m",
+      "TV_series.Weekly_Rank": "TV_series.Weekly_Rank",
+      "TV_series.Channel": "TV_series.Channel",
+      "Cartoon.id": "Cartoon.id",
+      "Cartoon.Title": "Cartoon.Title",
+      "Cartoon.Directed_by": "Cartoon.director",
+      "Cartoon.Written_by": "Cartoon.scripted_by",
+      "Cartoon.Original_air_date": "Cartoon.Original_air_date",
+      "Cartoon.Production_code": "Cartoon.Production_code",
+      "Cartoon.Channel": "Cartoon.Channel"
+    }
+  },
+  "q_B": {
+    "tvshow__syn_v2__q0587": "SELECT \"cartoon\".\"Title\" AS \"title\" FROM \"Cartoon\" AS \"cartoon\" WHERE \"cartoon\".\"director\" = 'Ben Jones'",
+    "tvshow__syn_v2__q0588": "SELECT \"cartoon\".\"Title\" AS \"title\" FROM \"Cartoon\" AS \"cartoon\" WHERE \"cartoon\".\"director\" = 'Ben Jones'",
+    "tvshow__syn_v2__q0589": "SELECT COUNT(*) AS \"_col_0\" FROM \"Cartoon\" AS \"cartoon\" WHERE \"cartoon\".\"scripted_by\" = 'Joseph Kuhr'",
+    "tvshow__syn_v2__q0590": "SELECT COUNT(*) AS \"_col_0\" FROM \"Cartoon\" AS \"cartoon\" WHERE \"cartoon\".\"scripted_by\" = 'Joseph Kuhr'",
+    "tvshow__syn_v2__q0591": "SELECT \"cartoon\".\"Title\" AS \"title\", \"cartoon\".\"director\" AS \"directed_by\" FROM \"Cartoon\" AS \"cartoon\" ORDER BY \"cartoon\".\"Original_air_date\"",
+    "tvshow__syn_v2__q0592": "SELECT \"cartoon\".\"Title\" AS \"title\", \"cartoon\".\"director\" AS \"directed_by\" FROM \"Cartoon\" AS \"cartoon\" ORDER BY \"cartoon\".\"Original_air_date\"",
+    "tvshow__syn_v2__q0593": "SELECT \"cartoon\".\"Title\" AS \"title\" FROM \"Cartoon\" AS \"cartoon\" WHERE \"cartoon\".\"director\" = 'Ben Jones' OR \"cartoon\".\"director\" = 'Brandon Vietti'",
+    "tvshow__syn_v2__q0594": "SELECT \"cartoon\".\"Title\" AS \"title\" FROM \"Cartoon\" AS \"cartoon\" WHERE \"cartoon\".\"director\" = 'Ben Jones' OR \"cartoon\".\"director\" = 'Brandon Vietti'",
+    "tvshow__syn_v2__q0627": "SELECT COUNT(*) AS \"_col_0\", \"cartoon\".\"director\" AS \"directed_by\" FROM \"Cartoon\" AS \"cartoon\" GROUP BY \"cartoon\".\"director\"",
+    "tvshow__syn_v2__q0628": "SELECT COUNT(*) AS \"_col_0\", \"cartoon\".\"director\" AS \"directed_by\" FROM \"Cartoon\" AS \"cartoon\" GROUP BY \"cartoon\".\"director\"",
+    "tvshow__syn_v2__q0633": "SELECT \"t1\".\"Country\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"Channel\" WHERE \"t2\".\"scripted_by\" = 'Todd Casey'",
+    "tvshow__syn_v2__q0634": "SELECT \"t1\".\"Country\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"Channel\" WHERE \"t2\".\"scripted_by\" = 'Todd Casey'",
+    "tvshow__syn_v2__q0635": "SELECT \"tv_channel\".\"Country\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"Country\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"Channel\" WHERE \"t2\".\"scripted_by\" = 'Todd Casey'",
+    "tvshow__syn_v2__q0636": "SELECT \"tv_channel\".\"Country\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"Country\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"Channel\" WHERE \"t2\".\"scripted_by\" = 'Todd Casey'",
+    "tvshow__syn_v2__q0637": "SELECT \"t1\".\"series_name\" AS \"series_name\", \"t1\".\"Country\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"Channel\" WHERE \"t2\".\"director\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"series_name\" AS \"series_name\", \"t1\".\"Country\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"Channel\" WHERE \"t2\".\"director\" = 'Ben Jones'",
+    "tvshow__syn_v2__q0638": "SELECT \"t1\".\"series_name\" AS \"series_name\", \"t1\".\"Country\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"Channel\" WHERE \"t2\".\"director\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"series_name\" AS \"series_name\", \"t1\".\"Country\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"Channel\" WHERE \"t2\".\"director\" = 'Ben Jones'",
+    "tvshow__syn_v2__q0643": "SELECT \"tv_channel\".\"id\" AS \"id\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"cartoon\".\"Channel\" AS \"channel\" FROM \"Cartoon\" AS \"cartoon\" WHERE \"cartoon\".\"director\" = 'Ben Jones'",
+    "tvshow__syn_v2__q0644": "SELECT \"tv_channel\".\"id\" AS \"id\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"cartoon\".\"Channel\" AS \"channel\" FROM \"Cartoon\" AS \"cartoon\" WHERE \"cartoon\".\"director\" = 'Ben Jones'",
+    "tvshow__syn_v2__q0645": "SELECT \"tv_channel\".\"Package_Option\" AS \"package_option\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE NOT \"tv_channel\".\"id\" IN (SELECT \"cartoon\".\"Channel\" AS \"channel\" FROM \"Cartoon\" AS \"cartoon\" WHERE \"cartoon\".\"director\" = 'Ben Jones')",
+    "tvshow__syn_v2__q0646": "SELECT \"tv_channel\".\"Package_Option\" AS \"package_option\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE NOT \"tv_channel\".\"id\" IN (SELECT \"cartoon\".\"Channel\" AS \"channel\" FROM \"Cartoon\" AS \"cartoon\" WHERE \"cartoon\".\"director\" = 'Ben Jones')"
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "types"
+}

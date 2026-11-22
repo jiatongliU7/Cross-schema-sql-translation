@@ -1,0 +1,207 @@
+{
+  "tables": {
+    "AREA_CODE_STATE": [
+      [
+        "AREA_CODE_STATE",
+        0.9999998211860657
+      ],
+      [
+        "VOTES",
+        0.36342793703079224
+      ],
+      [
+        "CONTESTANTS",
+        0.3123626112937927
+      ]
+    ],
+    "CONTESTANTS": [
+      [
+        "CONTESTANTS",
+        1.0
+      ],
+      [
+        "VOTES",
+        0.6677219867706299
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.3123626112937927
+      ]
+    ],
+    "VOTES": [
+      [
+        "VOTES",
+        0.9999998807907104
+      ],
+      [
+        "CONTESTANTS",
+        0.6677219867706299
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.36342793703079224
+      ]
+    ]
+  },
+  "columns": {
+    "AREA_CODE_STATE.area_code": [
+      [
+        "AREA_CODE_STATE.state",
+        0.9524585008621216
+      ],
+      [
+        "AREA_CODE_STATE.region_digits",
+        0.9515920281410217
+      ],
+      [
+        "VOTES.phone_number",
+        0.7252955436706543
+      ]
+    ],
+    "AREA_CODE_STATE.state": [
+      [
+        "AREA_CODE_STATE.state",
+        0.9999999403953552
+      ],
+      [
+        "AREA_CODE_STATE.region_digits",
+        0.9023550152778625
+      ],
+      [
+        "VOTES.state",
+        0.774655818939209
+      ]
+    ],
+    "CONTESTANTS.contestant_number": [
+      [
+        "CONTESTANTS.competitor_digits",
+        0.9316961765289307
+      ],
+      [
+        "CONTESTANTS.participant",
+        0.9062508344650269
+      ],
+      [
+        "VOTES.competitor_digits",
+        0.8464202880859375
+      ]
+    ],
+    "CONTESTANTS.contestant_name": [
+      [
+        "CONTESTANTS.participant",
+        0.9724680781364441
+      ],
+      [
+        "CONTESTANTS.competitor_digits",
+        0.8411234021186829
+      ],
+      [
+        "VOTES.state",
+        0.7782139778137207
+      ]
+    ],
+    "VOTES.vote_id": [
+      [
+        "VOTES.vote_id",
+        1.0000001192092896
+      ],
+      [
+        "VOTES.created",
+        0.9414607286453247
+      ],
+      [
+        "VOTES.state",
+        0.9053082466125488
+      ]
+    ],
+    "VOTES.phone_number": [
+      [
+        "VOTES.phone_number",
+        0.9999996423721313
+      ],
+      [
+        "VOTES.vote_id",
+        0.9027066826820374
+      ],
+      [
+        "VOTES.created",
+        0.8947005271911621
+      ]
+    ],
+    "VOTES.state": [
+      [
+        "VOTES.state",
+        1.0000001192092896
+      ],
+      [
+        "VOTES.vote_id",
+        0.9053082466125488
+      ],
+      [
+        "VOTES.created",
+        0.8937534093856812
+      ]
+    ],
+    "VOTES.contestant_number": [
+      [
+        "VOTES.vote_id",
+        0.89341139793396
+      ],
+      [
+        "VOTES.competitor_digits",
+        0.8920403718948364
+      ],
+      [
+        "VOTES.created",
+        0.8899577856063843
+      ]
+    ],
+    "VOTES.created": [
+      [
+        "VOTES.created",
+        1.000000238418579
+      ],
+      [
+        "VOTES.vote_id",
+        0.9414607286453247
+      ],
+      [
+        "VOTES.phone_number",
+        0.8947005271911621
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "AREA_CODE_STATE": "AREA_CODE_STATE",
+      "CONTESTANTS": "CONTESTANTS",
+      "VOTES": "VOTES"
+    },
+    "columns": {
+      "AREA_CODE_STATE.area_code": "AREA_CODE_STATE.region_digits",
+      "AREA_CODE_STATE.state": "AREA_CODE_STATE.state",
+      "CONTESTANTS.contestant_number": "CONTESTANTS.competitor_digits",
+      "CONTESTANTS.contestant_name": "CONTESTANTS.participant",
+      "VOTES.vote_id": "VOTES.vote_id",
+      "VOTES.phone_number": "VOTES.phone_number",
+      "VOTES.state": "VOTES.state",
+      "VOTES.contestant_number": "VOTES.competitor_digits",
+      "VOTES.created": "VOTES.created"
+    }
+  },
+  "q_B": {
+    "voter_1__syn_v0__q0688": "SELECT \"contestants\".\"competitor_digits\" AS \"contestant_number\", \"contestants\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"contestants\" ORDER BY \"contestant_name\" DESC",
+    "voter_1__syn_v0__q0690": "SELECT MAX(\"area_code_state\".\"region_digits\") AS \"_col_0\", MIN(\"area_code_state\".\"region_digits\") AS \"_col_1\" FROM \"AREA_CODE_STATE\" AS \"area_code_state\"",
+    "voter_1__syn_v0__q0692": "SELECT \"contestants\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"contestants\" WHERE \"contestants\".\"participant\" <> 'Jessie Alloway'",
+    "voter_1__syn_v0__q0694": "SELECT \"t1\".\"competitor_digits\" AS \"contestant_number\", \"t1\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"competitor_digits\" = \"t2\".\"competitor_digits\" GROUP BY \"t1\".\"competitor_digits\" HAVING COUNT(*) >= 2",
+    "voter_1__syn_v0__q0695": "SELECT \"t1\".\"competitor_digits\" AS \"contestant_number\", \"t1\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"competitor_digits\" = \"t2\".\"competitor_digits\" GROUP BY \"t1\".\"competitor_digits\" ORDER BY COUNT(*) ASC LIMIT 1",
+    "voter_1__syn_v0__q0697": "SELECT COUNT(*) AS \"_col_0\" FROM \"CONTESTANTS\" AS \"contestants\" WHERE NOT \"contestants\".\"competitor_digits\" IN (SELECT \"votes\".\"competitor_digits\" AS \"contestant_number\" FROM \"VOTES\" AS \"votes\")",
+    "voter_1__syn_v0__q0698": "SELECT \"t1\".\"region_digits\" AS \"area_code\" FROM \"AREA_CODE_STATE\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"state\" = \"t2\".\"state\" GROUP BY \"t1\".\"region_digits\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "voter_1__syn_v0__q0699": "SELECT \"t2\".\"created\" AS \"created\", \"t2\".\"state\" AS \"state\", \"t2\".\"phone_number\" AS \"phone_number\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"competitor_digits\" = \"t2\".\"competitor_digits\" WHERE \"t1\".\"participant\" = 'Tabatha Gehling'",
+    "voter_1__syn_v0__q0700": "SELECT \"t3\".\"region_digits\" AS \"area_code\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"competitor_digits\" = \"t2\".\"competitor_digits\" JOIN \"AREA_CODE_STATE\" AS \"t3\" ON \"t2\".\"state\" = \"t3\".\"state\" WHERE \"t1\".\"participant\" = 'Tabatha Gehling' INTERSECT SELECT \"t3\".\"region_digits\" AS \"area_code\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"competitor_digits\" = \"t2\".\"competitor_digits\" JOIN \"AREA_CODE_STATE\" AS \"t3\" ON \"t2\".\"state\" = \"t3\".\"state\" WHERE \"t1\".\"participant\" = 'Kelly Clauss'",
+    "voter_1__syn_v0__q0701": "SELECT \"contestants\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"contestants\" WHERE \"contestants\".\"participant\" LIKE '%al%'"
+  },
+  "rewrite_errors": {},
+  "model": "all-MiniLM-L6-v2",
+  "method": "semantic"
+}

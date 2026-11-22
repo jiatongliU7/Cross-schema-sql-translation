@@ -1,0 +1,301 @@
+{
+  "tables": {
+    "airlines": [
+      [
+        "airlines",
+        0.9999996423721313
+      ],
+      [
+        "flights",
+        0.8766164779663086
+      ],
+      [
+        "airports",
+        0.760765552520752
+      ]
+    ],
+    "airports": [
+      [
+        "airports",
+        1.0
+      ],
+      [
+        "flights",
+        0.7670924663543701
+      ],
+      [
+        "airlines",
+        0.760765552520752
+      ]
+    ],
+    "flights": [
+      [
+        "flights",
+        0.9999998807907104
+      ],
+      [
+        "airlines",
+        0.8766164779663086
+      ],
+      [
+        "airports",
+        0.7670924663543701
+      ]
+    ]
+  },
+  "columns": {
+    "airlines.uid": [
+      [
+        "airlines.airline",
+        0.9495959281921387
+      ],
+      [
+        "flights.Airline",
+        0.9328206181526184
+      ],
+      [
+        "flights.FlightNo",
+        0.9031591415405273
+      ]
+    ],
+    "airlines.Airline": [
+      [
+        "airlines.Country",
+        0.9624093770980835
+      ],
+      [
+        "airlines.Abbreviation",
+        0.9619606137275696
+      ],
+      [
+        "airlines.airline",
+        0.95070481300354
+      ]
+    ],
+    "airlines.Abbreviation": [
+      [
+        "airlines.Abbreviation",
+        0.9999999403953552
+      ],
+      [
+        "airlines.Country",
+        0.9302493333816528
+      ],
+      [
+        "airlines.air_company_name",
+        0.9204562306404114
+      ]
+    ],
+    "airlines.Country": [
+      [
+        "airlines.Country",
+        1.0000001192092896
+      ],
+      [
+        "airlines.Abbreviation",
+        0.9302493333816528
+      ],
+      [
+        "airlines.air_company_name",
+        0.9139353036880493
+      ]
+    ],
+    "airports.City": [
+      [
+        "airports.City",
+        1.0
+      ],
+      [
+        "airports.state",
+        0.9549741744995117
+      ],
+      [
+        "airports.AirportCode",
+        0.9440956115722656
+      ]
+    ],
+    "airports.AirportCode": [
+      [
+        "airports.AirportCode",
+        0.9999998807907104
+      ],
+      [
+        "airports.City",
+        0.9440956115722656
+      ],
+      [
+        "airports.state",
+        0.9397972226142883
+      ]
+    ],
+    "airports.AirportName": [
+      [
+        "airports.City",
+        0.9623910188674927
+      ],
+      [
+        "airports.AirportCode",
+        0.95855313539505
+      ],
+      [
+        "airports.airdrome",
+        0.9517708420753479
+      ]
+    ],
+    "airports.Country": [
+      [
+        "airports.City",
+        0.9636943340301514
+      ],
+      [
+        "airports.state",
+        0.956088125705719
+      ],
+      [
+        "airports.AirportCode",
+        0.9498327374458313
+      ]
+    ],
+    "airports.CountryAbbrev": [
+      [
+        "airports.CountryAbbrev",
+        1.0000003576278687
+      ],
+      [
+        "airports.City",
+        0.9140211343765259
+      ],
+      [
+        "airports.AirportCode",
+        0.9139649271965027
+      ]
+    ],
+    "flights.Airline": [
+      [
+        "flights.Airline",
+        0.9999998807907104
+      ],
+      [
+        "airlines.airline",
+        0.985214114189148
+      ],
+      [
+        "flights.FlightNo",
+        0.9717479944229126
+      ]
+    ],
+    "flights.FlightNo": [
+      [
+        "flights.FlightNo",
+        1.0
+      ],
+      [
+        "flights.Airline",
+        0.9717479944229126
+      ],
+      [
+        "airlines.airline",
+        0.9403034448623657
+      ]
+    ],
+    "flights.SourceAirport": [
+      [
+        "flights.SourceAirport",
+        0.9999999403953552
+      ],
+      [
+        "flights.DestAirport",
+        0.9547073841094971
+      ],
+      [
+        "airports.AirportCode",
+        0.936363697052002
+      ]
+    ],
+    "flights.DestAirport": [
+      [
+        "flights.DestAirport",
+        1.0
+      ],
+      [
+        "flights.SourceAirport",
+        0.9547073841094971
+      ],
+      [
+        "airports.AirportCode",
+        0.9319273233413696
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "airlines": "airlines",
+      "airports": "airports",
+      "flights": "flights"
+    },
+    "columns": {
+      "airlines.uid": "airlines.airline",
+      "airlines.Airline": "airlines.air_company_name",
+      "airlines.Abbreviation": "airlines.Abbreviation",
+      "airlines.Country": "airlines.Country",
+      "airports.City": "airports.City",
+      "airports.AirportCode": "airports.AirportCode",
+      "airports.AirportName": "airports.airdrome",
+      "airports.Country": "airports.state",
+      "airports.CountryAbbrev": "airports.CountryAbbrev",
+      "flights.Airline": "flights.Airline",
+      "flights.FlightNo": "flights.FlightNo",
+      "flights.SourceAirport": "flights.SourceAirport",
+      "flights.DestAirport": "flights.DestAirport"
+    }
+  },
+  "q_B": {
+    "flight_2__syn_v3__q0179": "SELECT \"airlines\".\"Country\" AS \"country\" FROM \"airlines\" AS \"airlines\" WHERE \"airlines\".\"air_company_name\" = 'JetBlue Airways'",
+    "flight_2__syn_v3__q0180": "SELECT \"airlines\".\"Country\" AS \"country\" FROM \"airlines\" AS \"airlines\" WHERE \"airlines\".\"air_company_name\" = 'JetBlue Airways'",
+    "flight_2__syn_v3__q0181": "SELECT \"airlines\".\"Abbreviation\" AS \"abbreviation\" FROM \"airlines\" AS \"airlines\" WHERE \"airlines\".\"air_company_name\" = 'JetBlue Airways'",
+    "flight_2__syn_v3__q0182": "SELECT \"airlines\".\"Abbreviation\" AS \"abbreviation\" FROM \"airlines\" AS \"airlines\" WHERE \"airlines\".\"air_company_name\" = 'JetBlue Airways'",
+    "flight_2__syn_v3__q0183": "SELECT \"airlines\".\"air_company_name\" AS \"airline\", \"airlines\".\"Abbreviation\" AS \"abbreviation\" FROM \"airlines\" AS \"airlines\" WHERE \"airlines\".\"Country\" = 'USA'",
+    "flight_2__syn_v3__q0184": "SELECT \"airlines\".\"air_company_name\" AS \"airline\", \"airlines\".\"Abbreviation\" AS \"abbreviation\" FROM \"airlines\" AS \"airlines\" WHERE \"airlines\".\"Country\" = 'USA'",
+    "flight_2__syn_v3__q0185": "SELECT \"airports\".\"AirportCode\" AS \"airportcode\", \"airports\".\"airdrome\" AS \"airportname\" FROM \"airports\" AS \"airports\" WHERE \"airports\".\"City\" = 'Anthony'",
+    "flight_2__syn_v3__q0186": "SELECT \"airports\".\"AirportCode\" AS \"airportcode\", \"airports\".\"airdrome\" AS \"airportname\" FROM \"airports\" AS \"airports\" WHERE \"airports\".\"City\" = 'Anthony'",
+    "flight_2__syn_v3__q0193": "SELECT \"airlines\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"airlines\" WHERE \"airlines\".\"Abbreviation\" = 'UAL'",
+    "flight_2__syn_v3__q0194": "SELECT \"airlines\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"airlines\" WHERE \"airlines\".\"Abbreviation\" = 'UAL'",
+    "flight_2__syn_v3__q0197": "SELECT \"airports\".\"City\" AS \"city\", \"airports\".\"state\" AS \"country\" FROM \"airports\" AS \"airports\" WHERE \"airports\".\"airdrome\" = 'Alton'",
+    "flight_2__syn_v3__q0198": "SELECT \"airports\".\"City\" AS \"city\", \"airports\".\"state\" AS \"country\" FROM \"airports\" AS \"airports\" WHERE \"airports\".\"airdrome\" = 'Alton'",
+    "flight_2__syn_v3__q0199": "SELECT \"airports\".\"airdrome\" AS \"airportname\" FROM \"airports\" AS \"airports\" WHERE \"airports\".\"AirportCode\" = 'AKO'",
+    "flight_2__syn_v3__q0200": "SELECT \"airports\".\"airdrome\" AS \"airportname\" FROM \"airports\" AS \"airports\" WHERE \"airports\".\"AirportCode\" = 'AKO'",
+    "flight_2__syn_v3__q0201": "SELECT \"airports\".\"airdrome\" AS \"airportname\" FROM \"airports\" AS \"airports\" WHERE \"airports\".\"City\" = 'Aberdeen'",
+    "flight_2__syn_v3__q0202": "SELECT \"airports\".\"airdrome\" AS \"airportname\" FROM \"airports\" AS \"airports\" WHERE \"airports\".\"City\" = 'Aberdeen'",
+    "flight_2__syn_v3__q0213": "SELECT COUNT(*) AS \"_col_0\" FROM \"flights\" AS \"t1\" JOIN \"airlines\" AS \"t2\" ON \"t1\".\"Airline\" = \"t2\".\"airline\" WHERE \"t2\".\"air_company_name\" = 'JetBlue Airways'",
+    "flight_2__syn_v3__q0214": "SELECT COUNT(*) AS \"_col_0\" FROM \"flights\" AS \"t1\" JOIN \"airlines\" AS \"t2\" ON \"t1\".\"Airline\" = \"t2\".\"airline\" WHERE \"t2\".\"air_company_name\" = 'JetBlue Airways'",
+    "flight_2__syn_v3__q0215": "SELECT COUNT(*) AS \"_col_0\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t2\".\"Airline\" = \"t1\".\"airline\" WHERE \"t1\".\"air_company_name\" = 'United Airlines' AND \"t2\".\"DestAirport\" = 'ASY'",
+    "flight_2__syn_v3__q0216": "SELECT COUNT(*) AS \"_col_0\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t2\".\"Airline\" = \"t1\".\"airline\" WHERE \"t1\".\"air_company_name\" = 'United Airlines' AND \"t2\".\"DestAirport\" = 'ASY'",
+    "flight_2__syn_v3__q0217": "SELECT COUNT(*) AS \"_col_0\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t2\".\"Airline\" = \"t1\".\"airline\" WHERE \"t1\".\"air_company_name\" = 'United Airlines' AND \"t2\".\"SourceAirport\" = 'AHD'",
+    "flight_2__syn_v3__q0218": "SELECT COUNT(*) AS \"_col_0\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t2\".\"Airline\" = \"t1\".\"airline\" WHERE \"t1\".\"air_company_name\" = 'United Airlines' AND \"t2\".\"SourceAirport\" = 'AHD'",
+    "flight_2__syn_v3__q0219": "SELECT COUNT(*) AS \"_col_0\" FROM \"flights\" AS \"t1\" JOIN \"airports\" AS \"t2\" ON \"t1\".\"DestAirport\" = \"t2\".\"AirportCode\" JOIN \"airlines\" AS \"t3\" ON \"t3\".\"airline\" = \"t1\".\"Airline\" WHERE \"t2\".\"City\" = 'Aberdeen' AND \"t3\".\"air_company_name\" = 'United Airlines'",
+    "flight_2__syn_v3__q0220": "SELECT COUNT(*) AS \"_col_0\" FROM \"flights\" AS \"t1\" JOIN \"airports\" AS \"t2\" ON \"t1\".\"DestAirport\" = \"t2\".\"AirportCode\" JOIN \"airlines\" AS \"t3\" ON \"t3\".\"airline\" = \"t1\".\"Airline\" WHERE \"t2\".\"City\" = 'Aberdeen' AND \"t3\".\"air_company_name\" = 'United Airlines'",
+    "flight_2__syn_v3__q0229": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" GROUP BY \"t1\".\"air_company_name\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "flight_2__syn_v3__q0230": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" GROUP BY \"t1\".\"air_company_name\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "flight_2__syn_v3__q0231": "SELECT \"t1\".\"Abbreviation\" AS \"abbreviation\", \"t1\".\"Country\" AS \"country\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" GROUP BY \"t1\".\"air_company_name\" ORDER BY COUNT(*) LIMIT 1",
+    "flight_2__syn_v3__q0232": "SELECT \"t1\".\"Abbreviation\" AS \"abbreviation\", \"t1\".\"Country\" AS \"country\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" GROUP BY \"t1\".\"air_company_name\" ORDER BY COUNT(*) LIMIT 1",
+    "flight_2__syn_v3__q0233": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" WHERE \"t2\".\"SourceAirport\" = 'AHD'",
+    "flight_2__syn_v3__q0234": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" WHERE \"t2\".\"SourceAirport\" = 'AHD'",
+    "flight_2__syn_v3__q0235": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" WHERE \"t2\".\"DestAirport\" = 'AHD'",
+    "flight_2__syn_v3__q0236": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" WHERE \"t2\".\"DestAirport\" = 'AHD'",
+    "flight_2__syn_v3__q0237": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" WHERE \"t2\".\"SourceAirport\" = 'APG' INTERSECT SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" WHERE \"t2\".\"SourceAirport\" = 'CVO'",
+    "flight_2__syn_v3__q0238": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" WHERE \"t2\".\"SourceAirport\" = 'APG' INTERSECT SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" WHERE \"t2\".\"SourceAirport\" = 'CVO'",
+    "flight_2__syn_v3__q0239": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" WHERE \"t2\".\"SourceAirport\" = 'CVO' EXCEPT SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" WHERE \"t2\".\"SourceAirport\" = 'APG'",
+    "flight_2__syn_v3__q0240": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" WHERE \"t2\".\"SourceAirport\" = 'CVO' EXCEPT SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" WHERE \"t2\".\"SourceAirport\" = 'APG'",
+    "flight_2__syn_v3__q0241": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" GROUP BY \"t1\".\"air_company_name\" HAVING COUNT(*) > 10",
+    "flight_2__syn_v3__q0242": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" GROUP BY \"t1\".\"air_company_name\" HAVING COUNT(*) > 10",
+    "flight_2__syn_v3__q0243": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" GROUP BY \"t1\".\"air_company_name\" HAVING COUNT(*) < 200",
+    "flight_2__syn_v3__q0244": "SELECT \"t1\".\"air_company_name\" AS \"airline\" FROM \"airlines\" AS \"t1\" JOIN \"flights\" AS \"t2\" ON \"t1\".\"airline\" = \"t2\".\"Airline\" GROUP BY \"t1\".\"air_company_name\" HAVING COUNT(*) < 200",
+    "flight_2__syn_v3__q0245": "SELECT \"t1\".\"FlightNo\" AS \"flightno\" FROM \"flights\" AS \"t1\" JOIN \"airlines\" AS \"t2\" ON \"t2\".\"airline\" = \"t1\".\"Airline\" WHERE \"t2\".\"air_company_name\" = 'United Airlines'",
+    "flight_2__syn_v3__q0246": "SELECT \"t1\".\"FlightNo\" AS \"flightno\" FROM \"flights\" AS \"t1\" JOIN \"airlines\" AS \"t2\" ON \"t2\".\"airline\" = \"t1\".\"Airline\" WHERE \"t2\".\"air_company_name\" = 'United Airlines'",
+    "flight_2__syn_v3__q0257": "SELECT \"airports\".\"airdrome\" AS \"airportname\" FROM \"airports\" AS \"airports\" WHERE NOT \"airports\".\"AirportCode\" IN (SELECT \"flights\".\"SourceAirport\" AS \"sourceairport\" FROM \"flights\" AS \"flights\" UNION SELECT \"flights\".\"DestAirport\" AS \"destairport\" FROM \"flights\" AS \"flights\")",
+    "flight_2__syn_v3__q0258": "SELECT \"airports\".\"airdrome\" AS \"airportname\" FROM \"airports\" AS \"airports\" WHERE NOT \"airports\".\"AirportCode\" IN (SELECT \"flights\".\"SourceAirport\" AS \"sourceairport\" FROM \"flights\" AS \"flights\" UNION SELECT \"flights\".\"DestAirport\" AS \"destairport\" FROM \"flights\" AS \"flights\")"
+  },
+  "rewrite_errors": {},
+  "model": "all-MiniLM-L6-v2",
+  "method": "semantic"
+}

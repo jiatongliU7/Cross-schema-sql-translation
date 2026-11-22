@@ -1,0 +1,583 @@
+{
+  "tables": {
+    "city": [
+      [
+        "city",
+        1.0000001192092896
+      ],
+      [
+        "country",
+        0.6474554538726807
+      ],
+      [
+        "countrylanguage",
+        0.47726571559906006
+      ]
+    ],
+    "sqlite_sequence": [
+      [
+        "sqlite_sequence",
+        1.0
+      ],
+      [
+        "country",
+        0.37766897678375244
+      ],
+      [
+        "city",
+        0.3724445104598999
+      ]
+    ],
+    "country": [
+      [
+        "country",
+        1.0000003576278687
+      ],
+      [
+        "countrylanguage",
+        0.8072155714035034
+      ],
+      [
+        "city",
+        0.6474554538726807
+      ]
+    ],
+    "countrylanguage": [
+      [
+        "countrylanguage",
+        1.000000238418579
+      ],
+      [
+        "country",
+        0.8072155714035034
+      ],
+      [
+        "city",
+        0.47726571559906006
+      ]
+    ]
+  },
+  "columns": {
+    "city.ID": [
+      [
+        "city.ID",
+        1.0
+      ],
+      [
+        "city.native",
+        0.954164445400238
+      ],
+      [
+        "city.Name",
+        0.9243654012680054
+      ]
+    ],
+    "city.Name": [
+      [
+        "city.Name",
+        1.0
+      ],
+      [
+        "city.region",
+        0.9524098634719849
+      ],
+      [
+        "city.CountryCode",
+        0.9270021915435791
+      ]
+    ],
+    "city.CountryCode": [
+      [
+        "city.CountryCode",
+        0.9999997615814209
+      ],
+      [
+        "country.Code",
+        0.938443660736084
+      ],
+      [
+        "city.region",
+        0.9324429035186768
+      ]
+    ],
+    "city.District": [
+      [
+        "city.Name",
+        0.950389564037323
+      ],
+      [
+        "city.region",
+        0.9486916065216064
+      ],
+      [
+        "city.CountryCode",
+        0.9041671752929688
+      ]
+    ],
+    "city.Population": [
+      [
+        "city.ID",
+        0.9457528591156006
+      ],
+      [
+        "city.native",
+        0.9338235855102539
+      ],
+      [
+        "city.Name",
+        0.8982127904891968
+      ]
+    ],
+    "sqlite_sequence.name": [
+      [
+        "sqlite_sequence.name",
+        1.0
+      ],
+      [
+        "sqlite_sequence.seq",
+        0.9540054798126221
+      ],
+      [
+        "country.Name",
+        0.7585524320602417
+      ]
+    ],
+    "sqlite_sequence.seq": [
+      [
+        "sqlite_sequence.seq",
+        1.0000001192092896
+      ],
+      [
+        "sqlite_sequence.name",
+        0.9540054798126221
+      ],
+      [
+        "country.Name",
+        0.6951576471328735
+      ]
+    ],
+    "country.Code": [
+      [
+        "country.Code",
+        0.9999998807907104
+      ],
+      [
+        "country.Code2",
+        0.9695366621017456
+      ],
+      [
+        "country.Name",
+        0.957406759262085
+      ]
+    ],
+    "country.Name": [
+      [
+        "country.Name",
+        0.9999999403953552
+      ],
+      [
+        "country.LocalName",
+        0.9800472259521484
+      ],
+      [
+        "country.place",
+        0.9694598913192749
+      ]
+    ],
+    "country.Continent": [
+      [
+        "country.place",
+        0.9270234107971191
+      ],
+      [
+        "country.Name",
+        0.9252931475639343
+      ],
+      [
+        "country.Code",
+        0.9166387319564819
+      ]
+    ],
+    "country.Region": [
+      [
+        "country.place",
+        0.9634809494018555
+      ],
+      [
+        "country.Name",
+        0.9586782455444336
+      ],
+      [
+        "country.Code",
+        0.9520355463027954
+      ]
+    ],
+    "country.SurfaceArea": [
+      [
+        "country.landscape",
+        0.8820834159851074
+      ],
+      [
+        "country.Capital",
+        0.8586344718933105
+      ],
+      [
+        "country.place",
+        0.8393781185150146
+      ]
+    ],
+    "country.IndepYear": [
+      [
+        "country.IndepYear",
+        1.0
+      ],
+      [
+        "country.Capital",
+        0.8756318688392639
+      ],
+      [
+        "country.Name",
+        0.8573585152626038
+      ]
+    ],
+    "country.Population": [
+      [
+        "country.people_number",
+        0.9282413721084595
+      ],
+      [
+        "country.Capital",
+        0.897558331489563
+      ],
+      [
+        "country.IndepYear",
+        0.891188383102417
+      ]
+    ],
+    "country.LifeExpectancy": [
+      [
+        "country.life_expectation",
+        0.9254003763198853
+      ],
+      [
+        "country.IndepYear",
+        0.7964357137680054
+      ],
+      [
+        "country.Capital",
+        0.7617512345314026
+      ]
+    ],
+    "country.GNP": [
+      [
+        "country.GNPOld",
+        0.9825698137283325
+      ],
+      [
+        "country.Capital",
+        0.8490402102470398
+      ],
+      [
+        "country.Name",
+        0.8297576904296875
+      ]
+    ],
+    "country.GNPOld": [
+      [
+        "country.GNPOld",
+        0.9999998807907104
+      ],
+      [
+        "country.Capital",
+        0.8534874320030212
+      ],
+      [
+        "country.Name",
+        0.8338160514831543
+      ]
+    ],
+    "country.LocalName": [
+      [
+        "country.LocalName",
+        0.9999998211860657
+      ],
+      [
+        "country.Name",
+        0.9800472259521484
+      ],
+      [
+        "country.place",
+        0.9556890726089478
+      ]
+    ],
+    "country.GovernmentForm": [
+      [
+        "country.political_form",
+        0.9378827810287476
+      ],
+      [
+        "country.Name",
+        0.921513557434082
+      ],
+      [
+        "country.HeadOfState",
+        0.9185122847557068
+      ]
+    ],
+    "country.HeadOfState": [
+      [
+        "country.HeadOfState",
+        0.9999999403953552
+      ],
+      [
+        "country.Name",
+        0.9408818483352661
+      ],
+      [
+        "country.place",
+        0.9330559968948364
+      ]
+    ],
+    "country.Capital": [
+      [
+        "country.Capital",
+        0.9999998807907104
+      ],
+      [
+        "country.Name",
+        0.9125159382820129
+      ],
+      [
+        "country.LocalName",
+        0.8961490988731384
+      ]
+    ],
+    "country.Code2": [
+      [
+        "country.Code2",
+        0.9999997615814209
+      ],
+      [
+        "country.Code",
+        0.9695366621017456
+      ],
+      [
+        "country.place",
+        0.9166160225868225
+      ]
+    ],
+    "countrylanguage.CountryCode": [
+      [
+        "countrylanguage.CountryCode",
+        1.0000003576278687
+      ],
+      [
+        "countrylanguage.official_language",
+        0.9405298829078674
+      ],
+      [
+        "countrylanguage.is_formal",
+        0.9382854700088501
+      ]
+    ],
+    "countrylanguage.Language": [
+      [
+        "countrylanguage.official_language",
+        0.9856624603271484
+      ],
+      [
+        "countrylanguage.is_formal",
+        0.9731115102767944
+      ],
+      [
+        "countrylanguage.CountryCode",
+        0.9482243061065674
+      ]
+    ],
+    "countrylanguage.IsOfficial": [
+      [
+        "countrylanguage.official_language",
+        0.9855018854141235
+      ],
+      [
+        "countrylanguage.is_formal",
+        0.9732134342193604
+      ],
+      [
+        "countrylanguage.CountryCode",
+        0.9393891096115112
+      ]
+    ],
+    "countrylanguage.Percentage": [
+      [
+        "countrylanguage.share",
+        0.8688089847564697
+      ],
+      [
+        "countrylanguage.is_formal",
+        0.828018307685852
+      ],
+      [
+        "countrylanguage.official_language",
+        0.824337899684906
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "city": "city",
+      "sqlite_sequence": "sqlite_sequence",
+      "country": "country",
+      "countrylanguage": "countrylanguage"
+    },
+    "columns": {
+      "city.ID": "city.ID",
+      "city.Name": "city.Name",
+      "city.CountryCode": "city.CountryCode",
+      "city.District": "city.region",
+      "city.Population": "city.native",
+      "sqlite_sequence.name": "sqlite_sequence.name",
+      "sqlite_sequence.seq": "sqlite_sequence.seq",
+      "country.Code": "country.Code",
+      "country.Name": "country.Name",
+      "country.Continent": "country.mainland",
+      "country.Region": "country.place",
+      "country.SurfaceArea": "country.landscape",
+      "country.IndepYear": "country.IndepYear",
+      "country.Population": "country.people_number",
+      "country.LifeExpectancy": "country.life_expectation",
+      "country.GNP": "country.net_national_product",
+      "country.GNPOld": "country.GNPOld",
+      "country.LocalName": "country.LocalName",
+      "country.GovernmentForm": "country.political_form",
+      "country.HeadOfState": "country.HeadOfState",
+      "country.Capital": "country.Capital",
+      "country.Code2": "country.Code2",
+      "countrylanguage.CountryCode": "countrylanguage.CountryCode",
+      "countrylanguage.Language": "countrylanguage.official_language",
+      "countrylanguage.IsOfficial": "countrylanguage.is_formal",
+      "countrylanguage.Percentage": "countrylanguage.share"
+    }
+  },
+  "q_B": {
+    "world_1__syn_v0__q0704": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"political_form\" = 'Republic'",
+    "world_1__syn_v0__q0705": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"political_form\" = 'Republic'",
+    "world_1__syn_v0__q0706": "SELECT SUM(\"country\".\"landscape\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"place\" = 'Caribbean'",
+    "world_1__syn_v0__q0707": "SELECT SUM(\"country\".\"landscape\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"place\" = 'Caribbean'",
+    "world_1__syn_v0__q0708": "SELECT \"country\".\"mainland\" AS \"continent\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Anguilla'",
+    "world_1__syn_v0__q0709": "SELECT \"country\".\"mainland\" AS \"continent\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Anguilla'",
+    "world_1__syn_v0__q0710": "SELECT \"t1\".\"place\" AS \"region\" FROM \"country\" AS \"t1\" JOIN \"city\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"Name\" = 'Kabul'",
+    "world_1__syn_v0__q0711": "SELECT \"t1\".\"place\" AS \"region\" FROM \"country\" AS \"t1\" JOIN \"city\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"Name\" = 'Kabul'",
+    "world_1__syn_v0__q0712": "SELECT \"t2\".\"official_language\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"Name\" = 'Aruba' ORDER BY \"t2\".\"share\" DESC LIMIT 1",
+    "world_1__syn_v0__q0713": "SELECT \"t2\".\"official_language\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"Name\" = 'Aruba' ORDER BY \"t2\".\"share\" DESC LIMIT 1",
+    "world_1__syn_v0__q0714": "SELECT \"country\".\"people_number\" AS \"population\", \"country\".\"life_expectation\" AS \"lifeexpectancy\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Brazil'",
+    "world_1__syn_v0__q0715": "SELECT \"country\".\"people_number\" AS \"population\", \"country\".\"life_expectation\" AS \"lifeexpectancy\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Brazil'",
+    "world_1__syn_v0__q0716": "SELECT \"country\".\"people_number\" AS \"population\", \"country\".\"place\" AS \"region\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Angola'",
+    "world_1__syn_v0__q0717": "SELECT \"country\".\"people_number\" AS \"population\", \"country\".\"place\" AS \"region\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Angola'",
+    "world_1__syn_v0__q0718": "SELECT AVG(\"country\".\"life_expectation\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"place\" = 'Central Africa'",
+    "world_1__syn_v0__q0719": "SELECT AVG(\"country\".\"life_expectation\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"place\" = 'Central Africa'",
+    "world_1__syn_v0__q0720": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia' ORDER BY \"country\".\"life_expectation\" LIMIT 1",
+    "world_1__syn_v0__q0721": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia' ORDER BY \"country\".\"life_expectation\" LIMIT 1",
+    "world_1__syn_v0__q0722": "SELECT SUM(\"country\".\"people_number\") AS \"_col_0\", MAX(\"country\".\"net_national_product\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia'",
+    "world_1__syn_v0__q0723": "SELECT SUM(\"country\".\"people_number\") AS \"_col_0\", MAX(\"country\".\"net_national_product\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia'",
+    "world_1__syn_v0__q0724": "SELECT AVG(\"country\".\"life_expectation\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Africa' AND \"country\".\"political_form\" = 'Republic'",
+    "world_1__syn_v0__q0725": "SELECT AVG(\"country\".\"life_expectation\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Africa' AND \"country\".\"political_form\" = 'Republic'",
+    "world_1__syn_v0__q0726": "SELECT SUM(\"country\".\"landscape\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia' OR \"country\".\"mainland\" = 'Europe'",
+    "world_1__syn_v0__q0727": "SELECT SUM(\"country\".\"landscape\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia' OR \"country\".\"mainland\" = 'Europe'",
+    "world_1__syn_v0__q0728": "SELECT SUM(\"city\".\"native\") AS \"_col_0\" FROM \"city\" AS \"city\" WHERE \"city\".\"region\" = 'Gelderland'",
+    "world_1__syn_v0__q0729": "SELECT SUM(\"city\".\"native\") AS \"_col_0\" FROM \"city\" AS \"city\" WHERE \"city\".\"region\" = 'Gelderland'",
+    "world_1__syn_v0__q0730": "SELECT AVG(\"country\".\"net_national_product\") AS \"_col_0\", SUM(\"country\".\"people_number\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"political_form\" = 'US Territory'",
+    "world_1__syn_v0__q0731": "SELECT AVG(\"country\".\"net_national_product\") AS \"_col_0\", SUM(\"country\".\"people_number\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"political_form\" = 'US Territory'",
+    "world_1__syn_v0__q0732": "SELECT COUNT(DISTINCT \"countrylanguage\".\"official_language\") AS \"_col_0\" FROM \"countrylanguage\" AS \"countrylanguage\"",
+    "world_1__syn_v0__q0733": "SELECT COUNT(DISTINCT \"countrylanguage\".\"official_language\") AS \"_col_0\" FROM \"countrylanguage\" AS \"countrylanguage\"",
+    "world_1__syn_v0__q0734": "SELECT COUNT(DISTINCT \"country\".\"political_form\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Africa'",
+    "world_1__syn_v0__q0735": "SELECT COUNT(DISTINCT \"country\".\"political_form\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Africa'",
+    "world_1__syn_v0__q0736": "SELECT COUNT(\"t2\".\"official_language\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"Name\" = 'Aruba'",
+    "world_1__syn_v0__q0737": "SELECT COUNT(\"t2\".\"official_language\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"Name\" = 'Aruba'",
+    "world_1__syn_v0__q0738": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"Name\" = 'Afghanistan' AND \"t2\".\"is_formal\" = 'T'",
+    "world_1__syn_v0__q0739": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"Name\" = 'Afghanistan' AND \"t2\".\"is_formal\" = 'T'",
+    "world_1__syn_v0__q0742": "SELECT \"t1\".\"mainland\" AS \"continent\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" GROUP BY \"t1\".\"mainland\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "world_1__syn_v0__q0743": "SELECT \"t1\".\"mainland\" AS \"continent\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" GROUP BY \"t1\".\"mainland\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "world_1__syn_v0__q0744": "SELECT COUNT(*) AS \"_col_0\" FROM (SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English' INTERSECT SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'Dutch') AS \"_0\"",
+    "world_1__syn_v0__q0745": "SELECT COUNT(*) AS \"_col_0\" FROM (SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English' INTERSECT SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'Dutch') AS \"_0\"",
+    "world_1__syn_v0__q0746": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English' INTERSECT SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'French'",
+    "world_1__syn_v0__q0747": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English' INTERSECT SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'French'",
+    "world_1__syn_v0__q0748": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English' AND \"t2\".\"is_formal\" = 'T' INTERSECT SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'French' AND \"t2\".\"is_formal\" = 'T'",
+    "world_1__syn_v0__q0749": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English' AND \"t2\".\"is_formal\" = 'T' INTERSECT SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'French' AND \"t2\".\"is_formal\" = 'T'",
+    "world_1__syn_v0__q0750": "SELECT COUNT(DISTINCT \"t1\".\"mainland\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'Chinese'",
+    "world_1__syn_v0__q0751": "SELECT COUNT(DISTINCT \"t1\".\"mainland\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'Chinese'",
+    "world_1__syn_v0__q0752": "SELECT DISTINCT \"t1\".\"place\" AS \"region\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English' OR \"t2\".\"official_language\" = 'Dutch'",
+    "world_1__syn_v0__q0753": "SELECT DISTINCT \"t1\".\"place\" AS \"region\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English' OR \"t2\".\"official_language\" = 'Dutch'",
+    "world_1__syn_v0__q0754": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'english' AND \"t2\".\"is_formal\" = 't' UNION SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'dutch' AND \"t2\".\"is_formal\" = 't'",
+    "world_1__syn_v0__q0755": "SELECT \"t1\".\"Code\" AS \"code\", \"t1\".\"Name\" AS \"name\", \"t1\".\"mainland\" AS \"continent\", \"t1\".\"place\" AS \"region\", \"t1\".\"landscape\" AS \"surfacearea\", \"t1\".\"IndepYear\" AS \"indepyear\", \"t1\".\"people_number\" AS \"population\", \"t1\".\"life_expectation\" AS \"lifeexpectancy\", \"t1\".\"net_national_product\" AS \"gnp\", \"t1\".\"GNPOld\" AS \"gnpold\", \"t1\".\"LocalName\" AS \"localname\", \"t1\".\"political_form\" AS \"governmentform\", \"t1\".\"HeadOfState\" AS \"headofstate\", \"t1\".\"Capital\" AS \"capital\", \"t1\".\"Code2\" AS \"code2\", \"t2\".\"CountryCode\" AS \"countrycode\", \"t2\".\"official_language\" AS \"language\", \"t2\".\"is_formal\" AS \"isofficial\", \"t2\".\"share\" AS \"percentage\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English' AND \"t2\".\"is_formal\" = 'T' UNION SELECT \"t1\".\"Code\" AS \"code\", \"t1\".\"Name\" AS \"name\", \"t1\".\"mainland\" AS \"continent\", \"t1\".\"place\" AS \"region\", \"t1\".\"landscape\" AS \"surfacearea\", \"t1\".\"IndepYear\" AS \"indepyear\", \"t1\".\"people_number\" AS \"population\", \"t1\".\"life_expectation\" AS \"lifeexpectancy\", \"t1\".\"net_national_product\" AS \"gnp\", \"t1\".\"GNPOld\" AS \"gnpold\", \"t1\".\"LocalName\" AS \"localname\", \"t1\".\"political_form\" AS \"governmentform\", \"t1\".\"HeadOfState\" AS \"headofstate\", \"t1\".\"Capital\" AS \"capital\", \"t1\".\"Code2\" AS \"code2\", \"t2\".\"CountryCode\" AS \"countrycode\", \"t2\".\"official_language\" AS \"language\", \"t2\".\"is_formal\" AS \"isofficial\", \"t2\".\"share\" AS \"percentage\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'Dutch' AND \"t2\".\"is_formal\" = 'T'",
+    "world_1__syn_v0__q0756": "SELECT \"t2\".\"official_language\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"mainland\" = 'Asia' GROUP BY \"t2\".\"official_language\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "world_1__syn_v0__q0757": "SELECT \"t2\".\"official_language\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"mainland\" = 'Asia' GROUP BY \"t2\".\"official_language\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "world_1__syn_v0__q0758": "SELECT \"t2\".\"official_language\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"political_form\" = 'Republic' GROUP BY \"t2\".\"official_language\" HAVING COUNT(*) = 1",
+    "world_1__syn_v0__q0759": "SELECT \"t2\".\"official_language\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"political_form\" = 'Republic' GROUP BY \"t2\".\"official_language\" HAVING COUNT(*) = 1",
+    "world_1__syn_v0__q0760": "SELECT \"t1\".\"Name\" AS \"name\", \"t1\".\"native\" AS \"population\" FROM \"city\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"CountryCode\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English' ORDER BY \"t1\".\"native\" DESC LIMIT 1",
+    "world_1__syn_v0__q0761": "SELECT \"t1\".\"Name\" AS \"name\", \"t1\".\"native\" AS \"population\" FROM \"city\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"CountryCode\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English' ORDER BY \"t1\".\"native\" DESC LIMIT 1",
+    "world_1__syn_v0__q0762": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"people_number\" AS \"population\", \"country\".\"life_expectation\" AS \"lifeexpectancy\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia' ORDER BY \"country\".\"landscape\" DESC LIMIT 1",
+    "world_1__syn_v0__q0763": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"people_number\" AS \"population\", \"country\".\"life_expectation\" AS \"lifeexpectancy\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia' ORDER BY \"country\".\"landscape\" DESC LIMIT 1",
+    "world_1__syn_v0__q0764": "SELECT AVG(\"country\".\"life_expectation\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE NOT \"country\".\"Name\" IN (SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English' AND \"t2\".\"is_formal\" = 'T')",
+    "world_1__syn_v0__q0765": "SELECT AVG(\"country\".\"life_expectation\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE NOT \"country\".\"Name\" IN (SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English' AND \"t2\".\"is_formal\" = 'T')",
+    "world_1__syn_v0__q0766": "SELECT SUM(\"country\".\"people_number\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE NOT \"country\".\"Name\" IN (SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English')",
+    "world_1__syn_v0__q0767": "SELECT SUM(\"country\".\"people_number\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE NOT \"country\".\"Name\" IN (SELECT \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t2\".\"official_language\" = 'English')",
+    "world_1__syn_v0__q0768": "SELECT \"t2\".\"official_language\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"HeadOfState\" = 'Beatrix' AND \"t2\".\"is_formal\" = 'T'",
+    "world_1__syn_v0__q0769": "SELECT \"t2\".\"official_language\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"HeadOfState\" = 'Beatrix' AND \"t2\".\"is_formal\" = 'T'",
+    "world_1__syn_v0__q0770": "SELECT COUNT(DISTINCT \"t2\".\"official_language\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"IndepYear\" < 1930 AND \"t2\".\"is_formal\" = 'T'",
+    "world_1__syn_v0__q0771": "SELECT COUNT(DISTINCT \"t2\".\"official_language\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" WHERE \"t1\".\"IndepYear\" < 1930 AND \"t2\".\"is_formal\" = 'T'",
+    "world_1__syn_v0__q0772": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"landscape\" > (SELECT MIN(\"country\".\"landscape\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Europe')",
+    "world_1__syn_v0__q0773": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"landscape\" > (SELECT MIN(\"country\".\"landscape\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Europe')",
+    "world_1__syn_v0__q0774": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Africa' AND \"country\".\"people_number\" < (SELECT MAX(\"country\".\"people_number\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia')",
+    "world_1__syn_v0__q0775": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Africa' AND \"country\".\"people_number\" < (SELECT MIN(\"country\".\"people_number\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia')",
+    "world_1__syn_v0__q0776": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia' AND \"country\".\"people_number\" > (SELECT MAX(\"country\".\"people_number\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Africa')",
+    "world_1__syn_v0__q0777": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia' AND \"country\".\"people_number\" > (SELECT MIN(\"country\".\"people_number\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Africa')",
+    "world_1__syn_v0__q0778": "SELECT \"countrylanguage\".\"CountryCode\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" EXCEPT SELECT \"countrylanguage\".\"CountryCode\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"official_language\" = 'English'",
+    "world_1__syn_v0__q0779": "SELECT \"countrylanguage\".\"CountryCode\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" EXCEPT SELECT \"countrylanguage\".\"CountryCode\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"official_language\" = 'English'",
+    "world_1__syn_v0__q0780": "SELECT DISTINCT \"countrylanguage\".\"CountryCode\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"official_language\" <> 'English'",
+    "world_1__syn_v0__q0781": "SELECT DISTINCT \"countrylanguage\".\"CountryCode\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"official_language\" <> 'English'",
+    "world_1__syn_v0__q0782": "SELECT \"country\".\"Code\" AS \"code\" FROM \"country\" AS \"country\" WHERE \"country\".\"political_form\" <> 'Republic' EXCEPT SELECT \"countrylanguage\".\"CountryCode\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"official_language\" = 'English'",
+    "world_1__syn_v0__q0783": "SELECT \"country\".\"Code\" AS \"code\" FROM \"country\" AS \"country\" WHERE \"country\".\"political_form\" <> 'Republic' EXCEPT SELECT \"countrylanguage\".\"CountryCode\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"official_language\" = 'English'",
+    "world_1__syn_v0__q0784": "SELECT DISTINCT \"t2\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"city\" AS \"t2\" ON \"t2\".\"CountryCode\" = \"t1\".\"Code\" WHERE \"t1\".\"mainland\" = 'Europe' AND NOT \"t1\".\"Name\" IN (SELECT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t3\" JOIN \"countrylanguage\" AS \"t4\" ON \"t3\".\"Code\" = \"t4\".\"CountryCode\" WHERE \"t4\".\"is_formal\" = 'T' AND \"t4\".\"official_language\" = 'English')",
+    "world_1__syn_v0__q0785": "SELECT DISTINCT \"t2\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"city\" AS \"t2\" ON \"t2\".\"CountryCode\" = \"t1\".\"Code\" WHERE \"t1\".\"mainland\" = 'Europe' AND NOT \"t1\".\"Name\" IN (SELECT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t3\" JOIN \"countrylanguage\" AS \"t4\" ON \"t3\".\"Code\" = \"t4\".\"CountryCode\" WHERE \"t4\".\"is_formal\" = 'T' AND \"t4\".\"official_language\" = 'English')",
+    "world_1__syn_v0__q0786": "SELECT DISTINCT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" JOIN \"city\" AS \"t3\" ON \"t1\".\"Code\" = \"t3\".\"CountryCode\" WHERE \"t2\".\"is_formal\" = 't' AND \"t2\".\"official_language\" = 'chinese' AND \"t1\".\"mainland\" = 'asia'",
+    "world_1__syn_v0__q0787": "SELECT DISTINCT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" JOIN \"city\" AS \"t3\" ON \"t1\".\"Code\" = \"t3\".\"CountryCode\" WHERE \"t2\".\"is_formal\" = 'T' AND \"t2\".\"official_language\" = 'Chinese' AND \"t1\".\"mainland\" = 'Asia'",
+    "world_1__syn_v0__q0788": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"landscape\" AS \"surfacearea\", \"country\".\"IndepYear\" AS \"indepyear\" FROM \"country\" AS \"country\" ORDER BY \"country\".\"people_number\" LIMIT 1",
+    "world_1__syn_v0__q0789": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"landscape\" AS \"surfacearea\", \"country\".\"IndepYear\" AS \"indepyear\" FROM \"country\" AS \"country\" ORDER BY \"country\".\"people_number\" LIMIT 1",
+    "world_1__syn_v0__q0790": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"people_number\" AS \"population\", \"country\".\"HeadOfState\" AS \"headofstate\" FROM \"country\" AS \"country\" ORDER BY \"country\".\"landscape\" DESC LIMIT 1",
+    "world_1__syn_v0__q0791": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"people_number\" AS \"population\", \"country\".\"HeadOfState\" AS \"headofstate\" FROM \"country\" AS \"country\" ORDER BY \"country\".\"landscape\" DESC LIMIT 1",
+    "world_1__syn_v0__q0792": "SELECT COUNT(\"t2\".\"official_language\") AS \"_col_0\", \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" GROUP BY \"t1\".\"Name\" HAVING COUNT(*) > 2",
+    "world_1__syn_v0__q0793": "SELECT COUNT(\"t2\".\"official_language\") AS \"_col_0\", \"t1\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"CountryCode\" GROUP BY \"t1\".\"Name\" HAVING COUNT(*) > 2",
+    "world_1__syn_v0__q0794": "SELECT COUNT(*) AS \"_col_0\", \"city\".\"region\" AS \"district\" FROM \"city\" AS \"city\" WHERE \"city\".\"native\" > (SELECT AVG(\"city\".\"native\") AS \"_col_0\" FROM \"city\" AS \"city\") GROUP BY \"city\".\"region\"",
+    "world_1__syn_v0__q0795": "SELECT COUNT(*) AS \"_col_0\", \"city\".\"region\" AS \"district\" FROM \"city\" AS \"city\" WHERE \"city\".\"native\" > (SELECT AVG(\"city\".\"native\") AS \"_col_0\" FROM \"city\" AS \"city\") GROUP BY \"city\".\"region\"",
+    "world_1__syn_v0__q0796": "SELECT SUM(\"country\".\"people_number\") AS \"_col_0\", \"country\".\"political_form\" AS \"governmentform\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"political_form\" HAVING AVG(\"country\".\"life_expectation\") > 72",
+    "world_1__syn_v0__q0797": "SELECT SUM(\"country\".\"people_number\") AS \"_col_0\", \"country\".\"political_form\" AS \"governmentform\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"political_form\" HAVING AVG(\"country\".\"life_expectation\") > 72",
+    "world_1__syn_v0__q0798": "SELECT SUM(\"country\".\"people_number\") AS \"_col_0\", AVG(\"country\".\"life_expectation\") AS \"_col_1\", \"country\".\"mainland\" AS \"continent\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"mainland\" HAVING AVG(\"country\".\"life_expectation\") < 72",
+    "world_1__syn_v0__q0799": "SELECT SUM(\"country\".\"people_number\") AS \"_col_0\", AVG(\"country\".\"life_expectation\") AS \"_col_1\", \"country\".\"mainland\" AS \"continent\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"mainland\" HAVING AVG(\"country\".\"life_expectation\") < 72",
+    "world_1__syn_v0__q0800": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"landscape\" AS \"surfacearea\" FROM \"country\" AS \"country\" ORDER BY \"surfacearea\" DESC LIMIT 5",
+    "world_1__syn_v0__q0801": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"landscape\" AS \"surfacearea\" FROM \"country\" AS \"country\" ORDER BY \"surfacearea\" DESC LIMIT 5",
+    "world_1__syn_v0__q0802": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" ORDER BY \"country\".\"people_number\" DESC LIMIT 3",
+    "world_1__syn_v0__q0803": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" ORDER BY \"country\".\"people_number\" DESC LIMIT 3",
+    "world_1__syn_v0__q0804": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" ORDER BY \"country\".\"people_number\" ASC LIMIT 3",
+    "world_1__syn_v0__q0805": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" ORDER BY \"country\".\"people_number\" ASC LIMIT 3",
+    "world_1__syn_v0__q0806": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia'",
+    "world_1__syn_v0__q0807": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Asia'",
+    "world_1__syn_v0__q0808": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Europe' AND \"country\".\"people_number\" = '80000'",
+    "world_1__syn_v0__q0809": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'Europe' AND \"country\".\"people_number\" = '80000'",
+    "world_1__syn_v0__q0810": "SELECT SUM(\"country\".\"people_number\") AS \"_col_0\", AVG(\"country\".\"landscape\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'north america' AND \"country\".\"landscape\" > 3000",
+    "world_1__syn_v0__q0811": "SELECT SUM(\"country\".\"people_number\") AS \"_col_0\", AVG(\"country\".\"landscape\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"mainland\" = 'north america' AND \"country\".\"landscape\" > 3000",
+    "world_1__syn_v0__q0812": "SELECT \"city\".\"Name\" AS \"name\" FROM \"city\" AS \"city\" WHERE \"city\".\"native\" BETWEEN 160000 AND 900000",
+    "world_1__syn_v0__q0813": "SELECT \"city\".\"Name\" AS \"name\" FROM \"city\" AS \"city\" WHERE \"city\".\"native\" BETWEEN 160000 AND 900000",
+    "world_1__syn_v0__q0814": "SELECT \"countrylanguage\".\"official_language\" AS \"language\" FROM \"countrylanguage\" AS \"countrylanguage\" GROUP BY \"countrylanguage\".\"official_language\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "world_1__syn_v0__q0815": "SELECT \"countrylanguage\".\"official_language\" AS \"language\" FROM \"countrylanguage\" AS \"countrylanguage\" GROUP BY \"countrylanguage\".\"official_language\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "world_1__syn_v0__q0816": "SELECT \"countrylanguage\".\"official_language\" AS \"language\", \"countrylanguage\".\"CountryCode\" AS \"countrycode\", MAX(\"countrylanguage\".\"share\") AS \"_col_2\" FROM \"countrylanguage\" AS \"countrylanguage\" GROUP BY \"countrylanguage\".\"CountryCode\"",
+    "world_1__syn_v0__q0817": "SELECT \"countrylanguage\".\"official_language\" AS \"language\", \"countrylanguage\".\"CountryCode\" AS \"countrycode\", MAX(\"countrylanguage\".\"share\") AS \"_col_2\" FROM \"countrylanguage\" AS \"countrylanguage\" GROUP BY \"countrylanguage\".\"CountryCode\"",
+    "world_1__syn_v0__q0818": "SELECT COUNT(*) AS \"_col_0\", MAX(\"countrylanguage\".\"share\") AS \"_col_1\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"official_language\" = 'Spanish' GROUP BY \"countrylanguage\".\"CountryCode\"",
+    "world_1__syn_v0__q0819": "SELECT COUNT(*) AS \"_col_0\", MAX(\"countrylanguage\".\"share\") AS \"_col_1\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"official_language\" = 'Spanish' GROUP BY \"countrylanguage\".\"CountryCode\"",
+    "world_1__syn_v0__q0820": "SELECT \"countrylanguage\".\"CountryCode\" AS \"countrycode\", MAX(\"countrylanguage\".\"share\") AS \"_col_1\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"official_language\" = 'Spanish' GROUP BY \"countrylanguage\".\"CountryCode\"",
+    "world_1__syn_v0__q0821": "SELECT \"countrylanguage\".\"CountryCode\" AS \"countrycode\", MAX(\"countrylanguage\".\"share\") AS \"_col_1\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"official_language\" = 'Spanish' GROUP BY \"countrylanguage\".\"CountryCode\""
+  },
+  "rewrite_errors": {},
+  "model": "all-MiniLM-L6-v2",
+  "method": "semantic"
+}

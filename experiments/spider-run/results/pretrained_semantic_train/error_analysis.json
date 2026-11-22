@@ -1,0 +1,1164 @@
+[
+  {
+    "pair_id": "employee_hire_evaluation__abbr_v0",
+    "type": "mapping",
+    "element": "shop.Location",
+    "gold": "shop.loc",
+    "predicted": "shop.dist",
+    "candidates": [
+      [
+        "shop.dist",
+        0.9648615717887878
+      ],
+      [
+        "shop.Name",
+        0.9613052606582642
+      ],
+      [
+        "shop.loc",
+        0.9583829641342163
+      ]
+    ]
+  },
+  {
+    "pair_id": "employee_hire_evaluation__abbr_v0",
+    "type": "mapping",
+    "element": "shop.District",
+    "gold": "shop.dist",
+    "predicted": "shop.loc",
+    "candidates": [
+      [
+        "shop.Name",
+        0.9272258281707764
+      ],
+      [
+        "shop.dist",
+        0.9255826473236084
+      ],
+      [
+        "shop.loc",
+        0.9209907650947571
+      ]
+    ]
+  },
+  {
+    "type": "query",
+    "pair_id": "employee_hire_evaluation__abbr_v0",
+    "qid": "employee_hire_evaluation__abbr_v0__q0267",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(*) , LOCATION FROM shop GROUP BY LOCATION",
+    "gold_sql": "SELECT COUNT(*) AS \"_col_0\", \"shop\".\"loc\" AS \"location\" FROM \"shop\" AS \"shop\" GROUP BY \"shop\".\"loc\"",
+    "pred_sql": "SELECT COUNT(*) AS \"_col_0\", \"shop\".\"dist\" AS \"location\" FROM \"shop\" AS \"shop\" GROUP BY \"shop\".\"dist\"",
+    "status": "incorrect",
+    "gold_rows": 9,
+    "pred_rows": 9,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "employee_hire_evaluation__abbr_v0",
+    "qid": "employee_hire_evaluation__abbr_v0__q0268",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(*) , LOCATION FROM shop GROUP BY LOCATION",
+    "gold_sql": "SELECT COUNT(*) AS \"_col_0\", \"shop\".\"loc\" AS \"location\" FROM \"shop\" AS \"shop\" GROUP BY \"shop\".\"loc\"",
+    "pred_sql": "SELECT COUNT(*) AS \"_col_0\", \"shop\".\"dist\" AS \"location\" FROM \"shop\" AS \"shop\" GROUP BY \"shop\".\"dist\"",
+    "status": "incorrect",
+    "gold_rows": 9,
+    "pred_rows": 9,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "employee_hire_evaluation__abbr_v0",
+    "qid": "employee_hire_evaluation__abbr_v0__q0269",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT manager_name , district FROM shop ORDER BY number_products DESC LIMIT 1",
+    "gold_sql": "SELECT \"shop\".\"mgr_name\" AS \"manager_name\", \"shop\".\"dist\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"num_prod\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"shop\".\"mgr_name\" AS \"manager_name\", \"shop\".\"loc\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"num_prod\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "employee_hire_evaluation__abbr_v0",
+    "qid": "employee_hire_evaluation__abbr_v0__q0270",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT manager_name , district FROM shop ORDER BY number_products DESC LIMIT 1",
+    "gold_sql": "SELECT \"shop\".\"mgr_name\" AS \"manager_name\", \"shop\".\"dist\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"num_prod\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"shop\".\"mgr_name\" AS \"manager_name\", \"shop\".\"loc\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"num_prod\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "employee_hire_evaluation__abbr_v0",
+    "qid": "employee_hire_evaluation__abbr_v0__q0273",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT name , LOCATION , district FROM shop ORDER BY number_products DESC",
+    "gold_sql": "SELECT \"shop\".\"Name\" AS \"name\", \"shop\".\"loc\" AS \"location\", \"shop\".\"dist\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"num_prod\" DESC",
+    "pred_sql": "SELECT \"shop\".\"Name\" AS \"name\", \"shop\".\"dist\" AS \"location\", \"shop\".\"loc\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"num_prod\" DESC",
+    "status": "incorrect",
+    "gold_rows": 9,
+    "pred_rows": 9,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "employee_hire_evaluation__abbr_v0",
+    "qid": "employee_hire_evaluation__abbr_v0__q0274",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT name , LOCATION , district FROM shop ORDER BY number_products DESC",
+    "gold_sql": "SELECT \"shop\".\"Name\" AS \"name\", \"shop\".\"loc\" AS \"location\", \"shop\".\"dist\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"num_prod\" DESC",
+    "pred_sql": "SELECT \"shop\".\"Name\" AS \"name\", \"shop\".\"dist\" AS \"location\", \"shop\".\"loc\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"num_prod\" DESC",
+    "status": "incorrect",
+    "gold_rows": 9,
+    "pred_rows": 9,
+    "ordered": true
+  },
+  {
+    "pair_id": "orchestra__syn_v4",
+    "type": "mapping",
+    "element": "performance.Type",
+    "gold": "performance.sort",
+    "predicted": "performance.portion",
+    "candidates": [
+      [
+        "performance.portion",
+        0.9727975130081177
+      ],
+      [
+        "performance.sort",
+        0.9274390935897827
+      ],
+      [
+        "performance.Date",
+        0.9159011840820312
+      ]
+    ]
+  },
+  {
+    "pair_id": "orchestra__syn_v4",
+    "type": "mapping",
+    "element": "performance.Share",
+    "gold": "performance.portion",
+    "predicted": "performance.sort",
+    "candidates": [
+      [
+        "performance.portion",
+        0.9103229641914368
+      ],
+      [
+        "performance.sort",
+        0.8705577850341797
+      ],
+      [
+        "performance.Date",
+        0.8545745611190796
+      ]
+    ]
+  },
+  {
+    "type": "query",
+    "pair_id": "orchestra__syn_v4",
+    "qid": "orchestra__syn_v4__q0832",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT max(SHARE) , min(SHARE) FROM performance WHERE TYPE != \"Live final\"",
+    "gold_sql": "SELECT MAX(\"performance\".\"portion\") AS \"_col_0\", MIN(\"performance\".\"portion\") AS \"_col_1\" FROM \"performance\" AS \"performance\" WHERE \"performance\".\"sort\" <> 'Live final'",
+    "pred_sql": "SELECT MAX(\"performance\".\"sort\") AS \"_col_0\", MIN(\"performance\".\"sort\") AS \"_col_1\" FROM \"performance\" AS \"performance\" WHERE \"performance\".\"portion\" <> 'Live final'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "orchestra__syn_v4",
+    "qid": "orchestra__syn_v4__q0833",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT max(SHARE) , min(SHARE) FROM performance WHERE TYPE != \"Live final\"",
+    "gold_sql": "SELECT MAX(\"performance\".\"portion\") AS \"_col_0\", MIN(\"performance\".\"portion\") AS \"_col_1\" FROM \"performance\" AS \"performance\" WHERE \"performance\".\"sort\" <> 'Live final'",
+    "pred_sql": "SELECT MAX(\"performance\".\"sort\") AS \"_col_0\", MIN(\"performance\".\"sort\") AS \"_col_1\" FROM \"performance\" AS \"performance\" WHERE \"performance\".\"portion\" <> 'Live final'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "pair_id": "tvshow__abbr_v0",
+    "type": "mapping",
+    "element": "TV_Channel.Country",
+    "gold": "TV_Channel.cntry",
+    "predicted": "TV_Channel.cont",
+    "candidates": [
+      [
+        "TV_Channel.lang",
+        0.9460033178329468
+      ],
+      [
+        "TV_Channel.par",
+        0.945521891117096
+      ],
+      [
+        "TV_Channel.cont",
+        0.9429869055747986
+      ]
+    ]
+  },
+  {
+    "pair_id": "tvshow__abbr_v0",
+    "type": "mapping",
+    "element": "TV_Channel.Content",
+    "gold": "TV_Channel.cont",
+    "predicted": "TV_Channel.par",
+    "candidates": [
+      [
+        "TV_Channel.par",
+        0.9814622402191162
+      ],
+      [
+        "TV_Channel.cont",
+        0.9787204265594482
+      ],
+      [
+        "TV_Channel.hd",
+        0.976044774055481
+      ]
+    ]
+  },
+  {
+    "pair_id": "tvshow__abbr_v0",
+    "type": "mapping",
+    "element": "TV_Channel.Pixel_aspect_ratio_PAR",
+    "gold": "TV_Channel.par",
+    "predicted": "TV_Channel.cntry",
+    "candidates": [
+      [
+        "TV_Channel.hd",
+        0.8356621265411377
+      ],
+      [
+        "TV_Channel.par",
+        0.8294544219970703
+      ],
+      [
+        "TV_Channel.cont",
+        0.8205032348632812
+      ]
+    ]
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0595",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Country , count(*) FROM TV_Channel GROUP BY Country ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cntry\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"tv_channel\".\"cont\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cont\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0596",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Country , count(*) FROM TV_Channel GROUP BY Country ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cntry\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"tv_channel\".\"cont\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cont\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0597",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT series_name) , count(DISTINCT content) FROM TV_Channel",
+    "gold_sql": "SELECT COUNT(DISTINCT \"tv_channel\".\"ser_name\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"cont\") AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"tv_channel\".\"ser_name\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"par\") AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0598",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT series_name) , count(DISTINCT content) FROM TV_Channel",
+    "gold_sql": "SELECT COUNT(DISTINCT \"tv_channel\".\"ser_name\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"cont\") AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"tv_channel\".\"ser_name\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"par\") AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0599",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Content FROM TV_Channel WHERE series_name = \"Sky Radio\"",
+    "gold_sql": "SELECT \"tv_channel\".\"cont\" AS \"content\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"ser_name\" = 'Sky Radio'",
+    "pred_sql": "SELECT \"tv_channel\".\"par\" AS \"content\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"ser_name\" = 'Sky Radio'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0600",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Content FROM TV_Channel WHERE series_name = \"Sky Radio\"",
+    "gold_sql": "SELECT \"tv_channel\".\"cont\" AS \"content\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"ser_name\" = 'Sky Radio'",
+    "pred_sql": "SELECT \"tv_channel\".\"par\" AS \"content\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"ser_name\" = 'Sky Radio'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0633",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 2,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0634",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 2,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0635",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT country FROM TV_Channel EXCEPT SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"tv_channel\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0636",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT country FROM TV_Channel EXCEPT SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"tv_channel\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0637",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Michael Chang' INTERSECT SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Ben Jones'",
+    "gold_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Ben Jones'",
+    "pred_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Ben Jones'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0638",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Michael Chang' INTERSECT SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Ben Jones'",
+    "gold_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Ben Jones'",
+    "pred_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Ben Jones'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0639",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Pixel_aspect_ratio_PAR , country FROM tv_channel WHERE LANGUAGE != 'English'",
+    "gold_sql": "SELECT \"tv_channel\".\"par\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"lang\" <> 'English'",
+    "pred_sql": "SELECT \"tv_channel\".\"cntry\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"lang\" <> 'English'",
+    "status": "incorrect",
+    "gold_rows": 12,
+    "pred_rows": 12,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v0",
+    "qid": "tvshow__abbr_v0__q0640",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Pixel_aspect_ratio_PAR , country FROM tv_channel WHERE LANGUAGE != 'English'",
+    "gold_sql": "SELECT \"tv_channel\".\"par\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"lang\" <> 'English'",
+    "pred_sql": "SELECT \"tv_channel\".\"cntry\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"lang\" <> 'English'",
+    "status": "incorrect",
+    "gold_rows": 12,
+    "pred_rows": 12,
+    "ordered": false
+  },
+  {
+    "pair_id": "tvshow__abbr_v1",
+    "type": "mapping",
+    "element": "TV_Channel.Country",
+    "gold": "TV_Channel.cntry",
+    "predicted": "TV_Channel.cont",
+    "candidates": [
+      [
+        "TV_Channel.par",
+        0.945521891117096
+      ],
+      [
+        "TV_Channel.cont",
+        0.9429869055747986
+      ],
+      [
+        "TV_Channel.Language",
+        0.9406424164772034
+      ]
+    ]
+  },
+  {
+    "pair_id": "tvshow__abbr_v1",
+    "type": "mapping",
+    "element": "TV_Channel.Content",
+    "gold": "TV_Channel.cont",
+    "predicted": "TV_Channel.par",
+    "candidates": [
+      [
+        "TV_Channel.par",
+        0.9814622402191162
+      ],
+      [
+        "TV_Channel.cont",
+        0.9787204265594482
+      ],
+      [
+        "TV_Channel.hd",
+        0.976044774055481
+      ]
+    ]
+  },
+  {
+    "pair_id": "tvshow__abbr_v1",
+    "type": "mapping",
+    "element": "TV_Channel.Pixel_aspect_ratio_PAR",
+    "gold": "TV_Channel.par",
+    "predicted": "TV_Channel.cntry",
+    "candidates": [
+      [
+        "TV_Channel.hd",
+        0.8356621265411377
+      ],
+      [
+        "TV_Channel.par",
+        0.8294544219970703
+      ],
+      [
+        "TV_Channel.cont",
+        0.8205032348632812
+      ]
+    ]
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0595",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Country , count(*) FROM TV_Channel GROUP BY Country ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cntry\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"tv_channel\".\"cont\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cont\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0596",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Country , count(*) FROM TV_Channel GROUP BY Country ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cntry\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"tv_channel\".\"cont\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cont\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0597",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT series_name) , count(DISTINCT content) FROM TV_Channel",
+    "gold_sql": "SELECT COUNT(DISTINCT \"tv_channel\".\"ser_name\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"cont\") AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"tv_channel\".\"ser_name\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"par\") AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0598",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT series_name) , count(DISTINCT content) FROM TV_Channel",
+    "gold_sql": "SELECT COUNT(DISTINCT \"tv_channel\".\"ser_name\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"cont\") AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"tv_channel\".\"ser_name\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"par\") AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0599",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Content FROM TV_Channel WHERE series_name = \"Sky Radio\"",
+    "gold_sql": "SELECT \"tv_channel\".\"cont\" AS \"content\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"ser_name\" = 'Sky Radio'",
+    "pred_sql": "SELECT \"tv_channel\".\"par\" AS \"content\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"ser_name\" = 'Sky Radio'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0600",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Content FROM TV_Channel WHERE series_name = \"Sky Radio\"",
+    "gold_sql": "SELECT \"tv_channel\".\"cont\" AS \"content\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"ser_name\" = 'Sky Radio'",
+    "pred_sql": "SELECT \"tv_channel\".\"par\" AS \"content\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"ser_name\" = 'Sky Radio'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0633",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Written_by\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Written_by\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 2,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0634",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Written_by\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Written_by\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 2,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0635",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT country FROM TV_Channel EXCEPT SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Written_by\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"tv_channel\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Written_by\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0636",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT country FROM TV_Channel EXCEPT SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Written_by\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"tv_channel\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Written_by\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0637",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Michael Chang' INTERSECT SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Ben Jones'",
+    "gold_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Ben Jones'",
+    "pred_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Ben Jones'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0638",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Michael Chang' INTERSECT SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Ben Jones'",
+    "gold_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Ben Jones'",
+    "pred_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Ben Jones'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0639",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Pixel_aspect_ratio_PAR , country FROM tv_channel WHERE LANGUAGE != 'English'",
+    "gold_sql": "SELECT \"tv_channel\".\"par\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"Language\" <> 'English'",
+    "pred_sql": "SELECT \"tv_channel\".\"cntry\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"Language\" <> 'English'",
+    "status": "incorrect",
+    "gold_rows": 12,
+    "pred_rows": 12,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v1",
+    "qid": "tvshow__abbr_v1__q0640",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Pixel_aspect_ratio_PAR , country FROM tv_channel WHERE LANGUAGE != 'English'",
+    "gold_sql": "SELECT \"tv_channel\".\"par\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"Language\" <> 'English'",
+    "pred_sql": "SELECT \"tv_channel\".\"cntry\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"Language\" <> 'English'",
+    "status": "incorrect",
+    "gold_rows": 12,
+    "pred_rows": 12,
+    "ordered": false
+  },
+  {
+    "pair_id": "tvshow__abbr_v3",
+    "type": "mapping",
+    "element": "TV_Channel.Country",
+    "gold": "TV_Channel.cntry",
+    "predicted": "TV_Channel.par",
+    "candidates": [
+      [
+        "TV_Channel.Content",
+        0.9492506980895996
+      ],
+      [
+        "TV_Channel.par",
+        0.945521891117096
+      ],
+      [
+        "TV_Channel.Language",
+        0.9406424164772034
+      ]
+    ]
+  },
+  {
+    "pair_id": "tvshow__abbr_v3",
+    "type": "mapping",
+    "element": "TV_Channel.Pixel_aspect_ratio_PAR",
+    "gold": "TV_Channel.par",
+    "predicted": "TV_Channel.cntry",
+    "candidates": [
+      [
+        "TV_Channel.hd",
+        0.8356621265411377
+      ],
+      [
+        "TV_Channel.Content",
+        0.833412766456604
+      ],
+      [
+        "TV_Channel.par",
+        0.8294544219970703
+      ]
+    ]
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v3",
+    "qid": "tvshow__abbr_v3__q0595",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Country , count(*) FROM TV_Channel GROUP BY Country ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cntry\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"tv_channel\".\"par\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"par\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v3",
+    "qid": "tvshow__abbr_v3__q0596",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Country , count(*) FROM TV_Channel GROUP BY Country ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cntry\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"tv_channel\".\"par\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"par\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v3",
+    "qid": "tvshow__abbr_v3__q0633",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"t1\".\"par\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 2,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v3",
+    "qid": "tvshow__abbr_v3__q0634",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"t1\".\"par\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 2,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v3",
+    "qid": "tvshow__abbr_v3__q0635",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT country FROM TV_Channel EXCEPT SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"tv_channel\".\"par\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"par\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v3",
+    "qid": "tvshow__abbr_v3__q0636",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT country FROM TV_Channel EXCEPT SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"tv_channel\".\"par\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"par\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v3",
+    "qid": "tvshow__abbr_v3__q0637",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Michael Chang' INTERSECT SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Ben Jones'",
+    "gold_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Ben Jones'",
+    "pred_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"par\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"par\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Ben Jones'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v3",
+    "qid": "tvshow__abbr_v3__q0638",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Michael Chang' INTERSECT SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Ben Jones'",
+    "gold_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Ben Jones'",
+    "pred_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"par\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"par\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"dir\" = 'Ben Jones'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v3",
+    "qid": "tvshow__abbr_v3__q0639",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Pixel_aspect_ratio_PAR , country FROM tv_channel WHERE LANGUAGE != 'English'",
+    "gold_sql": "SELECT \"tv_channel\".\"par\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"Language\" <> 'English'",
+    "pred_sql": "SELECT \"tv_channel\".\"cntry\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"par\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"Language\" <> 'English'",
+    "status": "incorrect",
+    "gold_rows": 12,
+    "pred_rows": 12,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v3",
+    "qid": "tvshow__abbr_v3__q0640",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Pixel_aspect_ratio_PAR , country FROM tv_channel WHERE LANGUAGE != 'English'",
+    "gold_sql": "SELECT \"tv_channel\".\"par\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"Language\" <> 'English'",
+    "pred_sql": "SELECT \"tv_channel\".\"cntry\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"par\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"Language\" <> 'English'",
+    "status": "incorrect",
+    "gold_rows": 12,
+    "pred_rows": 12,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v3",
+    "qid": "tvshow__abbr_v3__q0641",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT id FROM tv_channel GROUP BY country HAVING count(*) > 2",
+    "gold_sql": "SELECT \"tv_channel\".\"id\" AS \"id\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cntry\" HAVING COUNT(*) > 2",
+    "pred_sql": "SELECT \"tv_channel\".\"id\" AS \"id\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"par\" HAVING COUNT(*) > 2",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 3,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v3",
+    "qid": "tvshow__abbr_v3__q0642",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT id FROM tv_channel GROUP BY country HAVING count(*) > 2",
+    "gold_sql": "SELECT \"tv_channel\".\"id\" AS \"id\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cntry\" HAVING COUNT(*) > 2",
+    "pred_sql": "SELECT \"tv_channel\".\"id\" AS \"id\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"par\" HAVING COUNT(*) > 2",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 3,
+    "ordered": false
+  },
+  {
+    "pair_id": "tvshow__abbr_v5",
+    "type": "mapping",
+    "element": "TV_Channel.Country",
+    "gold": "TV_Channel.cntry",
+    "predicted": "TV_Channel.cont",
+    "candidates": [
+      [
+        "TV_Channel.lang",
+        0.9460033178329468
+      ],
+      [
+        "TV_Channel.cont",
+        0.9429869055747986
+      ],
+      [
+        "TV_Channel.hd",
+        0.9375205636024475
+      ]
+    ]
+  },
+  {
+    "pair_id": "tvshow__abbr_v5",
+    "type": "mapping",
+    "element": "TV_Channel.Content",
+    "gold": "TV_Channel.cont",
+    "predicted": "TV_Channel.cntry",
+    "candidates": [
+      [
+        "TV_Channel.cont",
+        0.9787204265594482
+      ],
+      [
+        "TV_Channel.hd",
+        0.976044774055481
+      ],
+      [
+        "TV_Channel.id",
+        0.9723493456840515
+      ]
+    ]
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0595",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Country , count(*) FROM TV_Channel GROUP BY Country ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cntry\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"tv_channel\".\"cont\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cont\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0596",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Country , count(*) FROM TV_Channel GROUP BY Country ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cntry\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"tv_channel\".\"cont\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"cont\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0597",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT series_name) , count(DISTINCT content) FROM TV_Channel",
+    "gold_sql": "SELECT COUNT(DISTINCT \"tv_channel\".\"ser_name\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"cont\") AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"tv_channel\".\"ser_name\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"cntry\") AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0598",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT series_name) , count(DISTINCT content) FROM TV_Channel",
+    "gold_sql": "SELECT COUNT(DISTINCT \"tv_channel\".\"ser_name\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"cont\") AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"tv_channel\".\"ser_name\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"cntry\") AS \"_col_1\" FROM \"TV_Channel\" AS \"tv_channel\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0599",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Content FROM TV_Channel WHERE series_name = \"Sky Radio\"",
+    "gold_sql": "SELECT \"tv_channel\".\"cont\" AS \"content\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"ser_name\" = 'Sky Radio'",
+    "pred_sql": "SELECT \"tv_channel\".\"cntry\" AS \"content\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"ser_name\" = 'Sky Radio'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0600",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Content FROM TV_Channel WHERE series_name = \"Sky Radio\"",
+    "gold_sql": "SELECT \"tv_channel\".\"cont\" AS \"content\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"ser_name\" = 'Sky Radio'",
+    "pred_sql": "SELECT \"tv_channel\".\"cntry\" AS \"content\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"ser_name\" = 'Sky Radio'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0633",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 2,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0634",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 2,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0635",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT country FROM TV_Channel EXCEPT SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"tv_channel\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0636",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT country FROM TV_Channel EXCEPT SELECT T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.written_by = 'Todd Casey'",
+    "gold_sql": "SELECT \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "pred_sql": "SELECT \"tv_channel\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"wr\" = 'Todd Casey'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0637",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Michael Chang' INTERSECT SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Ben Jones'",
+    "gold_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Directed_by\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Directed_by\" = 'Ben Jones'",
+    "pred_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Directed_by\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Directed_by\" = 'Ben Jones'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0638",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Michael Chang' INTERSECT SELECT T1.series_name , T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by = 'Ben Jones'",
+    "gold_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Directed_by\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Directed_by\" = 'Ben Jones'",
+    "pred_sql": "SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Directed_by\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"ser_name\" AS \"series_name\", \"t1\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"t1\" JOIN \"Cartoon\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"chnl\" WHERE \"t2\".\"Directed_by\" = 'Ben Jones'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0639",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Pixel_aspect_ratio_PAR , country FROM tv_channel WHERE LANGUAGE != 'English'",
+    "gold_sql": "SELECT \"tv_channel\".\"Pixel_aspect_ratio_PAR\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"lang\" <> 'English'",
+    "pred_sql": "SELECT \"tv_channel\".\"Pixel_aspect_ratio_PAR\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"lang\" <> 'English'",
+    "status": "incorrect",
+    "gold_rows": 12,
+    "pred_rows": 12,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "tvshow__abbr_v5",
+    "qid": "tvshow__abbr_v5__q0640",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Pixel_aspect_ratio_PAR , country FROM tv_channel WHERE LANGUAGE != 'English'",
+    "gold_sql": "SELECT \"tv_channel\".\"Pixel_aspect_ratio_PAR\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cntry\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"lang\" <> 'English'",
+    "pred_sql": "SELECT \"tv_channel\".\"Pixel_aspect_ratio_PAR\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"cont\" AS \"country\" FROM \"TV_Channel\" AS \"tv_channel\" WHERE \"tv_channel\".\"lang\" <> 'English'",
+    "status": "incorrect",
+    "gold_rows": 12,
+    "pred_rows": 12,
+    "ordered": false
+  }
+]

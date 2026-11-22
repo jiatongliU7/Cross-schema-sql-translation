@@ -1,0 +1,415 @@
+{
+  "tables": {
+    "stadium": [
+      [
+        "stadium",
+        1.0
+      ],
+      [
+        "concert",
+        0.524746298789978
+      ],
+      [
+        "singer_in_concert",
+        0.38455113768577576
+      ]
+    ],
+    "singer": [
+      [
+        "singer",
+        0.9999997615814209
+      ],
+      [
+        "singer_in_concert",
+        0.867975115776062
+      ],
+      [
+        "concert",
+        0.5816836953163147
+      ]
+    ],
+    "concert": [
+      [
+        "concert",
+        1.0
+      ],
+      [
+        "singer_in_concert",
+        0.8099498748779297
+      ],
+      [
+        "singer",
+        0.5816836953163147
+      ]
+    ],
+    "singer_in_concert": [
+      [
+        "singer_in_concert",
+        1.000000238418579
+      ],
+      [
+        "singer",
+        0.867975115776062
+      ],
+      [
+        "concert",
+        0.8099498748779297
+      ]
+    ]
+  },
+  "columns": {
+    "stadium.Stadium_ID": [
+      [
+        "stadium.Stadium_ID",
+        1.0
+      ],
+      [
+        "stadium.Highest",
+        0.7913556098937988
+      ],
+      [
+        "stadium.max_carrying_number",
+        0.7739130854606628
+      ]
+    ],
+    "stadium.Location": [
+      [
+        "stadium.Location",
+        1.0000004768371582
+      ],
+      [
+        "stadium.Name",
+        0.7358115315437317
+      ],
+      [
+        "concert.Stadium_ID",
+        0.6995735764503479
+      ]
+    ],
+    "stadium.Name": [
+      [
+        "stadium.Name",
+        1.0
+      ],
+      [
+        "stadium.Location",
+        0.7358115315437317
+      ],
+      [
+        "concert.Stadium_ID",
+        0.6159038543701172
+      ]
+    ],
+    "stadium.Capacity": [
+      [
+        "stadium.max_carrying_number",
+        0.814971923828125
+      ],
+      [
+        "stadium.Stadium_ID",
+        0.7928948998451233
+      ],
+      [
+        "stadium.Highest",
+        0.7686256170272827
+      ]
+    ],
+    "stadium.Highest": [
+      [
+        "stadium.Highest",
+        1.000000238418579
+      ],
+      [
+        "stadium.max_carrying_number",
+        0.8591349720954895
+      ],
+      [
+        "stadium.Lowest",
+        0.8542150259017944
+      ]
+    ],
+    "stadium.Lowest": [
+      [
+        "stadium.Lowest",
+        1.0000001192092896
+      ],
+      [
+        "stadium.Highest",
+        0.8542150259017944
+      ],
+      [
+        "stadium.Stadium_ID",
+        0.7468578815460205
+      ]
+    ],
+    "stadium.Average": [
+      [
+        "stadium.Average",
+        0.9999995231628418
+      ],
+      [
+        "stadium.Stadium_ID",
+        0.7447186708450317
+      ],
+      [
+        "stadium.Highest",
+        0.7280168533325195
+      ]
+    ],
+    "singer.Singer_ID": [
+      [
+        "singer.Singer_ID",
+        1.0000001192092896
+      ],
+      [
+        "singer_in_concert.concert_ID",
+        0.7937635183334351
+      ],
+      [
+        "singer.Is_male",
+        0.7494804263114929
+      ]
+    ],
+    "singer.Name": [
+      [
+        "singer.Name",
+        1.000000238418579
+      ],
+      [
+        "singer.Song_Name",
+        0.9033141136169434
+      ],
+      [
+        "singer_in_concert.Singer_ID",
+        0.6637844443321228
+      ]
+    ],
+    "singer.Country": [
+      [
+        "singer.nation",
+        0.9208954572677612
+      ],
+      [
+        "singer_in_concert.Singer_ID",
+        0.6265993714332581
+      ],
+      [
+        "singer.Name",
+        0.6078966856002808
+      ]
+    ],
+    "singer.Song_Name": [
+      [
+        "singer.Song_Name",
+        0.9999999403953552
+      ],
+      [
+        "singer.Name",
+        0.9033141136169434
+      ],
+      [
+        "singer_in_concert.Singer_ID",
+        0.6933258771896362
+      ]
+    ],
+    "singer.Song_release_year": [
+      [
+        "singer.Song_release_year",
+        0.9999998807907104
+      ],
+      [
+        "concert.Year",
+        0.6995956301689148
+      ],
+      [
+        "singer.nation",
+        0.6170215010643005
+      ]
+    ],
+    "singer.Age": [
+      [
+        "singer.Age",
+        1.0
+      ],
+      [
+        "singer.Singer_ID",
+        0.7141059637069702
+      ],
+      [
+        "singer.Is_male",
+        0.670258104801178
+      ]
+    ],
+    "singer.Is_male": [
+      [
+        "singer.Is_male",
+        1.0000001192092896
+      ],
+      [
+        "singer.Singer_ID",
+        0.7494804263114929
+      ],
+      [
+        "singer.Age",
+        0.670258104801178
+      ]
+    ],
+    "concert.concert_ID": [
+      [
+        "concert.concert_ID",
+        1.0
+      ],
+      [
+        "singer_in_concert.concert_ID",
+        0.8713511228561401
+      ],
+      [
+        "concert.Stadium_ID",
+        0.753635048866272
+      ]
+    ],
+    "concert.concert_Name": [
+      [
+        "concert.event_name",
+        0.9040756821632385
+      ],
+      [
+        "concert.Theme",
+        0.7059793472290039
+      ],
+      [
+        "concert.Stadium_ID",
+        0.6914831399917603
+      ]
+    ],
+    "concert.Theme": [
+      [
+        "concert.Theme",
+        1.0000001192092896
+      ],
+      [
+        "concert.Stadium_ID",
+        0.6930263042449951
+      ],
+      [
+        "concert.event_name",
+        0.6621677875518799
+      ]
+    ],
+    "concert.Stadium_ID": [
+      [
+        "concert.Stadium_ID",
+        1.0000001192092896
+      ],
+      [
+        "concert.concert_ID",
+        0.753635048866272
+      ],
+      [
+        "stadium.Location",
+        0.6995735764503479
+      ]
+    ],
+    "concert.Year": [
+      [
+        "concert.Year",
+        1.0000001192092896
+      ],
+      [
+        "singer.Song_release_year",
+        0.6995956301689148
+      ],
+      [
+        "concert.Stadium_ID",
+        0.6204773187637329
+      ]
+    ],
+    "singer_in_concert.concert_ID": [
+      [
+        "singer_in_concert.concert_ID",
+        1.0000003576278687
+      ],
+      [
+        "singer_in_concert.Singer_ID",
+        0.8761328458786011
+      ],
+      [
+        "concert.concert_ID",
+        0.8713511228561401
+      ]
+    ],
+    "singer_in_concert.Singer_ID": [
+      [
+        "singer_in_concert.Singer_ID",
+        1.0
+      ],
+      [
+        "singer_in_concert.concert_ID",
+        0.8761328458786011
+      ],
+      [
+        "singer.Singer_ID",
+        0.7459548115730286
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "stadium": "stadium",
+      "singer": "singer",
+      "concert": "concert",
+      "singer_in_concert": "singer_in_concert"
+    },
+    "columns": {
+      "stadium.Stadium_ID": "stadium.Stadium_ID",
+      "stadium.Location": "stadium.Location",
+      "stadium.Name": "stadium.Name",
+      "stadium.Capacity": "stadium.max_carrying_number",
+      "stadium.Highest": "stadium.Highest",
+      "stadium.Lowest": "stadium.Lowest",
+      "stadium.Average": "stadium.Average",
+      "singer.Singer_ID": "singer.Singer_ID",
+      "singer.Name": "singer.Name",
+      "singer.Country": "singer.nation",
+      "singer.Song_Name": "singer.Song_Name",
+      "singer.Song_release_year": "singer.Song_release_year",
+      "singer.Age": "singer.Age",
+      "singer.Is_male": "singer.Is_male",
+      "concert.concert_ID": "concert.concert_ID",
+      "concert.concert_Name": "concert.event_name",
+      "concert.Theme": "concert.Theme",
+      "concert.Stadium_ID": "concert.Stadium_ID",
+      "concert.Year": "concert.Year",
+      "singer_in_concert.concert_ID": "singer_in_concert.concert_ID",
+      "singer_in_concert.Singer_ID": "singer_in_concert.Singer_ID"
+    }
+  },
+  "q_B": {
+    "concert_singer__syn_v1__q0002": "SELECT \"singer\".\"Name\" AS \"name\", \"singer\".\"nation\" AS \"country\", \"singer\".\"Age\" AS \"age\" FROM \"singer\" AS \"singer\" ORDER BY \"age\" DESC",
+    "concert_singer__syn_v1__q0003": "SELECT \"singer\".\"Name\" AS \"name\", \"singer\".\"nation\" AS \"country\", \"singer\".\"Age\" AS \"age\" FROM \"singer\" AS \"singer\" ORDER BY \"age\" DESC",
+    "concert_singer__syn_v1__q0004": "SELECT AVG(\"singer\".\"Age\") AS \"_col_0\", MIN(\"singer\".\"Age\") AS \"_col_1\", MAX(\"singer\".\"Age\") AS \"_col_2\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"nation\" = 'France'",
+    "concert_singer__syn_v1__q0005": "SELECT AVG(\"singer\".\"Age\") AS \"_col_0\", MIN(\"singer\".\"Age\") AS \"_col_1\", MAX(\"singer\".\"Age\") AS \"_col_2\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"nation\" = 'France'",
+    "concert_singer__syn_v1__q0008": "SELECT DISTINCT \"singer\".\"nation\" AS \"country\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"Age\" > 20",
+    "concert_singer__syn_v1__q0009": "SELECT DISTINCT \"singer\".\"nation\" AS \"country\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"Age\" > 20",
+    "concert_singer__syn_v1__q0010": "SELECT \"singer\".\"nation\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"singer\" AS \"singer\" GROUP BY \"singer\".\"nation\"",
+    "concert_singer__syn_v1__q0011": "SELECT \"singer\".\"nation\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"singer\" AS \"singer\" GROUP BY \"singer\".\"nation\"",
+    "concert_singer__syn_v1__q0014": "SELECT \"stadium\".\"Location\" AS \"location\", \"stadium\".\"Name\" AS \"name\" FROM \"stadium\" AS \"stadium\" WHERE \"stadium\".\"max_carrying_number\" BETWEEN 5000 AND 10000",
+    "concert_singer__syn_v1__q0015": "SELECT \"stadium\".\"Location\" AS \"location\", \"stadium\".\"Name\" AS \"name\" FROM \"stadium\" AS \"stadium\" WHERE \"stadium\".\"max_carrying_number\" BETWEEN 5000 AND 10000",
+    "concert_singer__syn_v1__q0016": "SELECT MAX(\"stadium\".\"max_carrying_number\") AS \"_col_0\", \"stadium\".\"Average\" AS \"average\" FROM \"stadium\" AS \"stadium\"",
+    "concert_singer__syn_v1__q0017": "SELECT AVG(\"stadium\".\"max_carrying_number\") AS \"_col_0\", MAX(\"stadium\".\"max_carrying_number\") AS \"_col_1\" FROM \"stadium\" AS \"stadium\"",
+    "concert_singer__syn_v1__q0018": "SELECT \"stadium\".\"Name\" AS \"name\", \"stadium\".\"max_carrying_number\" AS \"capacity\" FROM \"stadium\" AS \"stadium\" ORDER BY \"stadium\".\"Average\" DESC LIMIT 1",
+    "concert_singer__syn_v1__q0019": "SELECT \"stadium\".\"Name\" AS \"name\", \"stadium\".\"max_carrying_number\" AS \"capacity\" FROM \"stadium\" AS \"stadium\" ORDER BY \"stadium\".\"Average\" DESC LIMIT 1",
+    "concert_singer__syn_v1__q0024": "SELECT \"t2\".\"Name\" AS \"name\", \"t2\".\"max_carrying_number\" AS \"capacity\" FROM \"concert\" AS \"t1\" JOIN \"stadium\" AS \"t2\" ON \"t1\".\"Stadium_ID\" = \"t2\".\"Stadium_ID\" WHERE \"t1\".\"Year\" >= 2014 GROUP BY \"t2\".\"Stadium_ID\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "concert_singer__syn_v1__q0025": "SELECT \"t2\".\"Name\" AS \"name\", \"t2\".\"max_carrying_number\" AS \"capacity\" FROM \"concert\" AS \"t1\" JOIN \"stadium\" AS \"t2\" ON \"t1\".\"Stadium_ID\" = \"t2\".\"Stadium_ID\" WHERE \"t1\".\"Year\" > 2013 GROUP BY \"t2\".\"Stadium_ID\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "concert_singer__syn_v1__q0030": "SELECT \"singer\".\"nation\" AS \"country\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"Age\" > 40 INTERSECT SELECT \"singer\".\"nation\" AS \"country\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"Age\" < 30",
+    "concert_singer__syn_v1__q0033": "SELECT \"t2\".\"event_name\" AS \"concert_name\", \"t2\".\"Theme\" AS \"theme\", COUNT(*) AS \"_col_2\" FROM \"singer_in_concert\" AS \"t1\" JOIN \"concert\" AS \"t2\" ON \"t1\".\"concert_ID\" = \"t2\".\"concert_ID\" GROUP BY \"t2\".\"concert_ID\"",
+    "concert_singer__syn_v1__q0034": "SELECT \"t2\".\"event_name\" AS \"concert_name\", \"t2\".\"Theme\" AS \"theme\", COUNT(*) AS \"_col_2\" FROM \"singer_in_concert\" AS \"t1\" JOIN \"concert\" AS \"t2\" ON \"t1\".\"concert_ID\" = \"t2\".\"concert_ID\" GROUP BY \"t2\".\"concert_ID\"",
+    "concert_singer__syn_v1__q0039": "SELECT \"singer\".\"Name\" AS \"name\", \"singer\".\"nation\" AS \"country\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"Song_Name\" LIKE '%Hey%'",
+    "concert_singer__syn_v1__q0040": "SELECT \"singer\".\"Name\" AS \"name\", \"singer\".\"nation\" AS \"country\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"Song_Name\" LIKE '%Hey%'",
+    "concert_singer__syn_v1__q0043": "SELECT COUNT(*) AS \"_col_0\" FROM \"concert\" AS \"concert\" WHERE \"concert\".\"Stadium_ID\" = (SELECT \"stadium\".\"Stadium_ID\" AS \"stadium_id\" FROM \"stadium\" AS \"stadium\" ORDER BY \"stadium\".\"max_carrying_number\" DESC LIMIT 1)",
+    "concert_singer__syn_v1__q0044": "SELECT COUNT(*) AS \"_col_0\" FROM \"concert\" AS \"concert\" WHERE \"concert\".\"Stadium_ID\" = (SELECT \"stadium\".\"Stadium_ID\" AS \"stadium_id\" FROM \"stadium\" AS \"stadium\" ORDER BY \"stadium\".\"max_carrying_number\" DESC LIMIT 1)"
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "semantic"
+}

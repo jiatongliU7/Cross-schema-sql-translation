@@ -1,0 +1,536 @@
+{
+  "tables": {
+    "continents": [
+      [
+        "continents",
+        1.0
+      ],
+      [
+        "countries",
+        0.7368421052631579
+      ],
+      [
+        "car_names",
+        0.42105263157894735
+      ]
+    ],
+    "countries": [
+      [
+        "countries",
+        1.0
+      ],
+      [
+        "continents",
+        0.7368421052631579
+      ],
+      [
+        "car_names",
+        0.4444444444444444
+      ]
+    ],
+    "car_makers": [
+      [
+        "car_makers",
+        1.0
+      ],
+      [
+        "car_names",
+        0.7368421052631579
+      ],
+      [
+        "cars_data",
+        0.5263157894736842
+      ]
+    ],
+    "model_list": [
+      [
+        "model_list",
+        1.0
+      ],
+      [
+        "car_names",
+        0.3157894736842105
+      ],
+      [
+        "countries",
+        0.3157894736842105
+      ]
+    ],
+    "car_names": [
+      [
+        "car_names",
+        1.0
+      ],
+      [
+        "car_makers",
+        0.7368421052631579
+      ],
+      [
+        "cars_data",
+        0.5555555555555556
+      ]
+    ],
+    "cars_data": [
+      [
+        "cars_data",
+        1.0
+      ],
+      [
+        "car_names",
+        0.4444444444444444
+      ],
+      [
+        "car_makers",
+        0.42105263157894735
+      ]
+    ]
+  },
+  "columns": {
+    "continents.ContId": [
+      [
+        "continents.ContId",
+        1.0
+      ],
+      [
+        "countries.CountryId",
+        0.8235294117647058
+      ],
+      [
+        "continents.Continent",
+        0.625
+      ]
+    ],
+    "continents.Continent": [
+      [
+        "continents.Continent",
+        1.0
+      ],
+      [
+        "continents.ContId",
+        0.625
+      ],
+      [
+        "cars_data.engine",
+        0.5333333333333333
+      ]
+    ],
+    "countries.CountryId": [
+      [
+        "countries.CountryId",
+        1.0
+      ],
+      [
+        "continents.ContId",
+        0.8235294117647058
+      ],
+      [
+        "continents.Continent",
+        0.5263157894736842
+      ]
+    ],
+    "countries.CountryName": [
+      [
+        "countries.CountryId",
+        0.7272727272727273
+      ],
+      [
+        "car_makers.complete_name",
+        0.64
+      ],
+      [
+        "continents.Continent",
+        0.5714285714285714
+      ]
+    ],
+    "countries.Continent": [
+      [
+        "continents.Continent",
+        1.0
+      ],
+      [
+        "continents.ContId",
+        0.625
+      ],
+      [
+        "cars_data.engine",
+        0.5333333333333333
+      ]
+    ],
+    "car_makers.Id": [
+      [
+        "cars_data.Id",
+        1.0
+      ],
+      [
+        "car_makers.Id",
+        1.0
+      ],
+      [
+        "continents.ContId",
+        0.4444444444444444
+      ]
+    ],
+    "car_makers.Maker": [
+      [
+        "car_names.MakeId",
+        0.6666666666666666
+      ],
+      [
+        "cars_data.Year",
+        0.4444444444444444
+      ],
+      [
+        "cars_data.mass",
+        0.4444444444444444
+      ]
+    ],
+    "car_makers.FullName": [
+      [
+        "car_names.model_name",
+        0.631578947368421
+      ],
+      [
+        "car_makers.complete_name",
+        0.5454545454545454
+      ],
+      [
+        "cars_data.number_cylinder",
+        0.3333333333333333
+      ]
+    ],
+    "car_makers.Country": [
+      [
+        "countries.CountryId",
+        0.8235294117647058
+      ],
+      [
+        "continents.ContId",
+        0.5714285714285714
+      ],
+      [
+        "continents.Continent",
+        0.5
+      ]
+    ],
+    "model_list.ModelId": [
+      [
+        "model_list.ModelId",
+        1.0
+      ],
+      [
+        "car_names.MakeId",
+        0.6666666666666666
+      ],
+      [
+        "car_names.model_name",
+        0.6666666666666666
+      ]
+    ],
+    "model_list.Maker": [
+      [
+        "car_names.MakeId",
+        0.6666666666666666
+      ],
+      [
+        "cars_data.Year",
+        0.4444444444444444
+      ],
+      [
+        "cars_data.mass",
+        0.4444444444444444
+      ]
+    ],
+    "model_list.Model": [
+      [
+        "model_list.mode",
+        0.8888888888888888
+      ],
+      [
+        "model_list.ModelId",
+        0.7692307692307693
+      ],
+      [
+        "car_names.model_name",
+        0.6666666666666666
+      ]
+    ],
+    "car_names.MakeId": [
+      [
+        "car_names.MakeId",
+        1.0
+      ],
+      [
+        "model_list.ModelId",
+        0.6666666666666666
+      ],
+      [
+        "countries.mainland",
+        0.5333333333333333
+      ]
+    ],
+    "car_names.Model": [
+      [
+        "model_list.mode",
+        0.8888888888888888
+      ],
+      [
+        "model_list.ModelId",
+        0.7692307692307693
+      ],
+      [
+        "car_names.model_name",
+        0.6666666666666666
+      ]
+    ],
+    "car_names.Make": [
+      [
+        "car_names.MakeId",
+        0.7272727272727273
+      ],
+      [
+        "cars_data.mass",
+        0.5
+      ],
+      [
+        "model_list.mode",
+        0.5
+      ]
+    ],
+    "cars_data.Id": [
+      [
+        "cars_data.Id",
+        1.0
+      ],
+      [
+        "car_makers.Id",
+        1.0
+      ],
+      [
+        "continents.ContId",
+        0.4444444444444444
+      ]
+    ],
+    "cars_data.MPG": [
+      [
+        "cars_data.miles_per_gallon",
+        0.3157894736842105
+      ],
+      [
+        "cars_data.mass",
+        0.2857142857142857
+      ],
+      [
+        "model_list.mode",
+        0.2857142857142857
+      ]
+    ],
+    "cars_data.Cylinders": [
+      [
+        "cars_data.number_cylinder",
+        0.6666666666666666
+      ],
+      [
+        "cars_data.Year",
+        0.46153846153846156
+      ],
+      [
+        "continents.Continent",
+        0.4444444444444444
+      ]
+    ],
+    "cars_data.Edispl": [
+      [
+        "cars_data.Edispl",
+        1.0
+      ],
+      [
+        "cars_data.speed_up",
+        0.42857142857142855
+      ],
+      [
+        "cars_data.miles_per_gallon",
+        0.36363636363636365
+      ]
+    ],
+    "cars_data.Horsepower": [
+      [
+        "cars_data.speed_up",
+        0.3333333333333333
+      ],
+      [
+        "cars_data.miles_per_gallon",
+        0.3076923076923077
+      ],
+      [
+        "car_names.model_name",
+        0.3
+      ]
+    ],
+    "cars_data.Weight": [
+      [
+        "cars_data.Edispl",
+        0.3333333333333333
+      ],
+      [
+        "cars_data.engine",
+        0.3333333333333333
+      ],
+      [
+        "car_names.MakeId",
+        0.3076923076923077
+      ]
+    ],
+    "cars_data.Accelerate": [
+      [
+        "car_makers.creator",
+        0.47058823529411764
+      ],
+      [
+        "car_makers.complete_name",
+        0.43478260869565216
+      ],
+      [
+        "countries.state",
+        0.4
+      ]
+    ],
+    "cars_data.Year": [
+      [
+        "cars_data.Year",
+        1.0
+      ],
+      [
+        "car_makers.creator",
+        0.5454545454545454
+      ],
+      [
+        "cars_data.number_cylinder",
+        0.3157894736842105
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "continents": "continents",
+      "countries": "countries",
+      "car_makers": "car_makers",
+      "model_list": "model_list",
+      "car_names": "car_names",
+      "cars_data": "cars_data"
+    },
+    "columns": {
+      "continents.ContId": "continents.ContId",
+      "continents.Continent": "continents.Continent",
+      "countries.CountryId": "countries.CountryId",
+      "countries.CountryName": "countries.state",
+      "countries.Continent": "countries.mainland",
+      "car_makers.Id": "car_makers.Id",
+      "car_makers.Maker": "car_makers.creator",
+      "car_makers.FullName": "car_makers.complete_name",
+      "car_makers.Country": "car_makers.nation",
+      "model_list.ModelId": "model_list.ModelId",
+      "model_list.Maker": "model_list.produced_by",
+      "model_list.Model": "model_list.mode",
+      "car_names.MakeId": "car_names.MakeId",
+      "car_names.Model": "car_names.model_name",
+      "car_names.Make": "car_names.manufacture",
+      "cars_data.Id": "cars_data.Id",
+      "cars_data.MPG": "cars_data.mass",
+      "cars_data.Cylinders": "cars_data.number_cylinder",
+      "cars_data.Edispl": "cars_data.Edispl",
+      "cars_data.Horsepower": "cars_data.speed_up",
+      "cars_data.Weight": "cars_data.engine",
+      "cars_data.Accelerate": "cars_data.miles_per_gallon",
+      "cars_data.Year": "cars_data.Year"
+    }
+  },
+  "q_B": {
+    "car_1__syn_v2__q0089": "SELECT \"t1\".\"ContId\" AS \"contid\", \"t1\".\"Continent\" AS \"continent\", COUNT(*) AS \"_col_2\" FROM \"continents\" AS \"t1\" JOIN \"countries\" AS \"t2\" ON \"t1\".\"ContId\" = \"t2\".\"mainland\" GROUP BY \"t1\".\"ContId\"",
+    "car_1__syn_v2__q0090": "SELECT \"t1\".\"ContId\" AS \"contid\", \"t1\".\"Continent\" AS \"continent\", COUNT(*) AS \"_col_2\" FROM \"continents\" AS \"t1\" JOIN \"countries\" AS \"t2\" ON \"t1\".\"ContId\" = \"t2\".\"mainland\" GROUP BY \"t1\".\"ContId\"",
+    "car_1__syn_v2__q0093": "SELECT \"t1\".\"complete_name\" AS \"fullname\", \"t1\".\"Id\" AS \"id\", COUNT(*) AS \"_col_2\" FROM \"car_makers\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"produced_by\" GROUP BY \"t1\".\"Id\"",
+    "car_1__syn_v2__q0094": "SELECT \"t1\".\"complete_name\" AS \"fullname\", \"t1\".\"Id\" AS \"id\", COUNT(*) AS \"_col_2\" FROM \"car_makers\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"produced_by\" GROUP BY \"t1\".\"Id\"",
+    "car_1__syn_v2__q0095": "SELECT \"t1\".\"model_name\" AS \"model\" FROM \"car_names\" AS \"t1\" JOIN \"cars_data\" AS \"t2\" ON \"t1\".\"MakeId\" = \"t2\".\"Id\" ORDER BY \"t2\".\"speed_up\" ASC LIMIT 1",
+    "car_1__syn_v2__q0096": "SELECT \"t1\".\"model_name\" AS \"model\" FROM \"car_names\" AS \"t1\" JOIN \"cars_data\" AS \"t2\" ON \"t1\".\"MakeId\" = \"t2\".\"Id\" ORDER BY \"t2\".\"speed_up\" ASC LIMIT 1",
+    "car_1__syn_v2__q0097": "SELECT \"t1\".\"model_name\" AS \"model\" FROM \"car_names\" AS \"t1\" JOIN \"cars_data\" AS \"t2\" ON \"t1\".\"MakeId\" = \"t2\".\"Id\" WHERE \"t2\".\"engine\" < (SELECT AVG(\"cars_data\".\"engine\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\")",
+    "car_1__syn_v2__q0098": "SELECT \"t1\".\"model_name\" AS \"model\" FROM \"car_names\" AS \"t1\" JOIN \"cars_data\" AS \"t2\" ON \"t1\".\"MakeId\" = \"t2\".\"Id\" WHERE \"t2\".\"engine\" < (SELECT AVG(\"cars_data\".\"engine\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\")",
+    "car_1__syn_v2__q0099": "SELECT DISTINCT \"t1\".\"creator\" AS \"maker\" FROM \"car_makers\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"produced_by\" JOIN \"car_names\" AS \"t3\" ON \"t2\".\"mode\" = \"t3\".\"model_name\" JOIN \"cars_data\" AS \"t4\" ON \"t3\".\"MakeId\" = \"t4\".\"Id\" WHERE \"t4\".\"Year\" = '1970'",
+    "car_1__syn_v2__q0100": "SELECT DISTINCT \"t1\".\"creator\" AS \"maker\" FROM \"car_makers\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"produced_by\" JOIN \"car_names\" AS \"t3\" ON \"t2\".\"mode\" = \"t3\".\"model_name\" JOIN \"cars_data\" AS \"t4\" ON \"t3\".\"MakeId\" = \"t4\".\"Id\" WHERE \"t4\".\"Year\" = '1970'",
+    "car_1__syn_v2__q0101": "SELECT \"t2\".\"manufacture\" AS \"make\", \"t1\".\"Year\" AS \"year\" FROM \"cars_data\" AS \"t1\" JOIN \"car_names\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"MakeId\" WHERE \"t1\".\"Year\" = (SELECT MIN(\"cars_data\".\"Year\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\")",
+    "car_1__syn_v2__q0102": "SELECT \"t2\".\"manufacture\" AS \"make\", \"t1\".\"Year\" AS \"year\" FROM \"cars_data\" AS \"t1\" JOIN \"car_names\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"MakeId\" WHERE \"t1\".\"Year\" = (SELECT MIN(\"cars_data\".\"Year\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\")",
+    "car_1__syn_v2__q0103": "SELECT DISTINCT \"t1\".\"mode\" AS \"model\" FROM \"model_list\" AS \"t1\" JOIN \"car_names\" AS \"t2\" ON \"t1\".\"mode\" = \"t2\".\"model_name\" JOIN \"cars_data\" AS \"t3\" ON \"t2\".\"MakeId\" = \"t3\".\"Id\" WHERE \"t3\".\"Year\" > 1980",
+    "car_1__syn_v2__q0104": "SELECT DISTINCT \"t1\".\"mode\" AS \"model\" FROM \"model_list\" AS \"t1\" JOIN \"car_names\" AS \"t2\" ON \"t1\".\"mode\" = \"t2\".\"model_name\" JOIN \"cars_data\" AS \"t3\" ON \"t2\".\"MakeId\" = \"t3\".\"Id\" WHERE \"t3\".\"Year\" > 1980",
+    "car_1__syn_v2__q0105": "SELECT \"t1\".\"Continent\" AS \"continent\", COUNT(*) AS \"_col_1\" FROM \"continents\" AS \"t1\" JOIN \"countries\" AS \"t2\" ON \"t1\".\"ContId\" = \"t2\".\"mainland\" JOIN \"car_makers\" AS \"t3\" ON \"t2\".\"CountryId\" = \"t3\".\"nation\" GROUP BY \"t1\".\"Continent\"",
+    "car_1__syn_v2__q0106": "SELECT \"t1\".\"Continent\" AS \"continent\", COUNT(*) AS \"_col_1\" FROM \"continents\" AS \"t1\" JOIN \"countries\" AS \"t2\" ON \"t1\".\"ContId\" = \"t2\".\"mainland\" JOIN \"car_makers\" AS \"t3\" ON \"t2\".\"CountryId\" = \"t3\".\"nation\" GROUP BY \"t1\".\"Continent\"",
+    "car_1__syn_v2__q0107": "SELECT \"t2\".\"state\" AS \"countryname\" FROM \"car_makers\" AS \"t1\" JOIN \"countries\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"CountryId\" GROUP BY \"t1\".\"nation\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "car_1__syn_v2__q0108": "SELECT \"t2\".\"state\" AS \"countryname\" FROM \"car_makers\" AS \"t1\" JOIN \"countries\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"CountryId\" GROUP BY \"t1\".\"nation\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "car_1__syn_v2__q0109": "SELECT COUNT(*) AS \"_col_0\", \"t2\".\"complete_name\" AS \"fullname\" FROM \"model_list\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"produced_by\" = \"t2\".\"Id\" GROUP BY \"t2\".\"Id\"",
+    "car_1__syn_v2__q0110": "SELECT COUNT(*) AS \"_col_0\", \"t2\".\"complete_name\" AS \"fullname\", \"t2\".\"Id\" AS \"id\" FROM \"model_list\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"produced_by\" = \"t2\".\"Id\" GROUP BY \"t2\".\"Id\"",
+    "car_1__syn_v2__q0111": "SELECT \"t1\".\"miles_per_gallon\" AS \"accelerate\" FROM \"cars_data\" AS \"t1\" JOIN \"car_names\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"MakeId\" WHERE \"t2\".\"manufacture\" = 'amc hornet sportabout (sw)'",
+    "car_1__syn_v2__q0112": "SELECT \"t1\".\"miles_per_gallon\" AS \"accelerate\" FROM \"cars_data\" AS \"t1\" JOIN \"car_names\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"MakeId\" WHERE \"t2\".\"manufacture\" = 'amc hornet sportabout (sw)'",
+    "car_1__syn_v2__q0113": "SELECT COUNT(*) AS \"_col_0\" FROM \"car_makers\" AS \"t1\" JOIN \"countries\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"CountryId\" WHERE \"t2\".\"state\" = 'france'",
+    "car_1__syn_v2__q0114": "SELECT COUNT(*) AS \"_col_0\" FROM \"car_makers\" AS \"t1\" JOIN \"countries\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"CountryId\" WHERE \"t2\".\"state\" = 'france'",
+    "car_1__syn_v2__q0115": "SELECT COUNT(*) AS \"_col_0\" FROM \"model_list\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"produced_by\" = \"t2\".\"Id\" JOIN \"countries\" AS \"t3\" ON \"t2\".\"nation\" = \"t3\".\"CountryId\" WHERE \"t3\".\"state\" = 'usa'",
+    "car_1__syn_v2__q0116": "SELECT COUNT(*) AS \"_col_0\" FROM \"model_list\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"produced_by\" = \"t2\".\"Id\" JOIN \"countries\" AS \"t3\" ON \"t2\".\"nation\" = \"t3\".\"CountryId\" WHERE \"t3\".\"state\" = 'usa'",
+    "car_1__syn_v2__q0117": "SELECT AVG(\"cars_data\".\"mass\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"number_cylinder\" = 4",
+    "car_1__syn_v2__q0118": "SELECT AVG(\"cars_data\".\"mass\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"number_cylinder\" = 4",
+    "car_1__syn_v2__q0119": "SELECT MIN(\"cars_data\".\"engine\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"number_cylinder\" = 8 AND \"cars_data\".\"Year\" = 1974",
+    "car_1__syn_v2__q0120": "SELECT MIN(\"cars_data\".\"engine\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"number_cylinder\" = 8 AND \"cars_data\".\"Year\" = 1974",
+    "car_1__syn_v2__q0121": "SELECT \"model_list\".\"produced_by\" AS \"maker\", \"model_list\".\"mode\" AS \"model\" FROM \"model_list\" AS \"model_list\"",
+    "car_1__syn_v2__q0122": "SELECT \"model_list\".\"produced_by\" AS \"maker\", \"model_list\".\"mode\" AS \"model\" FROM \"model_list\" AS \"model_list\"",
+    "car_1__syn_v2__q0123": "SELECT \"t1\".\"state\" AS \"countryname\", \"t1\".\"CountryId\" AS \"countryid\" FROM \"countries\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"CountryId\" = \"t2\".\"nation\" GROUP BY \"t1\".\"CountryId\" HAVING COUNT(*) >= 1",
+    "car_1__syn_v2__q0124": "SELECT \"t1\".\"state\" AS \"countryname\", \"t1\".\"CountryId\" AS \"countryid\" FROM \"countries\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"CountryId\" = \"t2\".\"nation\" GROUP BY \"t1\".\"CountryId\" HAVING COUNT(*) >= 1",
+    "car_1__syn_v2__q0125": "SELECT COUNT(*) AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"speed_up\" > 150",
+    "car_1__syn_v2__q0126": "SELECT COUNT(*) AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"speed_up\" > 150",
+    "car_1__syn_v2__q0127": "SELECT AVG(\"cars_data\".\"engine\") AS \"_col_0\", \"cars_data\".\"Year\" AS \"year\" FROM \"cars_data\" AS \"cars_data\" GROUP BY \"cars_data\".\"Year\"",
+    "car_1__syn_v2__q0128": "SELECT AVG(\"cars_data\".\"engine\") AS \"_col_0\", \"cars_data\".\"Year\" AS \"year\" FROM \"cars_data\" AS \"cars_data\" GROUP BY \"cars_data\".\"Year\"",
+    "car_1__syn_v2__q0129": "SELECT \"t1\".\"state\" AS \"countryname\" FROM \"countries\" AS \"t1\" JOIN \"continents\" AS \"t2\" ON \"t1\".\"mainland\" = \"t2\".\"ContId\" JOIN \"car_makers\" AS \"t3\" ON \"t1\".\"CountryId\" = \"t3\".\"nation\" WHERE \"t2\".\"Continent\" = 'europe' GROUP BY \"t1\".\"state\" HAVING COUNT(*) >= 3",
+    "car_1__syn_v2__q0130": "SELECT \"t1\".\"state\" AS \"countryname\" FROM \"countries\" AS \"t1\" JOIN \"continents\" AS \"t2\" ON \"t1\".\"mainland\" = \"t2\".\"ContId\" JOIN \"car_makers\" AS \"t3\" ON \"t1\".\"CountryId\" = \"t3\".\"nation\" WHERE \"t2\".\"Continent\" = 'europe' GROUP BY \"t1\".\"state\" HAVING COUNT(*) >= 3",
+    "car_1__syn_v2__q0131": "SELECT \"t2\".\"speed_up\" AS \"horsepower\", \"t1\".\"manufacture\" AS \"make\" FROM \"car_names\" AS \"t1\" JOIN \"cars_data\" AS \"t2\" ON \"t1\".\"MakeId\" = \"t2\".\"Id\" WHERE \"t2\".\"number_cylinder\" = 3 ORDER BY \"t2\".\"speed_up\" DESC LIMIT 1",
+    "car_1__syn_v2__q0132": "SELECT \"t2\".\"speed_up\" AS \"horsepower\", \"t1\".\"manufacture\" AS \"make\" FROM \"car_names\" AS \"t1\" JOIN \"cars_data\" AS \"t2\" ON \"t1\".\"MakeId\" = \"t2\".\"Id\" WHERE \"t2\".\"number_cylinder\" = 3 ORDER BY \"t2\".\"speed_up\" DESC LIMIT 1",
+    "car_1__syn_v2__q0133": "SELECT \"t1\".\"model_name\" AS \"model\" FROM \"car_names\" AS \"t1\" JOIN \"cars_data\" AS \"t2\" ON \"t1\".\"MakeId\" = \"t2\".\"Id\" ORDER BY \"t2\".\"mass\" DESC LIMIT 1",
+    "car_1__syn_v2__q0134": "SELECT \"t1\".\"model_name\" AS \"model\" FROM \"car_names\" AS \"t1\" JOIN \"cars_data\" AS \"t2\" ON \"t1\".\"MakeId\" = \"t2\".\"Id\" ORDER BY \"t2\".\"mass\" DESC LIMIT 1",
+    "car_1__syn_v2__q0135": "SELECT AVG(\"cars_data\".\"speed_up\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"Year\" < 1980",
+    "car_1__syn_v2__q0136": "SELECT AVG(\"cars_data\".\"speed_up\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"Year\" < 1980",
+    "car_1__syn_v2__q0137": "SELECT AVG(\"t2\".\"Edispl\") AS \"_col_0\" FROM \"car_names\" AS \"t1\" JOIN \"cars_data\" AS \"t2\" ON \"t1\".\"MakeId\" = \"t2\".\"Id\" WHERE \"t1\".\"model_name\" = 'volvo'",
+    "car_1__syn_v2__q0138": "SELECT AVG(\"t2\".\"Edispl\") AS \"_col_0\" FROM \"car_names\" AS \"t1\" JOIN \"cars_data\" AS \"t2\" ON \"t1\".\"MakeId\" = \"t2\".\"Id\" WHERE \"t1\".\"model_name\" = 'volvo'",
+    "car_1__syn_v2__q0139": "SELECT MAX(\"cars_data\".\"miles_per_gallon\") AS \"_col_0\", \"cars_data\".\"number_cylinder\" AS \"cylinders\" FROM \"cars_data\" AS \"cars_data\" GROUP BY \"cars_data\".\"number_cylinder\"",
+    "car_1__syn_v2__q0140": "SELECT MAX(\"cars_data\".\"miles_per_gallon\") AS \"_col_0\", \"cars_data\".\"number_cylinder\" AS \"cylinders\" FROM \"cars_data\" AS \"cars_data\" GROUP BY \"cars_data\".\"number_cylinder\"",
+    "car_1__syn_v2__q0141": "SELECT \"car_names\".\"model_name\" AS \"model\" FROM \"car_names\" AS \"car_names\" GROUP BY \"car_names\".\"model_name\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "car_1__syn_v2__q0142": "SELECT \"car_names\".\"model_name\" AS \"model\" FROM \"car_names\" AS \"car_names\" GROUP BY \"car_names\".\"model_name\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "car_1__syn_v2__q0143": "SELECT COUNT(*) AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"number_cylinder\" > 4",
+    "car_1__syn_v2__q0144": "SELECT COUNT(*) AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"number_cylinder\" > 4",
+    "car_1__syn_v2__q0147": "SELECT COUNT(*) AS \"_col_0\" FROM \"car_makers\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"produced_by\" WHERE \"t1\".\"complete_name\" = 'American Motor Company'",
+    "car_1__syn_v2__q0148": "SELECT COUNT(*) AS \"_col_0\" FROM \"car_makers\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"produced_by\" WHERE \"t1\".\"complete_name\" = 'American Motor Company'",
+    "car_1__syn_v2__q0149": "SELECT \"t1\".\"complete_name\" AS \"fullname\", \"t1\".\"Id\" AS \"id\" FROM \"car_makers\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"produced_by\" GROUP BY \"t1\".\"Id\" HAVING COUNT(*) > 3",
+    "car_1__syn_v2__q0150": "SELECT \"t1\".\"complete_name\" AS \"fullname\", \"t1\".\"Id\" AS \"id\" FROM \"car_makers\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"produced_by\" GROUP BY \"t1\".\"Id\" HAVING COUNT(*) > 3",
+    "car_1__syn_v2__q0151": "SELECT DISTINCT \"t2\".\"mode\" AS \"model\" FROM \"car_names\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"model_name\" = \"t2\".\"mode\" JOIN \"car_makers\" AS \"t3\" ON \"t2\".\"produced_by\" = \"t3\".\"Id\" JOIN \"cars_data\" AS \"t4\" ON \"t1\".\"MakeId\" = \"t4\".\"Id\" WHERE \"t3\".\"complete_name\" = 'General Motors' OR \"t4\".\"engine\" > 3500",
+    "car_1__syn_v2__q0152": "SELECT DISTINCT \"t2\".\"mode\" AS \"model\" FROM \"car_names\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"model_name\" = \"t2\".\"mode\" JOIN \"car_makers\" AS \"t3\" ON \"t2\".\"produced_by\" = \"t3\".\"Id\" JOIN \"cars_data\" AS \"t4\" ON \"t1\".\"MakeId\" = \"t4\".\"Id\" WHERE \"t3\".\"complete_name\" = 'General Motors' OR \"t4\".\"engine\" > 3500",
+    "car_1__syn_v2__q0153": "SELECT DISTINCT \"cars_data\".\"Year\" AS \"year\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"engine\" BETWEEN 3000 AND 4000",
+    "car_1__syn_v2__q0154": "SELECT DISTINCT \"cars_data\".\"Year\" AS \"year\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"engine\" BETWEEN 3000 AND 4000",
+    "car_1__syn_v2__q0155": "SELECT \"t1\".\"speed_up\" AS \"horsepower\" FROM \"cars_data\" AS \"t1\" ORDER BY \"t1\".\"miles_per_gallon\" DESC LIMIT 1",
+    "car_1__syn_v2__q0156": "SELECT \"t1\".\"speed_up\" AS \"horsepower\" FROM \"cars_data\" AS \"t1\" ORDER BY \"t1\".\"miles_per_gallon\" DESC LIMIT 1",
+    "car_1__syn_v2__q0157": "SELECT \"t1\".\"number_cylinder\" AS \"cylinders\" FROM \"cars_data\" AS \"t1\" JOIN \"car_names\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"MakeId\" WHERE \"t2\".\"model_name\" = 'volvo' ORDER BY \"t1\".\"miles_per_gallon\" ASC LIMIT 1",
+    "car_1__syn_v2__q0158": "SELECT \"t1\".\"number_cylinder\" AS \"cylinders\" FROM \"cars_data\" AS \"t1\" JOIN \"car_names\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"MakeId\" WHERE \"t2\".\"model_name\" = 'volvo' ORDER BY \"t1\".\"miles_per_gallon\" ASC LIMIT 1",
+    "car_1__syn_v2__q0159": "SELECT COUNT(*) AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"miles_per_gallon\" > (SELECT \"cars_data\".\"miles_per_gallon\" AS \"accelerate\" FROM \"cars_data\" AS \"cars_data\" ORDER BY \"cars_data\".\"speed_up\" DESC LIMIT 1)",
+    "car_1__syn_v2__q0160": "SELECT COUNT(*) AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"miles_per_gallon\" > (SELECT \"cars_data\".\"miles_per_gallon\" AS \"accelerate\" FROM \"cars_data\" AS \"cars_data\" ORDER BY \"cars_data\".\"speed_up\" DESC LIMIT 1)",
+    "car_1__syn_v2__q0161": "SELECT COUNT(*) AS \"_col_0\" FROM \"countries\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"CountryId\" = \"t2\".\"nation\" GROUP BY \"t1\".\"CountryId\" HAVING COUNT(*) > 2",
+    "car_1__syn_v2__q0162": "SELECT COUNT(*) AS \"_col_0\" FROM \"countries\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"CountryId\" = \"t2\".\"nation\" GROUP BY \"t1\".\"CountryId\" HAVING COUNT(*) > 2",
+    "car_1__syn_v2__q0163": "SELECT COUNT(*) AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"number_cylinder\" > 6",
+    "car_1__syn_v2__q0164": "SELECT COUNT(*) AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"number_cylinder\" > 6",
+    "car_1__syn_v2__q0165": "SELECT \"t1\".\"model_name\" AS \"model\" FROM \"car_names\" AS \"t1\" JOIN \"cars_data\" AS \"t2\" ON \"t1\".\"MakeId\" = \"t2\".\"Id\" WHERE \"t2\".\"number_cylinder\" = 4 ORDER BY \"t2\".\"speed_up\" DESC LIMIT 1",
+    "car_1__syn_v2__q0166": "SELECT \"t1\".\"model_name\" AS \"model\" FROM \"car_names\" AS \"t1\" JOIN \"cars_data\" AS \"t2\" ON \"t1\".\"MakeId\" = \"t2\".\"Id\" WHERE \"t2\".\"number_cylinder\" = 4 ORDER BY \"t2\".\"speed_up\" DESC LIMIT 1",
+    "car_1__syn_v2__q0167": "SELECT \"t2\".\"MakeId\" AS \"makeid\", \"t2\".\"manufacture\" AS \"make\" FROM \"cars_data\" AS \"t1\" JOIN \"car_names\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"MakeId\" WHERE \"t1\".\"speed_up\" > (SELECT MIN(\"cars_data\".\"speed_up\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\") AND \"t1\".\"number_cylinder\" <= 3",
+    "car_1__syn_v2__q0168": "SELECT \"t2\".\"MakeId\" AS \"makeid\", \"t2\".\"manufacture\" AS \"make\" FROM \"cars_data\" AS \"t1\" JOIN \"car_names\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"MakeId\" WHERE \"t1\".\"speed_up\" > (SELECT MIN(\"cars_data\".\"speed_up\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\") AND \"t1\".\"number_cylinder\" < 4",
+    "car_1__syn_v2__q0169": "SELECT MAX(\"cars_data\".\"mass\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"number_cylinder\" = 8 OR \"cars_data\".\"Year\" < 1980",
+    "car_1__syn_v2__q0170": "SELECT MAX(\"cars_data\".\"mass\") AS \"_col_0\" FROM \"cars_data\" AS \"cars_data\" WHERE \"cars_data\".\"number_cylinder\" = 8 OR \"cars_data\".\"Year\" < 1980",
+    "car_1__syn_v2__q0171": "SELECT DISTINCT \"t1\".\"mode\" AS \"model\" FROM \"model_list\" AS \"t1\" JOIN \"car_names\" AS \"t2\" ON \"t1\".\"mode\" = \"t2\".\"model_name\" JOIN \"cars_data\" AS \"t3\" ON \"t2\".\"MakeId\" = \"t3\".\"Id\" JOIN \"car_makers\" AS \"t4\" ON \"t1\".\"produced_by\" = \"t4\".\"Id\" WHERE \"t3\".\"engine\" < 3500 AND \"t4\".\"complete_name\" <> 'Ford Motor Company'",
+    "car_1__syn_v2__q0172": "SELECT DISTINCT \"t1\".\"mode\" AS \"model\" FROM \"model_list\" AS \"t1\" JOIN \"car_names\" AS \"t2\" ON \"t1\".\"mode\" = \"t2\".\"model_name\" JOIN \"cars_data\" AS \"t3\" ON \"t2\".\"MakeId\" = \"t3\".\"Id\" JOIN \"car_makers\" AS \"t4\" ON \"t1\".\"produced_by\" = \"t4\".\"Id\" WHERE \"t3\".\"engine\" < 3500 AND \"t4\".\"complete_name\" <> 'Ford Motor Company'",
+    "car_1__syn_v2__q0173": "SELECT \"countries\".\"state\" AS \"countryname\" FROM \"countries\" AS \"countries\" EXCEPT SELECT \"t1\".\"state\" AS \"countryname\" FROM \"countries\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"CountryId\" = \"t2\".\"nation\"",
+    "car_1__syn_v2__q0174": "SELECT \"countries\".\"state\" AS \"countryname\" FROM \"countries\" AS \"countries\" EXCEPT SELECT \"t1\".\"state\" AS \"countryname\" FROM \"countries\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"CountryId\" = \"t2\".\"nation\"",
+    "car_1__syn_v2__q0175": "SELECT \"t1\".\"Id\" AS \"id\", \"t1\".\"creator\" AS \"maker\" FROM \"car_makers\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"produced_by\" GROUP BY \"t1\".\"Id\" HAVING COUNT(*) >= 2 INTERSECT SELECT \"t1\".\"Id\" AS \"id\", \"t1\".\"creator\" AS \"maker\" FROM \"car_makers\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"produced_by\" JOIN \"car_names\" AS \"t3\" ON \"t2\".\"mode\" = \"t3\".\"model_name\" GROUP BY \"t1\".\"Id\" HAVING COUNT(*) > 3",
+    "car_1__syn_v2__q0176": "SELECT \"t1\".\"Id\" AS \"id\", \"t1\".\"creator\" AS \"maker\" FROM \"car_makers\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"produced_by\" GROUP BY \"t1\".\"Id\" HAVING COUNT(*) >= 2 INTERSECT SELECT \"t1\".\"Id\" AS \"id\", \"t1\".\"creator\" AS \"maker\" FROM \"car_makers\" AS \"t1\" JOIN \"model_list\" AS \"t2\" ON \"t1\".\"Id\" = \"t2\".\"produced_by\" JOIN \"car_names\" AS \"t3\" ON \"t2\".\"mode\" = \"t3\".\"model_name\" GROUP BY \"t1\".\"Id\" HAVING COUNT(*) > 3",
+    "car_1__syn_v2__q0177": "SELECT \"t1\".\"CountryId\" AS \"countryid\", \"t1\".\"state\" AS \"countryname\" FROM \"countries\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"CountryId\" = \"t2\".\"nation\" GROUP BY \"t1\".\"CountryId\" HAVING COUNT(*) > 3 UNION SELECT \"t1\".\"CountryId\" AS \"countryid\", \"t1\".\"state\" AS \"countryname\" FROM \"countries\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"CountryId\" = \"t2\".\"nation\" JOIN \"model_list\" AS \"t3\" ON \"t2\".\"Id\" = \"t3\".\"produced_by\" WHERE \"t3\".\"mode\" = 'fiat'",
+    "car_1__syn_v2__q0178": "SELECT \"t1\".\"CountryId\" AS \"countryid\", \"t1\".\"state\" AS \"countryname\" FROM \"countries\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"CountryId\" = \"t2\".\"nation\" GROUP BY \"t1\".\"CountryId\" HAVING COUNT(*) > 3 UNION SELECT \"t1\".\"CountryId\" AS \"countryid\", \"t1\".\"state\" AS \"countryname\" FROM \"countries\" AS \"t1\" JOIN \"car_makers\" AS \"t2\" ON \"t1\".\"CountryId\" = \"t2\".\"nation\" JOIN \"model_list\" AS \"t3\" ON \"t2\".\"Id\" = \"t3\".\"produced_by\" WHERE \"t3\".\"mode\" = 'fiat'"
+  },
+  "rewrite_errors": {}
+}

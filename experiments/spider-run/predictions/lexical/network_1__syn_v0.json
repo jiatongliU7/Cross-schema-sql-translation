@@ -1,0 +1,187 @@
+{
+  "tables": {
+    "Highschooler": [
+      [
+        "Highschooler",
+        1.0
+      ],
+      [
+        "Likes",
+        0.23529411764705882
+      ],
+      [
+        "Friend",
+        0.2222222222222222
+      ]
+    ],
+    "Friend": [
+      [
+        "Friend",
+        1.0
+      ],
+      [
+        "Likes",
+        0.36363636363636365
+      ],
+      [
+        "Highschooler",
+        0.1111111111111111
+      ]
+    ],
+    "Likes": [
+      [
+        "Likes",
+        1.0
+      ],
+      [
+        "Friend",
+        0.36363636363636365
+      ],
+      [
+        "Highschooler",
+        0.23529411764705882
+      ]
+    ]
+  },
+  "columns": {
+    "Highschooler.ID": [
+      [
+        "Highschooler.ID",
+        1.0
+      ],
+      [
+        "Likes.liked_id",
+        0.4
+      ],
+      [
+        "Friend.friend_id",
+        0.36363636363636365
+      ]
+    ],
+    "Highschooler.name": [
+      [
+        "Highschooler.name",
+        1.0
+      ],
+      [
+        "Likes.liked_id",
+        0.16666666666666666
+      ],
+      [
+        "Friend.friend_id",
+        0.15384615384615385
+      ]
+    ],
+    "Highschooler.grade": [
+      [
+        "Highschooler.name",
+        0.4444444444444444
+      ],
+      [
+        "Friend.friend_id",
+        0.2857142857142857
+      ],
+      [
+        "Highschooler.ID",
+        0.2857142857142857
+      ]
+    ],
+    "Friend.student_id": [
+      [
+        "Likes.student_id",
+        1.0
+      ],
+      [
+        "Friend.student_id",
+        1.0
+      ],
+      [
+        "Friend.friend_id",
+        0.5263157894736842
+      ]
+    ],
+    "Friend.friend_id": [
+      [
+        "Friend.friend_id",
+        1.0
+      ],
+      [
+        "Likes.liked_id",
+        0.7058823529411765
+      ],
+      [
+        "Likes.student_id",
+        0.5263157894736842
+      ]
+    ],
+    "Likes.student_id": [
+      [
+        "Likes.student_id",
+        1.0
+      ],
+      [
+        "Friend.student_id",
+        1.0
+      ],
+      [
+        "Friend.friend_id",
+        0.5263157894736842
+      ]
+    ],
+    "Likes.liked_id": [
+      [
+        "Likes.liked_id",
+        1.0
+      ],
+      [
+        "Friend.friend_id",
+        0.7058823529411765
+      ],
+      [
+        "Likes.student_id",
+        0.4444444444444444
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Highschooler": "Highschooler",
+      "Friend": "Friend",
+      "Likes": "Likes"
+    },
+    "columns": {
+      "Highschooler.ID": "Highschooler.ID",
+      "Highschooler.name": "Highschooler.name",
+      "Highschooler.grade": "Highschooler.school_level",
+      "Friend.student_id": "Friend.student_id",
+      "Friend.friend_id": "Friend.friend_id",
+      "Likes.student_id": "Likes.student_id",
+      "Likes.liked_id": "Likes.liked_id"
+    }
+  },
+  "q_B": {
+    "network_1__syn_v0__q0864": "SELECT \"highschooler\".\"name\" AS \"name\", \"highschooler\".\"school_level\" AS \"grade\" FROM \"Highschooler\" AS \"highschooler\"",
+    "network_1__syn_v0__q0865": "SELECT \"highschooler\".\"name\" AS \"name\", \"highschooler\".\"school_level\" AS \"grade\" FROM \"Highschooler\" AS \"highschooler\"",
+    "network_1__syn_v0__q0866": "SELECT \"highschooler\".\"school_level\" AS \"grade\" FROM \"Highschooler\" AS \"highschooler\"",
+    "network_1__syn_v0__q0867": "SELECT \"highschooler\".\"school_level\" AS \"grade\" FROM \"Highschooler\" AS \"highschooler\"",
+    "network_1__syn_v0__q0868": "SELECT \"highschooler\".\"school_level\" AS \"grade\" FROM \"Highschooler\" AS \"highschooler\" WHERE \"highschooler\".\"name\" = 'Kyle'",
+    "network_1__syn_v0__q0869": "SELECT \"highschooler\".\"school_level\" AS \"grade\" FROM \"Highschooler\" AS \"highschooler\" WHERE \"highschooler\".\"name\" = 'Kyle'",
+    "network_1__syn_v0__q0870": "SELECT \"highschooler\".\"name\" AS \"name\" FROM \"Highschooler\" AS \"highschooler\" WHERE \"highschooler\".\"school_level\" = 10",
+    "network_1__syn_v0__q0871": "SELECT \"highschooler\".\"name\" AS \"name\" FROM \"Highschooler\" AS \"highschooler\" WHERE \"highschooler\".\"school_level\" = 10",
+    "network_1__syn_v0__q0874": "SELECT COUNT(*) AS \"_col_0\" FROM \"Highschooler\" AS \"highschooler\" WHERE \"highschooler\".\"school_level\" = 9 OR \"highschooler\".\"school_level\" = 10",
+    "network_1__syn_v0__q0875": "SELECT COUNT(*) AS \"_col_0\" FROM \"Highschooler\" AS \"highschooler\" WHERE \"highschooler\".\"school_level\" = 9 OR \"highschooler\".\"school_level\" = 10",
+    "network_1__syn_v0__q0876": "SELECT \"highschooler\".\"school_level\" AS \"grade\", COUNT(*) AS \"_col_1\" FROM \"Highschooler\" AS \"highschooler\" GROUP BY \"highschooler\".\"school_level\"",
+    "network_1__syn_v0__q0877": "SELECT \"highschooler\".\"school_level\" AS \"grade\", COUNT(*) AS \"_col_1\" FROM \"Highschooler\" AS \"highschooler\" GROUP BY \"highschooler\".\"school_level\"",
+    "network_1__syn_v0__q0878": "SELECT \"highschooler\".\"school_level\" AS \"grade\" FROM \"Highschooler\" AS \"highschooler\" GROUP BY \"highschooler\".\"school_level\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "network_1__syn_v0__q0879": "SELECT \"highschooler\".\"school_level\" AS \"grade\" FROM \"Highschooler\" AS \"highschooler\" GROUP BY \"highschooler\".\"school_level\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "network_1__syn_v0__q0880": "SELECT \"highschooler\".\"school_level\" AS \"grade\" FROM \"Highschooler\" AS \"highschooler\" GROUP BY \"highschooler\".\"school_level\" HAVING COUNT(*) >= 4",
+    "network_1__syn_v0__q0881": "SELECT \"highschooler\".\"school_level\" AS \"grade\" FROM \"Highschooler\" AS \"highschooler\" GROUP BY \"highschooler\".\"school_level\" HAVING COUNT(*) >= 4",
+    "network_1__syn_v0__q0910": "SELECT \"t2\".\"name\" AS \"name\" FROM \"Friend\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"student_id\" = \"t2\".\"ID\" WHERE \"t2\".\"school_level\" > 5 GROUP BY \"t1\".\"student_id\" HAVING COUNT(*) >= 2",
+    "network_1__syn_v0__q0911": "SELECT \"t2\".\"name\" AS \"name\" FROM \"Friend\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"student_id\" = \"t2\".\"ID\" WHERE \"t2\".\"school_level\" > 5 GROUP BY \"t1\".\"student_id\" HAVING COUNT(*) >= 2",
+    "network_1__syn_v0__q0914": "SELECT AVG(\"highschooler\".\"school_level\") AS \"_col_0\" FROM \"Highschooler\" AS \"highschooler\" WHERE \"highschooler\".\"ID\" IN (SELECT \"t1\".\"student_id\" AS \"student_id\" FROM \"Friend\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"student_id\" = \"t2\".\"ID\")",
+    "network_1__syn_v0__q0915": "SELECT AVG(\"highschooler\".\"school_level\") AS \"_col_0\" FROM \"Highschooler\" AS \"highschooler\" WHERE \"highschooler\".\"ID\" IN (SELECT \"t1\".\"student_id\" AS \"student_id\" FROM \"Friend\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"student_id\" = \"t2\".\"ID\")",
+    "network_1__syn_v0__q0916": "SELECT MIN(\"highschooler\".\"school_level\") AS \"_col_0\" FROM \"Highschooler\" AS \"highschooler\" WHERE NOT \"highschooler\".\"ID\" IN (SELECT \"t1\".\"student_id\" AS \"student_id\" FROM \"Friend\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"student_id\" = \"t2\".\"ID\")",
+    "network_1__syn_v0__q0917": "SELECT MIN(\"highschooler\".\"school_level\") AS \"_col_0\" FROM \"Highschooler\" AS \"highschooler\" WHERE NOT \"highschooler\".\"ID\" IN (SELECT \"t1\".\"student_id\" AS \"student_id\" FROM \"Friend\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"student_id\" = \"t2\".\"ID\")"
+  },
+  "rewrite_errors": {}
+}

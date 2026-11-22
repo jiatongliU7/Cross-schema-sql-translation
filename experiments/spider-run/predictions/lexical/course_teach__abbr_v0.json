@@ -1,0 +1,216 @@
+{
+  "tables": {
+    "course": [
+      [
+        "course",
+        1.0
+      ],
+      [
+        "course_arrange",
+        0.6
+      ],
+      [
+        "teacher",
+        0.3076923076923077
+      ]
+    ],
+    "teacher": [
+      [
+        "teacher",
+        1.0
+      ],
+      [
+        "course_arrange",
+        0.2857142857142857
+      ],
+      [
+        "course",
+        0.15384615384615385
+      ]
+    ],
+    "course_arrange": [
+      [
+        "course_arrange",
+        1.0
+      ],
+      [
+        "course",
+        0.6
+      ],
+      [
+        "teacher",
+        0.19047619047619047
+      ]
+    ]
+  },
+  "columns": {
+    "course.Course_ID": [
+      [
+        "course.crs_id",
+        0.8
+      ],
+      [
+        "course_arrange.crs_id",
+        0.8
+      ],
+      [
+        "course_arrange.Teacher_ID",
+        0.5263157894736842
+      ]
+    ],
+    "course.Staring_Date": [
+      [
+        "course.start_date",
+        0.8181818181818182
+      ],
+      [
+        "teacher.Age",
+        0.4
+      ],
+      [
+        "course_arrange.Grade",
+        0.35294117647058826
+      ]
+    ],
+    "course.Course": [
+      [
+        "course.crs",
+        0.6666666666666666
+      ],
+      [
+        "course.crs_id",
+        0.5
+      ],
+      [
+        "course_arrange.crs_id",
+        0.5
+      ]
+    ],
+    "teacher.Teacher_ID": [
+      [
+        "course_arrange.Teacher_ID",
+        1.0
+      ],
+      [
+        "teacher.Teacher_ID",
+        1.0
+      ],
+      [
+        "course.crs_id",
+        0.625
+      ]
+    ],
+    "teacher.Name": [
+      [
+        "teacher.Name",
+        1.0
+      ],
+      [
+        "teacher.Age",
+        0.5714285714285714
+      ],
+      [
+        "course_arrange.Grade",
+        0.4444444444444444
+      ]
+    ],
+    "teacher.Age": [
+      [
+        "teacher.Age",
+        1.0
+      ],
+      [
+        "teacher.Name",
+        0.5714285714285714
+      ],
+      [
+        "course_arrange.Grade",
+        0.5
+      ]
+    ],
+    "teacher.Hometown": [
+      [
+        "teacher.Hometown",
+        1.0
+      ],
+      [
+        "teacher.Name",
+        0.3333333333333333
+      ],
+      [
+        "course_arrange.Teacher_ID",
+        0.2222222222222222
+      ]
+    ],
+    "course_arrange.Course_ID": [
+      [
+        "course.crs_id",
+        0.8
+      ],
+      [
+        "course_arrange.crs_id",
+        0.8
+      ],
+      [
+        "course_arrange.Teacher_ID",
+        0.5263157894736842
+      ]
+    ],
+    "course_arrange.Teacher_ID": [
+      [
+        "course_arrange.Teacher_ID",
+        1.0
+      ],
+      [
+        "teacher.Teacher_ID",
+        1.0
+      ],
+      [
+        "course.crs_id",
+        0.625
+      ]
+    ],
+    "course_arrange.Grade": [
+      [
+        "course_arrange.Grade",
+        1.0
+      ],
+      [
+        "teacher.Age",
+        0.5
+      ],
+      [
+        "teacher.Name",
+        0.4444444444444444
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "course": "course",
+      "teacher": "teacher",
+      "course_arrange": "course_arrange"
+    },
+    "columns": {
+      "course.Course_ID": "course.crs_id",
+      "course.Staring_Date": "course.start_date",
+      "course.Course": "course.crs",
+      "teacher.Teacher_ID": "teacher.Teacher_ID",
+      "teacher.Name": "teacher.Name",
+      "teacher.Age": "teacher.Age",
+      "teacher.Hometown": "teacher.Hometown",
+      "course_arrange.Course_ID": "course_arrange.crs_id",
+      "course_arrange.Teacher_ID": "course_arrange.Teacher_ID",
+      "course_arrange.Grade": "course_arrange.Grade"
+    }
+  },
+  "q_B": {
+    "course_teach__abbr_v0__q0399": "SELECT \"t3\".\"Name\" AS \"name\", \"t2\".\"crs\" AS \"course\" FROM \"course_arrange\" AS \"t1\" JOIN \"course\" AS \"t2\" ON \"t1\".\"crs_id\" = \"t2\".\"crs_id\" JOIN \"teacher\" AS \"t3\" ON \"t1\".\"Teacher_ID\" = \"t3\".\"Teacher_ID\"",
+    "course_teach__abbr_v0__q0400": "SELECT \"t3\".\"Name\" AS \"name\", \"t2\".\"crs\" AS \"course\" FROM \"course_arrange\" AS \"t1\" JOIN \"course\" AS \"t2\" ON \"t1\".\"crs_id\" = \"t2\".\"crs_id\" JOIN \"teacher\" AS \"t3\" ON \"t1\".\"Teacher_ID\" = \"t3\".\"Teacher_ID\"",
+    "course_teach__abbr_v0__q0401": "SELECT \"t3\".\"Name\" AS \"name\", \"t2\".\"crs\" AS \"course\" FROM \"course_arrange\" AS \"t1\" JOIN \"course\" AS \"t2\" ON \"t1\".\"crs_id\" = \"t2\".\"crs_id\" JOIN \"teacher\" AS \"t3\" ON \"t1\".\"Teacher_ID\" = \"t3\".\"Teacher_ID\" ORDER BY \"t3\".\"Name\"",
+    "course_teach__abbr_v0__q0402": "SELECT \"t3\".\"Name\" AS \"name\", \"t2\".\"crs\" AS \"course\" FROM \"course_arrange\" AS \"t1\" JOIN \"course\" AS \"t2\" ON \"t1\".\"crs_id\" = \"t2\".\"crs_id\" JOIN \"teacher\" AS \"t3\" ON \"t1\".\"Teacher_ID\" = \"t3\".\"Teacher_ID\" ORDER BY \"t3\".\"Name\"",
+    "course_teach__abbr_v0__q0403": "SELECT \"t3\".\"Name\" AS \"name\" FROM \"course_arrange\" AS \"t1\" JOIN \"course\" AS \"t2\" ON \"t1\".\"crs_id\" = \"t2\".\"crs_id\" JOIN \"teacher\" AS \"t3\" ON \"t1\".\"Teacher_ID\" = \"t3\".\"Teacher_ID\" WHERE \"t2\".\"crs\" = 'Math'",
+    "course_teach__abbr_v0__q0404": "SELECT \"t3\".\"Name\" AS \"name\" FROM \"course_arrange\" AS \"t1\" JOIN \"course\" AS \"t2\" ON \"t1\".\"crs_id\" = \"t2\".\"crs_id\" JOIN \"teacher\" AS \"t3\" ON \"t1\".\"Teacher_ID\" = \"t3\".\"Teacher_ID\" WHERE \"t2\".\"crs\" = 'Math'"
+  },
+  "rewrite_errors": {}
+}

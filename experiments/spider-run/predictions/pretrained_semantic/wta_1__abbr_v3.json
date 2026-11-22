@@ -1,0 +1,719 @@
+{
+  "tables": {
+    "players": [
+      [
+        "players",
+        1.0
+      ],
+      [
+        "rankings",
+        0.6049553155899048
+      ],
+      [
+        "matches",
+        0.5888946056365967
+      ]
+    ],
+    "matches": [
+      [
+        "matches",
+        0.9999999403953552
+      ],
+      [
+        "players",
+        0.5888946056365967
+      ],
+      [
+        "rankings",
+        0.5453388690948486
+      ]
+    ],
+    "rankings": [
+      [
+        "rankings",
+        0.9999997615814209
+      ],
+      [
+        "players",
+        0.6049553155899048
+      ],
+      [
+        "matches",
+        0.5453388690948486
+      ]
+    ]
+  },
+  "columns": {
+    "players.player_id": [
+      [
+        "players.player_id",
+        1.000000238418579
+      ],
+      [
+        "players.dob",
+        0.9278417229652405
+      ],
+      [
+        "players.last_name",
+        0.9227208495140076
+      ]
+    ],
+    "players.first_name": [
+      [
+        "players.first_name",
+        1.0
+      ],
+      [
+        "players.last_name",
+        0.984325647354126
+      ],
+      [
+        "players.hand",
+        0.9324320554733276
+      ]
+    ],
+    "players.last_name": [
+      [
+        "players.last_name",
+        1.0
+      ],
+      [
+        "players.first_name",
+        0.984325647354126
+      ],
+      [
+        "players.hand",
+        0.9392094612121582
+      ]
+    ],
+    "players.hand": [
+      [
+        "players.hand",
+        1.0
+      ],
+      [
+        "players.last_name",
+        0.9392094612121582
+      ],
+      [
+        "players.first_name",
+        0.9324320554733276
+      ]
+    ],
+    "players.birth_date": [
+      [
+        "players.player_id",
+        0.901695966720581
+      ],
+      [
+        "players.dob",
+        0.8791114687919617
+      ],
+      [
+        "players.last_name",
+        0.8766425251960754
+      ]
+    ],
+    "players.country_code": [
+      [
+        "players.country_code",
+        1.000000238418579
+      ],
+      [
+        "players.last_name",
+        0.9049069881439209
+      ],
+      [
+        "players.hand",
+        0.8993769288063049
+      ]
+    ],
+    "matches.best_of": [
+      [
+        "matches.best_of",
+        1.000000238418579
+      ],
+      [
+        "matches.match_num",
+        0.9381483793258667
+      ],
+      [
+        "matches.loser_ht",
+        0.8924777507781982
+      ]
+    ],
+    "matches.draw_size": [
+      [
+        "matches.draw_size",
+        1.0
+      ],
+      [
+        "matches.match_num",
+        0.8425644040107727
+      ],
+      [
+        "matches.best_of",
+        0.8363902568817139
+      ]
+    ],
+    "matches.loser_age": [
+      [
+        "matches.loser_age",
+        1.0
+      ],
+      [
+        "matches.loser_id",
+        0.916216254234314
+      ],
+      [
+        "matches.winner_age",
+        0.9132791757583618
+      ]
+    ],
+    "matches.loser_entry": [
+      [
+        "matches.loser_ent",
+        0.9814119935035706
+      ],
+      [
+        "matches.loser_ioc",
+        0.9760187864303589
+      ],
+      [
+        "matches.loser_name",
+        0.9713290929794312
+      ]
+    ],
+    "matches.loser_hand": [
+      [
+        "matches.loser_hand",
+        1.0000001192092896
+      ],
+      [
+        "matches.loser_ioc",
+        0.9495153427124023
+      ],
+      [
+        "matches.loser_ent",
+        0.9379295110702515
+      ]
+    ],
+    "matches.loser_ht": [
+      [
+        "matches.loser_ht",
+        1.000000238418579
+      ],
+      [
+        "matches.loser_id",
+        0.9601341485977173
+      ],
+      [
+        "matches.loser_rank",
+        0.9424096345901489
+      ]
+    ],
+    "matches.loser_id": [
+      [
+        "matches.loser_id",
+        1.0000001192092896
+      ],
+      [
+        "matches.loser_ht",
+        0.9601341485977173
+      ],
+      [
+        "matches.loser_rank",
+        0.9363836050033569
+      ]
+    ],
+    "matches.loser_ioc": [
+      [
+        "matches.loser_ioc",
+        0.9999998807907104
+      ],
+      [
+        "matches.loser_ent",
+        0.9666670560836792
+      ],
+      [
+        "matches.loser_name",
+        0.9538919925689697
+      ]
+    ],
+    "matches.loser_name": [
+      [
+        "matches.loser_name",
+        1.0000001192092896
+      ],
+      [
+        "matches.loser_ent",
+        0.9623253345489502
+      ],
+      [
+        "matches.loser_ioc",
+        0.9538919925689697
+      ]
+    ],
+    "matches.loser_rank": [
+      [
+        "matches.loser_rank",
+        1.0000001192092896
+      ],
+      [
+        "matches.loser_rank_points",
+        0.9747896790504456
+      ],
+      [
+        "matches.loser_ht",
+        0.9424096345901489
+      ]
+    ],
+    "matches.loser_rank_points": [
+      [
+        "matches.loser_rank_points",
+        1.0
+      ],
+      [
+        "matches.loser_rank",
+        0.9747896790504456
+      ],
+      [
+        "matches.winner_rank_points",
+        0.9229223132133484
+      ]
+    ],
+    "matches.loser_seed": [
+      [
+        "matches.loser_seed",
+        1.0
+      ],
+      [
+        "matches.loser_id",
+        0.9329396486282349
+      ],
+      [
+        "matches.loser_ht",
+        0.9313488006591797
+      ]
+    ],
+    "matches.match_num": [
+      [
+        "matches.match_num",
+        0.9999999403953552
+      ],
+      [
+        "matches.best_of",
+        0.9381483793258667
+      ],
+      [
+        "matches.loser_ht",
+        0.8826789855957031
+      ]
+    ],
+    "matches.minutes": [
+      [
+        "matches.minutes",
+        0.9999998807907104
+      ],
+      [
+        "matches.match_num",
+        0.8159704208374023
+      ],
+      [
+        "matches.best_of",
+        0.7857897281646729
+      ]
+    ],
+    "matches.round": [
+      [
+        "matches.round",
+        1.0
+      ],
+      [
+        "matches.match_num",
+        0.8742938041687012
+      ],
+      [
+        "matches.best_of",
+        0.8628814816474915
+      ]
+    ],
+    "matches.score": [
+      [
+        "matches.score",
+        0.9999998807907104
+      ],
+      [
+        "matches.loser_ioc",
+        0.9080660343170166
+      ],
+      [
+        "matches.loser_ent",
+        0.8916281461715698
+      ]
+    ],
+    "matches.surface": [
+      [
+        "matches.surface",
+        1.0000001192092896
+      ],
+      [
+        "matches.loser_ioc",
+        0.8618781566619873
+      ],
+      [
+        "matches.loser_hand",
+        0.8476916551589966
+      ]
+    ],
+    "matches.tourney_date": [
+      [
+        "matches.tourney_date",
+        1.0
+      ],
+      [
+        "matches.tourney_name",
+        0.8841105699539185
+      ],
+      [
+        "matches.tourney_id",
+        0.8767170906066895
+      ]
+    ],
+    "matches.tourney_id": [
+      [
+        "matches.tourney_id",
+        1.0000001192092896
+      ],
+      [
+        "matches.tourney_name",
+        0.9840703010559082
+      ],
+      [
+        "matches.tourney_level",
+        0.9698669910430908
+      ]
+    ],
+    "matches.tourney_level": [
+      [
+        "matches.tourney_level",
+        1.000000238418579
+      ],
+      [
+        "matches.tourney_name",
+        0.9701816439628601
+      ],
+      [
+        "matches.tourney_id",
+        0.9698669910430908
+      ]
+    ],
+    "matches.tourney_name": [
+      [
+        "matches.tourney_name",
+        1.000000238418579
+      ],
+      [
+        "matches.tourney_id",
+        0.9840703010559082
+      ],
+      [
+        "matches.tourney_level",
+        0.9701816439628601
+      ]
+    ],
+    "matches.winner_age": [
+      [
+        "matches.winner_age",
+        1.0
+      ],
+      [
+        "matches.winner_id",
+        0.9338772892951965
+      ],
+      [
+        "matches.winner_ht",
+        0.9253333806991577
+      ]
+    ],
+    "matches.winner_entry": [
+      [
+        "matches.winner_name",
+        0.9839223623275757
+      ],
+      [
+        "matches.winner_ent",
+        0.9810235500335693
+      ],
+      [
+        "matches.winner_ioc",
+        0.9740074276924133
+      ]
+    ],
+    "matches.winner_hand": [
+      [
+        "matches.winner_hand",
+        1.0
+      ],
+      [
+        "matches.winner_ioc",
+        0.9539536833763123
+      ],
+      [
+        "matches.winner_name",
+        0.9524016976356506
+      ]
+    ],
+    "matches.winner_ht": [
+      [
+        "matches.winner_ht",
+        1.0
+      ],
+      [
+        "matches.winner_id",
+        0.9704626798629761
+      ],
+      [
+        "matches.winner_rank",
+        0.9585166573524475
+      ]
+    ],
+    "matches.winner_id": [
+      [
+        "matches.winner_id",
+        1.0000001192092896
+      ],
+      [
+        "matches.winner_ht",
+        0.9704626798629761
+      ],
+      [
+        "matches.winner_seed",
+        0.9565829634666443
+      ]
+    ],
+    "matches.winner_ioc": [
+      [
+        "matches.winner_ioc",
+        1.000000238418579
+      ],
+      [
+        "matches.winner_ent",
+        0.9663573503494263
+      ],
+      [
+        "matches.winner_name",
+        0.965239405632019
+      ]
+    ],
+    "matches.winner_name": [
+      [
+        "matches.winner_name",
+        1.0
+      ],
+      [
+        "matches.winner_ent",
+        0.9744236469268799
+      ],
+      [
+        "matches.winner_ioc",
+        0.965239405632019
+      ]
+    ],
+    "matches.winner_rank": [
+      [
+        "matches.winner_rank",
+        1.000000238418579
+      ],
+      [
+        "matches.winner_rank_points",
+        0.9780173897743225
+      ],
+      [
+        "matches.winner_ht",
+        0.9585166573524475
+      ]
+    ],
+    "matches.winner_rank_points": [
+      [
+        "matches.winner_rank_points",
+        1.0
+      ],
+      [
+        "matches.winner_rank",
+        0.9780173897743225
+      ],
+      [
+        "matches.winner_ht",
+        0.9343975782394409
+      ]
+    ],
+    "matches.winner_seed": [
+      [
+        "matches.winner_seed",
+        0.9999998807907104
+      ],
+      [
+        "matches.winner_id",
+        0.9565829634666443
+      ],
+      [
+        "matches.winner_ht",
+        0.9528200626373291
+      ]
+    ],
+    "matches.year": [
+      [
+        "matches.year",
+        1.0
+      ],
+      [
+        "matches.match_num",
+        0.8676488995552063
+      ],
+      [
+        "matches.best_of",
+        0.8456796407699585
+      ]
+    ],
+    "rankings.ranking_date": [
+      [
+        "rankings.ranking_date",
+        1.0000001192092896
+      ],
+      [
+        "rankings.ranking",
+        0.948445200920105
+      ],
+      [
+        "rankings.ranking_pts",
+        0.9267245531082153
+      ]
+    ],
+    "rankings.ranking": [
+      [
+        "rankings.ranking",
+        1.000000238418579
+      ],
+      [
+        "rankings.ranking_pts",
+        0.9669107794761658
+      ],
+      [
+        "rankings.ranking_date",
+        0.948445200920105
+      ]
+    ],
+    "rankings.player_id": [
+      [
+        "rankings.player_id",
+        1.0000001192092896
+      ],
+      [
+        "players.player_id",
+        0.9193070530891418
+      ],
+      [
+        "rankings.ranking",
+        0.8832484483718872
+      ]
+    ],
+    "rankings.ranking_points": [
+      [
+        "rankings.ranking",
+        0.9882135391235352
+      ],
+      [
+        "rankings.ranking_pts",
+        0.9737568497657776
+      ],
+      [
+        "rankings.ranking_date",
+        0.9422821998596191
+      ]
+    ],
+    "rankings.tours": [
+      [
+        "rankings.tours",
+        1.000000238418579
+      ],
+      [
+        "rankings.ranking",
+        0.9253934025764465
+      ],
+      [
+        "rankings.ranking_pts",
+        0.8994613289833069
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "players": "players",
+      "matches": "matches",
+      "rankings": "rankings"
+    },
+    "columns": {
+      "players.player_id": "players.player_id",
+      "players.first_name": "players.first_name",
+      "players.last_name": "players.last_name",
+      "players.hand": "players.hand",
+      "players.birth_date": "players.dob",
+      "players.country_code": "players.country_code",
+      "matches.best_of": "matches.best_of",
+      "matches.draw_size": "matches.draw_size",
+      "matches.loser_age": "matches.loser_age",
+      "matches.loser_entry": "matches.loser_ent",
+      "matches.loser_hand": "matches.loser_hand",
+      "matches.loser_ht": "matches.loser_ht",
+      "matches.loser_id": "matches.loser_id",
+      "matches.loser_ioc": "matches.loser_ioc",
+      "matches.loser_name": "matches.loser_name",
+      "matches.loser_rank": "matches.loser_rank",
+      "matches.loser_rank_points": "matches.loser_rank_points",
+      "matches.loser_seed": "matches.loser_seed",
+      "matches.match_num": "matches.match_num",
+      "matches.minutes": "matches.minutes",
+      "matches.round": "matches.round",
+      "matches.score": "matches.score",
+      "matches.surface": "matches.surface",
+      "matches.tourney_date": "matches.tourney_date",
+      "matches.tourney_id": "matches.tourney_id",
+      "matches.tourney_level": "matches.tourney_level",
+      "matches.tourney_name": "matches.tourney_name",
+      "matches.winner_age": "matches.winner_age",
+      "matches.winner_entry": "matches.winner_ent",
+      "matches.winner_hand": "matches.winner_hand",
+      "matches.winner_ht": "matches.winner_ht",
+      "matches.winner_id": "matches.winner_id",
+      "matches.winner_ioc": "matches.winner_ioc",
+      "matches.winner_name": "matches.winner_name",
+      "matches.winner_rank": "matches.winner_rank",
+      "matches.winner_rank_points": "matches.winner_rank_points",
+      "matches.winner_seed": "matches.winner_seed",
+      "matches.year": "matches.year",
+      "rankings.ranking_date": "rankings.ranking_date",
+      "rankings.ranking": "rankings.ranking",
+      "rankings.player_id": "rankings.player_id",
+      "rankings.ranking_points": "rankings.ranking_pts",
+      "rankings.tours": "rankings.tours"
+    }
+  },
+  "q_B": {
+    "wta_1__abbr_v3__q0433": "SELECT \"players\".\"first_name\" AS \"first_name\", \"players\".\"dob\" AS \"birth_date\" FROM \"players\" AS \"players\" WHERE \"players\".\"country_code\" = 'USA'",
+    "wta_1__abbr_v3__q0434": "SELECT \"players\".\"first_name\" AS \"first_name\", \"players\".\"dob\" AS \"birth_date\" FROM \"players\" AS \"players\" WHERE \"players\".\"country_code\" = 'USA'",
+    "wta_1__abbr_v3__q0453": "SELECT \"players\".\"first_name\" AS \"first_name\", \"players\".\"country_code\" AS \"country_code\" FROM \"players\" AS \"players\" ORDER BY \"players\".\"dob\" LIMIT 1",
+    "wta_1__abbr_v3__q0454": "SELECT \"players\".\"first_name\" AS \"first_name\", \"players\".\"country_code\" AS \"country_code\" FROM \"players\" AS \"players\" ORDER BY \"players\".\"dob\" LIMIT 1",
+    "wta_1__abbr_v3__q0455": "SELECT \"players\".\"first_name\" AS \"first_name\", \"players\".\"last_name\" AS \"last_name\" FROM \"players\" AS \"players\" ORDER BY \"players\".\"dob\"",
+    "wta_1__abbr_v3__q0456": "SELECT \"players\".\"first_name\" AS \"first_name\", \"players\".\"last_name\" AS \"last_name\" FROM \"players\" AS \"players\" ORDER BY \"players\".\"dob\"",
+    "wta_1__abbr_v3__q0457": "SELECT \"players\".\"first_name\" AS \"first_name\", \"players\".\"last_name\" AS \"last_name\" FROM \"players\" AS \"players\" WHERE \"players\".\"hand\" = 'L' ORDER BY \"players\".\"dob\"",
+    "wta_1__abbr_v3__q0458": "SELECT \"players\".\"first_name\" AS \"first_name\", \"players\".\"last_name\" AS \"last_name\" FROM \"players\" AS \"players\" WHERE \"players\".\"hand\" = 'L' ORDER BY \"players\".\"dob\"",
+    "wta_1__abbr_v3__q0471": "SELECT SUM(\"t2\".\"ranking_pts\") AS \"_col_0\", \"t1\".\"first_name\" AS \"first_name\" FROM \"players\" AS \"t1\" JOIN \"rankings\" AS \"t2\" ON \"t1\".\"player_id\" = \"t2\".\"player_id\" GROUP BY \"t1\".\"first_name\"",
+    "wta_1__abbr_v3__q0472": "SELECT SUM(\"t2\".\"ranking_pts\") AS \"_col_0\", \"t1\".\"first_name\" AS \"first_name\" FROM \"players\" AS \"t1\" JOIN \"rankings\" AS \"t2\" ON \"t1\".\"player_id\" = \"t2\".\"player_id\" GROUP BY \"t1\".\"first_name\"",
+    "wta_1__abbr_v3__q0487": "SELECT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"country_code\" AS \"country_code\", \"t1\".\"dob\" AS \"birth_date\" FROM \"players\" AS \"t1\" JOIN \"matches\" AS \"t2\" ON \"t1\".\"player_id\" = \"t2\".\"winner_id\" ORDER BY \"t2\".\"winner_rank_points\" DESC LIMIT 1",
+    "wta_1__abbr_v3__q0488": "SELECT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"country_code\" AS \"country_code\", \"t1\".\"dob\" AS \"birth_date\" FROM \"players\" AS \"t1\" JOIN \"matches\" AS \"t2\" ON \"t1\".\"player_id\" = \"t2\".\"winner_id\" ORDER BY \"t2\".\"winner_rank_points\" DESC LIMIT 1"
+  },
+  "rewrite_errors": {},
+  "model": "all-MiniLM-L6-v2",
+  "method": "semantic"
+}

@@ -22,6 +22,8 @@ def rewrite_sql(sql, schema, mapping):
     # Qualify resolves unqualified columns, expands stars and creates stable output aliases.
     definitions={t.name:{c.name: c.type or 'TEXT' for c in t.columns} for t in schema.tables}
     known_columns={c.casefold() for columns in definitions.values() for c in columns}
+    # Preserve quoted query aliases as identifiers during SQLite DQS handling.
+    known_columns.update(node.alias.casefold() for node in raw.walk() if node.alias)
     # Spider SQL uses SQLite's legacy double-quoted string behavior, for example
     # ``airline = "JetBlue Airways"``. SQLGlot parses that token as a quoted
     # identifier. SQLite treats it as a string when no such column exists, so

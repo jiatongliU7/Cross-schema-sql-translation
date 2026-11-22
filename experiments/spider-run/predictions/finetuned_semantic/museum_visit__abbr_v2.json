@@ -1,0 +1,255 @@
+{
+  "tables": {
+    "museum": [
+      [
+        "museum",
+        1.000000238418579
+      ],
+      [
+        "visit",
+        0.4804813265800476
+      ],
+      [
+        "visitor",
+        0.43688780069351196
+      ]
+    ],
+    "visitor": [
+      [
+        "visitor",
+        1.0000003576278687
+      ],
+      [
+        "visit",
+        0.8151838779449463
+      ],
+      [
+        "museum",
+        0.43688780069351196
+      ]
+    ],
+    "visit": [
+      [
+        "visit",
+        1.0000001192092896
+      ],
+      [
+        "visitor",
+        0.8151838779449463
+      ],
+      [
+        "museum",
+        0.4804813265800476
+      ]
+    ]
+  },
+  "columns": {
+    "museum.Museum_ID": [
+      [
+        "museum.Museum_ID",
+        0.9999997615814209
+      ],
+      [
+        "museum.num_stf",
+        0.8986002802848816
+      ],
+      [
+        "museum.Name",
+        0.5924546718597412
+      ]
+    ],
+    "museum.Name": [
+      [
+        "museum.Name",
+        1.0
+      ],
+      [
+        "visitor.Name",
+        0.6401000618934631
+      ],
+      [
+        "museum.Museum_ID",
+        0.5924546718597412
+      ]
+    ],
+    "museum.Num_of_Staff": [
+      [
+        "museum.num_stf",
+        0.846633791923523
+      ],
+      [
+        "museum.Museum_ID",
+        0.7692645788192749
+      ],
+      [
+        "visit.Num_of_Ticket",
+        0.5084570646286011
+      ]
+    ],
+    "museum.Open_Year": [
+      [
+        "museum.Open_Year",
+        1.0
+      ],
+      [
+        "museum.Name",
+        0.561434268951416
+      ],
+      [
+        "museum.num_stf",
+        0.5610828399658203
+      ]
+    ],
+    "visitor.ID": [
+      [
+        "visitor.ID",
+        0.9999998807907104
+      ],
+      [
+        "visitor.lvl_mem",
+        0.7655572295188904
+      ],
+      [
+        "visit.mus_id",
+        0.735038161277771
+      ]
+    ],
+    "visitor.Name": [
+      [
+        "visitor.Name",
+        1.0000001192092896
+      ],
+      [
+        "visit.visitor_ID",
+        0.6725021004676819
+      ],
+      [
+        "museum.Name",
+        0.6401000618934631
+      ]
+    ],
+    "visitor.Level_of_membership": [
+      [
+        "visitor.ID",
+        0.6894237995147705
+      ],
+      [
+        "visitor.Age",
+        0.6432652473449707
+      ],
+      [
+        "visitor.lvl_mem",
+        0.6316346526145935
+      ]
+    ],
+    "visitor.Age": [
+      [
+        "visitor.Age",
+        1.000000238418579
+      ],
+      [
+        "visitor.ID",
+        0.7088476419448853
+      ],
+      [
+        "visitor.lvl_mem",
+        0.627528190612793
+      ]
+    ],
+    "visit.Museum_ID": [
+      [
+        "museum.Museum_ID",
+        0.874228835105896
+      ],
+      [
+        "museum.num_stf",
+        0.7887396812438965
+      ],
+      [
+        "visitor.ID",
+        0.7195102572441101
+      ]
+    ],
+    "visit.visitor_ID": [
+      [
+        "visit.visitor_ID",
+        1.000000238418579
+      ],
+      [
+        "visitor.ID",
+        0.7239719033241272
+      ],
+      [
+        "visitor.Name",
+        0.6725021004676819
+      ]
+    ],
+    "visit.Num_of_Ticket": [
+      [
+        "visit.Num_of_Ticket",
+        1.0000001192092896
+      ],
+      [
+        "visitor.ID",
+        0.6927856206893921
+      ],
+      [
+        "visit.mus_id",
+        0.6641280651092529
+      ]
+    ],
+    "visit.Total_spent": [
+      [
+        "visit.Total_spent",
+        1.0
+      ],
+      [
+        "visit.Num_of_Ticket",
+        0.6440222263336182
+      ],
+      [
+        "visit.mus_id",
+        0.5894880294799805
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "museum": "museum",
+      "visitor": "visitor",
+      "visit": "visit"
+    },
+    "columns": {
+      "museum.Museum_ID": "museum.Museum_ID",
+      "museum.Name": "museum.Name",
+      "museum.Num_of_Staff": "museum.num_stf",
+      "museum.Open_Year": "museum.Open_Year",
+      "visitor.ID": "visitor.ID",
+      "visitor.Name": "visitor.Name",
+      "visitor.Level_of_membership": "visitor.lvl_mem",
+      "visitor.Age": "visitor.Age",
+      "visit.Museum_ID": "visit.mus_id",
+      "visit.visitor_ID": "visit.visitor_ID",
+      "visit.Num_of_Ticket": "visit.Num_of_Ticket",
+      "visit.Total_spent": "visit.Total_spent"
+    }
+  },
+  "q_B": {
+    "museum_visit__abbr_v2__q0412": "SELECT \"visitor\".\"Name\" AS \"name\" FROM \"visitor\" AS \"visitor\" WHERE \"visitor\".\"lvl_mem\" > 4 ORDER BY \"visitor\".\"lvl_mem\" DESC",
+    "museum_visit__abbr_v2__q0413": "SELECT AVG(\"visitor\".\"Age\") AS \"_col_0\" FROM \"visitor\" AS \"visitor\" WHERE \"visitor\".\"lvl_mem\" <= 4",
+    "museum_visit__abbr_v2__q0414": "SELECT \"visitor\".\"Name\" AS \"name\", \"visitor\".\"lvl_mem\" AS \"level_of_membership\" FROM \"visitor\" AS \"visitor\" WHERE \"visitor\".\"lvl_mem\" > 4 ORDER BY \"visitor\".\"Age\" DESC",
+    "museum_visit__abbr_v2__q0415": "SELECT \"museum\".\"Museum_ID\" AS \"museum_id\", \"museum\".\"Name\" AS \"name\" FROM \"museum\" AS \"museum\" ORDER BY \"museum\".\"num_stf\" DESC LIMIT 1",
+    "museum_visit__abbr_v2__q0416": "SELECT AVG(\"museum\".\"num_stf\") AS \"_col_0\" FROM \"museum\" AS \"museum\" WHERE \"museum\".\"Open_Year\" < 2009",
+    "museum_visit__abbr_v2__q0417": "SELECT \"museum\".\"num_stf\" AS \"num_of_staff\", \"museum\".\"Open_Year\" AS \"open_year\" FROM \"museum\" AS \"museum\" WHERE \"museum\".\"Name\" = 'Plaza Museum'",
+    "museum_visit__abbr_v2__q0418": "SELECT \"museum\".\"Name\" AS \"name\" FROM \"museum\" AS \"museum\" WHERE \"museum\".\"num_stf\" > (SELECT MIN(\"museum\".\"num_stf\") AS \"_col_0\" FROM \"museum\" AS \"museum\" WHERE \"museum\".\"Open_Year\" > 2010)",
+    "museum_visit__abbr_v2__q0420": "SELECT \"t2\".\"visitor_ID\" AS \"visitor_id\", \"t1\".\"Name\" AS \"name\", \"t1\".\"lvl_mem\" AS \"level_of_membership\" FROM \"visitor\" AS \"t1\" JOIN \"visit\" AS \"t2\" ON \"t1\".\"ID\" = \"t2\".\"visitor_ID\" GROUP BY \"t2\".\"visitor_ID\" ORDER BY SUM(\"t2\".\"Total_spent\") DESC LIMIT 1",
+    "museum_visit__abbr_v2__q0421": "SELECT \"t2\".\"mus_id\" AS \"museum_id\", \"t1\".\"Name\" AS \"name\" FROM \"museum\" AS \"t1\" JOIN \"visit\" AS \"t2\" ON \"t1\".\"Museum_ID\" = \"t2\".\"mus_id\" GROUP BY \"t2\".\"mus_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "museum_visit__abbr_v2__q0422": "SELECT \"museum\".\"Name\" AS \"name\" FROM \"museum\" AS \"museum\" WHERE NOT \"museum\".\"Museum_ID\" IN (SELECT \"visit\".\"mus_id\" AS \"museum_id\" FROM \"visit\" AS \"visit\")",
+    "museum_visit__abbr_v2__q0425": "SELECT SUM(\"t2\".\"Total_spent\") AS \"_col_0\" FROM \"visitor\" AS \"t1\" JOIN \"visit\" AS \"t2\" ON \"t1\".\"ID\" = \"t2\".\"visitor_ID\" WHERE \"t1\".\"lvl_mem\" = 1",
+    "museum_visit__abbr_v2__q0426": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"visitor\" AS \"t1\" JOIN \"visit\" AS \"t2\" ON \"t1\".\"ID\" = \"t2\".\"visitor_ID\" JOIN \"museum\" AS \"t3\" ON \"t3\".\"Museum_ID\" = \"t2\".\"mus_id\" WHERE \"t3\".\"Open_Year\" < 2009 INTERSECT SELECT \"t1\".\"Name\" AS \"name\" FROM \"visitor\" AS \"t1\" JOIN \"visit\" AS \"t2\" ON \"t1\".\"ID\" = \"t2\".\"visitor_ID\" JOIN \"museum\" AS \"t3\" ON \"t3\".\"Museum_ID\" = \"t2\".\"mus_id\" WHERE \"t3\".\"Open_Year\" > 2011",
+    "museum_visit__abbr_v2__q0427": "SELECT COUNT(*) AS \"_col_0\" FROM \"visitor\" AS \"visitor\" WHERE NOT \"visitor\".\"ID\" IN (SELECT \"t2\".\"visitor_ID\" AS \"visitor_id\" FROM \"museum\" AS \"t1\" JOIN \"visit\" AS \"t2\" ON \"t1\".\"Museum_ID\" = \"t2\".\"mus_id\" WHERE \"t1\".\"Open_Year\" > 2010)"
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "semantic"
+}

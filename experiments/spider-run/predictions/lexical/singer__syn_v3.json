@@ -1,0 +1,197 @@
+{
+  "tables": {
+    "singer": [
+      [
+        "singer",
+        1.0
+      ],
+      [
+        "song",
+        0.6
+      ]
+    ],
+    "song": [
+      [
+        "song",
+        1.0
+      ],
+      [
+        "singer",
+        0.6
+      ]
+    ]
+  },
+  "columns": {
+    "singer.Singer_ID": [
+      [
+        "singer.Singer_ID",
+        1.0
+      ],
+      [
+        "song.Singer_ID",
+        1.0
+      ],
+      [
+        "song.Song_ID",
+        0.75
+      ]
+    ],
+    "singer.Name": [
+      [
+        "singer.Name",
+        1.0
+      ],
+      [
+        "singer.Singer_ID",
+        0.3076923076923077
+      ],
+      [
+        "song.Singer_ID",
+        0.3076923076923077
+      ]
+    ],
+    "singer.Birth_Year": [
+      [
+        "singer.born_yr",
+        0.5882352941176471
+      ],
+      [
+        "song.Title",
+        0.4
+      ],
+      [
+        "singer.Singer_ID",
+        0.3157894736842105
+      ]
+    ],
+    "singer.Net_Worth_Millions": [
+      [
+        "singer.Net_Worth_Millions",
+        1.0
+      ],
+      [
+        "song.Highest_Position",
+        0.47058823529411764
+      ],
+      [
+        "song.number_of_trading",
+        0.34285714285714286
+      ]
+    ],
+    "singer.Citizenship": [
+      [
+        "singer.Citizenship",
+        1.0
+      ],
+      [
+        "song.Title",
+        0.375
+      ],
+      [
+        "song.Highest_Position",
+        0.2962962962962963
+      ]
+    ],
+    "song.Song_ID": [
+      [
+        "song.Song_ID",
+        1.0
+      ],
+      [
+        "singer.Singer_ID",
+        0.75
+      ],
+      [
+        "song.Singer_ID",
+        0.75
+      ]
+    ],
+    "song.Title": [
+      [
+        "song.Title",
+        1.0
+      ],
+      [
+        "singer.Citizenship",
+        0.375
+      ],
+      [
+        "singer.Singer_ID",
+        0.2857142857142857
+      ]
+    ],
+    "song.Singer_ID": [
+      [
+        "singer.Singer_ID",
+        1.0
+      ],
+      [
+        "song.Singer_ID",
+        1.0
+      ],
+      [
+        "song.Song_ID",
+        0.75
+      ]
+    ],
+    "song.Sales": [
+      [
+        "singer.Name",
+        0.4444444444444444
+      ],
+      [
+        "song.Title",
+        0.4
+      ],
+      [
+        "singer.Singer_ID",
+        0.2857142857142857
+      ]
+    ],
+    "song.Highest_Position": [
+      [
+        "song.Highest_Position",
+        1.0
+      ],
+      [
+        "singer.Net_Worth_Millions",
+        0.47058823529411764
+      ],
+      [
+        "singer.Citizenship",
+        0.2962962962962963
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "singer": "singer",
+      "song": "song"
+    },
+    "columns": {
+      "singer.Singer_ID": "singer.Singer_ID",
+      "singer.Name": "singer.Name",
+      "singer.Birth_Year": "singer.born_yr",
+      "singer.Net_Worth_Millions": "singer.Net_Worth_Millions",
+      "singer.Citizenship": "singer.Citizenship",
+      "song.Song_ID": "song.Song_ID",
+      "song.Title": "song.Title",
+      "song.Singer_ID": "song.Singer_ID",
+      "song.Sales": "song.number_of_trading",
+      "song.Highest_Position": "song.Highest_Position"
+    }
+  },
+  "q_B": {
+    "singer__syn_v3__q1004": "SELECT \"singer\".\"born_yr\" AS \"birth_year\", \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"singer\" AS \"singer\"",
+    "singer__syn_v3__q1005": "SELECT \"singer\".\"born_yr\" AS \"birth_year\", \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"singer\" AS \"singer\"",
+    "singer__syn_v3__q1008": "SELECT \"singer\".\"Name\" AS \"name\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"born_yr\" = 1948 OR \"singer\".\"born_yr\" = 1949",
+    "singer__syn_v3__q1009": "SELECT \"singer\".\"Name\" AS \"name\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"born_yr\" = 1948 OR \"singer\".\"born_yr\" = 1949",
+    "singer__syn_v3__q1020": "SELECT DISTINCT \"t1\".\"Name\" AS \"name\" FROM \"singer\" AS \"t1\" JOIN \"song\" AS \"t2\" ON \"t1\".\"Singer_ID\" = \"t2\".\"Singer_ID\" WHERE \"t2\".\"number_of_trading\" > 300000",
+    "singer__syn_v3__q1021": "SELECT DISTINCT \"t1\".\"Name\" AS \"name\" FROM \"singer\" AS \"t1\" JOIN \"song\" AS \"t2\" ON \"t1\".\"Singer_ID\" = \"t2\".\"Singer_ID\" WHERE \"t2\".\"number_of_trading\" > 300000",
+    "singer__syn_v3__q1024": "SELECT \"t1\".\"Name\" AS \"name\", SUM(\"t2\".\"number_of_trading\") AS \"_col_1\" FROM \"singer\" AS \"t1\" JOIN \"song\" AS \"t2\" ON \"t1\".\"Singer_ID\" = \"t2\".\"Singer_ID\" GROUP BY \"t1\".\"Name\"",
+    "singer__syn_v3__q1025": "SELECT \"t1\".\"Name\" AS \"name\", SUM(\"t2\".\"number_of_trading\") AS \"_col_1\" FROM \"singer\" AS \"t1\" JOIN \"song\" AS \"t2\" ON \"t1\".\"Singer_ID\" = \"t2\".\"Singer_ID\" GROUP BY \"t1\".\"Name\"",
+    "singer__syn_v3__q1028": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"born_yr\" < 1945 INTERSECT SELECT \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"born_yr\" > 1955",
+    "singer__syn_v3__q1029": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"born_yr\" < 1945 INTERSECT SELECT \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"singer\" AS \"singer\" WHERE \"singer\".\"born_yr\" > 1955"
+  },
+  "rewrite_errors": {}
+}

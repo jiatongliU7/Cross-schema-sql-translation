@@ -1,0 +1,6 @@
+method,split,pairs,queries,column_accuracy,changed_column_accuracy,changed_columns,column_top1_accuracy,column_top3_recall,execution_equivalence,join_execution_equivalence,gold_sql_errors
+lexical,dev,29,925,0.962397,0.862069,232,0.655699,0.890717,0.816216,0.835088,0
+pretrained_semantic,dev,29,925,0.99765,0.991379,232,0.877791,0.952996,0.995676,0.996491,0
+finetuned_semantic,dev,29,925,0.99765,0.991379,232,0.916569,0.981199,0.995676,0.996491,0
+finetuned_types,dev,29,925,0.99765,0.991379,232,0.916569,0.981199,0.995676,0.996491,0
+finetuned_fk,dev,29,925,0.99765,0.991379,232,0.916569,0.981199,0.995676,0.996491,0

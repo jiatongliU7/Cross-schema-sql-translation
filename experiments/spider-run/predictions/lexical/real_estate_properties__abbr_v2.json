@@ -1,0 +1,648 @@
+{
+  "tables": {
+    "Ref_Feature_Types": [
+      [
+        "Ref_Feature_Types",
+        1.0
+      ],
+      [
+        "Ref_Property_Types",
+        0.6857142857142857
+      ],
+      [
+        "Other_Property_Features",
+        0.55
+      ]
+    ],
+    "Ref_Property_Types": [
+      [
+        "Ref_Property_Types",
+        1.0
+      ],
+      [
+        "Ref_Feature_Types",
+        0.6857142857142857
+      ],
+      [
+        "Other_Property_Features",
+        0.6829268292682927
+      ]
+    ],
+    "Other_Available_Features": [
+      [
+        "Other_Available_Features",
+        1.0
+      ],
+      [
+        "Other_Property_Features",
+        0.6808510638297872
+      ],
+      [
+        "Ref_Feature_Types",
+        0.4878048780487805
+      ]
+    ],
+    "Properties": [
+      [
+        "Properties",
+        1.0
+      ],
+      [
+        "Ref_Property_Types",
+        0.6428571428571429
+      ],
+      [
+        "Other_Property_Features",
+        0.5454545454545454
+      ]
+    ],
+    "Other_Property_Features": [
+      [
+        "Other_Property_Features",
+        1.0
+      ],
+      [
+        "Ref_Property_Types",
+        0.6829268292682927
+      ],
+      [
+        "Other_Available_Features",
+        0.6808510638297872
+      ]
+    ]
+  },
+  "columns": {
+    "Ref_Feature_Types.feature_type_code": [
+      [
+        "Other_Available_Features.feature_type_code",
+        1.0
+      ],
+      [
+        "Ref_Feature_Types.feat_type_code",
+        0.9032258064516129
+      ],
+      [
+        "Ref_Feature_Types.feature_type_name",
+        0.8235294117647058
+      ]
+    ],
+    "Ref_Feature_Types.feature_type_name": [
+      [
+        "Ref_Feature_Types.feature_type_name",
+        1.0
+      ],
+      [
+        "Other_Available_Features.feature_type_code",
+        0.8235294117647058
+      ],
+      [
+        "Ref_Feature_Types.feat_type_code",
+        0.7096774193548387
+      ]
+    ],
+    "Ref_Property_Types.property_type_code": [
+      [
+        "Ref_Property_Types.property_type_code",
+        1.0
+      ],
+      [
+        "Properties.prop_type_code",
+        0.875
+      ],
+      [
+        "Ref_Property_Types.prop_type_desc",
+        0.75
+      ]
+    ],
+    "Ref_Property_Types.property_type_description": [
+      [
+        "Ref_Property_Types.property_type_code",
+        0.7441860465116279
+      ],
+      [
+        "Ref_Property_Types.prop_type_desc",
+        0.717948717948718
+      ],
+      [
+        "Properties.prop_type_code",
+        0.6153846153846154
+      ]
+    ],
+    "Other_Available_Features.feature_id": [
+      [
+        "Other_Property_Features.feature_id",
+        1.0
+      ],
+      [
+        "Other_Available_Features.feat_id",
+        0.8235294117647058
+      ],
+      [
+        "Properties.hse_feature_1",
+        0.6956521739130435
+      ]
+    ],
+    "Other_Available_Features.feature_type_code": [
+      [
+        "Other_Available_Features.feature_type_code",
+        1.0
+      ],
+      [
+        "Ref_Feature_Types.feat_type_code",
+        0.9032258064516129
+      ],
+      [
+        "Ref_Feature_Types.feature_type_name",
+        0.8235294117647058
+      ]
+    ],
+    "Other_Available_Features.feature_name": [
+      [
+        "Other_Available_Features.feat_name",
+        0.8571428571428571
+      ],
+      [
+        "Ref_Feature_Types.feature_type_name",
+        0.8275862068965517
+      ],
+      [
+        "Other_Property_Features.feature_id",
+        0.7272727272727273
+      ]
+    ],
+    "Other_Available_Features.feature_description": [
+      [
+        "Other_Available_Features.feat_desc",
+        0.6428571428571429
+      ],
+      [
+        "Other_Property_Features.feature_id",
+        0.6206896551724138
+      ],
+      [
+        "Ref_Feature_Types.feature_type_name",
+        0.5555555555555556
+      ]
+    ],
+    "Properties.property_id": [
+      [
+        "Properties.prop_id",
+        0.7777777777777778
+      ],
+      [
+        "Other_Property_Features.prop_id",
+        0.7777777777777778
+      ],
+      [
+        "Properties.property_address",
+        0.7407407407407407
+      ]
+    ],
+    "Properties.property_type_code": [
+      [
+        "Ref_Property_Types.property_type_code",
+        1.0
+      ],
+      [
+        "Properties.prop_type_code",
+        0.875
+      ],
+      [
+        "Ref_Property_Types.prop_type_desc",
+        0.75
+      ]
+    ],
+    "Properties.date_on_market": [
+      [
+        "Properties.date_on_market",
+        1.0
+      ],
+      [
+        "Properties.date_sold",
+        0.5217391304347826
+      ],
+      [
+        "Ref_Feature_Types.feature_type_name",
+        0.45161290322580644
+      ]
+    ],
+    "Properties.date_sold": [
+      [
+        "Properties.date_sold",
+        1.0
+      ],
+      [
+        "Other_Property_Features.feature_id",
+        0.5263157894736842
+      ],
+      [
+        "Properties.date_on_market",
+        0.5217391304347826
+      ]
+    ],
+    "Properties.property_name": [
+      [
+        "Properties.prop_name",
+        0.8181818181818182
+      ],
+      [
+        "Properties.property_address",
+        0.7586206896551724
+      ],
+      [
+        "Ref_Property_Types.property_type_code",
+        0.6451612903225806
+      ]
+    ],
+    "Properties.property_address": [
+      [
+        "Properties.property_address",
+        1.0
+      ],
+      [
+        "Ref_Property_Types.prop_type_desc",
+        0.6666666666666666
+      ],
+      [
+        "Other_Property_Features.prop_feat_desc",
+        0.6666666666666666
+      ]
+    ],
+    "Properties.room_count": [
+      [
+        "Properties.room_count",
+        1.0
+      ],
+      [
+        "Properties.prop_type_code",
+        0.4166666666666667
+      ],
+      [
+        "Ref_Property_Types.property_type_code",
+        0.35714285714285715
+      ]
+    ],
+    "Properties.vendor_requested_price": [
+      [
+        "Properties.reqd_pr",
+        0.4827586206896552
+      ],
+      [
+        "Properties.date_on_market",
+        0.3333333333333333
+      ],
+      [
+        "Properties.offer_pr",
+        0.3333333333333333
+      ]
+    ],
+    "Properties.buyer_offered_price": [
+      [
+        "Properties.offer_pr",
+        0.5925925925925926
+      ],
+      [
+        "Properties.reqd_pr",
+        0.46153846153846156
+      ],
+      [
+        "Properties.hse_feature_1",
+        0.4375
+      ]
+    ],
+    "Properties.agreed_selling_price": [
+      [
+        "Properties.sell_pr",
+        0.5185185185185185
+      ],
+      [
+        "Properties.reqd_pr",
+        0.4444444444444444
+      ],
+      [
+        "Properties.date_sold",
+        0.3448275862068966
+      ]
+    ],
+    "Properties.apt_feature_1": [
+      [
+        "Properties.apt_feature_1",
+        1.0
+      ],
+      [
+        "Properties.apt_feature_3",
+        0.9230769230769231
+      ],
+      [
+        "Properties.apt_feature_2",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.apt_feature_2": [
+      [
+        "Properties.apt_feature_2",
+        1.0
+      ],
+      [
+        "Properties.apt_feature_3",
+        0.9230769230769231
+      ],
+      [
+        "Properties.apt_feature_1",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.apt_feature_3": [
+      [
+        "Properties.apt_feature_3",
+        1.0
+      ],
+      [
+        "Properties.apt_feature_1",
+        0.9230769230769231
+      ],
+      [
+        "Properties.apt_feature_2",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.fld_feature_1": [
+      [
+        "Properties.fld_feature_1",
+        1.0
+      ],
+      [
+        "Properties.fld_feature_3",
+        0.9230769230769231
+      ],
+      [
+        "Properties.fld_feature_2",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.fld_feature_2": [
+      [
+        "Properties.fld_feature_2",
+        1.0
+      ],
+      [
+        "Properties.fld_feature_3",
+        0.9230769230769231
+      ],
+      [
+        "Properties.fld_feature_1",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.fld_feature_3": [
+      [
+        "Properties.fld_feature_3",
+        1.0
+      ],
+      [
+        "Properties.fld_feature_2",
+        0.9230769230769231
+      ],
+      [
+        "Properties.fld_feature_1",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.hse_feature_1": [
+      [
+        "Properties.hse_feature_1",
+        1.0
+      ],
+      [
+        "Properties.hse_feature_2",
+        0.9230769230769231
+      ],
+      [
+        "Properties.hse_feature_3",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.hse_feature_2": [
+      [
+        "Properties.hse_feature_2",
+        1.0
+      ],
+      [
+        "Properties.hse_feature_1",
+        0.9230769230769231
+      ],
+      [
+        "Properties.hse_feature_3",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.hse_feature_3": [
+      [
+        "Properties.hse_feature_3",
+        1.0
+      ],
+      [
+        "Properties.hse_feature_1",
+        0.9230769230769231
+      ],
+      [
+        "Properties.hse_feature_2",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.oth_feature_1": [
+      [
+        "Properties.oth_feature_1",
+        1.0
+      ],
+      [
+        "Properties.oth_feature_3",
+        0.9230769230769231
+      ],
+      [
+        "Properties.oth_feature_2",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.oth_feature_2": [
+      [
+        "Properties.oth_feature_2",
+        1.0
+      ],
+      [
+        "Properties.oth_feature_3",
+        0.9230769230769231
+      ],
+      [
+        "Properties.oth_feature_1",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.oth_feature_3": [
+      [
+        "Properties.oth_feature_3",
+        1.0
+      ],
+      [
+        "Properties.oth_feature_1",
+        0.9230769230769231
+      ],
+      [
+        "Properties.oth_feature_2",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.shp_feature_1": [
+      [
+        "Properties.shp_feature_1",
+        1.0
+      ],
+      [
+        "Properties.shp_feature_3",
+        0.9230769230769231
+      ],
+      [
+        "Properties.shp_feature_2",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.shp_feature_2": [
+      [
+        "Properties.shp_feature_2",
+        1.0
+      ],
+      [
+        "Properties.shp_feature_3",
+        0.9230769230769231
+      ],
+      [
+        "Properties.shp_feature_1",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.shp_feature_3": [
+      [
+        "Properties.shp_feature_3",
+        1.0
+      ],
+      [
+        "Properties.shp_feature_1",
+        0.9230769230769231
+      ],
+      [
+        "Properties.shp_feature_2",
+        0.9230769230769231
+      ]
+    ],
+    "Properties.other_property_details": [
+      [
+        "Properties.other_property_details",
+        1.0
+      ],
+      [
+        "Properties.property_address",
+        0.631578947368421
+      ],
+      [
+        "Ref_Property_Types.prop_type_desc",
+        0.5555555555555556
+      ]
+    ],
+    "Other_Property_Features.property_id": [
+      [
+        "Properties.prop_id",
+        0.7777777777777778
+      ],
+      [
+        "Other_Property_Features.prop_id",
+        0.7777777777777778
+      ],
+      [
+        "Properties.property_address",
+        0.7407407407407407
+      ]
+    ],
+    "Other_Property_Features.feature_id": [
+      [
+        "Other_Property_Features.feature_id",
+        1.0
+      ],
+      [
+        "Other_Available_Features.feat_id",
+        0.8235294117647058
+      ],
+      [
+        "Properties.hse_feature_1",
+        0.6956521739130435
+      ]
+    ],
+    "Other_Property_Features.property_feature_description": [
+      [
+        "Other_Property_Features.prop_feat_desc",
+        0.6666666666666666
+      ],
+      [
+        "Ref_Property_Types.property_type_code",
+        0.6086956521739131
+      ],
+      [
+        "Properties.property_address",
+        0.5909090909090909
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Ref_Feature_Types": "Ref_Feature_Types",
+      "Ref_Property_Types": "Ref_Property_Types",
+      "Other_Available_Features": "Other_Available_Features",
+      "Properties": "Properties",
+      "Other_Property_Features": "Other_Property_Features"
+    },
+    "columns": {
+      "Ref_Feature_Types.feature_type_code": "Ref_Feature_Types.feat_type_code",
+      "Ref_Feature_Types.feature_type_name": "Ref_Feature_Types.feature_type_name",
+      "Ref_Property_Types.property_type_code": "Ref_Property_Types.property_type_code",
+      "Ref_Property_Types.property_type_description": "Ref_Property_Types.prop_type_desc",
+      "Other_Available_Features.feature_id": "Other_Available_Features.feat_id",
+      "Other_Available_Features.feature_type_code": "Other_Available_Features.feature_type_code",
+      "Other_Available_Features.feature_name": "Other_Available_Features.feat_name",
+      "Other_Available_Features.feature_description": "Other_Available_Features.feat_desc",
+      "Properties.property_id": "Properties.prop_id",
+      "Properties.property_type_code": "Properties.prop_type_code",
+      "Properties.date_on_market": "Properties.date_on_market",
+      "Properties.date_sold": "Properties.date_sold",
+      "Properties.property_name": "Properties.prop_name",
+      "Properties.property_address": "Properties.property_address",
+      "Properties.room_count": "Properties.room_count",
+      "Properties.vendor_requested_price": "Properties.reqd_pr",
+      "Properties.buyer_offered_price": "Properties.offer_pr",
+      "Properties.agreed_selling_price": "Properties.sell_pr",
+      "Properties.apt_feature_1": "Properties.apt_feature_1",
+      "Properties.apt_feature_2": "Properties.apt_feature_2",
+      "Properties.apt_feature_3": "Properties.apt_feature_3",
+      "Properties.fld_feature_1": "Properties.fld_feature_1",
+      "Properties.fld_feature_2": "Properties.fld_feature_2",
+      "Properties.fld_feature_3": "Properties.fld_feature_3",
+      "Properties.hse_feature_1": "Properties.hse_feature_1",
+      "Properties.hse_feature_2": "Properties.hse_feature_2",
+      "Properties.hse_feature_3": "Properties.hse_feature_3",
+      "Properties.oth_feature_1": "Properties.oth_feature_1",
+      "Properties.oth_feature_2": "Properties.oth_feature_2",
+      "Properties.oth_feature_3": "Properties.oth_feature_3",
+      "Properties.shp_feature_1": "Properties.shp_feature_1",
+      "Properties.shp_feature_2": "Properties.shp_feature_2",
+      "Properties.shp_feature_3": "Properties.shp_feature_3",
+      "Properties.other_property_details": "Properties.other_property_details",
+      "Other_Property_Features.property_id": "Other_Property_Features.prop_id",
+      "Other_Property_Features.feature_id": "Other_Property_Features.feature_id",
+      "Other_Property_Features.property_feature_description": "Other_Property_Features.prop_feat_desc"
+    }
+  },
+  "q_B": {
+    "real_estate_properties__abbr_v2__q1031": "SELECT \"t2\".\"feature_type_name\" AS \"feature_type_name\" FROM \"Other_Available_Features\" AS \"t1\" JOIN \"Ref_Feature_Types\" AS \"t2\" ON \"t1\".\"feature_type_code\" = \"t2\".\"feat_type_code\" WHERE \"t1\".\"feat_name\" = 'AirCon'",
+    "real_estate_properties__abbr_v2__q1032": "SELECT \"t2\".\"prop_type_desc\" AS \"property_type_description\" FROM \"Properties\" AS \"t1\" JOIN \"Ref_Property_Types\" AS \"t2\" ON \"t1\".\"prop_type_code\" = \"t2\".\"property_type_code\" GROUP BY \"t1\".\"prop_type_code\"",
+    "real_estate_properties__abbr_v2__q1033": "SELECT \"properties\".\"prop_name\" AS \"property_name\" FROM \"Properties\" AS \"properties\" WHERE \"properties\".\"prop_type_code\" = 'House' UNION SELECT \"properties\".\"prop_name\" AS \"property_name\" FROM \"Properties\" AS \"properties\" WHERE \"properties\".\"prop_type_code\" = 'Apartment' AND \"properties\".\"room_count\" > 1"
+  },
+  "rewrite_errors": {}
+}

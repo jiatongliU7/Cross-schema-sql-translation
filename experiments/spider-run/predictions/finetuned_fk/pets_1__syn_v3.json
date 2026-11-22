@@ -1,0 +1,314 @@
+{
+  "tables": {
+    "Student": [
+      [
+        "Student",
+        1.0
+      ],
+      [
+        "Has_Pet",
+        0.327316552400589
+      ],
+      [
+        "Pets",
+        0.31142330169677734
+      ]
+    ],
+    "Has_Pet": [
+      [
+        "Has_Pet",
+        1.0000001192092896
+      ],
+      [
+        "Pets",
+        0.829703688621521
+      ],
+      [
+        "Student",
+        0.327316552400589
+      ]
+    ],
+    "Pets": [
+      [
+        "Pets",
+        1.000000238418579
+      ],
+      [
+        "Has_Pet",
+        0.829703688621521
+      ],
+      [
+        "Student",
+        0.31142330169677734
+      ]
+    ]
+  },
+  "columns": {
+    "Student.StuID": [
+      [
+        "Student.information",
+        0.7651553153991699
+      ],
+      [
+        "Student.Major",
+        0.7337348461151123
+      ],
+      [
+        "Student.Advisor",
+        0.6581600308418274
+      ]
+    ],
+    "Student.LName": [
+      [
+        "Student.LName",
+        1.0
+      ],
+      [
+        "Student.forename",
+        0.8670134544372559
+      ],
+      [
+        "Student.Sex",
+        0.609514594078064
+      ]
+    ],
+    "Student.Fname": [
+      [
+        "Student.forename",
+        0.8584986925125122
+      ],
+      [
+        "Student.LName",
+        0.8520342707633972
+      ],
+      [
+        "Student.Sex",
+        0.6152167320251465
+      ]
+    ],
+    "Student.Age": [
+      [
+        "Student.Age",
+        1.0
+      ],
+      [
+        "Student.information",
+        0.6901978254318237
+      ],
+      [
+        "Student.Advisor",
+        0.5972020626068115
+      ]
+    ],
+    "Student.Sex": [
+      [
+        "Student.Sex",
+        1.0
+      ],
+      [
+        "Student.LName",
+        0.609514594078064
+      ],
+      [
+        "Student.forename",
+        0.6057397127151489
+      ]
+    ],
+    "Student.Major": [
+      [
+        "Student.Major",
+        1.0000005960464478
+      ],
+      [
+        "Student.information",
+        0.8249436616897583
+      ],
+      [
+        "Student.Advisor",
+        0.7002120018005371
+      ]
+    ],
+    "Student.Advisor": [
+      [
+        "Student.Advisor",
+        1.0000001192092896
+      ],
+      [
+        "Student.information",
+        0.7534435987472534
+      ],
+      [
+        "Student.Major",
+        0.7002120018005371
+      ]
+    ],
+    "Student.city_code": [
+      [
+        "Student.city_code",
+        1.0
+      ],
+      [
+        "Student.LName",
+        0.4551483392715454
+      ],
+      [
+        "Student.forename",
+        0.4340217113494873
+      ]
+    ],
+    "Has_Pet.StuID": [
+      [
+        "Has_Pet.StuID",
+        1.0000001192092896
+      ],
+      [
+        "Has_Pet.PetID",
+        0.8998513221740723
+      ],
+      [
+        "Pets.PetID",
+        0.8221131563186646
+      ]
+    ],
+    "Has_Pet.PetID": [
+      [
+        "Has_Pet.PetID",
+        1.0000001192092896
+      ],
+      [
+        "Pets.PetID",
+        0.9397077560424805
+      ],
+      [
+        "Has_Pet.StuID",
+        0.8998513221740723
+      ]
+    ],
+    "Pets.PetID": [
+      [
+        "Pets.PetID",
+        1.0
+      ],
+      [
+        "Has_Pet.PetID",
+        0.9397077560424805
+      ],
+      [
+        "Has_Pet.StuID",
+        0.8221131563186646
+      ]
+    ],
+    "Pets.PetType": [
+      [
+        "Pets.pet_class",
+        0.9369151592254639
+      ],
+      [
+        "Pets.PetID",
+        0.7090530395507812
+      ],
+      [
+        "Pets.heaviness",
+        0.658060610294342
+      ]
+    ],
+    "Pets.pet_age": [
+      [
+        "Pets.pet_age",
+        1.000000238418579
+      ],
+      [
+        "Pets.PetID",
+        0.7637935876846313
+      ],
+      [
+        "Has_Pet.PetID",
+        0.701504647731781
+      ]
+    ],
+    "Pets.weight": [
+      [
+        "Pets.heaviness",
+        0.7473114728927612
+      ],
+      [
+        "Pets.PetID",
+        0.7214953899383545
+      ],
+      [
+        "Has_Pet.PetID",
+        0.6616435647010803
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Student": "Student",
+      "Has_Pet": "Has_Pet",
+      "Pets": "Pets"
+    },
+    "columns": {
+      "Student.StuID": "Student.information",
+      "Student.LName": "Student.LName",
+      "Student.Fname": "Student.forename",
+      "Student.Age": "Student.Age",
+      "Student.Sex": "Student.Sex",
+      "Student.Major": "Student.Major",
+      "Student.Advisor": "Student.Advisor",
+      "Student.city_code": "Student.city_code",
+      "Has_Pet.StuID": "Has_Pet.StuID",
+      "Has_Pet.PetID": "Has_Pet.PetID",
+      "Pets.PetID": "Pets.PetID",
+      "Pets.PetType": "Pets.pet_class",
+      "Pets.pet_age": "Pets.pet_age",
+      "Pets.weight": "Pets.heaviness"
+    }
+  },
+  "q_B": {
+    "pets_1__syn_v3__q0045": "SELECT COUNT(*) AS \"_col_0\" FROM \"Pets\" AS \"pets\" WHERE \"pets\".\"heaviness\" > 10",
+    "pets_1__syn_v3__q0046": "SELECT COUNT(*) AS \"_col_0\" FROM \"Pets\" AS \"pets\" WHERE \"pets\".\"heaviness\" > 10",
+    "pets_1__syn_v3__q0047": "SELECT \"pets\".\"heaviness\" AS \"weight\" FROM \"Pets\" AS \"pets\" ORDER BY \"pets\".\"pet_age\" LIMIT 1",
+    "pets_1__syn_v3__q0048": "SELECT \"pets\".\"heaviness\" AS \"weight\" FROM \"Pets\" AS \"pets\" ORDER BY \"pets\".\"pet_age\" LIMIT 1",
+    "pets_1__syn_v3__q0049": "SELECT MAX(\"pets\".\"heaviness\") AS \"_col_0\", \"pets\".\"pet_class\" AS \"pettype\" FROM \"Pets\" AS \"pets\" GROUP BY \"pets\".\"pet_class\"",
+    "pets_1__syn_v3__q0050": "SELECT MAX(\"pets\".\"heaviness\") AS \"_col_0\", \"pets\".\"pet_class\" AS \"pettype\" FROM \"Pets\" AS \"pets\" GROUP BY \"pets\".\"pet_class\"",
+    "pets_1__syn_v3__q0051": "SELECT COUNT(*) AS \"_col_0\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" WHERE \"t1\".\"Age\" > 20",
+    "pets_1__syn_v3__q0052": "SELECT COUNT(*) AS \"_col_0\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" WHERE \"t1\".\"Age\" > 20",
+    "pets_1__syn_v3__q0053": "SELECT COUNT(*) AS \"_col_0\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t2\".\"PetID\" = \"t3\".\"PetID\" WHERE \"t1\".\"Sex\" = 'F' AND \"t3\".\"pet_class\" = 'dog'",
+    "pets_1__syn_v3__q0054": "SELECT COUNT(*) AS \"_col_0\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t2\".\"PetID\" = \"t3\".\"PetID\" WHERE \"t1\".\"Sex\" = 'F' AND \"t3\".\"pet_class\" = 'dog'",
+    "pets_1__syn_v3__q0055": "SELECT COUNT(DISTINCT \"pets\".\"pet_class\") AS \"_col_0\" FROM \"Pets\" AS \"pets\"",
+    "pets_1__syn_v3__q0056": "SELECT COUNT(DISTINCT \"pets\".\"pet_class\") AS \"_col_0\" FROM \"Pets\" AS \"pets\"",
+    "pets_1__syn_v3__q0057": "SELECT DISTINCT \"t1\".\"forename\" AS \"fname\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'cat' OR \"t3\".\"pet_class\" = 'dog'",
+    "pets_1__syn_v3__q0058": "SELECT DISTINCT \"t1\".\"forename\" AS \"fname\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'cat' OR \"t3\".\"pet_class\" = 'dog'",
+    "pets_1__syn_v3__q0059": "SELECT \"t1\".\"forename\" AS \"fname\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'cat' INTERSECT SELECT \"t1\".\"forename\" AS \"fname\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'dog'",
+    "pets_1__syn_v3__q0060": "SELECT \"t1\".\"forename\" AS \"fname\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'cat' INTERSECT SELECT \"t1\".\"forename\" AS \"fname\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'dog'",
+    "pets_1__syn_v3__q0061": "SELECT \"student\".\"Major\" AS \"major\", \"student\".\"Age\" AS \"age\" FROM \"Student\" AS \"student\" WHERE NOT \"student\".\"information\" IN (SELECT \"t1\".\"information\" AS \"stuid\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'cat')",
+    "pets_1__syn_v3__q0062": "SELECT \"student\".\"Major\" AS \"major\", \"student\".\"Age\" AS \"age\" FROM \"Student\" AS \"student\" WHERE NOT \"student\".\"information\" IN (SELECT \"t1\".\"information\" AS \"stuid\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'cat')",
+    "pets_1__syn_v3__q0063": "SELECT \"student\".\"information\" AS \"stuid\" FROM \"Student\" AS \"student\" EXCEPT SELECT \"t1\".\"information\" AS \"stuid\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'cat'",
+    "pets_1__syn_v3__q0064": "SELECT \"student\".\"information\" AS \"stuid\" FROM \"Student\" AS \"student\" EXCEPT SELECT \"t1\".\"information\" AS \"stuid\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'cat'",
+    "pets_1__syn_v3__q0065": "SELECT \"t1\".\"forename\" AS \"fname\", \"t1\".\"Age\" AS \"age\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'dog' AND NOT \"t1\".\"information\" IN (SELECT \"t1\".\"information\" AS \"stuid\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'cat')",
+    "pets_1__syn_v3__q0066": "SELECT \"t1\".\"forename\" AS \"fname\", \"t1\".\"Age\" AS \"age\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'dog' AND NOT \"t1\".\"information\" IN (SELECT \"t1\".\"information\" AS \"stuid\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_class\" = 'cat')",
+    "pets_1__syn_v3__q0067": "SELECT \"pets\".\"pet_class\" AS \"pettype\", \"pets\".\"heaviness\" AS \"weight\" FROM \"Pets\" AS \"pets\" ORDER BY \"pets\".\"pet_age\" LIMIT 1",
+    "pets_1__syn_v3__q0068": "SELECT \"pets\".\"pet_class\" AS \"pettype\", \"pets\".\"heaviness\" AS \"weight\" FROM \"Pets\" AS \"pets\" ORDER BY \"pets\".\"pet_age\" LIMIT 1",
+    "pets_1__syn_v3__q0069": "SELECT \"pets\".\"PetID\" AS \"petid\", \"pets\".\"heaviness\" AS \"weight\" FROM \"Pets\" AS \"pets\" WHERE \"pets\".\"pet_age\" > 1",
+    "pets_1__syn_v3__q0070": "SELECT \"pets\".\"PetID\" AS \"petid\", \"pets\".\"heaviness\" AS \"weight\" FROM \"Pets\" AS \"pets\" WHERE \"pets\".\"pet_age\" > 1",
+    "pets_1__syn_v3__q0071": "SELECT AVG(\"pets\".\"pet_age\") AS \"_col_0\", MAX(\"pets\".\"pet_age\") AS \"_col_1\", \"pets\".\"pet_class\" AS \"pettype\" FROM \"Pets\" AS \"pets\" GROUP BY \"pets\".\"pet_class\"",
+    "pets_1__syn_v3__q0072": "SELECT AVG(\"pets\".\"pet_age\") AS \"_col_0\", MAX(\"pets\".\"pet_age\") AS \"_col_1\", \"pets\".\"pet_class\" AS \"pettype\" FROM \"Pets\" AS \"pets\" GROUP BY \"pets\".\"pet_class\"",
+    "pets_1__syn_v3__q0073": "SELECT AVG(\"pets\".\"heaviness\") AS \"_col_0\", \"pets\".\"pet_class\" AS \"pettype\" FROM \"Pets\" AS \"pets\" GROUP BY \"pets\".\"pet_class\"",
+    "pets_1__syn_v3__q0074": "SELECT AVG(\"pets\".\"heaviness\") AS \"_col_0\", \"pets\".\"pet_class\" AS \"pettype\" FROM \"Pets\" AS \"pets\" GROUP BY \"pets\".\"pet_class\"",
+    "pets_1__syn_v3__q0075": "SELECT DISTINCT \"t1\".\"forename\" AS \"fname\", \"t1\".\"Age\" AS \"age\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\"",
+    "pets_1__syn_v3__q0076": "SELECT DISTINCT \"t1\".\"forename\" AS \"fname\", \"t1\".\"Age\" AS \"age\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\"",
+    "pets_1__syn_v3__q0077": "SELECT \"t2\".\"PetID\" AS \"petid\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" WHERE \"t1\".\"LName\" = 'Smith'",
+    "pets_1__syn_v3__q0078": "SELECT \"t2\".\"PetID\" AS \"petid\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" WHERE \"t1\".\"LName\" = 'Smith'",
+    "pets_1__syn_v3__q0079": "SELECT COUNT(*) AS \"_col_0\", \"t1\".\"information\" AS \"stuid\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" GROUP BY \"t1\".\"information\"",
+    "pets_1__syn_v3__q0080": "SELECT COUNT(*) AS \"_col_0\", \"t1\".\"information\" AS \"stuid\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" GROUP BY \"t1\".\"information\"",
+    "pets_1__syn_v3__q0081": "SELECT \"t1\".\"forename\" AS \"fname\", \"t1\".\"Sex\" AS \"sex\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" GROUP BY \"t1\".\"information\" HAVING COUNT(*) > 1",
+    "pets_1__syn_v3__q0082": "SELECT \"t1\".\"forename\" AS \"fname\", \"t1\".\"Sex\" AS \"sex\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" GROUP BY \"t1\".\"information\" HAVING COUNT(*) > 1",
+    "pets_1__syn_v3__q0083": "SELECT \"t1\".\"LName\" AS \"lname\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_age\" = 3 AND \"t3\".\"pet_class\" = 'cat'",
+    "pets_1__syn_v3__q0084": "SELECT \"t1\".\"LName\" AS \"lname\" FROM \"Student\" AS \"t1\" JOIN \"Has_Pet\" AS \"t2\" ON \"t1\".\"information\" = \"t2\".\"StuID\" JOIN \"Pets\" AS \"t3\" ON \"t3\".\"PetID\" = \"t2\".\"PetID\" WHERE \"t3\".\"pet_age\" = 3 AND \"t3\".\"pet_class\" = 'cat'",
+    "pets_1__syn_v3__q0085": "SELECT AVG(\"student\".\"Age\") AS \"_col_0\" FROM \"Student\" AS \"student\" WHERE NOT \"student\".\"information\" IN (SELECT \"has_pet\".\"StuID\" AS \"stuid\" FROM \"Has_Pet\" AS \"has_pet\")",
+    "pets_1__syn_v3__q0086": "SELECT AVG(\"student\".\"Age\") AS \"_col_0\" FROM \"Student\" AS \"student\" WHERE NOT \"student\".\"information\" IN (SELECT \"has_pet\".\"StuID\" AS \"stuid\" FROM \"Has_Pet\" AS \"has_pet\")"
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "fk"
+}

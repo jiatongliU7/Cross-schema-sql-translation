@@ -1,0 +1,890 @@
+{
+  "tables": {
+    "Breeds": [
+      [
+        "Breeds",
+        1.0
+      ],
+      [
+        "Treatments",
+        0.5
+      ],
+      [
+        "Charges",
+        0.46153846153846156
+      ]
+    ],
+    "Charges": [
+      [
+        "Charges",
+        1.0
+      ],
+      [
+        "Breeds",
+        0.46153846153846156
+      ],
+      [
+        "Dogs",
+        0.36363636363636365
+      ]
+    ],
+    "Sizes": [
+      [
+        "Sizes",
+        1.0
+      ],
+      [
+        "Charges",
+        0.3333333333333333
+      ],
+      [
+        "Professionals",
+        0.3333333333333333
+      ]
+    ],
+    "Treatment_Types": [
+      [
+        "Treatment_Types",
+        1.0
+      ],
+      [
+        "Treatments",
+        0.8
+      ],
+      [
+        "Breeds",
+        0.38095238095238093
+      ]
+    ],
+    "Owners": [
+      [
+        "Owners",
+        1.0
+      ],
+      [
+        "Dogs",
+        0.4
+      ],
+      [
+        "Sizes",
+        0.36363636363636365
+      ]
+    ],
+    "Dogs": [
+      [
+        "Dogs",
+        1.0
+      ],
+      [
+        "Owners",
+        0.4
+      ],
+      [
+        "Breeds",
+        0.4
+      ]
+    ],
+    "Professionals": [
+      [
+        "Professionals",
+        1.0
+      ],
+      [
+        "Breeds",
+        0.3157894736842105
+      ],
+      [
+        "Charges",
+        0.3
+      ]
+    ],
+    "Treatments": [
+      [
+        "Treatments",
+        1.0
+      ],
+      [
+        "Treatment_Types",
+        0.8
+      ],
+      [
+        "Breeds",
+        0.5
+      ]
+    ]
+  },
+  "columns": {
+    "Breeds.breed_code": [
+      [
+        "Breeds.breed_code",
+        1.0
+      ],
+      [
+        "Dogs.breed_code",
+        1.0
+      ],
+      [
+        "Professionals.role_code",
+        0.7368421052631579
+      ]
+    ],
+    "Breeds.breed_name": [
+      [
+        "Breeds.breed_name",
+        1.0
+      ],
+      [
+        "Breeds.breed_code",
+        0.7
+      ],
+      [
+        "Dogs.breed_code",
+        0.7
+      ]
+    ],
+    "Charges.charge_id": [
+      [
+        "Charges.charge_id",
+        1.0
+      ],
+      [
+        "Charges.charge_type",
+        0.7
+      ],
+      [
+        "Charges.charge_amount",
+        0.6363636363636364
+      ]
+    ],
+    "Charges.charge_type": [
+      [
+        "Charges.charge_type",
+        1.0
+      ],
+      [
+        "Charges.charge_id",
+        0.7
+      ],
+      [
+        "Charges.charge_amount",
+        0.6666666666666666
+      ]
+    ],
+    "Charges.charge_amount": [
+      [
+        "Charges.charge_amount",
+        1.0
+      ],
+      [
+        "Charges.charge_type",
+        0.6666666666666666
+      ],
+      [
+        "Charges.charge_id",
+        0.6363636363636364
+      ]
+    ],
+    "Sizes.size_code": [
+      [
+        "Sizes.size_code",
+        1.0
+      ],
+      [
+        "Dogs.size_code",
+        1.0
+      ],
+      [
+        "Owners.zip_code",
+        0.7058823529411765
+      ]
+    ],
+    "Sizes.size_description": [
+      [
+        "Sizes.size_description",
+        1.0
+      ],
+      [
+        "Treatment_Types.treatment_type_description",
+        0.6190476190476191
+      ],
+      [
+        "Sizes.size_code",
+        0.56
+      ]
+    ],
+    "Treatment_Types.treatment_type_code": [
+      [
+        "Treatment_Types.treatment_type_code",
+        1.0
+      ],
+      [
+        "Treatments.treatment_type_code",
+        1.0
+      ],
+      [
+        "Treatment_Types.treatment_type_description",
+        0.7555555555555555
+      ]
+    ],
+    "Treatment_Types.treatment_type_description": [
+      [
+        "Treatment_Types.treatment_type_description",
+        1.0
+      ],
+      [
+        "Treatment_Types.treatment_type_code",
+        0.7555555555555555
+      ],
+      [
+        "Treatments.treatment_type_code",
+        0.7555555555555555
+      ]
+    ],
+    "Owners.owner_id": [
+      [
+        "Owners.owner_id",
+        1.0
+      ],
+      [
+        "Dogs.owner_id",
+        1.0
+      ],
+      [
+        "Dogs.dog_id",
+        0.5714285714285714
+      ]
+    ],
+    "Owners.first_name": [
+      [
+        "Owners.first_name",
+        1.0
+      ],
+      [
+        "Professionals.first_name",
+        1.0
+      ],
+      [
+        "Owners.last_name",
+        0.7368421052631579
+      ]
+    ],
+    "Owners.last_name": [
+      [
+        "Owners.last_name",
+        1.0
+      ],
+      [
+        "Professionals.last_name",
+        1.0
+      ],
+      [
+        "Owners.first_name",
+        0.7368421052631579
+      ]
+    ],
+    "Owners.street": [
+      [
+        "Owners.street",
+        1.0
+      ],
+      [
+        "Professionals.street",
+        1.0
+      ],
+      [
+        "Treatments.treatment_id",
+        0.5555555555555556
+      ]
+    ],
+    "Owners.city": [
+      [
+        "Owners.city",
+        1.0
+      ],
+      [
+        "Professionals.city",
+        1.0
+      ],
+      [
+        "Charges.charge_type",
+        0.4
+      ]
+    ],
+    "Owners.state": [
+      [
+        "Owners.state",
+        1.0
+      ],
+      [
+        "Professionals.state",
+        1.0
+      ],
+      [
+        "Owners.last_name",
+        0.5714285714285714
+      ]
+    ],
+    "Owners.zip_code": [
+      [
+        "Owners.zip_code",
+        1.0
+      ],
+      [
+        "Professionals.zip_code",
+        1.0
+      ],
+      [
+        "Sizes.size_code",
+        0.7058823529411765
+      ]
+    ],
+    "Owners.email_address": [
+      [
+        "Owners.email_address",
+        1.0
+      ],
+      [
+        "Professionals.email_adr",
+        0.8181818181818182
+      ],
+      [
+        "Dogs.date_adopted",
+        0.4
+      ]
+    ],
+    "Owners.home_phone": [
+      [
+        "Professionals.home_phone",
+        1.0
+      ],
+      [
+        "Professionals.role_code",
+        0.5263157894736842
+      ],
+      [
+        "Charges.charge_type",
+        0.47619047619047616
+      ]
+    ],
+    "Owners.cell_number": [
+      [
+        "Professionals.cell_number",
+        1.0
+      ],
+      [
+        "Owners.cell",
+        0.5333333333333333
+      ],
+      [
+        "Owners.last_name",
+        0.5
+      ]
+    ],
+    "Dogs.dog_id": [
+      [
+        "Dogs.dog_id",
+        1.0
+      ],
+      [
+        "Treatments.dog_id",
+        1.0
+      ],
+      [
+        "Treatments.pro_id",
+        0.6666666666666666
+      ]
+    ],
+    "Dogs.owner_id": [
+      [
+        "Owners.owner_id",
+        1.0
+      ],
+      [
+        "Dogs.owner_id",
+        1.0
+      ],
+      [
+        "Dogs.dog_id",
+        0.5714285714285714
+      ]
+    ],
+    "Dogs.abandoned_yn": [
+      [
+        "Dogs.abandoned_yn",
+        1.0
+      ],
+      [
+        "Dogs.date_adopted",
+        0.5
+      ],
+      [
+        "Breeds.breed_name",
+        0.45454545454545453
+      ]
+    ],
+    "Dogs.breed_code": [
+      [
+        "Breeds.breed_code",
+        1.0
+      ],
+      [
+        "Dogs.breed_code",
+        1.0
+      ],
+      [
+        "Professionals.role_code",
+        0.7368421052631579
+      ]
+    ],
+    "Dogs.size_code": [
+      [
+        "Sizes.size_code",
+        1.0
+      ],
+      [
+        "Dogs.size_code",
+        1.0
+      ],
+      [
+        "Owners.zip_code",
+        0.7058823529411765
+      ]
+    ],
+    "Dogs.name": [
+      [
+        "Dogs.name",
+        1.0
+      ],
+      [
+        "Owners.last_name",
+        0.6153846153846154
+      ],
+      [
+        "Professionals.last_name",
+        0.6153846153846154
+      ]
+    ],
+    "Dogs.age": [
+      [
+        "Dogs.age",
+        1.0
+      ],
+      [
+        "Dogs.name",
+        0.5714285714285714
+      ],
+      [
+        "Charges.charge_id",
+        0.5
+      ]
+    ],
+    "Dogs.date_of_birth": [
+      [
+        "Dogs.date_of_birth",
+        1.0
+      ],
+      [
+        "Treatments.date_of_treatment",
+        0.6666666666666666
+      ],
+      [
+        "Dogs.date_adopted",
+        0.56
+      ]
+    ],
+    "Dogs.gender": [
+      [
+        "Dogs.gndr",
+        0.8
+      ],
+      [
+        "Professionals.cell_number",
+        0.47058823529411764
+      ],
+      [
+        "Dogs.age",
+        0.4444444444444444
+      ]
+    ],
+    "Dogs.weight": [
+      [
+        "Dogs.weight",
+        1.0
+      ],
+      [
+        "Owners.owner_id",
+        0.42857142857142855
+      ],
+      [
+        "Dogs.owner_id",
+        0.42857142857142855
+      ]
+    ],
+    "Dogs.date_arrived": [
+      [
+        "Dogs.date_arrived",
+        1.0
+      ],
+      [
+        "Dogs.date_departed",
+        0.72
+      ],
+      [
+        "Dogs.date_adopted",
+        0.6666666666666666
+      ]
+    ],
+    "Dogs.date_adopted": [
+      [
+        "Dogs.date_adopted",
+        1.0
+      ],
+      [
+        "Dogs.date_departed",
+        0.72
+      ],
+      [
+        "Dogs.date_arrived",
+        0.6666666666666666
+      ]
+    ],
+    "Dogs.date_departed": [
+      [
+        "Dogs.date_departed",
+        1.0
+      ],
+      [
+        "Dogs.date_adopted",
+        0.8
+      ],
+      [
+        "Dogs.date_arrived",
+        0.72
+      ]
+    ],
+    "Professionals.professional_id": [
+      [
+        "Professionals.professional_id",
+        1.0
+      ],
+      [
+        "Treatments.pro_id",
+        0.5714285714285714
+      ],
+      [
+        "Treatments.treatment_id",
+        0.4444444444444444
+      ]
+    ],
+    "Professionals.role_code": [
+      [
+        "Professionals.role_code",
+        1.0
+      ],
+      [
+        "Breeds.breed_code",
+        0.7368421052631579
+      ],
+      [
+        "Dogs.breed_code",
+        0.7368421052631579
+      ]
+    ],
+    "Professionals.first_name": [
+      [
+        "Owners.first_name",
+        1.0
+      ],
+      [
+        "Professionals.first_name",
+        1.0
+      ],
+      [
+        "Owners.last_name",
+        0.7368421052631579
+      ]
+    ],
+    "Professionals.street": [
+      [
+        "Owners.street",
+        1.0
+      ],
+      [
+        "Professionals.street",
+        1.0
+      ],
+      [
+        "Treatments.treatment_id",
+        0.5555555555555556
+      ]
+    ],
+    "Professionals.city": [
+      [
+        "Owners.city",
+        1.0
+      ],
+      [
+        "Professionals.city",
+        1.0
+      ],
+      [
+        "Charges.charge_type",
+        0.4
+      ]
+    ],
+    "Professionals.state": [
+      [
+        "Owners.state",
+        1.0
+      ],
+      [
+        "Professionals.state",
+        1.0
+      ],
+      [
+        "Owners.last_name",
+        0.5714285714285714
+      ]
+    ],
+    "Professionals.zip_code": [
+      [
+        "Owners.zip_code",
+        1.0
+      ],
+      [
+        "Professionals.zip_code",
+        1.0
+      ],
+      [
+        "Sizes.size_code",
+        0.7058823529411765
+      ]
+    ],
+    "Professionals.last_name": [
+      [
+        "Owners.last_name",
+        1.0
+      ],
+      [
+        "Professionals.last_name",
+        1.0
+      ],
+      [
+        "Owners.first_name",
+        0.7368421052631579
+      ]
+    ],
+    "Professionals.email_address": [
+      [
+        "Owners.email_address",
+        1.0
+      ],
+      [
+        "Professionals.email_adr",
+        0.8181818181818182
+      ],
+      [
+        "Dogs.date_adopted",
+        0.4
+      ]
+    ],
+    "Professionals.home_phone": [
+      [
+        "Professionals.home_phone",
+        1.0
+      ],
+      [
+        "Professionals.role_code",
+        0.5263157894736842
+      ],
+      [
+        "Charges.charge_type",
+        0.47619047619047616
+      ]
+    ],
+    "Professionals.cell_number": [
+      [
+        "Professionals.cell_number",
+        1.0
+      ],
+      [
+        "Owners.cell",
+        0.5333333333333333
+      ],
+      [
+        "Owners.last_name",
+        0.5
+      ]
+    ],
+    "Treatments.treatment_id": [
+      [
+        "Treatments.treatment_id",
+        1.0
+      ],
+      [
+        "Treatment_Types.treatment_type_code",
+        0.7096774193548387
+      ],
+      [
+        "Treatments.treatment_type_code",
+        0.7096774193548387
+      ]
+    ],
+    "Treatments.dog_id": [
+      [
+        "Dogs.dog_id",
+        1.0
+      ],
+      [
+        "Treatments.dog_id",
+        1.0
+      ],
+      [
+        "Treatments.pro_id",
+        0.6666666666666666
+      ]
+    ],
+    "Treatments.professional_id": [
+      [
+        "Professionals.professional_id",
+        1.0
+      ],
+      [
+        "Treatments.pro_id",
+        0.5714285714285714
+      ],
+      [
+        "Treatments.treatment_id",
+        0.4444444444444444
+      ]
+    ],
+    "Treatments.treatment_type_code": [
+      [
+        "Treatment_Types.treatment_type_code",
+        1.0
+      ],
+      [
+        "Treatments.treatment_type_code",
+        1.0
+      ],
+      [
+        "Treatment_Types.treatment_type_description",
+        0.7555555555555555
+      ]
+    ],
+    "Treatments.date_of_treatment": [
+      [
+        "Treatments.date_of_treatment",
+        1.0
+      ],
+      [
+        "Treatments.cost_of_treatment",
+        0.8235294117647058
+      ],
+      [
+        "Treatments.treatment_id",
+        0.6206896551724138
+      ]
+    ],
+    "Treatments.cost_of_treatment": [
+      [
+        "Treatments.cost_of_treatment",
+        1.0
+      ],
+      [
+        "Treatments.date_of_treatment",
+        0.8235294117647058
+      ],
+      [
+        "Treatments.treatment_id",
+        0.6206896551724138
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Breeds": "Breeds",
+      "Charges": "Charges",
+      "Sizes": "Sizes",
+      "Treatment_Types": "Treatment_Types",
+      "Owners": "Owners",
+      "Dogs": "Dogs",
+      "Professionals": "Professionals",
+      "Treatments": "Treatments"
+    },
+    "columns": {
+      "Breeds.breed_code": "Breeds.breed_code",
+      "Breeds.breed_name": "Breeds.breed_name",
+      "Charges.charge_id": "Charges.charge_id",
+      "Charges.charge_type": "Charges.charge_type",
+      "Charges.charge_amount": "Charges.charge_amount",
+      "Sizes.size_code": "Sizes.size_code",
+      "Sizes.size_description": "Sizes.size_description",
+      "Treatment_Types.treatment_type_code": "Treatment_Types.treatment_type_code",
+      "Treatment_Types.treatment_type_description": "Treatment_Types.treatment_type_description",
+      "Owners.owner_id": "Owners.owner_id",
+      "Owners.first_name": "Owners.first_name",
+      "Owners.last_name": "Owners.last_name",
+      "Owners.street": "Owners.street",
+      "Owners.city": "Owners.city",
+      "Owners.state": "Owners.state",
+      "Owners.zip_code": "Owners.zip_code",
+      "Owners.email_address": "Owners.email_address",
+      "Owners.home_phone": "Owners.hp",
+      "Owners.cell_number": "Owners.cell",
+      "Dogs.dog_id": "Dogs.dog_id",
+      "Dogs.owner_id": "Dogs.owner_id",
+      "Dogs.abandoned_yn": "Dogs.abandoned_yn",
+      "Dogs.breed_code": "Dogs.breed_code",
+      "Dogs.size_code": "Dogs.size_code",
+      "Dogs.name": "Dogs.name",
+      "Dogs.age": "Dogs.age",
+      "Dogs.date_of_birth": "Dogs.date_of_birth",
+      "Dogs.gender": "Dogs.gndr",
+      "Dogs.weight": "Dogs.weight",
+      "Dogs.date_arrived": "Dogs.date_arrived",
+      "Dogs.date_adopted": "Dogs.date_adopted",
+      "Dogs.date_departed": "Dogs.date_departed",
+      "Professionals.professional_id": "Professionals.professional_id",
+      "Professionals.role_code": "Professionals.role_code",
+      "Professionals.first_name": "Professionals.first_name",
+      "Professionals.street": "Professionals.street",
+      "Professionals.city": "Professionals.city",
+      "Professionals.state": "Professionals.state",
+      "Professionals.zip_code": "Professionals.zip_code",
+      "Professionals.last_name": "Professionals.last_name",
+      "Professionals.email_address": "Professionals.email_adr",
+      "Professionals.home_phone": "Professionals.home_phone",
+      "Professionals.cell_number": "Professionals.cell_number",
+      "Treatments.treatment_id": "Treatments.treatment_id",
+      "Treatments.dog_id": "Treatments.dog_id",
+      "Treatments.professional_id": "Treatments.pro_id",
+      "Treatments.treatment_type_code": "Treatments.treatment_type_code",
+      "Treatments.date_of_treatment": "Treatments.date_of_treatment",
+      "Treatments.cost_of_treatment": "Treatments.cost_of_treatment"
+    }
+  },
+  "q_B": {
+    "dog_kennels__abbr_v3__q0922": "SELECT \"professionals\".\"professional_id\" AS \"professional_id\", \"professionals\".\"last_name\" AS \"last_name\", \"professionals\".\"cell_number\" AS \"cell_number\" FROM \"Professionals\" AS \"professionals\" WHERE \"professionals\".\"state\" = 'Indiana' UNION SELECT \"t1\".\"professional_id\" AS \"professional_id\", \"t1\".\"last_name\" AS \"last_name\", \"t1\".\"cell_number\" AS \"cell_number\" FROM \"Professionals\" AS \"t1\" JOIN \"Treatments\" AS \"t2\" ON \"t1\".\"professional_id\" = \"t2\".\"pro_id\" GROUP BY \"t1\".\"professional_id\" HAVING COUNT(*) > 2",
+    "dog_kennels__abbr_v3__q0923": "SELECT \"professionals\".\"professional_id\" AS \"professional_id\", \"professionals\".\"last_name\" AS \"last_name\", \"professionals\".\"cell_number\" AS \"cell_number\" FROM \"Professionals\" AS \"professionals\" WHERE \"professionals\".\"state\" = 'Indiana' UNION SELECT \"t1\".\"professional_id\" AS \"professional_id\", \"t1\".\"last_name\" AS \"last_name\", \"t1\".\"cell_number\" AS \"cell_number\" FROM \"Professionals\" AS \"t1\" JOIN \"Treatments\" AS \"t2\" ON \"t1\".\"professional_id\" = \"t2\".\"pro_id\" GROUP BY \"t1\".\"professional_id\" HAVING COUNT(*) > 2",
+    "dog_kennels__abbr_v3__q0928": "SELECT \"professionals\".\"professional_id\" AS \"professional_id\", \"professionals\".\"role_code\" AS \"role_code\", \"professionals\".\"email_adr\" AS \"email_address\" FROM \"Professionals\" AS \"professionals\" EXCEPT SELECT \"t1\".\"professional_id\" AS \"professional_id\", \"t1\".\"role_code\" AS \"role_code\", \"t1\".\"email_adr\" AS \"email_address\" FROM \"Professionals\" AS \"t1\" JOIN \"Treatments\" AS \"t2\" ON \"t1\".\"professional_id\" = \"t2\".\"pro_id\"",
+    "dog_kennels__abbr_v3__q0929": "SELECT \"professionals\".\"professional_id\" AS \"professional_id\", \"professionals\".\"role_code\" AS \"role_code\", \"professionals\".\"email_adr\" AS \"email_address\" FROM \"Professionals\" AS \"professionals\" EXCEPT SELECT \"t1\".\"professional_id\" AS \"professional_id\", \"t1\".\"role_code\" AS \"role_code\", \"t1\".\"email_adr\" AS \"email_address\" FROM \"Professionals\" AS \"t1\" JOIN \"Treatments\" AS \"t2\" ON \"t1\".\"professional_id\" = \"t2\".\"pro_id\"",
+    "dog_kennels__abbr_v3__q0932": "SELECT \"t1\".\"professional_id\" AS \"professional_id\", \"t1\".\"role_code\" AS \"role_code\", \"t1\".\"first_name\" AS \"first_name\" FROM \"Professionals\" AS \"t1\" JOIN \"Treatments\" AS \"t2\" ON \"t1\".\"professional_id\" = \"t2\".\"pro_id\" GROUP BY \"t1\".\"professional_id\" HAVING COUNT(*) >= 2",
+    "dog_kennels__abbr_v3__q0933": "SELECT \"t1\".\"professional_id\" AS \"professional_id\", \"t1\".\"role_code\" AS \"role_code\", \"t1\".\"first_name\" AS \"first_name\" FROM \"Professionals\" AS \"t1\" JOIN \"Treatments\" AS \"t2\" ON \"t1\".\"professional_id\" = \"t2\".\"pro_id\" GROUP BY \"t1\".\"professional_id\" HAVING COUNT(*) >= 2",
+    "dog_kennels__abbr_v3__q0942": "SELECT \"t1\".\"professional_id\" AS \"professional_id\", \"t1\".\"cell_number\" AS \"cell_number\" FROM \"Professionals\" AS \"t1\" JOIN \"Treatments\" AS \"t2\" ON \"t1\".\"professional_id\" = \"t2\".\"pro_id\" GROUP BY \"t1\".\"professional_id\" HAVING COUNT(*) >= 2",
+    "dog_kennels__abbr_v3__q0943": "SELECT \"t1\".\"professional_id\" AS \"professional_id\", \"t1\".\"cell_number\" AS \"cell_number\" FROM \"Professionals\" AS \"t1\" JOIN \"Treatments\" AS \"t2\" ON \"t1\".\"professional_id\" = \"t2\".\"pro_id\" GROUP BY \"t1\".\"professional_id\" HAVING COUNT(*) >= 2",
+    "dog_kennels__abbr_v3__q0946": "SELECT \"t1\".\"date_of_treatment\" AS \"date_of_treatment\", \"t2\".\"first_name\" AS \"first_name\" FROM \"Treatments\" AS \"t1\" JOIN \"Professionals\" AS \"t2\" ON \"t1\".\"pro_id\" = \"t2\".\"professional_id\"",
+    "dog_kennels__abbr_v3__q0947": "SELECT \"t1\".\"date_of_treatment\" AS \"date_of_treatment\", \"t2\".\"first_name\" AS \"first_name\" FROM \"Treatments\" AS \"t1\" JOIN \"Professionals\" AS \"t2\" ON \"t1\".\"pro_id\" = \"t2\".\"professional_id\"",
+    "dog_kennels__abbr_v3__q0962": "SELECT \"professionals\".\"email_adr\" AS \"email_address\" FROM \"Professionals\" AS \"professionals\" WHERE \"professionals\".\"state\" = 'Hawaii' OR \"professionals\".\"state\" = 'Wisconsin'",
+    "dog_kennels__abbr_v3__q0963": "SELECT \"professionals\".\"email_adr\" AS \"email_address\" FROM \"Professionals\" AS \"professionals\" WHERE \"professionals\".\"state\" = 'Hawaii' OR \"professionals\".\"state\" = 'Wisconsin'",
+    "dog_kennels__abbr_v3__q0968": "SELECT COUNT(DISTINCT \"treatments\".\"pro_id\") AS \"_col_0\" FROM \"Treatments\" AS \"treatments\"",
+    "dog_kennels__abbr_v3__q0969": "SELECT COUNT(DISTINCT \"treatments\".\"pro_id\") AS \"_col_0\" FROM \"Treatments\" AS \"treatments\"",
+    "dog_kennels__abbr_v3__q0982": "SELECT COUNT(*) AS \"_col_0\" FROM \"Professionals\" AS \"professionals\" WHERE NOT \"professionals\".\"professional_id\" IN (SELECT \"treatments\".\"pro_id\" AS \"professional_id\" FROM \"Treatments\" AS \"treatments\")",
+    "dog_kennels__abbr_v3__q0983": "SELECT COUNT(*) AS \"_col_0\" FROM \"Professionals\" AS \"professionals\" WHERE NOT \"professionals\".\"professional_id\" IN (SELECT \"treatments\".\"pro_id\" AS \"professional_id\" FROM \"Treatments\" AS \"treatments\")",
+    "dog_kennels__abbr_v3__q0994": "SELECT \"professionals\".\"email_adr\" AS \"email_address\", \"professionals\".\"cell_number\" AS \"cell_number\", \"professionals\".\"home_phone\" AS \"home_phone\" FROM \"Professionals\" AS \"professionals\"",
+    "dog_kennels__abbr_v3__q0995": "SELECT \"professionals\".\"email_adr\" AS \"email_address\", \"professionals\".\"cell_number\" AS \"cell_number\", \"professionals\".\"home_phone\" AS \"home_phone\" FROM \"Professionals\" AS \"professionals\"",
+    "dog_kennels__abbr_v3__q0998": "SELECT DISTINCT \"t1\".\"first_name\" AS \"first_name\", \"t3\".\"treatment_type_description\" AS \"treatment_type_description\" FROM \"Professionals\" AS \"t1\" JOIN \"Treatments\" AS \"t2\" ON \"t1\".\"professional_id\" = \"t2\".\"pro_id\" JOIN \"Treatment_Types\" AS \"t3\" ON \"t2\".\"treatment_type_code\" = \"t3\".\"treatment_type_code\"",
+    "dog_kennels__abbr_v3__q0999": "SELECT DISTINCT \"t1\".\"first_name\" AS \"first_name\", \"t3\".\"treatment_type_description\" AS \"treatment_type_description\" FROM \"Professionals\" AS \"t1\" JOIN \"Treatments\" AS \"t2\" ON \"t1\".\"professional_id\" = \"t2\".\"pro_id\" JOIN \"Treatment_Types\" AS \"t3\" ON \"t2\".\"treatment_type_code\" = \"t3\".\"treatment_type_code\""
+  },
+  "rewrite_errors": {}
+}

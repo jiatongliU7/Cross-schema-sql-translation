@@ -1,0 +1,49 @@
+# Shared handoff format
+
+This contract supports the toy example and future Spider/Dr.Spider pairs. Database names and labels in the toy are artificial. The toy databases are created locally with `make_toy.py`; they are not Spider data.
+
+```text
+data/
+  splits.json
+  pairs/<pair_id>/
+    metadata.json
+    db_A.sqlite
+    db_B.sqlite
+    schema_A.json
+    schema_B.json
+    gold_mapping.json
+    queries.jsonl
+predictions/<method>/<pair_id>.json
+```
+
+`splits.json` is `{"train": [...], "dev": [...], "test": [...]}`. Each pair's `metadata.json` must contain `db_id`, the original database identifier. The loader rejects duplicate pair IDs and a db_id occurring across splits. Verify IDs/provenance manually to detect the same data under different identifiers.
+
+Schemas use the output of `python -m sqltranslate.cli schema DATABASE`, with `tables` (name, columns with name/type/pk) and `fks` (each edge contains ordered child/parent column pairs). Sequence order is not a correspondence; shuffle schema_B's tables and columns, without changing the named FK edges. Gold mappings use `{ "tables": {"source": "target"}, "columns": {"source_table.column": "target_table.column"} }`. Dr.Spider positional mappings are **candidates**, not automatically verified ground truth.
+
+Each line of `queries.jsonl` contains `qid`, `q_A`, `gold_q_B`, `is_join` (boolean), and `level` (string). IDs must be unique within a pair. Level labels must be defined and validated for the study; the toy levels merely exercise the interface.
+
+Each prediction JSON contains `tables` and `columns` mapping source identifiers to ranked `[target, score]` lists; `selected_mapping` contains one chosen mapping in the gold format; `q_B` maps query IDs to rewritten SQL. Optional `rewrite_errors` records exceptions. Candidate scores are similarities rather than probabilities. With the existing implementation, FK reranking is a local search over internal score matrices; `--top-k` bounds column swap candidates but does not constrain table swaps. Thus the final selected mapping need not be limited to the globally displayed top-k lists.
+
+## Run the handoff smoke test
+
+```bash
+python make_toy.py --data /tmp/handoff-data --pred /tmp/handoff-predictions/mock
+python evaluate.py --data /tmp/handoff-data --pred /tmp/handoff-predictions/mock --outdir /tmp/handoff-results/mock
+python predict_handoff.py --data /tmp/handoff-data --pred /tmp/handoff-predictions/lexical --method lexical
+python evaluate.py --data /tmp/handoff-data --pred /tmp/handoff-predictions/lexical --outdir /tmp/handoff-results/lexical
+```
+
+For pretrained SBERT use `--method sbert`. For the fine-tuned model add `--model models/schema-matcher`; for explicit type/FK reranking add `--type-weight 0.15 --fk-weight 0.3`. Model downloads may be required. Current model descriptions include type and primary/foreign-key roles, including when explicit reranking weights are zero. A true no-metadata ablation requires different descriptions.
+
+```bash
+python predict_handoff.py --data /tmp/handoff-data --pred /tmp/handoff-predictions/pretrained_sbert --method sbert
+python evaluate.py --data /tmp/handoff-data --pred /tmp/handoff-predictions/pretrained_sbert --outdir /tmp/handoff-results/pretrained_sbert
+```
+
+The evaluator writes `results.csv`, `error_analysis.json`, and `query_results.json`. The first CSV row is an overall method summary, followed by query-level `level` and `is_join` breakdown rows. Mapping accuracy and column Top-1/Top-3 are aggregated across schema elements, so they are reported in the overall row rather than incorrectly attributing a whole-schema score to individual queries. Run the evaluator once per method; combine the overall rows for the final comparison table.
+
+Gold and predicted SQL are executed on **the same target DB**; duplicate counts are preserved. Outer ORDER BY results are compared in order, and other results as bags. Predicted SQL that is missing or fails counts as incorrect among queries whose gold SQL executes. Gold execution errors are reported separately and excluded from query metric denominators, since correctness cannot be assessed with an invalid reference; include their counts when reporting results. Exact equality can be misleading for floating point, LIMIT, tied orderings, and coincidental equality (particularly empty results). Single-instance execution is not a semantic proof. Inspect `error_analysis.json` and validate queries or use multiple target instances.
+
+## Current boundaries
+
+The scripts do not automatically create reviewed real Spider/Dr.Spider labels, validate difficulty levels, or train on a held-out split. `schema_A.json`/`schema_B.json` must reflect the SQLite schemas; check consistency before experiments. Database-dependent query errors and unsupported rewrites are recorded, not silently removed. The toy tests establish interface behavior, not model quality.

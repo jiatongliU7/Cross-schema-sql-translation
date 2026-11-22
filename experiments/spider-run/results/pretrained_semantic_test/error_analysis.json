@@ -1,0 +1,2018 @@
+[
+  {
+    "pair_id": "student_transcripts_tracking__abbr_v1",
+    "type": "mapping",
+    "element": "Students.current_address_id",
+    "gold": "Students.ca_id",
+    "predicted": "Students.pa_id",
+    "candidates": [
+      [
+        "Students.pa_id",
+        0.874395489692688
+      ],
+      [
+        "Students.stuid",
+        0.8609602451324463
+      ],
+      [
+        "Students.ca_id",
+        0.8499981164932251
+      ]
+    ]
+  },
+  {
+    "pair_id": "student_transcripts_tracking__abbr_v1",
+    "type": "mapping",
+    "element": "Students.permanent_address_id",
+    "gold": "Students.pa_id",
+    "predicted": "Students.ca_id",
+    "candidates": [
+      [
+        "Students.pa_id",
+        0.8738478422164917
+      ],
+      [
+        "Students.stuid",
+        0.8684053421020508
+      ],
+      [
+        "Students.ca_id",
+        0.8569371700286865
+      ]
+    ]
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v1",
+    "qid": "student_transcripts_tracking__abbr_v1__q0549",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.last_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.current_address_id = T2.address_id WHERE T2.state_province_county = 'NorthCarolina' EXCEPT SELECT DISTINCT T3.last_name FROM Students AS T3 JOIN Student_Enrolment AS T4 ON T3.student_id = T4.student_id",
+    "gold_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_id\"",
+    "pred_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"pa_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_id\"",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v1",
+    "qid": "student_transcripts_tracking__abbr_v1__q0550",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.last_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.current_address_id = T2.address_id WHERE T2.state_province_county = 'NorthCarolina' EXCEPT SELECT DISTINCT T3.last_name FROM Students AS T3 JOIN Student_Enrolment AS T4 ON T3.student_id = T4.student_id",
+    "gold_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_id\"",
+    "pred_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"pa_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_id\"",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v1",
+    "qid": "student_transcripts_tracking__abbr_v1__q0577",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT current_address_id) FROM Students",
+    "gold_sql": "SELECT COUNT(DISTINCT \"students\".\"ca_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"students\".\"pa_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v1",
+    "qid": "student_transcripts_tracking__abbr_v1__q0578",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT current_address_id) FROM Students",
+    "gold_sql": "SELECT COUNT(DISTINCT \"students\".\"ca_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"students\".\"pa_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "pair_id": "student_transcripts_tracking__abbr_v2",
+    "type": "mapping",
+    "element": "Students.current_address_id",
+    "gold": "Students.ca_id",
+    "predicted": "Students.pa_id",
+    "candidates": [
+      [
+        "Students.pa_id",
+        0.874395489692688
+      ],
+      [
+        "Students.stuid",
+        0.8609602451324463
+      ],
+      [
+        "Students.ca_id",
+        0.8499981164932251
+      ]
+    ]
+  },
+  {
+    "pair_id": "student_transcripts_tracking__abbr_v2",
+    "type": "mapping",
+    "element": "Students.permanent_address_id",
+    "gold": "Students.pa_id",
+    "predicted": "Students.ca_id",
+    "candidates": [
+      [
+        "Students.pa_id",
+        0.8738478422164917
+      ],
+      [
+        "Students.stuid",
+        0.8684053421020508
+      ],
+      [
+        "Students.ca_id",
+        0.8569371700286865
+      ]
+    ]
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v2",
+    "qid": "student_transcripts_tracking__abbr_v2__q0549",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.last_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.current_address_id = T2.address_id WHERE T2.state_province_county = 'NorthCarolina' EXCEPT SELECT DISTINCT T3.last_name FROM Students AS T3 JOIN Student_Enrolment AS T4 ON T3.student_id = T4.student_id",
+    "gold_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_id\"",
+    "pred_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"pa_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_id\"",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v2",
+    "qid": "student_transcripts_tracking__abbr_v2__q0550",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.last_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.current_address_id = T2.address_id WHERE T2.state_province_county = 'NorthCarolina' EXCEPT SELECT DISTINCT T3.last_name FROM Students AS T3 JOIN Student_Enrolment AS T4 ON T3.student_id = T4.student_id",
+    "gold_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_id\"",
+    "pred_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"pa_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_id\"",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v2",
+    "qid": "student_transcripts_tracking__abbr_v2__q0577",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT current_address_id) FROM Students",
+    "gold_sql": "SELECT COUNT(DISTINCT \"students\".\"ca_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"students\".\"pa_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v2",
+    "qid": "student_transcripts_tracking__abbr_v2__q0578",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT current_address_id) FROM Students",
+    "gold_sql": "SELECT COUNT(DISTINCT \"students\".\"ca_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"students\".\"pa_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "type": "mapping",
+    "element": "Students.current_address_id",
+    "gold": "Students.ca_id",
+    "predicted": "Students.pa_id",
+    "candidates": [
+      [
+        "Students.pa_id",
+        0.874395489692688
+      ],
+      [
+        "Students.stuid",
+        0.8609602451324463
+      ],
+      [
+        "Students.ca_id",
+        0.8499981164932251
+      ]
+    ]
+  },
+  {
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "type": "mapping",
+    "element": "Students.permanent_address_id",
+    "gold": "Students.pa_id",
+    "predicted": "Students.ca_id",
+    "candidates": [
+      [
+        "Students.pa_id",
+        0.8738478422164917
+      ],
+      [
+        "Students.stuid",
+        0.8684053421020508
+      ],
+      [
+        "Students.ca_id",
+        0.8569371700286865
+      ]
+    ]
+  },
+  {
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "type": "mapping",
+    "element": "Student_Enrolment.student_enrolment_id",
+    "gold": "Student_Enrolment.stu_enroll_id",
+    "predicted": "Student_Enrolment.student_id",
+    "candidates": [
+      [
+        "Student_Enrolment.student_id",
+        0.9942108392715454
+      ],
+      [
+        "Student_Enrolment_Courses.course_id",
+        0.9532583951950073
+      ],
+      [
+        "Student_Enrolment.degree_program_id",
+        0.9317313432693481
+      ]
+    ]
+  },
+  {
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "type": "mapping",
+    "element": "Student_Enrolment.student_id",
+    "gold": "Student_Enrolment.student_id",
+    "predicted": "Student_Enrolment.stu_enroll_id",
+    "candidates": [
+      [
+        "Student_Enrolment.student_id",
+        1.000000238418579
+      ],
+      [
+        "Student_Enrolment_Courses.course_id",
+        0.9553853273391724
+      ],
+      [
+        "Student_Enrolment.degree_program_id",
+        0.9399229884147644
+      ]
+    ]
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "qid": "student_transcripts_tracking__abbr_v3__q0533",
+    "level": "L2",
+    "is_join": true,
+    "source_sql": "SELECT T1.first_name , T1.middle_name , T1.last_name , T1.student_id FROM Students AS T1 JOIN Student_Enrolment AS T2 ON T1.student_id = T2.student_id GROUP BY T1.student_id HAVING count(*) = 2",
+    "gold_sql": "SELECT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\", \"t1\".\"stuid\" AS \"student_id\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"student_id\" GROUP BY \"t1\".\"stuid\" HAVING COUNT(*) = 2",
+    "pred_sql": "SELECT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\", \"t1\".\"stuid\" AS \"student_id\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"stu_enroll_id\" GROUP BY \"t1\".\"stuid\" HAVING COUNT(*) = 2",
+    "status": "incorrect",
+    "gold_rows": 3,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "qid": "student_transcripts_tracking__abbr_v3__q0534",
+    "level": "L2",
+    "is_join": true,
+    "source_sql": "SELECT T1.first_name , T1.middle_name , T1.last_name , T1.student_id FROM Students AS T1 JOIN Student_Enrolment AS T2 ON T1.student_id = T2.student_id GROUP BY T1.student_id HAVING count(*) = 2",
+    "gold_sql": "SELECT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\", \"t1\".\"stuid\" AS \"student_id\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"student_id\" GROUP BY \"t1\".\"stuid\" HAVING COUNT(*) = 2",
+    "pred_sql": "SELECT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\", \"t1\".\"stuid\" AS \"student_id\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"stu_enroll_id\" GROUP BY \"t1\".\"stuid\" HAVING COUNT(*) = 2",
+    "status": "incorrect",
+    "gold_rows": 3,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "qid": "student_transcripts_tracking__abbr_v3__q0535",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT DISTINCT T1.first_name , T1.middle_name , T1.last_name FROM Students AS T1 JOIN Student_Enrolment AS T2 ON T1.student_id = T2.student_id JOIN Degree_Programs AS T3 ON T2.degree_program_id = T3.degree_program_id WHERE T3.degree_summary_name = 'Bachelor'",
+    "gold_sql": "SELECT DISTINCT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"student_id\" JOIN \"Degree_Programs\" AS \"t3\" ON \"t2\".\"degree_program_id\" = \"t3\".\"degree_pmg_id\" WHERE \"t3\".\"degree_smry_name\" = 'Bachelor'",
+    "pred_sql": "SELECT DISTINCT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"stu_enroll_id\" JOIN \"Degree_Programs\" AS \"t3\" ON \"t2\".\"degree_program_id\" = \"t3\".\"degree_pmg_id\" WHERE \"t3\".\"degree_smry_name\" = 'Bachelor'",
+    "status": "incorrect",
+    "gold_rows": 5,
+    "pred_rows": 8,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "qid": "student_transcripts_tracking__abbr_v3__q0536",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT DISTINCT T1.first_name , T1.middle_name , T1.last_name FROM Students AS T1 JOIN Student_Enrolment AS T2 ON T1.student_id = T2.student_id JOIN Degree_Programs AS T3 ON T2.degree_program_id = T3.degree_program_id WHERE T3.degree_summary_name = 'Bachelor'",
+    "gold_sql": "SELECT DISTINCT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"student_id\" JOIN \"Degree_Programs\" AS \"t3\" ON \"t2\".\"degree_program_id\" = \"t3\".\"degree_pmg_id\" WHERE \"t3\".\"degree_smry_name\" = 'Bachelor'",
+    "pred_sql": "SELECT DISTINCT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"stu_enroll_id\" JOIN \"Degree_Programs\" AS \"t3\" ON \"t2\".\"degree_program_id\" = \"t3\".\"degree_pmg_id\" WHERE \"t3\".\"degree_smry_name\" = 'Bachelor'",
+    "status": "incorrect",
+    "gold_rows": 5,
+    "pred_rows": 8,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "qid": "student_transcripts_tracking__abbr_v3__q0541",
+    "level": "L2",
+    "is_join": true,
+    "source_sql": "SELECT T1.student_id , T1.first_name , T1.middle_name , T1.last_name , count(*) , T1.student_id FROM Students AS T1 JOIN Student_Enrolment AS T2 ON T1.student_id = T2.student_id GROUP BY T1.student_id ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t1\".\"stuid\" AS \"student_id\", \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\", COUNT(*) AS \"_col_4\", \"t1\".\"stuid\" AS \"student_id\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"student_id\" GROUP BY \"t1\".\"stuid\" ORDER BY \"_col_4\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"t1\".\"stuid\" AS \"student_id\", \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\", COUNT(*) AS \"_col_4\", \"t1\".\"stuid\" AS \"student_id\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"stu_enroll_id\" GROUP BY \"t1\".\"stuid\" ORDER BY \"_col_4\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "qid": "student_transcripts_tracking__abbr_v3__q0542",
+    "level": "L2",
+    "is_join": true,
+    "source_sql": "SELECT T1.student_id , T1.first_name , T1.middle_name , T1.last_name , count(*) , T1.student_id FROM Students AS T1 JOIN Student_Enrolment AS T2 ON T1.student_id = T2.student_id GROUP BY T1.student_id ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t1\".\"stuid\" AS \"student_id\", \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\", COUNT(*) AS \"_col_4\", \"t1\".\"stuid\" AS \"student_id\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"student_id\" GROUP BY \"t1\".\"stuid\" ORDER BY \"_col_4\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"t1\".\"stuid\" AS \"student_id\", \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\", COUNT(*) AS \"_col_4\", \"t1\".\"stuid\" AS \"student_id\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"stu_enroll_id\" GROUP BY \"t1\".\"stuid\" ORDER BY \"_col_4\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "qid": "student_transcripts_tracking__abbr_v3__q0549",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.last_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.current_address_id = T2.address_id WHERE T2.state_province_county = 'NorthCarolina' EXCEPT SELECT DISTINCT T3.last_name FROM Students AS T3 JOIN Student_Enrolment AS T4 ON T3.student_id = T4.student_id",
+    "gold_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"student_id\"",
+    "pred_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"pa_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_enroll_id\"",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "qid": "student_transcripts_tracking__abbr_v3__q0550",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.last_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.current_address_id = T2.address_id WHERE T2.state_province_county = 'NorthCarolina' EXCEPT SELECT DISTINCT T3.last_name FROM Students AS T3 JOIN Student_Enrolment AS T4 ON T3.student_id = T4.student_id",
+    "gold_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"student_id\"",
+    "pred_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"pa_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_enroll_id\"",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "qid": "student_transcripts_tracking__abbr_v3__q0577",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT current_address_id) FROM Students",
+    "gold_sql": "SELECT COUNT(DISTINCT \"students\".\"ca_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"students\".\"pa_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v3",
+    "qid": "student_transcripts_tracking__abbr_v3__q0578",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT current_address_id) FROM Students",
+    "gold_sql": "SELECT COUNT(DISTINCT \"students\".\"ca_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"students\".\"pa_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "pair_id": "student_transcripts_tracking__abbr_v4",
+    "type": "mapping",
+    "element": "Students.current_address_id",
+    "gold": "Students.ca_id",
+    "predicted": "Students.pa_id",
+    "candidates": [
+      [
+        "Students.pa_id",
+        0.874395489692688
+      ],
+      [
+        "Students.stuid",
+        0.8609602451324463
+      ],
+      [
+        "Students.email_address",
+        0.8594857454299927
+      ]
+    ]
+  },
+  {
+    "pair_id": "student_transcripts_tracking__abbr_v4",
+    "type": "mapping",
+    "element": "Students.permanent_address_id",
+    "gold": "Students.pa_id",
+    "predicted": "Students.ca_id",
+    "candidates": [
+      [
+        "Students.pa_id",
+        0.8738478422164917
+      ],
+      [
+        "Students.email_address",
+        0.8698673248291016
+      ],
+      [
+        "Students.stuid",
+        0.8684053421020508
+      ]
+    ]
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v4",
+    "qid": "student_transcripts_tracking__abbr_v4__q0549",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.last_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.current_address_id = T2.address_id WHERE T2.state_province_county = 'NorthCarolina' EXCEPT SELECT DISTINCT T3.last_name FROM Students AS T3 JOIN Student_Enrolment AS T4 ON T3.student_id = T4.student_id",
+    "gold_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_id\"",
+    "pred_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"pa_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_id\"",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v4",
+    "qid": "student_transcripts_tracking__abbr_v4__q0550",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.last_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.current_address_id = T2.address_id WHERE T2.state_province_county = 'NorthCarolina' EXCEPT SELECT DISTINCT T3.last_name FROM Students AS T3 JOIN Student_Enrolment AS T4 ON T3.student_id = T4.student_id",
+    "gold_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_id\"",
+    "pred_sql": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"pa_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"stuid\" = \"t4\".\"stu_id\"",
+    "status": "incorrect",
+    "gold_rows": 2,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v4",
+    "qid": "student_transcripts_tracking__abbr_v4__q0577",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT current_address_id) FROM Students",
+    "gold_sql": "SELECT COUNT(DISTINCT \"students\".\"ca_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"students\".\"pa_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__abbr_v4",
+    "qid": "student_transcripts_tracking__abbr_v4__q0578",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT current_address_id) FROM Students",
+    "gold_sql": "SELECT COUNT(DISTINCT \"students\".\"ca_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"students\".\"pa_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "pair_id": "student_transcripts_tracking__syn_v0",
+    "type": "mapping",
+    "element": "Degree_Programs.degree_summary_name",
+    "gold": "Degree_Programs.degree_synopsis",
+    "predicted": "Degree_Programs.degree_summary_description",
+    "candidates": [
+      [
+        "Degree_Programs.degree_summary_description",
+        0.9886878728866577
+      ],
+      [
+        "Degree_Programs.degree_synopsis",
+        0.9654231667518616
+      ],
+      [
+        "Degree_Programs.other_details",
+        0.9621802568435669
+      ]
+    ]
+  },
+  {
+    "pair_id": "student_transcripts_tracking__syn_v0",
+    "type": "mapping",
+    "element": "Degree_Programs.degree_summary_description",
+    "gold": "Degree_Programs.degree_summary_description",
+    "predicted": "Degree_Programs.degree_synopsis",
+    "candidates": [
+      [
+        "Degree_Programs.degree_summary_description",
+        1.0
+      ],
+      [
+        "Degree_Programs.degree_synopsis",
+        0.9787428379058838
+      ],
+      [
+        "Degree_Programs.other_details",
+        0.9716112613677979
+      ]
+    ]
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__syn_v0",
+    "qid": "student_transcripts_tracking__syn_v0__q0519",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT degree_summary_name) FROM Degree_Programs",
+    "gold_sql": "SELECT COUNT(DISTINCT \"degree_programs\".\"degree_synopsis\") AS \"_col_0\" FROM \"Degree_Programs\" AS \"degree_programs\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"degree_programs\".\"degree_summary_description\") AS \"_col_0\" FROM \"Degree_Programs\" AS \"degree_programs\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__syn_v0",
+    "qid": "student_transcripts_tracking__syn_v0__q0520",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT degree_summary_name) FROM Degree_Programs",
+    "gold_sql": "SELECT COUNT(DISTINCT \"degree_programs\".\"degree_synopsis\") AS \"_col_0\" FROM \"Degree_Programs\" AS \"degree_programs\"",
+    "pred_sql": "SELECT COUNT(DISTINCT \"degree_programs\".\"degree_summary_description\") AS \"_col_0\" FROM \"Degree_Programs\" AS \"degree_programs\"",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__syn_v0",
+    "qid": "student_transcripts_tracking__syn_v0__q0535",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT DISTINCT T1.first_name , T1.middle_name , T1.last_name FROM Students AS T1 JOIN Student_Enrolment AS T2 ON T1.student_id = T2.student_id JOIN Degree_Programs AS T3 ON T2.degree_program_id = T3.degree_program_id WHERE T3.degree_summary_name = 'Bachelor'",
+    "gold_sql": "SELECT DISTINCT \"t1\".\"forename\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"student_id\" = \"t2\".\"student_id\" JOIN \"Degree_Programs\" AS \"t3\" ON \"t2\".\"degree_program_id\" = \"t3\".\"degree_program_id\" WHERE \"t3\".\"degree_synopsis\" = 'Bachelor'",
+    "pred_sql": "SELECT DISTINCT \"t1\".\"forename\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"student_id\" = \"t2\".\"student_id\" JOIN \"Degree_Programs\" AS \"t3\" ON \"t2\".\"degree_program_id\" = \"t3\".\"degree_program_id\" WHERE \"t3\".\"degree_summary_description\" = 'Bachelor'",
+    "status": "incorrect",
+    "gold_rows": 5,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__syn_v0",
+    "qid": "student_transcripts_tracking__syn_v0__q0536",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT DISTINCT T1.first_name , T1.middle_name , T1.last_name FROM Students AS T1 JOIN Student_Enrolment AS T2 ON T1.student_id = T2.student_id JOIN Degree_Programs AS T3 ON T2.degree_program_id = T3.degree_program_id WHERE T3.degree_summary_name = 'Bachelor'",
+    "gold_sql": "SELECT DISTINCT \"t1\".\"forename\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"student_id\" = \"t2\".\"student_id\" JOIN \"Degree_Programs\" AS \"t3\" ON \"t2\".\"degree_program_id\" = \"t3\".\"degree_program_id\" WHERE \"t3\".\"degree_synopsis\" = 'Bachelor'",
+    "pred_sql": "SELECT DISTINCT \"t1\".\"forename\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"student_id\" = \"t2\".\"student_id\" JOIN \"Degree_Programs\" AS \"t3\" ON \"t2\".\"degree_program_id\" = \"t3\".\"degree_program_id\" WHERE \"t3\".\"degree_summary_description\" = 'Bachelor'",
+    "status": "incorrect",
+    "gold_rows": 5,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__syn_v0",
+    "qid": "student_transcripts_tracking__syn_v0__q0537",
+    "level": "L2",
+    "is_join": true,
+    "source_sql": "SELECT T1.degree_summary_name FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id GROUP BY T1.degree_summary_name ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t1\".\"degree_synopsis\" AS \"degree_summary_name\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" GROUP BY \"t1\".\"degree_synopsis\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "pred_sql": "SELECT \"t1\".\"degree_summary_description\" AS \"degree_summary_name\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" GROUP BY \"t1\".\"degree_summary_description\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__syn_v0",
+    "qid": "student_transcripts_tracking__syn_v0__q0538",
+    "level": "L2",
+    "is_join": true,
+    "source_sql": "SELECT T1.degree_summary_name FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id GROUP BY T1.degree_summary_name ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t1\".\"degree_synopsis\" AS \"degree_summary_name\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" GROUP BY \"t1\".\"degree_synopsis\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "pred_sql": "SELECT \"t1\".\"degree_summary_description\" AS \"degree_summary_name\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" GROUP BY \"t1\".\"degree_summary_description\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__syn_v0",
+    "qid": "student_transcripts_tracking__syn_v0__q0539",
+    "level": "L2",
+    "is_join": true,
+    "source_sql": "SELECT T1.degree_program_id , T1.degree_summary_name FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id GROUP BY T1.degree_program_id ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t1\".\"degree_program_id\" AS \"degree_program_id\", \"t1\".\"degree_synopsis\" AS \"degree_summary_name\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" GROUP BY \"t1\".\"degree_program_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "pred_sql": "SELECT \"t1\".\"degree_program_id\" AS \"degree_program_id\", \"t1\".\"degree_summary_description\" AS \"degree_summary_name\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" GROUP BY \"t1\".\"degree_program_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__syn_v0",
+    "qid": "student_transcripts_tracking__syn_v0__q0540",
+    "level": "L2",
+    "is_join": true,
+    "source_sql": "SELECT T1.degree_program_id , T1.degree_summary_name FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id GROUP BY T1.degree_program_id ORDER BY count(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t1\".\"degree_program_id\" AS \"degree_program_id\", \"t1\".\"degree_synopsis\" AS \"degree_summary_name\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" GROUP BY \"t1\".\"degree_program_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "pred_sql": "SELECT \"t1\".\"degree_program_id\" AS \"degree_program_id\", \"t1\".\"degree_summary_description\" AS \"degree_summary_name\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" GROUP BY \"t1\".\"degree_program_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__syn_v0",
+    "qid": "student_transcripts_tracking__syn_v0__q0575",
+    "level": "L2",
+    "is_join": true,
+    "source_sql": "SELECT DISTINCT T2.semester_id FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id WHERE degree_summary_name = 'Master' INTERSECT SELECT DISTINCT T2.semester_id FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id WHERE degree_summary_name = 'Bachelor'",
+    "gold_sql": "SELECT DISTINCT \"t2\".\"semester_id\" AS \"semester_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" WHERE \"t1\".\"degree_synopsis\" = 'Master' INTERSECT SELECT DISTINCT \"t2\".\"semester_id\" AS \"semester_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" WHERE \"t1\".\"degree_synopsis\" = 'Bachelor'",
+    "pred_sql": "SELECT DISTINCT \"t2\".\"semester_id\" AS \"semester_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" WHERE \"t1\".\"degree_summary_description\" = 'Master' INTERSECT SELECT DISTINCT \"t2\".\"semester_id\" AS \"semester_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" WHERE \"t1\".\"degree_summary_description\" = 'Bachelor'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "student_transcripts_tracking__syn_v0",
+    "qid": "student_transcripts_tracking__syn_v0__q0576",
+    "level": "L2",
+    "is_join": true,
+    "source_sql": "SELECT DISTINCT T2.semester_id FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id WHERE degree_summary_name = 'Master' INTERSECT SELECT DISTINCT T2.semester_id FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id WHERE degree_summary_name = 'Bachelor'",
+    "gold_sql": "SELECT DISTINCT \"t2\".\"semester_id\" AS \"semester_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" WHERE \"t1\".\"degree_synopsis\" = 'Master' INTERSECT SELECT DISTINCT \"t2\".\"semester_id\" AS \"semester_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" WHERE \"t1\".\"degree_synopsis\" = 'Bachelor'",
+    "pred_sql": "SELECT DISTINCT \"t2\".\"semester_id\" AS \"semester_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" WHERE \"t1\".\"degree_summary_description\" = 'Master' INTERSECT SELECT DISTINCT \"t2\".\"semester_id\" AS \"semester_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_program_id\" = \"t2\".\"degree_program_id\" WHERE \"t1\".\"degree_summary_description\" = 'Bachelor'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "pair_id": "world_1__abbr_v0",
+    "type": "mapping",
+    "element": "country.Continent",
+    "gold": "country.cont",
+    "predicted": "country.gf",
+    "candidates": [
+      [
+        "country.Region",
+        0.9496042728424072
+      ],
+      [
+        "country.cont",
+        0.9297114610671997
+      ],
+      [
+        "country.Name",
+        0.9252931475639343
+      ]
+    ]
+  },
+  {
+    "pair_id": "world_1__abbr_v0",
+    "type": "mapping",
+    "element": "country.GovernmentForm",
+    "gold": "country.gf",
+    "predicted": "country.cont",
+    "candidates": [
+      [
+        "country.Name",
+        0.921513557434082
+      ],
+      [
+        "country.cont",
+        0.9151862859725952
+      ],
+      [
+        "country.Code",
+        0.9104123115539551
+      ]
+    ]
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0704",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(*) FROM country WHERE GovernmentForm = \"Republic\"",
+    "gold_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Republic'",
+    "pred_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Republic'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0705",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(*) FROM country WHERE GovernmentForm = \"Republic\"",
+    "gold_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Republic'",
+    "pred_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Republic'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0708",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Continent FROM country WHERE Name = \"Anguilla\"",
+    "gold_sql": "SELECT \"country\".\"cont\" AS \"continent\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Anguilla'",
+    "pred_sql": "SELECT \"country\".\"gf\" AS \"continent\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Anguilla'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0709",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Continent FROM country WHERE Name = \"Anguilla\"",
+    "gold_sql": "SELECT \"country\".\"cont\" AS \"continent\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Anguilla'",
+    "pred_sql": "SELECT \"country\".\"gf\" AS \"continent\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Anguilla'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0720",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE Continent = \"Asia\" ORDER BY LifeExpectancy LIMIT 1",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' ORDER BY \"country\".\"le\" LIMIT 1",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' ORDER BY \"country\".\"le\" LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0721",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE Continent = \"Asia\" ORDER BY LifeExpectancy LIMIT 1",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' ORDER BY \"country\".\"le\" LIMIT 1",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' ORDER BY \"country\".\"le\" LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0722",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(Population) , max(GNP) FROM country WHERE Continent = \"Asia\"",
+    "gold_sql": "SELECT SUM(\"country\".\"popn\") AS \"_col_0\", MAX(\"country\".\"GNP\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia'",
+    "pred_sql": "SELECT SUM(\"country\".\"popn\") AS \"_col_0\", MAX(\"country\".\"GNP\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0723",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(Population) , max(GNP) FROM country WHERE Continent = \"Asia\"",
+    "gold_sql": "SELECT SUM(\"country\".\"popn\") AS \"_col_0\", MAX(\"country\".\"GNP\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia'",
+    "pred_sql": "SELECT SUM(\"country\".\"popn\") AS \"_col_0\", MAX(\"country\".\"GNP\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0724",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT avg(LifeExpectancy) FROM country WHERE Continent = \"Africa\" AND GovernmentForm = \"Republic\"",
+    "gold_sql": "SELECT AVG(\"country\".\"le\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa' AND \"country\".\"gf\" = 'Republic'",
+    "pred_sql": "SELECT AVG(\"country\".\"le\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa' AND \"country\".\"cont\" = 'Republic'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0725",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT avg(LifeExpectancy) FROM country WHERE Continent = \"Africa\" AND GovernmentForm = \"Republic\"",
+    "gold_sql": "SELECT AVG(\"country\".\"le\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa' AND \"country\".\"gf\" = 'Republic'",
+    "pred_sql": "SELECT AVG(\"country\".\"le\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa' AND \"country\".\"cont\" = 'Republic'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0726",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(SurfaceArea) FROM country WHERE Continent = \"Asia\" OR Continent = \"Europe\"",
+    "gold_sql": "SELECT SUM(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' OR \"country\".\"cont\" = 'Europe'",
+    "pred_sql": "SELECT SUM(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' OR \"country\".\"gf\" = 'Europe'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0727",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(SurfaceArea) FROM country WHERE Continent = \"Asia\" OR Continent = \"Europe\"",
+    "gold_sql": "SELECT SUM(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' OR \"country\".\"cont\" = 'Europe'",
+    "pred_sql": "SELECT SUM(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' OR \"country\".\"gf\" = 'Europe'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0730",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT avg(GNP) , sum(population) FROM country WHERE GovernmentForm = \"US Territory\"",
+    "gold_sql": "SELECT AVG(\"country\".\"GNP\") AS \"_col_0\", SUM(\"country\".\"popn\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'US Territory'",
+    "pred_sql": "SELECT AVG(\"country\".\"GNP\") AS \"_col_0\", SUM(\"country\".\"popn\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'US Territory'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0731",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT avg(GNP) , sum(population) FROM country WHERE GovernmentForm = \"US Territory\"",
+    "gold_sql": "SELECT AVG(\"country\".\"GNP\") AS \"_col_0\", SUM(\"country\".\"popn\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'US Territory'",
+    "pred_sql": "SELECT AVG(\"country\".\"GNP\") AS \"_col_0\", SUM(\"country\".\"popn\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'US Territory'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0734",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent = \"Africa\"",
+    "gold_sql": "SELECT COUNT(DISTINCT \"country\".\"gf\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa'",
+    "pred_sql": "SELECT COUNT(DISTINCT \"country\".\"cont\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0735",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent = \"Africa\"",
+    "gold_sql": "SELECT COUNT(DISTINCT \"country\".\"gf\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa'",
+    "pred_sql": "SELECT COUNT(DISTINCT \"country\".\"cont\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0742",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.Continent FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Continent ORDER BY COUNT(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t1\".\"cont\" AS \"continent\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" GROUP BY \"t1\".\"cont\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "pred_sql": "SELECT \"t1\".\"gf\" AS \"continent\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" GROUP BY \"t1\".\"gf\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0743",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.Continent FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Continent ORDER BY COUNT(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t1\".\"cont\" AS \"continent\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" GROUP BY \"t1\".\"cont\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "pred_sql": "SELECT \"t1\".\"gf\" AS \"continent\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" GROUP BY \"t1\".\"gf\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0750",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT COUNT( DISTINCT Continent) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = \"Chinese\"",
+    "gold_sql": "SELECT COUNT(DISTINCT \"t1\".\"cont\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'Chinese'",
+    "pred_sql": "SELECT COUNT(DISTINCT \"t1\".\"gf\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'Chinese'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0751",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT COUNT( DISTINCT Continent) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = \"Chinese\"",
+    "gold_sql": "SELECT COUNT(DISTINCT \"t1\".\"cont\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'Chinese'",
+    "pred_sql": "SELECT COUNT(DISTINCT \"t1\".\"gf\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'Chinese'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0755",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT * FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = \"English\" AND IsOfficial = \"T\" UNION SELECT * FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = \"Dutch\" AND IsOfficial = \"T\"",
+    "gold_sql": "SELECT \"t1\".\"Code\" AS \"code\", \"t1\".\"Name\" AS \"name\", \"t1\".\"cont\" AS \"continent\", \"t1\".\"Region\" AS \"region\", \"t1\".\"sa\" AS \"surfacearea\", \"t1\".\"IndepYear\" AS \"indepyear\", \"t1\".\"popn\" AS \"population\", \"t1\".\"le\" AS \"lifeexpectancy\", \"t1\".\"GNP\" AS \"gnp\", \"t1\".\"GNPOld\" AS \"gnpold\", \"t1\".\"LocalName\" AS \"localname\", \"t1\".\"gf\" AS \"governmentform\", \"t1\".\"hos\" AS \"headofstate\", \"t1\".\"Capital\" AS \"capital\", \"t1\".\"Code2\" AS \"code2\", \"t2\".\"cntry_code\" AS \"countrycode\", \"t2\".\"lang\" AS \"language\", \"t2\".\"ofcl\" AS \"isofficial\", \"t2\".\"pct\" AS \"percentage\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'English' AND \"t2\".\"ofcl\" = 'T' UNION SELECT \"t1\".\"Code\" AS \"code\", \"t1\".\"Name\" AS \"name\", \"t1\".\"cont\" AS \"continent\", \"t1\".\"Region\" AS \"region\", \"t1\".\"sa\" AS \"surfacearea\", \"t1\".\"IndepYear\" AS \"indepyear\", \"t1\".\"popn\" AS \"population\", \"t1\".\"le\" AS \"lifeexpectancy\", \"t1\".\"GNP\" AS \"gnp\", \"t1\".\"GNPOld\" AS \"gnpold\", \"t1\".\"LocalName\" AS \"localname\", \"t1\".\"gf\" AS \"governmentform\", \"t1\".\"hos\" AS \"headofstate\", \"t1\".\"Capital\" AS \"capital\", \"t1\".\"Code2\" AS \"code2\", \"t2\".\"cntry_code\" AS \"countrycode\", \"t2\".\"lang\" AS \"language\", \"t2\".\"ofcl\" AS \"isofficial\", \"t2\".\"pct\" AS \"percentage\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'Dutch' AND \"t2\".\"ofcl\" = 'T'",
+    "pred_sql": "SELECT \"t1\".\"Code\" AS \"code\", \"t1\".\"Name\" AS \"name\", \"t1\".\"gf\" AS \"continent\", \"t1\".\"Region\" AS \"region\", \"t1\".\"sa\" AS \"surfacearea\", \"t1\".\"IndepYear\" AS \"indepyear\", \"t1\".\"popn\" AS \"population\", \"t1\".\"le\" AS \"lifeexpectancy\", \"t1\".\"GNP\" AS \"gnp\", \"t1\".\"GNPOld\" AS \"gnpold\", \"t1\".\"LocalName\" AS \"localname\", \"t1\".\"cont\" AS \"governmentform\", \"t1\".\"hos\" AS \"headofstate\", \"t1\".\"Capital\" AS \"capital\", \"t1\".\"Code2\" AS \"code2\", \"t2\".\"cntry_code\" AS \"countrycode\", \"t2\".\"lang\" AS \"language\", \"t2\".\"ofcl\" AS \"isofficial\", \"t2\".\"pct\" AS \"percentage\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'English' AND \"t2\".\"ofcl\" = 'T' UNION SELECT \"t1\".\"Code\" AS \"code\", \"t1\".\"Name\" AS \"name\", \"t1\".\"gf\" AS \"continent\", \"t1\".\"Region\" AS \"region\", \"t1\".\"sa\" AS \"surfacearea\", \"t1\".\"IndepYear\" AS \"indepyear\", \"t1\".\"popn\" AS \"population\", \"t1\".\"le\" AS \"lifeexpectancy\", \"t1\".\"GNP\" AS \"gnp\", \"t1\".\"GNPOld\" AS \"gnpold\", \"t1\".\"LocalName\" AS \"localname\", \"t1\".\"cont\" AS \"governmentform\", \"t1\".\"hos\" AS \"headofstate\", \"t1\".\"Capital\" AS \"capital\", \"t1\".\"Code2\" AS \"code2\", \"t2\".\"cntry_code\" AS \"countrycode\", \"t2\".\"lang\" AS \"language\", \"t2\".\"ofcl\" AS \"isofficial\", \"t2\".\"pct\" AS \"percentage\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'Dutch' AND \"t2\".\"ofcl\" = 'T'",
+    "status": "incorrect",
+    "gold_rows": 48,
+    "pred_rows": 48,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0756",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Continent = \"Asia\" GROUP BY T2.Language ORDER BY COUNT (*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"cont\" = 'Asia' GROUP BY \"t2\".\"lang\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "pred_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"gf\" = 'Asia' GROUP BY \"t2\".\"lang\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0757",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Continent = \"Asia\" GROUP BY T2.Language ORDER BY COUNT (*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"cont\" = 'Asia' GROUP BY \"t2\".\"lang\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "pred_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"gf\" = 'Asia' GROUP BY \"t2\".\"lang\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0758",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.GovernmentForm = \"Republic\" GROUP BY T2.Language HAVING COUNT(*) = 1",
+    "gold_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"gf\" = 'Republic' GROUP BY \"t2\".\"lang\" HAVING COUNT(*) = 1",
+    "pred_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"cont\" = 'Republic' GROUP BY \"t2\".\"lang\" HAVING COUNT(*) = 1",
+    "status": "incorrect",
+    "gold_rows": 258,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0759",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.GovernmentForm = \"Republic\" GROUP BY T2.Language HAVING COUNT(*) = 1",
+    "gold_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"gf\" = 'Republic' GROUP BY \"t2\".\"lang\" HAVING COUNT(*) = 1",
+    "pred_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"cont\" = 'Republic' GROUP BY \"t2\".\"lang\" HAVING COUNT(*) = 1",
+    "status": "incorrect",
+    "gold_rows": 258,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0762",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name , Population , LifeExpectancy FROM country WHERE Continent = \"Asia\" ORDER BY SurfaceArea DESC LIMIT 1",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"popn\" AS \"population\", \"country\".\"le\" AS \"lifeexpectancy\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' ORDER BY \"country\".\"sa\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"popn\" AS \"population\", \"country\".\"le\" AS \"lifeexpectancy\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' ORDER BY \"country\".\"sa\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0763",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name , Population , LifeExpectancy FROM country WHERE Continent = \"Asia\" ORDER BY SurfaceArea DESC LIMIT 1",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"popn\" AS \"population\", \"country\".\"le\" AS \"lifeexpectancy\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' ORDER BY \"country\".\"sa\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"popn\" AS \"population\", \"country\".\"le\" AS \"lifeexpectancy\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' ORDER BY \"country\".\"sa\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0772",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE SurfaceArea > (SELECT min(SurfaceArea) FROM country WHERE Continent = \"Europe\")",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"sa\" > (SELECT MIN(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Europe')",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"sa\" > (SELECT MIN(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Europe')",
+    "status": "incorrect",
+    "gold_rows": 238,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0773",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE SurfaceArea > (SELECT min(SurfaceArea) FROM country WHERE Continent = \"Europe\")",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"sa\" > (SELECT MIN(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Europe')",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"sa\" > (SELECT MIN(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Europe')",
+    "status": "incorrect",
+    "gold_rows": 238,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0774",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE Continent = \"Africa\" AND population < (SELECT max(population) FROM country WHERE Continent = \"Asia\")",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa' AND \"country\".\"popn\" < (SELECT MAX(\"country\".\"popn\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia')",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa' AND \"country\".\"popn\" < (SELECT MAX(\"country\".\"popn\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia')",
+    "status": "incorrect",
+    "gold_rows": 58,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0775",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE Continent = \"Africa\" AND population < (SELECT min(population) FROM country WHERE Continent = \"Asia\")",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa' AND \"country\".\"popn\" < (SELECT MIN(\"country\".\"popn\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia')",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa' AND \"country\".\"popn\" < (SELECT MIN(\"country\".\"popn\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia')",
+    "status": "incorrect",
+    "gold_rows": 5,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0776",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE Continent = \"Asia\" AND population > (SELECT max(population) FROM country WHERE Continent = \"Africa\")",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' AND \"country\".\"popn\" > (SELECT MAX(\"country\".\"popn\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa')",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' AND \"country\".\"popn\" > (SELECT MAX(\"country\".\"popn\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa')",
+    "status": "incorrect",
+    "gold_rows": 6,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0777",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE Continent = \"Asia\" AND population > (SELECT min(population) FROM country WHERE Continent = \"Africa\")",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' AND \"country\".\"popn\" > (SELECT MIN(\"country\".\"popn\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa')",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' AND \"country\".\"popn\" > (SELECT MIN(\"country\".\"popn\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa')",
+    "status": "incorrect",
+    "gold_rows": 51,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0782",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Code FROM country WHERE GovernmentForm != \"Republic\" EXCEPT SELECT CountryCode FROM countrylanguage WHERE LANGUAGE = \"English\"",
+    "gold_sql": "SELECT \"country\".\"Code\" AS \"code\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" <> 'Republic' EXCEPT SELECT \"countrylanguage\".\"cntry_code\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"lang\" = 'English'",
+    "pred_sql": "SELECT \"country\".\"Code\" AS \"code\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" <> 'Republic' EXCEPT SELECT \"countrylanguage\".\"cntry_code\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"lang\" = 'English'",
+    "status": "incorrect",
+    "gold_rows": 69,
+    "pred_rows": 179,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0783",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Code FROM country WHERE GovernmentForm != \"Republic\" EXCEPT SELECT CountryCode FROM countrylanguage WHERE LANGUAGE = \"English\"",
+    "gold_sql": "SELECT \"country\".\"Code\" AS \"code\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" <> 'Republic' EXCEPT SELECT \"countrylanguage\".\"cntry_code\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"lang\" = 'English'",
+    "pred_sql": "SELECT \"country\".\"Code\" AS \"code\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" <> 'Republic' EXCEPT SELECT \"countrylanguage\".\"cntry_code\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"lang\" = 'English'",
+    "status": "incorrect",
+    "gold_rows": 69,
+    "pred_rows": 179,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0784",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT DISTINCT T2.Name FROM country AS T1 JOIN city AS T2 ON T2.CountryCode = T1.Code WHERE T1.Continent = 'Europe' AND T1.Name NOT IN (SELECT T3.Name FROM country AS T3 JOIN countrylanguage AS T4 ON T3.Code = T4.CountryCode WHERE T4.IsOfficial = 'T' AND T4.Language = 'English')",
+    "gold_sql": "SELECT DISTINCT \"t2\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"city\" AS \"t2\" ON \"t2\".\"cntry_code\" = \"t1\".\"Code\" WHERE \"t1\".\"cont\" = 'Europe' AND NOT \"t1\".\"Name\" IN (SELECT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t3\" JOIN \"countrylanguage\" AS \"t4\" ON \"t3\".\"Code\" = \"t4\".\"cntry_code\" WHERE \"t4\".\"ofcl\" = 'T' AND \"t4\".\"lang\" = 'English')",
+    "pred_sql": "SELECT DISTINCT \"t2\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"city\" AS \"t2\" ON \"t2\".\"cntry_code\" = \"t1\".\"Code\" WHERE \"t1\".\"gf\" = 'Europe' AND NOT \"t1\".\"Name\" IN (SELECT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t3\" JOIN \"countrylanguage\" AS \"t4\" ON \"t3\".\"Code\" = \"t4\".\"cntry_code\" WHERE \"t4\".\"ofcl\" = 'T' AND \"t4\".\"lang\" = 'English')",
+    "status": "incorrect",
+    "gold_rows": 753,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0785",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT DISTINCT T2.Name FROM country AS T1 JOIN city AS T2 ON T2.CountryCode = T1.Code WHERE T1.Continent = 'Europe' AND T1.Name NOT IN (SELECT T3.Name FROM country AS T3 JOIN countrylanguage AS T4 ON T3.Code = T4.CountryCode WHERE T4.IsOfficial = 'T' AND T4.Language = 'English')",
+    "gold_sql": "SELECT DISTINCT \"t2\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"city\" AS \"t2\" ON \"t2\".\"cntry_code\" = \"t1\".\"Code\" WHERE \"t1\".\"cont\" = 'Europe' AND NOT \"t1\".\"Name\" IN (SELECT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t3\" JOIN \"countrylanguage\" AS \"t4\" ON \"t3\".\"Code\" = \"t4\".\"cntry_code\" WHERE \"t4\".\"ofcl\" = 'T' AND \"t4\".\"lang\" = 'English')",
+    "pred_sql": "SELECT DISTINCT \"t2\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"city\" AS \"t2\" ON \"t2\".\"cntry_code\" = \"t1\".\"Code\" WHERE \"t1\".\"gf\" = 'Europe' AND NOT \"t1\".\"Name\" IN (SELECT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t3\" JOIN \"countrylanguage\" AS \"t4\" ON \"t3\".\"Code\" = \"t4\".\"cntry_code\" WHERE \"t4\".\"ofcl\" = 'T' AND \"t4\".\"lang\" = 'English')",
+    "status": "incorrect",
+    "gold_rows": 753,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0787",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT DISTINCT T3.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode JOIN city AS T3 ON T1.Code = T3.CountryCode WHERE T2.IsOfficial = 'T' AND T2.Language = 'Chinese' AND T1.Continent = \"Asia\"",
+    "gold_sql": "SELECT DISTINCT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" JOIN \"city\" AS \"t3\" ON \"t1\".\"Code\" = \"t3\".\"cntry_code\" WHERE \"t2\".\"ofcl\" = 'T' AND \"t2\".\"lang\" = 'Chinese' AND \"t1\".\"cont\" = 'Asia'",
+    "pred_sql": "SELECT DISTINCT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" JOIN \"city\" AS \"t3\" ON \"t1\".\"Code\" = \"t3\".\"cntry_code\" WHERE \"t2\".\"ofcl\" = 'T' AND \"t2\".\"lang\" = 'Chinese' AND \"t1\".\"gf\" = 'Asia'",
+    "status": "incorrect",
+    "gold_rows": 359,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0796",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(Population) , GovernmentForm FROM country GROUP BY GovernmentForm HAVING avg(LifeExpectancy) > 72",
+    "gold_sql": "SELECT SUM(\"country\".\"popn\") AS \"_col_0\", \"country\".\"gf\" AS \"governmentform\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"gf\" HAVING AVG(\"country\".\"le\") > 72",
+    "pred_sql": "SELECT SUM(\"country\".\"popn\") AS \"_col_0\", \"country\".\"cont\" AS \"governmentform\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"cont\" HAVING AVG(\"country\".\"le\") > 72",
+    "status": "incorrect",
+    "gold_rows": 17,
+    "pred_rows": 2,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0797",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(Population) , GovernmentForm FROM country GROUP BY GovernmentForm HAVING avg(LifeExpectancy) > 72",
+    "gold_sql": "SELECT SUM(\"country\".\"popn\") AS \"_col_0\", \"country\".\"gf\" AS \"governmentform\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"gf\" HAVING AVG(\"country\".\"le\") > 72",
+    "pred_sql": "SELECT SUM(\"country\".\"popn\") AS \"_col_0\", \"country\".\"cont\" AS \"governmentform\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"cont\" HAVING AVG(\"country\".\"le\") > 72",
+    "status": "incorrect",
+    "gold_rows": 17,
+    "pred_rows": 2,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0798",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(Population) , avg(LifeExpectancy) , Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy) < 72",
+    "gold_sql": "SELECT SUM(\"country\".\"popn\") AS \"_col_0\", AVG(\"country\".\"le\") AS \"_col_1\", \"country\".\"cont\" AS \"continent\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"cont\" HAVING AVG(\"country\".\"le\") < 72",
+    "pred_sql": "SELECT SUM(\"country\".\"popn\") AS \"_col_0\", AVG(\"country\".\"le\") AS \"_col_1\", \"country\".\"gf\" AS \"continent\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"gf\" HAVING AVG(\"country\".\"le\") < 72",
+    "status": "incorrect",
+    "gold_rows": 4,
+    "pred_rows": 13,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0799",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(Population) , avg(LifeExpectancy) , Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy) < 72",
+    "gold_sql": "SELECT SUM(\"country\".\"popn\") AS \"_col_0\", AVG(\"country\".\"le\") AS \"_col_1\", \"country\".\"cont\" AS \"continent\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"cont\" HAVING AVG(\"country\".\"le\") < 72",
+    "pred_sql": "SELECT SUM(\"country\".\"popn\") AS \"_col_0\", AVG(\"country\".\"le\") AS \"_col_1\", \"country\".\"gf\" AS \"continent\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"gf\" HAVING AVG(\"country\".\"le\") < 72",
+    "status": "incorrect",
+    "gold_rows": 4,
+    "pred_rows": 13,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0806",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(*) FROM country WHERE continent = \"Asia\"",
+    "gold_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia'",
+    "pred_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v0",
+    "qid": "world_1__abbr_v0__q0807",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(*) FROM country WHERE continent = \"Asia\"",
+    "gold_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia'",
+    "pred_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "pair_id": "world_1__abbr_v2",
+    "type": "mapping",
+    "element": "country.Continent",
+    "gold": "country.cont",
+    "predicted": "country.gf",
+    "candidates": [
+      [
+        "country.Region",
+        0.9496042728424072
+      ],
+      [
+        "country.cont",
+        0.9297114610671997
+      ],
+      [
+        "country.Name",
+        0.9252931475639343
+      ]
+    ]
+  },
+  {
+    "pair_id": "world_1__abbr_v2",
+    "type": "mapping",
+    "element": "country.GovernmentForm",
+    "gold": "country.gf",
+    "predicted": "country.cont",
+    "candidates": [
+      [
+        "country.Name",
+        0.921513557434082
+      ],
+      [
+        "country.cont",
+        0.9151862859725952
+      ],
+      [
+        "country.Code",
+        0.9104123115539551
+      ]
+    ]
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0704",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(*) FROM country WHERE GovernmentForm = \"Republic\"",
+    "gold_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Republic'",
+    "pred_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Republic'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0705",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(*) FROM country WHERE GovernmentForm = \"Republic\"",
+    "gold_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Republic'",
+    "pred_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Republic'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0708",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Continent FROM country WHERE Name = \"Anguilla\"",
+    "gold_sql": "SELECT \"country\".\"cont\" AS \"continent\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Anguilla'",
+    "pred_sql": "SELECT \"country\".\"gf\" AS \"continent\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Anguilla'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0709",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Continent FROM country WHERE Name = \"Anguilla\"",
+    "gold_sql": "SELECT \"country\".\"cont\" AS \"continent\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Anguilla'",
+    "pred_sql": "SELECT \"country\".\"gf\" AS \"continent\" FROM \"country\" AS \"country\" WHERE \"country\".\"Name\" = 'Anguilla'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0720",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE Continent = \"Asia\" ORDER BY LifeExpectancy LIMIT 1",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' ORDER BY \"country\".\"le\" LIMIT 1",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' ORDER BY \"country\".\"le\" LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0721",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE Continent = \"Asia\" ORDER BY LifeExpectancy LIMIT 1",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' ORDER BY \"country\".\"le\" LIMIT 1",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' ORDER BY \"country\".\"le\" LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0722",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT sum(Population) , max(GNP) FROM country WHERE Continent = \"Asia\"",
+    "gold_sql": "SELECT SUM(\"country\".\"Population\") AS \"_col_0\", MAX(\"country\".\"GNP\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia'",
+    "pred_sql": "SELECT SUM(\"country\".\"Population\") AS \"_col_0\", MAX(\"country\".\"GNP\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0723",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT sum(Population) , max(GNP) FROM country WHERE Continent = \"Asia\"",
+    "gold_sql": "SELECT SUM(\"country\".\"Population\") AS \"_col_0\", MAX(\"country\".\"GNP\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia'",
+    "pred_sql": "SELECT SUM(\"country\".\"Population\") AS \"_col_0\", MAX(\"country\".\"GNP\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0724",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT avg(LifeExpectancy) FROM country WHERE Continent = \"Africa\" AND GovernmentForm = \"Republic\"",
+    "gold_sql": "SELECT AVG(\"country\".\"le\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa' AND \"country\".\"gf\" = 'Republic'",
+    "pred_sql": "SELECT AVG(\"country\".\"le\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa' AND \"country\".\"cont\" = 'Republic'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0725",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT avg(LifeExpectancy) FROM country WHERE Continent = \"Africa\" AND GovernmentForm = \"Republic\"",
+    "gold_sql": "SELECT AVG(\"country\".\"le\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa' AND \"country\".\"gf\" = 'Republic'",
+    "pred_sql": "SELECT AVG(\"country\".\"le\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa' AND \"country\".\"cont\" = 'Republic'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0726",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(SurfaceArea) FROM country WHERE Continent = \"Asia\" OR Continent = \"Europe\"",
+    "gold_sql": "SELECT SUM(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' OR \"country\".\"cont\" = 'Europe'",
+    "pred_sql": "SELECT SUM(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' OR \"country\".\"gf\" = 'Europe'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0727",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(SurfaceArea) FROM country WHERE Continent = \"Asia\" OR Continent = \"Europe\"",
+    "gold_sql": "SELECT SUM(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' OR \"country\".\"cont\" = 'Europe'",
+    "pred_sql": "SELECT SUM(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' OR \"country\".\"gf\" = 'Europe'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0730",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT avg(GNP) , sum(population) FROM country WHERE GovernmentForm = \"US Territory\"",
+    "gold_sql": "SELECT AVG(\"country\".\"GNP\") AS \"_col_0\", SUM(\"country\".\"Population\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'US Territory'",
+    "pred_sql": "SELECT AVG(\"country\".\"GNP\") AS \"_col_0\", SUM(\"country\".\"Population\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'US Territory'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0731",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT avg(GNP) , sum(population) FROM country WHERE GovernmentForm = \"US Territory\"",
+    "gold_sql": "SELECT AVG(\"country\".\"GNP\") AS \"_col_0\", SUM(\"country\".\"Population\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'US Territory'",
+    "pred_sql": "SELECT AVG(\"country\".\"GNP\") AS \"_col_0\", SUM(\"country\".\"Population\") AS \"_col_1\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'US Territory'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0734",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent = \"Africa\"",
+    "gold_sql": "SELECT COUNT(DISTINCT \"country\".\"gf\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa'",
+    "pred_sql": "SELECT COUNT(DISTINCT \"country\".\"cont\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0735",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent = \"Africa\"",
+    "gold_sql": "SELECT COUNT(DISTINCT \"country\".\"gf\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa'",
+    "pred_sql": "SELECT COUNT(DISTINCT \"country\".\"cont\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0742",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.Continent FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Continent ORDER BY COUNT(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t1\".\"cont\" AS \"continent\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" GROUP BY \"t1\".\"cont\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "pred_sql": "SELECT \"t1\".\"gf\" AS \"continent\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" GROUP BY \"t1\".\"gf\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0743",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T1.Continent FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Continent ORDER BY COUNT(*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t1\".\"cont\" AS \"continent\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" GROUP BY \"t1\".\"cont\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "pred_sql": "SELECT \"t1\".\"gf\" AS \"continent\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" GROUP BY \"t1\".\"gf\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0750",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT COUNT( DISTINCT Continent) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = \"Chinese\"",
+    "gold_sql": "SELECT COUNT(DISTINCT \"t1\".\"cont\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'Chinese'",
+    "pred_sql": "SELECT COUNT(DISTINCT \"t1\".\"gf\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'Chinese'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0751",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT COUNT( DISTINCT Continent) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = \"Chinese\"",
+    "gold_sql": "SELECT COUNT(DISTINCT \"t1\".\"cont\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'Chinese'",
+    "pred_sql": "SELECT COUNT(DISTINCT \"t1\".\"gf\") AS \"_col_0\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'Chinese'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0755",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT * FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = \"English\" AND IsOfficial = \"T\" UNION SELECT * FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = \"Dutch\" AND IsOfficial = \"T\"",
+    "gold_sql": "SELECT \"t1\".\"Code\" AS \"code\", \"t1\".\"Name\" AS \"name\", \"t1\".\"cont\" AS \"continent\", \"t1\".\"Region\" AS \"region\", \"t1\".\"sa\" AS \"surfacearea\", \"t1\".\"IndepYear\" AS \"indepyear\", \"t1\".\"Population\" AS \"population\", \"t1\".\"le\" AS \"lifeexpectancy\", \"t1\".\"GNP\" AS \"gnp\", \"t1\".\"GNPOld\" AS \"gnpold\", \"t1\".\"LocalName\" AS \"localname\", \"t1\".\"gf\" AS \"governmentform\", \"t1\".\"hos\" AS \"headofstate\", \"t1\".\"Capital\" AS \"capital\", \"t1\".\"Code2\" AS \"code2\", \"t2\".\"cntry_code\" AS \"countrycode\", \"t2\".\"lang\" AS \"language\", \"t2\".\"IsOfficial\" AS \"isofficial\", \"t2\".\"pct\" AS \"percentage\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'English' AND \"t2\".\"IsOfficial\" = 'T' UNION SELECT \"t1\".\"Code\" AS \"code\", \"t1\".\"Name\" AS \"name\", \"t1\".\"cont\" AS \"continent\", \"t1\".\"Region\" AS \"region\", \"t1\".\"sa\" AS \"surfacearea\", \"t1\".\"IndepYear\" AS \"indepyear\", \"t1\".\"Population\" AS \"population\", \"t1\".\"le\" AS \"lifeexpectancy\", \"t1\".\"GNP\" AS \"gnp\", \"t1\".\"GNPOld\" AS \"gnpold\", \"t1\".\"LocalName\" AS \"localname\", \"t1\".\"gf\" AS \"governmentform\", \"t1\".\"hos\" AS \"headofstate\", \"t1\".\"Capital\" AS \"capital\", \"t1\".\"Code2\" AS \"code2\", \"t2\".\"cntry_code\" AS \"countrycode\", \"t2\".\"lang\" AS \"language\", \"t2\".\"IsOfficial\" AS \"isofficial\", \"t2\".\"pct\" AS \"percentage\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'Dutch' AND \"t2\".\"IsOfficial\" = 'T'",
+    "pred_sql": "SELECT \"t1\".\"Code\" AS \"code\", \"t1\".\"Name\" AS \"name\", \"t1\".\"gf\" AS \"continent\", \"t1\".\"Region\" AS \"region\", \"t1\".\"sa\" AS \"surfacearea\", \"t1\".\"IndepYear\" AS \"indepyear\", \"t1\".\"Population\" AS \"population\", \"t1\".\"le\" AS \"lifeexpectancy\", \"t1\".\"GNP\" AS \"gnp\", \"t1\".\"GNPOld\" AS \"gnpold\", \"t1\".\"LocalName\" AS \"localname\", \"t1\".\"cont\" AS \"governmentform\", \"t1\".\"hos\" AS \"headofstate\", \"t1\".\"Capital\" AS \"capital\", \"t1\".\"Code2\" AS \"code2\", \"t2\".\"cntry_code\" AS \"countrycode\", \"t2\".\"lang\" AS \"language\", \"t2\".\"IsOfficial\" AS \"isofficial\", \"t2\".\"pct\" AS \"percentage\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'English' AND \"t2\".\"IsOfficial\" = 'T' UNION SELECT \"t1\".\"Code\" AS \"code\", \"t1\".\"Name\" AS \"name\", \"t1\".\"gf\" AS \"continent\", \"t1\".\"Region\" AS \"region\", \"t1\".\"sa\" AS \"surfacearea\", \"t1\".\"IndepYear\" AS \"indepyear\", \"t1\".\"Population\" AS \"population\", \"t1\".\"le\" AS \"lifeexpectancy\", \"t1\".\"GNP\" AS \"gnp\", \"t1\".\"GNPOld\" AS \"gnpold\", \"t1\".\"LocalName\" AS \"localname\", \"t1\".\"cont\" AS \"governmentform\", \"t1\".\"hos\" AS \"headofstate\", \"t1\".\"Capital\" AS \"capital\", \"t1\".\"Code2\" AS \"code2\", \"t2\".\"cntry_code\" AS \"countrycode\", \"t2\".\"lang\" AS \"language\", \"t2\".\"IsOfficial\" AS \"isofficial\", \"t2\".\"pct\" AS \"percentage\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t2\".\"lang\" = 'Dutch' AND \"t2\".\"IsOfficial\" = 'T'",
+    "status": "incorrect",
+    "gold_rows": 48,
+    "pred_rows": 48,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0756",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Continent = \"Asia\" GROUP BY T2.Language ORDER BY COUNT (*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"cont\" = 'Asia' GROUP BY \"t2\".\"lang\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "pred_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"gf\" = 'Asia' GROUP BY \"t2\".\"lang\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0757",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Continent = \"Asia\" GROUP BY T2.Language ORDER BY COUNT (*) DESC LIMIT 1",
+    "gold_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"cont\" = 'Asia' GROUP BY \"t2\".\"lang\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "pred_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"gf\" = 'Asia' GROUP BY \"t2\".\"lang\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0758",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.GovernmentForm = \"Republic\" GROUP BY T2.Language HAVING COUNT(*) = 1",
+    "gold_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"gf\" = 'Republic' GROUP BY \"t2\".\"lang\" HAVING COUNT(*) = 1",
+    "pred_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"cont\" = 'Republic' GROUP BY \"t2\".\"lang\" HAVING COUNT(*) = 1",
+    "status": "incorrect",
+    "gold_rows": 258,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0759",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.GovernmentForm = \"Republic\" GROUP BY T2.Language HAVING COUNT(*) = 1",
+    "gold_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"gf\" = 'Republic' GROUP BY \"t2\".\"lang\" HAVING COUNT(*) = 1",
+    "pred_sql": "SELECT \"t2\".\"lang\" AS \"language\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" WHERE \"t1\".\"cont\" = 'Republic' GROUP BY \"t2\".\"lang\" HAVING COUNT(*) = 1",
+    "status": "incorrect",
+    "gold_rows": 258,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0762",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name , Population , LifeExpectancy FROM country WHERE Continent = \"Asia\" ORDER BY SurfaceArea DESC LIMIT 1",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"Population\" AS \"population\", \"country\".\"le\" AS \"lifeexpectancy\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' ORDER BY \"country\".\"sa\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"Population\" AS \"population\", \"country\".\"le\" AS \"lifeexpectancy\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' ORDER BY \"country\".\"sa\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0763",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name , Population , LifeExpectancy FROM country WHERE Continent = \"Asia\" ORDER BY SurfaceArea DESC LIMIT 1",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"Population\" AS \"population\", \"country\".\"le\" AS \"lifeexpectancy\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' ORDER BY \"country\".\"sa\" DESC LIMIT 1",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\", \"country\".\"Population\" AS \"population\", \"country\".\"le\" AS \"lifeexpectancy\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' ORDER BY \"country\".\"sa\" DESC LIMIT 1",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 0,
+    "ordered": true
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0772",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE SurfaceArea > (SELECT min(SurfaceArea) FROM country WHERE Continent = \"Europe\")",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"sa\" > (SELECT MIN(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Europe')",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"sa\" > (SELECT MIN(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Europe')",
+    "status": "incorrect",
+    "gold_rows": 238,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0773",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE SurfaceArea > (SELECT min(SurfaceArea) FROM country WHERE Continent = \"Europe\")",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"sa\" > (SELECT MIN(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Europe')",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"sa\" > (SELECT MIN(\"country\".\"sa\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Europe')",
+    "status": "incorrect",
+    "gold_rows": 238,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0774",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE Continent = \"Africa\" AND population < (SELECT max(population) FROM country WHERE Continent = \"Asia\")",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa' AND \"country\".\"Population\" < (SELECT MAX(\"country\".\"Population\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia')",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa' AND \"country\".\"Population\" < (SELECT MAX(\"country\".\"Population\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia')",
+    "status": "incorrect",
+    "gold_rows": 58,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0775",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE Continent = \"Africa\" AND population < (SELECT min(population) FROM country WHERE Continent = \"Asia\")",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa' AND \"country\".\"Population\" < (SELECT MIN(\"country\".\"Population\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia')",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa' AND \"country\".\"Population\" < (SELECT MIN(\"country\".\"Population\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia')",
+    "status": "incorrect",
+    "gold_rows": 5,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0776",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE Continent = \"Asia\" AND population > (SELECT max(population) FROM country WHERE Continent = \"Africa\")",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' AND \"country\".\"Population\" > (SELECT MAX(\"country\".\"Population\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa')",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' AND \"country\".\"Population\" > (SELECT MAX(\"country\".\"Population\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa')",
+    "status": "incorrect",
+    "gold_rows": 6,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0777",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT Name FROM country WHERE Continent = \"Asia\" AND population > (SELECT min(population) FROM country WHERE Continent = \"Africa\")",
+    "gold_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia' AND \"country\".\"Population\" > (SELECT MIN(\"country\".\"Population\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Africa')",
+    "pred_sql": "SELECT \"country\".\"Name\" AS \"name\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia' AND \"country\".\"Population\" > (SELECT MIN(\"country\".\"Population\") AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Africa')",
+    "status": "incorrect",
+    "gold_rows": 51,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0782",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Code FROM country WHERE GovernmentForm != \"Republic\" EXCEPT SELECT CountryCode FROM countrylanguage WHERE LANGUAGE = \"English\"",
+    "gold_sql": "SELECT \"country\".\"Code\" AS \"code\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" <> 'Republic' EXCEPT SELECT \"countrylanguage\".\"cntry_code\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"lang\" = 'English'",
+    "pred_sql": "SELECT \"country\".\"Code\" AS \"code\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" <> 'Republic' EXCEPT SELECT \"countrylanguage\".\"cntry_code\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"lang\" = 'English'",
+    "status": "incorrect",
+    "gold_rows": 69,
+    "pred_rows": 179,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0783",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT Code FROM country WHERE GovernmentForm != \"Republic\" EXCEPT SELECT CountryCode FROM countrylanguage WHERE LANGUAGE = \"English\"",
+    "gold_sql": "SELECT \"country\".\"Code\" AS \"code\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" <> 'Republic' EXCEPT SELECT \"countrylanguage\".\"cntry_code\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"lang\" = 'English'",
+    "pred_sql": "SELECT \"country\".\"Code\" AS \"code\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" <> 'Republic' EXCEPT SELECT \"countrylanguage\".\"cntry_code\" AS \"countrycode\" FROM \"countrylanguage\" AS \"countrylanguage\" WHERE \"countrylanguage\".\"lang\" = 'English'",
+    "status": "incorrect",
+    "gold_rows": 69,
+    "pred_rows": 179,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0784",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT DISTINCT T2.Name FROM country AS T1 JOIN city AS T2 ON T2.CountryCode = T1.Code WHERE T1.Continent = 'Europe' AND T1.Name NOT IN (SELECT T3.Name FROM country AS T3 JOIN countrylanguage AS T4 ON T3.Code = T4.CountryCode WHERE T4.IsOfficial = 'T' AND T4.Language = 'English')",
+    "gold_sql": "SELECT DISTINCT \"t2\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"city\" AS \"t2\" ON \"t2\".\"CountryCode\" = \"t1\".\"Code\" WHERE \"t1\".\"cont\" = 'Europe' AND NOT \"t1\".\"Name\" IN (SELECT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t3\" JOIN \"countrylanguage\" AS \"t4\" ON \"t3\".\"Code\" = \"t4\".\"cntry_code\" WHERE \"t4\".\"IsOfficial\" = 'T' AND \"t4\".\"lang\" = 'English')",
+    "pred_sql": "SELECT DISTINCT \"t2\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"city\" AS \"t2\" ON \"t2\".\"CountryCode\" = \"t1\".\"Code\" WHERE \"t1\".\"gf\" = 'Europe' AND NOT \"t1\".\"Name\" IN (SELECT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t3\" JOIN \"countrylanguage\" AS \"t4\" ON \"t3\".\"Code\" = \"t4\".\"cntry_code\" WHERE \"t4\".\"IsOfficial\" = 'T' AND \"t4\".\"lang\" = 'English')",
+    "status": "incorrect",
+    "gold_rows": 753,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0785",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT DISTINCT T2.Name FROM country AS T1 JOIN city AS T2 ON T2.CountryCode = T1.Code WHERE T1.Continent = 'Europe' AND T1.Name NOT IN (SELECT T3.Name FROM country AS T3 JOIN countrylanguage AS T4 ON T3.Code = T4.CountryCode WHERE T4.IsOfficial = 'T' AND T4.Language = 'English')",
+    "gold_sql": "SELECT DISTINCT \"t2\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"city\" AS \"t2\" ON \"t2\".\"CountryCode\" = \"t1\".\"Code\" WHERE \"t1\".\"cont\" = 'Europe' AND NOT \"t1\".\"Name\" IN (SELECT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t3\" JOIN \"countrylanguage\" AS \"t4\" ON \"t3\".\"Code\" = \"t4\".\"cntry_code\" WHERE \"t4\".\"IsOfficial\" = 'T' AND \"t4\".\"lang\" = 'English')",
+    "pred_sql": "SELECT DISTINCT \"t2\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"city\" AS \"t2\" ON \"t2\".\"CountryCode\" = \"t1\".\"Code\" WHERE \"t1\".\"gf\" = 'Europe' AND NOT \"t1\".\"Name\" IN (SELECT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t3\" JOIN \"countrylanguage\" AS \"t4\" ON \"t3\".\"Code\" = \"t4\".\"cntry_code\" WHERE \"t4\".\"IsOfficial\" = 'T' AND \"t4\".\"lang\" = 'English')",
+    "status": "incorrect",
+    "gold_rows": 753,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0787",
+    "level": "L3",
+    "is_join": true,
+    "source_sql": "SELECT DISTINCT T3.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode JOIN city AS T3 ON T1.Code = T3.CountryCode WHERE T2.IsOfficial = 'T' AND T2.Language = 'Chinese' AND T1.Continent = \"Asia\"",
+    "gold_sql": "SELECT DISTINCT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" JOIN \"city\" AS \"t3\" ON \"t1\".\"Code\" = \"t3\".\"CountryCode\" WHERE \"t2\".\"IsOfficial\" = 'T' AND \"t2\".\"lang\" = 'Chinese' AND \"t1\".\"cont\" = 'Asia'",
+    "pred_sql": "SELECT DISTINCT \"t3\".\"Name\" AS \"name\" FROM \"country\" AS \"t1\" JOIN \"countrylanguage\" AS \"t2\" ON \"t1\".\"Code\" = \"t2\".\"cntry_code\" JOIN \"city\" AS \"t3\" ON \"t1\".\"Code\" = \"t3\".\"CountryCode\" WHERE \"t2\".\"IsOfficial\" = 'T' AND \"t2\".\"lang\" = 'Chinese' AND \"t1\".\"gf\" = 'Asia'",
+    "status": "incorrect",
+    "gold_rows": 359,
+    "pred_rows": 0,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0796",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(Population) , GovernmentForm FROM country GROUP BY GovernmentForm HAVING avg(LifeExpectancy) > 72",
+    "gold_sql": "SELECT SUM(\"country\".\"Population\") AS \"_col_0\", \"country\".\"gf\" AS \"governmentform\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"gf\" HAVING AVG(\"country\".\"le\") > 72",
+    "pred_sql": "SELECT SUM(\"country\".\"Population\") AS \"_col_0\", \"country\".\"cont\" AS \"governmentform\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"cont\" HAVING AVG(\"country\".\"le\") > 72",
+    "status": "incorrect",
+    "gold_rows": 17,
+    "pred_rows": 2,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0797",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(Population) , GovernmentForm FROM country GROUP BY GovernmentForm HAVING avg(LifeExpectancy) > 72",
+    "gold_sql": "SELECT SUM(\"country\".\"Population\") AS \"_col_0\", \"country\".\"gf\" AS \"governmentform\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"gf\" HAVING AVG(\"country\".\"le\") > 72",
+    "pred_sql": "SELECT SUM(\"country\".\"Population\") AS \"_col_0\", \"country\".\"cont\" AS \"governmentform\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"cont\" HAVING AVG(\"country\".\"le\") > 72",
+    "status": "incorrect",
+    "gold_rows": 17,
+    "pred_rows": 2,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0798",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(Population) , avg(LifeExpectancy) , Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy) < 72",
+    "gold_sql": "SELECT SUM(\"country\".\"Population\") AS \"_col_0\", AVG(\"country\".\"le\") AS \"_col_1\", \"country\".\"cont\" AS \"continent\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"cont\" HAVING AVG(\"country\".\"le\") < 72",
+    "pred_sql": "SELECT SUM(\"country\".\"Population\") AS \"_col_0\", AVG(\"country\".\"le\") AS \"_col_1\", \"country\".\"gf\" AS \"continent\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"gf\" HAVING AVG(\"country\".\"le\") < 72",
+    "status": "incorrect",
+    "gold_rows": 4,
+    "pred_rows": 13,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0799",
+    "level": "L3",
+    "is_join": false,
+    "source_sql": "SELECT sum(Population) , avg(LifeExpectancy) , Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy) < 72",
+    "gold_sql": "SELECT SUM(\"country\".\"Population\") AS \"_col_0\", AVG(\"country\".\"le\") AS \"_col_1\", \"country\".\"cont\" AS \"continent\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"cont\" HAVING AVG(\"country\".\"le\") < 72",
+    "pred_sql": "SELECT SUM(\"country\".\"Population\") AS \"_col_0\", AVG(\"country\".\"le\") AS \"_col_1\", \"country\".\"gf\" AS \"continent\" FROM \"country\" AS \"country\" GROUP BY \"country\".\"gf\" HAVING AVG(\"country\".\"le\") < 72",
+    "status": "incorrect",
+    "gold_rows": 4,
+    "pred_rows": 13,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0806",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(*) FROM country WHERE continent = \"Asia\"",
+    "gold_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia'",
+    "pred_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  },
+  {
+    "type": "query",
+    "pair_id": "world_1__abbr_v2",
+    "qid": "world_1__abbr_v2__q0807",
+    "level": "L2",
+    "is_join": false,
+    "source_sql": "SELECT count(*) FROM country WHERE continent = \"Asia\"",
+    "gold_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"cont\" = 'Asia'",
+    "pred_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"country\" AS \"country\" WHERE \"country\".\"gf\" = 'Asia'",
+    "status": "incorrect",
+    "gold_rows": 1,
+    "pred_rows": 1,
+    "ordered": false
+  }
+]

@@ -1,0 +1,230 @@
+{
+  "tables": {
+    "poker_player": [
+      [
+        "poker_player",
+        1.0
+      ],
+      [
+        "people",
+        0.5555555555555556
+      ]
+    ],
+    "people": [
+      [
+        "people",
+        1.0
+      ],
+      [
+        "poker_player",
+        0.5555555555555556
+      ]
+    ]
+  },
+  "columns": {
+    "poker_player.Poker_Player_ID": [
+      [
+        "poker_player.Poker_Player_ID",
+        1.0
+      ],
+      [
+        "poker_player.People_ID",
+        0.6666666666666666
+      ],
+      [
+        "people.People_ID",
+        0.6666666666666666
+      ]
+    ],
+    "poker_player.People_ID": [
+      [
+        "poker_player.People_ID",
+        1.0
+      ],
+      [
+        "people.People_ID",
+        1.0
+      ],
+      [
+        "poker_player.Poker_Player_ID",
+        0.6666666666666666
+      ]
+    ],
+    "poker_player.Final_Table_Made": [
+      [
+        "poker_player.Final_Table_Made",
+        1.0
+      ],
+      [
+        "poker_player.People_ID",
+        0.32
+      ],
+      [
+        "people.People_ID",
+        0.32
+      ]
+    ],
+    "poker_player.Best_Finish": [
+      [
+        "poker_player.best_fin",
+        0.8421052631578947
+      ],
+      [
+        "poker_player.People_ID",
+        0.3
+      ],
+      [
+        "people.People_ID",
+        0.3
+      ]
+    ],
+    "poker_player.Money_Rank": [
+      [
+        "poker_player.Money_Rank",
+        1.0
+      ],
+      [
+        "poker_player.Poker_Player_ID",
+        0.32
+      ],
+      [
+        "poker_player.People_ID",
+        0.3157894736842105
+      ]
+    ],
+    "poker_player.Earnings": [
+      [
+        "poker_player.earn",
+        0.6666666666666666
+      ],
+      [
+        "people.Height",
+        0.42857142857142855
+      ],
+      [
+        "poker_player.best_fin",
+        0.375
+      ]
+    ],
+    "people.People_ID": [
+      [
+        "poker_player.People_ID",
+        1.0
+      ],
+      [
+        "people.People_ID",
+        1.0
+      ],
+      [
+        "poker_player.Poker_Player_ID",
+        0.6666666666666666
+      ]
+    ],
+    "people.Nationality": [
+      [
+        "people.nal",
+        0.42857142857142855
+      ],
+      [
+        "poker_player.Final_Table_Made",
+        0.37037037037037035
+      ],
+      [
+        "poker_player.Money_Rank",
+        0.2857142857142857
+      ]
+    ],
+    "people.Name": [
+      [
+        "people.Name",
+        1.0
+      ],
+      [
+        "people.nal",
+        0.5714285714285714
+      ],
+      [
+        "poker_player.Final_Table_Made",
+        0.4
+      ]
+    ],
+    "people.Birth_Date": [
+      [
+        "people.Birth_Date",
+        1.0
+      ],
+      [
+        "poker_player.Final_Table_Made",
+        0.3076923076923077
+      ],
+      [
+        "people.Name",
+        0.2857142857142857
+      ]
+    ],
+    "people.Height": [
+      [
+        "people.Height",
+        1.0
+      ],
+      [
+        "poker_player.best_fin",
+        0.2857142857142857
+      ],
+      [
+        "poker_player.People_ID",
+        0.26666666666666666
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "poker_player": "poker_player",
+      "people": "people"
+    },
+    "columns": {
+      "poker_player.Poker_Player_ID": "poker_player.Poker_Player_ID",
+      "poker_player.People_ID": "poker_player.People_ID",
+      "poker_player.Final_Table_Made": "poker_player.Final_Table_Made",
+      "poker_player.Best_Finish": "poker_player.best_fin",
+      "poker_player.Money_Rank": "poker_player.Money_Rank",
+      "poker_player.Earnings": "poker_player.earn",
+      "people.People_ID": "people.People_ID",
+      "people.Nationality": "people.nal",
+      "people.Name": "people.Name",
+      "people.Birth_Date": "people.Birth_Date",
+      "people.Height": "people.Height"
+    }
+  },
+  "q_B": {
+    "poker_player__abbr_v2__q0649": "SELECT \"poker_player\".\"earn\" AS \"earnings\" FROM \"poker_player\" AS \"poker_player\" ORDER BY \"earnings\" DESC",
+    "poker_player__abbr_v2__q0650": "SELECT \"poker_player\".\"earn\" AS \"earnings\" FROM \"poker_player\" AS \"poker_player\" ORDER BY \"earnings\" DESC",
+    "poker_player__abbr_v2__q0651": "SELECT \"poker_player\".\"Final_Table_Made\" AS \"final_table_made\", \"poker_player\".\"best_fin\" AS \"best_finish\" FROM \"poker_player\" AS \"poker_player\"",
+    "poker_player__abbr_v2__q0652": "SELECT \"poker_player\".\"Final_Table_Made\" AS \"final_table_made\", \"poker_player\".\"best_fin\" AS \"best_finish\" FROM \"poker_player\" AS \"poker_player\"",
+    "poker_player__abbr_v2__q0653": "SELECT AVG(\"poker_player\".\"earn\") AS \"_col_0\" FROM \"poker_player\" AS \"poker_player\"",
+    "poker_player__abbr_v2__q0654": "SELECT AVG(\"poker_player\".\"earn\") AS \"_col_0\" FROM \"poker_player\" AS \"poker_player\"",
+    "poker_player__abbr_v2__q0655": "SELECT \"poker_player\".\"Money_Rank\" AS \"money_rank\" FROM \"poker_player\" AS \"poker_player\" ORDER BY \"poker_player\".\"earn\" DESC LIMIT 1",
+    "poker_player__abbr_v2__q0656": "SELECT \"poker_player\".\"Money_Rank\" AS \"money_rank\" FROM \"poker_player\" AS \"poker_player\" ORDER BY \"poker_player\".\"earn\" DESC LIMIT 1",
+    "poker_player__abbr_v2__q0657": "SELECT MAX(\"poker_player\".\"Final_Table_Made\") AS \"_col_0\" FROM \"poker_player\" AS \"poker_player\" WHERE \"poker_player\".\"earn\" < 200000",
+    "poker_player__abbr_v2__q0658": "SELECT MAX(\"poker_player\".\"Final_Table_Made\") AS \"_col_0\" FROM \"poker_player\" AS \"poker_player\" WHERE \"poker_player\".\"earn\" < 200000",
+    "poker_player__abbr_v2__q0661": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"people\" AS \"t1\" JOIN \"poker_player\" AS \"t2\" ON \"t1\".\"People_ID\" = \"t2\".\"People_ID\" WHERE \"t2\".\"earn\" > 300000",
+    "poker_player__abbr_v2__q0662": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"people\" AS \"t1\" JOIN \"poker_player\" AS \"t2\" ON \"t1\".\"People_ID\" = \"t2\".\"People_ID\" WHERE \"t2\".\"earn\" > 300000",
+    "poker_player__abbr_v2__q0665": "SELECT \"t1\".\"Birth_Date\" AS \"birth_date\" FROM \"people\" AS \"t1\" JOIN \"poker_player\" AS \"t2\" ON \"t1\".\"People_ID\" = \"t2\".\"People_ID\" ORDER BY \"t2\".\"earn\" ASC LIMIT 1",
+    "poker_player__abbr_v2__q0666": "SELECT \"t1\".\"Birth_Date\" AS \"birth_date\" FROM \"people\" AS \"t1\" JOIN \"poker_player\" AS \"t2\" ON \"t1\".\"People_ID\" = \"t2\".\"People_ID\" ORDER BY \"t2\".\"earn\" ASC LIMIT 1",
+    "poker_player__abbr_v2__q0669": "SELECT AVG(\"t2\".\"earn\") AS \"_col_0\" FROM \"people\" AS \"t1\" JOIN \"poker_player\" AS \"t2\" ON \"t1\".\"People_ID\" = \"t2\".\"People_ID\" WHERE \"t1\".\"Height\" > 200",
+    "poker_player__abbr_v2__q0670": "SELECT AVG(\"t2\".\"earn\") AS \"_col_0\" FROM \"people\" AS \"t1\" JOIN \"poker_player\" AS \"t2\" ON \"t1\".\"People_ID\" = \"t2\".\"People_ID\" WHERE \"t1\".\"Height\" > 200",
+    "poker_player__abbr_v2__q0671": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"people\" AS \"t1\" JOIN \"poker_player\" AS \"t2\" ON \"t1\".\"People_ID\" = \"t2\".\"People_ID\" ORDER BY \"t2\".\"earn\" DESC",
+    "poker_player__abbr_v2__q0672": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"people\" AS \"t1\" JOIN \"poker_player\" AS \"t2\" ON \"t1\".\"People_ID\" = \"t2\".\"People_ID\" ORDER BY \"t2\".\"earn\" DESC",
+    "poker_player__abbr_v2__q0673": "SELECT \"people\".\"nal\" AS \"nationality\", COUNT(*) AS \"_col_1\" FROM \"people\" AS \"people\" GROUP BY \"people\".\"nal\"",
+    "poker_player__abbr_v2__q0674": "SELECT \"people\".\"nal\" AS \"nationality\", COUNT(*) AS \"_col_1\" FROM \"people\" AS \"people\" GROUP BY \"people\".\"nal\"",
+    "poker_player__abbr_v2__q0675": "SELECT \"people\".\"nal\" AS \"nationality\" FROM \"people\" AS \"people\" GROUP BY \"people\".\"nal\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "poker_player__abbr_v2__q0676": "SELECT \"people\".\"nal\" AS \"nationality\" FROM \"people\" AS \"people\" GROUP BY \"people\".\"nal\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "poker_player__abbr_v2__q0677": "SELECT \"people\".\"nal\" AS \"nationality\" FROM \"people\" AS \"people\" GROUP BY \"people\".\"nal\" HAVING COUNT(*) >= 2",
+    "poker_player__abbr_v2__q0678": "SELECT \"people\".\"nal\" AS \"nationality\" FROM \"people\" AS \"people\" GROUP BY \"people\".\"nal\" HAVING COUNT(*) >= 2",
+    "poker_player__abbr_v2__q0681": "SELECT \"people\".\"Name\" AS \"name\" FROM \"people\" AS \"people\" WHERE \"people\".\"nal\" <> 'Russia'",
+    "poker_player__abbr_v2__q0682": "SELECT \"people\".\"Name\" AS \"name\" FROM \"people\" AS \"people\" WHERE \"people\".\"nal\" <> 'Russia'",
+    "poker_player__abbr_v2__q0685": "SELECT COUNT(DISTINCT \"people\".\"nal\") AS \"_col_0\" FROM \"people\" AS \"people\"",
+    "poker_player__abbr_v2__q0686": "SELECT COUNT(DISTINCT \"people\".\"nal\") AS \"_col_0\" FROM \"people\" AS \"people\""
+  },
+  "rewrite_errors": {}
+}

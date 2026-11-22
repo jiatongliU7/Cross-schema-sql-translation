@@ -1,0 +1,195 @@
+{
+  "tables": {
+    "singer": [
+      [
+        "singer",
+        0.9999997615814209
+      ],
+      [
+        "song",
+        0.7856841087341309
+      ]
+    ],
+    "song": [
+      [
+        "song",
+        1.0
+      ],
+      [
+        "singer",
+        0.7856841087341309
+      ]
+    ]
+  },
+  "columns": {
+    "singer.Singer_ID": [
+      [
+        "singer.Singer_ID",
+        1.0000001192092896
+      ],
+      [
+        "song.Singer_ID",
+        0.9058349132537842
+      ],
+      [
+        "song.Song_ID",
+        0.7763528823852539
+      ]
+    ],
+    "singer.Name": [
+      [
+        "singer.Name",
+        1.000000238418579
+      ],
+      [
+        "singer.Citizenship",
+        0.6209586262702942
+      ],
+      [
+        "song.Title",
+        0.5817961692810059
+      ]
+    ],
+    "singer.Birth_Year": [
+      [
+        "singer.Birth_Year",
+        1.0
+      ],
+      [
+        "singer.Singer_ID",
+        0.6010510921478271
+      ],
+      [
+        "singer.gross_value",
+        0.5517332553863525
+      ]
+    ],
+    "singer.Net_Worth_Millions": [
+      [
+        "singer.gross_value",
+        0.7432413101196289
+      ],
+      [
+        "singer.Singer_ID",
+        0.6259104609489441
+      ],
+      [
+        "song.Singer_ID",
+        0.5495411157608032
+      ]
+    ],
+    "singer.Citizenship": [
+      [
+        "singer.Citizenship",
+        1.0
+      ],
+      [
+        "singer.Singer_ID",
+        0.6211159825325012
+      ],
+      [
+        "singer.Name",
+        0.6209586262702942
+      ]
+    ],
+    "song.Song_ID": [
+      [
+        "song.Song_ID",
+        1.000000238418579
+      ],
+      [
+        "song.Singer_ID",
+        0.9356480836868286
+      ],
+      [
+        "singer.Singer_ID",
+        0.7763528823852539
+      ]
+    ],
+    "song.Title": [
+      [
+        "song.Title",
+        1.0
+      ],
+      [
+        "song.Singer_ID",
+        0.6368414163589478
+      ],
+      [
+        "song.Song_ID",
+        0.6327952146530151
+      ]
+    ],
+    "song.Singer_ID": [
+      [
+        "song.Singer_ID",
+        1.0000004768371582
+      ],
+      [
+        "song.Song_ID",
+        0.9356480836868286
+      ],
+      [
+        "singer.Singer_ID",
+        0.9058349132537842
+      ]
+    ],
+    "song.Sales": [
+      [
+        "song.Sales",
+        1.0
+      ],
+      [
+        "song.Song_ID",
+        0.7703089118003845
+      ],
+      [
+        "song.Singer_ID",
+        0.7474067211151123
+      ]
+    ],
+    "song.Highest_Position": [
+      [
+        "song.Highest_Position",
+        0.9999998807907104
+      ],
+      [
+        "song.Song_ID",
+        0.7299849987030029
+      ],
+      [
+        "song.Singer_ID",
+        0.7138330936431885
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "singer": "singer",
+      "song": "song"
+    },
+    "columns": {
+      "singer.Singer_ID": "singer.Singer_ID",
+      "singer.Name": "singer.Name",
+      "singer.Birth_Year": "singer.Birth_Year",
+      "singer.Net_Worth_Millions": "singer.gross_value",
+      "singer.Citizenship": "singer.Citizenship",
+      "song.Song_ID": "song.Song_ID",
+      "song.Title": "song.Title",
+      "song.Singer_ID": "song.Singer_ID",
+      "song.Sales": "song.Sales",
+      "song.Highest_Position": "song.Highest_Position"
+    }
+  },
+  "q_B": {
+    "singer__syn_v2__q1002": "SELECT \"singer\".\"Name\" AS \"name\" FROM \"singer\" AS \"singer\" ORDER BY \"singer\".\"gross_value\" ASC",
+    "singer__syn_v2__q1003": "SELECT \"singer\".\"Name\" AS \"name\" FROM \"singer\" AS \"singer\" ORDER BY \"singer\".\"gross_value\" ASC",
+    "singer__syn_v2__q1010": "SELECT \"singer\".\"Name\" AS \"name\" FROM \"singer\" AS \"singer\" ORDER BY \"singer\".\"gross_value\" DESC LIMIT 1",
+    "singer__syn_v2__q1011": "SELECT \"singer\".\"Name\" AS \"name\" FROM \"singer\" AS \"singer\" ORDER BY \"singer\".\"gross_value\" DESC LIMIT 1",
+    "singer__syn_v2__q1016": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\", MAX(\"singer\".\"gross_value\") AS \"_col_1\" FROM \"singer\" AS \"singer\" GROUP BY \"singer\".\"Citizenship\"",
+    "singer__syn_v2__q1017": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\", MAX(\"singer\".\"gross_value\") AS \"_col_1\" FROM \"singer\" AS \"singer\" GROUP BY \"singer\".\"Citizenship\""
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "types"
+}

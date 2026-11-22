@@ -1,0 +1,339 @@
+{
+  "tables": {
+    "battle": [
+      [
+        "battle",
+        1.000000238418579
+      ],
+      [
+        "ship",
+        0.47697120904922485
+      ],
+      [
+        "death",
+        0.4663967490196228
+      ]
+    ],
+    "ship": [
+      [
+        "ship",
+        1.000000238418579
+      ],
+      [
+        "battle",
+        0.47697120904922485
+      ],
+      [
+        "death",
+        0.417380690574646
+      ]
+    ],
+    "death": [
+      [
+        "death",
+        1.0000001192092896
+      ],
+      [
+        "battle",
+        0.4663967490196228
+      ],
+      [
+        "ship",
+        0.417380690574646
+      ]
+    ]
+  },
+  "columns": {
+    "battle.id": [
+      [
+        "battle.id",
+        0.9999998807907104
+      ],
+      [
+        "battle.result",
+        0.6784236431121826
+      ],
+      [
+        "battle.bg_cdr",
+        0.6068205237388611
+      ]
+    ],
+    "battle.name": [
+      [
+        "battle.name",
+        1.0000003576278687
+      ],
+      [
+        "battle.result",
+        0.795746922492981
+      ],
+      [
+        "battle.bg_cdr",
+        0.6787168383598328
+      ]
+    ],
+    "battle.date": [
+      [
+        "battle.date",
+        1.0
+      ],
+      [
+        "battle.result",
+        0.7929127812385559
+      ],
+      [
+        "battle.bg_cdr",
+        0.691556453704834
+      ]
+    ],
+    "battle.bulgarian_commander": [
+      [
+        "battle.latin_commander",
+        0.808448851108551
+      ],
+      [
+        "battle.result",
+        0.6776658296585083
+      ],
+      [
+        "battle.bg_cdr",
+        0.6578202247619629
+      ]
+    ],
+    "battle.latin_commander": [
+      [
+        "battle.latin_commander",
+        1.0
+      ],
+      [
+        "battle.result",
+        0.7523155212402344
+      ],
+      [
+        "battle.bg_cdr",
+        0.7276365756988525
+      ]
+    ],
+    "battle.result": [
+      [
+        "battle.result",
+        1.000000238418579
+      ],
+      [
+        "battle.bg_cdr",
+        0.8236784934997559
+      ],
+      [
+        "battle.name",
+        0.795746922492981
+      ]
+    ],
+    "ship.lost_in_battle": [
+      [
+        "ship.id",
+        0.7172561883926392
+      ],
+      [
+        "ship.lib",
+        0.6984861493110657
+      ],
+      [
+        "battle.id",
+        0.6472907066345215
+      ]
+    ],
+    "ship.id": [
+      [
+        "ship.id",
+        1.000000238418579
+      ],
+      [
+        "ship.lib",
+        0.8129258155822754
+      ],
+      [
+        "death.caused_by_ship_id",
+        0.7535765171051025
+      ]
+    ],
+    "ship.name": [
+      [
+        "ship.name",
+        0.9999998211860657
+      ],
+      [
+        "ship.st",
+        0.7138195037841797
+      ],
+      [
+        "ship.disposition_of_ship",
+        0.6795613765716553
+      ]
+    ],
+    "ship.tonnage": [
+      [
+        "ship.tonnage",
+        1.0000001192092896
+      ],
+      [
+        "ship.st",
+        0.8624498844146729
+      ],
+      [
+        "ship.disposition_of_ship",
+        0.7822480797767639
+      ]
+    ],
+    "ship.ship_type": [
+      [
+        "ship.st",
+        0.9765317440032959
+      ],
+      [
+        "ship.tonnage",
+        0.8806259632110596
+      ],
+      [
+        "ship.disposition_of_ship",
+        0.8800206184387207
+      ]
+    ],
+    "ship.location": [
+      [
+        "ship.location",
+        1.0
+      ],
+      [
+        "ship.st",
+        0.8617196083068848
+      ],
+      [
+        "ship.disposition_of_ship",
+        0.7846524715423584
+      ]
+    ],
+    "ship.disposition_of_ship": [
+      [
+        "ship.disposition_of_ship",
+        0.9999998211860657
+      ],
+      [
+        "ship.st",
+        0.8787879943847656
+      ],
+      [
+        "ship.location",
+        0.7846524715423584
+      ]
+    ],
+    "death.caused_by_ship_id": [
+      [
+        "death.caused_by_ship_id",
+        1.0000001192092896
+      ],
+      [
+        "ship.id",
+        0.7535765171051025
+      ],
+      [
+        "death.id",
+        0.7516891956329346
+      ]
+    ],
+    "death.id": [
+      [
+        "death.id",
+        0.9999998807907104
+      ],
+      [
+        "death.killed",
+        0.891813337802887
+      ],
+      [
+        "death.injured",
+        0.8075827956199646
+      ]
+    ],
+    "death.note": [
+      [
+        "death.note",
+        0.9999998211860657
+      ],
+      [
+        "death.killed",
+        0.6875710487365723
+      ],
+      [
+        "death.id",
+        0.6268984079360962
+      ]
+    ],
+    "death.killed": [
+      [
+        "death.killed",
+        0.9999998807907104
+      ],
+      [
+        "death.id",
+        0.891813337802887
+      ],
+      [
+        "death.injured",
+        0.864767849445343
+      ]
+    ],
+    "death.injured": [
+      [
+        "death.injured",
+        0.9999998807907104
+      ],
+      [
+        "death.killed",
+        0.864767849445343
+      ],
+      [
+        "death.id",
+        0.8075827956199646
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "battle": "battle",
+      "ship": "ship",
+      "death": "death"
+    },
+    "columns": {
+      "battle.id": "battle.id",
+      "battle.name": "battle.name",
+      "battle.date": "battle.date",
+      "battle.bulgarian_commander": "battle.bg_cdr",
+      "battle.latin_commander": "battle.latin_commander",
+      "battle.result": "battle.result",
+      "ship.lost_in_battle": "ship.lib",
+      "ship.id": "ship.id",
+      "ship.name": "ship.name",
+      "ship.tonnage": "ship.tonnage",
+      "ship.ship_type": "ship.st",
+      "ship.location": "ship.location",
+      "ship.disposition_of_ship": "ship.disposition_of_ship",
+      "death.caused_by_ship_id": "death.caused_by_ship_id",
+      "death.id": "death.id",
+      "death.note": "death.note",
+      "death.killed": "death.killed",
+      "death.injured": "death.injured"
+    }
+  },
+  "q_B": {
+    "battle_death__abbr_v3__q0497": "SELECT \"battle\".\"name\" AS \"name\", \"battle\".\"result\" AS \"result\" FROM \"battle\" AS \"battle\" WHERE \"battle\".\"bg_cdr\" <> 'Boril'",
+    "battle_death__abbr_v3__q0498": "SELECT DISTINCT \"t1\".\"id\" AS \"id\", \"t1\".\"name\" AS \"name\" FROM \"battle\" AS \"t1\" JOIN \"ship\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"lib\" WHERE \"t2\".\"st\" = 'Brig'",
+    "battle_death__abbr_v3__q0499": "SELECT \"t1\".\"id\" AS \"id\", \"t1\".\"name\" AS \"name\" FROM \"battle\" AS \"t1\" JOIN \"ship\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"lib\" JOIN \"death\" AS \"t3\" ON \"t2\".\"id\" = \"t3\".\"caused_by_ship_id\" GROUP BY \"t1\".\"id\" HAVING SUM(\"t3\".\"killed\") > 10",
+    "battle_death__abbr_v3__q0501": "SELECT \"battle\".\"name\" AS \"name\" FROM \"battle\" AS \"battle\" WHERE \"battle\".\"bg_cdr\" = 'Kaloyan' AND \"battle\".\"latin_commander\" = 'Baldwin I'",
+    "battle_death__abbr_v3__q0503": "SELECT COUNT(*) AS \"_col_0\" FROM \"battle\" AS \"battle\" WHERE NOT \"battle\".\"id\" IN (SELECT \"ship\".\"lib\" AS \"lost_in_battle\" FROM \"ship\" AS \"ship\" WHERE \"ship\".\"tonnage\" = '225')",
+    "battle_death__abbr_v3__q0504": "SELECT \"t1\".\"name\" AS \"name\", \"t1\".\"date\" AS \"date\" FROM \"battle\" AS \"t1\" JOIN \"ship\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"lib\" WHERE \"t2\".\"name\" = 'Lettice' INTERSECT SELECT \"t1\".\"name\" AS \"name\", \"t1\".\"date\" AS \"date\" FROM \"battle\" AS \"t1\" JOIN \"ship\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"lib\" WHERE \"t2\".\"name\" = 'HMS Atalanta'",
+    "battle_death__abbr_v3__q0505": "SELECT \"battle\".\"name\" AS \"name\", \"battle\".\"result\" AS \"result\", \"battle\".\"bg_cdr\" AS \"bulgarian_commander\" FROM \"battle\" AS \"battle\" EXCEPT SELECT \"t1\".\"name\" AS \"name\", \"t1\".\"result\" AS \"result\", \"t1\".\"bg_cdr\" AS \"bulgarian_commander\" FROM \"battle\" AS \"t1\" JOIN \"ship\" AS \"t2\" ON \"t1\".\"id\" = \"t2\".\"lib\" WHERE \"t2\".\"location\" = 'English Channel'"
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "fk"
+}

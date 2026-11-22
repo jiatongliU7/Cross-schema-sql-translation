@@ -1,0 +1,408 @@
+{
+  "tables": {
+    "Ref_Template_Types": [
+      [
+        "Ref_Template_Types",
+        1.0
+      ],
+      [
+        "Templates",
+        0.6901373863220215
+      ],
+      [
+        "Documents",
+        0.30365848541259766
+      ]
+    ],
+    "Templates": [
+      [
+        "Templates",
+        1.0
+      ],
+      [
+        "Ref_Template_Types",
+        0.6901373863220215
+      ],
+      [
+        "Documents",
+        0.4735168218612671
+      ]
+    ],
+    "Documents": [
+      [
+        "Documents",
+        0.9999999403953552
+      ],
+      [
+        "Templates",
+        0.4735168218612671
+      ],
+      [
+        "Paragraphs",
+        0.40573763847351074
+      ]
+    ],
+    "Paragraphs": [
+      [
+        "Paragraphs",
+        0.9999998807907104
+      ],
+      [
+        "Documents",
+        0.40573763847351074
+      ],
+      [
+        "Templates",
+        0.3666205406188965
+      ]
+    ]
+  },
+  "columns": {
+    "Ref_Template_Types.Template_Type_Code": [
+      [
+        "Ref_Template_Types.tpl_type_code",
+        0.9631182551383972
+      ],
+      [
+        "Ref_Template_Types.Template_Type_Description",
+        0.7373089790344238
+      ],
+      [
+        "Templates.tpl_tpye_code",
+        0.7327501773834229
+      ]
+    ],
+    "Ref_Template_Types.Template_Type_Description": [
+      [
+        "Ref_Template_Types.Template_Type_Description",
+        1.0000001192092896
+      ],
+      [
+        "Ref_Template_Types.tpl_type_code",
+        0.7377109527587891
+      ],
+      [
+        "Templates.tplt_dtl",
+        0.5995466709136963
+      ]
+    ],
+    "Templates.Template_ID": [
+      [
+        "Templates.Template_ID",
+        1.000000238418579
+      ],
+      [
+        "Templates.ver_no",
+        0.8691607713699341
+      ],
+      [
+        "Templates.date_eff_to",
+        0.6569634675979614
+      ]
+    ],
+    "Templates.Version_Number": [
+      [
+        "Templates.ver_no",
+        0.7238848209381104
+      ],
+      [
+        "Templates.Template_ID",
+        0.6940501928329468
+      ],
+      [
+        "Templates.date_eff_to",
+        0.6289409399032593
+      ]
+    ],
+    "Templates.Template_Type_Code": [
+      [
+        "Templates.tpl_tpye_code",
+        0.8567240238189697
+      ],
+      [
+        "Ref_Template_Types.tpl_type_code",
+        0.8306863307952881
+      ],
+      [
+        "Templates.tplt_dtl",
+        0.7410461902618408
+      ]
+    ],
+    "Templates.Date_Effective_From": [
+      [
+        "Templates.Date_Effective_From",
+        1.0
+      ],
+      [
+        "Templates.date_eff_to",
+        0.8835512399673462
+      ],
+      [
+        "Templates.ver_no",
+        0.6537724137306213
+      ]
+    ],
+    "Templates.Date_Effective_To": [
+      [
+        "Templates.Date_Effective_From",
+        0.9914264678955078
+      ],
+      [
+        "Templates.date_eff_to",
+        0.8820040225982666
+      ],
+      [
+        "Templates.ver_no",
+        0.6569086909294128
+      ]
+    ],
+    "Templates.Template_Details": [
+      [
+        "Templates.tplt_dtl",
+        0.8147854804992676
+      ],
+      [
+        "Templates.tpl_tpye_code",
+        0.7644244432449341
+      ],
+      [
+        "Ref_Template_Types.Template_Type_Description",
+        0.7079741954803467
+      ]
+    ],
+    "Documents.Document_ID": [
+      [
+        "Documents.doc_id",
+        0.9770735502243042
+      ],
+      [
+        "Documents.tpl_id",
+        0.9212853908538818
+      ],
+      [
+        "Paragraphs.doc_id",
+        0.709511935710907
+      ]
+    ],
+    "Documents.Template_ID": [
+      [
+        "Documents.tpl_id",
+        0.853896975517273
+      ],
+      [
+        "Templates.Template_ID",
+        0.8516740798950195
+      ],
+      [
+        "Documents.doc_id",
+        0.8237603902816772
+      ]
+    ],
+    "Documents.Document_Name": [
+      [
+        "Documents.doc_name",
+        0.9740921258926392
+      ],
+      [
+        "Documents.doc_desc",
+        0.6456820964813232
+      ],
+      [
+        "Documents.oth_dtl",
+        0.61945641040802
+      ]
+    ],
+    "Documents.Document_Description": [
+      [
+        "Documents.doc_desc",
+        0.6286070942878723
+      ],
+      [
+        "Ref_Template_Types.Template_Type_Description",
+        0.6164159774780273
+      ],
+      [
+        "Documents.doc_name",
+        0.5578311085700989
+      ]
+    ],
+    "Documents.Other_Details": [
+      [
+        "Documents.doc_desc",
+        0.7534548044204712
+      ],
+      [
+        "Documents.oth_dtl",
+        0.6968361139297485
+      ],
+      [
+        "Documents.doc_name",
+        0.669164776802063
+      ]
+    ],
+    "Paragraphs.Paragraph_ID": [
+      [
+        "Paragraphs.para_id",
+        0.9548742771148682
+      ],
+      [
+        "Paragraphs.doc_id",
+        0.9153478741645813
+      ],
+      [
+        "Paragraphs.Paragraph_Text",
+        0.7741419076919556
+      ]
+    ],
+    "Paragraphs.Document_ID": [
+      [
+        "Paragraphs.doc_id",
+        0.971224308013916
+      ],
+      [
+        "Paragraphs.para_id",
+        0.8821457624435425
+      ],
+      [
+        "Documents.doc_id",
+        0.7677081823348999
+      ]
+    ],
+    "Paragraphs.Paragraph_Text": [
+      [
+        "Paragraphs.Paragraph_Text",
+        0.9999999403953552
+      ],
+      [
+        "Paragraphs.Other_Details",
+        0.8749257326126099
+      ],
+      [
+        "Paragraphs.para_id",
+        0.7125822305679321
+      ]
+    ],
+    "Paragraphs.Other_Details": [
+      [
+        "Paragraphs.Other_Details",
+        1.0
+      ],
+      [
+        "Paragraphs.Paragraph_Text",
+        0.8749257326126099
+      ],
+      [
+        "Paragraphs.para_id",
+        0.6522814035415649
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Ref_Template_Types": "Ref_Template_Types",
+      "Templates": "Templates",
+      "Documents": "Documents",
+      "Paragraphs": "Paragraphs"
+    },
+    "columns": {
+      "Ref_Template_Types.Template_Type_Code": "Ref_Template_Types.tpl_type_code",
+      "Ref_Template_Types.Template_Type_Description": "Ref_Template_Types.Template_Type_Description",
+      "Templates.Template_ID": "Templates.Template_ID",
+      "Templates.Version_Number": "Templates.ver_no",
+      "Templates.Template_Type_Code": "Templates.tpl_tpye_code",
+      "Templates.Date_Effective_From": "Templates.Date_Effective_From",
+      "Templates.Date_Effective_To": "Templates.date_eff_to",
+      "Templates.Template_Details": "Templates.tplt_dtl",
+      "Documents.Document_ID": "Documents.doc_id",
+      "Documents.Template_ID": "Documents.tpl_id",
+      "Documents.Document_Name": "Documents.doc_name",
+      "Documents.Document_Description": "Documents.doc_desc",
+      "Documents.Other_Details": "Documents.oth_dtl",
+      "Paragraphs.Paragraph_ID": "Paragraphs.para_id",
+      "Paragraphs.Document_ID": "Paragraphs.doc_id",
+      "Paragraphs.Paragraph_Text": "Paragraphs.Paragraph_Text",
+      "Paragraphs.Other_Details": "Paragraphs.Other_Details"
+    }
+  },
+  "q_B": {
+    "cre_Doc_Template_Mgt__abbr_v2__q0299": "SELECT \"documents\".\"doc_id\" AS \"document_id\", \"documents\".\"doc_name\" AS \"document_name\", \"documents\".\"doc_desc\" AS \"document_description\" FROM \"Documents\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0300": "SELECT \"documents\".\"doc_id\" AS \"document_id\", \"documents\".\"doc_name\" AS \"document_name\", \"documents\".\"doc_desc\" AS \"document_description\" FROM \"Documents\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0301": "SELECT \"documents\".\"doc_name\" AS \"document_name\", \"documents\".\"tpl_id\" AS \"template_id\" FROM \"Documents\" AS \"documents\" WHERE \"documents\".\"doc_desc\" LIKE '%w%'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0302": "SELECT \"documents\".\"doc_name\" AS \"document_name\", \"documents\".\"tpl_id\" AS \"template_id\" FROM \"Documents\" AS \"documents\" WHERE \"documents\".\"doc_desc\" LIKE '%w%'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0303": "SELECT \"documents\".\"doc_id\" AS \"document_id\", \"documents\".\"tpl_id\" AS \"template_id\", \"documents\".\"doc_desc\" AS \"document_description\" FROM \"Documents\" AS \"documents\" WHERE \"documents\".\"doc_name\" = 'Robbin CV'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0304": "SELECT \"documents\".\"doc_id\" AS \"document_id\", \"documents\".\"tpl_id\" AS \"template_id\", \"documents\".\"doc_desc\" AS \"document_description\" FROM \"Documents\" AS \"documents\" WHERE \"documents\".\"doc_name\" = 'Robbin CV'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0305": "SELECT COUNT(DISTINCT \"documents\".\"tpl_id\") AS \"_col_0\" FROM \"Documents\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0306": "SELECT COUNT(DISTINCT \"documents\".\"tpl_id\") AS \"_col_0\" FROM \"Documents\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0307": "SELECT COUNT(*) AS \"_col_0\" FROM \"Documents\" AS \"t1\" JOIN \"Templates\" AS \"t2\" ON \"t1\".\"tpl_id\" = \"t2\".\"Template_ID\" WHERE \"t2\".\"tpl_tpye_code\" = 'PPT'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0308": "SELECT COUNT(*) AS \"_col_0\" FROM \"Documents\" AS \"t1\" JOIN \"Templates\" AS \"t2\" ON \"t1\".\"tpl_id\" = \"t2\".\"Template_ID\" WHERE \"t2\".\"tpl_tpye_code\" = 'PPT'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0309": "SELECT \"documents\".\"tpl_id\" AS \"template_id\", COUNT(*) AS \"_col_1\" FROM \"Documents\" AS \"documents\" GROUP BY \"documents\".\"tpl_id\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0310": "SELECT \"documents\".\"tpl_id\" AS \"template_id\", COUNT(*) AS \"_col_1\" FROM \"Documents\" AS \"documents\" GROUP BY \"documents\".\"tpl_id\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0311": "SELECT \"t1\".\"tpl_id\" AS \"template_id\", \"t2\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Documents\" AS \"t1\" JOIN \"Templates\" AS \"t2\" ON \"t1\".\"tpl_id\" = \"t2\".\"Template_ID\" GROUP BY \"t1\".\"tpl_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__abbr_v2__q0312": "SELECT \"t1\".\"tpl_id\" AS \"template_id\", \"t2\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Documents\" AS \"t1\" JOIN \"Templates\" AS \"t2\" ON \"t1\".\"tpl_id\" = \"t2\".\"Template_ID\" GROUP BY \"t1\".\"tpl_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__abbr_v2__q0313": "SELECT \"documents\".\"tpl_id\" AS \"template_id\" FROM \"Documents\" AS \"documents\" GROUP BY \"documents\".\"tpl_id\" HAVING COUNT(*) > 1",
+    "cre_Doc_Template_Mgt__abbr_v2__q0314": "SELECT \"documents\".\"tpl_id\" AS \"template_id\" FROM \"Documents\" AS \"documents\" GROUP BY \"documents\".\"tpl_id\" HAVING COUNT(*) > 1",
+    "cre_Doc_Template_Mgt__abbr_v2__q0315": "SELECT \"templates\".\"Template_ID\" AS \"template_id\" FROM \"Templates\" AS \"templates\" EXCEPT SELECT \"documents\".\"tpl_id\" AS \"template_id\" FROM \"Documents\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0316": "SELECT \"templates\".\"Template_ID\" AS \"template_id\" FROM \"Templates\" AS \"templates\" EXCEPT SELECT \"documents\".\"tpl_id\" AS \"template_id\" FROM \"Documents\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0319": "SELECT \"templates\".\"Template_ID\" AS \"template_id\", \"templates\".\"ver_no\" AS \"version_number\", \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0320": "SELECT \"templates\".\"Template_ID\" AS \"template_id\", \"templates\".\"ver_no\" AS \"version_number\", \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0321": "SELECT DISTINCT \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0322": "SELECT DISTINCT \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0323": "SELECT \"templates\".\"Template_ID\" AS \"template_id\" FROM \"Templates\" AS \"templates\" WHERE \"templates\".\"tpl_tpye_code\" = 'PP' OR \"templates\".\"tpl_tpye_code\" = 'PPT'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0324": "SELECT \"templates\".\"Template_ID\" AS \"template_id\" FROM \"Templates\" AS \"templates\" WHERE \"templates\".\"tpl_tpye_code\" = 'PP' OR \"templates\".\"tpl_tpye_code\" = 'PPT'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0325": "SELECT COUNT(*) AS \"_col_0\" FROM \"Templates\" AS \"templates\" WHERE \"templates\".\"tpl_tpye_code\" = 'CV'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0326": "SELECT COUNT(*) AS \"_col_0\" FROM \"Templates\" AS \"templates\" WHERE \"templates\".\"tpl_tpye_code\" = 'CV'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0327": "SELECT \"templates\".\"ver_no\" AS \"version_number\", \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\" WHERE \"templates\".\"ver_no\" > 5",
+    "cre_Doc_Template_Mgt__abbr_v2__q0328": "SELECT \"templates\".\"ver_no\" AS \"version_number\", \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\" WHERE \"templates\".\"ver_no\" > 5",
+    "cre_Doc_Template_Mgt__abbr_v2__q0329": "SELECT \"templates\".\"tpl_tpye_code\" AS \"template_type_code\", COUNT(*) AS \"_col_1\" FROM \"Templates\" AS \"templates\" GROUP BY \"templates\".\"tpl_tpye_code\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0330": "SELECT \"templates\".\"tpl_tpye_code\" AS \"template_type_code\", COUNT(*) AS \"_col_1\" FROM \"Templates\" AS \"templates\" GROUP BY \"templates\".\"tpl_tpye_code\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0331": "SELECT \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\" GROUP BY \"templates\".\"tpl_tpye_code\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__abbr_v2__q0332": "SELECT \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\" GROUP BY \"templates\".\"tpl_tpye_code\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__abbr_v2__q0333": "SELECT \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\" GROUP BY \"templates\".\"tpl_tpye_code\" HAVING COUNT(*) < 3",
+    "cre_Doc_Template_Mgt__abbr_v2__q0334": "SELECT \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\" GROUP BY \"templates\".\"tpl_tpye_code\" HAVING COUNT(*) < 3",
+    "cre_Doc_Template_Mgt__abbr_v2__q0335": "SELECT MIN(\"templates\".\"ver_no\") AS \"_col_0\", \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0336": "SELECT MIN(\"templates\".\"ver_no\") AS \"_col_0\", \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0337": "SELECT \"t1\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"Template_ID\" = \"t2\".\"tpl_id\" WHERE \"t2\".\"doc_name\" = 'Data base'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0338": "SELECT \"t1\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"Template_ID\" = \"t2\".\"tpl_id\" WHERE \"t2\".\"doc_name\" = 'Data base'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0339": "SELECT \"t2\".\"doc_name\" AS \"document_name\" FROM \"Templates\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"Template_ID\" = \"t2\".\"tpl_id\" WHERE \"t1\".\"tpl_tpye_code\" = 'BK'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0340": "SELECT \"t2\".\"doc_name\" AS \"document_name\" FROM \"Templates\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"Template_ID\" = \"t2\".\"tpl_id\" WHERE \"t1\".\"tpl_tpye_code\" = 'BK'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0341": "SELECT \"t1\".\"tpl_tpye_code\" AS \"template_type_code\", COUNT(*) AS \"_col_1\" FROM \"Templates\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"Template_ID\" = \"t2\".\"tpl_id\" GROUP BY \"t1\".\"tpl_tpye_code\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0342": "SELECT \"t1\".\"tpl_tpye_code\" AS \"template_type_code\", COUNT(*) AS \"_col_1\" FROM \"Templates\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"Template_ID\" = \"t2\".\"tpl_id\" GROUP BY \"t1\".\"tpl_tpye_code\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0343": "SELECT \"t1\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"Template_ID\" = \"t2\".\"tpl_id\" GROUP BY \"t1\".\"tpl_tpye_code\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__abbr_v2__q0344": "SELECT \"t1\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"Template_ID\" = \"t2\".\"tpl_id\" GROUP BY \"t1\".\"tpl_tpye_code\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__abbr_v2__q0345": "SELECT \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\" EXCEPT SELECT \"t1\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"Template_ID\" = \"t2\".\"tpl_id\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0346": "SELECT \"templates\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"templates\" EXCEPT SELECT \"t1\".\"tpl_tpye_code\" AS \"template_type_code\" FROM \"Templates\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"Template_ID\" = \"t2\".\"tpl_id\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0347": "SELECT \"ref_template_types\".\"tpl_type_code\" AS \"template_type_code\", \"ref_template_types\".\"Template_Type_Description\" AS \"template_type_description\" FROM \"Ref_Template_Types\" AS \"ref_template_types\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0348": "SELECT \"ref_template_types\".\"tpl_type_code\" AS \"template_type_code\", \"ref_template_types\".\"Template_Type_Description\" AS \"template_type_description\" FROM \"Ref_Template_Types\" AS \"ref_template_types\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0349": "SELECT \"ref_template_types\".\"Template_Type_Description\" AS \"template_type_description\" FROM \"Ref_Template_Types\" AS \"ref_template_types\" WHERE \"ref_template_types\".\"tpl_type_code\" = 'AD'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0350": "SELECT \"ref_template_types\".\"Template_Type_Description\" AS \"template_type_description\" FROM \"Ref_Template_Types\" AS \"ref_template_types\" WHERE \"ref_template_types\".\"tpl_type_code\" = 'AD'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0351": "SELECT \"ref_template_types\".\"tpl_type_code\" AS \"template_type_code\" FROM \"Ref_Template_Types\" AS \"ref_template_types\" WHERE \"ref_template_types\".\"Template_Type_Description\" = 'Book'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0352": "SELECT \"ref_template_types\".\"tpl_type_code\" AS \"template_type_code\" FROM \"Ref_Template_Types\" AS \"ref_template_types\" WHERE \"ref_template_types\".\"Template_Type_Description\" = 'Book'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0353": "SELECT DISTINCT \"t1\".\"Template_Type_Description\" AS \"template_type_description\" FROM \"Ref_Template_Types\" AS \"t1\" JOIN \"Templates\" AS \"t2\" ON \"t1\".\"tpl_type_code\" = \"t2\".\"tpl_tpye_code\" JOIN \"Documents\" AS \"t3\" ON \"t2\".\"Template_ID\" = \"t3\".\"tpl_id\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0354": "SELECT DISTINCT \"t1\".\"Template_Type_Description\" AS \"template_type_description\" FROM \"Ref_Template_Types\" AS \"t1\" JOIN \"Templates\" AS \"t2\" ON \"t1\".\"tpl_type_code\" = \"t2\".\"tpl_tpye_code\" JOIN \"Documents\" AS \"t3\" ON \"t2\".\"Template_ID\" = \"t3\".\"tpl_id\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0355": "SELECT \"t2\".\"Template_ID\" AS \"template_id\" FROM \"Ref_Template_Types\" AS \"t1\" JOIN \"Templates\" AS \"t2\" ON \"t1\".\"tpl_type_code\" = \"t2\".\"tpl_tpye_code\" WHERE \"t1\".\"Template_Type_Description\" = 'Presentation'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0356": "SELECT \"t2\".\"Template_ID\" AS \"template_id\" FROM \"Ref_Template_Types\" AS \"t1\" JOIN \"Templates\" AS \"t2\" ON \"t1\".\"tpl_type_code\" = \"t2\".\"tpl_tpye_code\" WHERE \"t1\".\"Template_Type_Description\" = 'Presentation'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0359": "SELECT COUNT(*) AS \"_col_0\" FROM \"Paragraphs\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"doc_id\" = \"t2\".\"doc_id\" WHERE \"t2\".\"doc_name\" = 'Summer Show'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0360": "SELECT COUNT(*) AS \"_col_0\" FROM \"Paragraphs\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"doc_id\" = \"t2\".\"doc_id\" WHERE \"t2\".\"doc_name\" = 'Summer Show'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0363": "SELECT \"t1\".\"para_id\" AS \"paragraph_id\", \"t1\".\"Paragraph_Text\" AS \"paragraph_text\" FROM \"Paragraphs\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"doc_id\" = \"t2\".\"doc_id\" WHERE \"t2\".\"doc_name\" = 'Welcome to NY'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0364": "SELECT \"t1\".\"para_id\" AS \"paragraph_id\", \"t1\".\"Paragraph_Text\" AS \"paragraph_text\" FROM \"Paragraphs\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"doc_id\" = \"t2\".\"doc_id\" WHERE \"t2\".\"doc_name\" = 'Welcome to NY'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0365": "SELECT \"t1\".\"Paragraph_Text\" AS \"paragraph_text\" FROM \"Paragraphs\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"doc_id\" = \"t2\".\"doc_id\" WHERE \"t2\".\"doc_name\" = 'Customer reviews'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0366": "SELECT \"t1\".\"Paragraph_Text\" AS \"paragraph_text\" FROM \"Paragraphs\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"doc_id\" = \"t2\".\"doc_id\" WHERE \"t2\".\"doc_name\" = 'Customer reviews'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0367": "SELECT \"paragraphs\".\"doc_id\" AS \"document_id\", COUNT(*) AS \"_col_1\" FROM \"Paragraphs\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"doc_id\" ORDER BY \"document_id\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0368": "SELECT \"paragraphs\".\"doc_id\" AS \"document_id\", COUNT(*) AS \"_col_1\" FROM \"Paragraphs\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"doc_id\" ORDER BY \"document_id\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0369": "SELECT \"t1\".\"doc_id\" AS \"document_id\", \"t2\".\"doc_name\" AS \"document_name\", COUNT(*) AS \"_col_2\" FROM \"Paragraphs\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"doc_id\" = \"t2\".\"doc_id\" GROUP BY \"t1\".\"doc_id\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0370": "SELECT \"t1\".\"doc_id\" AS \"document_id\", \"t2\".\"doc_name\" AS \"document_name\", COUNT(*) AS \"_col_2\" FROM \"Paragraphs\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"doc_id\" = \"t2\".\"doc_id\" GROUP BY \"t1\".\"doc_id\"",
+    "cre_Doc_Template_Mgt__abbr_v2__q0371": "SELECT \"paragraphs\".\"doc_id\" AS \"document_id\" FROM \"Paragraphs\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"doc_id\" HAVING COUNT(*) >= 2",
+    "cre_Doc_Template_Mgt__abbr_v2__q0372": "SELECT \"paragraphs\".\"doc_id\" AS \"document_id\" FROM \"Paragraphs\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"doc_id\" HAVING COUNT(*) >= 2",
+    "cre_Doc_Template_Mgt__abbr_v2__q0373": "SELECT \"t1\".\"doc_id\" AS \"document_id\", \"t2\".\"doc_name\" AS \"document_name\" FROM \"Paragraphs\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"doc_id\" = \"t2\".\"doc_id\" GROUP BY \"t1\".\"doc_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__abbr_v2__q0374": "SELECT \"t1\".\"doc_id\" AS \"document_id\", \"t2\".\"doc_name\" AS \"document_name\" FROM \"Paragraphs\" AS \"t1\" JOIN \"Documents\" AS \"t2\" ON \"t1\".\"doc_id\" = \"t2\".\"doc_id\" GROUP BY \"t1\".\"doc_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__abbr_v2__q0375": "SELECT \"paragraphs\".\"doc_id\" AS \"document_id\" FROM \"Paragraphs\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"doc_id\" ORDER BY COUNT(*) ASC LIMIT 1",
+    "cre_Doc_Template_Mgt__abbr_v2__q0376": "SELECT \"paragraphs\".\"doc_id\" AS \"document_id\" FROM \"Paragraphs\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"doc_id\" ORDER BY COUNT(*) ASC LIMIT 1",
+    "cre_Doc_Template_Mgt__abbr_v2__q0377": "SELECT \"paragraphs\".\"doc_id\" AS \"document_id\" FROM \"Paragraphs\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"doc_id\" HAVING COUNT(*) BETWEEN 1 AND 2",
+    "cre_Doc_Template_Mgt__abbr_v2__q0378": "SELECT \"paragraphs\".\"doc_id\" AS \"document_id\" FROM \"Paragraphs\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"doc_id\" HAVING COUNT(*) BETWEEN 1 AND 2",
+    "cre_Doc_Template_Mgt__abbr_v2__q0379": "SELECT \"paragraphs\".\"doc_id\" AS \"document_id\" FROM \"Paragraphs\" AS \"paragraphs\" WHERE \"paragraphs\".\"Paragraph_Text\" = 'Brazil' INTERSECT SELECT \"paragraphs\".\"doc_id\" AS \"document_id\" FROM \"Paragraphs\" AS \"paragraphs\" WHERE \"paragraphs\".\"Paragraph_Text\" = 'Ireland'",
+    "cre_Doc_Template_Mgt__abbr_v2__q0380": "SELECT \"paragraphs\".\"doc_id\" AS \"document_id\" FROM \"Paragraphs\" AS \"paragraphs\" WHERE \"paragraphs\".\"Paragraph_Text\" = 'Brazil' INTERSECT SELECT \"paragraphs\".\"doc_id\" AS \"document_id\" FROM \"Paragraphs\" AS \"paragraphs\" WHERE \"paragraphs\".\"Paragraph_Text\" = 'Ireland'"
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "fk"
+}

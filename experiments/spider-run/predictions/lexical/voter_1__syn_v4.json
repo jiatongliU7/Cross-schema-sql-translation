@@ -1,0 +1,199 @@
+{
+  "tables": {
+    "AREA_CODE_STATE": [
+      [
+        "AREA_CODE_STATE",
+        1.0
+      ],
+      [
+        "CONTESTANTS",
+        0.5384615384615384
+      ],
+      [
+        "VOTES",
+        0.3
+      ]
+    ],
+    "CONTESTANTS": [
+      [
+        "CONTESTANTS",
+        1.0
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.5384615384615384
+      ],
+      [
+        "VOTES",
+        0.5
+      ]
+    ],
+    "VOTES": [
+      [
+        "VOTES",
+        1.0
+      ],
+      [
+        "CONTESTANTS",
+        0.5
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.3
+      ]
+    ]
+  },
+  "columns": {
+    "AREA_CODE_STATE.area_code": [
+      [
+        "AREA_CODE_STATE.area_code",
+        1.0
+      ],
+      [
+        "VOTES.made",
+        0.46153846153846156
+      ],
+      [
+        "VOTES.vote_id",
+        0.375
+      ]
+    ],
+    "AREA_CODE_STATE.state": [
+      [
+        "VOTES.state",
+        1.0
+      ],
+      [
+        "AREA_CODE_STATE.state",
+        1.0
+      ],
+      [
+        "CONTESTANTS.contestant_name",
+        0.5
+      ]
+    ],
+    "CONTESTANTS.contestant_number": [
+      [
+        "VOTES.contestant_number",
+        1.0
+      ],
+      [
+        "CONTESTANTS.contestant_number",
+        1.0
+      ],
+      [
+        "CONTESTANTS.contestant_name",
+        0.875
+      ]
+    ],
+    "CONTESTANTS.contestant_name": [
+      [
+        "CONTESTANTS.contestant_name",
+        1.0
+      ],
+      [
+        "VOTES.contestant_number",
+        0.875
+      ],
+      [
+        "CONTESTANTS.contestant_number",
+        0.875
+      ]
+    ],
+    "VOTES.vote_id": [
+      [
+        "VOTES.vote_id",
+        1.0
+      ],
+      [
+        "CONTESTANTS.contestant_name",
+        0.36363636363636365
+      ],
+      [
+        "VOTES.contestant_number",
+        0.3333333333333333
+      ]
+    ],
+    "VOTES.phone_number": [
+      [
+        "VOTES.contestant_number",
+        0.6896551724137931
+      ],
+      [
+        "CONTESTANTS.contestant_number",
+        0.6896551724137931
+      ],
+      [
+        "CONTESTANTS.contestant_name",
+        0.5185185185185185
+      ]
+    ],
+    "VOTES.state": [
+      [
+        "VOTES.state",
+        1.0
+      ],
+      [
+        "AREA_CODE_STATE.state",
+        1.0
+      ],
+      [
+        "CONTESTANTS.contestant_name",
+        0.5
+      ]
+    ],
+    "VOTES.contestant_number": [
+      [
+        "VOTES.contestant_number",
+        1.0
+      ],
+      [
+        "CONTESTANTS.contestant_number",
+        1.0
+      ],
+      [
+        "CONTESTANTS.contestant_name",
+        0.875
+      ]
+    ],
+    "VOTES.created": [
+      [
+        "VOTES.state",
+        0.5
+      ],
+      [
+        "AREA_CODE_STATE.state",
+        0.5
+      ],
+      [
+        "AREA_CODE_STATE.area_code",
+        0.5
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "AREA_CODE_STATE": "AREA_CODE_STATE",
+      "CONTESTANTS": "CONTESTANTS",
+      "VOTES": "VOTES"
+    },
+    "columns": {
+      "AREA_CODE_STATE.area_code": "AREA_CODE_STATE.area_code",
+      "AREA_CODE_STATE.state": "AREA_CODE_STATE.state",
+      "CONTESTANTS.contestant_number": "CONTESTANTS.contestant_number",
+      "CONTESTANTS.contestant_name": "CONTESTANTS.contestant_name",
+      "VOTES.vote_id": "VOTES.vote_id",
+      "VOTES.phone_number": "VOTES.made",
+      "VOTES.state": "VOTES.state",
+      "VOTES.contestant_number": "VOTES.contestant_number",
+      "VOTES.created": "VOTES.call_up"
+    }
+  },
+  "q_B": {
+    "voter_1__syn_v4__q0689": "SELECT \"votes\".\"vote_id\" AS \"vote_id\", \"votes\".\"made\" AS \"phone_number\", \"votes\".\"state\" AS \"state\" FROM \"VOTES\" AS \"votes\"",
+    "voter_1__syn_v4__q0691": "SELECT MAX(\"votes\".\"call_up\") AS \"_col_0\" FROM \"VOTES\" AS \"votes\" WHERE \"votes\".\"state\" = 'CA'",
+    "voter_1__syn_v4__q0693": "SELECT DISTINCT \"votes\".\"state\" AS \"state\", \"votes\".\"call_up\" AS \"created\" FROM \"VOTES\" AS \"votes\"",
+    "voter_1__syn_v4__q0699": "SELECT \"t2\".\"call_up\" AS \"created\", \"t2\".\"state\" AS \"state\", \"t2\".\"made\" AS \"phone_number\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_number\" WHERE \"t1\".\"contestant_name\" = 'Tabatha Gehling'"
+  },
+  "rewrite_errors": {}
+}

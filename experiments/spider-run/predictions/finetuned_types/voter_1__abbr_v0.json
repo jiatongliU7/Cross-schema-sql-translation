@@ -1,0 +1,206 @@
+{
+  "tables": {
+    "AREA_CODE_STATE": [
+      [
+        "AREA_CODE_STATE",
+        1.0000003576278687
+      ],
+      [
+        "VOTES",
+        0.1973550021648407
+      ],
+      [
+        "CONTESTANTS",
+        0.14207851886749268
+      ]
+    ],
+    "CONTESTANTS": [
+      [
+        "CONTESTANTS",
+        1.0000004768371582
+      ],
+      [
+        "VOTES",
+        0.5243142247200012
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.14207851886749268
+      ]
+    ],
+    "VOTES": [
+      [
+        "VOTES",
+        1.0
+      ],
+      [
+        "CONTESTANTS",
+        0.5243142247200012
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.1973550021648407
+      ]
+    ]
+  },
+  "columns": {
+    "AREA_CODE_STATE.area_code": [
+      [
+        "AREA_CODE_STATE.area_code",
+        0.9999998807907104
+      ],
+      [
+        "AREA_CODE_STATE.state",
+        0.8685569167137146
+      ],
+      [
+        "VOTES.ph",
+        0.2196805775165558
+      ]
+    ],
+    "AREA_CODE_STATE.state": [
+      [
+        "AREA_CODE_STATE.state",
+        1.0000003576278687
+      ],
+      [
+        "AREA_CODE_STATE.area_code",
+        0.8685569167137146
+      ],
+      [
+        "VOTES.state",
+        0.4071149230003357
+      ]
+    ],
+    "CONTESTANTS.contestant_number": [
+      [
+        "CONTESTANTS.contestant_no",
+        0.9268176555633545
+      ],
+      [
+        "VOTES.contestant_no",
+        0.8136492967605591
+      ],
+      [
+        "CONTESTANTS.name",
+        0.5924643874168396
+      ]
+    ],
+    "CONTESTANTS.contestant_name": [
+      [
+        "CONTESTANTS.name",
+        0.9766645431518555
+      ],
+      [
+        "CONTESTANTS.contestant_no",
+        0.6347321271896362
+      ],
+      [
+        "VOTES.contestant_no",
+        0.5350521206855774
+      ]
+    ],
+    "VOTES.vote_id": [
+      [
+        "VOTES.vote_id",
+        0.9999997615814209
+      ],
+      [
+        "VOTES.ph",
+        0.8300356864929199
+      ],
+      [
+        "VOTES.created",
+        0.777408242225647
+      ]
+    ],
+    "VOTES.phone_number": [
+      [
+        "VOTES.ph",
+        0.7800556421279907
+      ],
+      [
+        "VOTES.vote_id",
+        0.752924382686615
+      ],
+      [
+        "VOTES.created",
+        0.6945390701293945
+      ]
+    ],
+    "VOTES.state": [
+      [
+        "VOTES.state",
+        1.000000238418579
+      ],
+      [
+        "VOTES.vote_id",
+        0.6617735624313354
+      ],
+      [
+        "VOTES.ph",
+        0.6480268239974976
+      ]
+    ],
+    "VOTES.contestant_number": [
+      [
+        "VOTES.contestant_no",
+        0.9198839664459229
+      ],
+      [
+        "CONTESTANTS.contestant_no",
+        0.80518639087677
+      ],
+      [
+        "VOTES.ph",
+        0.7732740640640259
+      ]
+    ],
+    "VOTES.created": [
+      [
+        "VOTES.created",
+        1.0
+      ],
+      [
+        "VOTES.vote_id",
+        0.777408242225647
+      ],
+      [
+        "VOTES.ph",
+        0.7721759080886841
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "AREA_CODE_STATE": "AREA_CODE_STATE",
+      "CONTESTANTS": "CONTESTANTS",
+      "VOTES": "VOTES"
+    },
+    "columns": {
+      "AREA_CODE_STATE.area_code": "AREA_CODE_STATE.area_code",
+      "AREA_CODE_STATE.state": "AREA_CODE_STATE.state",
+      "CONTESTANTS.contestant_number": "CONTESTANTS.contestant_no",
+      "CONTESTANTS.contestant_name": "CONTESTANTS.name",
+      "VOTES.vote_id": "VOTES.vote_id",
+      "VOTES.phone_number": "VOTES.ph",
+      "VOTES.state": "VOTES.state",
+      "VOTES.contestant_number": "VOTES.contestant_no",
+      "VOTES.created": "VOTES.created"
+    }
+  },
+  "q_B": {
+    "voter_1__abbr_v0__q0688": "SELECT \"contestants\".\"contestant_no\" AS \"contestant_number\", \"contestants\".\"name\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"contestants\" ORDER BY \"contestant_name\" DESC",
+    "voter_1__abbr_v0__q0689": "SELECT \"votes\".\"vote_id\" AS \"vote_id\", \"votes\".\"ph\" AS \"phone_number\", \"votes\".\"state\" AS \"state\" FROM \"VOTES\" AS \"votes\"",
+    "voter_1__abbr_v0__q0692": "SELECT \"contestants\".\"name\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"contestants\" WHERE \"contestants\".\"name\" <> 'Jessie Alloway'",
+    "voter_1__abbr_v0__q0694": "SELECT \"t1\".\"contestant_no\" AS \"contestant_number\", \"t1\".\"name\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_no\" = \"t2\".\"contestant_no\" GROUP BY \"t1\".\"contestant_no\" HAVING COUNT(*) >= 2",
+    "voter_1__abbr_v0__q0695": "SELECT \"t1\".\"contestant_no\" AS \"contestant_number\", \"t1\".\"name\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_no\" = \"t2\".\"contestant_no\" GROUP BY \"t1\".\"contestant_no\" ORDER BY COUNT(*) ASC LIMIT 1",
+    "voter_1__abbr_v0__q0697": "SELECT COUNT(*) AS \"_col_0\" FROM \"CONTESTANTS\" AS \"contestants\" WHERE NOT \"contestants\".\"contestant_no\" IN (SELECT \"votes\".\"contestant_no\" AS \"contestant_number\" FROM \"VOTES\" AS \"votes\")",
+    "voter_1__abbr_v0__q0699": "SELECT \"t2\".\"created\" AS \"created\", \"t2\".\"state\" AS \"state\", \"t2\".\"ph\" AS \"phone_number\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_no\" = \"t2\".\"contestant_no\" WHERE \"t1\".\"name\" = 'Tabatha Gehling'",
+    "voter_1__abbr_v0__q0700": "SELECT \"t3\".\"area_code\" AS \"area_code\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_no\" = \"t2\".\"contestant_no\" JOIN \"AREA_CODE_STATE\" AS \"t3\" ON \"t2\".\"state\" = \"t3\".\"state\" WHERE \"t1\".\"name\" = 'Tabatha Gehling' INTERSECT SELECT \"t3\".\"area_code\" AS \"area_code\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_no\" = \"t2\".\"contestant_no\" JOIN \"AREA_CODE_STATE\" AS \"t3\" ON \"t2\".\"state\" = \"t3\".\"state\" WHERE \"t1\".\"name\" = 'Kelly Clauss'",
+    "voter_1__abbr_v0__q0701": "SELECT \"contestants\".\"name\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"contestants\" WHERE \"contestants\".\"name\" LIKE '%al%'"
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "types"
+}

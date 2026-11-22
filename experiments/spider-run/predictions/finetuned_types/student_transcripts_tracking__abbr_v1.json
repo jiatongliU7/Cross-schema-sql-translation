@@ -1,0 +1,1082 @@
+{
+  "tables": {
+    "Addresses": [
+      [
+        "Addresses",
+        1.000000238418579
+      ],
+      [
+        "Sections",
+        0.3834104537963867
+      ],
+      [
+        "Departments",
+        0.34589874744415283
+      ]
+    ],
+    "Courses": [
+      [
+        "Courses",
+        1.0000004768371582
+      ],
+      [
+        "Student_Enrolment_Courses",
+        0.7993085980415344
+      ],
+      [
+        "Semesters",
+        0.719767689704895
+      ]
+    ],
+    "Departments": [
+      [
+        "Departments",
+        0.9999998807907104
+      ],
+      [
+        "Semesters",
+        0.4788264036178589
+      ],
+      [
+        "Courses",
+        0.46362149715423584
+      ]
+    ],
+    "Degree_Programs": [
+      [
+        "Degree_Programs",
+        0.9999997615814209
+      ],
+      [
+        "Courses",
+        0.6208706498146057
+      ],
+      [
+        "Student_Enrolment_Courses",
+        0.57777339220047
+      ]
+    ],
+    "Sections": [
+      [
+        "Sections",
+        1.0000001192092896
+      ],
+      [
+        "Courses",
+        0.5053389072418213
+      ],
+      [
+        "Departments",
+        0.4425817131996155
+      ]
+    ],
+    "Semesters": [
+      [
+        "Semesters",
+        0.9999998807907104
+      ],
+      [
+        "Students",
+        0.740851640701294
+      ],
+      [
+        "Courses",
+        0.719767689704895
+      ]
+    ],
+    "Students": [
+      [
+        "Students",
+        1.0000001192092896
+      ],
+      [
+        "Semesters",
+        0.740851640701294
+      ],
+      [
+        "Student_Enrolment",
+        0.7091687321662903
+      ]
+    ],
+    "Student_Enrolment": [
+      [
+        "Student_Enrolment",
+        1.0000001192092896
+      ],
+      [
+        "Student_Enrolment_Courses",
+        0.8737596869468689
+      ],
+      [
+        "Students",
+        0.7091687321662903
+      ]
+    ],
+    "Student_Enrolment_Courses": [
+      [
+        "Student_Enrolment_Courses",
+        0.9999998807907104
+      ],
+      [
+        "Student_Enrolment",
+        0.8737596869468689
+      ],
+      [
+        "Courses",
+        0.7993085980415344
+      ]
+    ],
+    "Transcripts": [
+      [
+        "Transcripts",
+        1.000000238418579
+      ],
+      [
+        "Transcript_Contents",
+        0.9418418407440186
+      ],
+      [
+        "Semesters",
+        0.3531854748725891
+      ]
+    ],
+    "Transcript_Contents": [
+      [
+        "Transcript_Contents",
+        1.0
+      ],
+      [
+        "Transcripts",
+        0.9418418407440186
+      ],
+      [
+        "Semesters",
+        0.29698288440704346
+      ]
+    ]
+  },
+  "columns": {
+    "Addresses.address_id": [
+      [
+        "Addresses.adr_id",
+        0.8530182838439941
+      ],
+      [
+        "Addresses.line_3",
+        0.6244759559631348
+      ],
+      [
+        "Addresses.line_1",
+        0.6220329999923706
+      ]
+    ],
+    "Addresses.line_1": [
+      [
+        "Addresses.line_1",
+        0.9999999403953552
+      ],
+      [
+        "Addresses.line_2",
+        0.9495508670806885
+      ],
+      [
+        "Addresses.line_3",
+        0.9219461679458618
+      ]
+    ],
+    "Addresses.line_2": [
+      [
+        "Addresses.line_2",
+        1.000000238418579
+      ],
+      [
+        "Addresses.line_1",
+        0.9495508670806885
+      ],
+      [
+        "Addresses.line_3",
+        0.9327659606933594
+      ]
+    ],
+    "Addresses.line_3": [
+      [
+        "Addresses.line_3",
+        1.0000001192092896
+      ],
+      [
+        "Addresses.line_2",
+        0.9327659606933594
+      ],
+      [
+        "Addresses.line_1",
+        0.9219461679458618
+      ]
+    ],
+    "Addresses.city": [
+      [
+        "Addresses.city",
+        1.0
+      ],
+      [
+        "Addresses.line_2",
+        0.7253109812736511
+      ],
+      [
+        "Addresses.line_3",
+        0.7185681462287903
+      ]
+    ],
+    "Addresses.zip_postcode": [
+      [
+        "Addresses.zipcode",
+        0.9587303400039673
+      ],
+      [
+        "Addresses.city",
+        0.6602383852005005
+      ],
+      [
+        "Addresses.cntry",
+        0.5969812870025635
+      ]
+    ],
+    "Addresses.state_province_county": [
+      [
+        "Addresses.state_province_county",
+        0.9999998807907104
+      ],
+      [
+        "Addresses.city",
+        0.6856833696365356
+      ],
+      [
+        "Addresses.cntry",
+        0.6393905878067017
+      ]
+    ],
+    "Addresses.country": [
+      [
+        "Addresses.line_2",
+        0.755399763584137
+      ],
+      [
+        "Addresses.line_3",
+        0.753402590751648
+      ],
+      [
+        "Addresses.city",
+        0.7457970380783081
+      ]
+    ],
+    "Addresses.other_address_details": [
+      [
+        "Addresses.line_2",
+        0.8507041335105896
+      ],
+      [
+        "Addresses.line_3",
+        0.8378822803497314
+      ],
+      [
+        "Addresses.line_1",
+        0.8080224990844727
+      ]
+    ],
+    "Courses.course_id": [
+      [
+        "Courses.crs_id",
+        0.8647117018699646
+      ],
+      [
+        "Student_Enrolment_Courses.crs_id",
+        0.7359781265258789
+      ],
+      [
+        "Student_Enrolment_Courses.stu_enroll_id",
+        0.7289565801620483
+      ]
+    ],
+    "Courses.course_name": [
+      [
+        "Courses.crs_name",
+        0.8801989555358887
+      ],
+      [
+        "Courses.oth_dtl",
+        0.7752875089645386
+      ],
+      [
+        "Courses.crs_desc",
+        0.766093909740448
+      ]
+    ],
+    "Courses.course_description": [
+      [
+        "Courses.crs_desc",
+        0.7563813924789429
+      ],
+      [
+        "Courses.oth_dtl",
+        0.7424472570419312
+      ],
+      [
+        "Courses.crs_name",
+        0.6908183097839355
+      ]
+    ],
+    "Courses.other_details": [
+      [
+        "Courses.oth_dtl",
+        0.838948130607605
+      ],
+      [
+        "Courses.crs_desc",
+        0.8195091485977173
+      ],
+      [
+        "Courses.crs_name",
+        0.7367502450942993
+      ]
+    ],
+    "Departments.department_id": [
+      [
+        "Departments.dept_id",
+        0.969719409942627
+      ],
+      [
+        "Departments.oth_dtl",
+        0.6831176280975342
+      ],
+      [
+        "Degree_Programs.dept_id",
+        0.6779379844665527
+      ]
+    ],
+    "Departments.department_name": [
+      [
+        "Departments.dept_name",
+        0.9723467826843262
+      ],
+      [
+        "Departments.dept_desc",
+        0.8704759478569031
+      ],
+      [
+        "Departments.oth_dtl",
+        0.8513411283493042
+      ]
+    ],
+    "Departments.department_description": [
+      [
+        "Departments.dept_desc",
+        0.818567156791687
+      ],
+      [
+        "Departments.dept_name",
+        0.7906440496444702
+      ],
+      [
+        "Departments.oth_dtl",
+        0.7781017422676086
+      ]
+    ],
+    "Departments.other_details": [
+      [
+        "Departments.dept_desc",
+        0.8770205974578857
+      ],
+      [
+        "Departments.oth_dtl",
+        0.8666090965270996
+      ],
+      [
+        "Departments.dept_name",
+        0.8373702764511108
+      ]
+    ],
+    "Degree_Programs.degree_program_id": [
+      [
+        "Degree_Programs.degree_pmg_id",
+        0.9309249520301819
+      ],
+      [
+        "Degree_Programs.dept_id",
+        0.9223784804344177
+      ],
+      [
+        "Student_Enrolment.degree_program_id",
+        0.8320297598838806
+      ]
+    ],
+    "Degree_Programs.department_id": [
+      [
+        "Degree_Programs.dept_id",
+        0.9625120759010315
+      ],
+      [
+        "Degree_Programs.degree_pmg_id",
+        0.8151388764381409
+      ],
+      [
+        "Student_Enrolment.degree_program_id",
+        0.7742682099342346
+      ]
+    ],
+    "Degree_Programs.degree_summary_name": [
+      [
+        "Degree_Programs.degree_smry_name",
+        0.9051887392997742
+      ],
+      [
+        "Degree_Programs.degree_smry_desc",
+        0.804594099521637
+      ],
+      [
+        "Degree_Programs.oth_dtl",
+        0.7819398045539856
+      ]
+    ],
+    "Degree_Programs.degree_summary_description": [
+      [
+        "Degree_Programs.degree_smry_desc",
+        0.800762414932251
+      ],
+      [
+        "Degree_Programs.oth_dtl",
+        0.7691594362258911
+      ],
+      [
+        "Degree_Programs.degree_smry_name",
+        0.7594574689865112
+      ]
+    ],
+    "Degree_Programs.other_details": [
+      [
+        "Degree_Programs.degree_smry_desc",
+        0.90240478515625
+      ],
+      [
+        "Degree_Programs.oth_dtl",
+        0.8820130825042725
+      ],
+      [
+        "Degree_Programs.degree_smry_name",
+        0.8601565361022949
+      ]
+    ],
+    "Sections.section_id": [
+      [
+        "Sections.sect_id",
+        0.8913807272911072
+      ],
+      [
+        "Sections.crs_id",
+        0.8358367681503296
+      ],
+      [
+        "Sections.sect_desc",
+        0.5574551820755005
+      ]
+    ],
+    "Sections.course_id": [
+      [
+        "Courses.crs_id",
+        0.7721872329711914
+      ],
+      [
+        "Sections.sect_id",
+        0.6863952875137329
+      ],
+      [
+        "Student_Enrolment_Courses.stu_enroll_id",
+        0.6600854992866516
+      ]
+    ],
+    "Sections.section_name": [
+      [
+        "Sections.sect_name",
+        0.8894591331481934
+      ],
+      [
+        "Sections.sect_desc",
+        0.7095085382461548
+      ],
+      [
+        "Sections.other_dtl",
+        0.686622679233551
+      ]
+    ],
+    "Sections.section_description": [
+      [
+        "Sections.sect_desc",
+        0.6978024840354919
+      ],
+      [
+        "Sections.sect_name",
+        0.6385307908058167
+      ],
+      [
+        "Sections.other_dtl",
+        0.612086296081543
+      ]
+    ],
+    "Sections.other_details": [
+      [
+        "Sections.other_dtl",
+        0.7900697588920593
+      ],
+      [
+        "Sections.sect_desc",
+        0.7380753755569458
+      ],
+      [
+        "Sections.sect_name",
+        0.6653101444244385
+      ]
+    ],
+    "Semesters.semester_id": [
+      [
+        "Semesters.sem_id",
+        0.8938237428665161
+      ],
+      [
+        "Students.ca_id",
+        0.7614991068840027
+      ],
+      [
+        "Students.pa_id",
+        0.7272822856903076
+      ]
+    ],
+    "Semesters.semester_name": [
+      [
+        "Semesters.sem_name",
+        0.8951081037521362
+      ],
+      [
+        "Semesters.oth_dtl",
+        0.8154100179672241
+      ],
+      [
+        "Semesters.sem_desc",
+        0.8142359256744385
+      ]
+    ],
+    "Semesters.semester_description": [
+      [
+        "Semesters.sem_desc",
+        0.7834492921829224
+      ],
+      [
+        "Semesters.oth_dtl",
+        0.7718193531036377
+      ],
+      [
+        "Semesters.sem_name",
+        0.722506046295166
+      ]
+    ],
+    "Semesters.other_details": [
+      [
+        "Semesters.sem_desc",
+        0.8603354692459106
+      ],
+      [
+        "Semesters.oth_dtl",
+        0.8574160933494568
+      ],
+      [
+        "Semesters.sem_name",
+        0.7818806171417236
+      ]
+    ],
+    "Students.student_id": [
+      [
+        "Students.ca_id",
+        0.9022011160850525
+      ],
+      [
+        "Students.pa_id",
+        0.8915877342224121
+      ],
+      [
+        "Students.stuid",
+        0.8318015336990356
+      ]
+    ],
+    "Students.current_address_id": [
+      [
+        "Students.pa_id",
+        0.6965397596359253
+      ],
+      [
+        "Students.ca_id",
+        0.6809842586517334
+      ],
+      [
+        "Students.stuid",
+        0.6447582244873047
+      ]
+    ],
+    "Students.permanent_address_id": [
+      [
+        "Students.pa_id",
+        0.6819483041763306
+      ],
+      [
+        "Students.ca_id",
+        0.675167977809906
+      ],
+      [
+        "Students.stuid",
+        0.6520321369171143
+      ]
+    ],
+    "Students.first_name": [
+      [
+        "Students.first_name",
+        0.9999999403953552
+      ],
+      [
+        "Students.middle_name",
+        0.8576453328132629
+      ],
+      [
+        "Students.last_name",
+        0.8282653093338013
+      ]
+    ],
+    "Students.middle_name": [
+      [
+        "Students.middle_name",
+        0.9999997615814209
+      ],
+      [
+        "Students.last_name",
+        0.8786026239395142
+      ],
+      [
+        "Students.first_name",
+        0.8576453328132629
+      ]
+    ],
+    "Students.last_name": [
+      [
+        "Students.last_name",
+        1.000000238418579
+      ],
+      [
+        "Students.middle_name",
+        0.8786026239395142
+      ],
+      [
+        "Students.first_name",
+        0.8282653093338013
+      ]
+    ],
+    "Students.cell_mobile_number": [
+      [
+        "Students.cell",
+        0.7500076293945312
+      ],
+      [
+        "Students.ssn",
+        0.6788345575332642
+      ],
+      [
+        "Students.ca_id",
+        0.614327073097229
+      ]
+    ],
+    "Students.email_address": [
+      [
+        "Students.email",
+        0.9429926872253418
+      ],
+      [
+        "Students.cell",
+        0.7441280484199524
+      ],
+      [
+        "Students.ssn",
+        0.7113388776779175
+      ]
+    ],
+    "Students.ssn": [
+      [
+        "Students.ssn",
+        1.0
+      ],
+      [
+        "Students.cell",
+        0.860173225402832
+      ],
+      [
+        "Students.oth_stu_dtl",
+        0.751746416091919
+      ]
+    ],
+    "Students.date_first_registered": [
+      [
+        "Students.date_first_registered",
+        0.9999998807907104
+      ],
+      [
+        "Students.date_left",
+        0.7813135385513306
+      ],
+      [
+        "Students.ca_id",
+        0.5678085088729858
+      ]
+    ],
+    "Students.date_left": [
+      [
+        "Students.date_left",
+        1.0
+      ],
+      [
+        "Students.date_first_registered",
+        0.7813135385513306
+      ],
+      [
+        "Students.ca_id",
+        0.6425962448120117
+      ]
+    ],
+    "Students.other_student_details": [
+      [
+        "Students.cell",
+        0.8564529418945312
+      ],
+      [
+        "Students.ssn",
+        0.7851183414459229
+      ],
+      [
+        "Students.oth_stu_dtl",
+        0.7476053237915039
+      ]
+    ],
+    "Student_Enrolment.student_enrolment_id": [
+      [
+        "Student_Enrolment.sem_id",
+        0.8890426158905029
+      ],
+      [
+        "Student_Enrolment.stu_id",
+        0.8822013139724731
+      ],
+      [
+        "Student_Enrolment.stu_enroll_id",
+        0.8587712645530701
+      ]
+    ],
+    "Student_Enrolment.degree_program_id": [
+      [
+        "Student_Enrolment.degree_program_id",
+        1.0000003576278687
+      ],
+      [
+        "Student_Enrolment.stu_enroll_id",
+        0.807625412940979
+      ],
+      [
+        "Student_Enrolment.stu_id",
+        0.7925240993499756
+      ]
+    ],
+    "Student_Enrolment.semester_id": [
+      [
+        "Student_Enrolment.sem_id",
+        0.8756242394447327
+      ],
+      [
+        "Student_Enrolment.degree_program_id",
+        0.855955958366394
+      ],
+      [
+        "Student_Enrolment.stu_id",
+        0.8486924171447754
+      ]
+    ],
+    "Student_Enrolment.student_id": [
+      [
+        "Student_Enrolment.sem_id",
+        0.904321551322937
+      ],
+      [
+        "Student_Enrolment.stu_id",
+        0.8979059457778931
+      ],
+      [
+        "Student_Enrolment.stu_enroll_id",
+        0.8685555458068848
+      ]
+    ],
+    "Student_Enrolment.other_details": [
+      [
+        "Student_Enrolment.oth_dtl",
+        0.8739596605300903
+      ],
+      [
+        "Student_Enrolment.stu_id",
+        0.7259526252746582
+      ],
+      [
+        "Student_Enrolment.sem_id",
+        0.7179347276687622
+      ]
+    ],
+    "Student_Enrolment_Courses.student_course_id": [
+      [
+        "Student_Enrolment_Courses.crs_id",
+        0.8992379903793335
+      ],
+      [
+        "Student_Enrolment_Courses.stu_enroll_id",
+        0.8894915580749512
+      ],
+      [
+        "Student_Enrolment_Courses.stu_crs_id",
+        0.8695006370544434
+      ]
+    ],
+    "Student_Enrolment_Courses.course_id": [
+      [
+        "Student_Enrolment_Courses.crs_id",
+        0.8996062278747559
+      ],
+      [
+        "Student_Enrolment_Courses.stu_enroll_id",
+        0.8903189301490784
+      ],
+      [
+        "Student_Enrolment_Courses.stu_crs_id",
+        0.8685787320137024
+      ]
+    ],
+    "Student_Enrolment_Courses.student_enrolment_id": [
+      [
+        "Student_Enrolment_Courses.crs_id",
+        0.9009989500045776
+      ],
+      [
+        "Student_Enrolment_Courses.stu_enroll_id",
+        0.900534987449646
+      ],
+      [
+        "Student_Enrolment_Courses.stu_crs_id",
+        0.8761119246482849
+      ]
+    ],
+    "Transcripts.transcript_id": [
+      [
+        "Transcripts.transcript_id",
+        0.9999998807907104
+      ],
+      [
+        "Transcript_Contents.transcript_id",
+        0.9626768827438354
+      ],
+      [
+        "Transcript_Contents.stu_crs_id",
+        0.8583125472068787
+      ]
+    ],
+    "Transcripts.transcript_date": [
+      [
+        "Transcripts.transcript_date",
+        1.0
+      ],
+      [
+        "Transcripts.transcript_id",
+        0.8565372824668884
+      ],
+      [
+        "Transcript_Contents.transcript_id",
+        0.8155989646911621
+      ]
+    ],
+    "Transcripts.other_details": [
+      [
+        "Transcripts.oth_dtl",
+        0.886722207069397
+      ],
+      [
+        "Transcript_Contents.transcript_id",
+        0.8175618648529053
+      ],
+      [
+        "Transcripts.transcript_id",
+        0.816996157169342
+      ]
+    ],
+    "Transcript_Contents.student_course_id": [
+      [
+        "Transcript_Contents.transcript_id",
+        0.8049184083938599
+      ],
+      [
+        "Transcripts.transcript_id",
+        0.7649785876274109
+      ],
+      [
+        "Transcript_Contents.stu_crs_id",
+        0.7334128618240356
+      ]
+    ],
+    "Transcript_Contents.transcript_id": [
+      [
+        "Transcript_Contents.transcript_id",
+        1.0000001192092896
+      ],
+      [
+        "Transcripts.transcript_id",
+        0.9626768827438354
+      ],
+      [
+        "Transcript_Contents.stu_crs_id",
+        0.8956344127655029
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Addresses": "Addresses",
+      "Courses": "Courses",
+      "Departments": "Departments",
+      "Degree_Programs": "Degree_Programs",
+      "Sections": "Sections",
+      "Semesters": "Semesters",
+      "Students": "Students",
+      "Student_Enrolment": "Student_Enrolment",
+      "Student_Enrolment_Courses": "Student_Enrolment_Courses",
+      "Transcripts": "Transcripts",
+      "Transcript_Contents": "Transcript_Contents"
+    },
+    "columns": {
+      "Addresses.address_id": "Addresses.adr_id",
+      "Addresses.line_1": "Addresses.line_1",
+      "Addresses.line_2": "Addresses.line_2",
+      "Addresses.line_3": "Addresses.line_3",
+      "Addresses.city": "Addresses.city",
+      "Addresses.zip_postcode": "Addresses.zipcode",
+      "Addresses.state_province_county": "Addresses.state_province_county",
+      "Addresses.country": "Addresses.cntry",
+      "Addresses.other_address_details": "Addresses.oth_adr_dtl",
+      "Courses.course_id": "Courses.crs_id",
+      "Courses.course_name": "Courses.crs_name",
+      "Courses.course_description": "Courses.crs_desc",
+      "Courses.other_details": "Courses.oth_dtl",
+      "Departments.department_id": "Departments.dept_id",
+      "Departments.department_name": "Departments.dept_name",
+      "Departments.department_description": "Departments.dept_desc",
+      "Departments.other_details": "Departments.oth_dtl",
+      "Degree_Programs.degree_program_id": "Degree_Programs.degree_pmg_id",
+      "Degree_Programs.department_id": "Degree_Programs.dept_id",
+      "Degree_Programs.degree_summary_name": "Degree_Programs.degree_smry_name",
+      "Degree_Programs.degree_summary_description": "Degree_Programs.degree_smry_desc",
+      "Degree_Programs.other_details": "Degree_Programs.oth_dtl",
+      "Sections.section_id": "Sections.crs_id",
+      "Sections.course_id": "Sections.sect_id",
+      "Sections.section_name": "Sections.sect_name",
+      "Sections.section_description": "Sections.sect_desc",
+      "Sections.other_details": "Sections.other_dtl",
+      "Semesters.semester_id": "Semesters.sem_id",
+      "Semesters.semester_name": "Semesters.sem_name",
+      "Semesters.semester_description": "Semesters.sem_desc",
+      "Semesters.other_details": "Semesters.oth_dtl",
+      "Students.student_id": "Students.ca_id",
+      "Students.current_address_id": "Students.pa_id",
+      "Students.permanent_address_id": "Students.stuid",
+      "Students.first_name": "Students.first_name",
+      "Students.middle_name": "Students.middle_name",
+      "Students.last_name": "Students.last_name",
+      "Students.cell_mobile_number": "Students.cell",
+      "Students.email_address": "Students.email",
+      "Students.ssn": "Students.ssn",
+      "Students.date_first_registered": "Students.date_first_registered",
+      "Students.date_left": "Students.date_left",
+      "Students.other_student_details": "Students.oth_stu_dtl",
+      "Student_Enrolment.student_enrolment_id": "Student_Enrolment.stu_enroll_id",
+      "Student_Enrolment.degree_program_id": "Student_Enrolment.degree_program_id",
+      "Student_Enrolment.semester_id": "Student_Enrolment.sem_id",
+      "Student_Enrolment.student_id": "Student_Enrolment.stu_id",
+      "Student_Enrolment.other_details": "Student_Enrolment.oth_dtl",
+      "Student_Enrolment_Courses.student_course_id": "Student_Enrolment_Courses.stu_crs_id",
+      "Student_Enrolment_Courses.course_id": "Student_Enrolment_Courses.crs_id",
+      "Student_Enrolment_Courses.student_enrolment_id": "Student_Enrolment_Courses.stu_enroll_id",
+      "Transcripts.transcript_id": "Transcripts.transcript_id",
+      "Transcripts.transcript_date": "Transcripts.transcript_date",
+      "Transcripts.other_details": "Transcripts.oth_dtl",
+      "Transcript_Contents.student_course_id": "Transcript_Contents.stu_crs_id",
+      "Transcript_Contents.transcript_id": "Transcript_Contents.transcript_id"
+    }
+  },
+  "q_B": {
+    "student_transcripts_tracking__abbr_v1__q0511": "SELECT \"courses\".\"crs_desc\" AS \"course_description\" FROM \"Courses\" AS \"courses\" WHERE \"courses\".\"crs_name\" = 'math'",
+    "student_transcripts_tracking__abbr_v1__q0512": "SELECT \"courses\".\"crs_desc\" AS \"course_description\" FROM \"Courses\" AS \"courses\" WHERE \"courses\".\"crs_name\" = 'math'",
+    "student_transcripts_tracking__abbr_v1__q0513": "SELECT \"addresses\".\"zipcode\" AS \"zip_postcode\" FROM \"Addresses\" AS \"addresses\" WHERE \"addresses\".\"city\" = 'Port Chelsea'",
+    "student_transcripts_tracking__abbr_v1__q0514": "SELECT \"addresses\".\"zipcode\" AS \"zip_postcode\" FROM \"Addresses\" AS \"addresses\" WHERE \"addresses\".\"city\" = 'Port Chelsea'",
+    "student_transcripts_tracking__abbr_v1__q0515": "SELECT \"t2\".\"dept_name\" AS \"department_name\", \"t1\".\"dept_id\" AS \"department_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Departments\" AS \"t2\" ON \"t1\".\"dept_id\" = \"t2\".\"dept_id\" GROUP BY \"t1\".\"dept_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0516": "SELECT \"t2\".\"dept_name\" AS \"department_name\", \"t1\".\"dept_id\" AS \"department_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Departments\" AS \"t2\" ON \"t1\".\"dept_id\" = \"t2\".\"dept_id\" GROUP BY \"t1\".\"dept_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0517": "SELECT COUNT(DISTINCT \"degree_programs\".\"dept_id\") AS \"_col_0\" FROM \"Degree_Programs\" AS \"degree_programs\"",
+    "student_transcripts_tracking__abbr_v1__q0518": "SELECT COUNT(DISTINCT \"degree_programs\".\"dept_id\") AS \"_col_0\" FROM \"Degree_Programs\" AS \"degree_programs\"",
+    "student_transcripts_tracking__abbr_v1__q0519": "SELECT COUNT(DISTINCT \"degree_programs\".\"degree_smry_name\") AS \"_col_0\" FROM \"Degree_Programs\" AS \"degree_programs\"",
+    "student_transcripts_tracking__abbr_v1__q0520": "SELECT COUNT(DISTINCT \"degree_programs\".\"degree_smry_name\") AS \"_col_0\" FROM \"Degree_Programs\" AS \"degree_programs\"",
+    "student_transcripts_tracking__abbr_v1__q0521": "SELECT COUNT(*) AS \"_col_0\" FROM \"Departments\" AS \"t1\" JOIN \"Degree_Programs\" AS \"t2\" ON \"t1\".\"dept_id\" = \"t2\".\"dept_id\" WHERE \"t1\".\"dept_name\" = 'engineer'",
+    "student_transcripts_tracking__abbr_v1__q0522": "SELECT COUNT(*) AS \"_col_0\" FROM \"Departments\" AS \"t1\" JOIN \"Degree_Programs\" AS \"t2\" ON \"t1\".\"dept_id\" = \"t2\".\"dept_id\" WHERE \"t1\".\"dept_name\" = 'engineer'",
+    "student_transcripts_tracking__abbr_v1__q0523": "SELECT \"sections\".\"sect_name\" AS \"section_name\", \"sections\".\"sect_desc\" AS \"section_description\" FROM \"Sections\" AS \"sections\"",
+    "student_transcripts_tracking__abbr_v1__q0524": "SELECT \"sections\".\"sect_name\" AS \"section_name\", \"sections\".\"sect_desc\" AS \"section_description\" FROM \"Sections\" AS \"sections\"",
+    "student_transcripts_tracking__abbr_v1__q0525": "SELECT \"t1\".\"crs_name\" AS \"course_name\", \"t1\".\"crs_id\" AS \"course_id\" FROM \"Courses\" AS \"t1\" JOIN \"Sections\" AS \"t2\" ON \"t1\".\"crs_id\" = \"t2\".\"sect_id\" GROUP BY \"t1\".\"crs_id\" HAVING COUNT(*) <= 2",
+    "student_transcripts_tracking__abbr_v1__q0526": "SELECT \"t1\".\"crs_name\" AS \"course_name\", \"t1\".\"crs_id\" AS \"course_id\" FROM \"Courses\" AS \"t1\" JOIN \"Sections\" AS \"t2\" ON \"t1\".\"crs_id\" = \"t2\".\"sect_id\" GROUP BY \"t1\".\"crs_id\" HAVING COUNT(*) <= 2",
+    "student_transcripts_tracking__abbr_v1__q0527": "SELECT \"sections\".\"sect_name\" AS \"section_name\" FROM \"Sections\" AS \"sections\" ORDER BY \"section_name\" DESC",
+    "student_transcripts_tracking__abbr_v1__q0528": "SELECT \"sections\".\"sect_name\" AS \"section_name\" FROM \"Sections\" AS \"sections\" ORDER BY \"section_name\" DESC",
+    "student_transcripts_tracking__abbr_v1__q0529": "SELECT \"t1\".\"sem_name\" AS \"semester_name\", \"t1\".\"sem_id\" AS \"semester_id\" FROM \"Semesters\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"sem_id\" = \"t2\".\"sem_id\" GROUP BY \"t1\".\"sem_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0530": "SELECT \"t1\".\"sem_name\" AS \"semester_name\", \"t1\".\"sem_id\" AS \"semester_id\" FROM \"Semesters\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"sem_id\" = \"t2\".\"sem_id\" GROUP BY \"t1\".\"sem_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0531": "SELECT \"departments\".\"dept_desc\" AS \"department_description\" FROM \"Departments\" AS \"departments\" WHERE \"departments\".\"dept_name\" LIKE '%computer%'",
+    "student_transcripts_tracking__abbr_v1__q0532": "SELECT \"departments\".\"dept_desc\" AS \"department_description\" FROM \"Departments\" AS \"departments\" WHERE \"departments\".\"dept_name\" LIKE '%computer%'",
+    "student_transcripts_tracking__abbr_v1__q0533": "SELECT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\", \"t1\".\"ca_id\" AS \"student_id\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"stu_id\" GROUP BY \"t1\".\"ca_id\" HAVING COUNT(*) = 2",
+    "student_transcripts_tracking__abbr_v1__q0534": "SELECT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\", \"t1\".\"ca_id\" AS \"student_id\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"stu_id\" GROUP BY \"t1\".\"ca_id\" HAVING COUNT(*) = 2",
+    "student_transcripts_tracking__abbr_v1__q0535": "SELECT DISTINCT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"stu_id\" JOIN \"Degree_Programs\" AS \"t3\" ON \"t2\".\"degree_program_id\" = \"t3\".\"degree_pmg_id\" WHERE \"t3\".\"degree_smry_name\" = 'Bachelor'",
+    "student_transcripts_tracking__abbr_v1__q0536": "SELECT DISTINCT \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"stu_id\" JOIN \"Degree_Programs\" AS \"t3\" ON \"t2\".\"degree_program_id\" = \"t3\".\"degree_pmg_id\" WHERE \"t3\".\"degree_smry_name\" = 'Bachelor'",
+    "student_transcripts_tracking__abbr_v1__q0537": "SELECT \"t1\".\"degree_smry_name\" AS \"degree_summary_name\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_pmg_id\" = \"t2\".\"degree_program_id\" GROUP BY \"t1\".\"degree_smry_name\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0538": "SELECT \"t1\".\"degree_smry_name\" AS \"degree_summary_name\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_pmg_id\" = \"t2\".\"degree_program_id\" GROUP BY \"t1\".\"degree_smry_name\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0539": "SELECT \"t1\".\"degree_pmg_id\" AS \"degree_program_id\", \"t1\".\"degree_smry_name\" AS \"degree_summary_name\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_pmg_id\" = \"t2\".\"degree_program_id\" GROUP BY \"t1\".\"degree_pmg_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0540": "SELECT \"t1\".\"degree_pmg_id\" AS \"degree_program_id\", \"t1\".\"degree_smry_name\" AS \"degree_summary_name\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_pmg_id\" = \"t2\".\"degree_program_id\" GROUP BY \"t1\".\"degree_pmg_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0541": "SELECT \"t1\".\"ca_id\" AS \"student_id\", \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\", COUNT(*) AS \"_col_4\", \"t1\".\"ca_id\" AS \"student_id\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"stu_id\" GROUP BY \"t1\".\"ca_id\" ORDER BY \"_col_4\" DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0542": "SELECT \"t1\".\"ca_id\" AS \"student_id\", \"t1\".\"first_name\" AS \"first_name\", \"t1\".\"middle_name\" AS \"middle_name\", \"t1\".\"last_name\" AS \"last_name\", COUNT(*) AS \"_col_4\", \"t1\".\"ca_id\" AS \"student_id\" FROM \"Students\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"ca_id\" = \"t2\".\"stu_id\" GROUP BY \"t1\".\"ca_id\" ORDER BY \"_col_4\" DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0543": "SELECT \"semesters\".\"sem_name\" AS \"semester_name\" FROM \"Semesters\" AS \"semesters\" WHERE NOT \"semesters\".\"sem_id\" IN (SELECT \"student_enrolment\".\"sem_id\" AS \"semester_id\" FROM \"Student_Enrolment\" AS \"student_enrolment\")",
+    "student_transcripts_tracking__abbr_v1__q0544": "SELECT \"semesters\".\"sem_name\" AS \"semester_name\" FROM \"Semesters\" AS \"semesters\" WHERE NOT \"semesters\".\"sem_id\" IN (SELECT \"student_enrolment\".\"sem_id\" AS \"semester_id\" FROM \"Student_Enrolment\" AS \"student_enrolment\")",
+    "student_transcripts_tracking__abbr_v1__q0545": "SELECT DISTINCT \"t1\".\"crs_name\" AS \"course_name\" FROM \"Courses\" AS \"t1\" JOIN \"Student_Enrolment_Courses\" AS \"t2\" ON \"t1\".\"crs_id\" = \"t2\".\"crs_id\"",
+    "student_transcripts_tracking__abbr_v1__q0546": "SELECT DISTINCT \"t1\".\"crs_name\" AS \"course_name\" FROM \"Courses\" AS \"t1\" JOIN \"Student_Enrolment_Courses\" AS \"t2\" ON \"t1\".\"crs_id\" = \"t2\".\"crs_id\"",
+    "student_transcripts_tracking__abbr_v1__q0547": "SELECT \"t1\".\"crs_name\" AS \"course_name\" FROM \"Courses\" AS \"t1\" JOIN \"Student_Enrolment_Courses\" AS \"t2\" ON \"t1\".\"crs_id\" = \"t2\".\"crs_id\" GROUP BY \"t1\".\"crs_name\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0548": "SELECT \"t1\".\"crs_name\" AS \"course_name\" FROM \"Courses\" AS \"t1\" JOIN \"Student_Enrolment_Courses\" AS \"t2\" ON \"t1\".\"crs_id\" = \"t2\".\"crs_id\" GROUP BY \"t1\".\"crs_name\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0549": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"pa_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"ca_id\" = \"t4\".\"stu_id\"",
+    "student_transcripts_tracking__abbr_v1__q0550": "SELECT \"t1\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"pa_id\" = \"t2\".\"adr_id\" WHERE \"t2\".\"state_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"last_name\" AS \"last_name\" FROM \"Students\" AS \"t3\" JOIN \"Student_Enrolment\" AS \"t4\" ON \"t3\".\"ca_id\" = \"t4\".\"stu_id\"",
+    "student_transcripts_tracking__abbr_v1__q0553": "SELECT \"students\".\"cell\" AS \"cell_mobile_number\" FROM \"Students\" AS \"students\" WHERE \"students\".\"first_name\" = 'Timmothy' AND \"students\".\"last_name\" = 'Ward'",
+    "student_transcripts_tracking__abbr_v1__q0554": "SELECT \"students\".\"cell\" AS \"cell_mobile_number\" FROM \"Students\" AS \"students\" WHERE \"students\".\"first_name\" = 'timmothy' AND \"students\".\"last_name\" = 'ward'",
+    "student_transcripts_tracking__abbr_v1__q0559": "SELECT \"students\".\"first_name\" AS \"first_name\" FROM \"Students\" AS \"students\" WHERE \"students\".\"pa_id\" <> \"students\".\"stuid\"",
+    "student_transcripts_tracking__abbr_v1__q0560": "SELECT \"students\".\"first_name\" AS \"first_name\" FROM \"Students\" AS \"students\" WHERE \"students\".\"pa_id\" <> \"students\".\"stuid\"",
+    "student_transcripts_tracking__abbr_v1__q0561": "SELECT \"t1\".\"adr_id\" AS \"address_id\", \"t1\".\"line_1\" AS \"line_1\", \"t1\".\"line_2\" AS \"line_2\" FROM \"Addresses\" AS \"t1\" JOIN \"Students\" AS \"t2\" ON \"t1\".\"adr_id\" = \"t2\".\"pa_id\" GROUP BY \"t1\".\"adr_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0562": "SELECT \"t1\".\"adr_id\" AS \"address_id\", \"t1\".\"line_1\" AS \"line_1\", \"t1\".\"line_2\" AS \"line_2\" FROM \"Addresses\" AS \"t1\" JOIN \"Students\" AS \"t2\" ON \"t1\".\"adr_id\" = \"t2\".\"pa_id\" GROUP BY \"t1\".\"adr_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0565": "SELECT \"transcripts\".\"transcript_date\" AS \"transcript_date\", \"transcripts\".\"oth_dtl\" AS \"other_details\" FROM \"Transcripts\" AS \"transcripts\" ORDER BY \"transcript_date\" ASC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0566": "SELECT \"transcripts\".\"transcript_date\" AS \"transcript_date\", \"transcripts\".\"oth_dtl\" AS \"other_details\" FROM \"Transcripts\" AS \"transcripts\" ORDER BY \"transcript_date\" ASC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0571": "SELECT COUNT(*) AS \"_col_0\", \"transcript_contents\".\"stu_crs_id\" AS \"student_course_id\" FROM \"Transcript_Contents\" AS \"transcript_contents\" GROUP BY \"transcript_contents\".\"stu_crs_id\" ORDER BY \"_col_0\" DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0572": "SELECT COUNT(*) AS \"_col_0\", \"transcript_contents\".\"stu_crs_id\" AS \"student_course_id\" FROM \"Transcript_Contents\" AS \"transcript_contents\" GROUP BY \"transcript_contents\".\"stu_crs_id\" ORDER BY \"_col_0\" DESC LIMIT 1",
+    "student_transcripts_tracking__abbr_v1__q0575": "SELECT DISTINCT \"t2\".\"sem_id\" AS \"semester_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_pmg_id\" = \"t2\".\"degree_program_id\" WHERE \"t1\".\"degree_smry_name\" = 'Master' INTERSECT SELECT DISTINCT \"t2\".\"sem_id\" AS \"semester_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_pmg_id\" = \"t2\".\"degree_program_id\" WHERE \"t1\".\"degree_smry_name\" = 'Bachelor'",
+    "student_transcripts_tracking__abbr_v1__q0576": "SELECT DISTINCT \"t2\".\"sem_id\" AS \"semester_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_pmg_id\" = \"t2\".\"degree_program_id\" WHERE \"t1\".\"degree_smry_name\" = 'Master' INTERSECT SELECT DISTINCT \"t2\".\"sem_id\" AS \"semester_id\" FROM \"Degree_Programs\" AS \"t1\" JOIN \"Student_Enrolment\" AS \"t2\" ON \"t1\".\"degree_pmg_id\" = \"t2\".\"degree_program_id\" WHERE \"t1\".\"degree_smry_name\" = 'Bachelor'",
+    "student_transcripts_tracking__abbr_v1__q0577": "SELECT COUNT(DISTINCT \"students\".\"pa_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "student_transcripts_tracking__abbr_v1__q0578": "SELECT COUNT(DISTINCT \"students\".\"pa_id\") AS \"_col_0\" FROM \"Students\" AS \"students\"",
+    "student_transcripts_tracking__abbr_v1__q0579": "SELECT \"students\".\"oth_stu_dtl\" AS \"other_student_details\" FROM \"Students\" AS \"students\" ORDER BY \"other_student_details\" DESC",
+    "student_transcripts_tracking__abbr_v1__q0580": "SELECT \"students\".\"oth_stu_dtl\" AS \"other_student_details\" FROM \"Students\" AS \"students\" ORDER BY \"other_student_details\" DESC",
+    "student_transcripts_tracking__abbr_v1__q0581": "SELECT \"sections\".\"sect_desc\" AS \"section_description\" FROM \"Sections\" AS \"sections\" WHERE \"sections\".\"sect_name\" = 'h'",
+    "student_transcripts_tracking__abbr_v1__q0582": "SELECT \"sections\".\"sect_desc\" AS \"section_description\" FROM \"Sections\" AS \"sections\" WHERE \"sections\".\"sect_name\" = 'h'",
+    "student_transcripts_tracking__abbr_v1__q0583": "SELECT \"t1\".\"first_name\" AS \"first_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"adr_id\" WHERE \"t2\".\"cntry\" = 'haiti' OR \"t1\".\"cell\" = '09700166582'",
+    "student_transcripts_tracking__abbr_v1__q0584": "SELECT \"t1\".\"first_name\" AS \"first_name\" FROM \"Students\" AS \"t1\" JOIN \"Addresses\" AS \"t2\" ON \"t1\".\"stuid\" = \"t2\".\"adr_id\" WHERE \"t2\".\"cntry\" = 'haiti' OR \"t1\".\"cell\" = '09700166582'"
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "types"
+}

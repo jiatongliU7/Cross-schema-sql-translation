@@ -1,0 +1,348 @@
+{
+  "tables": {
+    "employee": [
+      [
+        "employee",
+        1.0
+      ],
+      [
+        "evaluation",
+        0.3333333333333333
+      ],
+      [
+        "shop",
+        0.16666666666666666
+      ]
+    ],
+    "shop": [
+      [
+        "shop",
+        1.0
+      ],
+      [
+        "hiring",
+        0.2
+      ],
+      [
+        "employee",
+        0.16666666666666666
+      ]
+    ],
+    "hiring": [
+      [
+        "hiring",
+        1.0
+      ],
+      [
+        "evaluation",
+        0.25
+      ],
+      [
+        "shop",
+        0.2
+      ]
+    ],
+    "evaluation": [
+      [
+        "evaluation",
+        1.0
+      ],
+      [
+        "employee",
+        0.3333333333333333
+      ],
+      [
+        "hiring",
+        0.25
+      ]
+    ]
+  },
+  "columns": {
+    "employee.Employee_ID": [
+      [
+        "hiring.Employee_ID",
+        1.0
+      ],
+      [
+        "employee.Employee_ID",
+        1.0
+      ],
+      [
+        "evaluation.Employee_ID",
+        1.0
+      ]
+    ],
+    "employee.Name": [
+      [
+        "shop.Name",
+        1.0
+      ],
+      [
+        "employee.Name",
+        1.0
+      ],
+      [
+        "employee.Age",
+        0.5714285714285714
+      ]
+    ],
+    "employee.Age": [
+      [
+        "employee.Age",
+        1.0
+      ],
+      [
+        "shop.area",
+        0.5714285714285714
+      ],
+      [
+        "shop.Name",
+        0.5714285714285714
+      ]
+    ],
+    "employee.City": [
+      [
+        "shop.commodity_quantity",
+        0.36363636363636365
+      ],
+      [
+        "hiring.Is_full_time",
+        0.25
+      ],
+      [
+        "hiring.Shop_ID",
+        0.18181818181818182
+      ]
+    ],
+    "shop.Shop_ID": [
+      [
+        "hiring.Shop_ID",
+        1.0
+      ],
+      [
+        "shop.Shop_ID",
+        1.0
+      ],
+      [
+        "hiring.Employee_ID",
+        0.4444444444444444
+      ]
+    ],
+    "shop.Name": [
+      [
+        "shop.Name",
+        1.0
+      ],
+      [
+        "employee.Name",
+        1.0
+      ],
+      [
+        "employee.Age",
+        0.5714285714285714
+      ]
+    ],
+    "shop.Location": [
+      [
+        "hiring.Employee_ID",
+        0.3157894736842105
+      ],
+      [
+        "employee.Employee_ID",
+        0.3157894736842105
+      ],
+      [
+        "evaluation.Employee_ID",
+        0.3157894736842105
+      ]
+    ],
+    "shop.District": [
+      [
+        "hiring.Is_full_time",
+        0.4
+      ],
+      [
+        "shop.commodity_quantity",
+        0.38461538461538464
+      ],
+      [
+        "employee.metropolis",
+        0.2222222222222222
+      ]
+    ],
+    "shop.Number_products": [
+      [
+        "shop.whereabouts",
+        0.46153846153846156
+      ],
+      [
+        "employee.metropolis",
+        0.4
+      ],
+      [
+        "hiring.begin_off",
+        0.3333333333333333
+      ]
+    ],
+    "shop.Manager_name": [
+      [
+        "shop.Name",
+        0.5
+      ],
+      [
+        "employee.Name",
+        0.5
+      ],
+      [
+        "employee.Age",
+        0.4
+      ]
+    ],
+    "hiring.Shop_ID": [
+      [
+        "hiring.Shop_ID",
+        1.0
+      ],
+      [
+        "shop.Shop_ID",
+        1.0
+      ],
+      [
+        "hiring.Employee_ID",
+        0.4444444444444444
+      ]
+    ],
+    "hiring.Employee_ID": [
+      [
+        "hiring.Employee_ID",
+        1.0
+      ],
+      [
+        "employee.Employee_ID",
+        1.0
+      ],
+      [
+        "evaluation.Employee_ID",
+        1.0
+      ]
+    ],
+    "hiring.Start_from": [
+      [
+        "hiring.Is_full_time",
+        0.36363636363636365
+      ],
+      [
+        "employee.metropolis",
+        0.3
+      ],
+      [
+        "shop.area",
+        0.2857142857142857
+      ]
+    ],
+    "hiring.Is_full_time": [
+      [
+        "hiring.Is_full_time",
+        1.0
+      ],
+      [
+        "shop.commodity_quantity",
+        0.3333333333333333
+      ],
+      [
+        "hiring.begin_off",
+        0.2857142857142857
+      ]
+    ],
+    "evaluation.Employee_ID": [
+      [
+        "hiring.Employee_ID",
+        1.0
+      ],
+      [
+        "employee.Employee_ID",
+        1.0
+      ],
+      [
+        "evaluation.Employee_ID",
+        1.0
+      ]
+    ],
+    "evaluation.Year_awarded": [
+      [
+        "evaluation.when_awarde",
+        0.6956521739130435
+      ],
+      [
+        "shop.head",
+        0.375
+      ],
+      [
+        "hiring.Employee_ID",
+        0.34782608695652173
+      ]
+    ],
+    "evaluation.Bonus": [
+      [
+        "evaluation.Bonus",
+        1.0
+      ],
+      [
+        "shop.whereabouts",
+        0.5
+      ],
+      [
+        "hiring.begin_off",
+        0.2857142857142857
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "employee": "employee",
+      "shop": "shop",
+      "hiring": "hiring",
+      "evaluation": "evaluation"
+    },
+    "columns": {
+      "employee.Employee_ID": "employee.Employee_ID",
+      "employee.Name": "employee.Name",
+      "employee.Age": "employee.Age",
+      "employee.City": "employee.metropolis",
+      "shop.Shop_ID": "shop.Shop_ID",
+      "shop.Name": "shop.Name",
+      "shop.Location": "shop.head",
+      "shop.District": "shop.commodity_quantity",
+      "shop.Number_products": "shop.whereabouts",
+      "shop.Manager_name": "shop.area",
+      "hiring.Shop_ID": "hiring.Shop_ID",
+      "hiring.Employee_ID": "hiring.Employee_ID",
+      "hiring.Start_from": "hiring.begin_off",
+      "hiring.Is_full_time": "hiring.Is_full_time",
+      "evaluation.Employee_ID": "evaluation.Employee_ID",
+      "evaluation.Year_awarded": "evaluation.when_awarde",
+      "evaluation.Bonus": "evaluation.Bonus"
+    }
+  },
+  "q_B": {
+    "employee_hire_evaluation__syn_v0__q0263": "SELECT COUNT(*) AS \"_col_0\", \"employee\".\"metropolis\" AS \"city\" FROM \"employee\" AS \"employee\" GROUP BY \"employee\".\"metropolis\"",
+    "employee_hire_evaluation__syn_v0__q0264": "SELECT COUNT(*) AS \"_col_0\", \"employee\".\"metropolis\" AS \"city\" FROM \"employee\" AS \"employee\" GROUP BY \"employee\".\"metropolis\"",
+    "employee_hire_evaluation__syn_v0__q0265": "SELECT \"employee\".\"metropolis\" AS \"city\" FROM \"employee\" AS \"employee\" WHERE \"employee\".\"Age\" < 30 GROUP BY \"employee\".\"metropolis\" HAVING COUNT(*) > 1",
+    "employee_hire_evaluation__syn_v0__q0266": "SELECT \"employee\".\"metropolis\" AS \"city\" FROM \"employee\" AS \"employee\" WHERE \"employee\".\"Age\" < 30 GROUP BY \"employee\".\"metropolis\" HAVING COUNT(*) > 1",
+    "employee_hire_evaluation__syn_v0__q0267": "SELECT COUNT(*) AS \"_col_0\", \"shop\".\"head\" AS \"location\" FROM \"shop\" AS \"shop\" GROUP BY \"shop\".\"head\"",
+    "employee_hire_evaluation__syn_v0__q0268": "SELECT COUNT(*) AS \"_col_0\", \"shop\".\"head\" AS \"location\" FROM \"shop\" AS \"shop\" GROUP BY \"shop\".\"head\"",
+    "employee_hire_evaluation__syn_v0__q0269": "SELECT \"shop\".\"area\" AS \"manager_name\", \"shop\".\"commodity_quantity\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"whereabouts\" DESC LIMIT 1",
+    "employee_hire_evaluation__syn_v0__q0270": "SELECT \"shop\".\"area\" AS \"manager_name\", \"shop\".\"commodity_quantity\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"whereabouts\" DESC LIMIT 1",
+    "employee_hire_evaluation__syn_v0__q0271": "SELECT MIN(\"shop\".\"whereabouts\") AS \"_col_0\", MAX(\"shop\".\"whereabouts\") AS \"_col_1\" FROM \"shop\" AS \"shop\"",
+    "employee_hire_evaluation__syn_v0__q0272": "SELECT MIN(\"shop\".\"whereabouts\") AS \"_col_0\", MAX(\"shop\".\"whereabouts\") AS \"_col_1\" FROM \"shop\" AS \"shop\"",
+    "employee_hire_evaluation__syn_v0__q0273": "SELECT \"shop\".\"Name\" AS \"name\", \"shop\".\"head\" AS \"location\", \"shop\".\"commodity_quantity\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"whereabouts\" DESC",
+    "employee_hire_evaluation__syn_v0__q0274": "SELECT \"shop\".\"Name\" AS \"name\", \"shop\".\"head\" AS \"location\", \"shop\".\"commodity_quantity\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"whereabouts\" DESC",
+    "employee_hire_evaluation__syn_v0__q0275": "SELECT \"shop\".\"Name\" AS \"name\" FROM \"shop\" AS \"shop\" WHERE \"shop\".\"whereabouts\" > (SELECT AVG(\"shop\".\"whereabouts\") AS \"_col_0\" FROM \"shop\" AS \"shop\")",
+    "employee_hire_evaluation__syn_v0__q0276": "SELECT \"shop\".\"Name\" AS \"name\" FROM \"shop\" AS \"shop\" WHERE \"shop\".\"whereabouts\" > (SELECT AVG(\"shop\".\"whereabouts\") AS \"_col_0\" FROM \"shop\" AS \"shop\")",
+    "employee_hire_evaluation__syn_v0__q0293": "SELECT \"shop\".\"commodity_quantity\" AS \"district\" FROM \"shop\" AS \"shop\" WHERE \"shop\".\"whereabouts\" < 3000 INTERSECT SELECT \"shop\".\"commodity_quantity\" AS \"district\" FROM \"shop\" AS \"shop\" WHERE \"shop\".\"whereabouts\" > 10000",
+    "employee_hire_evaluation__syn_v0__q0294": "SELECT \"shop\".\"commodity_quantity\" AS \"district\" FROM \"shop\" AS \"shop\" WHERE \"shop\".\"whereabouts\" < 3000 INTERSECT SELECT \"shop\".\"commodity_quantity\" AS \"district\" FROM \"shop\" AS \"shop\" WHERE \"shop\".\"whereabouts\" > 10000",
+    "employee_hire_evaluation__syn_v0__q0295": "SELECT COUNT(DISTINCT \"shop\".\"head\") AS \"_col_0\" FROM \"shop\" AS \"shop\"",
+    "employee_hire_evaluation__syn_v0__q0296": "SELECT COUNT(DISTINCT \"shop\".\"head\") AS \"_col_0\" FROM \"shop\" AS \"shop\""
+  },
+  "rewrite_errors": {}
+}

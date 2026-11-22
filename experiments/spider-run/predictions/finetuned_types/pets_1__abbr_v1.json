@@ -1,0 +1,284 @@
+{
+  "tables": {
+    "Student": [
+      [
+        "Student",
+        1.0
+      ],
+      [
+        "Has_Pet",
+        0.327316552400589
+      ],
+      [
+        "Pets",
+        0.31142330169677734
+      ]
+    ],
+    "Has_Pet": [
+      [
+        "Has_Pet",
+        1.0000001192092896
+      ],
+      [
+        "Pets",
+        0.829703688621521
+      ],
+      [
+        "Student",
+        0.327316552400589
+      ]
+    ],
+    "Pets": [
+      [
+        "Pets",
+        1.000000238418579
+      ],
+      [
+        "Has_Pet",
+        0.829703688621521
+      ],
+      [
+        "Student",
+        0.31142330169677734
+      ]
+    ]
+  },
+  "columns": {
+    "Student.StuID": [
+      [
+        "Student.StuID",
+        0.9999997615814209
+      ],
+      [
+        "Student.adv",
+        0.7451210021972656
+      ],
+      [
+        "Student.Major",
+        0.7337348461151123
+      ]
+    ],
+    "Student.LName": [
+      [
+        "Student.LName",
+        1.0
+      ],
+      [
+        "Student.Fname",
+        0.8520342707633972
+      ],
+      [
+        "Student.Sex",
+        0.609514594078064
+      ]
+    ],
+    "Student.Fname": [
+      [
+        "Student.Fname",
+        0.9999998211860657
+      ],
+      [
+        "Student.LName",
+        0.8520342707633972
+      ],
+      [
+        "Student.Sex",
+        0.6152167320251465
+      ]
+    ],
+    "Student.Age": [
+      [
+        "Student.Age",
+        1.0
+      ],
+      [
+        "Student.adv",
+        0.6277772188186646
+      ],
+      [
+        "Student.StuID",
+        0.6072753667831421
+      ]
+    ],
+    "Student.Sex": [
+      [
+        "Student.Sex",
+        1.0
+      ],
+      [
+        "Student.Fname",
+        0.6152167320251465
+      ],
+      [
+        "Student.LName",
+        0.609514594078064
+      ]
+    ],
+    "Student.Major": [
+      [
+        "Student.Major",
+        1.0000005960464478
+      ],
+      [
+        "Student.adv",
+        0.7641183733940125
+      ],
+      [
+        "Student.StuID",
+        0.7337348461151123
+      ]
+    ],
+    "Student.Advisor": [
+      [
+        "Student.Major",
+        0.7002120018005371
+      ],
+      [
+        "Student.adv",
+        0.6801518797874451
+      ],
+      [
+        "Student.StuID",
+        0.6581600308418274
+      ]
+    ],
+    "Student.city_code": [
+      [
+        "Student.city_code",
+        1.0
+      ],
+      [
+        "Student.LName",
+        0.4551483392715454
+      ],
+      [
+        "Student.Sex",
+        0.3998541533946991
+      ]
+    ],
+    "Has_Pet.StuID": [
+      [
+        "Has_Pet.StuID",
+        1.0000001192092896
+      ],
+      [
+        "Has_Pet.PetID",
+        0.8998513221740723
+      ],
+      [
+        "Pets.PetID",
+        0.8221131563186646
+      ]
+    ],
+    "Has_Pet.PetID": [
+      [
+        "Has_Pet.PetID",
+        1.0000001192092896
+      ],
+      [
+        "Pets.PetID",
+        0.9397077560424805
+      ],
+      [
+        "Has_Pet.StuID",
+        0.8998513221740723
+      ]
+    ],
+    "Pets.PetID": [
+      [
+        "Pets.PetID",
+        1.0
+      ],
+      [
+        "Has_Pet.PetID",
+        0.9397077560424805
+      ],
+      [
+        "Pets.wt",
+        0.8933930397033691
+      ]
+    ],
+    "Pets.PetType": [
+      [
+        "Pets.PetType",
+        0.9999997615814209
+      ],
+      [
+        "Pets.wt",
+        0.747979998588562
+      ],
+      [
+        "Pets.PetID",
+        0.7090530395507812
+      ]
+    ],
+    "Pets.pet_age": [
+      [
+        "Pets.pet_age",
+        1.000000238418579
+      ],
+      [
+        "Pets.PetID",
+        0.7637935876846313
+      ],
+      [
+        "Pets.wt",
+        0.7537999153137207
+      ]
+    ],
+    "Pets.weight": [
+      [
+        "Pets.wt",
+        0.7908533811569214
+      ],
+      [
+        "Pets.PetID",
+        0.7214953899383545
+      ],
+      [
+        "Has_Pet.PetID",
+        0.6616435647010803
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Student": "Student",
+      "Has_Pet": "Has_Pet",
+      "Pets": "Pets"
+    },
+    "columns": {
+      "Student.StuID": "Student.StuID",
+      "Student.LName": "Student.LName",
+      "Student.Fname": "Student.Fname",
+      "Student.Age": "Student.Age",
+      "Student.Sex": "Student.Sex",
+      "Student.Major": "Student.Major",
+      "Student.Advisor": "Student.adv",
+      "Student.city_code": "Student.city_code",
+      "Has_Pet.StuID": "Has_Pet.StuID",
+      "Has_Pet.PetID": "Has_Pet.PetID",
+      "Pets.PetID": "Pets.PetID",
+      "Pets.PetType": "Pets.PetType",
+      "Pets.pet_age": "Pets.pet_age",
+      "Pets.weight": "Pets.wt"
+    }
+  },
+  "q_B": {
+    "pets_1__abbr_v1__q0045": "SELECT COUNT(*) AS \"_col_0\" FROM \"Pets\" AS \"pets\" WHERE \"pets\".\"wt\" > 10",
+    "pets_1__abbr_v1__q0046": "SELECT COUNT(*) AS \"_col_0\" FROM \"Pets\" AS \"pets\" WHERE \"pets\".\"wt\" > 10",
+    "pets_1__abbr_v1__q0047": "SELECT \"pets\".\"wt\" AS \"weight\" FROM \"Pets\" AS \"pets\" ORDER BY \"pets\".\"pet_age\" LIMIT 1",
+    "pets_1__abbr_v1__q0048": "SELECT \"pets\".\"wt\" AS \"weight\" FROM \"Pets\" AS \"pets\" ORDER BY \"pets\".\"pet_age\" LIMIT 1",
+    "pets_1__abbr_v1__q0049": "SELECT MAX(\"pets\".\"wt\") AS \"_col_0\", \"pets\".\"PetType\" AS \"pettype\" FROM \"Pets\" AS \"pets\" GROUP BY \"pets\".\"PetType\"",
+    "pets_1__abbr_v1__q0050": "SELECT MAX(\"pets\".\"wt\") AS \"_col_0\", \"pets\".\"PetType\" AS \"pettype\" FROM \"Pets\" AS \"pets\" GROUP BY \"pets\".\"PetType\"",
+    "pets_1__abbr_v1__q0067": "SELECT \"pets\".\"PetType\" AS \"pettype\", \"pets\".\"wt\" AS \"weight\" FROM \"Pets\" AS \"pets\" ORDER BY \"pets\".\"pet_age\" LIMIT 1",
+    "pets_1__abbr_v1__q0068": "SELECT \"pets\".\"PetType\" AS \"pettype\", \"pets\".\"wt\" AS \"weight\" FROM \"Pets\" AS \"pets\" ORDER BY \"pets\".\"pet_age\" LIMIT 1",
+    "pets_1__abbr_v1__q0069": "SELECT \"pets\".\"PetID\" AS \"petid\", \"pets\".\"wt\" AS \"weight\" FROM \"Pets\" AS \"pets\" WHERE \"pets\".\"pet_age\" > 1",
+    "pets_1__abbr_v1__q0070": "SELECT \"pets\".\"PetID\" AS \"petid\", \"pets\".\"wt\" AS \"weight\" FROM \"Pets\" AS \"pets\" WHERE \"pets\".\"pet_age\" > 1",
+    "pets_1__abbr_v1__q0073": "SELECT AVG(\"pets\".\"wt\") AS \"_col_0\", \"pets\".\"PetType\" AS \"pettype\" FROM \"Pets\" AS \"pets\" GROUP BY \"pets\".\"PetType\"",
+    "pets_1__abbr_v1__q0074": "SELECT AVG(\"pets\".\"wt\") AS \"_col_0\", \"pets\".\"PetType\" AS \"pettype\" FROM \"Pets\" AS \"pets\" GROUP BY \"pets\".\"PetType\""
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "types"
+}

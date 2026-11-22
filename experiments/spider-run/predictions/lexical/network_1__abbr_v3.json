@@ -1,0 +1,177 @@
+{
+  "tables": {
+    "Highschooler": [
+      [
+        "Highschooler",
+        1.0
+      ],
+      [
+        "Likes",
+        0.23529411764705882
+      ],
+      [
+        "Friend",
+        0.2222222222222222
+      ]
+    ],
+    "Friend": [
+      [
+        "Friend",
+        1.0
+      ],
+      [
+        "Likes",
+        0.36363636363636365
+      ],
+      [
+        "Highschooler",
+        0.1111111111111111
+      ]
+    ],
+    "Likes": [
+      [
+        "Likes",
+        1.0
+      ],
+      [
+        "Friend",
+        0.36363636363636365
+      ],
+      [
+        "Highschooler",
+        0.23529411764705882
+      ]
+    ]
+  },
+  "columns": {
+    "Highschooler.ID": [
+      [
+        "Highschooler.ID",
+        1.0
+      ],
+      [
+        "Likes.stu_id",
+        0.5
+      ],
+      [
+        "Likes.liked_id",
+        0.4
+      ]
+    ],
+    "Highschooler.name": [
+      [
+        "Highschooler.name",
+        1.0
+      ],
+      [
+        "Highschooler.grade",
+        0.4444444444444444
+      ],
+      [
+        "Likes.liked_id",
+        0.16666666666666666
+      ]
+    ],
+    "Highschooler.grade": [
+      [
+        "Highschooler.grade",
+        1.0
+      ],
+      [
+        "Highschooler.name",
+        0.4444444444444444
+      ],
+      [
+        "Friend.friend_id",
+        0.2857142857142857
+      ]
+    ],
+    "Friend.student_id": [
+      [
+        "Friend.student_id",
+        1.0
+      ],
+      [
+        "Likes.stu_id",
+        0.75
+      ],
+      [
+        "Friend.friend_id",
+        0.5263157894736842
+      ]
+    ],
+    "Friend.friend_id": [
+      [
+        "Friend.friend_id",
+        1.0
+      ],
+      [
+        "Likes.liked_id",
+        0.7058823529411765
+      ],
+      [
+        "Friend.student_id",
+        0.5263157894736842
+      ]
+    ],
+    "Likes.student_id": [
+      [
+        "Friend.student_id",
+        1.0
+      ],
+      [
+        "Likes.stu_id",
+        0.75
+      ],
+      [
+        "Friend.friend_id",
+        0.5263157894736842
+      ]
+    ],
+    "Likes.liked_id": [
+      [
+        "Likes.liked_id",
+        1.0
+      ],
+      [
+        "Friend.friend_id",
+        0.7058823529411765
+      ],
+      [
+        "Friend.student_id",
+        0.4444444444444444
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Highschooler": "Highschooler",
+      "Friend": "Friend",
+      "Likes": "Likes"
+    },
+    "columns": {
+      "Highschooler.ID": "Highschooler.ID",
+      "Highschooler.name": "Highschooler.name",
+      "Highschooler.grade": "Highschooler.grade",
+      "Friend.student_id": "Friend.student_id",
+      "Friend.friend_id": "Friend.friend_id",
+      "Likes.student_id": "Likes.stu_id",
+      "Likes.liked_id": "Likes.liked_id"
+    }
+  },
+  "q_B": {
+    "network_1__abbr_v3__q0900": "SELECT \"t2\".\"name\" AS \"name\" FROM \"Friend\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"student_id\" = \"t2\".\"ID\" INTERSECT SELECT \"t2\".\"name\" AS \"name\" FROM \"Likes\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"liked_id\" = \"t2\".\"ID\"",
+    "network_1__abbr_v3__q0901": "SELECT \"t2\".\"name\" AS \"name\" FROM \"Friend\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"student_id\" = \"t2\".\"ID\" INTERSECT SELECT \"t2\".\"name\" AS \"name\" FROM \"Likes\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"liked_id\" = \"t2\".\"ID\"",
+    "network_1__abbr_v3__q0902": "SELECT \"likes\".\"stu_id\" AS \"student_id\", COUNT(*) AS \"_col_1\" FROM \"Likes\" AS \"likes\" GROUP BY \"likes\".\"stu_id\"",
+    "network_1__abbr_v3__q0903": "SELECT \"likes\".\"stu_id\" AS \"student_id\", COUNT(*) AS \"_col_1\" FROM \"Likes\" AS \"likes\" GROUP BY \"likes\".\"stu_id\"",
+    "network_1__abbr_v3__q0904": "SELECT \"t2\".\"name\" AS \"name\", COUNT(*) AS \"_col_1\" FROM \"Likes\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"stu_id\" = \"t2\".\"ID\" GROUP BY \"t1\".\"stu_id\"",
+    "network_1__abbr_v3__q0905": "SELECT \"t2\".\"name\" AS \"name\", COUNT(*) AS \"_col_1\" FROM \"Likes\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"stu_id\" = \"t2\".\"ID\" GROUP BY \"t1\".\"stu_id\"",
+    "network_1__abbr_v3__q0906": "SELECT \"t2\".\"name\" AS \"name\" FROM \"Likes\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"stu_id\" = \"t2\".\"ID\" GROUP BY \"t1\".\"stu_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "network_1__abbr_v3__q0907": "SELECT \"t2\".\"name\" AS \"name\" FROM \"Likes\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"stu_id\" = \"t2\".\"ID\" GROUP BY \"t1\".\"stu_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "network_1__abbr_v3__q0908": "SELECT \"t2\".\"name\" AS \"name\" FROM \"Likes\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"stu_id\" = \"t2\".\"ID\" GROUP BY \"t1\".\"stu_id\" HAVING COUNT(*) >= 2",
+    "network_1__abbr_v3__q0909": "SELECT \"t2\".\"name\" AS \"name\" FROM \"Likes\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"stu_id\" = \"t2\".\"ID\" GROUP BY \"t1\".\"stu_id\" HAVING COUNT(*) >= 2",
+    "network_1__abbr_v3__q0912": "SELECT COUNT(*) AS \"_col_0\" FROM \"Likes\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"stu_id\" = \"t2\".\"ID\" WHERE \"t2\".\"name\" = 'Kyle'",
+    "network_1__abbr_v3__q0913": "SELECT COUNT(*) AS \"_col_0\" FROM \"Likes\" AS \"t1\" JOIN \"Highschooler\" AS \"t2\" ON \"t1\".\"stu_id\" = \"t2\".\"ID\" WHERE \"t2\".\"name\" = 'Kyle'"
+  },
+  "rewrite_errors": {}
+}

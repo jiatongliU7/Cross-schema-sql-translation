@@ -1,0 +1,204 @@
+{
+  "tables": {
+    "AREA_CODE_STATE": [
+      [
+        "AREA_CODE_STATE",
+        0.9999998211860657
+      ],
+      [
+        "VOTES",
+        0.36342793703079224
+      ],
+      [
+        "CONTESTANTS",
+        0.3123626112937927
+      ]
+    ],
+    "CONTESTANTS": [
+      [
+        "CONTESTANTS",
+        1.0
+      ],
+      [
+        "VOTES",
+        0.6677219867706299
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.3123626112937927
+      ]
+    ],
+    "VOTES": [
+      [
+        "VOTES",
+        0.9999998807907104
+      ],
+      [
+        "CONTESTANTS",
+        0.6677219867706299
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.36342793703079224
+      ]
+    ]
+  },
+  "columns": {
+    "AREA_CODE_STATE.area_code": [
+      [
+        "AREA_CODE_STATE.area_code",
+        1.0
+      ],
+      [
+        "AREA_CODE_STATE.state",
+        0.9524585008621216
+      ],
+      [
+        "VOTES.phone_number",
+        0.7252955436706543
+      ]
+    ],
+    "AREA_CODE_STATE.state": [
+      [
+        "AREA_CODE_STATE.state",
+        0.9999999403953552
+      ],
+      [
+        "AREA_CODE_STATE.area_code",
+        0.9524585008621216
+      ],
+      [
+        "VOTES.state",
+        0.774655818939209
+      ]
+    ],
+    "CONTESTANTS.contestant_number": [
+      [
+        "CONTESTANTS.contestant_number",
+        1.0000001192092896
+      ],
+      [
+        "VOTES.contestant_number",
+        0.9529336094856262
+      ],
+      [
+        "CONTESTANTS.participant",
+        0.9062508344650269
+      ]
+    ],
+    "CONTESTANTS.contestant_name": [
+      [
+        "CONTESTANTS.participant",
+        0.9724680781364441
+      ],
+      [
+        "CONTESTANTS.contestant_number",
+        0.9086386561393738
+      ],
+      [
+        "VOTES.contestant_number",
+        0.872271716594696
+      ]
+    ],
+    "VOTES.vote_id": [
+      [
+        "VOTES.vote_id",
+        1.0000001192092896
+      ],
+      [
+        "VOTES.created",
+        0.9414607286453247
+      ],
+      [
+        "VOTES.state",
+        0.9053082466125488
+      ]
+    ],
+    "VOTES.phone_number": [
+      [
+        "VOTES.phone_number",
+        0.9999996423721313
+      ],
+      [
+        "VOTES.vote_id",
+        0.9027066826820374
+      ],
+      [
+        "VOTES.created",
+        0.8947005271911621
+      ]
+    ],
+    "VOTES.state": [
+      [
+        "VOTES.state",
+        1.0000001192092896
+      ],
+      [
+        "VOTES.vote_id",
+        0.9053082466125488
+      ],
+      [
+        "VOTES.created",
+        0.8937534093856812
+      ]
+    ],
+    "VOTES.contestant_number": [
+      [
+        "VOTES.contestant_number",
+        1.0
+      ],
+      [
+        "CONTESTANTS.contestant_number",
+        0.9529336094856262
+      ],
+      [
+        "VOTES.vote_id",
+        0.89341139793396
+      ]
+    ],
+    "VOTES.created": [
+      [
+        "VOTES.created",
+        1.000000238418579
+      ],
+      [
+        "VOTES.vote_id",
+        0.9414607286453247
+      ],
+      [
+        "VOTES.phone_number",
+        0.8947005271911621
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "AREA_CODE_STATE": "AREA_CODE_STATE",
+      "CONTESTANTS": "CONTESTANTS",
+      "VOTES": "VOTES"
+    },
+    "columns": {
+      "AREA_CODE_STATE.area_code": "AREA_CODE_STATE.area_code",
+      "AREA_CODE_STATE.state": "AREA_CODE_STATE.state",
+      "CONTESTANTS.contestant_number": "CONTESTANTS.contestant_number",
+      "CONTESTANTS.contestant_name": "CONTESTANTS.participant",
+      "VOTES.vote_id": "VOTES.vote_id",
+      "VOTES.phone_number": "VOTES.phone_number",
+      "VOTES.state": "VOTES.state",
+      "VOTES.contestant_number": "VOTES.contestant_number",
+      "VOTES.created": "VOTES.created"
+    }
+  },
+  "q_B": {
+    "voter_1__syn_v2__q0688": "SELECT \"contestants\".\"contestant_number\" AS \"contestant_number\", \"contestants\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"contestants\" ORDER BY \"contestant_name\" DESC",
+    "voter_1__syn_v2__q0692": "SELECT \"contestants\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"contestants\" WHERE \"contestants\".\"participant\" <> 'Jessie Alloway'",
+    "voter_1__syn_v2__q0694": "SELECT \"t1\".\"contestant_number\" AS \"contestant_number\", \"t1\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_number\" GROUP BY \"t1\".\"contestant_number\" HAVING COUNT(*) >= 2",
+    "voter_1__syn_v2__q0695": "SELECT \"t1\".\"contestant_number\" AS \"contestant_number\", \"t1\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_number\" GROUP BY \"t1\".\"contestant_number\" ORDER BY COUNT(*) ASC LIMIT 1",
+    "voter_1__syn_v2__q0699": "SELECT \"t2\".\"created\" AS \"created\", \"t2\".\"state\" AS \"state\", \"t2\".\"phone_number\" AS \"phone_number\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_number\" WHERE \"t1\".\"participant\" = 'Tabatha Gehling'",
+    "voter_1__syn_v2__q0700": "SELECT \"t3\".\"area_code\" AS \"area_code\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_number\" JOIN \"AREA_CODE_STATE\" AS \"t3\" ON \"t2\".\"state\" = \"t3\".\"state\" WHERE \"t1\".\"participant\" = 'Tabatha Gehling' INTERSECT SELECT \"t3\".\"area_code\" AS \"area_code\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_number\" JOIN \"AREA_CODE_STATE\" AS \"t3\" ON \"t2\".\"state\" = \"t3\".\"state\" WHERE \"t1\".\"participant\" = 'Kelly Clauss'",
+    "voter_1__syn_v2__q0701": "SELECT \"contestants\".\"participant\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"contestants\" WHERE \"contestants\".\"participant\" LIKE '%al%'"
+  },
+  "rewrite_errors": {},
+  "model": "all-MiniLM-L6-v2",
+  "method": "semantic"
+}

@@ -1,0 +1,338 @@
+{
+  "tables": {
+    "employee": [
+      [
+        "employee",
+        1.0000001192092896
+      ],
+      [
+        "hiring",
+        0.5940170884132385
+      ],
+      [
+        "shop",
+        0.4116356372833252
+      ]
+    ],
+    "shop": [
+      [
+        "shop",
+        1.000000238418579
+      ],
+      [
+        "hiring",
+        0.4476125240325928
+      ],
+      [
+        "employee",
+        0.4116356372833252
+      ]
+    ],
+    "hiring": [
+      [
+        "hiring",
+        1.0000004768371582
+      ],
+      [
+        "employee",
+        0.5940170884132385
+      ],
+      [
+        "shop",
+        0.4476125240325928
+      ]
+    ],
+    "evaluation": [
+      [
+        "evaluation",
+        1.0
+      ],
+      [
+        "hiring",
+        0.3950011730194092
+      ],
+      [
+        "employee",
+        0.3672454357147217
+      ]
+    ]
+  },
+  "columns": {
+    "employee.Employee_ID": [
+      [
+        "employee.Employee_ID",
+        1.0000001192092896
+      ],
+      [
+        "hiring.Employee_ID",
+        0.8352770209312439
+      ],
+      [
+        "employee.Age",
+        0.7549465298652649
+      ]
+    ],
+    "employee.Name": [
+      [
+        "employee.Name",
+        0.9999998807907104
+      ],
+      [
+        "employee.City",
+        0.681775689125061
+      ],
+      [
+        "evaluation.Employee_ID",
+        0.6803683042526245
+      ]
+    ],
+    "employee.Age": [
+      [
+        "employee.Age",
+        1.000000238418579
+      ],
+      [
+        "employee.Employee_ID",
+        0.7549465298652649
+      ],
+      [
+        "hiring.Employee_ID",
+        0.7053819298744202
+      ]
+    ],
+    "employee.City": [
+      [
+        "employee.City",
+        0.9999999403953552
+      ],
+      [
+        "employee.Name",
+        0.681775689125061
+      ],
+      [
+        "evaluation.Employee_ID",
+        0.6205751895904541
+      ]
+    ],
+    "shop.Shop_ID": [
+      [
+        "shop.Shop_ID",
+        1.0000001192092896
+      ],
+      [
+        "hiring.Shop_ID",
+        0.8383938074111938
+      ],
+      [
+        "shop.Number_products",
+        0.8301727771759033
+      ]
+    ],
+    "shop.Name": [
+      [
+        "shop.Name",
+        1.000000238418579
+      ],
+      [
+        "shop.Manager_name",
+        0.8882867693901062
+      ],
+      [
+        "shop.loc",
+        0.7393345832824707
+      ]
+    ],
+    "shop.Location": [
+      [
+        "shop.loc",
+        0.8418835997581482
+      ],
+      [
+        "shop.District",
+        0.8079853057861328
+      ],
+      [
+        "shop.Name",
+        0.7106716632843018
+      ]
+    ],
+    "shop.District": [
+      [
+        "shop.District",
+        0.9999997019767761
+      ],
+      [
+        "shop.loc",
+        0.7734618186950684
+      ],
+      [
+        "shop.Name",
+        0.6686594486236572
+      ]
+    ],
+    "shop.Number_products": [
+      [
+        "shop.Number_products",
+        1.0000001192092896
+      ],
+      [
+        "shop.Shop_ID",
+        0.8301727771759033
+      ],
+      [
+        "hiring.Shop_ID",
+        0.6927368640899658
+      ]
+    ],
+    "shop.Manager_name": [
+      [
+        "shop.Manager_name",
+        1.000000238418579
+      ],
+      [
+        "shop.Name",
+        0.8882867693901062
+      ],
+      [
+        "shop.loc",
+        0.6869421005249023
+      ]
+    ],
+    "hiring.Shop_ID": [
+      [
+        "hiring.Shop_ID",
+        1.000000238418579
+      ],
+      [
+        "shop.Shop_ID",
+        0.8383938074111938
+      ],
+      [
+        "hiring.Employee_ID",
+        0.7532134056091309
+      ]
+    ],
+    "hiring.Employee_ID": [
+      [
+        "hiring.Employee_ID",
+        1.0
+      ],
+      [
+        "employee.Employee_ID",
+        0.8352770209312439
+      ],
+      [
+        "hiring.Shop_ID",
+        0.7532134056091309
+      ]
+    ],
+    "hiring.Start_from": [
+      [
+        "hiring.Start_from",
+        1.0000001192092896
+      ],
+      [
+        "hiring.Is_full_time",
+        0.6026432514190674
+      ],
+      [
+        "hiring.Employee_ID",
+        0.5866711139678955
+      ]
+    ],
+    "hiring.Is_full_time": [
+      [
+        "hiring.Is_full_time",
+        1.000000238418579
+      ],
+      [
+        "hiring.Employee_ID",
+        0.7124528288841248
+      ],
+      [
+        "hiring.Start_from",
+        0.6026432514190674
+      ]
+    ],
+    "evaluation.Employee_ID": [
+      [
+        "evaluation.Employee_ID",
+        0.9999998807907104
+      ],
+      [
+        "employee.Name",
+        0.6803683042526245
+      ],
+      [
+        "employee.Employee_ID",
+        0.621863842010498
+      ]
+    ],
+    "evaluation.Year_awarded": [
+      [
+        "evaluation.Year_awarded",
+        1.0
+      ],
+      [
+        "evaluation.Employee_ID",
+        0.5100672245025635
+      ],
+      [
+        "evaluation.Bonus",
+        0.45991015434265137
+      ]
+    ],
+    "evaluation.Bonus": [
+      [
+        "evaluation.Bonus",
+        0.9999998211860657
+      ],
+      [
+        "evaluation.Year_awarded",
+        0.45991015434265137
+      ],
+      [
+        "evaluation.Employee_ID",
+        0.42070457339286804
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "employee": "employee",
+      "shop": "shop",
+      "hiring": "hiring",
+      "evaluation": "evaluation"
+    },
+    "columns": {
+      "employee.Employee_ID": "employee.Employee_ID",
+      "employee.Name": "employee.Name",
+      "employee.Age": "employee.Age",
+      "employee.City": "employee.City",
+      "shop.Shop_ID": "shop.Shop_ID",
+      "shop.Name": "shop.Name",
+      "shop.Location": "shop.loc",
+      "shop.District": "shop.District",
+      "shop.Number_products": "shop.Number_products",
+      "shop.Manager_name": "shop.Manager_name",
+      "hiring.Shop_ID": "hiring.Shop_ID",
+      "hiring.Employee_ID": "hiring.Employee_ID",
+      "hiring.Start_from": "hiring.Start_from",
+      "hiring.Is_full_time": "hiring.Is_full_time",
+      "evaluation.Employee_ID": "evaluation.Employee_ID",
+      "evaluation.Year_awarded": "evaluation.Year_awarded",
+      "evaluation.Bonus": "evaluation.Bonus"
+    }
+  },
+  "q_B": {
+    "employee_hire_evaluation__abbr_v4__q0267": "SELECT COUNT(*) AS \"_col_0\", \"shop\".\"loc\" AS \"location\" FROM \"shop\" AS \"shop\" GROUP BY \"shop\".\"loc\"",
+    "employee_hire_evaluation__abbr_v4__q0268": "SELECT COUNT(*) AS \"_col_0\", \"shop\".\"loc\" AS \"location\" FROM \"shop\" AS \"shop\" GROUP BY \"shop\".\"loc\"",
+    "employee_hire_evaluation__abbr_v4__q0273": "SELECT \"shop\".\"Name\" AS \"name\", \"shop\".\"loc\" AS \"location\", \"shop\".\"District\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"Number_products\" DESC",
+    "employee_hire_evaluation__abbr_v4__q0274": "SELECT \"shop\".\"Name\" AS \"name\", \"shop\".\"loc\" AS \"location\", \"shop\".\"District\" AS \"district\" FROM \"shop\" AS \"shop\" ORDER BY \"shop\".\"Number_products\" DESC",
+    "employee_hire_evaluation__abbr_v4__q0295": "SELECT COUNT(DISTINCT \"shop\".\"loc\") AS \"_col_0\" FROM \"shop\" AS \"shop\"",
+    "employee_hire_evaluation__abbr_v4__q0296": "SELECT COUNT(DISTINCT \"shop\".\"loc\") AS \"_col_0\" FROM \"shop\" AS \"shop\""
+  },
+  "rewrite_errors": {},
+  "model": "models/spider-run-epoch1",
+  "method": "fk"
+}

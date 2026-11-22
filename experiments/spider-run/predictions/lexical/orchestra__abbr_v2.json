@@ -1,0 +1,442 @@
+{
+  "tables": {
+    "conductor": [
+      [
+        "conductor",
+        1.0
+      ],
+      [
+        "orchestra",
+        0.2222222222222222
+      ],
+      [
+        "performance",
+        0.2
+      ]
+    ],
+    "orchestra": [
+      [
+        "orchestra",
+        1.0
+      ],
+      [
+        "performance",
+        0.4
+      ],
+      [
+        "conductor",
+        0.2222222222222222
+      ]
+    ],
+    "performance": [
+      [
+        "performance",
+        1.0
+      ],
+      [
+        "orchestra",
+        0.3
+      ],
+      [
+        "conductor",
+        0.2
+      ]
+    ],
+    "show": [
+      [
+        "show",
+        1.0
+      ],
+      [
+        "conductor",
+        0.15384615384615385
+      ],
+      [
+        "orchestra",
+        0.15384615384615385
+      ]
+    ]
+  },
+  "columns": {
+    "conductor.Conductor_ID": [
+      [
+        "conductor.Conductor_ID",
+        1.0
+      ],
+      [
+        "orchestra.cond_id",
+        0.7368421052631579
+      ],
+      [
+        "performance.orch_id",
+        0.5263157894736842
+      ]
+    ],
+    "conductor.Name": [
+      [
+        "conductor.Name",
+        1.0
+      ],
+      [
+        "conductor.Age",
+        0.5714285714285714
+      ],
+      [
+        "performance.Date",
+        0.5
+      ]
+    ],
+    "conductor.Age": [
+      [
+        "conductor.Age",
+        1.0
+      ],
+      [
+        "conductor.Name",
+        0.5714285714285714
+      ],
+      [
+        "performance.Date",
+        0.5714285714285714
+      ]
+    ],
+    "conductor.Nationality": [
+      [
+        "conductor.Nationality",
+        1.0
+      ],
+      [
+        "show.attend",
+        0.35294117647058826
+      ],
+      [
+        "orchestra.cond_id",
+        0.3333333333333333
+      ]
+    ],
+    "conductor.Year_of_Work": [
+      [
+        "conductor.Year_of_Work",
+        1.0
+      ],
+      [
+        "orchestra.Year_of_Founded",
+        0.6666666666666666
+      ],
+      [
+        "show.perf_id",
+        0.42105263157894735
+      ]
+    ],
+    "orchestra.Orchestra_ID": [
+      [
+        "orchestra.Orchestra_ID",
+        1.0
+      ],
+      [
+        "performance.orch_id",
+        0.7368421052631579
+      ],
+      [
+        "performance.pref_id",
+        0.5263157894736842
+      ]
+    ],
+    "orchestra.Orchestra": [
+      [
+        "orchestra.Orchestra_ID",
+        0.8571428571428571
+      ],
+      [
+        "orchestra.orch",
+        0.6153846153846154
+      ],
+      [
+        "show.Result",
+        0.5333333333333333
+      ]
+    ],
+    "orchestra.Conductor_ID": [
+      [
+        "conductor.Conductor_ID",
+        1.0
+      ],
+      [
+        "orchestra.cond_id",
+        0.7368421052631579
+      ],
+      [
+        "performance.orch_id",
+        0.5263157894736842
+      ]
+    ],
+    "orchestra.Record_Company": [
+      [
+        "orchestra.record_co",
+        0.782608695652174
+      ],
+      [
+        "orchestra.Major_Record_Format",
+        0.6060606060606061
+      ],
+      [
+        "orchestra.cond_id",
+        0.38095238095238093
+      ]
+    ],
+    "orchestra.Year_of_Founded": [
+      [
+        "orchestra.Year_of_Founded",
+        1.0
+      ],
+      [
+        "conductor.Year_of_Work",
+        0.6666666666666666
+      ],
+      [
+        "show.perf_id",
+        0.45454545454545453
+      ]
+    ],
+    "orchestra.Major_Record_Format": [
+      [
+        "orchestra.Major_Record_Format",
+        1.0
+      ],
+      [
+        "orchestra.record_co",
+        0.5714285714285714
+      ],
+      [
+        "orchestra.Year_of_Founded",
+        0.4117647058823529
+      ]
+    ],
+    "performance.Performance_ID": [
+      [
+        "show.perf_id",
+        0.6666666666666666
+      ],
+      [
+        "performance.pref_id",
+        0.5714285714285714
+      ],
+      [
+        "performance.orch_id",
+        0.5714285714285714
+      ]
+    ],
+    "performance.Orchestra_ID": [
+      [
+        "orchestra.Orchestra_ID",
+        1.0
+      ],
+      [
+        "performance.orch_id",
+        0.7368421052631579
+      ],
+      [
+        "performance.pref_id",
+        0.5263157894736842
+      ]
+    ],
+    "performance.Type": [
+      [
+        "performance.Type",
+        1.0
+      ],
+      [
+        "performance.Date",
+        0.5
+      ],
+      [
+        "show.attend",
+        0.4
+      ]
+    ],
+    "performance.Date": [
+      [
+        "performance.Date",
+        1.0
+      ],
+      [
+        "show.attend",
+        0.6
+      ],
+      [
+        "conductor.Age",
+        0.5714285714285714
+      ]
+    ],
+    "performance.Official_ratings_in_millions": [
+      [
+        "performance.ofcl_rtg_m",
+        0.5263157894736842
+      ],
+      [
+        "conductor.Nationality",
+        0.3076923076923077
+      ],
+      [
+        "orchestra.Orchestra_ID",
+        0.3
+      ]
+    ],
+    "performance.Weekly_rank": [
+      [
+        "performance.wkly_rank",
+        0.9
+      ],
+      [
+        "performance.ofcl_rtg_m",
+        0.2857142857142857
+      ],
+      [
+        "orchestra.Orchestra_ID",
+        0.2608695652173913
+      ]
+    ],
+    "performance.Share": [
+      [
+        "performance.Share",
+        1.0
+      ],
+      [
+        "conductor.Age",
+        0.5
+      ],
+      [
+        "conductor.Name",
+        0.4444444444444444
+      ]
+    ],
+    "show.Show_ID": [
+      [
+        "show.Show_ID",
+        1.0
+      ],
+      [
+        "performance.orch_id",
+        0.5714285714285714
+      ],
+      [
+        "orchestra.cond_id",
+        0.5714285714285714
+      ]
+    ],
+    "show.Performance_ID": [
+      [
+        "show.perf_id",
+        0.6666666666666666
+      ],
+      [
+        "performance.pref_id",
+        0.5714285714285714
+      ],
+      [
+        "performance.orch_id",
+        0.5714285714285714
+      ]
+    ],
+    "show.If_first_show": [
+      [
+        "show.If_first_show",
+        1.0
+      ],
+      [
+        "performance.ofcl_rtg_m",
+        0.43478260869565216
+      ],
+      [
+        "show.Show_ID",
+        0.4
+      ]
+    ],
+    "show.Result": [
+      [
+        "show.Result",
+        1.0
+      ],
+      [
+        "orchestra.Orchestra_ID",
+        0.4444444444444444
+      ],
+      [
+        "performance.Share",
+        0.36363636363636365
+      ]
+    ],
+    "show.Attendance": [
+      [
+        "show.attend",
+        0.75
+      ],
+      [
+        "performance.Date",
+        0.42857142857142855
+      ],
+      [
+        "orchestra.Year_of_Founded",
+        0.32
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "conductor": "conductor",
+      "orchestra": "orchestra",
+      "performance": "performance",
+      "show": "show"
+    },
+    "columns": {
+      "conductor.Conductor_ID": "conductor.Conductor_ID",
+      "conductor.Name": "conductor.Name",
+      "conductor.Age": "conductor.Age",
+      "conductor.Nationality": "conductor.Nationality",
+      "conductor.Year_of_Work": "conductor.Year_of_Work",
+      "orchestra.Orchestra_ID": "orchestra.Orchestra_ID",
+      "orchestra.Orchestra": "orchestra.orch",
+      "orchestra.Conductor_ID": "orchestra.cond_id",
+      "orchestra.Record_Company": "orchestra.record_co",
+      "orchestra.Year_of_Founded": "orchestra.Year_of_Founded",
+      "orchestra.Major_Record_Format": "orchestra.Major_Record_Format",
+      "performance.Performance_ID": "performance.pref_id",
+      "performance.Orchestra_ID": "performance.orch_id",
+      "performance.Type": "performance.Type",
+      "performance.Date": "performance.Date",
+      "performance.Official_ratings_in_millions": "performance.ofcl_rtg_m",
+      "performance.Weekly_rank": "performance.wkly_rank",
+      "performance.Share": "performance.Share",
+      "show.Show_ID": "show.Show_ID",
+      "show.Performance_ID": "show.perf_id",
+      "show.If_first_show": "show.If_first_show",
+      "show.Result": "show.Result",
+      "show.Attendance": "show.attend"
+    }
+  },
+  "q_B": {
+    "orchestra__abbr_v2__q0828": "SELECT \"orchestra\".\"record_co\" AS \"record_company\" FROM \"orchestra\" AS \"orchestra\" ORDER BY \"orchestra\".\"Year_of_Founded\" DESC",
+    "orchestra__abbr_v2__q0829": "SELECT \"orchestra\".\"record_co\" AS \"record_company\" FROM \"orchestra\" AS \"orchestra\" ORDER BY \"orchestra\".\"Year_of_Founded\" DESC",
+    "orchestra__abbr_v2__q0830": "SELECT AVG(\"show\".\"attend\") AS \"_col_0\" FROM \"show\" AS \"show\"",
+    "orchestra__abbr_v2__q0831": "SELECT AVG(\"show\".\"attend\") AS \"_col_0\" FROM \"show\" AS \"show\"",
+    "orchestra__abbr_v2__q0840": "SELECT \"t1\".\"Name\" AS \"name\", \"t2\".\"orch\" AS \"orchestra\" FROM \"conductor\" AS \"t1\" JOIN \"orchestra\" AS \"t2\" ON \"t1\".\"Conductor_ID\" = \"t2\".\"cond_id\"",
+    "orchestra__abbr_v2__q0841": "SELECT \"t1\".\"Name\" AS \"name\", \"t2\".\"orch\" AS \"orchestra\" FROM \"conductor\" AS \"t1\" JOIN \"orchestra\" AS \"t2\" ON \"t1\".\"Conductor_ID\" = \"t2\".\"cond_id\"",
+    "orchestra__abbr_v2__q0842": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"conductor\" AS \"t1\" JOIN \"orchestra\" AS \"t2\" ON \"t1\".\"Conductor_ID\" = \"t2\".\"cond_id\" GROUP BY \"t2\".\"cond_id\" HAVING COUNT(*) > 1",
+    "orchestra__abbr_v2__q0843": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"conductor\" AS \"t1\" JOIN \"orchestra\" AS \"t2\" ON \"t1\".\"Conductor_ID\" = \"t2\".\"cond_id\" GROUP BY \"t2\".\"cond_id\" HAVING COUNT(*) > 1",
+    "orchestra__abbr_v2__q0844": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"conductor\" AS \"t1\" JOIN \"orchestra\" AS \"t2\" ON \"t1\".\"Conductor_ID\" = \"t2\".\"cond_id\" GROUP BY \"t2\".\"cond_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "orchestra__abbr_v2__q0845": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"conductor\" AS \"t1\" JOIN \"orchestra\" AS \"t2\" ON \"t1\".\"Conductor_ID\" = \"t2\".\"cond_id\" GROUP BY \"t2\".\"cond_id\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "orchestra__abbr_v2__q0846": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"conductor\" AS \"t1\" JOIN \"orchestra\" AS \"t2\" ON \"t1\".\"Conductor_ID\" = \"t2\".\"cond_id\" WHERE \"t2\".\"Year_of_Founded\" > 2008",
+    "orchestra__abbr_v2__q0847": "SELECT \"t1\".\"Name\" AS \"name\" FROM \"conductor\" AS \"t1\" JOIN \"orchestra\" AS \"t2\" ON \"t1\".\"Conductor_ID\" = \"t2\".\"cond_id\" WHERE \"t2\".\"Year_of_Founded\" > 2008",
+    "orchestra__abbr_v2__q0848": "SELECT \"orchestra\".\"record_co\" AS \"record_company\", COUNT(*) AS \"_col_1\" FROM \"orchestra\" AS \"orchestra\" GROUP BY \"orchestra\".\"record_co\"",
+    "orchestra__abbr_v2__q0849": "SELECT \"orchestra\".\"record_co\" AS \"record_company\", COUNT(*) AS \"_col_1\" FROM \"orchestra\" AS \"orchestra\" GROUP BY \"orchestra\".\"record_co\"",
+    "orchestra__abbr_v2__q0852": "SELECT \"orchestra\".\"record_co\" AS \"record_company\" FROM \"orchestra\" AS \"orchestra\" GROUP BY \"orchestra\".\"record_co\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "orchestra__abbr_v2__q0853": "SELECT \"orchestra\".\"record_co\" AS \"record_company\" FROM \"orchestra\" AS \"orchestra\" GROUP BY \"orchestra\".\"record_co\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "orchestra__abbr_v2__q0854": "SELECT \"orchestra\".\"orch\" AS \"orchestra\" FROM \"orchestra\" AS \"orchestra\" WHERE NOT \"orchestra\".\"Orchestra_ID\" IN (SELECT \"performance\".\"orch_id\" AS \"orchestra_id\" FROM \"performance\" AS \"performance\")",
+    "orchestra__abbr_v2__q0855": "SELECT \"orchestra\".\"orch\" AS \"orchestra\" FROM \"orchestra\" AS \"orchestra\" WHERE NOT \"orchestra\".\"Orchestra_ID\" IN (SELECT \"performance\".\"orch_id\" AS \"orchestra_id\" FROM \"performance\" AS \"performance\")",
+    "orchestra__abbr_v2__q0856": "SELECT \"orchestra\".\"record_co\" AS \"record_company\" FROM \"orchestra\" AS \"orchestra\" WHERE \"orchestra\".\"Year_of_Founded\" < 2003 INTERSECT SELECT \"orchestra\".\"record_co\" AS \"record_company\" FROM \"orchestra\" AS \"orchestra\" WHERE \"orchestra\".\"Year_of_Founded\" > 2003",
+    "orchestra__abbr_v2__q0857": "SELECT \"orchestra\".\"record_co\" AS \"record_company\" FROM \"orchestra\" AS \"orchestra\" WHERE \"orchestra\".\"Year_of_Founded\" < 2003 INTERSECT SELECT \"orchestra\".\"record_co\" AS \"record_company\" FROM \"orchestra\" AS \"orchestra\" WHERE \"orchestra\".\"Year_of_Founded\" > 2003",
+    "orchestra__abbr_v2__q0860": "SELECT \"t1\".\"Year_of_Founded\" AS \"year_of_founded\" FROM \"orchestra\" AS \"t1\" JOIN \"performance\" AS \"t2\" ON \"t1\".\"Orchestra_ID\" = \"t2\".\"orch_id\" GROUP BY \"t2\".\"orch_id\" HAVING COUNT(*) > 1",
+    "orchestra__abbr_v2__q0861": "SELECT \"t1\".\"Year_of_Founded\" AS \"year_of_founded\" FROM \"orchestra\" AS \"t1\" JOIN \"performance\" AS \"t2\" ON \"t1\".\"Orchestra_ID\" = \"t2\".\"orch_id\" GROUP BY \"t2\".\"orch_id\" HAVING COUNT(*) > 1"
+  },
+  "rewrite_errors": {}
+}

@@ -1,0 +1,193 @@
+{
+  "tables": {
+    "singer": [
+      [
+        "singer",
+        1.0
+      ],
+      [
+        "song",
+        0.6
+      ]
+    ],
+    "song": [
+      [
+        "song",
+        1.0
+      ],
+      [
+        "singer",
+        0.6
+      ]
+    ]
+  },
+  "columns": {
+    "singer.Singer_ID": [
+      [
+        "song.Singer_ID",
+        1.0
+      ],
+      [
+        "singer.Singer_ID",
+        1.0
+      ],
+      [
+        "song.Song_ID",
+        0.75
+      ]
+    ],
+    "singer.Name": [
+      [
+        "singer.Name",
+        1.0
+      ],
+      [
+        "song.Sales",
+        0.4444444444444444
+      ],
+      [
+        "song.Singer_ID",
+        0.3076923076923077
+      ]
+    ],
+    "singer.Birth_Year": [
+      [
+        "singer.Birth_Year",
+        1.0
+      ],
+      [
+        "song.Title",
+        0.4
+      ],
+      [
+        "song.Singer_ID",
+        0.3157894736842105
+      ]
+    ],
+    "singer.Net_Worth_Millions": [
+      [
+        "song.Highest_Position",
+        0.47058823529411764
+      ],
+      [
+        "song.Singer_ID",
+        0.2962962962962963
+      ],
+      [
+        "singer.Singer_ID",
+        0.2962962962962963
+      ]
+    ],
+    "singer.Citizenship": [
+      [
+        "singer.Citizenship",
+        1.0
+      ],
+      [
+        "song.Title",
+        0.375
+      ],
+      [
+        "song.Highest_Position",
+        0.2962962962962963
+      ]
+    ],
+    "song.Song_ID": [
+      [
+        "song.Song_ID",
+        1.0
+      ],
+      [
+        "song.Singer_ID",
+        0.75
+      ],
+      [
+        "singer.Singer_ID",
+        0.75
+      ]
+    ],
+    "song.Title": [
+      [
+        "song.Title",
+        1.0
+      ],
+      [
+        "song.Sales",
+        0.4
+      ],
+      [
+        "singer.Citizenship",
+        0.375
+      ]
+    ],
+    "song.Singer_ID": [
+      [
+        "song.Singer_ID",
+        1.0
+      ],
+      [
+        "singer.Singer_ID",
+        1.0
+      ],
+      [
+        "song.Song_ID",
+        0.75
+      ]
+    ],
+    "song.Sales": [
+      [
+        "song.Sales",
+        1.0
+      ],
+      [
+        "singer.gross_value",
+        0.5
+      ],
+      [
+        "singer.Name",
+        0.4444444444444444
+      ]
+    ],
+    "song.Highest_Position": [
+      [
+        "song.Highest_Position",
+        1.0
+      ],
+      [
+        "singer.Citizenship",
+        0.2962962962962963
+      ],
+      [
+        "song.Title",
+        0.2857142857142857
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "singer": "singer",
+      "song": "song"
+    },
+    "columns": {
+      "singer.Singer_ID": "singer.Singer_ID",
+      "singer.Name": "singer.Name",
+      "singer.Birth_Year": "singer.Birth_Year",
+      "singer.Net_Worth_Millions": "singer.gross_value",
+      "singer.Citizenship": "singer.Citizenship",
+      "song.Song_ID": "song.Song_ID",
+      "song.Title": "song.Title",
+      "song.Singer_ID": "song.Singer_ID",
+      "song.Sales": "song.Sales",
+      "song.Highest_Position": "song.Highest_Position"
+    }
+  },
+  "q_B": {
+    "singer__syn_v2__q1002": "SELECT \"singer\".\"Name\" AS \"name\" FROM \"singer\" AS \"singer\" ORDER BY \"singer\".\"gross_value\" ASC",
+    "singer__syn_v2__q1003": "SELECT \"singer\".\"Name\" AS \"name\" FROM \"singer\" AS \"singer\" ORDER BY \"singer\".\"gross_value\" ASC",
+    "singer__syn_v2__q1010": "SELECT \"singer\".\"Name\" AS \"name\" FROM \"singer\" AS \"singer\" ORDER BY \"singer\".\"gross_value\" DESC LIMIT 1",
+    "singer__syn_v2__q1011": "SELECT \"singer\".\"Name\" AS \"name\" FROM \"singer\" AS \"singer\" ORDER BY \"singer\".\"gross_value\" DESC LIMIT 1",
+    "singer__syn_v2__q1016": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\", MAX(\"singer\".\"gross_value\") AS \"_col_1\" FROM \"singer\" AS \"singer\" GROUP BY \"singer\".\"Citizenship\"",
+    "singer__syn_v2__q1017": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\", MAX(\"singer\".\"gross_value\") AS \"_col_1\" FROM \"singer\" AS \"singer\" GROUP BY \"singer\".\"Citizenship\""
+  },
+  "rewrite_errors": {}
+}

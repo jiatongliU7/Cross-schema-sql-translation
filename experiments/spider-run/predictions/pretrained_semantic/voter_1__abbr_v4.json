@@ -1,0 +1,207 @@
+{
+  "tables": {
+    "AREA_CODE_STATE": [
+      [
+        "AREA_CODE_STATE",
+        0.9999998211860657
+      ],
+      [
+        "VOTES",
+        0.36342793703079224
+      ],
+      [
+        "CONTESTANTS",
+        0.3123626112937927
+      ]
+    ],
+    "CONTESTANTS": [
+      [
+        "CONTESTANTS",
+        1.0
+      ],
+      [
+        "VOTES",
+        0.6677219867706299
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.3123626112937927
+      ]
+    ],
+    "VOTES": [
+      [
+        "VOTES",
+        0.9999998807907104
+      ],
+      [
+        "CONTESTANTS",
+        0.6677219867706299
+      ],
+      [
+        "AREA_CODE_STATE",
+        0.36342793703079224
+      ]
+    ]
+  },
+  "columns": {
+    "AREA_CODE_STATE.area_code": [
+      [
+        "AREA_CODE_STATE.area_code",
+        1.0
+      ],
+      [
+        "AREA_CODE_STATE.state",
+        0.9524585008621216
+      ],
+      [
+        "VOTES.phone_number",
+        0.7252955436706543
+      ]
+    ],
+    "AREA_CODE_STATE.state": [
+      [
+        "AREA_CODE_STATE.state",
+        0.9999999403953552
+      ],
+      [
+        "AREA_CODE_STATE.area_code",
+        0.9524585008621216
+      ],
+      [
+        "VOTES.st",
+        0.7350162267684937
+      ]
+    ],
+    "CONTESTANTS.contestant_number": [
+      [
+        "CONTESTANTS.contestant_number",
+        1.0000001192092896
+      ],
+      [
+        "VOTES.contestant_no",
+        0.9342420101165771
+      ],
+      [
+        "CONTESTANTS.contestant_name",
+        0.9086386561393738
+      ]
+    ],
+    "CONTESTANTS.contestant_name": [
+      [
+        "CONTESTANTS.contestant_name",
+        1.0
+      ],
+      [
+        "CONTESTANTS.contestant_number",
+        0.9086386561393738
+      ],
+      [
+        "VOTES.contestant_no",
+        0.8834183216094971
+      ]
+    ],
+    "VOTES.vote_id": [
+      [
+        "VOTES.vote_id",
+        1.0000001192092896
+      ],
+      [
+        "VOTES.created",
+        0.9414607286453247
+      ],
+      [
+        "VOTES.st",
+        0.9229394197463989
+      ]
+    ],
+    "VOTES.phone_number": [
+      [
+        "VOTES.phone_number",
+        0.9999996423721313
+      ],
+      [
+        "VOTES.vote_id",
+        0.9027066826820374
+      ],
+      [
+        "VOTES.created",
+        0.8947005271911621
+      ]
+    ],
+    "VOTES.state": [
+      [
+        "VOTES.st",
+        0.9614226818084717
+      ],
+      [
+        "VOTES.vote_id",
+        0.9053082466125488
+      ],
+      [
+        "VOTES.created",
+        0.8937534093856812
+      ]
+    ],
+    "VOTES.contestant_number": [
+      [
+        "VOTES.contestant_no",
+        0.9842580556869507
+      ],
+      [
+        "CONTESTANTS.contestant_number",
+        0.9529336094856262
+      ],
+      [
+        "VOTES.vote_id",
+        0.89341139793396
+      ]
+    ],
+    "VOTES.created": [
+      [
+        "VOTES.created",
+        1.000000238418579
+      ],
+      [
+        "VOTES.vote_id",
+        0.9414607286453247
+      ],
+      [
+        "VOTES.st",
+        0.9170427322387695
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "AREA_CODE_STATE": "AREA_CODE_STATE",
+      "CONTESTANTS": "CONTESTANTS",
+      "VOTES": "VOTES"
+    },
+    "columns": {
+      "AREA_CODE_STATE.area_code": "AREA_CODE_STATE.area_code",
+      "AREA_CODE_STATE.state": "AREA_CODE_STATE.state",
+      "CONTESTANTS.contestant_number": "CONTESTANTS.contestant_number",
+      "CONTESTANTS.contestant_name": "CONTESTANTS.contestant_name",
+      "VOTES.vote_id": "VOTES.vote_id",
+      "VOTES.phone_number": "VOTES.phone_number",
+      "VOTES.state": "VOTES.st",
+      "VOTES.contestant_number": "VOTES.contestant_no",
+      "VOTES.created": "VOTES.created"
+    }
+  },
+  "q_B": {
+    "voter_1__abbr_v4__q0689": "SELECT \"votes\".\"vote_id\" AS \"vote_id\", \"votes\".\"phone_number\" AS \"phone_number\", \"votes\".\"st\" AS \"state\" FROM \"VOTES\" AS \"votes\"",
+    "voter_1__abbr_v4__q0691": "SELECT MAX(\"votes\".\"created\") AS \"_col_0\" FROM \"VOTES\" AS \"votes\" WHERE \"votes\".\"st\" = 'CA'",
+    "voter_1__abbr_v4__q0693": "SELECT DISTINCT \"votes\".\"st\" AS \"state\", \"votes\".\"created\" AS \"created\" FROM \"VOTES\" AS \"votes\"",
+    "voter_1__abbr_v4__q0694": "SELECT \"t1\".\"contestant_number\" AS \"contestant_number\", \"t1\".\"contestant_name\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_no\" GROUP BY \"t1\".\"contestant_number\" HAVING COUNT(*) >= 2",
+    "voter_1__abbr_v4__q0695": "SELECT \"t1\".\"contestant_number\" AS \"contestant_number\", \"t1\".\"contestant_name\" AS \"contestant_name\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_no\" GROUP BY \"t1\".\"contestant_number\" ORDER BY COUNT(*) ASC LIMIT 1",
+    "voter_1__abbr_v4__q0696": "SELECT COUNT(*) AS \"_col_0\" FROM \"VOTES\" AS \"votes\" WHERE \"votes\".\"st\" = 'NY' OR \"votes\".\"st\" = 'CA'",
+    "voter_1__abbr_v4__q0697": "SELECT COUNT(*) AS \"_col_0\" FROM \"CONTESTANTS\" AS \"contestants\" WHERE NOT \"contestants\".\"contestant_number\" IN (SELECT \"votes\".\"contestant_no\" AS \"contestant_number\" FROM \"VOTES\" AS \"votes\")",
+    "voter_1__abbr_v4__q0698": "SELECT \"t1\".\"area_code\" AS \"area_code\" FROM \"AREA_CODE_STATE\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"state\" = \"t2\".\"st\" GROUP BY \"t1\".\"area_code\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "voter_1__abbr_v4__q0699": "SELECT \"t2\".\"created\" AS \"created\", \"t2\".\"st\" AS \"state\", \"t2\".\"phone_number\" AS \"phone_number\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_no\" WHERE \"t1\".\"contestant_name\" = 'Tabatha Gehling'",
+    "voter_1__abbr_v4__q0700": "SELECT \"t3\".\"area_code\" AS \"area_code\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_no\" JOIN \"AREA_CODE_STATE\" AS \"t3\" ON \"t2\".\"st\" = \"t3\".\"state\" WHERE \"t1\".\"contestant_name\" = 'Tabatha Gehling' INTERSECT SELECT \"t3\".\"area_code\" AS \"area_code\" FROM \"CONTESTANTS\" AS \"t1\" JOIN \"VOTES\" AS \"t2\" ON \"t1\".\"contestant_number\" = \"t2\".\"contestant_no\" JOIN \"AREA_CODE_STATE\" AS \"t3\" ON \"t2\".\"st\" = \"t3\".\"state\" WHERE \"t1\".\"contestant_name\" = 'Kelly Clauss'"
+  },
+  "rewrite_errors": {},
+  "model": "all-MiniLM-L6-v2",
+  "method": "semantic"
+}

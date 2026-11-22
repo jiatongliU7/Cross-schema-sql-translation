@@ -1,0 +1,6 @@
+method,group,n_queries,gold_sql_errors,pred_sql_executable_rate,execution_equivalence,missing_sql,prediction_sql_errors,table_accuracy,column_accuracy,column_top1_accuracy,column_top3_recall,n_tables,n_columns
+lexical,overall,1515,0,1.0,0.891089,0,0,1.0,0.981915,0.67234,0.87234,180,940
+lexical,level=L2,823,0,1.0,0.925881,0,0,,,,,,
+lexical,level=L3,692,0,1.0,0.849711,0,0,,,,,,
+lexical,is_join=false,849,0,1.0,0.876325,0,0,,,,,,
+lexical,is_join=true,666,0,1.0,0.90991,0,0,,,,,,
