@@ -1,0 +1,90 @@
+{
+  "db_id": "pets_1_1",
+  "tables": [
+    {
+      "name": "Has_Pet",
+      "columns": [
+        {
+          "name": "StuID",
+          "type": "number"
+        },
+        {
+          "name": "PetID",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Pets",
+      "columns": [
+        {
+          "name": "PetType",
+          "type": "text"
+        },
+        {
+          "name": "pet_age",
+          "type": "number"
+        },
+        {
+          "name": "wt",
+          "type": "number"
+        },
+        {
+          "name": "PetID",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Student",
+      "columns": [
+        {
+          "name": "Fname",
+          "type": "text"
+        },
+        {
+          "name": "StuID",
+          "type": "number"
+        },
+        {
+          "name": "Age",
+          "type": "number"
+        },
+        {
+          "name": "city_code",
+          "type": "text"
+        },
+        {
+          "name": "Major",
+          "type": "number"
+        },
+        {
+          "name": "Sex",
+          "type": "text"
+        },
+        {
+          "name": "LName",
+          "type": "text"
+        },
+        {
+          "name": "adv",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "Pets.PetID",
+    "Student.StuID"
+  ],
+  "foreign_keys": [
+    {
+      "from": "Has_Pet.PetID",
+      "to": "Pets.PetID"
+    },
+    {
+      "from": "Has_Pet.StuID",
+      "to": "Student.StuID"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "tables": {
+    "Student": "Student",
+    "Has_Pet": "Has_Pet",
+    "Pets": "Pets"
+  },
+  "columns": {
+    "Student.StuID": "Student.StuID",
+    "Student.LName": "Student.LName",
+    "Student.Fname": "Student.Fname",
+    "Student.Age": "Student.Age",
+    "Student.Sex": "Student.Sex",
+    "Student.Major": "Student.Major",
+    "Student.Advisor": "Student.Advisor",
+    "Student.city_code": "Student.city_code",
+    "Has_Pet.StuID": "Has_Pet.StuID",
+    "Has_Pet.PetID": "Has_Pet.PetID",
+    "Pets.PetID": "Pets.PetID",
+    "Pets.PetType": "Pets.type_of_animal",
+    "Pets.pet_age": "Pets.pet_age",
+    "Pets.weight": "Pets.weight"
+  }
+}

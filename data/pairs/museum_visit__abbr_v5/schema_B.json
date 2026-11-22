@@ -1,0 +1,83 @@
+{
+  "db_id": "museum_visit_5",
+  "tables": [
+    {
+      "name": "museum",
+      "columns": [
+        {
+          "name": "Open_Year",
+          "type": "text"
+        },
+        {
+          "name": "mus_id",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "num_stf",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "visit",
+      "columns": [
+        {
+          "name": "Num_of_Ticket",
+          "type": "number"
+        },
+        {
+          "name": "visitor_ID",
+          "type": "text"
+        },
+        {
+          "name": "Museum_ID",
+          "type": "number"
+        },
+        {
+          "name": "Total_spent",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "visitor",
+      "columns": [
+        {
+          "name": "Level_of_membership",
+          "type": "number"
+        },
+        {
+          "name": "ID",
+          "type": "number"
+        },
+        {
+          "name": "Age",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "visitor.ID",
+    "visit.Museum_ID",
+    "museum.mus_id"
+  ],
+  "foreign_keys": [
+    {
+      "from": "visit.visitor_ID",
+      "to": "visitor.ID"
+    },
+    {
+      "from": "visit.Museum_ID",
+      "to": "museum.mus_id"
+    }
+  ]
+}

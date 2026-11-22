@@ -1,0 +1,281 @@
+{
+  "db_id": "dog_kennels_0",
+  "tables": [
+    {
+      "name": "Sizes",
+      "columns": [
+        {
+          "name": "size_specifications",
+          "type": "text"
+        },
+        {
+          "name": "size_number",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Dogs",
+      "columns": [
+        {
+          "name": "leave_time",
+          "type": "time"
+        },
+        {
+          "name": "time_reached",
+          "type": "time"
+        },
+        {
+          "name": "age",
+          "type": "text"
+        },
+        {
+          "name": "gender",
+          "type": "text"
+        },
+        {
+          "name": "dog_id",
+          "type": "number"
+        },
+        {
+          "name": "weight",
+          "type": "text"
+        },
+        {
+          "name": "breed_cipher",
+          "type": "text"
+        },
+        {
+          "name": "measurement_number",
+          "type": "text"
+        },
+        {
+          "name": "date_adopted",
+          "type": "time"
+        },
+        {
+          "name": "date_of_birth",
+          "type": "time"
+        },
+        {
+          "name": "owner_id",
+          "type": "number"
+        },
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "abandoned_yn",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Charges",
+      "columns": [
+        {
+          "name": "charge_id",
+          "type": "number"
+        },
+        {
+          "name": "cost_category",
+          "type": "text"
+        },
+        {
+          "name": "charges",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Treatments",
+      "columns": [
+        {
+          "name": "professional_id",
+          "type": "number"
+        },
+        {
+          "name": "treatment_id",
+          "type": "number"
+        },
+        {
+          "name": "time_of_therapeutics",
+          "type": "time"
+        },
+        {
+          "name": "dog_id",
+          "type": "number"
+        },
+        {
+          "name": "cost_of_treatment",
+          "type": "number"
+        },
+        {
+          "name": "care_type_encipher",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Professionals",
+      "columns": [
+        {
+          "name": "cell_no",
+          "type": "text"
+        },
+        {
+          "name": "metropolis",
+          "type": "text"
+        },
+        {
+          "name": "e_mail_address",
+          "type": "text"
+        },
+        {
+          "name": "region",
+          "type": "text"
+        },
+        {
+          "name": "avenue",
+          "type": "text"
+        },
+        {
+          "name": "zip_code",
+          "type": "text"
+        },
+        {
+          "name": "part_code",
+          "type": "text"
+        },
+        {
+          "name": "last_name",
+          "type": "text"
+        },
+        {
+          "name": "professional_id",
+          "type": "number"
+        },
+        {
+          "name": "forename",
+          "type": "text"
+        },
+        {
+          "name": "dwelling_calling",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Breeds",
+      "columns": [
+        {
+          "name": "breed_name",
+          "type": "text"
+        },
+        {
+          "name": "breed_cipher",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Owners",
+      "columns": [
+        {
+          "name": "zip_number",
+          "type": "text"
+        },
+        {
+          "name": "mail",
+          "type": "text"
+        },
+        {
+          "name": "cell_number",
+          "type": "text"
+        },
+        {
+          "name": "city",
+          "type": "text"
+        },
+        {
+          "name": "street",
+          "type": "text"
+        },
+        {
+          "name": "home_phone",
+          "type": "text"
+        },
+        {
+          "name": "province",
+          "type": "text"
+        },
+        {
+          "name": "first_name",
+          "type": "text"
+        },
+        {
+          "name": "owner_id",
+          "type": "number"
+        },
+        {
+          "name": "family_name",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Treatment_Types",
+      "columns": [
+        {
+          "name": "medical_category_code",
+          "type": "text"
+        },
+        {
+          "name": "treatment_category_description",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "Breeds.breed_cipher",
+    "Sizes.size_number",
+    "Treatments.treatment_id",
+    "Charges.charge_id",
+    "Treatment_Types.medical_category_code",
+    "Owners.owner_id",
+    "Dogs.dog_id",
+    "Professionals.professional_id"
+  ],
+  "foreign_keys": [
+    {
+      "from": "Dogs.breed_cipher",
+      "to": "Breeds.breed_cipher"
+    },
+    {
+      "from": "Treatments.professional_id",
+      "to": "Professionals.professional_id"
+    },
+    {
+      "from": "Dogs.measurement_number",
+      "to": "Sizes.size_number"
+    },
+    {
+      "from": "Treatments.care_type_encipher",
+      "to": "Treatment_Types.medical_category_code"
+    },
+    {
+      "from": "Dogs.owner_id",
+      "to": "Owners.owner_id"
+    },
+    {
+      "from": "Dogs.owner_id",
+      "to": "Owners.owner_id"
+    },
+    {
+      "from": "Treatments.dog_id",
+      "to": "Dogs.dog_id"
+    }
+  ]
+}

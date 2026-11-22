@@ -1,0 +1,18 @@
+{
+  "tables": {
+    "singer": "singer",
+    "song": "song"
+  },
+  "columns": {
+    "singer.Singer_ID": "singer.Singer_ID",
+    "singer.Name": "singer.Name",
+    "singer.Birth_Year": "singer.born_date",
+    "singer.Net_Worth_Millions": "singer.Net_Worth_Millions",
+    "singer.Citizenship": "singer.home_country",
+    "song.Song_ID": "song.Song_ID",
+    "song.Title": "song.Title",
+    "song.Singer_ID": "song.Singer_ID",
+    "song.Sales": "song.Sales",
+    "song.Highest_Position": "song.Highest_Position"
+  }
+}

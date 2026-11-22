@@ -1,0 +1,113 @@
+{
+  "db_id": "employee_hire_evaluation_0",
+  "tables": [
+    {
+      "name": "hiring",
+      "columns": [
+        {
+          "name": "Shop_ID",
+          "type": "number"
+        },
+        {
+          "name": "begin_off",
+          "type": "text"
+        },
+        {
+          "name": "Employee_ID",
+          "type": "number"
+        },
+        {
+          "name": "Is_full_time",
+          "type": "others"
+        }
+      ]
+    },
+    {
+      "name": "shop",
+      "columns": [
+        {
+          "name": "commodity_quantity",
+          "type": "number"
+        },
+        {
+          "name": "Shop_ID",
+          "type": "number"
+        },
+        {
+          "name": "area",
+          "type": "text"
+        },
+        {
+          "name": "head",
+          "type": "text"
+        },
+        {
+          "name": "whereabouts",
+          "type": "text"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "employee",
+      "columns": [
+        {
+          "name": "Employee_ID",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "Age",
+          "type": "number"
+        },
+        {
+          "name": "metropolis",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "evaluation",
+      "columns": [
+        {
+          "name": "Employee_ID",
+          "type": "text"
+        },
+        {
+          "name": "when_awarde",
+          "type": "text"
+        },
+        {
+          "name": "Bonus",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "shop.Shop_ID",
+    "employee.Employee_ID",
+    "evaluation.Employee_ID",
+    "hiring.Employee_ID"
+  ],
+  "foreign_keys": [
+    {
+      "from": "hiring.Shop_ID",
+      "to": "shop.Shop_ID"
+    },
+    {
+      "from": "evaluation.Employee_ID",
+      "to": "employee.Employee_ID"
+    },
+    {
+      "from": "hiring.Employee_ID",
+      "to": "employee.Employee_ID"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "tables": {
+    "conductor": "conductor",
+    "orchestra": "orchestra",
+    "performance": "performance",
+    "show": "show"
+  },
+  "columns": {
+    "conductor.Conductor_ID": "conductor.cond_id",
+    "conductor.Name": "conductor.Name",
+    "conductor.Age": "conductor.Age",
+    "conductor.Nationality": "conductor.Nationality",
+    "conductor.Year_of_Work": "conductor.Year_of_Work",
+    "orchestra.Orchestra_ID": "orchestra.orch_id",
+    "orchestra.Orchestra": "orchestra.orch",
+    "orchestra.Conductor_ID": "orchestra.cond_id",
+    "orchestra.Record_Company": "orchestra.record_co",
+    "orchestra.Year_of_Founded": "orchestra.Year_of_Founded",
+    "orchestra.Major_Record_Format": "orchestra.maj_fmt",
+    "performance.Performance_ID": "performance.pref_id",
+    "performance.Orchestra_ID": "performance.orch_id",
+    "performance.Type": "performance.Type",
+    "performance.Date": "performance.Date",
+    "performance.Official_ratings_in_millions": "performance.ofcl_rtg_m",
+    "performance.Weekly_rank": "performance.wkly_rank",
+    "performance.Share": "performance.Share",
+    "show.Show_ID": "show.Show_ID",
+    "show.Performance_ID": "show.perf_id",
+    "show.If_first_show": "show.If_first_show",
+    "show.Result": "show.res",
+    "show.Attendance": "show.attend"
+  }
+}

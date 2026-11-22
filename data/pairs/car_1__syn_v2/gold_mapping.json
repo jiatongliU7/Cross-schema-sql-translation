@@ -1,0 +1,35 @@
+{
+  "tables": {
+    "continents": "continents",
+    "countries": "countries",
+    "car_makers": "car_makers",
+    "model_list": "model_list",
+    "car_names": "car_names",
+    "cars_data": "cars_data"
+  },
+  "columns": {
+    "continents.ContId": "continents.ContId",
+    "continents.Continent": "continents.Continent",
+    "countries.CountryId": "countries.CountryId",
+    "countries.CountryName": "countries.state",
+    "countries.Continent": "countries.mainland",
+    "car_makers.Id": "car_makers.Id",
+    "car_makers.Maker": "car_makers.creator",
+    "car_makers.FullName": "car_makers.complete_name",
+    "car_makers.Country": "car_makers.nation",
+    "model_list.ModelId": "model_list.ModelId",
+    "model_list.Maker": "model_list.produced_by",
+    "model_list.Model": "model_list.mode",
+    "car_names.MakeId": "car_names.MakeId",
+    "car_names.Model": "car_names.model_name",
+    "car_names.Make": "car_names.manufacture",
+    "cars_data.Id": "cars_data.Id",
+    "cars_data.MPG": "cars_data.miles_per_gallon",
+    "cars_data.Cylinders": "cars_data.number_cylinder",
+    "cars_data.Edispl": "cars_data.Edispl",
+    "cars_data.Horsepower": "cars_data.engine",
+    "cars_data.Weight": "cars_data.mass",
+    "cars_data.Accelerate": "cars_data.speed_up",
+    "cars_data.Year": "cars_data.Year"
+  }
+}

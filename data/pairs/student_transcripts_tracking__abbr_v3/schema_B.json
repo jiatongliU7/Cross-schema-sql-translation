@@ -1,0 +1,342 @@
+{
+  "db_id": "student_transcripts_tracking_3",
+  "tables": [
+    {
+      "name": "Courses",
+      "columns": [
+        {
+          "name": "oth_dtl",
+          "type": "text"
+        },
+        {
+          "name": "crs_name",
+          "type": "text"
+        },
+        {
+          "name": "crs_desc",
+          "type": "text"
+        },
+        {
+          "name": "crs_id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Semesters",
+      "columns": [
+        {
+          "name": "oth_dtl",
+          "type": "text"
+        },
+        {
+          "name": "sem_desc",
+          "type": "text"
+        },
+        {
+          "name": "sem_name",
+          "type": "text"
+        },
+        {
+          "name": "sem_id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Student_Enrolment_Courses",
+      "columns": [
+        {
+          "name": "stu_enroll_id",
+          "type": "number"
+        },
+        {
+          "name": "stu_crs_id",
+          "type": "number"
+        },
+        {
+          "name": "course_id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Degree_Programs",
+      "columns": [
+        {
+          "name": "oth_dtl",
+          "type": "text"
+        },
+        {
+          "name": "dept_id",
+          "type": "number"
+        },
+        {
+          "name": "degree_pmg_id",
+          "type": "number"
+        },
+        {
+          "name": "degree_smry_name",
+          "type": "text"
+        },
+        {
+          "name": "degree_summary_description",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Student_Enrolment",
+      "columns": [
+        {
+          "name": "student_id",
+          "type": "number"
+        },
+        {
+          "name": "stu_enroll_id",
+          "type": "number"
+        },
+        {
+          "name": "degree_program_id",
+          "type": "number"
+        },
+        {
+          "name": "sem_id",
+          "type": "number"
+        },
+        {
+          "name": "oth_dtl",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Students",
+      "columns": [
+        {
+          "name": "middle_name",
+          "type": "text"
+        },
+        {
+          "name": "last_name",
+          "type": "text"
+        },
+        {
+          "name": "ca_id",
+          "type": "number"
+        },
+        {
+          "name": "date_first_registered",
+          "type": "time"
+        },
+        {
+          "name": "ssn",
+          "type": "text"
+        },
+        {
+          "name": "date_left",
+          "type": "time"
+        },
+        {
+          "name": "first_name",
+          "type": "text"
+        },
+        {
+          "name": "pa_id",
+          "type": "number"
+        },
+        {
+          "name": "stuid",
+          "type": "number"
+        },
+        {
+          "name": "email",
+          "type": "text"
+        },
+        {
+          "name": "cell",
+          "type": "text"
+        },
+        {
+          "name": "oth_stu_dtl",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Transcript_Contents",
+      "columns": [
+        {
+          "name": "transcript_id",
+          "type": "number"
+        },
+        {
+          "name": "stu_crs_id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Sections",
+      "columns": [
+        {
+          "name": "sect_name",
+          "type": "text"
+        },
+        {
+          "name": "sect_desc",
+          "type": "text"
+        },
+        {
+          "name": "sect_id",
+          "type": "number"
+        },
+        {
+          "name": "other_dtl",
+          "type": "text"
+        },
+        {
+          "name": "crs_id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Addresses",
+      "columns": [
+        {
+          "name": "line_1",
+          "type": "text"
+        },
+        {
+          "name": "adr_id",
+          "type": "number"
+        },
+        {
+          "name": "state_province_county",
+          "type": "text"
+        },
+        {
+          "name": "city",
+          "type": "text"
+        },
+        {
+          "name": "zipcode",
+          "type": "text"
+        },
+        {
+          "name": "oth_adr_dtl",
+          "type": "text"
+        },
+        {
+          "name": "cntry",
+          "type": "text"
+        },
+        {
+          "name": "line_2",
+          "type": "text"
+        },
+        {
+          "name": "line_3",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Transcripts",
+      "columns": [
+        {
+          "name": "oth_dtl",
+          "type": "text"
+        },
+        {
+          "name": "transcript_date",
+          "type": "time"
+        },
+        {
+          "name": "transcript_id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Departments",
+      "columns": [
+        {
+          "name": "dept_name",
+          "type": "text"
+        },
+        {
+          "name": "oth_dtl",
+          "type": "text"
+        },
+        {
+          "name": "dept_desc",
+          "type": "text"
+        },
+        {
+          "name": "department_id",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "Student_Enrolment.stu_enroll_id",
+    "Student_Enrolment_Courses.stu_crs_id",
+    "Courses.crs_id",
+    "Sections.sect_id",
+    "Semesters.sem_id",
+    "Students.stuid",
+    "Degree_Programs.degree_pmg_id",
+    "Transcripts.transcript_id",
+    "Addresses.adr_id",
+    "Departments.department_id"
+  ],
+  "foreign_keys": [
+    {
+      "from": "Transcript_Contents.stu_crs_id",
+      "to": "Student_Enrolment_Courses.stu_crs_id"
+    },
+    {
+      "from": "Student_Enrolment.sem_id",
+      "to": "Semesters.sem_id"
+    },
+    {
+      "from": "Students.pa_id",
+      "to": "Addresses.adr_id"
+    },
+    {
+      "from": "Sections.crs_id",
+      "to": "Courses.crs_id"
+    },
+    {
+      "from": "Student_Enrolment_Courses.course_id",
+      "to": "Courses.crs_id"
+    },
+    {
+      "from": "Degree_Programs.dept_id",
+      "to": "Departments.department_id"
+    },
+    {
+      "from": "Student_Enrolment.student_id",
+      "to": "Students.stuid"
+    },
+    {
+      "from": "Student_Enrolment_Courses.stu_enroll_id",
+      "to": "Student_Enrolment.stu_enroll_id"
+    },
+    {
+      "from": "Student_Enrolment.degree_program_id",
+      "to": "Degree_Programs.degree_pmg_id"
+    },
+    {
+      "from": "Transcript_Contents.transcript_id",
+      "to": "Transcripts.transcript_id"
+    },
+    {
+      "from": "Students.ca_id",
+      "to": "Addresses.adr_id"
+    }
+  ]
+}

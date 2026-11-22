@@ -1,0 +1,19 @@
+{
+  "tables": {
+    "poker_player": "poker_player",
+    "people": "people"
+  },
+  "columns": {
+    "poker_player.Poker_Player_ID": "poker_player.p_id",
+    "poker_player.People_ID": "poker_player.ppl_id",
+    "poker_player.Final_Table_Made": "poker_player.Final_Table_Made",
+    "poker_player.Best_Finish": "poker_player.Best_Finish",
+    "poker_player.Money_Rank": "poker_player.Money_Rank",
+    "poker_player.Earnings": "poker_player.Earnings",
+    "people.People_ID": "people.ppl_id",
+    "people.Nationality": "people.nal",
+    "people.Name": "people.Name",
+    "people.Birth_Date": "people.Birth_Date",
+    "people.Height": "people.Height"
+  }
+}

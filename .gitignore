@@ -6,3 +6,6 @@ models/
 *.db
 *.sqlite
 *.sqlite3
+!data/pairs/**/db_A.sqlite
+!data/pairs/**/db_B.sqlite
+work/

@@ -1,0 +1,18 @@
+{
+  "tables": {
+    "AREA_CODE_STATE": "AREA_CODE_STATE",
+    "CONTESTANTS": "CONTESTANTS",
+    "VOTES": "VOTES"
+  },
+  "columns": {
+    "AREA_CODE_STATE.area_code": "AREA_CODE_STATE.region_digits",
+    "AREA_CODE_STATE.state": "AREA_CODE_STATE.state",
+    "CONTESTANTS.contestant_number": "CONTESTANTS.competitor_digits",
+    "CONTESTANTS.contestant_name": "CONTESTANTS.participant",
+    "VOTES.vote_id": "VOTES.vote_id",
+    "VOTES.phone_number": "VOTES.phone_number",
+    "VOTES.state": "VOTES.state",
+    "VOTES.contestant_number": "VOTES.competitor_digits",
+    "VOTES.created": "VOTES.created"
+  }
+}

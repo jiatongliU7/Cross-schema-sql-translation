@@ -1,0 +1,75 @@
+{
+  "db_id": "course_teach_2",
+  "tables": [
+    {
+      "name": "teacher",
+      "columns": [
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "tchr_id",
+          "type": "number"
+        },
+        {
+          "name": "Age",
+          "type": "text"
+        },
+        {
+          "name": "Hometown",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "course",
+      "columns": [
+        {
+          "name": "start_date",
+          "type": "text"
+        },
+        {
+          "name": "crs",
+          "type": "text"
+        },
+        {
+          "name": "Course_ID",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "course_arrange",
+      "columns": [
+        {
+          "name": "tchr_id",
+          "type": "number"
+        },
+        {
+          "name": "crs_id",
+          "type": "number"
+        },
+        {
+          "name": "Grade",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "course.Course_ID",
+    "course_arrange.crs_id",
+    "teacher.tchr_id"
+  ],
+  "foreign_keys": [
+    {
+      "from": "course_arrange.tchr_id",
+      "to": "teacher.tchr_id"
+    },
+    {
+      "from": "course_arrange.crs_id",
+      "to": "course.Course_ID"
+    }
+  ]
+}

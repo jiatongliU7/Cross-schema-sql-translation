@@ -1,0 +1,69 @@
+{
+  "db_id": "poker_player_3",
+  "tables": [
+    {
+      "name": "people",
+      "columns": [
+        {
+          "name": "Height",
+          "type": "number"
+        },
+        {
+          "name": "Nationality",
+          "type": "text"
+        },
+        {
+          "name": "People_ID",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "Birth_Date",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "poker_player",
+      "columns": [
+        {
+          "name": "Earnings",
+          "type": "number"
+        },
+        {
+          "name": "currency_standing",
+          "type": "number"
+        },
+        {
+          "name": "Best_Finish",
+          "type": "number"
+        },
+        {
+          "name": "Poker_Player_ID",
+          "type": "number"
+        },
+        {
+          "name": "last_table_made",
+          "type": "number"
+        },
+        {
+          "name": "People_ID",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "poker_player.Poker_Player_ID",
+    "people.People_ID"
+  ],
+  "foreign_keys": [
+    {
+      "from": "poker_player.People_ID",
+      "to": "people.People_ID"
+    }
+  ]
+}

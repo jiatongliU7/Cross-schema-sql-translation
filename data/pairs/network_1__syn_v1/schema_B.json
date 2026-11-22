@@ -1,0 +1,71 @@
+{
+  "db_id": "network_1_1",
+  "tables": [
+    {
+      "name": "Likes",
+      "columns": [
+        {
+          "name": "student_id",
+          "type": "number"
+        },
+        {
+          "name": "liked_id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Friend",
+      "columns": [
+        {
+          "name": "student_id",
+          "type": "number"
+        },
+        {
+          "name": "friend_id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Highschooler",
+      "columns": [
+        {
+          "name": "level",
+          "type": "number"
+        },
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "ID",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "Likes.student_id",
+    "Highschooler.ID",
+    "Friend.student_id"
+  ],
+  "foreign_keys": [
+    {
+      "from": "Likes.student_id",
+      "to": "Highschooler.ID"
+    },
+    {
+      "from": "Friend.friend_id",
+      "to": "Highschooler.ID"
+    },
+    {
+      "from": "Friend.student_id",
+      "to": "Highschooler.ID"
+    },
+    {
+      "from": "Likes.liked_id",
+      "to": "Highschooler.ID"
+    }
+  ]
+}

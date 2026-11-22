@@ -1,0 +1,113 @@
+{
+  "db_id": "employee_hire_evaluation_1",
+  "tables": [
+    {
+      "name": "shop",
+      "columns": [
+        {
+          "name": "Manager_name",
+          "type": "text"
+        },
+        {
+          "name": "loc",
+          "type": "text"
+        },
+        {
+          "name": "num_prod",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "District",
+          "type": "text"
+        },
+        {
+          "name": "Shop_ID",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "evaluation",
+      "columns": [
+        {
+          "name": "Bonus",
+          "type": "number"
+        },
+        {
+          "name": "ee_id",
+          "type": "text"
+        },
+        {
+          "name": "Year_awarded",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "hiring",
+      "columns": [
+        {
+          "name": "Start_from",
+          "type": "text"
+        },
+        {
+          "name": "ee_id",
+          "type": "number"
+        },
+        {
+          "name": "Shop_ID",
+          "type": "number"
+        },
+        {
+          "name": "Is_full_time",
+          "type": "others"
+        }
+      ]
+    },
+    {
+      "name": "employee",
+      "columns": [
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "Age",
+          "type": "number"
+        },
+        {
+          "name": "Employee_ID",
+          "type": "number"
+        },
+        {
+          "name": "City",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "evaluation.ee_id",
+    "shop.Shop_ID",
+    "hiring.ee_id",
+    "employee.Employee_ID"
+  ],
+  "foreign_keys": [
+    {
+      "from": "hiring.Shop_ID",
+      "to": "shop.Shop_ID"
+    },
+    {
+      "from": "hiring.ee_id",
+      "to": "employee.Employee_ID"
+    },
+    {
+      "from": "evaluation.ee_id",
+      "to": "employee.Employee_ID"
+    }
+  ]
+}

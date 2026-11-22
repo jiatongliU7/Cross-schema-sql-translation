@@ -1,0 +1,209 @@
+{
+  "db_id": "wta_1_4",
+  "tables": [
+    {
+      "name": "matches",
+      "columns": [
+        {
+          "name": "loser_ht",
+          "type": "number"
+        },
+        {
+          "name": "surface",
+          "type": "text"
+        },
+        {
+          "name": "winner_tier_scores",
+          "type": "number"
+        },
+        {
+          "name": "loser_entry",
+          "type": "text"
+        },
+        {
+          "name": "minutes",
+          "type": "number"
+        },
+        {
+          "name": "winner_seed",
+          "type": "number"
+        },
+        {
+          "name": "match_num",
+          "type": "number"
+        },
+        {
+          "name": "winner_id",
+          "type": "number"
+        },
+        {
+          "name": "success_side",
+          "type": "text"
+        },
+        {
+          "name": "loser_age",
+          "type": "number"
+        },
+        {
+          "name": "loser_ioc",
+          "type": "text"
+        },
+        {
+          "name": "winner_ht",
+          "type": "number"
+        },
+        {
+          "name": "failure",
+          "type": "text"
+        },
+        {
+          "name": "tourney_id",
+          "type": "text"
+        },
+        {
+          "name": "best_of",
+          "type": "number"
+        },
+        {
+          "name": "winner_rank",
+          "type": "number"
+        },
+        {
+          "name": "loser_rank_points",
+          "type": "number"
+        },
+        {
+          "name": "loser_hand",
+          "type": "text"
+        },
+        {
+          "name": "score",
+          "type": "text"
+        },
+        {
+          "name": "champ_name",
+          "type": "text"
+        },
+        {
+          "name": "winner_ioc",
+          "type": "text"
+        },
+        {
+          "name": "champ_age",
+          "type": "number"
+        },
+        {
+          "name": "tourney_date",
+          "type": "time"
+        },
+        {
+          "name": "draw_size",
+          "type": "number"
+        },
+        {
+          "name": "year",
+          "type": "number"
+        },
+        {
+          "name": "tourney_name",
+          "type": "text"
+        },
+        {
+          "name": "loser_seed",
+          "type": "number"
+        },
+        {
+          "name": "loser_rank",
+          "type": "number"
+        },
+        {
+          "name": "loser_id",
+          "type": "number"
+        },
+        {
+          "name": "tourney_level",
+          "type": "text"
+        },
+        {
+          "name": "round",
+          "type": "text"
+        },
+        {
+          "name": "winner_entry",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "players",
+      "columns": [
+        {
+          "name": "hand",
+          "type": "text"
+        },
+        {
+          "name": "nation_code",
+          "type": "text"
+        },
+        {
+          "name": "given_name",
+          "type": "text"
+        },
+        {
+          "name": "birth_date",
+          "type": "time"
+        },
+        {
+          "name": "last_name",
+          "type": "text"
+        },
+        {
+          "name": "player_id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "rankings",
+      "columns": [
+        {
+          "name": "tours",
+          "type": "number"
+        },
+        {
+          "name": "rank",
+          "type": "number"
+        },
+        {
+          "name": "ranking_date",
+          "type": "time"
+        },
+        {
+          "name": "ranking_points",
+          "type": "number"
+        },
+        {
+          "name": "player_id",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "players.player_id"
+  ],
+  "foreign_keys": [
+    {
+      "from": "matches.winner_id",
+      "to": "players.player_id"
+    },
+    {
+      "from": "matches.loser_id",
+      "to": "players.player_id"
+    },
+    {
+      "from": "rankings.player_id",
+      "to": "players.player_id"
+    }
+  ]
+}

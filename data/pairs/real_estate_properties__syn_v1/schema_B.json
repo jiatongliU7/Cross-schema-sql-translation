@@ -1,0 +1,202 @@
+{
+  "db_id": "real_estate_properties_1",
+  "tables": [
+    {
+      "name": "Ref_Property_Types",
+      "columns": [
+        {
+          "name": "property_type_code",
+          "type": "text"
+        },
+        {
+          "name": "property_type_description",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Other_Available_Features",
+      "columns": [
+        {
+          "name": "feature_name",
+          "type": "text"
+        },
+        {
+          "name": "feature_id",
+          "type": "number"
+        },
+        {
+          "name": "feature_type_code",
+          "type": "text"
+        },
+        {
+          "name": "feature_description",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Ref_Feature_Types",
+      "columns": [
+        {
+          "name": "feature_type_code",
+          "type": "text"
+        },
+        {
+          "name": "feature_type_name",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Other_Property_Features",
+      "columns": [
+        {
+          "name": "property_feature_description",
+          "type": "text"
+        },
+        {
+          "name": "feature_id",
+          "type": "number"
+        },
+        {
+          "name": "property_id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Properties",
+      "columns": [
+        {
+          "name": "number_room",
+          "type": "number"
+        },
+        {
+          "name": "property_id",
+          "type": "number"
+        },
+        {
+          "name": "vendor_requested_price",
+          "type": "number"
+        },
+        {
+          "name": "date_on_market",
+          "type": "time"
+        },
+        {
+          "name": "apt_feature_1",
+          "type": "text"
+        },
+        {
+          "name": "fld_feature_3",
+          "type": "text"
+        },
+        {
+          "name": "apt_feature_3",
+          "type": "text"
+        },
+        {
+          "name": "agreed_selling_price",
+          "type": "number"
+        },
+        {
+          "name": "property_address",
+          "type": "text"
+        },
+        {
+          "name": "oth_feature_3",
+          "type": "text"
+        },
+        {
+          "name": "oth_feature_2",
+          "type": "text"
+        },
+        {
+          "name": "shp_feature_3",
+          "type": "text"
+        },
+        {
+          "name": "other_property_details",
+          "type": "text"
+        },
+        {
+          "name": "date_sold",
+          "type": "time"
+        },
+        {
+          "name": "hse_feature_3",
+          "type": "text"
+        },
+        {
+          "name": "shp_feature_1",
+          "type": "text"
+        },
+        {
+          "name": "oth_feature_1",
+          "type": "text"
+        },
+        {
+          "name": "possessions_class_num",
+          "type": "text"
+        },
+        {
+          "name": "fld_feature_1",
+          "type": "text"
+        },
+        {
+          "name": "shp_feature_2",
+          "type": "text"
+        },
+        {
+          "name": "estate_name",
+          "type": "text"
+        },
+        {
+          "name": "fld_feature_2",
+          "type": "text"
+        },
+        {
+          "name": "hse_feature_1",
+          "type": "text"
+        },
+        {
+          "name": "apt_feature_2",
+          "type": "text"
+        },
+        {
+          "name": "hse_feature_2",
+          "type": "text"
+        },
+        {
+          "name": "buyer_offered_price",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "Ref_Property_Types.property_type_code",
+    "Other_Available_Features.feature_id",
+    "Properties.property_id",
+    "Ref_Feature_Types.feature_type_code"
+  ],
+  "foreign_keys": [
+    {
+      "from": "Other_Property_Features.property_id",
+      "to": "Properties.property_id"
+    },
+    {
+      "from": "Other_Available_Features.feature_type_code",
+      "to": "Ref_Feature_Types.feature_type_code"
+    },
+    {
+      "from": "Properties.possessions_class_num",
+      "to": "Ref_Property_Types.property_type_code"
+    },
+    {
+      "from": "Other_Property_Features.feature_id",
+      "to": "Other_Available_Features.feature_id"
+    }
+  ]
+}

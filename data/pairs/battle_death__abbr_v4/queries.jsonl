@@ -1,0 +1,1 @@
+{"qid": "battle_death__abbr_v4__q0491", "q_A": "SELECT count(*) FROM ship WHERE disposition_of_ship = 'Captured'", "gold_q_B": "SELECT COUNT(*) AS \"_col_0\" FROM \"ship\" AS \"ship\" WHERE \"ship\".\"dos\" = 'Captured'", "is_join": false, "level": "L2"}

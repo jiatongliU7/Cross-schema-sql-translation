@@ -1,0 +1,113 @@
+{
+  "db_id": "employee_hire_evaluation_4",
+  "tables": [
+    {
+      "name": "evaluation",
+      "columns": [
+        {
+          "name": "Bonus",
+          "type": "number"
+        },
+        {
+          "name": "Employee_ID",
+          "type": "text"
+        },
+        {
+          "name": "Year_awarded",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "hiring",
+      "columns": [
+        {
+          "name": "Start_from",
+          "type": "text"
+        },
+        {
+          "name": "Employee_ID",
+          "type": "number"
+        },
+        {
+          "name": "Shop_ID",
+          "type": "number"
+        },
+        {
+          "name": "Is_full_time",
+          "type": "others"
+        }
+      ]
+    },
+    {
+      "name": "employee",
+      "columns": [
+        {
+          "name": "Employee_ID",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "Age",
+          "type": "number"
+        },
+        {
+          "name": "City",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "shop",
+      "columns": [
+        {
+          "name": "Manager_name",
+          "type": "text"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "loc",
+          "type": "text"
+        },
+        {
+          "name": "District",
+          "type": "text"
+        },
+        {
+          "name": "Shop_ID",
+          "type": "number"
+        },
+        {
+          "name": "Number_products",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "shop.Shop_ID",
+    "hiring.Employee_ID",
+    "evaluation.Employee_ID",
+    "employee.Employee_ID"
+  ],
+  "foreign_keys": [
+    {
+      "from": "evaluation.Employee_ID",
+      "to": "employee.Employee_ID"
+    },
+    {
+      "from": "hiring.Employee_ID",
+      "to": "employee.Employee_ID"
+    },
+    {
+      "from": "hiring.Shop_ID",
+      "to": "shop.Shop_ID"
+    }
+  ]
+}

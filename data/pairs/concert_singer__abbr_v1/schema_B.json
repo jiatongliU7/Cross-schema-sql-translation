@@ -1,0 +1,129 @@
+{
+  "db_id": "concert_singer_1",
+  "tables": [
+    {
+      "name": "singer",
+      "columns": [
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "cntry",
+          "type": "text"
+        },
+        {
+          "name": "Singer_ID",
+          "type": "number"
+        },
+        {
+          "name": "Age",
+          "type": "number"
+        },
+        {
+          "name": "Song_Name",
+          "type": "text"
+        },
+        {
+          "name": "Is_male",
+          "type": "others"
+        },
+        {
+          "name": "song_rls_year",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "singer_in_concert",
+      "columns": [
+        {
+          "name": "concert_ID",
+          "type": "number"
+        },
+        {
+          "name": "Singer_ID",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "stadium",
+      "columns": [
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "stdm_id",
+          "type": "number"
+        },
+        {
+          "name": "avg",
+          "type": "number"
+        },
+        {
+          "name": "Highest",
+          "type": "number"
+        },
+        {
+          "name": "Location",
+          "type": "text"
+        },
+        {
+          "name": "Lowest",
+          "type": "number"
+        },
+        {
+          "name": "cap",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "concert",
+      "columns": [
+        {
+          "name": "stdm_id",
+          "type": "text"
+        },
+        {
+          "name": "Year",
+          "type": "text"
+        },
+        {
+          "name": "concert_ID",
+          "type": "number"
+        },
+        {
+          "name": "concert_Name",
+          "type": "text"
+        },
+        {
+          "name": "Theme",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "concert.concert_ID",
+    "singer_in_concert.concert_ID",
+    "stadium.stdm_id",
+    "singer.Singer_ID"
+  ],
+  "foreign_keys": [
+    {
+      "from": "concert.stdm_id",
+      "to": "stadium.stdm_id"
+    },
+    {
+      "from": "singer_in_concert.concert_ID",
+      "to": "concert.concert_ID"
+    },
+    {
+      "from": "singer_in_concert.Singer_ID",
+      "to": "singer.Singer_ID"
+    }
+  ]
+}

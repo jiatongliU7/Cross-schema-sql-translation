@@ -1,0 +1,27 @@
+{
+  "tables": {
+    "employee": "employee",
+    "shop": "shop",
+    "hiring": "hiring",
+    "evaluation": "evaluation"
+  },
+  "columns": {
+    "employee.Employee_ID": "employee.Employee_ID",
+    "employee.Name": "employee.Name",
+    "employee.Age": "employee.Age",
+    "employee.City": "employee.metropolis",
+    "shop.Shop_ID": "shop.Shop_ID",
+    "shop.Name": "shop.Name",
+    "shop.Location": "shop.whereabouts",
+    "shop.District": "shop.area",
+    "shop.Number_products": "shop.commodity_quantity",
+    "shop.Manager_name": "shop.head",
+    "hiring.Shop_ID": "hiring.Shop_ID",
+    "hiring.Employee_ID": "hiring.Employee_ID",
+    "hiring.Start_from": "hiring.begin_off",
+    "hiring.Is_full_time": "hiring.Is_full_time",
+    "evaluation.Employee_ID": "evaluation.Employee_ID",
+    "evaluation.Year_awarded": "evaluation.when_awarde",
+    "evaluation.Bonus": "evaluation.Bonus"
+  }
+}

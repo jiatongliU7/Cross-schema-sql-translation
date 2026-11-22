@@ -1,0 +1,107 @@
+{
+  "db_id": "battle_death_3",
+  "tables": [
+    {
+      "name": "death",
+      "columns": [
+        {
+          "name": "id",
+          "type": "number"
+        },
+        {
+          "name": "caused_by_ship_id",
+          "type": "number"
+        },
+        {
+          "name": "injured",
+          "type": "number"
+        },
+        {
+          "name": "killed",
+          "type": "number"
+        },
+        {
+          "name": "note",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "ship",
+      "columns": [
+        {
+          "name": "id",
+          "type": "number"
+        },
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "lib",
+          "type": "number"
+        },
+        {
+          "name": "disposition_of_ship",
+          "type": "text"
+        },
+        {
+          "name": "tonnage",
+          "type": "text"
+        },
+        {
+          "name": "location",
+          "type": "text"
+        },
+        {
+          "name": "st",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "battle",
+      "columns": [
+        {
+          "name": "date",
+          "type": "text"
+        },
+        {
+          "name": "latin_commander",
+          "type": "text"
+        },
+        {
+          "name": "result",
+          "type": "text"
+        },
+        {
+          "name": "bg_cdr",
+          "type": "text"
+        },
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "id",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "battle.id",
+    "ship.id",
+    "death.id"
+  ],
+  "foreign_keys": [
+    {
+      "from": "death.caused_by_ship_id",
+      "to": "ship.id"
+    },
+    {
+      "from": "ship.lib",
+      "to": "battle.id"
+    }
+  ]
+}

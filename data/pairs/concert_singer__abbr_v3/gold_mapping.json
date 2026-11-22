@@ -1,0 +1,31 @@
+{
+  "tables": {
+    "stadium": "stadium",
+    "singer": "singer",
+    "concert": "concert",
+    "singer_in_concert": "singer_in_concert"
+  },
+  "columns": {
+    "stadium.Stadium_ID": "stadium.stdm_id",
+    "stadium.Location": "stadium.Location",
+    "stadium.Name": "stadium.Name",
+    "stadium.Capacity": "stadium.cap",
+    "stadium.Highest": "stadium.Highest",
+    "stadium.Lowest": "stadium.Lowest",
+    "stadium.Average": "stadium.avg",
+    "singer.Singer_ID": "singer.Singer_ID",
+    "singer.Name": "singer.Name",
+    "singer.Country": "singer.Country",
+    "singer.Song_Name": "singer.Song_Name",
+    "singer.Song_release_year": "singer.Song_release_year",
+    "singer.Age": "singer.Age",
+    "singer.Is_male": "singer.Is_male",
+    "concert.concert_ID": "concert.concert_ID",
+    "concert.concert_Name": "concert.concert_Name",
+    "concert.Theme": "concert.Theme",
+    "concert.Stadium_ID": "concert.Stadium_ID",
+    "concert.Year": "concert.Year",
+    "singer_in_concert.concert_ID": "singer_in_concert.concert_ID",
+    "singer_in_concert.Singer_ID": "singer_in_concert.Singer_ID"
+  }
+}

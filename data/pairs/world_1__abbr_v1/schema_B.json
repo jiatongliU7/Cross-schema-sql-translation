@@ -1,0 +1,144 @@
+{
+  "db_id": "world_1_1",
+  "tables": [
+    {
+      "name": "city",
+      "columns": [
+        {
+          "name": "District",
+          "type": "text"
+        },
+        {
+          "name": "cntry_code",
+          "type": "text"
+        },
+        {
+          "name": "ID",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "Population",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "country",
+      "columns": [
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "GovernmentForm",
+          "type": "text"
+        },
+        {
+          "name": "LocalName",
+          "type": "text"
+        },
+        {
+          "name": "popn",
+          "type": "number"
+        },
+        {
+          "name": "IndepYear",
+          "type": "number"
+        },
+        {
+          "name": "hos",
+          "type": "text"
+        },
+        {
+          "name": "Region",
+          "type": "text"
+        },
+        {
+          "name": "Code",
+          "type": "text"
+        },
+        {
+          "name": "Capital",
+          "type": "number"
+        },
+        {
+          "name": "SurfaceArea",
+          "type": "number"
+        },
+        {
+          "name": "Code2",
+          "type": "text"
+        },
+        {
+          "name": "GNP",
+          "type": "number"
+        },
+        {
+          "name": "cont",
+          "type": "text"
+        },
+        {
+          "name": "le",
+          "type": "number"
+        },
+        {
+          "name": "GNPOld",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "countrylanguage",
+      "columns": [
+        {
+          "name": "Language",
+          "type": "text"
+        },
+        {
+          "name": "ofcl",
+          "type": "text"
+        },
+        {
+          "name": "pct",
+          "type": "number"
+        },
+        {
+          "name": "CountryCode",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "sqlite_sequence",
+      "columns": [
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "seq",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "countrylanguage.CountryCode",
+    "city.ID",
+    "country.Code"
+  ],
+  "foreign_keys": [
+    {
+      "from": "countrylanguage.CountryCode",
+      "to": "country.Code"
+    },
+    {
+      "from": "city.cntry_code",
+      "to": "country.Code"
+    }
+  ]
+}

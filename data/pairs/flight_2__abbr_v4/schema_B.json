@@ -1,0 +1,87 @@
+{
+  "db_id": "flight_2_4",
+  "tables": [
+    {
+      "name": "airlines",
+      "columns": [
+        {
+          "name": "cntry",
+          "type": "text"
+        },
+        {
+          "name": "air",
+          "type": "text"
+        },
+        {
+          "name": "abbr",
+          "type": "text"
+        },
+        {
+          "name": "uid",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "airports",
+      "columns": [
+        {
+          "name": "AirportCode",
+          "type": "text"
+        },
+        {
+          "name": "City",
+          "type": "text"
+        },
+        {
+          "name": "cntry",
+          "type": "text"
+        },
+        {
+          "name": "apt_name",
+          "type": "text"
+        },
+        {
+          "name": "cntry_abbr",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "flights",
+      "columns": [
+        {
+          "name": "air",
+          "type": "number"
+        },
+        {
+          "name": "srcapt",
+          "type": "text"
+        },
+        {
+          "name": "destapt",
+          "type": "text"
+        },
+        {
+          "name": "FlightNo",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "flights.air",
+    "airlines.uid",
+    "airports.AirportCode"
+  ],
+  "foreign_keys": [
+    {
+      "from": "flights.srcapt",
+      "to": "airports.AirportCode"
+    },
+    {
+      "from": "flights.destapt",
+      "to": "airports.AirportCode"
+    }
+  ]
+}

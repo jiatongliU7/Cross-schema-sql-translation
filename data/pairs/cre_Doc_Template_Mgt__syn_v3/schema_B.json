@@ -1,0 +1,113 @@
+{
+  "db_id": "cre_Doc_Template_Mgt_3",
+  "tables": [
+    {
+      "name": "Documents",
+      "columns": [
+        {
+          "name": "Document_Description",
+          "type": "text"
+        },
+        {
+          "name": "Document_Name",
+          "type": "text"
+        },
+        {
+          "name": "Template_ID",
+          "type": "number"
+        },
+        {
+          "name": "Other_Details",
+          "type": "text"
+        },
+        {
+          "name": "Document_ID",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Paragraphs",
+      "columns": [
+        {
+          "name": "Document_ID",
+          "type": "number"
+        },
+        {
+          "name": "Paragraph_Text",
+          "type": "text"
+        },
+        {
+          "name": "Paragraph_ID",
+          "type": "number"
+        },
+        {
+          "name": "Other_Details",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Templates",
+      "columns": [
+        {
+          "name": "Template_Details",
+          "type": "text"
+        },
+        {
+          "name": "Template_ID",
+          "type": "number"
+        },
+        {
+          "name": "Date_Effective_From",
+          "type": "time"
+        },
+        {
+          "name": "Version_Number",
+          "type": "number"
+        },
+        {
+          "name": "template_kind_codification",
+          "type": "text"
+        },
+        {
+          "name": "Date_Effective_To",
+          "type": "time"
+        }
+      ]
+    },
+    {
+      "name": "Ref_Template_Types",
+      "columns": [
+        {
+          "name": "category_cipher",
+          "type": "text"
+        },
+        {
+          "name": "Template_Type_Description",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "Templates.Template_ID",
+    "Documents.Document_ID",
+    "Paragraphs.Paragraph_ID",
+    "Ref_Template_Types.category_cipher"
+  ],
+  "foreign_keys": [
+    {
+      "from": "Documents.Template_ID",
+      "to": "Templates.Template_ID"
+    },
+    {
+      "from": "Templates.template_kind_codification",
+      "to": "Ref_Template_Types.category_cipher"
+    },
+    {
+      "from": "Paragraphs.Document_ID",
+      "to": "Documents.Document_ID"
+    }
+  ]
+}

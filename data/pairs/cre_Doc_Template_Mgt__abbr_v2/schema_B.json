@@ -1,0 +1,113 @@
+{
+  "db_id": "cre_Doc_Template_Mgt_2",
+  "tables": [
+    {
+      "name": "Templates",
+      "columns": [
+        {
+          "name": "Date_Effective_From",
+          "type": "time"
+        },
+        {
+          "name": "ver_no",
+          "type": "number"
+        },
+        {
+          "name": "tpl_tpye_code",
+          "type": "text"
+        },
+        {
+          "name": "Template_ID",
+          "type": "number"
+        },
+        {
+          "name": "date_eff_to",
+          "type": "time"
+        },
+        {
+          "name": "tplt_dtl",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Documents",
+      "columns": [
+        {
+          "name": "doc_id",
+          "type": "number"
+        },
+        {
+          "name": "oth_dtl",
+          "type": "text"
+        },
+        {
+          "name": "tpl_id",
+          "type": "number"
+        },
+        {
+          "name": "doc_desc",
+          "type": "text"
+        },
+        {
+          "name": "doc_name",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Paragraphs",
+      "columns": [
+        {
+          "name": "Other_Details",
+          "type": "text"
+        },
+        {
+          "name": "doc_id",
+          "type": "number"
+        },
+        {
+          "name": "para_id",
+          "type": "number"
+        },
+        {
+          "name": "Paragraph_Text",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Ref_Template_Types",
+      "columns": [
+        {
+          "name": "tpl_type_code",
+          "type": "text"
+        },
+        {
+          "name": "Template_Type_Description",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "Documents.doc_id",
+    "Paragraphs.para_id",
+    "Templates.Template_ID",
+    "Ref_Template_Types.tpl_type_code"
+  ],
+  "foreign_keys": [
+    {
+      "from": "Templates.tpl_tpye_code",
+      "to": "Ref_Template_Types.tpl_type_code"
+    },
+    {
+      "from": "Documents.tpl_id",
+      "to": "Templates.Template_ID"
+    },
+    {
+      "from": "Paragraphs.doc_id",
+      "to": "Documents.doc_id"
+    }
+  ]
+}

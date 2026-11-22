@@ -1,0 +1,129 @@
+{
+  "db_id": "concert_singer_0",
+  "tables": [
+    {
+      "name": "singer",
+      "columns": [
+        {
+          "name": "Singer_ID",
+          "type": "number"
+        },
+        {
+          "name": "tune_name",
+          "type": "text"
+        },
+        {
+          "name": "nation",
+          "type": "text"
+        },
+        {
+          "name": "Is_male",
+          "type": "others"
+        },
+        {
+          "name": "Age",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "tune_release_year",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "concert",
+      "columns": [
+        {
+          "name": "concert_Name",
+          "type": "text"
+        },
+        {
+          "name": "style",
+          "type": "text"
+        },
+        {
+          "name": "Stadium_ID",
+          "type": "text"
+        },
+        {
+          "name": "concert_ID",
+          "type": "number"
+        },
+        {
+          "name": "Year",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "stadium",
+      "columns": [
+        {
+          "name": "mean",
+          "type": "number"
+        },
+        {
+          "name": "Stadium_ID",
+          "type": "number"
+        },
+        {
+          "name": "max_carrying_number",
+          "type": "number"
+        },
+        {
+          "name": "position",
+          "type": "text"
+        },
+        {
+          "name": "Lowest",
+          "type": "number"
+        },
+        {
+          "name": "Highest",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "singer_in_concert",
+      "columns": [
+        {
+          "name": "Singer_ID",
+          "type": "text"
+        },
+        {
+          "name": "concert_ID",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "singer_in_concert.concert_ID",
+    "concert.concert_ID",
+    "stadium.Stadium_ID",
+    "singer.Singer_ID"
+  ],
+  "foreign_keys": [
+    {
+      "from": "concert.Stadium_ID",
+      "to": "stadium.Stadium_ID"
+    },
+    {
+      "from": "singer_in_concert.concert_ID",
+      "to": "concert.concert_ID"
+    },
+    {
+      "from": "singer_in_concert.Singer_ID",
+      "to": "singer.Singer_ID"
+    }
+  ]
+}

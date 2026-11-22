@@ -1,0 +1,87 @@
+{
+  "db_id": "flight_2_0",
+  "tables": [
+    {
+      "name": "airports",
+      "columns": [
+        {
+          "name": "City",
+          "type": "text"
+        },
+        {
+          "name": "apt_name",
+          "type": "text"
+        },
+        {
+          "name": "cntry",
+          "type": "text"
+        },
+        {
+          "name": "CountryAbbrev",
+          "type": "text"
+        },
+        {
+          "name": "apt_code",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "flights",
+      "columns": [
+        {
+          "name": "destapt",
+          "type": "text"
+        },
+        {
+          "name": "air",
+          "type": "number"
+        },
+        {
+          "name": "srcapt",
+          "type": "text"
+        },
+        {
+          "name": "FlightNo",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "airlines",
+      "columns": [
+        {
+          "name": "air",
+          "type": "text"
+        },
+        {
+          "name": "abbr",
+          "type": "text"
+        },
+        {
+          "name": "cntry",
+          "type": "text"
+        },
+        {
+          "name": "uid",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "flights.air",
+    "airports.apt_code",
+    "airlines.uid"
+  ],
+  "foreign_keys": [
+    {
+      "from": "flights.srcapt",
+      "to": "airports.apt_code"
+    },
+    {
+      "from": "flights.destapt",
+      "to": "airports.apt_code"
+    }
+  ]
+}

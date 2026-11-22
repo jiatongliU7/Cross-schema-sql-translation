@@ -1,0 +1,136 @@
+{
+  "db_id": "orchestra_0",
+  "tables": [
+    {
+      "name": "show",
+      "columns": [
+        {
+          "name": "Show_ID",
+          "type": "number"
+        },
+        {
+          "name": "Performance_ID",
+          "type": "number"
+        },
+        {
+          "name": "If_first_show",
+          "type": "others"
+        },
+        {
+          "name": "Result",
+          "type": "text"
+        },
+        {
+          "name": "audience_number",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "performance",
+      "columns": [
+        {
+          "name": "Share",
+          "type": "text"
+        },
+        {
+          "name": "class",
+          "type": "text"
+        },
+        {
+          "name": "Date",
+          "type": "text"
+        },
+        {
+          "name": "Orchestra_ID",
+          "type": "number"
+        },
+        {
+          "name": "Weekly_rank",
+          "type": "text"
+        },
+        {
+          "name": "Official_ratings_in_millions",
+          "type": "number"
+        },
+        {
+          "name": "Performance_ID",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "conductor",
+      "columns": [
+        {
+          "name": "how_long_worked",
+          "type": "number"
+        },
+        {
+          "name": "Conductor_ID",
+          "type": "number"
+        },
+        {
+          "name": "citizen_of",
+          "type": "text"
+        },
+        {
+          "name": "Age",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "orchestra",
+      "columns": [
+        {
+          "name": "year_foundation",
+          "type": "number"
+        },
+        {
+          "name": "record_firm",
+          "type": "text"
+        },
+        {
+          "name": "Orchestra_ID",
+          "type": "number"
+        },
+        {
+          "name": "Orchestra",
+          "type": "text"
+        },
+        {
+          "name": "main_format",
+          "type": "text"
+        },
+        {
+          "name": "Conductor_ID",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "performance.Performance_ID",
+    "orchestra.Orchestra_ID",
+    "conductor.Conductor_ID"
+  ],
+  "foreign_keys": [
+    {
+      "from": "show.Performance_ID",
+      "to": "performance.Performance_ID"
+    },
+    {
+      "from": "performance.Orchestra_ID",
+      "to": "orchestra.Orchestra_ID"
+    },
+    {
+      "from": "orchestra.Conductor_ID",
+      "to": "conductor.Conductor_ID"
+    }
+  ]
+}

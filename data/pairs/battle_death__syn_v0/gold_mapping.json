@@ -1,0 +1,27 @@
+{
+  "tables": {
+    "battle": "battle",
+    "ship": "ship",
+    "death": "death"
+  },
+  "columns": {
+    "battle.id": "battle.id",
+    "battle.name": "battle.name",
+    "battle.date": "battle.date",
+    "battle.bulgarian_commander": "battle.bulgarian_head",
+    "battle.latin_commander": "battle.latin_commander",
+    "battle.result": "battle.ending",
+    "ship.lost_in_battle": "ship.missed_in_warfare",
+    "ship.id": "ship.id",
+    "ship.name": "ship.name",
+    "ship.tonnage": "ship.vessel",
+    "ship.ship_type": "ship.craft_classification",
+    "ship.location": "ship.spot",
+    "ship.disposition_of_ship": "ship.disposition_of_ship",
+    "death.caused_by_ship_id": "death.caused_by_ship_id",
+    "death.id": "death.id",
+    "death.note": "death.mark",
+    "death.killed": "death.killed",
+    "death.injured": "death.injured"
+  }
+}

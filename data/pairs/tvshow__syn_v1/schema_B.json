@@ -1,0 +1,135 @@
+{
+  "db_id": "tvshow_1",
+  "tables": [
+    {
+      "name": "TV_series",
+      "columns": [
+        {
+          "name": "18_49_Rating_Share",
+          "type": "text"
+        },
+        {
+          "name": "every_week_ranking",
+          "type": "number"
+        },
+        {
+          "name": "Viewers_m",
+          "type": "text"
+        },
+        {
+          "name": "chapter",
+          "type": "text"
+        },
+        {
+          "name": "Rating",
+          "type": "text"
+        },
+        {
+          "name": "Air_Date",
+          "type": "text"
+        },
+        {
+          "name": "Share",
+          "type": "number"
+        },
+        {
+          "name": "tv_channel",
+          "type": "text"
+        },
+        {
+          "name": "id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "Cartoon",
+      "columns": [
+        {
+          "name": "Directed_by",
+          "type": "text"
+        },
+        {
+          "name": "Title",
+          "type": "text"
+        },
+        {
+          "name": "manufacture_codification",
+          "type": "number"
+        },
+        {
+          "name": "Written_by",
+          "type": "text"
+        },
+        {
+          "name": "Channel",
+          "type": "text"
+        },
+        {
+          "name": "id",
+          "type": "number"
+        },
+        {
+          "name": "initial_air_date",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "TV_Channel",
+      "columns": [
+        {
+          "name": "Language",
+          "type": "text"
+        },
+        {
+          "name": "id",
+          "type": "text"
+        },
+        {
+          "name": "series_name",
+          "type": "text"
+        },
+        {
+          "name": "Hight_definition_TV",
+          "type": "text"
+        },
+        {
+          "name": "Pay_per_view_PPV",
+          "type": "text"
+        },
+        {
+          "name": "Pixel_aspect_ratio_PAR",
+          "type": "text"
+        },
+        {
+          "name": "Package_Option",
+          "type": "text"
+        },
+        {
+          "name": "Content",
+          "type": "text"
+        },
+        {
+          "name": "Country",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "Cartoon.id",
+    "TV_series.id",
+    "TV_Channel.id"
+  ],
+  "foreign_keys": [
+    {
+      "from": "TV_series.tv_channel",
+      "to": "TV_Channel.id"
+    },
+    {
+      "from": "Cartoon.Channel",
+      "to": "TV_Channel.id"
+    }
+  ]
+}

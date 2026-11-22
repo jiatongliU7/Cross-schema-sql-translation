@@ -1,0 +1,107 @@
+{
+  "db_id": "battle_death_3",
+  "tables": [
+    {
+      "name": "battle",
+      "columns": [
+        {
+          "name": "consequence",
+          "type": "text"
+        },
+        {
+          "name": "date",
+          "type": "text"
+        },
+        {
+          "name": "latin_commander",
+          "type": "text"
+        },
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "bulgarian_head",
+          "type": "text"
+        },
+        {
+          "name": "id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "ship",
+      "columns": [
+        {
+          "name": "how_vessel_disposed",
+          "type": "text"
+        },
+        {
+          "name": "ship_type",
+          "type": "text"
+        },
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "id",
+          "type": "number"
+        },
+        {
+          "name": "tonnage",
+          "type": "text"
+        },
+        {
+          "name": "lost_in_battle",
+          "type": "number"
+        },
+        {
+          "name": "position",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "death",
+      "columns": [
+        {
+          "name": "caused_by_ship_id",
+          "type": "number"
+        },
+        {
+          "name": "note",
+          "type": "text"
+        },
+        {
+          "name": "injured",
+          "type": "number"
+        },
+        {
+          "name": "id",
+          "type": "number"
+        },
+        {
+          "name": "killed",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "battle.id",
+    "death.id",
+    "ship.id"
+  ],
+  "foreign_keys": [
+    {
+      "from": "ship.lost_in_battle",
+      "to": "battle.id"
+    },
+    {
+      "from": "death.caused_by_ship_id",
+      "to": "ship.id"
+    }
+  ]
+}

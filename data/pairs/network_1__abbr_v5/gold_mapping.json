@@ -1,0 +1,16 @@
+{
+  "tables": {
+    "Highschooler": "Highschooler",
+    "Friend": "Friend",
+    "Likes": "Likes"
+  },
+  "columns": {
+    "Highschooler.ID": "Highschooler.ID",
+    "Highschooler.name": "Highschooler.name",
+    "Highschooler.grade": "Highschooler.gr",
+    "Friend.student_id": "Friend.stu_id",
+    "Friend.friend_id": "Friend.friend_id",
+    "Likes.student_id": "Likes.student_id",
+    "Likes.liked_id": "Likes.liked_id"
+  }
+}

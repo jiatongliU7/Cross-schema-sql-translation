@@ -1,0 +1,157 @@
+{
+  "db_id": "car_1_4",
+  "tables": [
+    {
+      "name": "model_list",
+      "columns": [
+        {
+          "name": "Maker",
+          "type": "number"
+        },
+        {
+          "name": "Model",
+          "type": "text"
+        },
+        {
+          "name": "ModelId",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "countries",
+      "columns": [
+        {
+          "name": "cntry_name",
+          "type": "text"
+        },
+        {
+          "name": "CountryId",
+          "type": "number"
+        },
+        {
+          "name": "Continent",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "car_names",
+      "columns": [
+        {
+          "name": "Make",
+          "type": "text"
+        },
+        {
+          "name": "Model",
+          "type": "text"
+        },
+        {
+          "name": "MakeId",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "continents",
+      "columns": [
+        {
+          "name": "Continent",
+          "type": "text"
+        },
+        {
+          "name": "ContId",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "car_makers",
+      "columns": [
+        {
+          "name": "Maker",
+          "type": "text"
+        },
+        {
+          "name": "Country",
+          "type": "text"
+        },
+        {
+          "name": "Id",
+          "type": "number"
+        },
+        {
+          "name": "FullName",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "cars_data",
+      "columns": [
+        {
+          "name": "Horsepower",
+          "type": "text"
+        },
+        {
+          "name": "Edispl",
+          "type": "number"
+        },
+        {
+          "name": "Weight",
+          "type": "number"
+        },
+        {
+          "name": "Accelerate",
+          "type": "number"
+        },
+        {
+          "name": "Cylinders",
+          "type": "number"
+        },
+        {
+          "name": "MPG",
+          "type": "text"
+        },
+        {
+          "name": "Id",
+          "type": "number"
+        },
+        {
+          "name": "Year",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "car_names.MakeId",
+    "continents.ContId",
+    "cars_data.Id",
+    "car_makers.Id",
+    "model_list.ModelId",
+    "countries.CountryId"
+  ],
+  "foreign_keys": [
+    {
+      "from": "car_names.Model",
+      "to": "model_list.Model"
+    },
+    {
+      "from": "cars_data.Id",
+      "to": "car_names.MakeId"
+    },
+    {
+      "from": "car_makers.Country",
+      "to": "countries.CountryId"
+    },
+    {
+      "from": "model_list.Maker",
+      "to": "car_makers.Id"
+    },
+    {
+      "from": "countries.Continent",
+      "to": "continents.ContId"
+    }
+  ]
+}

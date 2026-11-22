@@ -1,0 +1,27 @@
+{
+  "tables": {
+    "Ref_Template_Types": "Ref_Template_Types",
+    "Templates": "Templates",
+    "Documents": "Documents",
+    "Paragraphs": "Paragraphs"
+  },
+  "columns": {
+    "Ref_Template_Types.Template_Type_Code": "Ref_Template_Types.category_cipher",
+    "Ref_Template_Types.Template_Type_Description": "Ref_Template_Types.description",
+    "Templates.Template_ID": "Templates.Template_ID",
+    "Templates.Version_Number": "Templates.Version_Number",
+    "Templates.Template_Type_Code": "Templates.template_kind_codification",
+    "Templates.Date_Effective_From": "Templates.Date_Effective_From",
+    "Templates.Date_Effective_To": "Templates.Date_Effective_To",
+    "Templates.Template_Details": "Templates.Template_Details",
+    "Documents.Document_ID": "Documents.Document_ID",
+    "Documents.Template_ID": "Documents.Template_ID",
+    "Documents.Document_Name": "Documents.file_designation",
+    "Documents.Document_Description": "Documents.file_elaboration",
+    "Documents.Other_Details": "Documents.Other_Details",
+    "Paragraphs.Paragraph_ID": "Paragraphs.Paragraph_ID",
+    "Paragraphs.Document_ID": "Paragraphs.Document_ID",
+    "Paragraphs.Paragraph_Text": "Paragraphs.content",
+    "Paragraphs.Other_Details": "Paragraphs.particularities"
+  }
+}

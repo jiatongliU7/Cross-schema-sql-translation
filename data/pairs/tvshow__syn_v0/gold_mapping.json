@@ -1,0 +1,34 @@
+{
+  "tables": {
+    "TV_Channel": "TV_Channel",
+    "TV_series": "TV_series",
+    "Cartoon": "Cartoon"
+  },
+  "columns": {
+    "TV_Channel.id": "TV_Channel.id",
+    "TV_Channel.series_name": "TV_Channel.series_name",
+    "TV_Channel.Country": "TV_Channel.Country",
+    "TV_Channel.Language": "TV_Channel.dialect",
+    "TV_Channel.Content": "TV_Channel.substance",
+    "TV_Channel.Pixel_aspect_ratio_PAR": "TV_Channel.pixel_aspect_percentage_par",
+    "TV_Channel.Hight_definition_TV": "TV_Channel.Hight_definition_TV",
+    "TV_Channel.Pay_per_view_PPV": "TV_Channel.Pay_per_view_PPV",
+    "TV_Channel.Package_Option": "TV_Channel.Package_Option",
+    "TV_series.id": "TV_series.id",
+    "TV_series.Episode": "TV_series.chapter",
+    "TV_series.Air_Date": "TV_series.release_day",
+    "TV_series.Rating": "TV_series.grades",
+    "TV_series.Share": "TV_series.portion",
+    "TV_series.18_49_Rating_Share": "TV_series.18_49_Rating_Share",
+    "TV_series.Viewers_m": "TV_series.Viewers_m",
+    "TV_series.Weekly_Rank": "TV_series.every_week_ranking",
+    "TV_series.Channel": "TV_series.tv_station",
+    "Cartoon.id": "Cartoon.id",
+    "Cartoon.Title": "Cartoon.cover_title",
+    "Cartoon.Directed_by": "Cartoon.Directed_by",
+    "Cartoon.Written_by": "Cartoon.Written_by",
+    "Cartoon.Original_air_date": "Cartoon.earliest_air_date",
+    "Cartoon.Production_code": "Cartoon.manufacture_codification",
+    "Cartoon.Channel": "Cartoon.medium"
+  }
+}

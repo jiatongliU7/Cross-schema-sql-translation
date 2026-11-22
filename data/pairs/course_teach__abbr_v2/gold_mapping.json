@@ -1,0 +1,19 @@
+{
+  "tables": {
+    "course": "course",
+    "teacher": "teacher",
+    "course_arrange": "course_arrange"
+  },
+  "columns": {
+    "course.Course_ID": "course.Course_ID",
+    "course.Staring_Date": "course.start_date",
+    "course.Course": "course.crs",
+    "teacher.Teacher_ID": "teacher.tchr_id",
+    "teacher.Name": "teacher.Name",
+    "teacher.Age": "teacher.Age",
+    "teacher.Hometown": "teacher.Hometown",
+    "course_arrange.Course_ID": "course_arrange.crs_id",
+    "course_arrange.Teacher_ID": "course_arrange.tchr_id",
+    "course_arrange.Grade": "course_arrange.Grade"
+  }
+}

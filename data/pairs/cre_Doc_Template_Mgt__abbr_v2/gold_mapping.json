@@ -1,0 +1,27 @@
+{
+  "tables": {
+    "Ref_Template_Types": "Ref_Template_Types",
+    "Templates": "Templates",
+    "Documents": "Documents",
+    "Paragraphs": "Paragraphs"
+  },
+  "columns": {
+    "Ref_Template_Types.Template_Type_Code": "Ref_Template_Types.tpl_type_code",
+    "Ref_Template_Types.Template_Type_Description": "Ref_Template_Types.Template_Type_Description",
+    "Templates.Template_ID": "Templates.Template_ID",
+    "Templates.Version_Number": "Templates.ver_no",
+    "Templates.Template_Type_Code": "Templates.tpl_tpye_code",
+    "Templates.Date_Effective_From": "Templates.Date_Effective_From",
+    "Templates.Date_Effective_To": "Templates.date_eff_to",
+    "Templates.Template_Details": "Templates.tplt_dtl",
+    "Documents.Document_ID": "Documents.doc_id",
+    "Documents.Template_ID": "Documents.tpl_id",
+    "Documents.Document_Name": "Documents.doc_name",
+    "Documents.Document_Description": "Documents.doc_desc",
+    "Documents.Other_Details": "Documents.oth_dtl",
+    "Paragraphs.Paragraph_ID": "Paragraphs.para_id",
+    "Paragraphs.Document_ID": "Paragraphs.doc_id",
+    "Paragraphs.Paragraph_Text": "Paragraphs.Paragraph_Text",
+    "Paragraphs.Other_Details": "Paragraphs.Other_Details"
+  }
+}

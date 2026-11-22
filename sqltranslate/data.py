@@ -30,13 +30,18 @@ def generate(source,target,out_mapping,level='easy',seed=42):
     try:
         with sqlite3.connect(f'file:{source}?mode=ro',uri=True) as src, sqlite3.connect(target) as dst:
             src.backup(dst)
-            dst.execute('PRAGMA foreign_keys=OFF')
+            # Keep FK definitions synchronized through ALTER TABLE operations.
+            # Renaming with legacy behavior and FK checks disabled can leave a
+            # child table referencing the old parent-table name.
+            dst.execute('PRAGMA legacy_alter_table=OFF')
+            dst.execute('PRAGMA foreign_keys=ON')
             with dst:
+                for t in schema.tables:
+                    dst.execute(f'ALTER TABLE {quote(t.name)} RENAME TO {quote(tm[t.name])}')
                 for t in schema.tables:
                     for c in t.columns:
                         new=cm[f'{t.name}.{c.name}'].rsplit('.',1)[1]
-                        dst.execute(f'ALTER TABLE {quote(t.name)} RENAME COLUMN {quote(c.name)} TO {quote(new)}')
-                for t in schema.tables: dst.execute(f'ALTER TABLE {quote(t.name)} RENAME TO {quote(tm[t.name])}')
+                        dst.execute(f'ALTER TABLE {quote(tm[t.name])} RENAME COLUMN {quote(c.name)} TO {quote(new)}')
         result={'tables':tm,'columns':cm,'difficulty':level,'seed':seed}
         save_json(out_mapping,result)
         return result

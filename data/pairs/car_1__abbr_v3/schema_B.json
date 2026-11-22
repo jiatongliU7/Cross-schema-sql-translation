@@ -1,0 +1,157 @@
+{
+  "db_id": "car_1_3",
+  "tables": [
+    {
+      "name": "car_names",
+      "columns": [
+        {
+          "name": "Make",
+          "type": "text"
+        },
+        {
+          "name": "MakeId",
+          "type": "number"
+        },
+        {
+          "name": "mdl",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "continents",
+      "columns": [
+        {
+          "name": "ContId",
+          "type": "number"
+        },
+        {
+          "name": "cont",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "cars_data",
+      "columns": [
+        {
+          "name": "Edispl",
+          "type": "number"
+        },
+        {
+          "name": "hp",
+          "type": "text"
+        },
+        {
+          "name": "aclt",
+          "type": "number"
+        },
+        {
+          "name": "Id",
+          "type": "number"
+        },
+        {
+          "name": "Cylinders",
+          "type": "number"
+        },
+        {
+          "name": "Year",
+          "type": "number"
+        },
+        {
+          "name": "MPG",
+          "type": "text"
+        },
+        {
+          "name": "Weight",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "car_makers",
+      "columns": [
+        {
+          "name": "Maker",
+          "type": "text"
+        },
+        {
+          "name": "cntry",
+          "type": "text"
+        },
+        {
+          "name": "FullName",
+          "type": "text"
+        },
+        {
+          "name": "Id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "model_list",
+      "columns": [
+        {
+          "name": "mdl",
+          "type": "text"
+        },
+        {
+          "name": "Maker",
+          "type": "number"
+        },
+        {
+          "name": "mdl_id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "countries",
+      "columns": [
+        {
+          "name": "Continent",
+          "type": "number"
+        },
+        {
+          "name": "cntry_name",
+          "type": "text"
+        },
+        {
+          "name": "cntry_id",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "continents.ContId",
+    "cars_data.Id",
+    "car_names.MakeId",
+    "model_list.mdl_id",
+    "car_makers.Id",
+    "countries.cntry_id"
+  ],
+  "foreign_keys": [
+    {
+      "from": "cars_data.Id",
+      "to": "car_names.MakeId"
+    },
+    {
+      "from": "model_list.Maker",
+      "to": "car_makers.Id"
+    },
+    {
+      "from": "car_names.mdl",
+      "to": "model_list.mdl"
+    },
+    {
+      "from": "car_makers.cntry",
+      "to": "countries.cntry_id"
+    },
+    {
+      "from": "countries.Continent",
+      "to": "continents.ContId"
+    }
+  ]
+}

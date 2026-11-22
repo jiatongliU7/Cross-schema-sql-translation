@@ -1,0 +1,144 @@
+{
+  "db_id": "world_1_0",
+  "tables": [
+    {
+      "name": "country",
+      "columns": [
+        {
+          "name": "political_form",
+          "type": "text"
+        },
+        {
+          "name": "mainland",
+          "type": "text"
+        },
+        {
+          "name": "GNPOld",
+          "type": "number"
+        },
+        {
+          "name": "place",
+          "type": "text"
+        },
+        {
+          "name": "Code2",
+          "type": "text"
+        },
+        {
+          "name": "HeadOfState",
+          "type": "text"
+        },
+        {
+          "name": "LocalName",
+          "type": "text"
+        },
+        {
+          "name": "life_expectation",
+          "type": "number"
+        },
+        {
+          "name": "net_national_product",
+          "type": "number"
+        },
+        {
+          "name": "landscape",
+          "type": "number"
+        },
+        {
+          "name": "IndepYear",
+          "type": "number"
+        },
+        {
+          "name": "Capital",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "Code",
+          "type": "text"
+        },
+        {
+          "name": "people_number",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "sqlite_sequence",
+      "columns": [
+        {
+          "name": "seq",
+          "type": "text"
+        },
+        {
+          "name": "name",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "city",
+      "columns": [
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "CountryCode",
+          "type": "text"
+        },
+        {
+          "name": "native",
+          "type": "number"
+        },
+        {
+          "name": "region",
+          "type": "text"
+        },
+        {
+          "name": "ID",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "countrylanguage",
+      "columns": [
+        {
+          "name": "share",
+          "type": "number"
+        },
+        {
+          "name": "is_formal",
+          "type": "text"
+        },
+        {
+          "name": "CountryCode",
+          "type": "text"
+        },
+        {
+          "name": "official_language",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "countrylanguage.CountryCode",
+    "country.Code",
+    "city.ID"
+  ],
+  "foreign_keys": [
+    {
+      "from": "countrylanguage.CountryCode",
+      "to": "country.Code"
+    },
+    {
+      "from": "city.CountryCode",
+      "to": "country.Code"
+    }
+  ]
+}

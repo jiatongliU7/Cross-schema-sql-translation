@@ -1,0 +1,135 @@
+{
+  "db_id": "tvshow_4",
+  "tables": [
+    {
+      "name": "TV_series",
+      "columns": [
+        {
+          "name": "id",
+          "type": "number"
+        },
+        {
+          "name": "18_49_Rating_Share",
+          "type": "text"
+        },
+        {
+          "name": "Share",
+          "type": "number"
+        },
+        {
+          "name": "ep",
+          "type": "text"
+        },
+        {
+          "name": "Air_Date",
+          "type": "text"
+        },
+        {
+          "name": "wkly_rank",
+          "type": "number"
+        },
+        {
+          "name": "rtg",
+          "type": "text"
+        },
+        {
+          "name": "Viewers_m",
+          "type": "text"
+        },
+        {
+          "name": "chnl",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Cartoon",
+      "columns": [
+        {
+          "name": "wr",
+          "type": "text"
+        },
+        {
+          "name": "id",
+          "type": "number"
+        },
+        {
+          "name": "chnl",
+          "type": "text"
+        },
+        {
+          "name": "Original_air_date",
+          "type": "text"
+        },
+        {
+          "name": "Title",
+          "type": "text"
+        },
+        {
+          "name": "prod_code",
+          "type": "number"
+        },
+        {
+          "name": "dir",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "TV_Channel",
+      "columns": [
+        {
+          "name": "lang",
+          "type": "text"
+        },
+        {
+          "name": "Package_Option",
+          "type": "text"
+        },
+        {
+          "name": "id",
+          "type": "text"
+        },
+        {
+          "name": "Content",
+          "type": "text"
+        },
+        {
+          "name": "ser_name",
+          "type": "text"
+        },
+        {
+          "name": "Pixel_aspect_ratio_PAR",
+          "type": "text"
+        },
+        {
+          "name": "ppv",
+          "type": "text"
+        },
+        {
+          "name": "cntry",
+          "type": "text"
+        },
+        {
+          "name": "hd",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "TV_Channel.id",
+    "Cartoon.id",
+    "TV_series.id"
+  ],
+  "foreign_keys": [
+    {
+      "from": "Cartoon.chnl",
+      "to": "TV_Channel.id"
+    },
+    {
+      "from": "TV_series.chnl",
+      "to": "TV_Channel.id"
+    }
+  ]
+}

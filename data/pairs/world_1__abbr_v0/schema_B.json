@@ -1,0 +1,144 @@
+{
+  "db_id": "world_1_0",
+  "tables": [
+    {
+      "name": "sqlite_sequence",
+      "columns": [
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "seq",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "country",
+      "columns": [
+        {
+          "name": "Capital",
+          "type": "number"
+        },
+        {
+          "name": "sa",
+          "type": "number"
+        },
+        {
+          "name": "gf",
+          "type": "text"
+        },
+        {
+          "name": "Code",
+          "type": "text"
+        },
+        {
+          "name": "hos",
+          "type": "text"
+        },
+        {
+          "name": "le",
+          "type": "number"
+        },
+        {
+          "name": "GNPOld",
+          "type": "number"
+        },
+        {
+          "name": "Code2",
+          "type": "text"
+        },
+        {
+          "name": "cont",
+          "type": "text"
+        },
+        {
+          "name": "GNP",
+          "type": "number"
+        },
+        {
+          "name": "popn",
+          "type": "number"
+        },
+        {
+          "name": "Region",
+          "type": "text"
+        },
+        {
+          "name": "IndepYear",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "LocalName",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "city",
+      "columns": [
+        {
+          "name": "cntry_code",
+          "type": "text"
+        },
+        {
+          "name": "dist",
+          "type": "text"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "ID",
+          "type": "number"
+        },
+        {
+          "name": "popn",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "countrylanguage",
+      "columns": [
+        {
+          "name": "cntry_code",
+          "type": "text"
+        },
+        {
+          "name": "pct",
+          "type": "number"
+        },
+        {
+          "name": "ofcl",
+          "type": "text"
+        },
+        {
+          "name": "lang",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "countrylanguage.cntry_code",
+    "country.Code",
+    "city.ID"
+  ],
+  "foreign_keys": [
+    {
+      "from": "countrylanguage.cntry_code",
+      "to": "country.Code"
+    },
+    {
+      "from": "city.cntry_code",
+      "to": "country.Code"
+    }
+  ]
+}

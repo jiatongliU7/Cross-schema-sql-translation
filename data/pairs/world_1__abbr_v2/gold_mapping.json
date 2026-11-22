@@ -1,0 +1,36 @@
+{
+  "tables": {
+    "city": "city",
+    "sqlite_sequence": "sqlite_sequence",
+    "country": "country",
+    "countrylanguage": "countrylanguage"
+  },
+  "columns": {
+    "city.ID": "city.ID",
+    "city.Name": "city.Name",
+    "city.CountryCode": "city.CountryCode",
+    "city.District": "city.District",
+    "city.Population": "city.popn",
+    "sqlite_sequence.name": "sqlite_sequence.name",
+    "sqlite_sequence.seq": "sqlite_sequence.seq",
+    "country.Code": "country.Code",
+    "country.Name": "country.Name",
+    "country.Continent": "country.cont",
+    "country.Region": "country.Region",
+    "country.SurfaceArea": "country.sa",
+    "country.IndepYear": "country.IndepYear",
+    "country.Population": "country.Population",
+    "country.LifeExpectancy": "country.le",
+    "country.GNP": "country.GNP",
+    "country.GNPOld": "country.GNPOld",
+    "country.LocalName": "country.LocalName",
+    "country.GovernmentForm": "country.gf",
+    "country.HeadOfState": "country.hos",
+    "country.Capital": "country.Capital",
+    "country.Code2": "country.Code2",
+    "countrylanguage.CountryCode": "countrylanguage.cntry_code",
+    "countrylanguage.Language": "countrylanguage.lang",
+    "countrylanguage.IsOfficial": "countrylanguage.IsOfficial",
+    "countrylanguage.Percentage": "countrylanguage.pct"
+  }
+}

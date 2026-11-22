@@ -1,0 +1,157 @@
+{
+  "db_id": "car_1_2",
+  "tables": [
+    {
+      "name": "continents",
+      "columns": [
+        {
+          "name": "Continent",
+          "type": "text"
+        },
+        {
+          "name": "ContId",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "car_names",
+      "columns": [
+        {
+          "name": "MakeId",
+          "type": "number"
+        },
+        {
+          "name": "manufacture",
+          "type": "text"
+        },
+        {
+          "name": "model_name",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "cars_data",
+      "columns": [
+        {
+          "name": "Year",
+          "type": "number"
+        },
+        {
+          "name": "Edispl",
+          "type": "number"
+        },
+        {
+          "name": "engine",
+          "type": "text"
+        },
+        {
+          "name": "Id",
+          "type": "number"
+        },
+        {
+          "name": "speed_up",
+          "type": "number"
+        },
+        {
+          "name": "miles_per_gallon",
+          "type": "text"
+        },
+        {
+          "name": "mass",
+          "type": "number"
+        },
+        {
+          "name": "number_cylinder",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "car_makers",
+      "columns": [
+        {
+          "name": "complete_name",
+          "type": "text"
+        },
+        {
+          "name": "creator",
+          "type": "text"
+        },
+        {
+          "name": "nation",
+          "type": "text"
+        },
+        {
+          "name": "Id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "model_list",
+      "columns": [
+        {
+          "name": "ModelId",
+          "type": "number"
+        },
+        {
+          "name": "produced_by",
+          "type": "number"
+        },
+        {
+          "name": "mode",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "countries",
+      "columns": [
+        {
+          "name": "state",
+          "type": "text"
+        },
+        {
+          "name": "mainland",
+          "type": "number"
+        },
+        {
+          "name": "CountryId",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "car_makers.Id",
+    "car_names.MakeId",
+    "countries.CountryId",
+    "cars_data.Id",
+    "continents.ContId",
+    "model_list.ModelId"
+  ],
+  "foreign_keys": [
+    {
+      "from": "cars_data.Id",
+      "to": "car_names.MakeId"
+    },
+    {
+      "from": "countries.mainland",
+      "to": "continents.ContId"
+    },
+    {
+      "from": "model_list.produced_by",
+      "to": "car_makers.Id"
+    },
+    {
+      "from": "car_names.model_name",
+      "to": "model_list.mode"
+    },
+    {
+      "from": "car_makers.nation",
+      "to": "countries.CountryId"
+    }
+  ]
+}

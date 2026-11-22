@@ -1,0 +1,144 @@
+{
+  "db_id": "world_1_3",
+  "tables": [
+    {
+      "name": "countrylanguage",
+      "columns": [
+        {
+          "name": "formal",
+          "type": "text"
+        },
+        {
+          "name": "dialect",
+          "type": "text"
+        },
+        {
+          "name": "CountryCode",
+          "type": "text"
+        },
+        {
+          "name": "Percentage",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "sqlite_sequence",
+      "columns": [
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "seq",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "city",
+      "columns": [
+        {
+          "name": "CountryCode",
+          "type": "text"
+        },
+        {
+          "name": "total_citizens",
+          "type": "number"
+        },
+        {
+          "name": "District",
+          "type": "text"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "ID",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "country",
+      "columns": [
+        {
+          "name": "how_many_people",
+          "type": "number"
+        },
+        {
+          "name": "Capital",
+          "type": "number"
+        },
+        {
+          "name": "SurfaceArea",
+          "type": "number"
+        },
+        {
+          "name": "GNPOld",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "LocalName",
+          "type": "text"
+        },
+        {
+          "name": "Code",
+          "type": "text"
+        },
+        {
+          "name": "GNP",
+          "type": "number"
+        },
+        {
+          "name": "place",
+          "type": "text"
+        },
+        {
+          "name": "Continent",
+          "type": "text"
+        },
+        {
+          "name": "LifeExpectancy",
+          "type": "number"
+        },
+        {
+          "name": "nation_president",
+          "type": "text"
+        },
+        {
+          "name": "Code2",
+          "type": "text"
+        },
+        {
+          "name": "IndepYear",
+          "type": "number"
+        },
+        {
+          "name": "political_form",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "city.ID",
+    "countrylanguage.CountryCode",
+    "country.Code"
+  ],
+  "foreign_keys": [
+    {
+      "from": "countrylanguage.CountryCode",
+      "to": "country.Code"
+    },
+    {
+      "from": "city.CountryCode",
+      "to": "country.Code"
+    }
+  ]
+}

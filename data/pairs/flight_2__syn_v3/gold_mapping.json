@@ -1,0 +1,22 @@
+{
+  "tables": {
+    "airlines": "airlines",
+    "airports": "airports",
+    "flights": "flights"
+  },
+  "columns": {
+    "airlines.uid": "airlines.airline",
+    "airlines.Airline": "airlines.air_company_name",
+    "airlines.Abbreviation": "airlines.Abbreviation",
+    "airlines.Country": "airlines.Country",
+    "airports.City": "airports.City",
+    "airports.AirportCode": "airports.AirportCode",
+    "airports.AirportName": "airports.airdrome",
+    "airports.Country": "airports.state",
+    "airports.CountryAbbrev": "airports.CountryAbbrev",
+    "flights.Airline": "flights.Airline",
+    "flights.FlightNo": "flights.FlightNo",
+    "flights.SourceAirport": "flights.SourceAirport",
+    "flights.DestAirport": "flights.DestAirport"
+  }
+}

@@ -18,7 +18,12 @@ The demo creates a new source DB and renamed target DB, saves the gold and predi
 
 To use Sentence-BERT and training, additionally run `pip install -r requirements-neural.txt`. First model use downloads model files from Hugging Face, unless already cached; internet and enough storage are needed. A GPU is optional. The LLM baseline needs API credentials and incurs provider charges. Neither external dataset nor model weights are bundled.
 
-A reproducible toy mapping is included in [`examples/toy`](examples/toy/README.md). For dataset setup and experiments, see the [Spider and Dr.Spider guide](docs/SPIDER_DRSPIDER_GUIDE.md) and the [neural mapping training guide](docs/NEURAL_MAPPING.md).
+A reproducible toy mapping is included in [`examples/toy`](examples/toy/README.md). For dataset setup and experiments, see the [Spider and Dr.Spider guide](docs/SPIDER_DRSPIDER_GUIDE.md), the [schema-pair dataset guide](docs/DATASET.md), and the [neural mapping training guide](docs/NEURAL_MAPPING.md).
+
+The public `rewrite.py` module is shared by data generation and evaluation:
+`rewrite(q_A, gold_mapping)` creates `gold_q_B`, while
+`rewrite(q_A, predicted_mapping)` creates a model prediction. This keeps SQL
+rewriting fixed while only the mapping source changes.
 
 ## Files and data format
 

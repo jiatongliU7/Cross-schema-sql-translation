@@ -1,0 +1,2727 @@
+{
+  "train": [
+    "concert_singer__abbr_v0",
+    "concert_singer__abbr_v1",
+    "concert_singer__abbr_v2",
+    "concert_singer__abbr_v3",
+    "concert_singer__abbr_v4",
+    "concert_singer__syn_v0",
+    "concert_singer__syn_v1",
+    "concert_singer__syn_v2",
+    "concert_singer__syn_v3",
+    "concert_singer__syn_v4",
+    "course_teach__abbr_v0",
+    "course_teach__abbr_v1",
+    "course_teach__abbr_v2",
+    "course_teach__abbr_v3",
+    "course_teach__abbr_v4",
+    "cre_Doc_Template_Mgt__abbr_v0",
+    "cre_Doc_Template_Mgt__abbr_v1",
+    "cre_Doc_Template_Mgt__abbr_v2",
+    "cre_Doc_Template_Mgt__abbr_v3",
+    "cre_Doc_Template_Mgt__abbr_v4",
+    "cre_Doc_Template_Mgt__syn_v0",
+    "cre_Doc_Template_Mgt__syn_v1",
+    "cre_Doc_Template_Mgt__syn_v2",
+    "cre_Doc_Template_Mgt__syn_v3",
+    "cre_Doc_Template_Mgt__syn_v4",
+    "employee_hire_evaluation__abbr_v0",
+    "employee_hire_evaluation__abbr_v1",
+    "employee_hire_evaluation__abbr_v3",
+    "employee_hire_evaluation__abbr_v4",
+    "employee_hire_evaluation__syn_v0",
+    "employee_hire_evaluation__syn_v2",
+    "employee_hire_evaluation__syn_v3",
+    "employee_hire_evaluation__syn_v4",
+    "flight_2__abbr_v0",
+    "flight_2__abbr_v1",
+    "flight_2__abbr_v2",
+    "flight_2__abbr_v3",
+    "flight_2__abbr_v4",
+    "flight_2__syn_v0",
+    "flight_2__syn_v1",
+    "flight_2__syn_v2",
+    "flight_2__syn_v3",
+    "flight_2__syn_v4",
+    "network_1__abbr_v0",
+    "network_1__abbr_v2",
+    "network_1__abbr_v3",
+    "network_1__abbr_v5",
+    "network_1__abbr_v8",
+    "network_1__syn_v0",
+    "network_1__syn_v1",
+    "network_1__syn_v2",
+    "orchestra__abbr_v0",
+    "orchestra__abbr_v1",
+    "orchestra__abbr_v2",
+    "orchestra__abbr_v3",
+    "orchestra__abbr_v4",
+    "orchestra__syn_v0",
+    "orchestra__syn_v1",
+    "orchestra__syn_v2",
+    "orchestra__syn_v3",
+    "orchestra__syn_v4",
+    "pets_1__abbr_v1",
+    "pets_1__abbr_v2",
+    "pets_1__syn_v0",
+    "pets_1__syn_v1",
+    "pets_1__syn_v2",
+    "pets_1__syn_v3",
+    "pets_1__syn_v4",
+    "poker_player__abbr_v0",
+    "poker_player__abbr_v1",
+    "poker_player__abbr_v2",
+    "poker_player__abbr_v3",
+    "poker_player__abbr_v4",
+    "poker_player__syn_v0",
+    "poker_player__syn_v1",
+    "poker_player__syn_v2",
+    "poker_player__syn_v3",
+    "poker_player__syn_v4",
+    "real_estate_properties__abbr_v0",
+    "real_estate_properties__abbr_v2",
+    "real_estate_properties__abbr_v3",
+    "real_estate_properties__abbr_v4",
+    "real_estate_properties__syn_v0",
+    "real_estate_properties__syn_v1",
+    "real_estate_properties__syn_v2",
+    "real_estate_properties__syn_v3",
+    "real_estate_properties__syn_v4",
+    "singer__abbr_v0",
+    "singer__abbr_v1",
+    "singer__syn_v0",
+    "singer__syn_v1",
+    "singer__syn_v2",
+    "singer__syn_v3",
+    "singer__syn_v4",
+    "tvshow__abbr_v0",
+    "tvshow__abbr_v1",
+    "tvshow__abbr_v3",
+    "tvshow__abbr_v4",
+    "tvshow__abbr_v5",
+    "tvshow__syn_v0",
+    "tvshow__syn_v1",
+    "tvshow__syn_v2",
+    "tvshow__syn_v3",
+    "tvshow__syn_v4",
+    "voter_1__abbr_v0",
+    "voter_1__abbr_v1",
+    "voter_1__abbr_v2",
+    "voter_1__abbr_v3",
+    "voter_1__abbr_v4",
+    "voter_1__syn_v0",
+    "voter_1__syn_v1",
+    "voter_1__syn_v2",
+    "voter_1__syn_v3",
+    "voter_1__syn_v4",
+    "wta_1__abbr_v0",
+    "wta_1__abbr_v1",
+    "wta_1__abbr_v3",
+    "wta_1__abbr_v4",
+    "wta_1__syn_v0",
+    "wta_1__syn_v1",
+    "wta_1__syn_v2",
+    "wta_1__syn_v3",
+    "wta_1__syn_v4"
+  ],
+  "dev": [
+    "battle_death__abbr_v0",
+    "battle_death__abbr_v1",
+    "battle_death__abbr_v2",
+    "battle_death__abbr_v3",
+    "battle_death__abbr_v4",
+    "battle_death__syn_v0",
+    "battle_death__syn_v1",
+    "battle_death__syn_v2",
+    "battle_death__syn_v3",
+    "battle_death__syn_v4",
+    "car_1__abbr_v0",
+    "car_1__abbr_v1",
+    "car_1__abbr_v2",
+    "car_1__abbr_v3",
+    "car_1__abbr_v4",
+    "car_1__syn_v0",
+    "car_1__syn_v1",
+    "car_1__syn_v2",
+    "car_1__syn_v3",
+    "car_1__syn_v4",
+    "dog_kennels__abbr_v1",
+    "dog_kennels__abbr_v2",
+    "dog_kennels__abbr_v3",
+    "dog_kennels__abbr_v4",
+    "dog_kennels__syn_v0",
+    "dog_kennels__syn_v1",
+    "dog_kennels__syn_v2",
+    "dog_kennels__syn_v3",
+    "dog_kennels__syn_v4"
+  ],
+  "test": [
+    "museum_visit__abbr_v0",
+    "museum_visit__abbr_v1",
+    "museum_visit__abbr_v2",
+    "museum_visit__abbr_v4",
+    "museum_visit__abbr_v5",
+    "museum_visit__syn_v0",
+    "museum_visit__syn_v1",
+    "museum_visit__syn_v2",
+    "museum_visit__syn_v3",
+    "museum_visit__syn_v4",
+    "student_transcripts_tracking__abbr_v0",
+    "student_transcripts_tracking__abbr_v1",
+    "student_transcripts_tracking__abbr_v2",
+    "student_transcripts_tracking__abbr_v3",
+    "student_transcripts_tracking__abbr_v4",
+    "student_transcripts_tracking__syn_v0",
+    "student_transcripts_tracking__syn_v1",
+    "student_transcripts_tracking__syn_v2",
+    "student_transcripts_tracking__syn_v3",
+    "student_transcripts_tracking__syn_v4",
+    "world_1__abbr_v0",
+    "world_1__abbr_v1",
+    "world_1__abbr_v2",
+    "world_1__abbr_v3",
+    "world_1__abbr_v4",
+    "world_1__syn_v0",
+    "world_1__syn_v1",
+    "world_1__syn_v2",
+    "world_1__syn_v3",
+    "world_1__syn_v4"
+  ],
+  "metadata": {
+    "seed": 4705,
+    "split_unit": "base_db_id",
+    "split_ratio": {
+      "train": 0.7,
+      "dev": 0.15,
+      "test": 0.15
+    },
+    "base_databases": {
+      "train": [
+        "concert_singer",
+        "course_teach",
+        "cre_Doc_Template_Mgt",
+        "employee_hire_evaluation",
+        "flight_2",
+        "network_1",
+        "orchestra",
+        "pets_1",
+        "poker_player",
+        "real_estate_properties",
+        "singer",
+        "tvshow",
+        "voter_1",
+        "wta_1"
+      ],
+      "dev": [
+        "battle_death",
+        "car_1",
+        "dog_kennels"
+      ],
+      "test": [
+        "museum_visit",
+        "student_transcripts_tracking",
+        "world_1"
+      ]
+    },
+    "level_definition": {
+      "L1": "query references 0 renamed schema elements",
+      "L2": "query references exactly 1 renamed schema element",
+      "L3": "query references 2 or more renamed schema elements"
+    },
+    "schema_B_order": "deterministically shuffled within each pair",
+    "gold_q_B_source": "rewrite.rewrite(q_A, gold_mapping)",
+    "db_B_source": "copy db_A data, then apply gold identifier renames",
+    "sqlite_materialization": {
+      "generated_renamed_copy": 182,
+      "hardlink": 182
+    },
+    "pairs": {
+      "battle_death__abbr_v0": {
+        "base_db_id": "battle_death",
+        "target_db_id": "battle_death_0",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 7,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 5,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "battle_death__abbr_v1": {
+        "base_db_id": "battle_death",
+        "target_db_id": "battle_death_1",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 10,
+        "join_query_count": 6,
+        "level_counts": {
+          "L2": 7,
+          "L3": 3
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 6
+      },
+      "battle_death__abbr_v2": {
+        "base_db_id": "battle_death",
+        "target_db_id": "battle_death_2",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 7,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 5,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 5
+      },
+      "battle_death__abbr_v3": {
+        "base_db_id": "battle_death",
+        "target_db_id": "battle_death_3",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 7,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 5,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "battle_death__abbr_v4": {
+        "base_db_id": "battle_death",
+        "target_db_id": "battle_death_4",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 1,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 1
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "battle_death__syn_v0": {
+        "base_db_id": "battle_death",
+        "target_db_id": "battle_death_0",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 11,
+        "join_query_count": 5,
+        "level_counts": {
+          "L2": 7,
+          "L3": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "battle_death__syn_v1": {
+        "base_db_id": "battle_death",
+        "target_db_id": "battle_death_1",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 3,
+        "join_query_count": 1,
+        "level_counts": {
+          "L2": 3
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "battle_death__syn_v2": {
+        "base_db_id": "battle_death",
+        "target_db_id": "battle_death_2",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 3,
+        "join_query_count": 1,
+        "level_counts": {
+          "L2": 3
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "battle_death__syn_v3": {
+        "base_db_id": "battle_death",
+        "target_db_id": "battle_death_3",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 5,
+        "join_query_count": 1,
+        "level_counts": {
+          "L2": 3,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "battle_death__syn_v4": {
+        "base_db_id": "battle_death",
+        "target_db_id": "battle_death_4",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 9,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 8,
+          "L3": 1
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "car_1__abbr_v0": {
+        "base_db_id": "car_1",
+        "target_db_id": "car_1_0",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 46,
+        "join_query_count": 32,
+        "level_counts": {
+          "L2": 32,
+          "L3": 14
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 5
+      },
+      "car_1__abbr_v1": {
+        "base_db_id": "car_1",
+        "target_db_id": "car_1_1",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 14,
+        "join_query_count": 12,
+        "level_counts": {
+          "L2": 14
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "car_1__abbr_v2": {
+        "base_db_id": "car_1",
+        "target_db_id": "car_1_2",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 68,
+        "join_query_count": 48,
+        "level_counts": {
+          "L2": 26,
+          "L3": 42
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 11
+      },
+      "car_1__abbr_v3": {
+        "base_db_id": "car_1",
+        "target_db_id": "car_1_3",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 62,
+        "join_query_count": 48,
+        "level_counts": {
+          "L2": 24,
+          "L3": 38
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 9
+      },
+      "car_1__abbr_v4": {
+        "base_db_id": "car_1",
+        "target_db_id": "car_1_4",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 14,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 14
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "car_1__syn_v0": {
+        "base_db_id": "car_1",
+        "target_db_id": "car_1_0",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 86,
+        "join_query_count": 58,
+        "level_counts": {
+          "L2": 22,
+          "L3": 64
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 14
+      },
+      "car_1__syn_v1": {
+        "base_db_id": "car_1",
+        "target_db_id": "car_1_1",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 40,
+        "join_query_count": 24,
+        "level_counts": {
+          "L2": 36,
+          "L3": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "car_1__syn_v2": {
+        "base_db_id": "car_1",
+        "target_db_id": "car_1_2",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 86,
+        "join_query_count": 58,
+        "level_counts": {
+          "L2": 22,
+          "L3": 64
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 14
+      },
+      "car_1__syn_v3": {
+        "base_db_id": "car_1",
+        "target_db_id": "car_1_3",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 50,
+        "join_query_count": 24,
+        "level_counts": {
+          "L2": 38,
+          "L3": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "car_1__syn_v4": {
+        "base_db_id": "car_1",
+        "target_db_id": "car_1_4",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 44,
+        "join_query_count": 32,
+        "level_counts": {
+          "L2": 40,
+          "L3": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "concert_singer__abbr_v0": {
+        "base_db_id": "concert_singer",
+        "target_db_id": "concert_singer_0",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 29,
+        "join_query_count": 8,
+        "level_counts": {
+          "L2": 21,
+          "L3": 8
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "concert_singer__abbr_v1": {
+        "base_db_id": "concert_singer",
+        "target_db_id": "concert_singer_1",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 31,
+        "join_query_count": 8,
+        "level_counts": {
+          "L2": 16,
+          "L3": 15
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 6
+      },
+      "concert_singer__abbr_v2": {
+        "base_db_id": "concert_singer",
+        "target_db_id": "concert_singer_2",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 25,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 20,
+          "L3": 5
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 5
+      },
+      "concert_singer__abbr_v3": {
+        "base_db_id": "concert_singer",
+        "target_db_id": "concert_singer_3",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 18,
+        "join_query_count": 8,
+        "level_counts": {
+          "L2": 11,
+          "L3": 7
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "concert_singer__abbr_v4": {
+        "base_db_id": "concert_singer",
+        "target_db_id": "concert_singer_4",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 2,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "concert_singer__syn_v0": {
+        "base_db_id": "concert_singer",
+        "target_db_id": "concert_singer_0",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 29,
+        "join_query_count": 6,
+        "level_counts": {
+          "L2": 20,
+          "L3": 9
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "concert_singer__syn_v1": {
+        "base_db_id": "concert_singer",
+        "target_db_id": "concert_singer_1",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 23,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 23
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "concert_singer__syn_v2": {
+        "base_db_id": "concert_singer",
+        "target_db_id": "concert_singer_2",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 2,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "concert_singer__syn_v3": {
+        "base_db_id": "concert_singer",
+        "target_db_id": "concert_singer_3",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 11,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 11
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "concert_singer__syn_v4": {
+        "base_db_id": "concert_singer",
+        "target_db_id": "concert_singer_4",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 18,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 16,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "course_teach__abbr_v0": {
+        "base_db_id": "course_teach",
+        "target_db_id": "course_teach_0",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 6,
+        "join_query_count": 6,
+        "level_counts": {
+          "L3": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "course_teach__abbr_v1": {
+        "base_db_id": "course_teach",
+        "target_db_id": "course_teach_1",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 12,
+        "join_query_count": 10,
+        "level_counts": {
+          "L3": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 6
+      },
+      "course_teach__abbr_v2": {
+        "base_db_id": "course_teach",
+        "target_db_id": "course_teach_2",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 12,
+        "join_query_count": 10,
+        "level_counts": {
+          "L3": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 5
+      },
+      "course_teach__abbr_v3": {
+        "base_db_id": "course_teach",
+        "target_db_id": "course_teach_3",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 12,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 6,
+          "L3": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "course_teach__abbr_v4": {
+        "base_db_id": "course_teach",
+        "target_db_id": "course_teach_4",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 12,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "cre_Doc_Template_Mgt__abbr_v0": {
+        "base_db_id": "cre_Doc_Template_Mgt",
+        "target_db_id": "cre_Doc_Template_Mgt_0",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 50,
+        "join_query_count": 28,
+        "level_counts": {
+          "L2": 48,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "cre_Doc_Template_Mgt__abbr_v1": {
+        "base_db_id": "cre_Doc_Template_Mgt",
+        "target_db_id": "cre_Doc_Template_Mgt_1",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 60,
+        "join_query_count": 28,
+        "level_counts": {
+          "L2": 36,
+          "L3": 24
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 8
+      },
+      "cre_Doc_Template_Mgt__abbr_v2": {
+        "base_db_id": "cre_Doc_Template_Mgt",
+        "target_db_id": "cre_Doc_Template_Mgt_2",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 76,
+        "join_query_count": 28,
+        "level_counts": {
+          "L2": 36,
+          "L3": 40
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 12
+      },
+      "cre_Doc_Template_Mgt__abbr_v3": {
+        "base_db_id": "cre_Doc_Template_Mgt",
+        "target_db_id": "cre_Doc_Template_Mgt_3",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 14,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 14
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "cre_Doc_Template_Mgt__abbr_v4": {
+        "base_db_id": "cre_Doc_Template_Mgt",
+        "target_db_id": "cre_Doc_Template_Mgt_4",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 62,
+        "join_query_count": 28,
+        "level_counts": {
+          "L2": 34,
+          "L3": 28
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 9
+      },
+      "cre_Doc_Template_Mgt__syn_v0": {
+        "base_db_id": "cre_Doc_Template_Mgt",
+        "target_db_id": "cre_Doc_Template_Mgt_0",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 62,
+        "join_query_count": 28,
+        "level_counts": {
+          "L2": 36,
+          "L3": 26
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "cre_Doc_Template_Mgt__syn_v1": {
+        "base_db_id": "cre_Doc_Template_Mgt",
+        "target_db_id": "cre_Doc_Template_Mgt_1",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 22,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 22
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "cre_Doc_Template_Mgt__syn_v2": {
+        "base_db_id": "cre_Doc_Template_Mgt",
+        "target_db_id": "cre_Doc_Template_Mgt_2",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 62,
+        "join_query_count": 28,
+        "level_counts": {
+          "L2": 36,
+          "L3": 26
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "cre_Doc_Template_Mgt__syn_v3": {
+        "base_db_id": "cre_Doc_Template_Mgt",
+        "target_db_id": "cre_Doc_Template_Mgt_3",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 42,
+        "join_query_count": 18,
+        "level_counts": {
+          "L2": 38,
+          "L3": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "cre_Doc_Template_Mgt__syn_v4": {
+        "base_db_id": "cre_Doc_Template_Mgt",
+        "target_db_id": "cre_Doc_Template_Mgt_4",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 14,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 14
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "dog_kennels__abbr_v1": {
+        "base_db_id": "dog_kennels",
+        "target_db_id": "dog_kennels_1",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 50,
+        "join_query_count": 26,
+        "level_counts": {
+          "L2": 28,
+          "L3": 22
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 25
+      },
+      "dog_kennels__abbr_v2": {
+        "base_db_id": "dog_kennels",
+        "target_db_id": "dog_kennels_2",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 4,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 6
+      },
+      "dog_kennels__abbr_v3": {
+        "base_db_id": "dog_kennels",
+        "target_db_id": "dog_kennels_3",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 20,
+        "join_query_count": 12,
+        "level_counts": {
+          "L2": 18,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 5
+      },
+      "dog_kennels__abbr_v4": {
+        "base_db_id": "dog_kennels",
+        "target_db_id": "dog_kennels_4",
+        "perturbation": "abbreviation",
+        "split": "dev",
+        "query_count": 48,
+        "join_query_count": 24,
+        "level_counts": {
+          "L2": 20,
+          "L3": 28
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 22
+      },
+      "dog_kennels__syn_v0": {
+        "base_db_id": "dog_kennels",
+        "target_db_id": "dog_kennels_0",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 58,
+        "join_query_count": 36,
+        "level_counts": {
+          "L2": 20,
+          "L3": 38
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 25
+      },
+      "dog_kennels__syn_v1": {
+        "base_db_id": "dog_kennels",
+        "target_db_id": "dog_kennels_1",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 34,
+        "join_query_count": 18,
+        "level_counts": {
+          "L2": 30,
+          "L3": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 9
+      },
+      "dog_kennels__syn_v2": {
+        "base_db_id": "dog_kennels",
+        "target_db_id": "dog_kennels_2",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 24,
+        "join_query_count": 12,
+        "level_counts": {
+          "L2": 24
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "dog_kennels__syn_v3": {
+        "base_db_id": "dog_kennels",
+        "target_db_id": "dog_kennels_3",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 56,
+        "join_query_count": 30,
+        "level_counts": {
+          "L2": 40,
+          "L3": 16
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 16
+      },
+      "dog_kennels__syn_v4": {
+        "base_db_id": "dog_kennels",
+        "target_db_id": "dog_kennels_4",
+        "perturbation": "synonym",
+        "split": "dev",
+        "query_count": 58,
+        "join_query_count": 32,
+        "level_counts": {
+          "L2": 32,
+          "L3": 26
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 16
+      },
+      "employee_hire_evaluation__abbr_v0": {
+        "base_db_id": "employee_hire_evaluation",
+        "target_db_id": "employee_hire_evaluation_0",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 20,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 14,
+          "L3": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 6
+      },
+      "employee_hire_evaluation__abbr_v1": {
+        "base_db_id": "employee_hire_evaluation",
+        "target_db_id": "employee_hire_evaluation_1",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 20,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 18,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "employee_hire_evaluation__abbr_v3": {
+        "base_db_id": "employee_hire_evaluation",
+        "target_db_id": "employee_hire_evaluation_3",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 12,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "employee_hire_evaluation__abbr_v4": {
+        "base_db_id": "employee_hire_evaluation",
+        "target_db_id": "employee_hire_evaluation_4",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 6,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "employee_hire_evaluation__syn_v0": {
+        "base_db_id": "employee_hire_evaluation",
+        "target_db_id": "employee_hire_evaluation_0",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 18,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 12,
+          "L3": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "employee_hire_evaluation__syn_v2": {
+        "base_db_id": "employee_hire_evaluation",
+        "target_db_id": "employee_hire_evaluation_2",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 10,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 10
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "employee_hire_evaluation__syn_v3": {
+        "base_db_id": "employee_hire_evaluation",
+        "target_db_id": "employee_hire_evaluation_3",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 10,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 10
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "employee_hire_evaluation__syn_v4": {
+        "base_db_id": "employee_hire_evaluation",
+        "target_db_id": "employee_hire_evaluation_4",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 10,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 8,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "flight_2__abbr_v0": {
+        "base_db_id": "flight_2",
+        "target_db_id": "flight_2_0",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 74,
+        "join_query_count": 46,
+        "level_counts": {
+          "L2": 12,
+          "L3": 62
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 9
+      },
+      "flight_2__abbr_v1": {
+        "base_db_id": "flight_2",
+        "target_db_id": "flight_2_1",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 72,
+        "join_query_count": 46,
+        "level_counts": {
+          "L2": 18,
+          "L3": 54
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 8
+      },
+      "flight_2__abbr_v2": {
+        "base_db_id": "flight_2",
+        "target_db_id": "flight_2_2",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 66,
+        "join_query_count": 46,
+        "level_counts": {
+          "L2": 36,
+          "L3": 30
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "flight_2__abbr_v3": {
+        "base_db_id": "flight_2",
+        "target_db_id": "flight_2_3",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 64,
+        "join_query_count": 40,
+        "level_counts": {
+          "L2": 26,
+          "L3": 38
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 8
+      },
+      "flight_2__abbr_v4": {
+        "base_db_id": "flight_2",
+        "target_db_id": "flight_2_4",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 74,
+        "join_query_count": 46,
+        "level_counts": {
+          "L2": 34,
+          "L3": 40
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 9
+      },
+      "flight_2__syn_v0": {
+        "base_db_id": "flight_2",
+        "target_db_id": "flight_2_0",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 68,
+        "join_query_count": 42,
+        "level_counts": {
+          "L2": 18,
+          "L3": 50
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "flight_2__syn_v1": {
+        "base_db_id": "flight_2",
+        "target_db_id": "flight_2_1",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 34,
+        "join_query_count": 24,
+        "level_counts": {
+          "L2": 30,
+          "L3": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "flight_2__syn_v2": {
+        "base_db_id": "flight_2",
+        "target_db_id": "flight_2_2",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 26,
+        "join_query_count": 26,
+        "level_counts": {
+          "L2": 26
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "flight_2__syn_v3": {
+        "base_db_id": "flight_2",
+        "target_db_id": "flight_2_3",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 44,
+        "join_query_count": 26,
+        "level_counts": {
+          "L2": 16,
+          "L3": 28
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "flight_2__syn_v4": {
+        "base_db_id": "flight_2",
+        "target_db_id": "flight_2_4",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 54,
+        "join_query_count": 34,
+        "level_counts": {
+          "L2": 42,
+          "L3": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "museum_visit__abbr_v0": {
+        "base_db_id": "museum_visit",
+        "target_db_id": "museum_visit_0",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 11,
+        "join_query_count": 3,
+        "level_counts": {
+          "L2": 11
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "museum_visit__abbr_v1": {
+        "base_db_id": "museum_visit",
+        "target_db_id": "museum_visit_1",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 10,
+        "join_query_count": 5,
+        "level_counts": {
+          "L2": 4,
+          "L3": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "museum_visit__abbr_v2": {
+        "base_db_id": "museum_visit",
+        "target_db_id": "museum_visit_2",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 13,
+        "join_query_count": 5,
+        "level_counts": {
+          "L2": 13
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "museum_visit__abbr_v4": {
+        "base_db_id": "museum_visit",
+        "target_db_id": "museum_visit_4",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 4,
+        "join_query_count": 3,
+        "level_counts": {
+          "L2": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "museum_visit__abbr_v5": {
+        "base_db_id": "museum_visit",
+        "target_db_id": "museum_visit_5",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 8,
+        "join_query_count": 3,
+        "level_counts": {
+          "L2": 7,
+          "L3": 1
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "museum_visit__syn_v0": {
+        "base_db_id": "museum_visit",
+        "target_db_id": "museum_visit_0",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 14,
+        "join_query_count": 5,
+        "level_counts": {
+          "L2": 11,
+          "L3": 3
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "museum_visit__syn_v1": {
+        "base_db_id": "museum_visit",
+        "target_db_id": "museum_visit_1",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 6,
+        "join_query_count": 1,
+        "level_counts": {
+          "L2": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "museum_visit__syn_v2": {
+        "base_db_id": "museum_visit",
+        "target_db_id": "museum_visit_2",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 6,
+        "join_query_count": 2,
+        "level_counts": {
+          "L2": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "museum_visit__syn_v3": {
+        "base_db_id": "museum_visit",
+        "target_db_id": "museum_visit_3",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 6,
+        "join_query_count": 1,
+        "level_counts": {
+          "L2": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "museum_visit__syn_v4": {
+        "base_db_id": "museum_visit",
+        "target_db_id": "museum_visit_4",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 9,
+        "join_query_count": 2,
+        "level_counts": {
+          "L2": 9
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "network_1__abbr_v0": {
+        "base_db_id": "network_1",
+        "target_db_id": "network_1_0",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 52,
+        "join_query_count": 28,
+        "level_counts": {
+          "L2": 44,
+          "L3": 8
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "network_1__abbr_v2": {
+        "base_db_id": "network_1",
+        "target_db_id": "network_1_2",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 24,
+        "join_query_count": 18,
+        "level_counts": {
+          "L2": 22,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "network_1__abbr_v3": {
+        "base_db_id": "network_1",
+        "target_db_id": "network_1_3",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 12,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "network_1__abbr_v5": {
+        "base_db_id": "network_1",
+        "target_db_id": "network_1_5",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 40,
+        "join_query_count": 18,
+        "level_counts": {
+          "L2": 34,
+          "L3": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "network_1__abbr_v8": {
+        "base_db_id": "network_1",
+        "target_db_id": "network_1_8",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 24,
+        "join_query_count": 8,
+        "level_counts": {
+          "L2": 24
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "network_1__syn_v0": {
+        "base_db_id": "network_1",
+        "target_db_id": "network_1_0",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 22,
+        "join_query_count": 6,
+        "level_counts": {
+          "L2": 22
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "network_1__syn_v1": {
+        "base_db_id": "network_1",
+        "target_db_id": "network_1_1",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 22,
+        "join_query_count": 6,
+        "level_counts": {
+          "L2": 22
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "network_1__syn_v2": {
+        "base_db_id": "network_1",
+        "target_db_id": "network_1_2",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 22,
+        "join_query_count": 6,
+        "level_counts": {
+          "L2": 22
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "orchestra__abbr_v0": {
+        "base_db_id": "orchestra",
+        "target_db_id": "orchestra_0",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 26,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 14,
+          "L3": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 13
+      },
+      "orchestra__abbr_v1": {
+        "base_db_id": "orchestra",
+        "target_db_id": "orchestra_1",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 14,
+        "join_query_count": 8,
+        "level_counts": {
+          "L2": 6,
+          "L3": 8
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "orchestra__abbr_v2": {
+        "base_db_id": "orchestra",
+        "target_db_id": "orchestra_2",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 22,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 18,
+          "L3": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 9
+      },
+      "orchestra__abbr_v3": {
+        "base_db_id": "orchestra",
+        "target_db_id": "orchestra_3",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 26,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 20,
+          "L3": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 11
+      },
+      "orchestra__abbr_v4": {
+        "base_db_id": "orchestra",
+        "target_db_id": "orchestra_4",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 18,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 14,
+          "L3": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 9
+      },
+      "orchestra__syn_v0": {
+        "base_db_id": "orchestra",
+        "target_db_id": "orchestra_0",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 28,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 24,
+          "L3": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "orchestra__syn_v1": {
+        "base_db_id": "orchestra",
+        "target_db_id": "orchestra_1",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 14,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 14
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "orchestra__syn_v2": {
+        "base_db_id": "orchestra",
+        "target_db_id": "orchestra_2",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 2,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "orchestra__syn_v3": {
+        "base_db_id": "orchestra",
+        "target_db_id": "orchestra_3",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 16,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 16
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "orchestra__syn_v4": {
+        "base_db_id": "orchestra",
+        "target_db_id": "orchestra_4",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 10,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 8,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "pets_1__abbr_v1": {
+        "base_db_id": "pets_1",
+        "target_db_id": "pets_1_1",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 12,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "pets_1__abbr_v2": {
+        "base_db_id": "pets_1",
+        "target_db_id": "pets_1_2",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 12,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "pets_1__syn_v0": {
+        "base_db_id": "pets_1",
+        "target_db_id": "pets_1_0",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 42,
+        "join_query_count": 24,
+        "level_counts": {
+          "L2": 16,
+          "L3": 26
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "pets_1__syn_v1": {
+        "base_db_id": "pets_1",
+        "target_db_id": "pets_1_1",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 16,
+        "join_query_count": 8,
+        "level_counts": {
+          "L2": 14,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "pets_1__syn_v2": {
+        "base_db_id": "pets_1",
+        "target_db_id": "pets_1_2",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 24,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 24
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "pets_1__syn_v3": {
+        "base_db_id": "pets_1",
+        "target_db_id": "pets_1_3",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 42,
+        "join_query_count": 24,
+        "level_counts": {
+          "L2": 18,
+          "L3": 24
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "pets_1__syn_v4": {
+        "base_db_id": "pets_1",
+        "target_db_id": "pets_1_4",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 30,
+        "join_query_count": 16,
+        "level_counts": {
+          "L2": 22,
+          "L3": 8
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "poker_player__abbr_v0": {
+        "base_db_id": "poker_player",
+        "target_db_id": "poker_player_0",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 20,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 4,
+          "L3": 16
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "poker_player__abbr_v1": {
+        "base_db_id": "poker_player",
+        "target_db_id": "poker_player_1",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 26,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 26
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "poker_player__abbr_v2": {
+        "base_db_id": "poker_player",
+        "target_db_id": "poker_player_2",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 28,
+        "join_query_count": 8,
+        "level_counts": {
+          "L2": 28
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "poker_player__abbr_v3": {
+        "base_db_id": "poker_player",
+        "target_db_id": "poker_player_3",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 26,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 10,
+          "L3": 16
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "poker_player__abbr_v4": {
+        "base_db_id": "poker_player",
+        "target_db_id": "poker_player_4",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 32,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 16,
+          "L3": 16
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "poker_player__syn_v0": {
+        "base_db_id": "poker_player",
+        "target_db_id": "poker_player_0",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 14,
+        "join_query_count": 6,
+        "level_counts": {
+          "L2": 12,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "poker_player__syn_v1": {
+        "base_db_id": "poker_player",
+        "target_db_id": "poker_player_1",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 18,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 16,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "poker_player__syn_v2": {
+        "base_db_id": "poker_player",
+        "target_db_id": "poker_player_2",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 4,
+        "join_query_count": 2,
+        "level_counts": {
+          "L2": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "poker_player__syn_v3": {
+        "base_db_id": "poker_player",
+        "target_db_id": "poker_player_3",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 10,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 10
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "poker_player__syn_v4": {
+        "base_db_id": "poker_player",
+        "target_db_id": "poker_player_4",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 18,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 16,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "real_estate_properties__abbr_v0": {
+        "base_db_id": "real_estate_properties",
+        "target_db_id": "real_estate_properties_0",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 3,
+        "join_query_count": 2,
+        "level_counts": {
+          "L3": 3
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 16
+      },
+      "real_estate_properties__abbr_v2": {
+        "base_db_id": "real_estate_properties",
+        "target_db_id": "real_estate_properties_2",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 3,
+        "join_query_count": 2,
+        "level_counts": {
+          "L3": 3
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 13
+      },
+      "real_estate_properties__abbr_v3": {
+        "base_db_id": "real_estate_properties",
+        "target_db_id": "real_estate_properties_3",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 3,
+        "join_query_count": 2,
+        "level_counts": {
+          "L3": 3
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 19
+      },
+      "real_estate_properties__abbr_v4": {
+        "base_db_id": "real_estate_properties",
+        "target_db_id": "real_estate_properties_4",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 2,
+        "join_query_count": 1,
+        "level_counts": {
+          "L2": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 9
+      },
+      "real_estate_properties__syn_v0": {
+        "base_db_id": "real_estate_properties",
+        "target_db_id": "real_estate_properties_0",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 3,
+        "join_query_count": 2,
+        "level_counts": {
+          "L3": 3
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "real_estate_properties__syn_v1": {
+        "base_db_id": "real_estate_properties",
+        "target_db_id": "real_estate_properties_1",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 2,
+        "join_query_count": 1,
+        "level_counts": {
+          "L2": 1,
+          "L3": 1
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "real_estate_properties__syn_v2": {
+        "base_db_id": "real_estate_properties",
+        "target_db_id": "real_estate_properties_2",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 1,
+        "join_query_count": 1,
+        "level_counts": {
+          "L2": 1
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "real_estate_properties__syn_v3": {
+        "base_db_id": "real_estate_properties",
+        "target_db_id": "real_estate_properties_3",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 3,
+        "join_query_count": 2,
+        "level_counts": {
+          "L2": 1,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "real_estate_properties__syn_v4": {
+        "base_db_id": "real_estate_properties",
+        "target_db_id": "real_estate_properties_4",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 3,
+        "join_query_count": 2,
+        "level_counts": {
+          "L2": 2,
+          "L3": 1
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "singer__abbr_v0": {
+        "base_db_id": "singer",
+        "target_db_id": "singer_0",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 6,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "singer__abbr_v1": {
+        "base_db_id": "singer",
+        "target_db_id": "singer_1",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 6,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "singer__syn_v0": {
+        "base_db_id": "singer",
+        "target_db_id": "singer_0",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 22,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 16,
+          "L3": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "singer__syn_v1": {
+        "base_db_id": "singer",
+        "target_db_id": "singer_1",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 10,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 10
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "singer__syn_v2": {
+        "base_db_id": "singer",
+        "target_db_id": "singer_2",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 6,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "singer__syn_v3": {
+        "base_db_id": "singer",
+        "target_db_id": "singer_3",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 10,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 10
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "singer__syn_v4": {
+        "base_db_id": "singer",
+        "target_db_id": "singer_4",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 14,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 10,
+          "L3": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "student_transcripts_tracking__abbr_v0": {
+        "base_db_id": "student_transcripts_tracking",
+        "target_db_id": "student_transcripts_tracking_0",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 44,
+        "join_query_count": 24,
+        "level_counts": {
+          "L2": 30,
+          "L3": 14
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 16
+      },
+      "student_transcripts_tracking__abbr_v1": {
+        "base_db_id": "student_transcripts_tracking",
+        "target_db_id": "student_transcripts_tracking_1",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 60,
+        "join_query_count": 30,
+        "level_counts": {
+          "L2": 18,
+          "L3": 42
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 41
+      },
+      "student_transcripts_tracking__abbr_v2": {
+        "base_db_id": "student_transcripts_tracking",
+        "target_db_id": "student_transcripts_tracking_2",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 54,
+        "join_query_count": 30,
+        "level_counts": {
+          "L2": 24,
+          "L3": 30
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 30
+      },
+      "student_transcripts_tracking__abbr_v3": {
+        "base_db_id": "student_transcripts_tracking",
+        "target_db_id": "student_transcripts_tracking_3",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 60,
+        "join_query_count": 30,
+        "level_counts": {
+          "L2": 22,
+          "L3": 38
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 37
+      },
+      "student_transcripts_tracking__abbr_v4": {
+        "base_db_id": "student_transcripts_tracking",
+        "target_db_id": "student_transcripts_tracking_4",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 46,
+        "join_query_count": 26,
+        "level_counts": {
+          "L2": 18,
+          "L3": 28
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 27
+      },
+      "student_transcripts_tracking__syn_v0": {
+        "base_db_id": "student_transcripts_tracking",
+        "target_db_id": "student_transcripts_tracking_0",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 56,
+        "join_query_count": 26,
+        "level_counts": {
+          "L2": 44,
+          "L3": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 13
+      },
+      "student_transcripts_tracking__syn_v1": {
+        "base_db_id": "student_transcripts_tracking",
+        "target_db_id": "student_transcripts_tracking_1",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 24,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 22,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 5
+      },
+      "student_transcripts_tracking__syn_v2": {
+        "base_db_id": "student_transcripts_tracking",
+        "target_db_id": "student_transcripts_tracking_2",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 4,
+        "join_query_count": 0,
+        "level_counts": {
+          "L2": 4
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "student_transcripts_tracking__syn_v3": {
+        "base_db_id": "student_transcripts_tracking",
+        "target_db_id": "student_transcripts_tracking_3",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 50,
+        "join_query_count": 26,
+        "level_counts": {
+          "L2": 42,
+          "L3": 8
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 8
+      },
+      "student_transcripts_tracking__syn_v4": {
+        "base_db_id": "student_transcripts_tracking",
+        "target_db_id": "student_transcripts_tracking_4",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 42,
+        "join_query_count": 22,
+        "level_counts": {
+          "L2": 40,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 8
+      },
+      "tvshow__abbr_v0": {
+        "base_db_id": "tvshow",
+        "target_db_id": "tvshow_0",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 58,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 24,
+          "L3": 34
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 15
+      },
+      "tvshow__abbr_v1": {
+        "base_db_id": "tvshow",
+        "target_db_id": "tvshow_1",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 50,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 18,
+          "L3": 32
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 12
+      },
+      "tvshow__abbr_v3": {
+        "base_db_id": "tvshow",
+        "target_db_id": "tvshow_3",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 52,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 28,
+          "L3": 24
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 11
+      },
+      "tvshow__abbr_v4": {
+        "base_db_id": "tvshow",
+        "target_db_id": "tvshow_4",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 58,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 28,
+          "L3": 30
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 13
+      },
+      "tvshow__abbr_v5": {
+        "base_db_id": "tvshow",
+        "target_db_id": "tvshow_5",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 50,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 22,
+          "L3": 28
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 12
+      },
+      "tvshow__syn_v0": {
+        "base_db_id": "tvshow",
+        "target_db_id": "tvshow_0",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 50,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 28,
+          "L3": 22
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 13
+      },
+      "tvshow__syn_v1": {
+        "base_db_id": "tvshow",
+        "target_db_id": "tvshow_1",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 16,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 8,
+          "L3": 8
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 5
+      },
+      "tvshow__syn_v2": {
+        "base_db_id": "tvshow",
+        "target_db_id": "tvshow_2",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 20,
+        "join_query_count": 6,
+        "level_counts": {
+          "L2": 20
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "tvshow__syn_v3": {
+        "base_db_id": "tvshow",
+        "target_db_id": "tvshow_3",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 32,
+        "join_query_count": 6,
+        "level_counts": {
+          "L2": 24,
+          "L3": 8
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 8
+      },
+      "tvshow__syn_v4": {
+        "base_db_id": "tvshow",
+        "target_db_id": "tvshow_4",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 48,
+        "join_query_count": 14,
+        "level_counts": {
+          "L2": 36,
+          "L3": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 8
+      },
+      "voter_1__abbr_v0": {
+        "base_db_id": "voter_1",
+        "target_db_id": "voter_1_0",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 9,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 3,
+          "L3": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "voter_1__abbr_v1": {
+        "base_db_id": "voter_1",
+        "target_db_id": "voter_1_1",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 11,
+        "join_query_count": 5,
+        "level_counts": {
+          "L2": 5,
+          "L3": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "voter_1__abbr_v2": {
+        "base_db_id": "voter_1",
+        "target_db_id": "voter_1_2",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 12,
+        "join_query_count": 5,
+        "level_counts": {
+          "L2": 9,
+          "L3": 3
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 3
+      },
+      "voter_1__abbr_v3": {
+        "base_db_id": "voter_1",
+        "target_db_id": "voter_1_3",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 13,
+        "join_query_count": 5,
+        "level_counts": {
+          "L2": 6,
+          "L3": 7
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 5
+      },
+      "voter_1__abbr_v4": {
+        "base_db_id": "voter_1",
+        "target_db_id": "voter_1_4",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 10,
+        "join_query_count": 5,
+        "level_counts": {
+          "L2": 8,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "voter_1__syn_v0": {
+        "base_db_id": "voter_1",
+        "target_db_id": "voter_1_0",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 10,
+        "join_query_count": 5,
+        "level_counts": {
+          "L2": 4,
+          "L3": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "voter_1__syn_v1": {
+        "base_db_id": "voter_1",
+        "target_db_id": "voter_1_1",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 8,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 7,
+          "L3": 1
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "voter_1__syn_v2": {
+        "base_db_id": "voter_1",
+        "target_db_id": "voter_1_2",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 7,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 7
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "voter_1__syn_v3": {
+        "base_db_id": "voter_1",
+        "target_db_id": "voter_1_3",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 9,
+        "join_query_count": 5,
+        "level_counts": {
+          "L2": 8,
+          "L3": 1
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "voter_1__syn_v4": {
+        "base_db_id": "voter_1",
+        "target_db_id": "voter_1_4",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 4,
+        "join_query_count": 1,
+        "level_counts": {
+          "L2": 3,
+          "L3": 1
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "world_1__abbr_v0": {
+        "base_db_id": "world_1",
+        "target_db_id": "world_1_0",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 118,
+        "join_query_count": 44,
+        "level_counts": {
+          "L2": 28,
+          "L3": 90
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 13
+      },
+      "world_1__abbr_v1": {
+        "base_db_id": "world_1",
+        "target_db_id": "world_1_1",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 82,
+        "join_query_count": 30,
+        "level_counts": {
+          "L2": 50,
+          "L3": 32
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "world_1__abbr_v2": {
+        "base_db_id": "world_1",
+        "target_db_id": "world_1_2",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 110,
+        "join_query_count": 42,
+        "level_counts": {
+          "L2": 40,
+          "L3": 70
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 9
+      },
+      "world_1__abbr_v3": {
+        "base_db_id": "world_1",
+        "target_db_id": "world_1_3",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 110,
+        "join_query_count": 40,
+        "level_counts": {
+          "L2": 58,
+          "L3": 52
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 11
+      },
+      "world_1__abbr_v4": {
+        "base_db_id": "world_1",
+        "target_db_id": "world_1_4",
+        "perturbation": "abbreviation",
+        "split": "test",
+        "query_count": 102,
+        "join_query_count": 44,
+        "level_counts": {
+          "L2": 46,
+          "L3": 56
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 9
+      },
+      "world_1__syn_v0": {
+        "base_db_id": "world_1",
+        "target_db_id": "world_1_0",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 116,
+        "join_query_count": 42,
+        "level_counts": {
+          "L2": 36,
+          "L3": 80
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 12
+      },
+      "world_1__syn_v1": {
+        "base_db_id": "world_1",
+        "target_db_id": "world_1_1",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 92,
+        "join_query_count": 40,
+        "level_counts": {
+          "L2": 64,
+          "L3": 28
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 5
+      },
+      "world_1__syn_v2": {
+        "base_db_id": "world_1",
+        "target_db_id": "world_1_2",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 56,
+        "join_query_count": 42,
+        "level_counts": {
+          "L2": 54,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "world_1__syn_v3": {
+        "base_db_id": "world_1",
+        "target_db_id": "world_1_3",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 102,
+        "join_query_count": 40,
+        "level_counts": {
+          "L2": 70,
+          "L3": 32
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "world_1__syn_v4": {
+        "base_db_id": "world_1",
+        "target_db_id": "world_1_4",
+        "perturbation": "synonym",
+        "split": "test",
+        "query_count": 100,
+        "join_query_count": 44,
+        "level_counts": {
+          "L2": 36,
+          "L3": 64
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 7
+      },
+      "wta_1__abbr_v0": {
+        "base_db_id": "wta_1",
+        "target_db_id": "wta_1_0",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 22,
+        "join_query_count": 6,
+        "level_counts": {
+          "L2": 16,
+          "L3": 6
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 6
+      },
+      "wta_1__abbr_v1": {
+        "base_db_id": "wta_1",
+        "target_db_id": "wta_1_1",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 22,
+        "join_query_count": 6,
+        "level_counts": {
+          "L2": 20,
+          "L3": 2
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "wta_1__abbr_v3": {
+        "base_db_id": "wta_1",
+        "target_db_id": "wta_1_3",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 12,
+        "join_query_count": 4,
+        "level_counts": {
+          "L2": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 4
+      },
+      "wta_1__abbr_v4": {
+        "base_db_id": "wta_1",
+        "target_db_id": "wta_1_4",
+        "perturbation": "abbreviation",
+        "split": "train",
+        "query_count": 18,
+        "join_query_count": 6,
+        "level_counts": {
+          "L2": 18
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 1
+      },
+      "wta_1__syn_v0": {
+        "base_db_id": "wta_1",
+        "target_db_id": "wta_1_0",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 48,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 22,
+          "L3": 26
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 13
+      },
+      "wta_1__syn_v1": {
+        "base_db_id": "wta_1",
+        "target_db_id": "wta_1_1",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 32,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 20,
+          "L3": 12
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 5
+      },
+      "wta_1__syn_v2": {
+        "base_db_id": "wta_1",
+        "target_db_id": "wta_1_2",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 10,
+        "join_query_count": 2,
+        "level_counts": {
+          "L2": 10
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 2
+      },
+      "wta_1__syn_v3": {
+        "base_db_id": "wta_1",
+        "target_db_id": "wta_1_3",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 46,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 30,
+          "L3": 16
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 8
+      },
+      "wta_1__syn_v4": {
+        "base_db_id": "wta_1",
+        "target_db_id": "wta_1_4",
+        "perturbation": "synonym",
+        "split": "train",
+        "query_count": 42,
+        "join_query_count": 10,
+        "level_counts": {
+          "L2": 20,
+          "L3": 22
+        },
+        "changed_table_count": 0,
+        "changed_column_count": 8
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "db_id": "flight_2_4",
+  "tables": [
+    {
+      "name": "airlines",
+      "columns": [
+        {
+          "name": "nation",
+          "type": "text"
+        },
+        {
+          "name": "Abbreviation",
+          "type": "text"
+        },
+        {
+          "name": "uid",
+          "type": "number"
+        },
+        {
+          "name": "Airline",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "airports",
+      "columns": [
+        {
+          "name": "Country",
+          "type": "text"
+        },
+        {
+          "name": "airfield_designation",
+          "type": "text"
+        },
+        {
+          "name": "AirportCode",
+          "type": "text"
+        },
+        {
+          "name": "CountryAbbrev",
+          "type": "text"
+        },
+        {
+          "name": "City",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "flights",
+      "columns": [
+        {
+          "name": "FlightNo",
+          "type": "number"
+        },
+        {
+          "name": "air_service",
+          "type": "number"
+        },
+        {
+          "name": "DestAirport",
+          "type": "text"
+        },
+        {
+          "name": "source_airfield",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "airports.AirportCode",
+    "flights.air_service",
+    "airlines.uid"
+  ],
+  "foreign_keys": [
+    {
+      "from": "flights.DestAirport",
+      "to": "airports.AirportCode"
+    },
+    {
+      "from": "flights.source_airfield",
+      "to": "airports.AirportCode"
+    }
+  ]
+}

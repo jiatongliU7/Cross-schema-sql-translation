@@ -1,0 +1,136 @@
+{
+  "db_id": "orchestra_4",
+  "tables": [
+    {
+      "name": "show",
+      "columns": [
+        {
+          "name": "Result",
+          "type": "text"
+        },
+        {
+          "name": "Attendance",
+          "type": "number"
+        },
+        {
+          "name": "If_first_show",
+          "type": "others"
+        },
+        {
+          "name": "Performance_ID",
+          "type": "number"
+        },
+        {
+          "name": "Show_ID",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "conductor",
+      "columns": [
+        {
+          "name": "Age",
+          "type": "number"
+        },
+        {
+          "name": "practition_length",
+          "type": "number"
+        },
+        {
+          "name": "Name",
+          "type": "text"
+        },
+        {
+          "name": "Conductor_ID",
+          "type": "number"
+        },
+        {
+          "name": "Nationality",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "orchestra",
+      "columns": [
+        {
+          "name": "main_format",
+          "type": "text"
+        },
+        {
+          "name": "Orchestra",
+          "type": "text"
+        },
+        {
+          "name": "Year_of_Founded",
+          "type": "number"
+        },
+        {
+          "name": "Record_Company",
+          "type": "text"
+        },
+        {
+          "name": "Orchestra_ID",
+          "type": "number"
+        },
+        {
+          "name": "Conductor_ID",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "performance",
+      "columns": [
+        {
+          "name": "Orchestra_ID",
+          "type": "number"
+        },
+        {
+          "name": "portion",
+          "type": "text"
+        },
+        {
+          "name": "sort",
+          "type": "text"
+        },
+        {
+          "name": "Performance_ID",
+          "type": "number"
+        },
+        {
+          "name": "Weekly_rank",
+          "type": "text"
+        },
+        {
+          "name": "Date",
+          "type": "text"
+        },
+        {
+          "name": "Official_ratings_in_millions",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "conductor.Conductor_ID",
+    "orchestra.Orchestra_ID",
+    "performance.Performance_ID"
+  ],
+  "foreign_keys": [
+    {
+      "from": "show.Performance_ID",
+      "to": "performance.Performance_ID"
+    },
+    {
+      "from": "performance.Orchestra_ID",
+      "to": "orchestra.Orchestra_ID"
+    },
+    {
+      "from": "orchestra.Conductor_ID",
+      "to": "conductor.Conductor_ID"
+    }
+  ]
+}

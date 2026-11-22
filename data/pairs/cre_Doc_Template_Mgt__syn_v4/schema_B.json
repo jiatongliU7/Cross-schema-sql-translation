@@ -1,0 +1,113 @@
+{
+  "db_id": "cre_Doc_Template_Mgt_4",
+  "tables": [
+    {
+      "name": "Ref_Template_Types",
+      "columns": [
+        {
+          "name": "Template_Type_Description",
+          "type": "text"
+        },
+        {
+          "name": "Template_Type_Code",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Templates",
+      "columns": [
+        {
+          "name": "Template_Details",
+          "type": "text"
+        },
+        {
+          "name": "Template_ID",
+          "type": "number"
+        },
+        {
+          "name": "Date_Effective_From",
+          "type": "time"
+        },
+        {
+          "name": "Date_Effective_To",
+          "type": "time"
+        },
+        {
+          "name": "Version_Number",
+          "type": "number"
+        },
+        {
+          "name": "Template_Type_Code",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Paragraphs",
+      "columns": [
+        {
+          "name": "content",
+          "type": "text"
+        },
+        {
+          "name": "Document_ID",
+          "type": "number"
+        },
+        {
+          "name": "Paragraph_ID",
+          "type": "number"
+        },
+        {
+          "name": "Other_Details",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Documents",
+      "columns": [
+        {
+          "name": "Template_ID",
+          "type": "number"
+        },
+        {
+          "name": "detailing",
+          "type": "text"
+        },
+        {
+          "name": "Document_ID",
+          "type": "number"
+        },
+        {
+          "name": "Document_Name",
+          "type": "text"
+        },
+        {
+          "name": "Other_Details",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "Paragraphs.Paragraph_ID",
+    "Ref_Template_Types.Template_Type_Code",
+    "Documents.Document_ID",
+    "Templates.Template_ID"
+  ],
+  "foreign_keys": [
+    {
+      "from": "Templates.Template_Type_Code",
+      "to": "Ref_Template_Types.Template_Type_Code"
+    },
+    {
+      "from": "Documents.Template_ID",
+      "to": "Templates.Template_ID"
+    },
+    {
+      "from": "Paragraphs.Document_ID",
+      "to": "Documents.Document_ID"
+    }
+  ]
+}

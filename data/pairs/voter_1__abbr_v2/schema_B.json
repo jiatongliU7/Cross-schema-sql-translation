@@ -1,0 +1,71 @@
+{
+  "db_id": "voter_1_2",
+  "tables": [
+    {
+      "name": "AREA_CODE_STATE",
+      "columns": [
+        {
+          "name": "state",
+          "type": "text"
+        },
+        {
+          "name": "area_code",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "VOTES",
+      "columns": [
+        {
+          "name": "contestant_number",
+          "type": "number"
+        },
+        {
+          "name": "ph",
+          "type": "number"
+        },
+        {
+          "name": "created",
+          "type": "time"
+        },
+        {
+          "name": "st",
+          "type": "text"
+        },
+        {
+          "name": "vote_id",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "CONTESTANTS",
+      "columns": [
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "contestant_number",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "primary_keys": [
+    "AREA_CODE_STATE.area_code",
+    "CONTESTANTS.contestant_number",
+    "VOTES.vote_id"
+  ],
+  "foreign_keys": [
+    {
+      "from": "VOTES.contestant_number",
+      "to": "CONTESTANTS.contestant_number"
+    },
+    {
+      "from": "VOTES.st",
+      "to": "AREA_CODE_STATE.state"
+    }
+  ]
+}
