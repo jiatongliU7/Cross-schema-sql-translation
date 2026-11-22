@@ -2,6 +2,26 @@
 
 COMS 4705 research prototype for **SQLite databases that differ only by table and column renaming**. It predicts one reusable mapping per database pair, rewrites SQL with SQLGlot, and evaluates execution and mapping accuracy. Gold mappings are used only for evaluation, training pair creation, or the explicitly named gold oracle.
 
+## Start here
+
+| What you need | Where to look |
+| --- | --- |
+| Dataset, split, and file formats | [Dataset guide](docs/DATASET.md) and [handoff format](docs/HANDOFF.md) |
+| Train and use the Sentence-BERT matcher | [Neural mapping guide](docs/NEURAL_MAPPING.md) and [train_sbert.py](train_sbert.py) |
+| Run baselines and evaluate | [Evaluation workflow](docs/EVALUATION.md) and [evaluate_pipeline.py](evaluate_pipeline.py) |
+| Inspect the preliminary experiment | [Experiment overview](experiments/spider-run/README.md), [test summary](experiments/spider-run/summary_test.csv), and [dev summary](experiments/spider-run/summary_dev.csv) |
+| Investigate outputs | [Per-method results and errors](experiments/spider-run/results/) and [predicted mappings and SQL](experiments/spider-run/predictions/) |
+
+The existing experiment is an **initial exploratory run**, not a final benchmark: its test split contains three original databases, table names are unchanged, and most column names are unchanged. Read the experiment overview before interpreting the reported scores.
+
+### Which evaluation script should I use?
+
+- **`evaluate_pipeline.py`** runs the team's complete baseline/evaluation workflow, including saved mappings and the few-shot LLM interface. See [Evaluation workflow](docs/EVALUATION.md).
+- **`evaluate.py`** evaluates prediction files using the handoff format, including top-k candidates, selected mappings, and generated SQL. The existing `experiments/spider-run` results were produced by this workflow; see [Handoff format](docs/HANDOFF.md).
+- **`evaluate_models.py`** compares pretrained and fine-tuned SBERT column retrieval on a manifest of held-out schema pairs. It does not evaluate SQL translation; see [Neural mapping guide](docs/NEURAL_MAPPING.md).
+
+These scripts measure different parts of the task. Check their metric definitions and input formats before comparing results.
+
 ## Setup and quick start
 
 Requires Python 3.10+ and SQLite 3.26+ (recent Python installations normally include SQLite). Run from this directory:

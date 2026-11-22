@@ -1,13 +1,0 @@
-schema pairs: 182 unique descriptions: 1095
-Batches:   0%|          | 0/18 [00:00<?, ?it/s]Batches:   6%|▌         | 1/18 [00:00<00:04,  3.52it/s]Batches:  11%|█         | 2/18 [00:00<00:05,  3.16it/s]Batches:  17%|█▋        | 3/18 [00:00<00:03,  4.16it/s]Batches:  22%|██▏       | 4/18 [00:00<00:02,  5.02it/s]Batches:  28%|██▊       | 5/18 [00:01<00:02,  5.83it/s]Batches:  33%|███▎      | 6/18 [00:01<00:01,  6.34it/s]Batches:  39%|███▉      | 7/18 [00:01<00:01,  5.90it/s]Batches:  44%|████▍     | 8/18 [00:01<00:01,  6.28it/s]Batches:  50%|█████     | 9/18 [00:01<00:01,  6.83it/s]Batches:  56%|█████▌    | 10/18 [00:01<00:01,  7.12it/s]Batches:  61%|██████    | 11/18 [00:01<00:00,  7.35it/s]Batches:  67%|██████▋   | 12/18 [00:01<00:00,  7.54it/s]Batches:  72%|███████▏  | 13/18 [00:02<00:00,  7.88it/s]Batches:  78%|███████▊  | 14/18 [00:02<00:00,  7.98it/s]Batches:  83%|████████▎ | 15/18 [00:02<00:00,  7.92it/s]Batches:  89%|████████▉ | 16/18 [00:02<00:00,  8.12it/s]Batches: 100%|██████████| 18/18 [00:02<00:00,  7.16it/s]
-completed 20/182; failures 0
-completed 40/182; failures 0
-completed 60/182; failures 0
-completed 80/182; failures 0
-completed 100/182; failures 0
-completed 120/182; failures 0
-completed 140/182; failures 0
-completed 160/182; failures 0
-completed 180/182; failures 0
-completed 182/182; failures 0
-done 0 failures
