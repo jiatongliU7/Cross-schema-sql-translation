@@ -9,18 +9,34 @@ COMS 4705 research prototype for **SQLite databases that differ only by table an
 | Dataset, split, and file formats | [Dataset guide](docs/DATASET.md) and [handoff format](docs/HANDOFF.md) |
 | Train and use the Sentence-BERT matcher | [Neural mapping guide](docs/NEURAL_MAPPING.md) and [train_sbert.py](train_sbert.py) |
 | Run baselines and evaluate | [Evaluation workflow](docs/EVALUATION.md) and [evaluate_pipeline.py](evaluate_pipeline.py) |
+| Run/review the Gemini 3-shot baseline | [Gemini workflow](docs/GEMINI_EVALUATION.md), [frozen protocol and dev results](experiments/gemini-3shot/README.md) |
+| Read the milestone conclusions | [Preliminary evaluation draft](docs/MILESTONE_EVALUATION_DRAFT.md) |
 | Inspect the preliminary experiment | [Experiment overview](experiments/spider-run/README.md), [test summary](experiments/spider-run/summary_test.csv), and [dev summary](experiments/spider-run/summary_dev.csv) |
 | Investigate outputs | [Per-method results and errors](experiments/spider-run/results/) and [predicted mappings and SQL](experiments/spider-run/predictions/) |
 
-The existing experiment is an **initial exploratory run**, not a final benchmark: its test split contains three original databases, table names are unchanged, and most column names are unchanged. Read the experiment overview before interpreting the reported scores.
+The experiments are **exploratory**, not a final benchmark. Standard pairs keep
+table names unchanged; challenge pairs rename tables and most columns. Both reuse
+the same original databases, with only three independent databases per dev/test
+split. Read each experiment overview before interpreting scores. The Gemini
+3-shot baseline has complete dev results (standard: 925/925 queries; challenge:
+190/190), but no Gemini test-set result is claimed. These development results do
+not establish accuracy superiority of SBERT over the LLM or a measured local
+inference cost/latency advantage.
 
 ### Which evaluation script should I use?
 
+- **`run_gemini_batch.py --group standard|challenge`** runs the native Gemini baseline with frozen training demonstrations, group separation, transport retries and checkpoints. See [Gemini workflow](docs/GEMINI_EVALUATION.md).
 - **`evaluate_pipeline.py`** runs the team's complete baseline/evaluation workflow, including saved mappings and the few-shot LLM interface. See [Evaluation workflow](docs/EVALUATION.md).
 - **`python -m handoff.evaluate`** evaluates prediction files using the handoff format, including top-k candidates, selected mappings, and generated SQL. The existing `experiments/spider-run` results were produced by this workflow; see [Handoff format](docs/HANDOFF.md).
 - **`python -m scripts.evaluate_models`** compares pretrained and fine-tuned SBERT column retrieval on a manifest of held-out schema pairs. It does not evaluate SQL translation; see [Neural mapping guide](docs/NEURAL_MAPPING.md).
 
-These scripts measure different parts of the task. Check their metric definitions and input formats before comparing results.
+These scripts measure different parts of the task. `evaluate_pipeline.py` reads
+all pairs in its input split and does not have a `--group` flag. With the current
+combined split file this mixes standard and challenge; use a group-filtered data
+view for that runner. The Gemini runner separates groups explicitly. The handoff
+evaluator excludes invalid reference SQL from query denominators; the team batch
+evaluator retains them as failures. Recorded dev comparisons have no invalid
+references, but these policies must not be conflated in future runs.
 
 ## Setup and quick start
 
@@ -36,7 +52,7 @@ python -m unittest discover -s tests -v
 
 The demo creates a new source DB and renamed target DB, saves the gold and predicted mappings, and evaluates three queries. Choose a new `--dir` for another run: existing databases are never overwritten. `gold_report.json` verifies rewriting with the answer; `predicted_report.json` evaluates the lexical matcher. These tiny examples are a smoke test, not research evidence.
 
-To use Sentence-BERT and training, additionally run `pip install -r requirements-neural.txt`. First model use downloads model files from Hugging Face, unless already cached; internet and enough storage are needed. A GPU is optional. The LLM baseline needs API credentials and incurs provider charges. Neither external dataset nor model weights are bundled.
+To use Sentence-BERT and training, additionally run `pip install -r requirements-neural.txt`. First model use downloads model files from Hugging Face, unless already cached; internet and enough storage are needed. A GPU is optional. The LLM baseline needs API credentials and is subject to provider pricing and quotas; free-tier access was used for the recorded Gemini runs. The schema-pair benchmark is checked in, but pretrained and fine-tuned model weights are not bundled.
 
 A reproducible toy mapping is included in [`examples/toy`](examples/toy/README.md). For dataset setup and experiments, see the [Spider and Dr.Spider guide](docs/SPIDER_DRSPIDER_GUIDE.md), the [schema-pair dataset guide](docs/DATASET.md), and the [neural mapping training guide](docs/NEURAL_MAPPING.md).
 
@@ -136,9 +152,13 @@ python -m sqltranslate.cli pairs train_manifest.json --out train_pairs.json
 python -m sqltranslate.cli train train_pairs.json --out models/schema-sbert --epochs 1 --batch-size 8
 ```
 
-This starter trainer uses cosine similarity regression on positive pairs and reproducibly sampled negative descriptions. Automatically sampled negatives can be false negatives, including semantically equivalent fields from different databases; inspect and curate training examples and establish a proper validation protocol before reporting results. The script does not perform hyperparameter tuning or measure validation performance. Do not include dev/test mappings. Training and SBERT inference have not been exercised without the optional dependencies and model download.
+This starter trainer uses cosine similarity regression on positive pairs and reproducibly sampled negative descriptions. Automatically sampled negatives can be false negatives, including semantically equivalent fields from different databases; inspect and curate training examples and establish a proper validation protocol before reporting results. The script does not perform hyperparameter tuning or measure validation performance. Do not include dev/test mappings. The recorded SBERT experiments used the optional dependencies and downloaded model weights; see [standard results](experiments/spider-run/README.md) and [challenge results](experiments/challenge-run-20261122/README.md). The commands above describe the older cosine-regression trainer, not the one-epoch contrastive checkpoint used in those experiments.
 
 ## Few-shot LLM baseline
+
+For the recorded native Gemini baseline, use [the Gemini workflow](docs/GEMINI_EVALUATION.md).
+The commands below describe the separate generic Chat Completions interface;
+they do not reproduce Gemini request settings, fixed examples or retry behavior.
 
 Prepare `examples.json` as an array of examples **from training databases only**, each containing `source_schema`, `target_schema`, and `mapping` in the same JSON formats produced by `schema` and `generate`. Then:
 
@@ -158,4 +178,4 @@ few-shot LLM requests with a no-cost dry run.
 
 ## Experimental limitations
 
-The code is a starting research implementation, not finished experimental results. It does not download datasets, prove data splits are independent, automatically perform sweeps or statistical significance testing, validate name difficulty, or evaluate all SQL constructs. FK relationships do not disambiguate graph-symmetric columns/tables by themselves. The FK reranker, type scores and one-to-one assumption are specific to structure-preserving renaming and do not model table splits, merges, missing columns or general database migration. Inspect code and generated data before use in a paper.
+The code is a research prototype with preliminary standard/challenge results, not a validated general schema-migration system. It does not download datasets, prove data splits are independent, automatically perform sweeps or statistical significance testing, validate name difficulty, or evaluate all SQL constructs. FK relationships do not disambiguate graph-symmetric columns/tables by themselves. The FK reranker, type scores and one-to-one assumption are specific to structure-preserving renaming and do not model table splits, merges, missing columns or general database migration. Inspect code and generated data before use in a paper.

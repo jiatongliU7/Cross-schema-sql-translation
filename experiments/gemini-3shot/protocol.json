@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.1-flash-lite",
+  "shots": 3,
+  "seed": 4705,
+  "max_output_tokens": 8192,
+  "example_pair_ids": [
+    "network_1__abbr_v2",
+    "concert_singer__syn_v3",
+    "employee_hire_evaluation__syn_v3"
+  ],
+  "examples_sha256": "270f72b138b6372741dfa41c3fa662d91ca7c8fd0eac3ad9636e4b01ee16c0c6"
+}

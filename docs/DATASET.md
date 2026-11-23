@@ -12,6 +12,21 @@ It contains two evaluation groups:
   broader column renaming. These isolate harder naming changes while retaining
   exactly the same data, types, PKs, FKs, and SQL dialect.
 
+## Current split sizes and reporting groups
+
+| Group | Train pairs / queries | Dev pairs / queries | Test pairs / queries |
+| --- | ---: | ---: | ---: |
+| Standard | 123 / 3,032 | 29 / 925 | 30 / 1,515 |
+| Challenge | 14 / 628 | 3 / 190 | 3 / 216 |
+| Combined file | 137 / 3,660 | 32 / 1,115 | 33 / 1,731 |
+
+Each group uses the same 14/3/3 original-database assignment. Combined counts do
+not represent more independent databases. Report each group separately. Appending
+challenge variants changes the training-pair list, so a seeded random sample may
+select different few-shot demonstrations; the recorded Gemini comparison instead
+uses the explicit frozen IDs and content hash in
+[protocol.json](../experiments/gemini-3shot/protocol.json).
+
 ## Build
 
 Selectively extract `Spider-dev`, `DB_schema_synonym`, and
@@ -106,8 +121,12 @@ Use the splits as follows:
   `test`.
 - Few-shot LLM: use demonstrations only from `train`; tune prompt choices on
   `dev`; evaluate the frozen prompt on `test`.
-- Oracle: feed `test` gold mappings through the same SQL rewriter to measure the
+- Oracle: feed gold mappings through the same SQL rewriter to measure the
   pipeline ceiling.
+
+Existing upstream test results have already been viewed. Keep parameters fixed
+and describe subsequent test comparisons as exploratory; the recorded Gemini
+results currently cover dev only.
 
 ## Validate
 

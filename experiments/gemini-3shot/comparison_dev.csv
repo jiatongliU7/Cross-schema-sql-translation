@@ -1,0 +1,13 @@
+group,split,method,pairs,queries,correct_queries,execution_accuracy,source
+standard,dev,lexical,29,925,755,0.8162162162162162,upstream@7071cb3
+challenge,dev,lexical,3,190,56,0.29473684210526313,upstream@7071cb3
+standard,dev,pretrained_semantic,29,925,921,0.9956756756756757,upstream@7071cb3
+challenge,dev,pretrained_semantic,3,190,160,0.8421052631578947,upstream@7071cb3
+standard,dev,finetuned_semantic,29,925,921,0.9956756756756757,upstream@7071cb3
+challenge,dev,finetuned_semantic,3,190,152,0.8,upstream@7071cb3
+standard,dev,finetuned_types,29,925,921,0.9956756756756757,upstream@7071cb3
+challenge,dev,finetuned_types,3,190,152,0.8,upstream@7071cb3
+standard,dev,finetuned_fk,29,925,921,0.9956756756756757,upstream@7071cb3
+challenge,dev,finetuned_fk,3,190,184,0.968421052631579,upstream@7071cb3
+standard,dev,gemini-3.1-flash-lite_3shot,29,925,925,1.0,results/standard_dev/summary.json
+challenge,dev,gemini-3.1-flash-lite_3shot,3,190,190,1.0,results/challenge_dev/summary.json

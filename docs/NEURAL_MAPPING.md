@@ -61,6 +61,28 @@ python -m scripts.evaluate_models --test-manifest test_manifest.json \
 
 The output `results/evaluation.csv` has one row per database variant and model; `detail_*.json` contains the rankings. Top-1 accuracy and Top-k recall are independently ranked retrieval metrics over all target columns, not mapping accuracy after one-to-one assignment. Report the search space and distinguish macro (mean across databases) from micro (weighted by number of columns) aggregation. Choose hyperparameters on dev data, never test data. Any ambiguous Dr.Spider correspondence requires review before reporting it as ground truth.
 
-## Verification status
+## Recorded experiments and verification scope
 
-The Python data preparation, ranking logic, and training integration have unit tests. In the current workspace, Sentence-Transformers and the official datasets/model weights are unavailable, so a real neural training run and held-out Spider/Dr.Spider evaluation have **not** been performed. Do not treat example outputs as research results.
+The data preparation, ranking logic and training integration have unit tests.
+Real pretrained/fine-tuned SBERT experiments are now recorded in
+[the standard run](../experiments/spider-run/README.md) and
+[the challenge run](../experiments/challenge-run-20261122/README.md).
+The recorded checkpoint was trained on the original standard training pairs for
+one epoch (608 positive pairs after deduplication, batch size 16, learning rate
+0.00002, seed 42). It was reused for challenge without challenge retraining.
+The example training command above uses three epochs and is a workflow example,
+not an exact reproduction of that checkpoint. Model weights/dependencies must
+still be supplied for reproduction.
+
+The recorded dev results do not show a consistent downstream EX gain from
+fine-tuning alone. Type-only reranking does not change EX in these runs, while
+adding the explicit FK objective improves challenge dev EX from 80.00% to 96.84%.
+The [Gemini dev baseline](../experiments/gemini-3shot/README.md) reaches 100% on
+both groups. These observations do not establish a measured local efficiency
+advantage or generalization to new database structures. Both groups reuse three
+independent dev databases; model inputs include key-role metadata even when
+explicit FK weight is zero.
+
+Current `splits.json` also contains challenge variants. To reproduce the earlier
+training run, select standard training pairs only rather than silently training
+on the expanded combined list. Do not tune on the previously viewed test scores.

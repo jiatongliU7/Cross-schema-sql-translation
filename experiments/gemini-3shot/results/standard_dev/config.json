@@ -1,0 +1,255 @@
+{
+  "split": "dev",
+  "model": "gemini-3.1-flash-lite",
+  "shots": 3,
+  "seed": 4705,
+  "max_output_tokens": 8192,
+  "interval": 15,
+  "max_attempts_per_invocation": 3,
+  "example_pair_ids": [
+    "network_1__abbr_v2",
+    "concert_singer__syn_v3",
+    "employee_hire_evaluation__syn_v3"
+  ],
+  "examples_sha256": "270f72b138b6372741dfa41c3fa662d91ca7c8fd0eac3ad9636e4b01ee16c0c6",
+  "splits_sha256": "482d340cec7f7ef2fb0c6ee6fa4999529486689595382b6770697d55cc22f19a",
+  "dataset_sha256": {
+    "battle_death__abbr_v0": {
+      "schema_A.json": "8ffdb9164f8f72a73c0d462bd04c232bccaaddd72de1daa9ea0f3a0cff579c7e",
+      "schema_B.json": "f1af8e55d5bc2b033c4c85ebb8d3e62c9065827a31a0f6b49c5c6ab82c1f3160",
+      "gold_mapping.json": "f90af17d4d3ea13dea00147cf1fb7f94d1b7b6de2516a509b1d81023d8e24ce2",
+      "queries.jsonl": "4ed6cbb833181cc41d647400057236066bb08461fe578c2c8f50cb04853f1c30",
+      "db_A.sqlite": "9f5ca4d4e92353aff0926b7072b9449a91dd596371495f42065e260fe29e932f",
+      "db_B.sqlite": "5e138c33384c99c6ebb21d20c9e3a6f931f735b663267065fd73460e95fab045"
+    },
+    "battle_death__abbr_v1": {
+      "schema_A.json": "8ffdb9164f8f72a73c0d462bd04c232bccaaddd72de1daa9ea0f3a0cff579c7e",
+      "schema_B.json": "a5cd1b8d2a57ab31b5a28f3e5638f88c10c95a8bfd1542bff0158a955459e436",
+      "gold_mapping.json": "2668d5b3a9885a99672f153cee3c97a13e7926f39bf051dfd0cc9e38955ec743",
+      "queries.jsonl": "3c23c3a09ec3a431ea4d9f19aedcdb6623f354df7b102eba5bebce673bcb1eba",
+      "db_A.sqlite": "9f5ca4d4e92353aff0926b7072b9449a91dd596371495f42065e260fe29e932f",
+      "db_B.sqlite": "f4454299dc882b63087337f9b845ad790315e17f62d0857e855c5ccb2c8243c7"
+    },
+    "battle_death__abbr_v2": {
+      "schema_A.json": "8ffdb9164f8f72a73c0d462bd04c232bccaaddd72de1daa9ea0f3a0cff579c7e",
+      "schema_B.json": "e8a436c25096a7158f7d6dc280c71a69bf39793f2e32e85ab9983bc86f8ef446",
+      "gold_mapping.json": "1e9d20bf811dbd4c3eb115019adc57a00d257d52518a1f51b25d4e382ea870db",
+      "queries.jsonl": "01fb2c3bc8b52eb5c415e1049f29d5c1957338f792afacd581f510538d8f113d",
+      "db_A.sqlite": "9f5ca4d4e92353aff0926b7072b9449a91dd596371495f42065e260fe29e932f",
+      "db_B.sqlite": "2e9267fe2a568a43f6549988bc8eba0168682140d61438b018a1df393c42877f"
+    },
+    "battle_death__abbr_v3": {
+      "schema_A.json": "8ffdb9164f8f72a73c0d462bd04c232bccaaddd72de1daa9ea0f3a0cff579c7e",
+      "schema_B.json": "85fe74c71fd6e7472d54044918cc1a12f1025bc28f5c9ea4ffbc10296a38bb63",
+      "gold_mapping.json": "9bc87a6bc08628317976457c505ba6f4969cfb8406503af0fd63037a734aa22b",
+      "queries.jsonl": "46e769cb98c057d5d52f480e4e0cd534e32b762916cfc3f8d3d5a63db94cc24e",
+      "db_A.sqlite": "9f5ca4d4e92353aff0926b7072b9449a91dd596371495f42065e260fe29e932f",
+      "db_B.sqlite": "881b686a79b775f799b2c60c524e98e5eab8f369e18f7ecb0bf80d6d20102018"
+    },
+    "battle_death__abbr_v4": {
+      "schema_A.json": "8ffdb9164f8f72a73c0d462bd04c232bccaaddd72de1daa9ea0f3a0cff579c7e",
+      "schema_B.json": "c7fc6a3921dcc16463a7e4af3e72e9d04e0d740c247d355092000f7e8089f251",
+      "gold_mapping.json": "9059687625988278e0ea3ed2819e46aaab43374122145d7487603e79a58bf9d9",
+      "queries.jsonl": "862a93600630decf81fd47597603ebb9ac07b70f11d043aa8999f4e8f4c2537a",
+      "db_A.sqlite": "9f5ca4d4e92353aff0926b7072b9449a91dd596371495f42065e260fe29e932f",
+      "db_B.sqlite": "4f556609ad5c3faa4885300f23dd8441f47305bf433444c045f38cca5280623a"
+    },
+    "battle_death__syn_v0": {
+      "schema_A.json": "8ffdb9164f8f72a73c0d462bd04c232bccaaddd72de1daa9ea0f3a0cff579c7e",
+      "schema_B.json": "41372fc7b62cf7631ed1a145ad93b21ce2bd1d428d6490e75deee69f4743f604",
+      "gold_mapping.json": "15cf01d897e2478c0f25c3333e6202645da0eed55d3d8c98166d27be02a927b9",
+      "queries.jsonl": "80a2b0bf0bb27715a00b834b601f6cdf1a2d708b387ba8dc1d60faa6d7942806",
+      "db_A.sqlite": "9f5ca4d4e92353aff0926b7072b9449a91dd596371495f42065e260fe29e932f",
+      "db_B.sqlite": "eb8cb7afda9680d301dcecd11895c93befd470a696c7965c8d433de28f7835c7"
+    },
+    "battle_death__syn_v1": {
+      "schema_A.json": "8ffdb9164f8f72a73c0d462bd04c232bccaaddd72de1daa9ea0f3a0cff579c7e",
+      "schema_B.json": "c81c8e126a75b16cc97019d6a3bbfc436fa11387694baafcf024886c22a36225",
+      "gold_mapping.json": "08701fb0e12e825cdd4a60f070cc90cbffb448d899c4b8e82bcf9eefa9fff34f",
+      "queries.jsonl": "1c42a534defa0bc0daeaa5777e85a6b3f2fde944479058dc4224cebf573dfc39",
+      "db_A.sqlite": "9f5ca4d4e92353aff0926b7072b9449a91dd596371495f42065e260fe29e932f",
+      "db_B.sqlite": "07f191f0367357f9e8f5dcb26a2df302d196ae622ab343a91a2b73373624b1c5"
+    },
+    "battle_death__syn_v2": {
+      "schema_A.json": "8ffdb9164f8f72a73c0d462bd04c232bccaaddd72de1daa9ea0f3a0cff579c7e",
+      "schema_B.json": "9466f3775084b283e7467c81a47c8b65d4c521f63bdbfbec599d405f24acb871",
+      "gold_mapping.json": "65214e774253e1021477ba6197dfd29c6675b6e2dfb491f14957188babeebb21",
+      "queries.jsonl": "484273eee1be35386d3788f96e8b7f55225f2421a589b973645fcd805e9babfa",
+      "db_A.sqlite": "9f5ca4d4e92353aff0926b7072b9449a91dd596371495f42065e260fe29e932f",
+      "db_B.sqlite": "2ae826500273109ef9685c5ce8330b3d9f88670a258ff501874c6d5d91e99cca"
+    },
+    "battle_death__syn_v3": {
+      "schema_A.json": "8ffdb9164f8f72a73c0d462bd04c232bccaaddd72de1daa9ea0f3a0cff579c7e",
+      "schema_B.json": "e738b387d0b18feba8a19477264b06c380aeccfcd740b15e9a4ba742e2152adb",
+      "gold_mapping.json": "388c8b85a96fca2fff3a701d29b92f75308a8ba68065ce557819dc6a6c78407c",
+      "queries.jsonl": "9b72dee9926dce3f7a14aaa486ca0e90cc7227e7ba6ca4d0afa379d84be25b7a",
+      "db_A.sqlite": "9f5ca4d4e92353aff0926b7072b9449a91dd596371495f42065e260fe29e932f",
+      "db_B.sqlite": "fc4ecf330468a316e61e37a64df60b30959b476e7362979d3c39604bfbb8bcf9"
+    },
+    "battle_death__syn_v4": {
+      "schema_A.json": "8ffdb9164f8f72a73c0d462bd04c232bccaaddd72de1daa9ea0f3a0cff579c7e",
+      "schema_B.json": "ff055f78338c4cfb21f2b801261d0ed3603b92ef1359ffd01fb948896fd586a3",
+      "gold_mapping.json": "9bd301c5c87fb4a63730930631fa606526e1c7a5dbdf9ab700901ccf7502d044",
+      "queries.jsonl": "91f92a789c8992aa293d3a7201996cee63300aff457167f64308b6515249ec17",
+      "db_A.sqlite": "9f5ca4d4e92353aff0926b7072b9449a91dd596371495f42065e260fe29e932f",
+      "db_B.sqlite": "e0516bcbf9a30652778358f3bae9e35521086cfa747e63bd904cf3375490f8df"
+    },
+    "car_1__abbr_v0": {
+      "schema_A.json": "82d525b50d2a5daf8013d470f9db19e2b2be4013ff828003812511488ee78e41",
+      "schema_B.json": "95e041cd6c25e5eedff0d0bbd252ddd8f77e7b7c511746e3805f51a626546da5",
+      "gold_mapping.json": "eb9d609a32f1d6c662ab3b6fc879e439789163558c59c2a4ae0e873ec6e35565",
+      "queries.jsonl": "0c22d98c037a4e6372e21429ebd1f5fb1ec5db578786cae06bac95c229863f91",
+      "db_A.sqlite": "378377f82d2c6f64439fdc2c728c8b3a78feb3592cb4689076e77940b7b59007",
+      "db_B.sqlite": "d2a61fac22a1d3f5fd607ad3388164e6cadfba454ce9689aa8b74146d49ffbac"
+    },
+    "car_1__abbr_v1": {
+      "schema_A.json": "82d525b50d2a5daf8013d470f9db19e2b2be4013ff828003812511488ee78e41",
+      "schema_B.json": "c2a1c12a0b9d0cb109b659ae6fa4d8581819135f044d697b7a61fd35a931178a",
+      "gold_mapping.json": "a39cff6d8d379f77067db9f7ad178404a3b90591e3e7f42cefb3dc4a72fdbd78",
+      "queries.jsonl": "7f59ccc64822e8f278cd0dfdb96e1dd8564737eb764345f4a9764ce1bfe60dc8",
+      "db_A.sqlite": "378377f82d2c6f64439fdc2c728c8b3a78feb3592cb4689076e77940b7b59007",
+      "db_B.sqlite": "efe8c9a9038ef0a8aa697d9f78e987ed54ea81c8deb791e0202a41dabd0d62da"
+    },
+    "car_1__abbr_v2": {
+      "schema_A.json": "82d525b50d2a5daf8013d470f9db19e2b2be4013ff828003812511488ee78e41",
+      "schema_B.json": "ff988b6a9580571447654a2b5ffd2e00e423a3fef2e8aa1e870723e256e3592a",
+      "gold_mapping.json": "d492a83fb2d291ebccb855ce7b2b3e82722649c930f66d1f4a7485abff24a766",
+      "queries.jsonl": "1d3d5069b4f41f6ac8ff13539158257583d1d263ffa7bb26b22a898f46b5c69b",
+      "db_A.sqlite": "378377f82d2c6f64439fdc2c728c8b3a78feb3592cb4689076e77940b7b59007",
+      "db_B.sqlite": "a8affd0f4a1ad1d1f1e2415b2d68ee97c9e7176fac9593f5f44271f5677fcb68"
+    },
+    "car_1__abbr_v3": {
+      "schema_A.json": "82d525b50d2a5daf8013d470f9db19e2b2be4013ff828003812511488ee78e41",
+      "schema_B.json": "2043a56460dd9184e347c5b6b5c7584d4ef1bc768e07d10d1976e08ca980453d",
+      "gold_mapping.json": "1bf67dac1e44b656e0ffa2113472bcb319d59dc4fe3e53fd6a47725f07d057f4",
+      "queries.jsonl": "d31bec6e79aef71e03d0dd5f7d73ee2dac78e85aeab67945482819ca013a8322",
+      "db_A.sqlite": "378377f82d2c6f64439fdc2c728c8b3a78feb3592cb4689076e77940b7b59007",
+      "db_B.sqlite": "f7c5dffc0d46df4503cc330b78d98f4ce8b08849508ec78c79a600806a807e41"
+    },
+    "car_1__abbr_v4": {
+      "schema_A.json": "82d525b50d2a5daf8013d470f9db19e2b2be4013ff828003812511488ee78e41",
+      "schema_B.json": "efa9e371d4006b242bb0731ff9db114d7ce302dd21ae210234b1f742e8aa83fb",
+      "gold_mapping.json": "12e74863bfa705f161ca092123de11fd0a4d8a0625e070c3da4c9dee6f3920d8",
+      "queries.jsonl": "eb71609467cdc44ee85b14f8bf0fe4eea4f054c6a817ae7ca5f5cd2f90c47578",
+      "db_A.sqlite": "378377f82d2c6f64439fdc2c728c8b3a78feb3592cb4689076e77940b7b59007",
+      "db_B.sqlite": "81e75ab5503cc901e6b4f49ce26f11293bcb6160a16e8d8d17c4472155c2957c"
+    },
+    "car_1__syn_v0": {
+      "schema_A.json": "82d525b50d2a5daf8013d470f9db19e2b2be4013ff828003812511488ee78e41",
+      "schema_B.json": "27af4341fd3a826838bc46325705d870d0ade47295be7cefb43c4f4464de4af8",
+      "gold_mapping.json": "0dd67219cb67a91d1ef1e676624110854dbb62002ebd582b1b1b924d414ff8f9",
+      "queries.jsonl": "188e75d9a0835856bfa2bb69ab962423c9d1450cdf46c55c2445e75e8b04b084",
+      "db_A.sqlite": "378377f82d2c6f64439fdc2c728c8b3a78feb3592cb4689076e77940b7b59007",
+      "db_B.sqlite": "6f00990169b275a9895de0662851abce561406d306bdf44adf5a23a5209ccb9d"
+    },
+    "car_1__syn_v1": {
+      "schema_A.json": "82d525b50d2a5daf8013d470f9db19e2b2be4013ff828003812511488ee78e41",
+      "schema_B.json": "070b43d13f2dbcd096f9db351298f28580dce0a17b1c5e1cb18e9e9071196ab3",
+      "gold_mapping.json": "e2af889e7a5f465bde9359a1cfc50d5020c36986d05c40d1524e279ef6948840",
+      "queries.jsonl": "9c89d498aa51070d0f28cdb05bb8442af037e38d5dbd1a4368c91a930276adfc",
+      "db_A.sqlite": "378377f82d2c6f64439fdc2c728c8b3a78feb3592cb4689076e77940b7b59007",
+      "db_B.sqlite": "c7a4ed3af944f9b5bf8ac895c0770fa6260d824d93caa418ab323aca70bc9cd8"
+    },
+    "car_1__syn_v2": {
+      "schema_A.json": "82d525b50d2a5daf8013d470f9db19e2b2be4013ff828003812511488ee78e41",
+      "schema_B.json": "d014bbb0aee88ec995888b361f587eea2b30718eef2df6062e703e5e21eb86ca",
+      "gold_mapping.json": "9483292777ca8532ea4415b734b9b65b03baaba62beaaed9f00d069da98bca9d",
+      "queries.jsonl": "5d9ce4d9dd9764c2d9fa7d13ccfab337be28bd98f7543a4aa3fec3532b500070",
+      "db_A.sqlite": "378377f82d2c6f64439fdc2c728c8b3a78feb3592cb4689076e77940b7b59007",
+      "db_B.sqlite": "2af08ce7bc4351760fd4409ef6f23e86fe64ec32fb434c1b7b92aa1d828172b5"
+    },
+    "car_1__syn_v3": {
+      "schema_A.json": "82d525b50d2a5daf8013d470f9db19e2b2be4013ff828003812511488ee78e41",
+      "schema_B.json": "1669bf427c0aaba839edc4e0fc199bd94b563a80f73725693ab1dbc559a726a1",
+      "gold_mapping.json": "cdee9b4f6510d147e48a823f2cd6517d4ce759eb360a271aeb57a12fc2155247",
+      "queries.jsonl": "3f6577f86676cd9da34f7047b14ff29a88396579ac7317f4c5f58cb0df2c91f6",
+      "db_A.sqlite": "378377f82d2c6f64439fdc2c728c8b3a78feb3592cb4689076e77940b7b59007",
+      "db_B.sqlite": "a362586411376b7cf0e267ce84dadba607f304db59dbe46f8dba820d87bcc9a4"
+    },
+    "car_1__syn_v4": {
+      "schema_A.json": "82d525b50d2a5daf8013d470f9db19e2b2be4013ff828003812511488ee78e41",
+      "schema_B.json": "5c74a4fe4ae043a811e404058ec9623eab09e2bd053bb89aecbc8d61d5718658",
+      "gold_mapping.json": "111ee6e52c6a2a1c9c1e8443d87fb2d1aafe098fc81d8c2c29ff989da51b00b9",
+      "queries.jsonl": "0abd780f39219e8cf60e73f20a09fbcd3c4af13fe85f9cbe23ceeb1fb5691a87",
+      "db_A.sqlite": "378377f82d2c6f64439fdc2c728c8b3a78feb3592cb4689076e77940b7b59007",
+      "db_B.sqlite": "d404be18c8a70034ec7e448ec76a1fe17faa4a0c278def6023576f91acdd4cca"
+    },
+    "dog_kennels__abbr_v1": {
+      "schema_A.json": "dd6d282b225dff1b95f0febcd667d3af977610d72d174857b4a2d0969912a299",
+      "schema_B.json": "31a382e90a665d862a1e90d137ce612c335e2c8b5c6b064ffcd57b0de94bbd71",
+      "gold_mapping.json": "befd6f72bfbb2c66e97ad58e61806b8ae29e74f08368b5093b2c637152a8aa7c",
+      "queries.jsonl": "c15304515856c99b4bfa2a07e99554d08f7663e54d0dfb5ae67179d38bdc74f8",
+      "db_A.sqlite": "19743427ae7e391f8f848f6e45baeb672eaa6de85ef83c8cefb6149c8175da6d",
+      "db_B.sqlite": "07c34620dc94adf31074c6e07682d64fc1d9d848e5f3e709136b9dbac1268fe4"
+    },
+    "dog_kennels__abbr_v2": {
+      "schema_A.json": "dd6d282b225dff1b95f0febcd667d3af977610d72d174857b4a2d0969912a299",
+      "schema_B.json": "bfef6693d3be08559f8ca08d4a47843b8334943fbc9941294008d1d37296633c",
+      "gold_mapping.json": "7d395a957ae1876efddbee3f9e5028cd3e3aadc2f9e0c5334194f88e3cd6035f",
+      "queries.jsonl": "e4144fb36e49738fe7d83d689474a864ddf05536630b252881735ff052fc28b2",
+      "db_A.sqlite": "19743427ae7e391f8f848f6e45baeb672eaa6de85ef83c8cefb6149c8175da6d",
+      "db_B.sqlite": "50491f70c363ddcc1928cfaeb0020a420d0c6a9cd9ad6c55f3ec58544034c5db"
+    },
+    "dog_kennels__abbr_v3": {
+      "schema_A.json": "dd6d282b225dff1b95f0febcd667d3af977610d72d174857b4a2d0969912a299",
+      "schema_B.json": "96b4a20f9501a38c3f50c73dd0a227ab85dd2343547aeec47734baa8d5a97e5f",
+      "gold_mapping.json": "55ca50618154b7a2773419989f7b0429e91ca5b56e013ba8087f8ed67eb53bb5",
+      "queries.jsonl": "e894c4771165dfee5f038180ce9f704edd5bc7f6ce460cf1715f808e42691f0b",
+      "db_A.sqlite": "19743427ae7e391f8f848f6e45baeb672eaa6de85ef83c8cefb6149c8175da6d",
+      "db_B.sqlite": "0e88321667b43402e98f2da752eab5c36012460b818859aac4ada9682c3e7775"
+    },
+    "dog_kennels__abbr_v4": {
+      "schema_A.json": "dd6d282b225dff1b95f0febcd667d3af977610d72d174857b4a2d0969912a299",
+      "schema_B.json": "a4c14bbc759b46b608ea5d2f610cab087b541cf96a5fb4b50a5ffd44662f632e",
+      "gold_mapping.json": "bb02a9661de227bfc004f5f38b9dbf6f02bddafe0c2e7e3dcf7806242dc60d17",
+      "queries.jsonl": "4992d86c6587ee95d7e1cde27c8fc3588f5f684d84febfde9c982d8ed5a35fcd",
+      "db_A.sqlite": "19743427ae7e391f8f848f6e45baeb672eaa6de85ef83c8cefb6149c8175da6d",
+      "db_B.sqlite": "5490f6ce30243bcefae467aa808624371caf7ac347ba58ae71f882f04c51fd8a"
+    },
+    "dog_kennels__syn_v0": {
+      "schema_A.json": "dd6d282b225dff1b95f0febcd667d3af977610d72d174857b4a2d0969912a299",
+      "schema_B.json": "8104d95ac75f7f3da66b1468b02d670668a37296148067376bc5792f763f2756",
+      "gold_mapping.json": "09dcceb628ad40f9fff34422c50b409251b85ad588244b112cbf80df3cb533a6",
+      "queries.jsonl": "2c571d83c6e228e57a266060b0d66d087b7932b08add36d0bee312bf6789d9b8",
+      "db_A.sqlite": "19743427ae7e391f8f848f6e45baeb672eaa6de85ef83c8cefb6149c8175da6d",
+      "db_B.sqlite": "d3d7de399d52cb60dfa93c954802e8ebd745b1ef3f24c4d790669d66fb29e6e8"
+    },
+    "dog_kennels__syn_v1": {
+      "schema_A.json": "dd6d282b225dff1b95f0febcd667d3af977610d72d174857b4a2d0969912a299",
+      "schema_B.json": "975f23f499718c84096918628119aa580cc1d43b5b0246ba79ef57eeed46ec4d",
+      "gold_mapping.json": "8ea8d7e4d699a426ce54d42f8a6225c57d3068ae5709727aba1f8d5b24f01c59",
+      "queries.jsonl": "3f7a50c09d544648a91e4a104b3c6af727cf85f44fee6b0239c189fc4805c971",
+      "db_A.sqlite": "19743427ae7e391f8f848f6e45baeb672eaa6de85ef83c8cefb6149c8175da6d",
+      "db_B.sqlite": "d20b9bf751bfa148028249cbcbf021967208ba9ceea3ebbb814b42aed937d482"
+    },
+    "dog_kennels__syn_v2": {
+      "schema_A.json": "dd6d282b225dff1b95f0febcd667d3af977610d72d174857b4a2d0969912a299",
+      "schema_B.json": "a05dab14494c2c9d8645b065c47e45271d1bfbba5b838ba015358d4d1dd9db5d",
+      "gold_mapping.json": "880c4382c34c1f412100fcae1fe18feb43ab8a43b1f7bd45ad1622c8268b395f",
+      "queries.jsonl": "ebaeed876cfcc963c22a49ee5eada6ee3f1091ea306cfd5acfee7acc0369ba88",
+      "db_A.sqlite": "19743427ae7e391f8f848f6e45baeb672eaa6de85ef83c8cefb6149c8175da6d",
+      "db_B.sqlite": "a5cac376bb636c5cda1913b45516ee870c7125b6ecab8e3c0a4579d36280eeb6"
+    },
+    "dog_kennels__syn_v3": {
+      "schema_A.json": "dd6d282b225dff1b95f0febcd667d3af977610d72d174857b4a2d0969912a299",
+      "schema_B.json": "81285fb7f20f3f08881dcef27d11cedbfc9a50648761d3f135a0dd5dd528188b",
+      "gold_mapping.json": "f354ddcea8d09bb8233c801ce34d6bf4f9593e1fcc356d5e1c308d76247e47f3",
+      "queries.jsonl": "4fd60cb6999d4da789399afb499016f0d41c0cfaab050b79d8f58dbb2c16a4c9",
+      "db_A.sqlite": "19743427ae7e391f8f848f6e45baeb672eaa6de85ef83c8cefb6149c8175da6d",
+      "db_B.sqlite": "92b8c8c7f83633432070193c5e80b4fc3440c68f7c65d8101bd9360ebd52f646"
+    },
+    "dog_kennels__syn_v4": {
+      "schema_A.json": "dd6d282b225dff1b95f0febcd667d3af977610d72d174857b4a2d0969912a299",
+      "schema_B.json": "773c32e263604d74145de402c56aa9eb38fc56dd6437961a8836fd734a54300f",
+      "gold_mapping.json": "2e5797c21004c68b50908aa279f605653a3dd610fdcc62bd745005dbcbbf87f6",
+      "queries.jsonl": "48b176d63fb0d686e251b448b9641b38a081c14984e0259eded41570223e6250",
+      "db_A.sqlite": "19743427ae7e391f8f848f6e45baeb672eaa6de85ef83c8cefb6149c8175da6d",
+      "db_B.sqlite": "a2aa74bbae451d13a34544bcd3da492e3eaac2b8f3f6e950ece3aec05086002d"
+    }
+  },
+  "adapter_sha256": "357e9107740ff274e3ce184faa4eaaa2acfb383ae78db1da1bfaa0a0e3d38c0c",
+  "prompt_sha256": "f3e811045f5e9f59ea57694c01e3173b33c038691e3badad81c46fc2bbb5d13b",
+  "evaluator_sha256": "bab6b55117409fe85f6e047f3c3c48f4ed2ca2586e7d06daa6dc69406dd6a24a",
+  "rewriter_sha256": "62b35ca43a358fb1b737b2b5023a5282092e581703c9c0173018fe1eff82092d",
+  "sql_rewriter_sha256": "ebef4e8d0a94a8e7d07189006bde363af093326499dee64eb5cf97580338ef21"
+}

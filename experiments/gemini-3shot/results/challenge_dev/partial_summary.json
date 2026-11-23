@@ -1,0 +1,65 @@
+{
+  "complete": true,
+  "completed_pairs": 3,
+  "planned_pairs": 3,
+  "metrics_on_completed_pairs": {
+    "n_queries": 190,
+    "execution_success_rate": 1.0,
+    "execution_accuracy": 1.0,
+    "normalized_exact_match": 1.0,
+    "reference_valid_rate": 1.0,
+    "table_accuracy": 1.0,
+    "column_accuracy": 1.0,
+    "changed_table_accuracy": 1.0,
+    "changed_column_accuracy": 1.0,
+    "n_pairs": 3,
+    "mapping_failures": 0,
+    "error_counts": {},
+    "empty_gold_queries": 0,
+    "pair_macro_execution_accuracy": 1.0,
+    "base_database_macro_execution_accuracy": 1.0,
+    "groups": {
+      "level": {
+        "L2": {
+          "n_queries": 6,
+          "execution_success_rate": 1.0,
+          "execution_accuracy": 1.0,
+          "normalized_exact_match": 1.0,
+          "reference_valid_rate": 1.0
+        },
+        "L3": {
+          "n_queries": 184,
+          "execution_success_rate": 1.0,
+          "execution_accuracy": 1.0,
+          "normalized_exact_match": 1.0,
+          "reference_valid_rate": 1.0
+        }
+      },
+      "is_join": {
+        "False": {
+          "n_queries": 88,
+          "execution_success_rate": 1.0,
+          "execution_accuracy": 1.0,
+          "normalized_exact_match": 1.0,
+          "reference_valid_rate": 1.0
+        },
+        "True": {
+          "n_queries": 102,
+          "execution_success_rate": 1.0,
+          "execution_accuracy": 1.0,
+          "normalized_exact_match": 1.0,
+          "reference_valid_rate": 1.0
+        }
+      },
+      "perturbation": {
+        "challenge_semantic_table_and_column_rename": {
+          "n_queries": 190,
+          "execution_success_rate": 1.0,
+          "execution_accuracy": 1.0,
+          "normalized_exact_match": 1.0,
+          "reference_valid_rate": 1.0
+        }
+      }
+    }
+  }
+}
