@@ -1,0 +1,416 @@
+{
+  "tables": {
+    "Ref_Template_Types": [
+      [
+        "document_blueprints",
+        0.491274893283844
+      ],
+      [
+        "files",
+        0.3983907103538513
+      ],
+      [
+        "blueprint_category_lookup",
+        0.39291805028915405
+      ]
+    ],
+    "Templates": [
+      [
+        "document_blueprints",
+        0.6335667371749878
+      ],
+      [
+        "text_blocks",
+        0.5498003363609314
+      ],
+      [
+        "files",
+        0.5422385334968567
+      ]
+    ],
+    "Documents": [
+      [
+        "document_blueprints",
+        0.772038996219635
+      ],
+      [
+        "files",
+        0.7405103445053101
+      ],
+      [
+        "text_blocks",
+        0.5288764834403992
+      ]
+    ],
+    "Paragraphs": [
+      [
+        "text_blocks",
+        0.6051474809646606
+      ],
+      [
+        "document_blueprints",
+        0.5232316255569458
+      ],
+      [
+        "files",
+        0.39347848296165466
+      ]
+    ]
+  },
+  "columns": {
+    "Ref_Template_Types.Template_Type_Code": [
+      [
+        "document_blueprints.blueprint_details",
+        0.7800231575965881
+      ],
+      [
+        "document_blueprints.blueprint_category_tag",
+        0.7607649564743042
+      ],
+      [
+        "text_blocks.block_text",
+        0.7452964186668396
+      ]
+    ],
+    "Ref_Template_Types.Template_Type_Description": [
+      [
+        "document_blueprints.blueprint_details",
+        0.7605928182601929
+      ],
+      [
+        "text_blocks.supplementary_notes",
+        0.7477145195007324
+      ],
+      [
+        "document_blueprints.blueprint_category_tag",
+        0.7328199148178101
+      ]
+    ],
+    "Templates.Template_ID": [
+      [
+        "document_blueprints.blueprint_key",
+        0.7651679515838623
+      ],
+      [
+        "document_blueprints.blueprint_details",
+        0.7401652336120605
+      ],
+      [
+        "text_blocks.block_key",
+        0.7099615335464478
+      ]
+    ],
+    "Templates.Version_Number": [
+      [
+        "document_blueprints.version_count",
+        0.8533881306648254
+      ],
+      [
+        "document_blueprints.blueprint_key",
+        0.7282655239105225
+      ],
+      [
+        "document_blueprints.blueprint_details",
+        0.6964681148529053
+      ]
+    ],
+    "Templates.Template_Type_Code": [
+      [
+        "document_blueprints.blueprint_details",
+        0.7979519367218018
+      ],
+      [
+        "text_blocks.block_text",
+        0.7763726711273193
+      ],
+      [
+        "document_blueprints.blueprint_category_tag",
+        0.771522045135498
+      ]
+    ],
+    "Templates.Date_Effective_From": [
+      [
+        "document_blueprints.day_valid_to",
+        0.7427526712417603
+      ],
+      [
+        "document_blueprints.day_valid_from",
+        0.7416123151779175
+      ],
+      [
+        "document_blueprints.blueprint_key",
+        0.6367924809455872
+      ]
+    ],
+    "Templates.Date_Effective_To": [
+      [
+        "document_blueprints.day_valid_to",
+        0.7554445862770081
+      ],
+      [
+        "document_blueprints.day_valid_from",
+        0.7458138465881348
+      ],
+      [
+        "document_blueprints.version_count",
+        0.6542234420776367
+      ]
+    ],
+    "Templates.Template_Details": [
+      [
+        "document_blueprints.blueprint_details",
+        0.798405647277832
+      ],
+      [
+        "text_blocks.block_text",
+        0.76894611120224
+      ],
+      [
+        "document_blueprints.blueprint_category_tag",
+        0.7510454654693604
+      ]
+    ],
+    "Documents.Document_ID": [
+      [
+        "document_blueprints.blueprint_key",
+        0.8677229881286621
+      ],
+      [
+        "document_blueprints.blueprint_details",
+        0.8389650583267212
+      ],
+      [
+        "document_blueprints.version_count",
+        0.8059753179550171
+      ]
+    ],
+    "Documents.Template_ID": [
+      [
+        "document_blueprints.blueprint_key",
+        0.8233856558799744
+      ],
+      [
+        "document_blueprints.blueprint_details",
+        0.8013843297958374
+      ],
+      [
+        "document_blueprints.version_count",
+        0.7610898017883301
+      ]
+    ],
+    "Documents.Document_Name": [
+      [
+        "document_blueprints.blueprint_details",
+        0.881991982460022
+      ],
+      [
+        "document_blueprints.blueprint_key",
+        0.8289328813552856
+      ],
+      [
+        "files.file_label",
+        0.8152252435684204
+      ]
+    ],
+    "Documents.Document_Description": [
+      [
+        "document_blueprints.blueprint_details",
+        0.8808606863021851
+      ],
+      [
+        "document_blueprints.blueprint_category_tag",
+        0.8224570751190186
+      ],
+      [
+        "files.file_summary",
+        0.815277099609375
+      ]
+    ],
+    "Documents.Other_Details": [
+      [
+        "document_blueprints.blueprint_details",
+        0.8860440850257874
+      ],
+      [
+        "document_blueprints.blueprint_key",
+        0.8238881826400757
+      ],
+      [
+        "document_blueprints.blueprint_category_tag",
+        0.8223764300346375
+      ]
+    ],
+    "Paragraphs.Paragraph_ID": [
+      [
+        "text_blocks.block_key",
+        0.7169400453567505
+      ],
+      [
+        "text_blocks.supplementary_notes",
+        0.7129746079444885
+      ],
+      [
+        "document_blueprints.blueprint_details",
+        0.7078714370727539
+      ]
+    ],
+    "Paragraphs.Document_ID": [
+      [
+        "document_blueprints.blueprint_key",
+        0.8029575347900391
+      ],
+      [
+        "document_blueprints.blueprint_details",
+        0.8016054630279541
+      ],
+      [
+        "document_blueprints.version_count",
+        0.7491066455841064
+      ]
+    ],
+    "Paragraphs.Paragraph_Text": [
+      [
+        "text_blocks.block_text",
+        0.8137755990028381
+      ],
+      [
+        "text_blocks.supplementary_notes",
+        0.7876867055892944
+      ],
+      [
+        "document_blueprints.blueprint_details",
+        0.7734040021896362
+      ]
+    ],
+    "Paragraphs.Other_Details": [
+      [
+        "text_blocks.block_text",
+        0.8195669651031494
+      ],
+      [
+        "text_blocks.supplementary_notes",
+        0.8070452213287354
+      ],
+      [
+        "document_blueprints.blueprint_details",
+        0.7859029173851013
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Ref_Template_Types": "blueprint_category_lookup",
+      "Templates": "document_blueprints",
+      "Documents": "files",
+      "Paragraphs": "text_blocks"
+    },
+    "columns": {
+      "Ref_Template_Types.Template_Type_Code": "blueprint_category_lookup.blueprint_category_tag",
+      "Ref_Template_Types.Template_Type_Description": "blueprint_category_lookup.blueprint_category_summary",
+      "Templates.Template_ID": "document_blueprints.blueprint_key",
+      "Templates.Version_Number": "document_blueprints.version_count",
+      "Templates.Template_Type_Code": "document_blueprints.blueprint_category_tag",
+      "Templates.Date_Effective_From": "document_blueprints.day_valid_from",
+      "Templates.Date_Effective_To": "document_blueprints.day_valid_to",
+      "Templates.Template_Details": "document_blueprints.blueprint_details",
+      "Documents.Document_ID": "files.file_key",
+      "Documents.Template_ID": "files.blueprint_key",
+      "Documents.Document_Name": "files.file_label",
+      "Documents.Document_Description": "files.file_summary",
+      "Documents.Other_Details": "files.supplementary_notes",
+      "Paragraphs.Paragraph_ID": "text_blocks.block_key",
+      "Paragraphs.Document_ID": "text_blocks.file_key",
+      "Paragraphs.Paragraph_Text": "text_blocks.block_text",
+      "Paragraphs.Other_Details": "text_blocks.supplementary_notes"
+    }
+  },
+  "q_B": {
+    "cre_Doc_Template_Mgt__challenge_v0__q0297": "SELECT COUNT(*) AS \"_col_0\" FROM \"files\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0298": "SELECT COUNT(*) AS \"_col_0\" FROM \"files\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0299": "SELECT \"documents\".\"file_key\" AS \"document_id\", \"documents\".\"file_label\" AS \"document_name\", \"documents\".\"file_summary\" AS \"document_description\" FROM \"files\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0300": "SELECT \"documents\".\"file_key\" AS \"document_id\", \"documents\".\"file_label\" AS \"document_name\", \"documents\".\"file_summary\" AS \"document_description\" FROM \"files\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0301": "SELECT \"documents\".\"file_label\" AS \"document_name\", \"documents\".\"blueprint_key\" AS \"template_id\" FROM \"files\" AS \"documents\" WHERE \"documents\".\"file_summary\" LIKE '%w%'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0302": "SELECT \"documents\".\"file_label\" AS \"document_name\", \"documents\".\"blueprint_key\" AS \"template_id\" FROM \"files\" AS \"documents\" WHERE \"documents\".\"file_summary\" LIKE '%w%'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0303": "SELECT \"documents\".\"file_key\" AS \"document_id\", \"documents\".\"blueprint_key\" AS \"template_id\", \"documents\".\"file_summary\" AS \"document_description\" FROM \"files\" AS \"documents\" WHERE \"documents\".\"file_label\" = 'Robbin CV'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0304": "SELECT \"documents\".\"file_key\" AS \"document_id\", \"documents\".\"blueprint_key\" AS \"template_id\", \"documents\".\"file_summary\" AS \"document_description\" FROM \"files\" AS \"documents\" WHERE \"documents\".\"file_label\" = 'Robbin CV'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0305": "SELECT COUNT(DISTINCT \"documents\".\"blueprint_key\") AS \"_col_0\" FROM \"files\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0306": "SELECT COUNT(DISTINCT \"documents\".\"blueprint_key\") AS \"_col_0\" FROM \"files\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0307": "SELECT COUNT(*) AS \"_col_0\" FROM \"files\" AS \"t1\" JOIN \"document_blueprints\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\" WHERE \"t2\".\"blueprint_category_tag\" = 'PPT'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0308": "SELECT COUNT(*) AS \"_col_0\" FROM \"files\" AS \"t1\" JOIN \"document_blueprints\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\" WHERE \"t2\".\"blueprint_category_tag\" = 'PPT'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0309": "SELECT \"documents\".\"blueprint_key\" AS \"template_id\", COUNT(*) AS \"_col_1\" FROM \"files\" AS \"documents\" GROUP BY \"documents\".\"blueprint_key\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0310": "SELECT \"documents\".\"blueprint_key\" AS \"template_id\", COUNT(*) AS \"_col_1\" FROM \"files\" AS \"documents\" GROUP BY \"documents\".\"blueprint_key\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0311": "SELECT \"t1\".\"blueprint_key\" AS \"template_id\", \"t2\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"files\" AS \"t1\" JOIN \"document_blueprints\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\" GROUP BY \"t1\".\"blueprint_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__challenge_v0__q0312": "SELECT \"t1\".\"blueprint_key\" AS \"template_id\", \"t2\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"files\" AS \"t1\" JOIN \"document_blueprints\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\" GROUP BY \"t1\".\"blueprint_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__challenge_v0__q0313": "SELECT \"documents\".\"blueprint_key\" AS \"template_id\" FROM \"files\" AS \"documents\" GROUP BY \"documents\".\"blueprint_key\" HAVING COUNT(*) > 1",
+    "cre_Doc_Template_Mgt__challenge_v0__q0314": "SELECT \"documents\".\"blueprint_key\" AS \"template_id\" FROM \"files\" AS \"documents\" GROUP BY \"documents\".\"blueprint_key\" HAVING COUNT(*) > 1",
+    "cre_Doc_Template_Mgt__challenge_v0__q0315": "SELECT \"templates\".\"blueprint_key\" AS \"template_id\" FROM \"document_blueprints\" AS \"templates\" EXCEPT SELECT \"documents\".\"blueprint_key\" AS \"template_id\" FROM \"files\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0316": "SELECT \"templates\".\"blueprint_key\" AS \"template_id\" FROM \"document_blueprints\" AS \"templates\" EXCEPT SELECT \"documents\".\"blueprint_key\" AS \"template_id\" FROM \"files\" AS \"documents\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0317": "SELECT COUNT(*) AS \"_col_0\" FROM \"document_blueprints\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0318": "SELECT COUNT(*) AS \"_col_0\" FROM \"document_blueprints\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0319": "SELECT \"templates\".\"blueprint_key\" AS \"template_id\", \"templates\".\"version_count\" AS \"version_number\", \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0320": "SELECT \"templates\".\"blueprint_key\" AS \"template_id\", \"templates\".\"version_count\" AS \"version_number\", \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0321": "SELECT DISTINCT \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0322": "SELECT DISTINCT \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0323": "SELECT \"templates\".\"blueprint_key\" AS \"template_id\" FROM \"document_blueprints\" AS \"templates\" WHERE \"templates\".\"blueprint_category_tag\" = 'PP' OR \"templates\".\"blueprint_category_tag\" = 'PPT'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0324": "SELECT \"templates\".\"blueprint_key\" AS \"template_id\" FROM \"document_blueprints\" AS \"templates\" WHERE \"templates\".\"blueprint_category_tag\" = 'PP' OR \"templates\".\"blueprint_category_tag\" = 'PPT'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0325": "SELECT COUNT(*) AS \"_col_0\" FROM \"document_blueprints\" AS \"templates\" WHERE \"templates\".\"blueprint_category_tag\" = 'CV'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0326": "SELECT COUNT(*) AS \"_col_0\" FROM \"document_blueprints\" AS \"templates\" WHERE \"templates\".\"blueprint_category_tag\" = 'CV'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0327": "SELECT \"templates\".\"version_count\" AS \"version_number\", \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\" WHERE \"templates\".\"version_count\" > 5",
+    "cre_Doc_Template_Mgt__challenge_v0__q0328": "SELECT \"templates\".\"version_count\" AS \"version_number\", \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\" WHERE \"templates\".\"version_count\" > 5",
+    "cre_Doc_Template_Mgt__challenge_v0__q0329": "SELECT \"templates\".\"blueprint_category_tag\" AS \"template_type_code\", COUNT(*) AS \"_col_1\" FROM \"document_blueprints\" AS \"templates\" GROUP BY \"templates\".\"blueprint_category_tag\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0330": "SELECT \"templates\".\"blueprint_category_tag\" AS \"template_type_code\", COUNT(*) AS \"_col_1\" FROM \"document_blueprints\" AS \"templates\" GROUP BY \"templates\".\"blueprint_category_tag\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0331": "SELECT \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\" GROUP BY \"templates\".\"blueprint_category_tag\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__challenge_v0__q0332": "SELECT \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\" GROUP BY \"templates\".\"blueprint_category_tag\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__challenge_v0__q0333": "SELECT \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\" GROUP BY \"templates\".\"blueprint_category_tag\" HAVING COUNT(*) < 3",
+    "cre_Doc_Template_Mgt__challenge_v0__q0334": "SELECT \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\" GROUP BY \"templates\".\"blueprint_category_tag\" HAVING COUNT(*) < 3",
+    "cre_Doc_Template_Mgt__challenge_v0__q0335": "SELECT MIN(\"templates\".\"version_count\") AS \"_col_0\", \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0336": "SELECT MIN(\"templates\".\"version_count\") AS \"_col_0\", \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0337": "SELECT \"t1\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\" WHERE \"t2\".\"file_label\" = 'Data base'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0338": "SELECT \"t1\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\" WHERE \"t2\".\"file_label\" = 'Data base'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0339": "SELECT \"t2\".\"file_label\" AS \"document_name\" FROM \"document_blueprints\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\" WHERE \"t1\".\"blueprint_category_tag\" = 'BK'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0340": "SELECT \"t2\".\"file_label\" AS \"document_name\" FROM \"document_blueprints\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\" WHERE \"t1\".\"blueprint_category_tag\" = 'BK'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0341": "SELECT \"t1\".\"blueprint_category_tag\" AS \"template_type_code\", COUNT(*) AS \"_col_1\" FROM \"document_blueprints\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\" GROUP BY \"t1\".\"blueprint_category_tag\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0342": "SELECT \"t1\".\"blueprint_category_tag\" AS \"template_type_code\", COUNT(*) AS \"_col_1\" FROM \"document_blueprints\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\" GROUP BY \"t1\".\"blueprint_category_tag\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0343": "SELECT \"t1\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\" GROUP BY \"t1\".\"blueprint_category_tag\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__challenge_v0__q0344": "SELECT \"t1\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\" GROUP BY \"t1\".\"blueprint_category_tag\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__challenge_v0__q0345": "SELECT \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\" EXCEPT SELECT \"t1\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0346": "SELECT \"templates\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"templates\" EXCEPT SELECT \"t1\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"document_blueprints\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"blueprint_key\" = \"t2\".\"blueprint_key\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0347": "SELECT \"ref_template_types\".\"blueprint_category_tag\" AS \"template_type_code\", \"ref_template_types\".\"blueprint_category_summary\" AS \"template_type_description\" FROM \"blueprint_category_lookup\" AS \"ref_template_types\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0348": "SELECT \"ref_template_types\".\"blueprint_category_tag\" AS \"template_type_code\", \"ref_template_types\".\"blueprint_category_summary\" AS \"template_type_description\" FROM \"blueprint_category_lookup\" AS \"ref_template_types\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0349": "SELECT \"ref_template_types\".\"blueprint_category_summary\" AS \"template_type_description\" FROM \"blueprint_category_lookup\" AS \"ref_template_types\" WHERE \"ref_template_types\".\"blueprint_category_tag\" = 'AD'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0350": "SELECT \"ref_template_types\".\"blueprint_category_summary\" AS \"template_type_description\" FROM \"blueprint_category_lookup\" AS \"ref_template_types\" WHERE \"ref_template_types\".\"blueprint_category_tag\" = 'AD'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0351": "SELECT \"ref_template_types\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"blueprint_category_lookup\" AS \"ref_template_types\" WHERE \"ref_template_types\".\"blueprint_category_summary\" = 'Book'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0352": "SELECT \"ref_template_types\".\"blueprint_category_tag\" AS \"template_type_code\" FROM \"blueprint_category_lookup\" AS \"ref_template_types\" WHERE \"ref_template_types\".\"blueprint_category_summary\" = 'Book'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0353": "SELECT DISTINCT \"t1\".\"blueprint_category_summary\" AS \"template_type_description\" FROM \"blueprint_category_lookup\" AS \"t1\" JOIN \"document_blueprints\" AS \"t2\" ON \"t1\".\"blueprint_category_tag\" = \"t2\".\"blueprint_category_tag\" JOIN \"files\" AS \"t3\" ON \"t2\".\"blueprint_key\" = \"t3\".\"blueprint_key\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0354": "SELECT DISTINCT \"t1\".\"blueprint_category_summary\" AS \"template_type_description\" FROM \"blueprint_category_lookup\" AS \"t1\" JOIN \"document_blueprints\" AS \"t2\" ON \"t1\".\"blueprint_category_tag\" = \"t2\".\"blueprint_category_tag\" JOIN \"files\" AS \"t3\" ON \"t2\".\"blueprint_key\" = \"t3\".\"blueprint_key\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0355": "SELECT \"t2\".\"blueprint_key\" AS \"template_id\" FROM \"blueprint_category_lookup\" AS \"t1\" JOIN \"document_blueprints\" AS \"t2\" ON \"t1\".\"blueprint_category_tag\" = \"t2\".\"blueprint_category_tag\" WHERE \"t1\".\"blueprint_category_summary\" = 'Presentation'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0356": "SELECT \"t2\".\"blueprint_key\" AS \"template_id\" FROM \"blueprint_category_lookup\" AS \"t1\" JOIN \"document_blueprints\" AS \"t2\" ON \"t1\".\"blueprint_category_tag\" = \"t2\".\"blueprint_category_tag\" WHERE \"t1\".\"blueprint_category_summary\" = 'Presentation'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0357": "SELECT COUNT(*) AS \"_col_0\" FROM \"text_blocks\" AS \"paragraphs\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0358": "SELECT COUNT(*) AS \"_col_0\" FROM \"text_blocks\" AS \"paragraphs\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0359": "SELECT COUNT(*) AS \"_col_0\" FROM \"text_blocks\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"file_key\" = \"t2\".\"file_key\" WHERE \"t2\".\"file_label\" = 'Summer Show'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0360": "SELECT COUNT(*) AS \"_col_0\" FROM \"text_blocks\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"file_key\" = \"t2\".\"file_key\" WHERE \"t2\".\"file_label\" = 'Summer Show'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0361": "SELECT \"paragraphs\".\"supplementary_notes\" AS \"other_details\" FROM \"text_blocks\" AS \"paragraphs\" WHERE \"paragraphs\".\"block_text\" LIKE 'korea'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0362": "SELECT \"paragraphs\".\"supplementary_notes\" AS \"other_details\" FROM \"text_blocks\" AS \"paragraphs\" WHERE \"paragraphs\".\"block_text\" LIKE 'korea'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0363": "SELECT \"t1\".\"block_key\" AS \"paragraph_id\", \"t1\".\"block_text\" AS \"paragraph_text\" FROM \"text_blocks\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"file_key\" = \"t2\".\"file_key\" WHERE \"t2\".\"file_label\" = 'Welcome to NY'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0364": "SELECT \"t1\".\"block_key\" AS \"paragraph_id\", \"t1\".\"block_text\" AS \"paragraph_text\" FROM \"text_blocks\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"file_key\" = \"t2\".\"file_key\" WHERE \"t2\".\"file_label\" = 'Welcome to NY'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0365": "SELECT \"t1\".\"block_text\" AS \"paragraph_text\" FROM \"text_blocks\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"file_key\" = \"t2\".\"file_key\" WHERE \"t2\".\"file_label\" = 'Customer reviews'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0366": "SELECT \"t1\".\"block_text\" AS \"paragraph_text\" FROM \"text_blocks\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"file_key\" = \"t2\".\"file_key\" WHERE \"t2\".\"file_label\" = 'Customer reviews'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0367": "SELECT \"paragraphs\".\"file_key\" AS \"document_id\", COUNT(*) AS \"_col_1\" FROM \"text_blocks\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"file_key\" ORDER BY \"document_id\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0368": "SELECT \"paragraphs\".\"file_key\" AS \"document_id\", COUNT(*) AS \"_col_1\" FROM \"text_blocks\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"file_key\" ORDER BY \"document_id\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0369": "SELECT \"t1\".\"file_key\" AS \"document_id\", \"t2\".\"file_label\" AS \"document_name\", COUNT(*) AS \"_col_2\" FROM \"text_blocks\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"file_key\" = \"t2\".\"file_key\" GROUP BY \"t1\".\"file_key\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0370": "SELECT \"t1\".\"file_key\" AS \"document_id\", \"t2\".\"file_label\" AS \"document_name\", COUNT(*) AS \"_col_2\" FROM \"text_blocks\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"file_key\" = \"t2\".\"file_key\" GROUP BY \"t1\".\"file_key\"",
+    "cre_Doc_Template_Mgt__challenge_v0__q0371": "SELECT \"paragraphs\".\"file_key\" AS \"document_id\" FROM \"text_blocks\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"file_key\" HAVING COUNT(*) >= 2",
+    "cre_Doc_Template_Mgt__challenge_v0__q0372": "SELECT \"paragraphs\".\"file_key\" AS \"document_id\" FROM \"text_blocks\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"file_key\" HAVING COUNT(*) >= 2",
+    "cre_Doc_Template_Mgt__challenge_v0__q0373": "SELECT \"t1\".\"file_key\" AS \"document_id\", \"t2\".\"file_label\" AS \"document_name\" FROM \"text_blocks\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"file_key\" = \"t2\".\"file_key\" GROUP BY \"t1\".\"file_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__challenge_v0__q0374": "SELECT \"t1\".\"file_key\" AS \"document_id\", \"t2\".\"file_label\" AS \"document_name\" FROM \"text_blocks\" AS \"t1\" JOIN \"files\" AS \"t2\" ON \"t1\".\"file_key\" = \"t2\".\"file_key\" GROUP BY \"t1\".\"file_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "cre_Doc_Template_Mgt__challenge_v0__q0375": "SELECT \"paragraphs\".\"file_key\" AS \"document_id\" FROM \"text_blocks\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"file_key\" ORDER BY COUNT(*) ASC LIMIT 1",
+    "cre_Doc_Template_Mgt__challenge_v0__q0376": "SELECT \"paragraphs\".\"file_key\" AS \"document_id\" FROM \"text_blocks\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"file_key\" ORDER BY COUNT(*) ASC LIMIT 1",
+    "cre_Doc_Template_Mgt__challenge_v0__q0377": "SELECT \"paragraphs\".\"file_key\" AS \"document_id\" FROM \"text_blocks\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"file_key\" HAVING COUNT(*) BETWEEN 1 AND 2",
+    "cre_Doc_Template_Mgt__challenge_v0__q0378": "SELECT \"paragraphs\".\"file_key\" AS \"document_id\" FROM \"text_blocks\" AS \"paragraphs\" GROUP BY \"paragraphs\".\"file_key\" HAVING COUNT(*) BETWEEN 1 AND 2",
+    "cre_Doc_Template_Mgt__challenge_v0__q0379": "SELECT \"paragraphs\".\"file_key\" AS \"document_id\" FROM \"text_blocks\" AS \"paragraphs\" WHERE \"paragraphs\".\"block_text\" = 'Brazil' INTERSECT SELECT \"paragraphs\".\"file_key\" AS \"document_id\" FROM \"text_blocks\" AS \"paragraphs\" WHERE \"paragraphs\".\"block_text\" = 'Ireland'",
+    "cre_Doc_Template_Mgt__challenge_v0__q0380": "SELECT \"paragraphs\".\"file_key\" AS \"document_id\" FROM \"text_blocks\" AS \"paragraphs\" WHERE \"paragraphs\".\"block_text\" = 'Brazil' INTERSECT SELECT \"paragraphs\".\"file_key\" AS \"document_id\" FROM \"text_blocks\" AS \"paragraphs\" WHERE \"paragraphs\".\"block_text\" = 'Ireland'"
+  },
+  "rewrite_errors": {},
+  "model": "all-MiniLM-L6-v2",
+  "method": "semantic"
+}

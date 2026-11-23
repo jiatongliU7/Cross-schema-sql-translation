@@ -1,0 +1,16 @@
+{
+  "tables": {
+    "Highschooler": "secondary_student",
+    "Friend": "social_connection",
+    "Likes": "preferences"
+  },
+  "columns": {
+    "Highschooler.ID": "secondary_student.record_key",
+    "Highschooler.name": "secondary_student.label",
+    "Highschooler.grade": "secondary_student.grade",
+    "Friend.student_id": "social_connection.learner_key",
+    "Friend.friend_id": "social_connection.connection_key",
+    "Likes.student_id": "preferences.learner_key",
+    "Likes.liked_id": "preferences.preferred_key"
+  }
+}

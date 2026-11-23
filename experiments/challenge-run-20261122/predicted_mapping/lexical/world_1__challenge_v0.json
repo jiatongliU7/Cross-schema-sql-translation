@@ -1,0 +1,36 @@
+{
+  "tables": {
+    "city": "municipality",
+    "sqlite_sequence": "sqlite_sequence",
+    "country": "nation",
+    "countrylanguage": "national_tongue"
+  },
+  "columns": {
+    "city.ID": "municipality.resident_count",
+    "city.Name": "municipality.label",
+    "city.CountryCode": "municipality.record_key",
+    "city.District": "municipality.District",
+    "city.Population": "municipality.nation_tag",
+    "sqlite_sequence.name": "sqlite_sequence.name",
+    "sqlite_sequence.seq": "sqlite_sequence.seq",
+    "country.Code": "nation.secondary_tag",
+    "country.Name": "nation.label",
+    "country.Continent": "nation.native_label",
+    "country.Region": "nation.resident_count",
+    "country.SurfaceArea": "nation.land_area",
+    "country.IndepYear": "nation.independence_annum",
+    "country.Population": "nation.previous_gross_national_product",
+    "country.LifeExpectancy": "nation.expected_lifespan",
+    "country.GNP": "nation.tag",
+    "country.GNPOld": "nation.gross_national_product",
+    "country.LocalName": "nation.landmass",
+    "country.GovernmentForm": "nation.territory",
+    "country.HeadOfState": "nation.governance_structure",
+    "country.Capital": "nation.Capital",
+    "country.Code2": "nation.national_leader",
+    "countrylanguage.CountryCode": "national_tongue.tongue",
+    "countrylanguage.Language": "national_tongue.usage_ratio",
+    "countrylanguage.IsOfficial": "national_tongue.official_flag",
+    "countrylanguage.Percentage": "national_tongue.nation_tag"
+  }
+}

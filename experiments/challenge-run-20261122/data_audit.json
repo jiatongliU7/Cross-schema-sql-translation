@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "execute_queries": true,
+  "counts": {
+    "join_queries": 408,
+    "level_L2": 90,
+    "level_L3": 944,
+    "pairs": 20,
+    "queries": 1034
+  },
+  "split_counts": {
+    "dev": {
+      "join_queries": 102,
+      "level_L2": 6,
+      "level_L3": 184,
+      "pairs": 3,
+      "queries": 190
+    },
+    "test": {
+      "join_queries": 85,
+      "level_L2": 4,
+      "level_L3": 212,
+      "pairs": 3,
+      "queries": 216
+    },
+    "train": {
+      "join_queries": 221,
+      "level_L2": 80,
+      "level_L3": 548,
+      "pairs": 14,
+      "queries": 628
+    }
+  },
+  "base_database_count": 20,
+  "unique_sqlite_files_checked": 40,
+  "execution_failure_count": 0,
+  "execution_failures": [],
+  "equivalence_failure_count": 0,
+  "equivalence_failures": []
+}

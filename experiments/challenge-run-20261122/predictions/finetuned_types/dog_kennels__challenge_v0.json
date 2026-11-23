@@ -1,0 +1,954 @@
+{
+  "tables": {
+    "Breeds": [
+      [
+        "canines",
+        0.6932497620582581
+      ],
+      [
+        "animal_varieties",
+        0.6901106834411621
+      ],
+      [
+        "specialists",
+        0.3072567582130432
+      ]
+    ],
+    "Charges": [
+      [
+        "fees",
+        0.7261323928833008
+      ],
+      [
+        "custodians",
+        0.4249780774116516
+      ],
+      [
+        "dimensions",
+        0.41227632761001587
+      ]
+    ],
+    "Sizes": [
+      [
+        "dimensions",
+        0.701919436454773
+      ],
+      [
+        "custodians",
+        0.32060372829437256
+      ],
+      [
+        "specialists",
+        0.3184826374053955
+      ]
+    ],
+    "Treatment_Types": [
+      [
+        "specialists",
+        0.439400315284729
+      ],
+      [
+        "procedures",
+        0.4141392111778259
+      ],
+      [
+        "animal_varieties",
+        0.3551708459854126
+      ]
+    ],
+    "Owners": [
+      [
+        "custodians",
+        0.563075602054596
+      ],
+      [
+        "specialists",
+        0.4832436442375183
+      ],
+      [
+        "dimensions",
+        0.34936296939849854
+      ]
+    ],
+    "Dogs": [
+      [
+        "canines",
+        0.950244665145874
+      ],
+      [
+        "animal_varieties",
+        0.519586443901062
+      ],
+      [
+        "specialists",
+        0.29488837718963623
+      ]
+    ],
+    "Professionals": [
+      [
+        "specialists",
+        0.8109741806983948
+      ],
+      [
+        "custodians",
+        0.47515392303466797
+      ],
+      [
+        "procedures",
+        0.43587350845336914
+      ]
+    ],
+    "Treatments": [
+      [
+        "procedures",
+        0.4708364009857178
+      ],
+      [
+        "specialists",
+        0.434634268283844
+      ],
+      [
+        "canines",
+        0.3647478222846985
+      ]
+    ]
+  },
+  "columns": {
+    "Breeds.breed_code": [
+      [
+        "canines.variety_tag",
+        0.6092099547386169
+      ],
+      [
+        "canines.sex_category",
+        0.5975623726844788
+      ],
+      [
+        "canines.label",
+        0.5904718637466431
+      ]
+    ],
+    "Breeds.breed_name": [
+      [
+        "canines.label",
+        0.5919243693351746
+      ],
+      [
+        "specialists.given_name",
+        0.5755029320716858
+      ],
+      [
+        "specialists.family_name",
+        0.5712493658065796
+      ]
+    ],
+    "Charges.charge_id": [
+      [
+        "fees.fee_key",
+        0.6260934472084045
+      ],
+      [
+        "fees.fee_value",
+        0.6245839595794678
+      ],
+      [
+        "fees.fee_category",
+        0.4684407413005829
+      ]
+    ],
+    "Charges.charge_type": [
+      [
+        "fees.fee_category",
+        0.5950647592544556
+      ],
+      [
+        "fees.fee_value",
+        0.4874764680862427
+      ],
+      [
+        "fees.fee_key",
+        0.47566843032836914
+      ]
+    ],
+    "Charges.charge_amount": [
+      [
+        "fees.fee_value",
+        0.7353694438934326
+      ],
+      [
+        "fees.fee_key",
+        0.7259804606437683
+      ],
+      [
+        "fees.fee_category",
+        0.5888253450393677
+      ]
+    ],
+    "Sizes.size_code": [
+      [
+        "dimensions.dimension_tag",
+        0.5367875099182129
+      ],
+      [
+        "canines.dimension_tag",
+        0.4582979083061218
+      ],
+      [
+        "dimensions.dimension_summary",
+        0.4337140917778015
+      ]
+    ],
+    "Sizes.size_description": [
+      [
+        "dimensions.dimension_summary",
+        0.5661430954933167
+      ],
+      [
+        "dimensions.dimension_tag",
+        0.43777692317962646
+      ],
+      [
+        "canines.dimension_tag",
+        0.3928515613079071
+      ]
+    ],
+    "Treatment_Types.treatment_type_code": [
+      [
+        "specialists.role_tag",
+        0.42578887939453125
+      ],
+      [
+        "procedures.procedure_category_tag",
+        0.4211008548736572
+      ],
+      [
+        "canines.label",
+        0.4188383221626282
+      ]
+    ],
+    "Treatment_Types.treatment_type_description": [
+      [
+        "specialists.given_name",
+        0.43883541226387024
+      ],
+      [
+        "specialists.family_name",
+        0.4341139793395996
+      ],
+      [
+        "canines.label",
+        0.42975929379463196
+      ]
+    ],
+    "Owners.owner_id": [
+      [
+        "custodians.custodian_key",
+        0.489272803068161
+      ],
+      [
+        "specialists.specialist_key",
+        0.3744613528251648
+      ],
+      [
+        "custodians.family_name",
+        0.34492143988609314
+      ]
+    ],
+    "Owners.first_name": [
+      [
+        "custodians.family_name",
+        0.6199662685394287
+      ],
+      [
+        "custodians.given_name",
+        0.6188178062438965
+      ],
+      [
+        "specialists.family_name",
+        0.5799551010131836
+      ]
+    ],
+    "Owners.last_name": [
+      [
+        "custodians.family_name",
+        0.6450855731964111
+      ],
+      [
+        "custodians.given_name",
+        0.6353592276573181
+      ],
+      [
+        "specialists.family_name",
+        0.5780649781227112
+      ]
+    ],
+    "Owners.street": [
+      [
+        "custodians.road_name",
+        0.5932213068008423
+      ],
+      [
+        "specialists.road_name",
+        0.5704144239425659
+      ],
+      [
+        "custodians.residential_contact",
+        0.5336083173751831
+      ]
+    ],
+    "Owners.city": [
+      [
+        "custodians.municipality",
+        0.6260635256767273
+      ],
+      [
+        "specialists.municipality",
+        0.5965737700462341
+      ],
+      [
+        "specialists.residential_contact",
+        0.5239378809928894
+      ]
+    ],
+    "Owners.state": [
+      [
+        "custodians.residential_contact",
+        0.5464814305305481
+      ],
+      [
+        "custodians.family_name",
+        0.5322917699813843
+      ],
+      [
+        "specialists.residential_contact",
+        0.5159386396408081
+      ]
+    ],
+    "Owners.zip_code": [
+      [
+        "specialists.postal_tag",
+        0.4653976559638977
+      ],
+      [
+        "custodians.postal_tag",
+        0.4601506292819977
+      ],
+      [
+        "custodians.residential_contact",
+        0.4217168688774109
+      ]
+    ],
+    "Owners.email_address": [
+      [
+        "specialists.electronic_mail",
+        0.592482328414917
+      ],
+      [
+        "custodians.electronic_mail",
+        0.5865644216537476
+      ],
+      [
+        "custodians.residential_contact",
+        0.4859071373939514
+      ]
+    ],
+    "Owners.home_phone": [
+      [
+        "custodians.residential_contact",
+        0.6428159475326538
+      ],
+      [
+        "specialists.residential_contact",
+        0.5797318816184998
+      ],
+      [
+        "custodians.mobile_contact",
+        0.5639306306838989
+      ]
+    ],
+    "Owners.cell_number": [
+      [
+        "custodians.residential_contact",
+        0.5451772212982178
+      ],
+      [
+        "custodians.family_name",
+        0.5419394969940186
+      ],
+      [
+        "specialists.residential_contact",
+        0.5081939101219177
+      ]
+    ],
+    "Dogs.dog_id": [
+      [
+        "canines.canine_key",
+        0.858667254447937
+      ],
+      [
+        "canines.custodian_key",
+        0.7735217809677124
+      ],
+      [
+        "procedures.canine_key",
+        0.6950154304504395
+      ]
+    ],
+    "Dogs.owner_id": [
+      [
+        "canines.custodian_key",
+        0.707402229309082
+      ],
+      [
+        "canines.canine_key",
+        0.7019744515419006
+      ],
+      [
+        "procedures.canine_key",
+        0.5527414083480835
+      ]
+    ],
+    "Dogs.abandoned_yn": [
+      [
+        "canines.abandoned_yn",
+        0.9780228137969971
+      ],
+      [
+        "canines.label",
+        0.6218180060386658
+      ],
+      [
+        "canines.years_old",
+        0.5837955474853516
+      ]
+    ],
+    "Dogs.breed_code": [
+      [
+        "canines.label",
+        0.7099437713623047
+      ],
+      [
+        "canines.sex_category",
+        0.6813571453094482
+      ],
+      [
+        "canines.variety_tag",
+        0.6668684482574463
+      ]
+    ],
+    "Dogs.size_code": [
+      [
+        "canines.dimension_tag",
+        0.6911362409591675
+      ],
+      [
+        "canines.label",
+        0.6566025018692017
+      ],
+      [
+        "canines.mass_value",
+        0.6550887823104858
+      ]
+    ],
+    "Dogs.name": [
+      [
+        "canines.label",
+        0.7305091619491577
+      ],
+      [
+        "canines.sex_category",
+        0.6161584258079529
+      ],
+      [
+        "canines.mass_value",
+        0.6009079813957214
+      ]
+    ],
+    "Dogs.age": [
+      [
+        "canines.years_old",
+        0.843611478805542
+      ],
+      [
+        "canines.label",
+        0.6518974304199219
+      ],
+      [
+        "canines.sex_category",
+        0.619709849357605
+      ]
+    ],
+    "Dogs.date_of_birth": [
+      [
+        "canines.day_adopted",
+        0.7003724575042725
+      ],
+      [
+        "canines.day_arrived",
+        0.6758447885513306
+      ],
+      [
+        "canines.day_departed",
+        0.657010555267334
+      ]
+    ],
+    "Dogs.gender": [
+      [
+        "canines.sex_category",
+        0.8514704704284668
+      ],
+      [
+        "canines.label",
+        0.6394705772399902
+      ],
+      [
+        "canines.variety_tag",
+        0.6316130757331848
+      ]
+    ],
+    "Dogs.weight": [
+      [
+        "canines.mass_value",
+        0.7412769794464111
+      ],
+      [
+        "canines.label",
+        0.6472686529159546
+      ],
+      [
+        "canines.dimension_tag",
+        0.5901979207992554
+      ]
+    ],
+    "Dogs.date_arrived": [
+      [
+        "canines.day_arrived",
+        0.861068606376648
+      ],
+      [
+        "canines.day_adopted",
+        0.7932358980178833
+      ],
+      [
+        "canines.day_departed",
+        0.7681342959403992
+      ]
+    ],
+    "Dogs.date_adopted": [
+      [
+        "canines.day_adopted",
+        0.8734607696533203
+      ],
+      [
+        "canines.day_arrived",
+        0.7673934698104858
+      ],
+      [
+        "canines.day_departed",
+        0.7170515060424805
+      ]
+    ],
+    "Dogs.date_departed": [
+      [
+        "canines.day_departed",
+        0.8672869205474854
+      ],
+      [
+        "canines.day_arrived",
+        0.7658661603927612
+      ],
+      [
+        "canines.day_adopted",
+        0.7270698547363281
+      ]
+    ],
+    "Professionals.professional_id": [
+      [
+        "specialists.specialist_key",
+        0.7208178639411926
+      ],
+      [
+        "procedures.specialist_key",
+        0.5855655670166016
+      ],
+      [
+        "specialists.given_name",
+        0.493631511926651
+      ]
+    ],
+    "Professionals.role_code": [
+      [
+        "specialists.role_tag",
+        0.7262784242630005
+      ],
+      [
+        "specialists.given_name",
+        0.5915327072143555
+      ],
+      [
+        "specialists.residential_contact",
+        0.5912564992904663
+      ]
+    ],
+    "Professionals.first_name": [
+      [
+        "specialists.given_name",
+        0.772514283657074
+      ],
+      [
+        "specialists.family_name",
+        0.718626856803894
+      ],
+      [
+        "specialists.road_name",
+        0.6057238578796387
+      ]
+    ],
+    "Professionals.street": [
+      [
+        "specialists.residential_contact",
+        0.70753014087677
+      ],
+      [
+        "specialists.road_name",
+        0.6777008175849915
+      ],
+      [
+        "specialists.municipality",
+        0.6419270038604736
+      ]
+    ],
+    "Professionals.city": [
+      [
+        "specialists.municipality",
+        0.7693700790405273
+      ],
+      [
+        "specialists.residential_contact",
+        0.7003685235977173
+      ],
+      [
+        "specialists.given_name",
+        0.6169859170913696
+      ]
+    ],
+    "Professionals.state": [
+      [
+        "specialists.residential_contact",
+        0.7238346934318542
+      ],
+      [
+        "specialists.given_name",
+        0.692891001701355
+      ],
+      [
+        "specialists.role_tag",
+        0.6642382144927979
+      ]
+    ],
+    "Professionals.zip_code": [
+      [
+        "specialists.postal_tag",
+        0.6115556955337524
+      ],
+      [
+        "specialists.residential_contact",
+        0.598195493221283
+      ],
+      [
+        "specialists.municipality",
+        0.5596184730529785
+      ]
+    ],
+    "Professionals.last_name": [
+      [
+        "specialists.given_name",
+        0.7761341333389282
+      ],
+      [
+        "specialists.family_name",
+        0.7321112155914307
+      ],
+      [
+        "specialists.road_name",
+        0.615709125995636
+      ]
+    ],
+    "Professionals.email_address": [
+      [
+        "specialists.electronic_mail",
+        0.7863525152206421
+      ],
+      [
+        "specialists.residential_contact",
+        0.6750671863555908
+      ],
+      [
+        "specialists.mobile_contact",
+        0.6279234886169434
+      ]
+    ],
+    "Professionals.home_phone": [
+      [
+        "specialists.mobile_contact",
+        0.7459617257118225
+      ],
+      [
+        "specialists.residential_contact",
+        0.7380826473236084
+      ],
+      [
+        "specialists.electronic_mail",
+        0.5866655111312866
+      ]
+    ],
+    "Professionals.cell_number": [
+      [
+        "specialists.residential_contact",
+        0.6997009515762329
+      ],
+      [
+        "specialists.given_name",
+        0.6888030767440796
+      ],
+      [
+        "specialists.mobile_contact",
+        0.6669790744781494
+      ]
+    ],
+    "Treatments.treatment_id": [
+      [
+        "procedures.specialist_key",
+        0.4899120330810547
+      ],
+      [
+        "procedures.procedure_key",
+        0.4645649492740631
+      ],
+      [
+        "specialists.specialist_key",
+        0.46083831787109375
+      ]
+    ],
+    "Treatments.dog_id": [
+      [
+        "canines.canine_key",
+        0.6753199696540833
+      ],
+      [
+        "procedures.canine_key",
+        0.6415778398513794
+      ],
+      [
+        "canines.custodian_key",
+        0.6263238191604614
+      ]
+    ],
+    "Treatments.professional_id": [
+      [
+        "specialists.specialist_key",
+        0.6244557499885559
+      ],
+      [
+        "procedures.specialist_key",
+        0.5893539786338806
+      ],
+      [
+        "procedures.procedure_key",
+        0.4600949287414551
+      ]
+    ],
+    "Treatments.treatment_type_code": [
+      [
+        "canines.label",
+        0.42303138971328735
+      ],
+      [
+        "procedures.procedure_category_tag",
+        0.4071929454803467
+      ],
+      [
+        "specialists.role_tag",
+        0.4007037281990051
+      ]
+    ],
+    "Treatments.date_of_treatment": [
+      [
+        "procedures.day_of_procedure",
+        0.4840797185897827
+      ],
+      [
+        "canines.day_adopted",
+        0.45749473571777344
+      ],
+      [
+        "canines.day_arrived",
+        0.3848993480205536
+      ]
+    ],
+    "Treatments.cost_of_treatment": [
+      [
+        "procedures.expense_of_procedure",
+        0.5588988661766052
+      ],
+      [
+        "fees.fee_value",
+        0.49748942255973816
+      ],
+      [
+        "fees.fee_key",
+        0.4887005090713501
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Breeds": "animal_varieties",
+      "Charges": "fees",
+      "Sizes": "dimensions",
+      "Treatment_Types": "procedure_categories",
+      "Owners": "custodians",
+      "Dogs": "canines",
+      "Professionals": "specialists",
+      "Treatments": "procedures"
+    },
+    "columns": {
+      "Breeds.breed_code": "animal_varieties.variety_tag",
+      "Breeds.breed_name": "animal_varieties.variety_label",
+      "Charges.charge_id": "fees.fee_key",
+      "Charges.charge_type": "fees.fee_category",
+      "Charges.charge_amount": "fees.fee_value",
+      "Sizes.size_code": "dimensions.dimension_tag",
+      "Sizes.size_description": "dimensions.dimension_summary",
+      "Treatment_Types.treatment_type_code": "procedure_categories.procedure_category_tag",
+      "Treatment_Types.treatment_type_description": "procedure_categories.procedure_category_summary",
+      "Owners.owner_id": "custodians.custodian_key",
+      "Owners.first_name": "custodians.given_name",
+      "Owners.last_name": "custodians.family_name",
+      "Owners.street": "custodians.road_name",
+      "Owners.city": "custodians.municipality",
+      "Owners.state": "custodians.province",
+      "Owners.zip_code": "custodians.postal_tag",
+      "Owners.email_address": "custodians.electronic_mail",
+      "Owners.home_phone": "custodians.mobile_contact",
+      "Owners.cell_number": "custodians.residential_contact",
+      "Dogs.dog_id": "canines.canine_key",
+      "Dogs.owner_id": "canines.custodian_key",
+      "Dogs.abandoned_yn": "canines.abandoned_yn",
+      "Dogs.breed_code": "canines.variety_tag",
+      "Dogs.size_code": "canines.dimension_tag",
+      "Dogs.name": "canines.label",
+      "Dogs.age": "canines.years_old",
+      "Dogs.date_of_birth": "canines.day_of_nativity",
+      "Dogs.gender": "canines.sex_category",
+      "Dogs.weight": "canines.mass_value",
+      "Dogs.date_arrived": "canines.day_arrived",
+      "Dogs.date_adopted": "canines.day_adopted",
+      "Dogs.date_departed": "canines.day_departed",
+      "Professionals.professional_id": "specialists.specialist_key",
+      "Professionals.role_code": "specialists.role_tag",
+      "Professionals.first_name": "specialists.given_name",
+      "Professionals.street": "specialists.road_name",
+      "Professionals.city": "specialists.municipality",
+      "Professionals.state": "specialists.province",
+      "Professionals.zip_code": "specialists.postal_tag",
+      "Professionals.last_name": "specialists.family_name",
+      "Professionals.email_address": "specialists.electronic_mail",
+      "Professionals.home_phone": "specialists.mobile_contact",
+      "Professionals.cell_number": "specialists.residential_contact",
+      "Treatments.treatment_id": "procedures.procedure_key",
+      "Treatments.dog_id": "procedures.canine_key",
+      "Treatments.professional_id": "procedures.specialist_key",
+      "Treatments.treatment_type_code": "procedures.procedure_category_tag",
+      "Treatments.date_of_treatment": "procedures.day_of_procedure",
+      "Treatments.cost_of_treatment": "procedures.expense_of_procedure"
+    }
+  },
+  "q_B": {
+    "dog_kennels__challenge_v0__q0918": "SELECT \"owners\".\"province\" AS \"state\" FROM \"custodians\" AS \"owners\" INTERSECT SELECT \"professionals\".\"province\" AS \"state\" FROM \"specialists\" AS \"professionals\"",
+    "dog_kennels__challenge_v0__q0919": "SELECT \"owners\".\"province\" AS \"state\" FROM \"custodians\" AS \"owners\" INTERSECT SELECT \"professionals\".\"province\" AS \"state\" FROM \"specialists\" AS \"professionals\"",
+    "dog_kennels__challenge_v0__q0920": "SELECT AVG(\"dogs\".\"years_old\") AS \"_col_0\" FROM \"canines\" AS \"dogs\" WHERE \"dogs\".\"canine_key\" IN (SELECT \"treatments\".\"canine_key\" AS \"dog_id\" FROM \"procedures\" AS \"treatments\")",
+    "dog_kennels__challenge_v0__q0921": "SELECT AVG(\"dogs\".\"years_old\") AS \"_col_0\" FROM \"canines\" AS \"dogs\" WHERE \"dogs\".\"canine_key\" IN (SELECT \"treatments\".\"canine_key\" AS \"dog_id\" FROM \"procedures\" AS \"treatments\")",
+    "dog_kennels__challenge_v0__q0922": "SELECT \"professionals\".\"specialist_key\" AS \"professional_id\", \"professionals\".\"family_name\" AS \"last_name\", \"professionals\".\"residential_contact\" AS \"cell_number\" FROM \"specialists\" AS \"professionals\" WHERE \"professionals\".\"province\" = 'Indiana' UNION SELECT \"t1\".\"specialist_key\" AS \"professional_id\", \"t1\".\"family_name\" AS \"last_name\", \"t1\".\"residential_contact\" AS \"cell_number\" FROM \"specialists\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"specialist_key\" = \"t2\".\"specialist_key\" GROUP BY \"t1\".\"specialist_key\" HAVING COUNT(*) > 2",
+    "dog_kennels__challenge_v0__q0923": "SELECT \"professionals\".\"specialist_key\" AS \"professional_id\", \"professionals\".\"family_name\" AS \"last_name\", \"professionals\".\"residential_contact\" AS \"cell_number\" FROM \"specialists\" AS \"professionals\" WHERE \"professionals\".\"province\" = 'Indiana' UNION SELECT \"t1\".\"specialist_key\" AS \"professional_id\", \"t1\".\"family_name\" AS \"last_name\", \"t1\".\"residential_contact\" AS \"cell_number\" FROM \"specialists\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"specialist_key\" = \"t2\".\"specialist_key\" GROUP BY \"t1\".\"specialist_key\" HAVING COUNT(*) > 2",
+    "dog_kennels__challenge_v0__q0924": "SELECT \"dogs\".\"label\" AS \"name\" FROM \"canines\" AS \"dogs\" WHERE NOT \"dogs\".\"canine_key\" IN (SELECT \"treatments\".\"canine_key\" AS \"dog_id\" FROM \"procedures\" AS \"treatments\" GROUP BY \"treatments\".\"canine_key\" HAVING SUM(\"treatments\".\"expense_of_procedure\") > 1000)",
+    "dog_kennels__challenge_v0__q0925": "SELECT \"dogs\".\"label\" AS \"name\" FROM \"canines\" AS \"dogs\" WHERE NOT \"dogs\".\"canine_key\" IN (SELECT \"treatments\".\"canine_key\" AS \"dog_id\" FROM \"procedures\" AS \"treatments\" GROUP BY \"treatments\".\"canine_key\" HAVING SUM(\"treatments\".\"expense_of_procedure\") > 1000)",
+    "dog_kennels__challenge_v0__q0926": "SELECT \"professionals\".\"given_name\" AS \"first_name\" FROM \"specialists\" AS \"professionals\" UNION SELECT \"owners\".\"given_name\" AS \"first_name\" FROM \"custodians\" AS \"owners\" EXCEPT SELECT \"dogs\".\"label\" AS \"name\" FROM \"canines\" AS \"dogs\"",
+    "dog_kennels__challenge_v0__q0927": "SELECT \"professionals\".\"given_name\" AS \"first_name\" FROM \"specialists\" AS \"professionals\" UNION SELECT \"owners\".\"given_name\" AS \"first_name\" FROM \"custodians\" AS \"owners\" EXCEPT SELECT \"dogs\".\"label\" AS \"name\" FROM \"canines\" AS \"dogs\"",
+    "dog_kennels__challenge_v0__q0928": "SELECT \"professionals\".\"specialist_key\" AS \"professional_id\", \"professionals\".\"role_tag\" AS \"role_code\", \"professionals\".\"electronic_mail\" AS \"email_address\" FROM \"specialists\" AS \"professionals\" EXCEPT SELECT \"t1\".\"specialist_key\" AS \"professional_id\", \"t1\".\"role_tag\" AS \"role_code\", \"t1\".\"electronic_mail\" AS \"email_address\" FROM \"specialists\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"specialist_key\" = \"t2\".\"specialist_key\"",
+    "dog_kennels__challenge_v0__q0929": "SELECT \"professionals\".\"specialist_key\" AS \"professional_id\", \"professionals\".\"role_tag\" AS \"role_code\", \"professionals\".\"electronic_mail\" AS \"email_address\" FROM \"specialists\" AS \"professionals\" EXCEPT SELECT \"t1\".\"specialist_key\" AS \"professional_id\", \"t1\".\"role_tag\" AS \"role_code\", \"t1\".\"electronic_mail\" AS \"email_address\" FROM \"specialists\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"specialist_key\" = \"t2\".\"specialist_key\"",
+    "dog_kennels__challenge_v0__q0930": "SELECT \"t1\".\"custodian_key\" AS \"owner_id\", \"t2\".\"given_name\" AS \"first_name\", \"t2\".\"family_name\" AS \"last_name\" FROM \"canines\" AS \"t1\" JOIN \"custodians\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\" GROUP BY \"t1\".\"custodian_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "dog_kennels__challenge_v0__q0931": "SELECT \"t1\".\"custodian_key\" AS \"owner_id\", \"t2\".\"given_name\" AS \"first_name\", \"t2\".\"family_name\" AS \"last_name\" FROM \"canines\" AS \"t1\" JOIN \"custodians\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\" GROUP BY \"t1\".\"custodian_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "dog_kennels__challenge_v0__q0932": "SELECT \"t1\".\"specialist_key\" AS \"professional_id\", \"t1\".\"role_tag\" AS \"role_code\", \"t1\".\"given_name\" AS \"first_name\" FROM \"specialists\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"specialist_key\" = \"t2\".\"specialist_key\" GROUP BY \"t1\".\"specialist_key\" HAVING COUNT(*) >= 2",
+    "dog_kennels__challenge_v0__q0933": "SELECT \"t1\".\"specialist_key\" AS \"professional_id\", \"t1\".\"role_tag\" AS \"role_code\", \"t1\".\"given_name\" AS \"first_name\" FROM \"specialists\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"specialist_key\" = \"t2\".\"specialist_key\" GROUP BY \"t1\".\"specialist_key\" HAVING COUNT(*) >= 2",
+    "dog_kennels__challenge_v0__q0934": "SELECT \"t1\".\"variety_label\" AS \"breed_name\" FROM \"animal_varieties\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"variety_tag\" = \"t2\".\"variety_tag\" GROUP BY \"t1\".\"variety_label\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "dog_kennels__challenge_v0__q0935": "SELECT \"t1\".\"variety_label\" AS \"breed_name\" FROM \"animal_varieties\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"variety_tag\" = \"t2\".\"variety_tag\" GROUP BY \"t1\".\"variety_label\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "dog_kennels__challenge_v0__q0936": "SELECT \"t1\".\"custodian_key\" AS \"owner_id\", \"t1\".\"family_name\" AS \"last_name\" FROM \"custodians\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\" JOIN \"procedures\" AS \"t3\" ON \"t2\".\"canine_key\" = \"t3\".\"canine_key\" GROUP BY \"t1\".\"custodian_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "dog_kennels__challenge_v0__q0937": "SELECT \"t1\".\"custodian_key\" AS \"owner_id\", \"t1\".\"family_name\" AS \"last_name\" FROM \"custodians\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\" JOIN \"procedures\" AS \"t3\" ON \"t2\".\"canine_key\" = \"t3\".\"canine_key\" GROUP BY \"t1\".\"custodian_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "dog_kennels__challenge_v0__q0938": "SELECT \"t1\".\"procedure_category_summary\" AS \"treatment_type_description\" FROM \"procedure_categories\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"procedure_category_tag\" = \"t2\".\"procedure_category_tag\" GROUP BY \"t1\".\"procedure_category_tag\" ORDER BY SUM(\"t2\".\"expense_of_procedure\") ASC LIMIT 1",
+    "dog_kennels__challenge_v0__q0939": "SELECT \"t1\".\"procedure_category_summary\" AS \"treatment_type_description\" FROM \"procedure_categories\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"procedure_category_tag\" = \"t2\".\"procedure_category_tag\" GROUP BY \"t1\".\"procedure_category_tag\" ORDER BY SUM(\"t2\".\"expense_of_procedure\") ASC LIMIT 1",
+    "dog_kennels__challenge_v0__q0940": "SELECT \"t1\".\"custodian_key\" AS \"owner_id\", \"t1\".\"postal_tag\" AS \"zip_code\" FROM \"custodians\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\" JOIN \"procedures\" AS \"t3\" ON \"t2\".\"canine_key\" = \"t3\".\"canine_key\" GROUP BY \"t1\".\"custodian_key\" ORDER BY SUM(\"t3\".\"expense_of_procedure\") DESC LIMIT 1",
+    "dog_kennels__challenge_v0__q0941": "SELECT \"t1\".\"custodian_key\" AS \"owner_id\", \"t1\".\"postal_tag\" AS \"zip_code\" FROM \"custodians\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\" JOIN \"procedures\" AS \"t3\" ON \"t2\".\"canine_key\" = \"t3\".\"canine_key\" GROUP BY \"t1\".\"custodian_key\" ORDER BY SUM(\"t3\".\"expense_of_procedure\") DESC LIMIT 1",
+    "dog_kennels__challenge_v0__q0942": "SELECT \"t1\".\"specialist_key\" AS \"professional_id\", \"t1\".\"residential_contact\" AS \"cell_number\" FROM \"specialists\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"specialist_key\" = \"t2\".\"specialist_key\" GROUP BY \"t1\".\"specialist_key\" HAVING COUNT(*) >= 2",
+    "dog_kennels__challenge_v0__q0943": "SELECT \"t1\".\"specialist_key\" AS \"professional_id\", \"t1\".\"residential_contact\" AS \"cell_number\" FROM \"specialists\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"specialist_key\" = \"t2\".\"specialist_key\" GROUP BY \"t1\".\"specialist_key\" HAVING COUNT(*) >= 2",
+    "dog_kennels__challenge_v0__q0944": "SELECT DISTINCT \"t1\".\"given_name\" AS \"first_name\", \"t1\".\"family_name\" AS \"last_name\" FROM \"specialists\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON TRUE WHERE \"t2\".\"expense_of_procedure\" < (SELECT AVG(\"treatments\".\"expense_of_procedure\") AS \"_col_0\" FROM \"procedures\" AS \"treatments\")",
+    "dog_kennels__challenge_v0__q0945": "SELECT DISTINCT \"t1\".\"given_name\" AS \"first_name\", \"t1\".\"family_name\" AS \"last_name\" FROM \"specialists\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON TRUE WHERE \"t2\".\"expense_of_procedure\" < (SELECT AVG(\"treatments\".\"expense_of_procedure\") AS \"_col_0\" FROM \"procedures\" AS \"treatments\")",
+    "dog_kennels__challenge_v0__q0946": "SELECT \"t1\".\"day_of_procedure\" AS \"date_of_treatment\", \"t2\".\"given_name\" AS \"first_name\" FROM \"procedures\" AS \"t1\" JOIN \"specialists\" AS \"t2\" ON \"t1\".\"specialist_key\" = \"t2\".\"specialist_key\"",
+    "dog_kennels__challenge_v0__q0947": "SELECT \"t1\".\"day_of_procedure\" AS \"date_of_treatment\", \"t2\".\"given_name\" AS \"first_name\" FROM \"procedures\" AS \"t1\" JOIN \"specialists\" AS \"t2\" ON \"t1\".\"specialist_key\" = \"t2\".\"specialist_key\"",
+    "dog_kennels__challenge_v0__q0948": "SELECT \"t1\".\"expense_of_procedure\" AS \"cost_of_treatment\", \"t2\".\"procedure_category_summary\" AS \"treatment_type_description\" FROM \"procedures\" AS \"t1\" JOIN \"procedure_categories\" AS \"t2\" ON \"t1\".\"procedure_category_tag\" = \"t2\".\"procedure_category_tag\"",
+    "dog_kennels__challenge_v0__q0949": "SELECT \"t1\".\"expense_of_procedure\" AS \"cost_of_treatment\", \"t2\".\"procedure_category_summary\" AS \"treatment_type_description\" FROM \"procedures\" AS \"t1\" JOIN \"procedure_categories\" AS \"t2\" ON \"t1\".\"procedure_category_tag\" = \"t2\".\"procedure_category_tag\"",
+    "dog_kennels__challenge_v0__q0950": "SELECT \"t1\".\"given_name\" AS \"first_name\", \"t1\".\"family_name\" AS \"last_name\", \"t2\".\"dimension_tag\" AS \"size_code\" FROM \"custodians\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\"",
+    "dog_kennels__challenge_v0__q0951": "SELECT \"t1\".\"given_name\" AS \"first_name\", \"t1\".\"family_name\" AS \"last_name\", \"t2\".\"dimension_tag\" AS \"size_code\" FROM \"custodians\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\"",
+    "dog_kennels__challenge_v0__q0952": "SELECT \"t1\".\"given_name\" AS \"first_name\", \"t2\".\"label\" AS \"name\" FROM \"custodians\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\"",
+    "dog_kennels__challenge_v0__q0953": "SELECT \"t1\".\"given_name\" AS \"first_name\", \"t2\".\"label\" AS \"name\" FROM \"custodians\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\"",
+    "dog_kennels__challenge_v0__q0954": "SELECT \"t1\".\"label\" AS \"name\", \"t2\".\"day_of_procedure\" AS \"date_of_treatment\" FROM \"canines\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"canine_key\" = \"t2\".\"canine_key\" WHERE \"t1\".\"variety_tag\" = (SELECT \"dogs\".\"variety_tag\" AS \"breed_code\" FROM \"canines\" AS \"dogs\" GROUP BY \"dogs\".\"variety_tag\" ORDER BY COUNT(*) ASC LIMIT 1)",
+    "dog_kennels__challenge_v0__q0955": "SELECT \"t1\".\"label\" AS \"name\", \"t2\".\"day_of_procedure\" AS \"date_of_treatment\" FROM \"canines\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"canine_key\" = \"t2\".\"canine_key\" WHERE \"t1\".\"variety_tag\" = (SELECT \"dogs\".\"variety_tag\" AS \"breed_code\" FROM \"canines\" AS \"dogs\" GROUP BY \"dogs\".\"variety_tag\" ORDER BY COUNT(*) ASC LIMIT 1)",
+    "dog_kennels__challenge_v0__q0956": "SELECT \"t1\".\"given_name\" AS \"first_name\", \"t2\".\"label\" AS \"name\" FROM \"custodians\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\" WHERE \"t1\".\"province\" = 'Virginia'",
+    "dog_kennels__challenge_v0__q0957": "SELECT \"t1\".\"given_name\" AS \"first_name\", \"t2\".\"label\" AS \"name\" FROM \"custodians\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\" WHERE \"t1\".\"province\" = 'Virginia'",
+    "dog_kennels__challenge_v0__q0958": "SELECT DISTINCT \"t1\".\"day_arrived\" AS \"date_arrived\", \"t1\".\"day_departed\" AS \"date_departed\" FROM \"canines\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"canine_key\" = \"t2\".\"canine_key\"",
+    "dog_kennels__challenge_v0__q0959": "SELECT DISTINCT \"t1\".\"day_arrived\" AS \"date_arrived\", \"t1\".\"day_departed\" AS \"date_departed\" FROM \"canines\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"canine_key\" = \"t2\".\"canine_key\"",
+    "dog_kennels__challenge_v0__q0960": "SELECT \"t1\".\"family_name\" AS \"last_name\" FROM \"custodians\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\" WHERE \"t2\".\"years_old\" = (SELECT MAX(\"dogs\".\"years_old\") AS \"_col_0\" FROM \"canines\" AS \"dogs\")",
+    "dog_kennels__challenge_v0__q0961": "SELECT \"t1\".\"family_name\" AS \"last_name\" FROM \"custodians\" AS \"t1\" JOIN \"canines\" AS \"t2\" ON \"t1\".\"custodian_key\" = \"t2\".\"custodian_key\" WHERE \"t2\".\"years_old\" = (SELECT MAX(\"dogs\".\"years_old\") AS \"_col_0\" FROM \"canines\" AS \"dogs\")",
+    "dog_kennels__challenge_v0__q0962": "SELECT \"professionals\".\"electronic_mail\" AS \"email_address\" FROM \"specialists\" AS \"professionals\" WHERE \"professionals\".\"province\" = 'Hawaii' OR \"professionals\".\"province\" = 'Wisconsin'",
+    "dog_kennels__challenge_v0__q0963": "SELECT \"professionals\".\"electronic_mail\" AS \"email_address\" FROM \"specialists\" AS \"professionals\" WHERE \"professionals\".\"province\" = 'Hawaii' OR \"professionals\".\"province\" = 'Wisconsin'",
+    "dog_kennels__challenge_v0__q0964": "SELECT \"dogs\".\"day_arrived\" AS \"date_arrived\", \"dogs\".\"day_departed\" AS \"date_departed\" FROM \"canines\" AS \"dogs\"",
+    "dog_kennels__challenge_v0__q0965": "SELECT \"dogs\".\"day_arrived\" AS \"date_arrived\", \"dogs\".\"day_departed\" AS \"date_departed\" FROM \"canines\" AS \"dogs\"",
+    "dog_kennels__challenge_v0__q0966": "SELECT COUNT(DISTINCT \"treatments\".\"canine_key\") AS \"_col_0\" FROM \"procedures\" AS \"treatments\"",
+    "dog_kennels__challenge_v0__q0967": "SELECT COUNT(DISTINCT \"treatments\".\"canine_key\") AS \"_col_0\" FROM \"procedures\" AS \"treatments\"",
+    "dog_kennels__challenge_v0__q0968": "SELECT COUNT(DISTINCT \"treatments\".\"specialist_key\") AS \"_col_0\" FROM \"procedures\" AS \"treatments\"",
+    "dog_kennels__challenge_v0__q0969": "SELECT COUNT(DISTINCT \"treatments\".\"specialist_key\") AS \"_col_0\" FROM \"procedures\" AS \"treatments\"",
+    "dog_kennels__challenge_v0__q0970": "SELECT \"professionals\".\"role_tag\" AS \"role_code\", \"professionals\".\"road_name\" AS \"street\", \"professionals\".\"municipality\" AS \"city\", \"professionals\".\"province\" AS \"state\" FROM \"specialists\" AS \"professionals\" WHERE \"professionals\".\"municipality\" LIKE '%West%'",
+    "dog_kennels__challenge_v0__q0971": "SELECT \"professionals\".\"role_tag\" AS \"role_code\", \"professionals\".\"road_name\" AS \"street\", \"professionals\".\"municipality\" AS \"city\", \"professionals\".\"province\" AS \"state\" FROM \"specialists\" AS \"professionals\" WHERE \"professionals\".\"municipality\" LIKE '%West%'",
+    "dog_kennels__challenge_v0__q0972": "SELECT \"owners\".\"given_name\" AS \"first_name\", \"owners\".\"family_name\" AS \"last_name\", \"owners\".\"electronic_mail\" AS \"email_address\" FROM \"custodians\" AS \"owners\" WHERE \"owners\".\"province\" LIKE '%North%'",
+    "dog_kennels__challenge_v0__q0973": "SELECT \"owners\".\"given_name\" AS \"first_name\", \"owners\".\"family_name\" AS \"last_name\", \"owners\".\"electronic_mail\" AS \"email_address\" FROM \"custodians\" AS \"owners\" WHERE \"owners\".\"province\" LIKE '%North%'",
+    "dog_kennels__challenge_v0__q0974": "SELECT COUNT(*) AS \"_col_0\" FROM \"canines\" AS \"dogs\" WHERE \"dogs\".\"years_old\" < (SELECT AVG(\"dogs\".\"years_old\") AS \"_col_0\" FROM \"canines\" AS \"dogs\")",
+    "dog_kennels__challenge_v0__q0975": "SELECT COUNT(*) AS \"_col_0\" FROM \"canines\" AS \"dogs\" WHERE \"dogs\".\"years_old\" < (SELECT AVG(\"dogs\".\"years_old\") AS \"_col_0\" FROM \"canines\" AS \"dogs\")",
+    "dog_kennels__challenge_v0__q0976": "SELECT \"treatments\".\"expense_of_procedure\" AS \"cost_of_treatment\" FROM \"procedures\" AS \"treatments\" ORDER BY \"treatments\".\"day_of_procedure\" DESC LIMIT 1",
+    "dog_kennels__challenge_v0__q0977": "SELECT \"treatments\".\"expense_of_procedure\" AS \"cost_of_treatment\" FROM \"procedures\" AS \"treatments\" ORDER BY \"treatments\".\"day_of_procedure\" DESC LIMIT 1",
+    "dog_kennels__challenge_v0__q0978": "SELECT COUNT(*) AS \"_col_0\" FROM \"canines\" AS \"dogs\" WHERE NOT \"dogs\".\"canine_key\" IN (SELECT \"treatments\".\"canine_key\" AS \"dog_id\" FROM \"procedures\" AS \"treatments\")",
+    "dog_kennels__challenge_v0__q0979": "SELECT COUNT(*) AS \"_col_0\" FROM \"canines\" AS \"dogs\" WHERE NOT \"dogs\".\"canine_key\" IN (SELECT \"treatments\".\"canine_key\" AS \"dog_id\" FROM \"procedures\" AS \"treatments\")",
+    "dog_kennels__challenge_v0__q0980": "SELECT COUNT(*) AS \"_col_0\" FROM \"custodians\" AS \"owners\" WHERE NOT \"owners\".\"custodian_key\" IN (SELECT \"dogs\".\"custodian_key\" AS \"owner_id\" FROM \"canines\" AS \"dogs\")",
+    "dog_kennels__challenge_v0__q0981": "SELECT COUNT(*) AS \"_col_0\" FROM \"custodians\" AS \"owners\" WHERE NOT \"owners\".\"custodian_key\" IN (SELECT \"dogs\".\"custodian_key\" AS \"owner_id\" FROM \"canines\" AS \"dogs\")",
+    "dog_kennels__challenge_v0__q0982": "SELECT COUNT(*) AS \"_col_0\" FROM \"specialists\" AS \"professionals\" WHERE NOT \"professionals\".\"specialist_key\" IN (SELECT \"treatments\".\"specialist_key\" AS \"professional_id\" FROM \"procedures\" AS \"treatments\")",
+    "dog_kennels__challenge_v0__q0983": "SELECT COUNT(*) AS \"_col_0\" FROM \"specialists\" AS \"professionals\" WHERE NOT \"professionals\".\"specialist_key\" IN (SELECT \"treatments\".\"specialist_key\" AS \"professional_id\" FROM \"procedures\" AS \"treatments\")",
+    "dog_kennels__challenge_v0__q0984": "SELECT \"dogs\".\"label\" AS \"name\", \"dogs\".\"years_old\" AS \"age\", \"dogs\".\"mass_value\" AS \"weight\" FROM \"canines\" AS \"dogs\" WHERE \"dogs\".\"abandoned_yn\" = 1",
+    "dog_kennels__challenge_v0__q0985": "SELECT \"dogs\".\"label\" AS \"name\", \"dogs\".\"years_old\" AS \"age\", \"dogs\".\"mass_value\" AS \"weight\" FROM \"canines\" AS \"dogs\" WHERE \"dogs\".\"abandoned_yn\" = 1",
+    "dog_kennels__challenge_v0__q0986": "SELECT AVG(\"dogs\".\"years_old\") AS \"_col_0\" FROM \"canines\" AS \"dogs\"",
+    "dog_kennels__challenge_v0__q0987": "SELECT AVG(\"dogs\".\"years_old\") AS \"_col_0\" FROM \"canines\" AS \"dogs\"",
+    "dog_kennels__challenge_v0__q0988": "SELECT MAX(\"dogs\".\"years_old\") AS \"_col_0\" FROM \"canines\" AS \"dogs\"",
+    "dog_kennels__challenge_v0__q0989": "SELECT MAX(\"dogs\".\"years_old\") AS \"_col_0\" FROM \"canines\" AS \"dogs\"",
+    "dog_kennels__challenge_v0__q0990": "SELECT \"charges\".\"fee_category\" AS \"charge_type\", \"charges\".\"fee_value\" AS \"charge_amount\" FROM \"fees\" AS \"charges\"",
+    "dog_kennels__challenge_v0__q0991": "SELECT \"charges\".\"fee_category\" AS \"charge_type\", \"charges\".\"fee_value\" AS \"charge_amount\" FROM \"fees\" AS \"charges\"",
+    "dog_kennels__challenge_v0__q0992": "SELECT MAX(\"charges\".\"fee_value\") AS \"_col_0\" FROM \"fees\" AS \"charges\"",
+    "dog_kennels__challenge_v0__q0993": "SELECT MAX(\"charges\".\"fee_value\") AS \"_col_0\" FROM \"fees\" AS \"charges\"",
+    "dog_kennels__challenge_v0__q0994": "SELECT \"professionals\".\"electronic_mail\" AS \"email_address\", \"professionals\".\"residential_contact\" AS \"cell_number\", \"professionals\".\"mobile_contact\" AS \"home_phone\" FROM \"specialists\" AS \"professionals\"",
+    "dog_kennels__challenge_v0__q0995": "SELECT \"professionals\".\"electronic_mail\" AS \"email_address\", \"professionals\".\"residential_contact\" AS \"cell_number\", \"professionals\".\"mobile_contact\" AS \"home_phone\" FROM \"specialists\" AS \"professionals\"",
+    "dog_kennels__challenge_v0__q0996": "SELECT DISTINCT \"dogs\".\"variety_tag\" AS \"breed_code\", \"dogs\".\"dimension_tag\" AS \"size_code\" FROM \"canines\" AS \"dogs\"",
+    "dog_kennels__challenge_v0__q0997": "SELECT DISTINCT \"dogs\".\"variety_tag\" AS \"breed_code\", \"dogs\".\"dimension_tag\" AS \"size_code\" FROM \"canines\" AS \"dogs\"",
+    "dog_kennels__challenge_v0__q0998": "SELECT DISTINCT \"t1\".\"given_name\" AS \"first_name\", \"t3\".\"procedure_category_summary\" AS \"treatment_type_description\" FROM \"specialists\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"specialist_key\" = \"t2\".\"specialist_key\" JOIN \"procedure_categories\" AS \"t3\" ON \"t2\".\"procedure_category_tag\" = \"t3\".\"procedure_category_tag\"",
+    "dog_kennels__challenge_v0__q0999": "SELECT DISTINCT \"t1\".\"given_name\" AS \"first_name\", \"t3\".\"procedure_category_summary\" AS \"treatment_type_description\" FROM \"specialists\" AS \"t1\" JOIN \"procedures\" AS \"t2\" ON \"t1\".\"specialist_key\" = \"t2\".\"specialist_key\" JOIN \"procedure_categories\" AS \"t3\" ON \"t2\".\"procedure_category_tag\" = \"t3\".\"procedure_category_tag\""
+  },
+  "rewrite_errors": {},
+  "model": "<workspace>/models/spider-run-epoch1",
+  "method": "types"
+}

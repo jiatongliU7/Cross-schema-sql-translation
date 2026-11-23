@@ -1,0 +1,19 @@
+{
+  "tables": {
+    "course": "class_offering",
+    "teacher": "instructor",
+    "course_arrange": "teaching_assignment"
+  },
+  "columns": {
+    "course.Course_ID": "class_offering.subject_key",
+    "course.Staring_Date": "class_offering.staring_day",
+    "course.Course": "class_offering.subject",
+    "teacher.Teacher_ID": "instructor.instructor_key",
+    "teacher.Name": "instructor.label",
+    "teacher.Age": "instructor.years_old",
+    "teacher.Hometown": "instructor.Hometown",
+    "course_arrange.Course_ID": "teaching_assignment.subject_key",
+    "course_arrange.Teacher_ID": "teaching_assignment.instructor_key",
+    "course_arrange.Grade": "teaching_assignment.Grade"
+  }
+}

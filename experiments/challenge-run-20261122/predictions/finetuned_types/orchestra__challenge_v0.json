@@ -1,0 +1,462 @@
+{
+  "tables": {
+    "conductor": [
+      [
+        "music_director",
+        0.3922197222709656
+      ],
+      [
+        "ensemble",
+        0.3700176477432251
+      ],
+      [
+        "production",
+        0.35563546419143677
+      ]
+    ],
+    "orchestra": [
+      [
+        "music_director",
+        0.5768391489982605
+      ],
+      [
+        "ensemble",
+        0.42924046516418457
+      ],
+      [
+        "rendition",
+        0.4107687473297119
+      ]
+    ],
+    "performance": [
+      [
+        "production",
+        0.4326128363609314
+      ],
+      [
+        "ensemble",
+        0.40838974714279175
+      ],
+      [
+        "rendition",
+        0.3392288386821747
+      ]
+    ],
+    "show": [
+      [
+        "production",
+        0.4264272451400757
+      ],
+      [
+        "ensemble",
+        0.3738420009613037
+      ],
+      [
+        "rendition",
+        0.34162425994873047
+      ]
+    ]
+  },
+  "columns": {
+    "conductor.Conductor_ID": [
+      [
+        "ensemble.director_key",
+        0.47115451097488403
+      ],
+      [
+        "production.production_key",
+        0.4190814197063446
+      ],
+      [
+        "music_director.director_key",
+        0.4128330945968628
+      ]
+    ],
+    "conductor.Name": [
+      [
+        "music_director.label",
+        0.3795117139816284
+      ],
+      [
+        "ensemble.ensemble",
+        0.3584269881248474
+      ],
+      [
+        "ensemble.entry_firm",
+        0.308738112449646
+      ]
+    ],
+    "conductor.Age": [
+      [
+        "music_director.years_old",
+        0.5501183271408081
+      ],
+      [
+        "production.Attendance",
+        0.3606809377670288
+      ],
+      [
+        "production.production_key",
+        0.30892330408096313
+      ]
+    ],
+    "conductor.Nationality": [
+      [
+        "music_director.Nationality",
+        0.675643265247345
+      ],
+      [
+        "ensemble.ensemble",
+        0.37861353158950806
+      ],
+      [
+        "music_director.label",
+        0.35924699902534485
+      ]
+    ],
+    "conductor.Year_of_Work": [
+      [
+        "music_director.years_old",
+        0.5338337421417236
+      ],
+      [
+        "music_director.annum_of_work",
+        0.507714033126831
+      ],
+      [
+        "production.if_given_production",
+        0.3821324408054352
+      ]
+    ],
+    "orchestra.Orchestra_ID": [
+      [
+        "music_director.director_key",
+        0.47361332178115845
+      ],
+      [
+        "ensemble.ensemble_key",
+        0.449739933013916
+      ],
+      [
+        "ensemble.director_key",
+        0.4102381765842438
+      ]
+    ],
+    "orchestra.Orchestra": [
+      [
+        "ensemble.ensemble",
+        0.4524517059326172
+      ],
+      [
+        "music_director.label",
+        0.44941651821136475
+      ],
+      [
+        "ensemble.major_entry_format",
+        0.3847079873085022
+      ]
+    ],
+    "orchestra.Conductor_ID": [
+      [
+        "music_director.director_key",
+        0.49839654564857483
+      ],
+      [
+        "ensemble.director_key",
+        0.4487014412879944
+      ],
+      [
+        "ensemble.ensemble_key",
+        0.4180713891983032
+      ]
+    ],
+    "orchestra.Record_Company": [
+      [
+        "ensemble.entry_firm",
+        0.49221503734588623
+      ],
+      [
+        "music_director.label",
+        0.46855729818344116
+      ],
+      [
+        "music_director.Nationality",
+        0.3770085573196411
+      ]
+    ],
+    "orchestra.Year_of_Founded": [
+      [
+        "music_director.years_old",
+        0.6132895946502686
+      ],
+      [
+        "ensemble.annum_of_founded",
+        0.5023900270462036
+      ],
+      [
+        "music_director.annum_of_work",
+        0.44867753982543945
+      ]
+    ],
+    "orchestra.Major_Record_Format": [
+      [
+        "ensemble.major_entry_format",
+        0.6310651302337646
+      ],
+      [
+        "music_director.label",
+        0.4233728051185608
+      ],
+      [
+        "rendition.category",
+        0.3961518406867981
+      ]
+    ],
+    "performance.Performance_ID": [
+      [
+        "production.production_key",
+        0.40928876399993896
+      ],
+      [
+        "production.if_given_production",
+        0.3988994061946869
+      ],
+      [
+        "ensemble.ensemble_key",
+        0.3894108533859253
+      ]
+    ],
+    "performance.Orchestra_ID": [
+      [
+        "ensemble.ensemble_key",
+        0.4025132656097412
+      ],
+      [
+        "music_director.director_key",
+        0.3880159258842468
+      ],
+      [
+        "production.production_key",
+        0.36813056468963623
+      ]
+    ],
+    "performance.Type": [
+      [
+        "ensemble.ensemble",
+        0.510460615158081
+      ],
+      [
+        "production.outcome",
+        0.4896003007888794
+      ],
+      [
+        "ensemble.entry_firm",
+        0.4422568082809448
+      ]
+    ],
+    "performance.Date": [
+      [
+        "rendition.event_day",
+        0.48328450322151184
+      ],
+      [
+        "rendition.seven_day_position",
+        0.44826382398605347
+      ],
+      [
+        "production.outcome",
+        0.39902690052986145
+      ]
+    ],
+    "performance.Official_ratings_in_millions": [
+      [
+        "rendition.certified_audience_millions",
+        0.49044132232666016
+      ],
+      [
+        "ensemble.ensemble_key",
+        0.31452345848083496
+      ],
+      [
+        "production.production_key",
+        0.27363353967666626
+      ]
+    ],
+    "performance.Weekly_rank": [
+      [
+        "rendition.seven_day_position",
+        0.43274903297424316
+      ],
+      [
+        "ensemble.major_entry_format",
+        0.3898640275001526
+      ],
+      [
+        "ensemble.ensemble",
+        0.3733057677745819
+      ]
+    ],
+    "performance.Share": [
+      [
+        "ensemble.ensemble",
+        0.3959976136684418
+      ],
+      [
+        "production.outcome",
+        0.3901752233505249
+      ],
+      [
+        "ensemble.entry_firm",
+        0.37590980529785156
+      ]
+    ],
+    "show.Show_ID": [
+      [
+        "production.production_key",
+        0.37691739201545715
+      ],
+      [
+        "production.if_given_production",
+        0.3517172932624817
+      ],
+      [
+        "production.Attendance",
+        0.3214106261730194
+      ]
+    ],
+    "show.Performance_ID": [
+      [
+        "production.production_key",
+        0.38970667123794556
+      ],
+      [
+        "production.if_given_production",
+        0.3868195414543152
+      ],
+      [
+        "production.Attendance",
+        0.35368192195892334
+      ]
+    ],
+    "show.If_first_show": [
+      [
+        "production.if_given_production",
+        0.41997408866882324
+      ],
+      [
+        "production.production_key",
+        0.3733314275741577
+      ],
+      [
+        "production.rendition_key",
+        0.31537169218063354
+      ]
+    ],
+    "show.Result": [
+      [
+        "production.outcome",
+        0.5753592252731323
+      ],
+      [
+        "ensemble.ensemble",
+        0.4094197750091553
+      ],
+      [
+        "rendition.portion",
+        0.3842109441757202
+      ]
+    ],
+    "show.Attendance": [
+      [
+        "production.Attendance",
+        0.8326438665390015
+      ],
+      [
+        "rendition.certified_audience_millions",
+        0.3722548484802246
+      ],
+      [
+        "production.production_key",
+        0.2812114953994751
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "conductor": "music_director",
+      "orchestra": "ensemble",
+      "performance": "rendition",
+      "show": "production"
+    },
+    "columns": {
+      "conductor.Conductor_ID": "music_director.director_key",
+      "conductor.Name": "music_director.label",
+      "conductor.Age": "music_director.years_old",
+      "conductor.Nationality": "music_director.Nationality",
+      "conductor.Year_of_Work": "music_director.annum_of_work",
+      "orchestra.Orchestra_ID": "ensemble.ensemble_key",
+      "orchestra.Orchestra": "ensemble.ensemble",
+      "orchestra.Conductor_ID": "ensemble.director_key",
+      "orchestra.Record_Company": "ensemble.entry_firm",
+      "orchestra.Year_of_Founded": "ensemble.annum_of_founded",
+      "orchestra.Major_Record_Format": "ensemble.major_entry_format",
+      "performance.Performance_ID": "rendition.rendition_key",
+      "performance.Orchestra_ID": "rendition.ensemble_key",
+      "performance.Type": "rendition.category",
+      "performance.Date": "rendition.event_day",
+      "performance.Official_ratings_in_millions": "rendition.certified_audience_millions",
+      "performance.Weekly_rank": "rendition.seven_day_position",
+      "performance.Share": "rendition.portion",
+      "show.Show_ID": "production.production_key",
+      "show.Performance_ID": "production.rendition_key",
+      "show.If_first_show": "production.if_given_production",
+      "show.Result": "production.outcome",
+      "show.Attendance": "production.Attendance"
+    }
+  },
+  "q_B": {
+    "orchestra__challenge_v0__q0822": "SELECT COUNT(*) AS \"_col_0\" FROM \"music_director\" AS \"conductor\"",
+    "orchestra__challenge_v0__q0823": "SELECT COUNT(*) AS \"_col_0\" FROM \"music_director\" AS \"conductor\"",
+    "orchestra__challenge_v0__q0824": "SELECT \"conductor\".\"label\" AS \"name\" FROM \"music_director\" AS \"conductor\" ORDER BY \"conductor\".\"years_old\" ASC",
+    "orchestra__challenge_v0__q0825": "SELECT \"conductor\".\"label\" AS \"name\" FROM \"music_director\" AS \"conductor\" ORDER BY \"conductor\".\"years_old\" ASC",
+    "orchestra__challenge_v0__q0826": "SELECT \"conductor\".\"label\" AS \"name\" FROM \"music_director\" AS \"conductor\" WHERE \"conductor\".\"Nationality\" <> 'USA'",
+    "orchestra__challenge_v0__q0827": "SELECT \"conductor\".\"label\" AS \"name\" FROM \"music_director\" AS \"conductor\" WHERE \"conductor\".\"Nationality\" <> 'USA'",
+    "orchestra__challenge_v0__q0828": "SELECT \"orchestra\".\"entry_firm\" AS \"record_company\" FROM \"ensemble\" AS \"orchestra\" ORDER BY \"orchestra\".\"annum_of_founded\" DESC",
+    "orchestra__challenge_v0__q0829": "SELECT \"orchestra\".\"entry_firm\" AS \"record_company\" FROM \"ensemble\" AS \"orchestra\" ORDER BY \"orchestra\".\"annum_of_founded\" DESC",
+    "orchestra__challenge_v0__q0830": "SELECT AVG(\"show\".\"Attendance\") AS \"_col_0\" FROM \"production\" AS \"show\"",
+    "orchestra__challenge_v0__q0831": "SELECT AVG(\"show\".\"Attendance\") AS \"_col_0\" FROM \"production\" AS \"show\"",
+    "orchestra__challenge_v0__q0832": "SELECT MAX(\"performance\".\"portion\") AS \"_col_0\", MIN(\"performance\".\"portion\") AS \"_col_1\" FROM \"rendition\" AS \"performance\" WHERE \"performance\".\"category\" <> 'Live final'",
+    "orchestra__challenge_v0__q0833": "SELECT MAX(\"performance\".\"portion\") AS \"_col_0\", MIN(\"performance\".\"portion\") AS \"_col_1\" FROM \"rendition\" AS \"performance\" WHERE \"performance\".\"category\" <> 'Live final'",
+    "orchestra__challenge_v0__q0834": "SELECT COUNT(DISTINCT \"conductor\".\"Nationality\") AS \"_col_0\" FROM \"music_director\" AS \"conductor\"",
+    "orchestra__challenge_v0__q0835": "SELECT COUNT(DISTINCT \"conductor\".\"Nationality\") AS \"_col_0\" FROM \"music_director\" AS \"conductor\"",
+    "orchestra__challenge_v0__q0836": "SELECT \"conductor\".\"label\" AS \"name\" FROM \"music_director\" AS \"conductor\" ORDER BY \"conductor\".\"annum_of_work\" DESC",
+    "orchestra__challenge_v0__q0837": "SELECT \"conductor\".\"label\" AS \"name\" FROM \"music_director\" AS \"conductor\" ORDER BY \"conductor\".\"annum_of_work\" DESC",
+    "orchestra__challenge_v0__q0838": "SELECT \"conductor\".\"label\" AS \"name\" FROM \"music_director\" AS \"conductor\" ORDER BY \"conductor\".\"annum_of_work\" DESC LIMIT 1",
+    "orchestra__challenge_v0__q0839": "SELECT \"conductor\".\"label\" AS \"name\" FROM \"music_director\" AS \"conductor\" ORDER BY \"conductor\".\"annum_of_work\" DESC LIMIT 1",
+    "orchestra__challenge_v0__q0840": "SELECT \"t1\".\"label\" AS \"name\", \"t2\".\"ensemble\" AS \"orchestra\" FROM \"music_director\" AS \"t1\" JOIN \"ensemble\" AS \"t2\" ON \"t1\".\"director_key\" = \"t2\".\"director_key\"",
+    "orchestra__challenge_v0__q0841": "SELECT \"t1\".\"label\" AS \"name\", \"t2\".\"ensemble\" AS \"orchestra\" FROM \"music_director\" AS \"t1\" JOIN \"ensemble\" AS \"t2\" ON \"t1\".\"director_key\" = \"t2\".\"director_key\"",
+    "orchestra__challenge_v0__q0842": "SELECT \"t1\".\"label\" AS \"name\" FROM \"music_director\" AS \"t1\" JOIN \"ensemble\" AS \"t2\" ON \"t1\".\"director_key\" = \"t2\".\"director_key\" GROUP BY \"t2\".\"director_key\" HAVING COUNT(*) > 1",
+    "orchestra__challenge_v0__q0843": "SELECT \"t1\".\"label\" AS \"name\" FROM \"music_director\" AS \"t1\" JOIN \"ensemble\" AS \"t2\" ON \"t1\".\"director_key\" = \"t2\".\"director_key\" GROUP BY \"t2\".\"director_key\" HAVING COUNT(*) > 1",
+    "orchestra__challenge_v0__q0844": "SELECT \"t1\".\"label\" AS \"name\" FROM \"music_director\" AS \"t1\" JOIN \"ensemble\" AS \"t2\" ON \"t1\".\"director_key\" = \"t2\".\"director_key\" GROUP BY \"t2\".\"director_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "orchestra__challenge_v0__q0845": "SELECT \"t1\".\"label\" AS \"name\" FROM \"music_director\" AS \"t1\" JOIN \"ensemble\" AS \"t2\" ON \"t1\".\"director_key\" = \"t2\".\"director_key\" GROUP BY \"t2\".\"director_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "orchestra__challenge_v0__q0846": "SELECT \"t1\".\"label\" AS \"name\" FROM \"music_director\" AS \"t1\" JOIN \"ensemble\" AS \"t2\" ON \"t1\".\"director_key\" = \"t2\".\"director_key\" WHERE \"t2\".\"annum_of_founded\" > 2008",
+    "orchestra__challenge_v0__q0847": "SELECT \"t1\".\"label\" AS \"name\" FROM \"music_director\" AS \"t1\" JOIN \"ensemble\" AS \"t2\" ON \"t1\".\"director_key\" = \"t2\".\"director_key\" WHERE \"t2\".\"annum_of_founded\" > 2008",
+    "orchestra__challenge_v0__q0848": "SELECT \"orchestra\".\"entry_firm\" AS \"record_company\", COUNT(*) AS \"_col_1\" FROM \"ensemble\" AS \"orchestra\" GROUP BY \"orchestra\".\"entry_firm\"",
+    "orchestra__challenge_v0__q0849": "SELECT \"orchestra\".\"entry_firm\" AS \"record_company\", COUNT(*) AS \"_col_1\" FROM \"ensemble\" AS \"orchestra\" GROUP BY \"orchestra\".\"entry_firm\"",
+    "orchestra__challenge_v0__q0850": "SELECT \"orchestra\".\"major_entry_format\" AS \"major_record_format\" FROM \"ensemble\" AS \"orchestra\" GROUP BY \"orchestra\".\"major_entry_format\" ORDER BY COUNT(*) ASC",
+    "orchestra__challenge_v0__q0851": "SELECT \"orchestra\".\"major_entry_format\" AS \"major_record_format\" FROM \"ensemble\" AS \"orchestra\" GROUP BY \"orchestra\".\"major_entry_format\" ORDER BY COUNT(*) ASC",
+    "orchestra__challenge_v0__q0852": "SELECT \"orchestra\".\"entry_firm\" AS \"record_company\" FROM \"ensemble\" AS \"orchestra\" GROUP BY \"orchestra\".\"entry_firm\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "orchestra__challenge_v0__q0853": "SELECT \"orchestra\".\"entry_firm\" AS \"record_company\" FROM \"ensemble\" AS \"orchestra\" GROUP BY \"orchestra\".\"entry_firm\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "orchestra__challenge_v0__q0854": "SELECT \"orchestra\".\"ensemble\" AS \"orchestra\" FROM \"ensemble\" AS \"orchestra\" WHERE NOT \"orchestra\".\"ensemble_key\" IN (SELECT \"performance\".\"ensemble_key\" AS \"orchestra_id\" FROM \"rendition\" AS \"performance\")",
+    "orchestra__challenge_v0__q0855": "SELECT \"orchestra\".\"ensemble\" AS \"orchestra\" FROM \"ensemble\" AS \"orchestra\" WHERE NOT \"orchestra\".\"ensemble_key\" IN (SELECT \"performance\".\"ensemble_key\" AS \"orchestra_id\" FROM \"rendition\" AS \"performance\")",
+    "orchestra__challenge_v0__q0856": "SELECT \"orchestra\".\"entry_firm\" AS \"record_company\" FROM \"ensemble\" AS \"orchestra\" WHERE \"orchestra\".\"annum_of_founded\" < 2003 INTERSECT SELECT \"orchestra\".\"entry_firm\" AS \"record_company\" FROM \"ensemble\" AS \"orchestra\" WHERE \"orchestra\".\"annum_of_founded\" > 2003",
+    "orchestra__challenge_v0__q0857": "SELECT \"orchestra\".\"entry_firm\" AS \"record_company\" FROM \"ensemble\" AS \"orchestra\" WHERE \"orchestra\".\"annum_of_founded\" < 2003 INTERSECT SELECT \"orchestra\".\"entry_firm\" AS \"record_company\" FROM \"ensemble\" AS \"orchestra\" WHERE \"orchestra\".\"annum_of_founded\" > 2003",
+    "orchestra__challenge_v0__q0858": "SELECT COUNT(*) AS \"_col_0\" FROM \"ensemble\" AS \"orchestra\" WHERE \"orchestra\".\"major_entry_format\" = 'CD' OR \"orchestra\".\"major_entry_format\" = 'DVD'",
+    "orchestra__challenge_v0__q0859": "SELECT COUNT(*) AS \"_col_0\" FROM \"ensemble\" AS \"orchestra\" WHERE \"orchestra\".\"major_entry_format\" = 'CD' OR \"orchestra\".\"major_entry_format\" = 'DVD'",
+    "orchestra__challenge_v0__q0860": "SELECT \"t1\".\"annum_of_founded\" AS \"year_of_founded\" FROM \"ensemble\" AS \"t1\" JOIN \"rendition\" AS \"t2\" ON \"t1\".\"ensemble_key\" = \"t2\".\"ensemble_key\" GROUP BY \"t2\".\"ensemble_key\" HAVING COUNT(*) > 1",
+    "orchestra__challenge_v0__q0861": "SELECT \"t1\".\"annum_of_founded\" AS \"year_of_founded\" FROM \"ensemble\" AS \"t1\" JOIN \"rendition\" AS \"t2\" ON \"t1\".\"ensemble_key\" = \"t2\".\"ensemble_key\" GROUP BY \"t2\".\"ensemble_key\" HAVING COUNT(*) > 1"
+  },
+  "rewrite_errors": {},
+  "model": "<workspace>/models/spider-run-epoch1",
+  "method": "types"
+}

@@ -1,0 +1,27 @@
+{
+  "tables": {
+    "Ref_Template_Types": "blueprint_category_lookup",
+    "Templates": "document_blueprints",
+    "Documents": "files",
+    "Paragraphs": "text_blocks"
+  },
+  "columns": {
+    "Ref_Template_Types.Template_Type_Code": "blueprint_category_lookup.blueprint_category_tag",
+    "Ref_Template_Types.Template_Type_Description": "blueprint_category_lookup.blueprint_category_summary",
+    "Templates.Template_ID": "document_blueprints.blueprint_category_tag",
+    "Templates.Version_Number": "document_blueprints.version_count",
+    "Templates.Template_Type_Code": "document_blueprints.blueprint_key",
+    "Templates.Date_Effective_From": "document_blueprints.day_valid_from",
+    "Templates.Date_Effective_To": "document_blueprints.day_valid_to",
+    "Templates.Template_Details": "document_blueprints.blueprint_details",
+    "Documents.Document_ID": "files.blueprint_key",
+    "Documents.Template_ID": "files.file_label",
+    "Documents.Document_Name": "files.supplementary_notes",
+    "Documents.Document_Description": "files.file_key",
+    "Documents.Other_Details": "files.file_summary",
+    "Paragraphs.Paragraph_ID": "text_blocks.supplementary_notes",
+    "Paragraphs.Document_ID": "text_blocks.block_key",
+    "Paragraphs.Paragraph_Text": "text_blocks.block_text",
+    "Paragraphs.Other_Details": "text_blocks.file_key"
+  }
+}

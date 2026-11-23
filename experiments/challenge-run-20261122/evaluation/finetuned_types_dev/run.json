@@ -1,0 +1,10 @@
+{
+  "split": "dev",
+  "splits_sha256": "a64930f8c828bfe3bbef4535d564f828422c3bdb57a8f20c51aee25b29b66e59",
+  "timeout_seconds": 5,
+  "methods": [
+    "saved"
+  ],
+  "dataset_root": "/private<challenge-data>",
+  "reference_policy": "Invalid references count as failures; inspect reference_valid_rate before reporting."
+}

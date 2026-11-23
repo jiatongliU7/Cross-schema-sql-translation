@@ -1,0 +1,240 @@
+{
+  "tables": {
+    "course": [
+      [
+        "instructor",
+        0.375
+      ],
+      [
+        "class_offering",
+        0.3
+      ],
+      [
+        "teaching_assignment",
+        0.24
+      ]
+    ],
+    "teacher": [
+      [
+        "teaching_assignment",
+        0.46153846153846156
+      ],
+      [
+        "instructor",
+        0.35294117647058826
+      ],
+      [
+        "class_offering",
+        0.2857142857142857
+      ]
+    ],
+    "course_arrange": [
+      [
+        "class_offering",
+        0.35714285714285715
+      ],
+      [
+        "teaching_assignment",
+        0.30303030303030304
+      ],
+      [
+        "instructor",
+        0.25
+      ]
+    ]
+  },
+  "columns": {
+    "course.Course_ID": [
+      [
+        "instructor.years_old",
+        0.4444444444444444
+      ],
+      [
+        "teaching_assignment.instructor_key",
+        0.34782608695652173
+      ],
+      [
+        "instructor.instructor_key",
+        0.34782608695652173
+      ]
+    ],
+    "course.Staring_Date": [
+      [
+        "class_offering.staring_day",
+        0.8695652173913043
+      ],
+      [
+        "teaching_assignment.instructor_key",
+        0.38461538461538464
+      ],
+      [
+        "instructor.instructor_key",
+        0.38461538461538464
+      ]
+    ],
+    "course.Course": [
+      [
+        "teaching_assignment.instructor_key",
+        0.4
+      ],
+      [
+        "instructor.instructor_key",
+        0.4
+      ],
+      [
+        "teaching_assignment.Grade",
+        0.36363636363636365
+      ]
+    ],
+    "teacher.Teacher_ID": [
+      [
+        "instructor.years_old",
+        0.5263157894736842
+      ],
+      [
+        "class_offering.staring_day",
+        0.47619047619047616
+      ],
+      [
+        "teaching_assignment.instructor_key",
+        0.3333333333333333
+      ]
+    ],
+    "teacher.Name": [
+      [
+        "teaching_assignment.Grade",
+        0.4444444444444444
+      ],
+      [
+        "instructor.label",
+        0.4444444444444444
+      ],
+      [
+        "instructor.Hometown",
+        0.3333333333333333
+      ]
+    ],
+    "teacher.Age": [
+      [
+        "teaching_assignment.Grade",
+        0.5
+      ],
+      [
+        "instructor.label",
+        0.5
+      ],
+      [
+        "class_offering.staring_day",
+        0.2857142857142857
+      ]
+    ],
+    "teacher.Hometown": [
+      [
+        "instructor.Hometown",
+        1.0
+      ],
+      [
+        "class_offering.subject",
+        0.26666666666666666
+      ],
+      [
+        "class_offering.staring_day",
+        0.21052631578947367
+      ]
+    ],
+    "course_arrange.Course_ID": [
+      [
+        "instructor.years_old",
+        0.4444444444444444
+      ],
+      [
+        "teaching_assignment.instructor_key",
+        0.34782608695652173
+      ],
+      [
+        "instructor.instructor_key",
+        0.34782608695652173
+      ]
+    ],
+    "course_arrange.Teacher_ID": [
+      [
+        "instructor.years_old",
+        0.5263157894736842
+      ],
+      [
+        "class_offering.staring_day",
+        0.47619047619047616
+      ],
+      [
+        "teaching_assignment.instructor_key",
+        0.3333333333333333
+      ]
+    ],
+    "course_arrange.Grade": [
+      [
+        "teaching_assignment.Grade",
+        1.0
+      ],
+      [
+        "instructor.label",
+        0.4
+      ],
+      [
+        "instructor.years_old",
+        0.2857142857142857
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "course": "class_offering",
+      "teacher": "instructor",
+      "course_arrange": "teaching_assignment"
+    },
+    "columns": {
+      "course.Course_ID": "class_offering.subject",
+      "course.Staring_Date": "class_offering.staring_day",
+      "course.Course": "class_offering.subject_key",
+      "teacher.Teacher_ID": "instructor.years_old",
+      "teacher.Name": "instructor.instructor_key",
+      "teacher.Age": "instructor.label",
+      "teacher.Hometown": "instructor.Hometown",
+      "course_arrange.Course_ID": "teaching_assignment.instructor_key",
+      "course_arrange.Teacher_ID": "teaching_assignment.subject_key",
+      "course_arrange.Grade": "teaching_assignment.Grade"
+    }
+  },
+  "q_B": {
+    "course_teach__challenge_v0__q0381": "SELECT COUNT(*) AS \"_col_0\" FROM \"instructor\" AS \"teacher\"",
+    "course_teach__challenge_v0__q0382": "SELECT COUNT(*) AS \"_col_0\" FROM \"instructor\" AS \"teacher\"",
+    "course_teach__challenge_v0__q0383": "SELECT \"teacher\".\"instructor_key\" AS \"name\" FROM \"instructor\" AS \"teacher\" ORDER BY \"teacher\".\"label\" ASC",
+    "course_teach__challenge_v0__q0384": "SELECT \"teacher\".\"instructor_key\" AS \"name\" FROM \"instructor\" AS \"teacher\" ORDER BY \"teacher\".\"label\" ASC",
+    "course_teach__challenge_v0__q0385": "SELECT \"teacher\".\"label\" AS \"age\", \"teacher\".\"Hometown\" AS \"hometown\" FROM \"instructor\" AS \"teacher\"",
+    "course_teach__challenge_v0__q0386": "SELECT \"teacher\".\"label\" AS \"age\", \"teacher\".\"Hometown\" AS \"hometown\" FROM \"instructor\" AS \"teacher\"",
+    "course_teach__challenge_v0__q0387": "SELECT \"teacher\".\"instructor_key\" AS \"name\" FROM \"instructor\" AS \"teacher\" WHERE \"teacher\".\"Hometown\" <> 'little lever urban district'",
+    "course_teach__challenge_v0__q0388": "SELECT \"teacher\".\"instructor_key\" AS \"name\" FROM \"instructor\" AS \"teacher\" WHERE \"teacher\".\"Hometown\" <> 'little lever urban district'",
+    "course_teach__challenge_v0__q0389": "SELECT \"teacher\".\"instructor_key\" AS \"name\" FROM \"instructor\" AS \"teacher\" WHERE \"teacher\".\"label\" = 32 OR \"teacher\".\"label\" = 33",
+    "course_teach__challenge_v0__q0390": "SELECT \"teacher\".\"instructor_key\" AS \"name\" FROM \"instructor\" AS \"teacher\" WHERE \"teacher\".\"label\" = 32 OR \"teacher\".\"label\" = 33",
+    "course_teach__challenge_v0__q0391": "SELECT \"teacher\".\"Hometown\" AS \"hometown\" FROM \"instructor\" AS \"teacher\" ORDER BY \"teacher\".\"label\" ASC LIMIT 1",
+    "course_teach__challenge_v0__q0392": "SELECT \"teacher\".\"Hometown\" AS \"hometown\" FROM \"instructor\" AS \"teacher\" ORDER BY \"teacher\".\"label\" ASC LIMIT 1",
+    "course_teach__challenge_v0__q0393": "SELECT \"teacher\".\"Hometown\" AS \"hometown\", COUNT(*) AS \"_col_1\" FROM \"instructor\" AS \"teacher\" GROUP BY \"teacher\".\"Hometown\"",
+    "course_teach__challenge_v0__q0394": "SELECT \"teacher\".\"Hometown\" AS \"hometown\", COUNT(*) AS \"_col_1\" FROM \"instructor\" AS \"teacher\" GROUP BY \"teacher\".\"Hometown\"",
+    "course_teach__challenge_v0__q0395": "SELECT \"teacher\".\"Hometown\" AS \"hometown\" FROM \"instructor\" AS \"teacher\" GROUP BY \"teacher\".\"Hometown\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "course_teach__challenge_v0__q0396": "SELECT \"teacher\".\"Hometown\" AS \"hometown\" FROM \"instructor\" AS \"teacher\" GROUP BY \"teacher\".\"Hometown\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "course_teach__challenge_v0__q0397": "SELECT \"teacher\".\"Hometown\" AS \"hometown\" FROM \"instructor\" AS \"teacher\" GROUP BY \"teacher\".\"Hometown\" HAVING COUNT(*) >= 2",
+    "course_teach__challenge_v0__q0398": "SELECT \"teacher\".\"Hometown\" AS \"hometown\" FROM \"instructor\" AS \"teacher\" GROUP BY \"teacher\".\"Hometown\" HAVING COUNT(*) >= 2",
+    "course_teach__challenge_v0__q0399": "SELECT \"t3\".\"instructor_key\" AS \"name\", \"t2\".\"subject_key\" AS \"course\" FROM \"teaching_assignment\" AS \"t1\" JOIN \"class_offering\" AS \"t2\" ON \"t1\".\"instructor_key\" = \"t2\".\"subject\" JOIN \"instructor\" AS \"t3\" ON \"t1\".\"subject_key\" = \"t3\".\"years_old\"",
+    "course_teach__challenge_v0__q0400": "SELECT \"t3\".\"instructor_key\" AS \"name\", \"t2\".\"subject_key\" AS \"course\" FROM \"teaching_assignment\" AS \"t1\" JOIN \"class_offering\" AS \"t2\" ON \"t1\".\"instructor_key\" = \"t2\".\"subject\" JOIN \"instructor\" AS \"t3\" ON \"t1\".\"subject_key\" = \"t3\".\"years_old\"",
+    "course_teach__challenge_v0__q0401": "SELECT \"t3\".\"instructor_key\" AS \"name\", \"t2\".\"subject_key\" AS \"course\" FROM \"teaching_assignment\" AS \"t1\" JOIN \"class_offering\" AS \"t2\" ON \"t1\".\"instructor_key\" = \"t2\".\"subject\" JOIN \"instructor\" AS \"t3\" ON \"t1\".\"subject_key\" = \"t3\".\"years_old\" ORDER BY \"t3\".\"instructor_key\"",
+    "course_teach__challenge_v0__q0402": "SELECT \"t3\".\"instructor_key\" AS \"name\", \"t2\".\"subject_key\" AS \"course\" FROM \"teaching_assignment\" AS \"t1\" JOIN \"class_offering\" AS \"t2\" ON \"t1\".\"instructor_key\" = \"t2\".\"subject\" JOIN \"instructor\" AS \"t3\" ON \"t1\".\"subject_key\" = \"t3\".\"years_old\" ORDER BY \"t3\".\"instructor_key\"",
+    "course_teach__challenge_v0__q0403": "SELECT \"t3\".\"instructor_key\" AS \"name\" FROM \"teaching_assignment\" AS \"t1\" JOIN \"class_offering\" AS \"t2\" ON \"t1\".\"instructor_key\" = \"t2\".\"subject\" JOIN \"instructor\" AS \"t3\" ON \"t1\".\"subject_key\" = \"t3\".\"years_old\" WHERE \"t2\".\"subject_key\" = 'Math'",
+    "course_teach__challenge_v0__q0404": "SELECT \"t3\".\"instructor_key\" AS \"name\" FROM \"teaching_assignment\" AS \"t1\" JOIN \"class_offering\" AS \"t2\" ON \"t1\".\"instructor_key\" = \"t2\".\"subject\" JOIN \"instructor\" AS \"t3\" ON \"t1\".\"subject_key\" = \"t3\".\"years_old\" WHERE \"t2\".\"subject_key\" = 'Math'",
+    "course_teach__challenge_v0__q0405": "SELECT \"t2\".\"instructor_key\" AS \"name\", COUNT(*) AS \"_col_1\" FROM \"teaching_assignment\" AS \"t1\" JOIN \"instructor\" AS \"t2\" ON \"t1\".\"subject_key\" = \"t2\".\"years_old\" GROUP BY \"t2\".\"instructor_key\"",
+    "course_teach__challenge_v0__q0406": "SELECT \"t2\".\"instructor_key\" AS \"name\", COUNT(*) AS \"_col_1\" FROM \"teaching_assignment\" AS \"t1\" JOIN \"instructor\" AS \"t2\" ON \"t1\".\"subject_key\" = \"t2\".\"years_old\" GROUP BY \"t2\".\"instructor_key\"",
+    "course_teach__challenge_v0__q0407": "SELECT \"t2\".\"instructor_key\" AS \"name\" FROM \"teaching_assignment\" AS \"t1\" JOIN \"instructor\" AS \"t2\" ON \"t1\".\"subject_key\" = \"t2\".\"years_old\" GROUP BY \"t2\".\"instructor_key\" HAVING COUNT(*) >= 2",
+    "course_teach__challenge_v0__q0408": "SELECT \"t2\".\"instructor_key\" AS \"name\" FROM \"teaching_assignment\" AS \"t1\" JOIN \"instructor\" AS \"t2\" ON \"t1\".\"subject_key\" = \"t2\".\"years_old\" GROUP BY \"t2\".\"instructor_key\" HAVING COUNT(*) >= 2",
+    "course_teach__challenge_v0__q0409": "SELECT \"teacher\".\"instructor_key\" AS \"name\" FROM \"instructor\" AS \"teacher\" WHERE NOT \"teacher\".\"years_old\" IN (SELECT \"course_arrange\".\"subject_key\" AS \"teacher_id\" FROM \"teaching_assignment\" AS \"course_arrange\")",
+    "course_teach__challenge_v0__q0410": "SELECT \"teacher\".\"instructor_key\" AS \"name\" FROM \"instructor\" AS \"teacher\" WHERE NOT \"teacher\".\"years_old\" IN (SELECT \"course_arrange\".\"subject_key\" AS \"teacher_id\" FROM \"teaching_assignment\" AS \"course_arrange\")"
+  },
+  "rewrite_errors": {}
+}

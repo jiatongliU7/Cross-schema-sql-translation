@@ -1,0 +1,18 @@
+{
+  "tables": {
+    "singer": "vocalist",
+    "song": "track"
+  },
+  "columns": {
+    "singer.Singer_ID": "vocalist.nativity_annum",
+    "singer.Name": "vocalist.label",
+    "singer.Birth_Year": "vocalist.vocalist_key",
+    "singer.Net_Worth_Millions": "vocalist.wealth_millions",
+    "singer.Citizenship": "vocalist.Citizenship",
+    "song.Song_ID": "track.heading",
+    "song.Title": "track.track_key",
+    "song.Singer_ID": "track.revenue",
+    "song.Sales": "track.vocalist_key",
+    "song.Highest_Position": "track.Highest_Position"
+  }
+}

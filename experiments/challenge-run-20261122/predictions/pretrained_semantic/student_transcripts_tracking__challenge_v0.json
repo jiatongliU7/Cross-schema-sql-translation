@@ -1,0 +1,1100 @@
+{
+  "tables": {
+    "Addresses": [
+      [
+        "locations",
+        0.6385630369186401
+      ],
+      [
+        "record_entries",
+        0.5578864812850952
+      ],
+      [
+        "registrations",
+        0.5083345770835876
+      ]
+    ],
+    "Courses": [
+      [
+        "learners",
+        0.7377133369445801
+      ],
+      [
+        "subjects",
+        0.6899727582931519
+      ],
+      [
+        "class_sections",
+        0.6768614649772644
+      ]
+    ],
+    "Departments": [
+      [
+        "subjects",
+        0.5908995866775513
+      ],
+      [
+        "academic_units",
+        0.5724489688873291
+      ],
+      [
+        "academic_records",
+        0.5626142024993896
+      ]
+    ],
+    "Degree_Programs": [
+      [
+        "qualifications",
+        0.6241204738616943
+      ],
+      [
+        "academic_terms",
+        0.5851139426231384
+      ],
+      [
+        "academic_units",
+        0.583179235458374
+      ]
+    ],
+    "Sections": [
+      [
+        "class_sections",
+        0.8274631500244141
+      ],
+      [
+        "subjects",
+        0.6378164887428284
+      ],
+      [
+        "locations",
+        0.5407450795173645
+      ]
+    ],
+    "Semesters": [
+      [
+        "academic_units",
+        0.7033452987670898
+      ],
+      [
+        "academic_terms",
+        0.6892029047012329
+      ],
+      [
+        "subjects",
+        0.6611635684967041
+      ]
+    ],
+    "Students": [
+      [
+        "learners",
+        0.781313419342041
+      ],
+      [
+        "subjects",
+        0.6915416717529297
+      ],
+      [
+        "academic_units",
+        0.6699448823928833
+      ]
+    ],
+    "Student_Enrolment": [
+      [
+        "qualifications",
+        0.6461030840873718
+      ],
+      [
+        "academic_units",
+        0.5996009111404419
+      ],
+      [
+        "learners",
+        0.5900678634643555
+      ]
+    ],
+    "Student_Enrolment_Courses": [
+      [
+        "qualifications",
+        0.5956666469573975
+      ],
+      [
+        "learners",
+        0.5921061038970947
+      ],
+      [
+        "academic_units",
+        0.5633491277694702
+      ]
+    ],
+    "Transcripts": [
+      [
+        "academic_records",
+        0.5751102566719055
+      ],
+      [
+        "record_entries",
+        0.49329042434692383
+      ],
+      [
+        "learners",
+        0.48395925760269165
+      ]
+    ],
+    "Transcript_Contents": [
+      [
+        "academic_records",
+        0.5200702548027039
+      ],
+      [
+        "record_entries",
+        0.45765170454978943
+      ],
+      [
+        "learners",
+        0.45023518800735474
+      ]
+    ]
+  },
+  "columns": {
+    "Addresses.address_id": [
+      [
+        "record_entries.record_key",
+        0.843903660774231
+      ],
+      [
+        "locations.location_key",
+        0.8425139784812927
+      ],
+      [
+        "academic_records.record_key",
+        0.7841038703918457
+      ]
+    ],
+    "Addresses.line_1": [
+      [
+        "locations.location_line_one",
+        0.8395864963531494
+      ],
+      [
+        "locations.location_line_two",
+        0.8389169573783875
+      ],
+      [
+        "locations.location_line_three",
+        0.8374454975128174
+      ]
+    ],
+    "Addresses.line_2": [
+      [
+        "locations.location_line_two",
+        0.8457857370376587
+      ],
+      [
+        "locations.location_line_three",
+        0.8396695852279663
+      ],
+      [
+        "locations.location_line_one",
+        0.8367910385131836
+      ]
+    ],
+    "Addresses.line_3": [
+      [
+        "locations.location_line_three",
+        0.8482730388641357
+      ],
+      [
+        "locations.location_line_two",
+        0.8312166929244995
+      ],
+      [
+        "locations.location_line_one",
+        0.827454686164856
+      ]
+    ],
+    "Addresses.city": [
+      [
+        "locations.municipality",
+        0.8792082071304321
+      ],
+      [
+        "locations.postal_tag",
+        0.8601217269897461
+      ],
+      [
+        "locations.nation",
+        0.8536522388458252
+      ]
+    ],
+    "Addresses.zip_postcode": [
+      [
+        "locations.postal_tag",
+        0.857485294342041
+      ],
+      [
+        "locations.municipality",
+        0.7504223585128784
+      ],
+      [
+        "locations.supplementary_location_details",
+        0.7383496165275574
+      ]
+    ],
+    "Addresses.state_province_county": [
+      [
+        "locations.province_province_county",
+        0.9318157434463501
+      ],
+      [
+        "locations.municipality",
+        0.7850050330162048
+      ],
+      [
+        "locations.nation",
+        0.7782447338104248
+      ]
+    ],
+    "Addresses.country": [
+      [
+        "locations.nation",
+        0.9032857418060303
+      ],
+      [
+        "locations.postal_tag",
+        0.8415518999099731
+      ],
+      [
+        "locations.location_line_three",
+        0.8407232165336609
+      ]
+    ],
+    "Addresses.other_address_details": [
+      [
+        "locations.postal_tag",
+        0.8260042071342468
+      ],
+      [
+        "locations.nation",
+        0.8142756223678589
+      ],
+      [
+        "locations.location_line_three",
+        0.8134972453117371
+      ]
+    ],
+    "Courses.course_id": [
+      [
+        "qualifications.qualification_curriculum_key",
+        0.8864504098892212
+      ],
+      [
+        "registrations.qualification_curriculum_key",
+        0.8774127960205078
+      ],
+      [
+        "class_sections.class_key",
+        0.8661229610443115
+      ]
+    ],
+    "Courses.course_name": [
+      [
+        "learners.given_name",
+        0.8947494029998779
+      ],
+      [
+        "learners.additional_name",
+        0.8799557685852051
+      ],
+      [
+        "learners.family_name",
+        0.8603594303131104
+      ]
+    ],
+    "Courses.course_description": [
+      [
+        "learners.given_name",
+        0.8766099214553833
+      ],
+      [
+        "learners.additional_name",
+        0.8691016435623169
+      ],
+      [
+        "class_sections.class_label",
+        0.864654541015625
+      ]
+    ],
+    "Courses.other_details": [
+      [
+        "learners.given_name",
+        0.8893526792526245
+      ],
+      [
+        "learners.additional_name",
+        0.885565459728241
+      ],
+      [
+        "class_sections.class_label",
+        0.8688771724700928
+      ]
+    ],
+    "Departments.department_id": [
+      [
+        "academic_records.record_key",
+        0.8090710639953613
+      ],
+      [
+        "qualifications.unit_key",
+        0.8069944977760315
+      ],
+      [
+        "class_sections.class_key",
+        0.7949360609054565
+      ]
+    ],
+    "Departments.department_name": [
+      [
+        "learners.given_name",
+        0.7852030396461487
+      ],
+      [
+        "academic_units.unit_label",
+        0.7807590365409851
+      ],
+      [
+        "academic_terms.term_label",
+        0.7801107168197632
+      ]
+    ],
+    "Departments.department_description": [
+      [
+        "academic_units.unit_label",
+        0.7961564064025879
+      ],
+      [
+        "class_sections.class_label",
+        0.7920702695846558
+      ],
+      [
+        "class_sections.class_summary",
+        0.7888996601104736
+      ]
+    ],
+    "Departments.other_details": [
+      [
+        "academic_units.unit_label",
+        0.8106467723846436
+      ],
+      [
+        "learners.national_identifier",
+        0.8014522790908813
+      ],
+      [
+        "class_sections.class_label",
+        0.800984263420105
+      ]
+    ],
+    "Degree_Programs.degree_program_id": [
+      [
+        "qualifications.qualification_curriculum_key",
+        0.8550618290901184
+      ],
+      [
+        "academic_records.record_key",
+        0.840360164642334
+      ],
+      [
+        "registrations.qualification_curriculum_key",
+        0.8386309742927551
+      ]
+    ],
+    "Degree_Programs.department_id": [
+      [
+        "qualifications.qualification_curriculum_key",
+        0.8242477178573608
+      ],
+      [
+        "academic_records.record_key",
+        0.8192735910415649
+      ],
+      [
+        "qualifications.unit_key",
+        0.8106701374053955
+      ]
+    ],
+    "Degree_Programs.degree_summary_name": [
+      [
+        "academic_units.unit_summary",
+        0.8229901194572449
+      ],
+      [
+        "qualifications.qualification_summary_summary",
+        0.8171452283859253
+      ],
+      [
+        "academic_terms.term_summary",
+        0.8098055124282837
+      ]
+    ],
+    "Degree_Programs.degree_summary_description": [
+      [
+        "qualifications.qualification_summary_summary",
+        0.8240138292312622
+      ],
+      [
+        "academic_units.unit_summary",
+        0.8234658241271973
+      ],
+      [
+        "qualifications.qualification_summary_label",
+        0.8136768341064453
+      ]
+    ],
+    "Degree_Programs.other_details": [
+      [
+        "learners.given_name",
+        0.8393710255622864
+      ],
+      [
+        "academic_records.record_key",
+        0.8376478552818298
+      ],
+      [
+        "learners.additional_name",
+        0.836595356464386
+      ]
+    ],
+    "Sections.section_id": [
+      [
+        "class_sections.class_key",
+        0.907514750957489
+      ],
+      [
+        "class_sections.subject_key",
+        0.9025806188583374
+      ],
+      [
+        "class_sections.class_summary",
+        0.8555729389190674
+      ]
+    ],
+    "Sections.course_id": [
+      [
+        "class_sections.subject_key",
+        0.901299774646759
+      ],
+      [
+        "class_sections.class_key",
+        0.9005586504936218
+      ],
+      [
+        "class_sections.class_summary",
+        0.8517047166824341
+      ]
+    ],
+    "Sections.section_name": [
+      [
+        "class_sections.class_label",
+        0.9059179425239563
+      ],
+      [
+        "class_sections.class_summary",
+        0.894611120223999
+      ],
+      [
+        "class_sections.class_key",
+        0.8619134426116943
+      ]
+    ],
+    "Sections.section_description": [
+      [
+        "class_sections.class_summary",
+        0.9088255167007446
+      ],
+      [
+        "class_sections.class_label",
+        0.8979477882385254
+      ],
+      [
+        "class_sections.supplementary_notes",
+        0.8520070314407349
+      ]
+    ],
+    "Sections.other_details": [
+      [
+        "class_sections.class_summary",
+        0.9085115194320679
+      ],
+      [
+        "class_sections.class_label",
+        0.9012682437896729
+      ],
+      [
+        "class_sections.class_key",
+        0.8645650148391724
+      ]
+    ],
+    "Semesters.semester_id": [
+      [
+        "academic_records.record_key",
+        0.8802960515022278
+      ],
+      [
+        "academic_units.unit_key",
+        0.8680191040039062
+      ],
+      [
+        "class_sections.class_key",
+        0.8643736839294434
+      ]
+    ],
+    "Semesters.semester_name": [
+      [
+        "learners.given_name",
+        0.8730562925338745
+      ],
+      [
+        "learners.additional_name",
+        0.864212155342102
+      ],
+      [
+        "academic_units.unit_label",
+        0.8507600426673889
+      ]
+    ],
+    "Semesters.semester_description": [
+      [
+        "class_sections.class_summary",
+        0.8581637144088745
+      ],
+      [
+        "academic_units.unit_label",
+        0.8553695678710938
+      ],
+      [
+        "learners.given_name",
+        0.8532165884971619
+      ]
+    ],
+    "Semesters.other_details": [
+      [
+        "academic_units.unit_label",
+        0.8616067171096802
+      ],
+      [
+        "learners.additional_name",
+        0.8610149025917053
+      ],
+      [
+        "learners.given_name",
+        0.8599873781204224
+      ]
+    ],
+    "Students.student_id": [
+      [
+        "academic_records.record_key",
+        0.8717209696769714
+      ],
+      [
+        "learners.learner_key",
+        0.8564984798431396
+      ],
+      [
+        "academic_units.unit_key",
+        0.8491268157958984
+      ]
+    ],
+    "Students.current_address_id": [
+      [
+        "learners.present_location_key",
+        0.8162951469421387
+      ],
+      [
+        "academic_records.record_key",
+        0.8128445148468018
+      ],
+      [
+        "class_sections.class_key",
+        0.7939490675926208
+      ]
+    ],
+    "Students.permanent_address_id": [
+      [
+        "academic_records.record_key",
+        0.8250792026519775
+      ],
+      [
+        "academic_units.unit_key",
+        0.8078879117965698
+      ],
+      [
+        "registrations.qualification_curriculum_key",
+        0.8061057329177856
+      ]
+    ],
+    "Students.first_name": [
+      [
+        "learners.given_name",
+        0.9099926948547363
+      ],
+      [
+        "learners.additional_name",
+        0.895081102848053
+      ],
+      [
+        "learners.family_name",
+        0.8866547346115112
+      ]
+    ],
+    "Students.middle_name": [
+      [
+        "learners.given_name",
+        0.8881415724754333
+      ],
+      [
+        "learners.additional_name",
+        0.8777499198913574
+      ],
+      [
+        "learners.family_name",
+        0.8604705929756165
+      ]
+    ],
+    "Students.last_name": [
+      [
+        "learners.given_name",
+        0.9067254066467285
+      ],
+      [
+        "learners.additional_name",
+        0.8967055082321167
+      ],
+      [
+        "learners.family_name",
+        0.8825086355209351
+      ]
+    ],
+    "Students.cell_mobile_number": [
+      [
+        "learners.mobile_contact",
+        0.8960894346237183
+      ],
+      [
+        "learners.given_name",
+        0.7907956838607788
+      ],
+      [
+        "learners.additional_name",
+        0.7815043926239014
+      ]
+    ],
+    "Students.email_address": [
+      [
+        "learners.electronic_mail",
+        0.8768494129180908
+      ],
+      [
+        "learners.given_name",
+        0.8429650664329529
+      ],
+      [
+        "learners.additional_name",
+        0.834489643573761
+      ]
+    ],
+    "Students.ssn": [
+      [
+        "learners.given_name",
+        0.8666527271270752
+      ],
+      [
+        "learners.additional_name",
+        0.8594242334365845
+      ],
+      [
+        "learners.national_identifier",
+        0.8562623262405396
+      ]
+    ],
+    "Students.date_first_registered": [
+      [
+        "learners.day_given_registered",
+        0.8756695985794067
+      ],
+      [
+        "academic_records.record_day",
+        0.8418413400650024
+      ],
+      [
+        "learners.day_left",
+        0.8190740346908569
+      ]
+    ],
+    "Students.date_left": [
+      [
+        "learners.day_left",
+        0.8879952430725098
+      ],
+      [
+        "academic_records.record_day",
+        0.8628829717636108
+      ],
+      [
+        "learners.day_given_registered",
+        0.839642345905304
+      ]
+    ],
+    "Students.other_student_details": [
+      [
+        "learners.given_name",
+        0.8926763534545898
+      ],
+      [
+        "learners.additional_name",
+        0.8922445774078369
+      ],
+      [
+        "learners.family_name",
+        0.8589154481887817
+      ]
+    ],
+    "Student_Enrolment.student_enrolment_id": [
+      [
+        "qualifications.qualification_curriculum_key",
+        0.8325587511062622
+      ],
+      [
+        "academic_records.record_key",
+        0.8281745314598083
+      ],
+      [
+        "registrations.qualification_curriculum_key",
+        0.8262289762496948
+      ]
+    ],
+    "Student_Enrolment.degree_program_id": [
+      [
+        "qualifications.qualification_curriculum_key",
+        0.8589975833892822
+      ],
+      [
+        "registrations.qualification_curriculum_key",
+        0.8477926254272461
+      ],
+      [
+        "academic_records.record_key",
+        0.8320435881614685
+      ]
+    ],
+    "Student_Enrolment.semester_id": [
+      [
+        "academic_records.record_key",
+        0.8284160494804382
+      ],
+      [
+        "qualifications.qualification_curriculum_key",
+        0.8274614810943604
+      ],
+      [
+        "academic_units.unit_key",
+        0.8271059989929199
+      ]
+    ],
+    "Student_Enrolment.student_id": [
+      [
+        "qualifications.qualification_curriculum_key",
+        0.8267684578895569
+      ],
+      [
+        "registrations.qualification_curriculum_key",
+        0.8236854076385498
+      ],
+      [
+        "academic_records.record_key",
+        0.8226600885391235
+      ]
+    ],
+    "Student_Enrolment.other_details": [
+      [
+        "learners.given_name",
+        0.8369598388671875
+      ],
+      [
+        "learners.additional_name",
+        0.834843099117279
+      ],
+      [
+        "learners.family_name",
+        0.8209518194198608
+      ]
+    ],
+    "Student_Enrolment_Courses.student_course_id": [
+      [
+        "qualifications.qualification_curriculum_key",
+        0.8525975942611694
+      ],
+      [
+        "registrations.qualification_curriculum_key",
+        0.8441389799118042
+      ],
+      [
+        "class_sections.class_key",
+        0.8131881952285767
+      ]
+    ],
+    "Student_Enrolment_Courses.course_id": [
+      [
+        "qualifications.qualification_curriculum_key",
+        0.8626848459243774
+      ],
+      [
+        "registrations.qualification_curriculum_key",
+        0.8541711568832397
+      ],
+      [
+        "class_sections.class_key",
+        0.8174072504043579
+      ]
+    ],
+    "Student_Enrolment_Courses.student_enrolment_id": [
+      [
+        "qualifications.qualification_curriculum_key",
+        0.8564601540565491
+      ],
+      [
+        "registrations.qualification_curriculum_key",
+        0.8469181060791016
+      ],
+      [
+        "class_sections.class_key",
+        0.8089578151702881
+      ]
+    ],
+    "Transcripts.transcript_id": [
+      [
+        "record_entries.record_key",
+        0.7739704847335815
+      ],
+      [
+        "academic_records.record_key",
+        0.7715016603469849
+      ],
+      [
+        "record_entries.learner_subject_key",
+        0.7266579866409302
+      ]
+    ],
+    "Transcripts.transcript_date": [
+      [
+        "academic_records.record_day",
+        0.7575579881668091
+      ],
+      [
+        "academic_records.record_key",
+        0.7457331418991089
+      ],
+      [
+        "record_entries.record_key",
+        0.7282488942146301
+      ]
+    ],
+    "Transcripts.other_details": [
+      [
+        "academic_records.supplementary_notes",
+        0.7751978635787964
+      ],
+      [
+        "learners.additional_name",
+        0.7746269702911377
+      ],
+      [
+        "learners.given_name",
+        0.771737813949585
+      ]
+    ],
+    "Transcript_Contents.student_course_id": [
+      [
+        "qualifications.qualification_curriculum_key",
+        0.8039681911468506
+      ],
+      [
+        "academic_records.record_key",
+        0.8025707006454468
+      ],
+      [
+        "registrations.qualification_curriculum_key",
+        0.8013922572135925
+      ]
+    ],
+    "Transcript_Contents.transcript_id": [
+      [
+        "record_entries.record_key",
+        0.7484019994735718
+      ],
+      [
+        "academic_records.record_key",
+        0.7466416358947754
+      ],
+      [
+        "record_entries.learner_subject_key",
+        0.7251989841461182
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Addresses": "locations",
+      "Courses": "subjects",
+      "Departments": "academic_units",
+      "Degree_Programs": "qualifications",
+      "Sections": "class_sections",
+      "Semesters": "academic_terms",
+      "Students": "learners",
+      "Student_Enrolment": "registrations",
+      "Student_Enrolment_Courses": "registration_subjects",
+      "Transcripts": "academic_records",
+      "Transcript_Contents": "record_entries"
+    },
+    "columns": {
+      "Addresses.address_id": "locations.location_key",
+      "Addresses.line_1": "locations.location_line_one",
+      "Addresses.line_2": "locations.location_line_two",
+      "Addresses.line_3": "locations.location_line_three",
+      "Addresses.city": "locations.municipality",
+      "Addresses.zip_postcode": "locations.postal_tag",
+      "Addresses.state_province_county": "locations.province_province_county",
+      "Addresses.country": "locations.nation",
+      "Addresses.other_address_details": "locations.supplementary_location_details",
+      "Courses.course_id": "subjects.subject_key",
+      "Courses.course_name": "subjects.subject_label",
+      "Courses.course_description": "subjects.subject_summary",
+      "Courses.other_details": "subjects.supplementary_notes",
+      "Departments.department_id": "academic_units.unit_key",
+      "Departments.department_name": "academic_units.unit_label",
+      "Departments.department_description": "academic_units.unit_summary",
+      "Departments.other_details": "academic_units.supplementary_notes",
+      "Degree_Programs.degree_program_id": "qualifications.qualification_curriculum_key",
+      "Degree_Programs.department_id": "qualifications.unit_key",
+      "Degree_Programs.degree_summary_name": "qualifications.qualification_summary_label",
+      "Degree_Programs.degree_summary_description": "qualifications.qualification_summary_summary",
+      "Degree_Programs.other_details": "qualifications.supplementary_notes",
+      "Sections.section_id": "class_sections.class_key",
+      "Sections.course_id": "class_sections.subject_key",
+      "Sections.section_name": "class_sections.class_label",
+      "Sections.section_description": "class_sections.class_summary",
+      "Sections.other_details": "class_sections.supplementary_notes",
+      "Semesters.semester_id": "academic_terms.term_key",
+      "Semesters.semester_name": "academic_terms.term_label",
+      "Semesters.semester_description": "academic_terms.term_summary",
+      "Semesters.other_details": "academic_terms.supplementary_notes",
+      "Students.student_id": "learners.learner_key",
+      "Students.current_address_id": "learners.present_location_key",
+      "Students.permanent_address_id": "learners.lasting_location_key",
+      "Students.first_name": "learners.family_name",
+      "Students.middle_name": "learners.given_name",
+      "Students.last_name": "learners.additional_name",
+      "Students.cell_mobile_number": "learners.mobile_contact",
+      "Students.email_address": "learners.electronic_mail",
+      "Students.ssn": "learners.national_identifier",
+      "Students.date_first_registered": "learners.day_given_registered",
+      "Students.date_left": "learners.day_left",
+      "Students.other_student_details": "learners.supplementary_learner_details",
+      "Student_Enrolment.student_enrolment_id": "registrations.learner_registration_key",
+      "Student_Enrolment.degree_program_id": "registrations.qualification_curriculum_key",
+      "Student_Enrolment.semester_id": "registrations.term_key",
+      "Student_Enrolment.student_id": "registrations.learner_key",
+      "Student_Enrolment.other_details": "registrations.supplementary_notes",
+      "Student_Enrolment_Courses.student_course_id": "registration_subjects.learner_registration_key",
+      "Student_Enrolment_Courses.course_id": "registration_subjects.learner_subject_key",
+      "Student_Enrolment_Courses.student_enrolment_id": "registration_subjects.subject_key",
+      "Transcripts.transcript_id": "academic_records.record_key",
+      "Transcripts.transcript_date": "academic_records.record_day",
+      "Transcripts.other_details": "academic_records.supplementary_notes",
+      "Transcript_Contents.student_course_id": "record_entries.learner_subject_key",
+      "Transcript_Contents.transcript_id": "record_entries.record_key"
+    }
+  },
+  "q_B": {
+    "student_transcripts_tracking__challenge_v0__q0507": "SELECT \"addresses\".\"location_line_one\" AS \"line_1\", \"addresses\".\"location_line_two\" AS \"line_2\" FROM \"locations\" AS \"addresses\"",
+    "student_transcripts_tracking__challenge_v0__q0508": "SELECT \"addresses\".\"location_line_one\" AS \"line_1\", \"addresses\".\"location_line_two\" AS \"line_2\" FROM \"locations\" AS \"addresses\"",
+    "student_transcripts_tracking__challenge_v0__q0509": "SELECT COUNT(*) AS \"_col_0\" FROM \"subjects\" AS \"courses\"",
+    "student_transcripts_tracking__challenge_v0__q0510": "SELECT COUNT(*) AS \"_col_0\" FROM \"subjects\" AS \"courses\"",
+    "student_transcripts_tracking__challenge_v0__q0511": "SELECT \"courses\".\"subject_summary\" AS \"course_description\" FROM \"subjects\" AS \"courses\" WHERE \"courses\".\"subject_label\" = 'math'",
+    "student_transcripts_tracking__challenge_v0__q0512": "SELECT \"courses\".\"subject_summary\" AS \"course_description\" FROM \"subjects\" AS \"courses\" WHERE \"courses\".\"subject_label\" = 'math'",
+    "student_transcripts_tracking__challenge_v0__q0513": "SELECT \"addresses\".\"postal_tag\" AS \"zip_postcode\" FROM \"locations\" AS \"addresses\" WHERE \"addresses\".\"municipality\" = 'Port Chelsea'",
+    "student_transcripts_tracking__challenge_v0__q0514": "SELECT \"addresses\".\"postal_tag\" AS \"zip_postcode\" FROM \"locations\" AS \"addresses\" WHERE \"addresses\".\"municipality\" = 'Port Chelsea'",
+    "student_transcripts_tracking__challenge_v0__q0515": "SELECT \"t2\".\"unit_label\" AS \"department_name\", \"t1\".\"unit_key\" AS \"department_id\" FROM \"qualifications\" AS \"t1\" JOIN \"academic_units\" AS \"t2\" ON \"t1\".\"unit_key\" = \"t2\".\"unit_key\" GROUP BY \"t1\".\"unit_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0516": "SELECT \"t2\".\"unit_label\" AS \"department_name\", \"t1\".\"unit_key\" AS \"department_id\" FROM \"qualifications\" AS \"t1\" JOIN \"academic_units\" AS \"t2\" ON \"t1\".\"unit_key\" = \"t2\".\"unit_key\" GROUP BY \"t1\".\"unit_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0517": "SELECT COUNT(DISTINCT \"degree_programs\".\"unit_key\") AS \"_col_0\" FROM \"qualifications\" AS \"degree_programs\"",
+    "student_transcripts_tracking__challenge_v0__q0518": "SELECT COUNT(DISTINCT \"degree_programs\".\"unit_key\") AS \"_col_0\" FROM \"qualifications\" AS \"degree_programs\"",
+    "student_transcripts_tracking__challenge_v0__q0519": "SELECT COUNT(DISTINCT \"degree_programs\".\"qualification_summary_label\") AS \"_col_0\" FROM \"qualifications\" AS \"degree_programs\"",
+    "student_transcripts_tracking__challenge_v0__q0520": "SELECT COUNT(DISTINCT \"degree_programs\".\"qualification_summary_label\") AS \"_col_0\" FROM \"qualifications\" AS \"degree_programs\"",
+    "student_transcripts_tracking__challenge_v0__q0521": "SELECT COUNT(*) AS \"_col_0\" FROM \"academic_units\" AS \"t1\" JOIN \"qualifications\" AS \"t2\" ON \"t1\".\"unit_key\" = \"t2\".\"unit_key\" WHERE \"t1\".\"unit_label\" = 'engineer'",
+    "student_transcripts_tracking__challenge_v0__q0522": "SELECT COUNT(*) AS \"_col_0\" FROM \"academic_units\" AS \"t1\" JOIN \"qualifications\" AS \"t2\" ON \"t1\".\"unit_key\" = \"t2\".\"unit_key\" WHERE \"t1\".\"unit_label\" = 'engineer'",
+    "student_transcripts_tracking__challenge_v0__q0523": "SELECT \"sections\".\"class_label\" AS \"section_name\", \"sections\".\"class_summary\" AS \"section_description\" FROM \"class_sections\" AS \"sections\"",
+    "student_transcripts_tracking__challenge_v0__q0524": "SELECT \"sections\".\"class_label\" AS \"section_name\", \"sections\".\"class_summary\" AS \"section_description\" FROM \"class_sections\" AS \"sections\"",
+    "student_transcripts_tracking__challenge_v0__q0525": "SELECT \"t1\".\"subject_label\" AS \"course_name\", \"t1\".\"subject_key\" AS \"course_id\" FROM \"subjects\" AS \"t1\" JOIN \"class_sections\" AS \"t2\" ON \"t1\".\"subject_key\" = \"t2\".\"subject_key\" GROUP BY \"t1\".\"subject_key\" HAVING COUNT(*) <= 2",
+    "student_transcripts_tracking__challenge_v0__q0526": "SELECT \"t1\".\"subject_label\" AS \"course_name\", \"t1\".\"subject_key\" AS \"course_id\" FROM \"subjects\" AS \"t1\" JOIN \"class_sections\" AS \"t2\" ON \"t1\".\"subject_key\" = \"t2\".\"subject_key\" GROUP BY \"t1\".\"subject_key\" HAVING COUNT(*) <= 2",
+    "student_transcripts_tracking__challenge_v0__q0527": "SELECT \"sections\".\"class_label\" AS \"section_name\" FROM \"class_sections\" AS \"sections\" ORDER BY \"section_name\" DESC",
+    "student_transcripts_tracking__challenge_v0__q0528": "SELECT \"sections\".\"class_label\" AS \"section_name\" FROM \"class_sections\" AS \"sections\" ORDER BY \"section_name\" DESC",
+    "student_transcripts_tracking__challenge_v0__q0529": "SELECT \"t1\".\"term_label\" AS \"semester_name\", \"t1\".\"term_key\" AS \"semester_id\" FROM \"academic_terms\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"term_key\" = \"t2\".\"term_key\" GROUP BY \"t1\".\"term_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0530": "SELECT \"t1\".\"term_label\" AS \"semester_name\", \"t1\".\"term_key\" AS \"semester_id\" FROM \"academic_terms\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"term_key\" = \"t2\".\"term_key\" GROUP BY \"t1\".\"term_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0531": "SELECT \"departments\".\"unit_summary\" AS \"department_description\" FROM \"academic_units\" AS \"departments\" WHERE \"departments\".\"unit_label\" LIKE '%computer%'",
+    "student_transcripts_tracking__challenge_v0__q0532": "SELECT \"departments\".\"unit_summary\" AS \"department_description\" FROM \"academic_units\" AS \"departments\" WHERE \"departments\".\"unit_label\" LIKE '%computer%'",
+    "student_transcripts_tracking__challenge_v0__q0533": "SELECT \"t1\".\"family_name\" AS \"first_name\", \"t1\".\"given_name\" AS \"middle_name\", \"t1\".\"additional_name\" AS \"last_name\", \"t1\".\"learner_key\" AS \"student_id\" FROM \"learners\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" GROUP BY \"t1\".\"learner_key\" HAVING COUNT(*) = 2",
+    "student_transcripts_tracking__challenge_v0__q0534": "SELECT \"t1\".\"family_name\" AS \"first_name\", \"t1\".\"given_name\" AS \"middle_name\", \"t1\".\"additional_name\" AS \"last_name\", \"t1\".\"learner_key\" AS \"student_id\" FROM \"learners\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" GROUP BY \"t1\".\"learner_key\" HAVING COUNT(*) = 2",
+    "student_transcripts_tracking__challenge_v0__q0535": "SELECT DISTINCT \"t1\".\"family_name\" AS \"first_name\", \"t1\".\"given_name\" AS \"middle_name\", \"t1\".\"additional_name\" AS \"last_name\" FROM \"learners\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"qualifications\" AS \"t3\" ON \"t2\".\"qualification_curriculum_key\" = \"t3\".\"qualification_curriculum_key\" WHERE \"t3\".\"qualification_summary_label\" = 'Bachelor'",
+    "student_transcripts_tracking__challenge_v0__q0536": "SELECT DISTINCT \"t1\".\"family_name\" AS \"first_name\", \"t1\".\"given_name\" AS \"middle_name\", \"t1\".\"additional_name\" AS \"last_name\" FROM \"learners\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"qualifications\" AS \"t3\" ON \"t2\".\"qualification_curriculum_key\" = \"t3\".\"qualification_curriculum_key\" WHERE \"t3\".\"qualification_summary_label\" = 'Bachelor'",
+    "student_transcripts_tracking__challenge_v0__q0537": "SELECT \"t1\".\"qualification_summary_label\" AS \"degree_summary_name\" FROM \"qualifications\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"qualification_curriculum_key\" = \"t2\".\"qualification_curriculum_key\" GROUP BY \"t1\".\"qualification_summary_label\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0538": "SELECT \"t1\".\"qualification_summary_label\" AS \"degree_summary_name\" FROM \"qualifications\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"qualification_curriculum_key\" = \"t2\".\"qualification_curriculum_key\" GROUP BY \"t1\".\"qualification_summary_label\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0539": "SELECT \"t1\".\"qualification_curriculum_key\" AS \"degree_program_id\", \"t1\".\"qualification_summary_label\" AS \"degree_summary_name\" FROM \"qualifications\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"qualification_curriculum_key\" = \"t2\".\"qualification_curriculum_key\" GROUP BY \"t1\".\"qualification_curriculum_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0540": "SELECT \"t1\".\"qualification_curriculum_key\" AS \"degree_program_id\", \"t1\".\"qualification_summary_label\" AS \"degree_summary_name\" FROM \"qualifications\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"qualification_curriculum_key\" = \"t2\".\"qualification_curriculum_key\" GROUP BY \"t1\".\"qualification_curriculum_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0541": "SELECT \"t1\".\"learner_key\" AS \"student_id\", \"t1\".\"family_name\" AS \"first_name\", \"t1\".\"given_name\" AS \"middle_name\", \"t1\".\"additional_name\" AS \"last_name\", COUNT(*) AS \"_col_4\", \"t1\".\"learner_key\" AS \"student_id\" FROM \"learners\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" GROUP BY \"t1\".\"learner_key\" ORDER BY \"_col_4\" DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0542": "SELECT \"t1\".\"learner_key\" AS \"student_id\", \"t1\".\"family_name\" AS \"first_name\", \"t1\".\"given_name\" AS \"middle_name\", \"t1\".\"additional_name\" AS \"last_name\", COUNT(*) AS \"_col_4\", \"t1\".\"learner_key\" AS \"student_id\" FROM \"learners\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" GROUP BY \"t1\".\"learner_key\" ORDER BY \"_col_4\" DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0543": "SELECT \"semesters\".\"term_label\" AS \"semester_name\" FROM \"academic_terms\" AS \"semesters\" WHERE NOT \"semesters\".\"term_key\" IN (SELECT \"student_enrolment\".\"term_key\" AS \"semester_id\" FROM \"registrations\" AS \"student_enrolment\")",
+    "student_transcripts_tracking__challenge_v0__q0544": "SELECT \"semesters\".\"term_label\" AS \"semester_name\" FROM \"academic_terms\" AS \"semesters\" WHERE NOT \"semesters\".\"term_key\" IN (SELECT \"student_enrolment\".\"term_key\" AS \"semester_id\" FROM \"registrations\" AS \"student_enrolment\")",
+    "student_transcripts_tracking__challenge_v0__q0545": "SELECT DISTINCT \"t1\".\"subject_label\" AS \"course_name\" FROM \"subjects\" AS \"t1\" JOIN \"registration_subjects\" AS \"t2\" ON \"t1\".\"subject_key\" = \"t2\".\"learner_subject_key\"",
+    "student_transcripts_tracking__challenge_v0__q0546": "SELECT DISTINCT \"t1\".\"subject_label\" AS \"course_name\" FROM \"subjects\" AS \"t1\" JOIN \"registration_subjects\" AS \"t2\" ON \"t1\".\"subject_key\" = \"t2\".\"learner_subject_key\"",
+    "student_transcripts_tracking__challenge_v0__q0547": "SELECT \"t1\".\"subject_label\" AS \"course_name\" FROM \"subjects\" AS \"t1\" JOIN \"registration_subjects\" AS \"t2\" ON \"t1\".\"subject_key\" = \"t2\".\"learner_subject_key\" GROUP BY \"t1\".\"subject_label\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0548": "SELECT \"t1\".\"subject_label\" AS \"course_name\" FROM \"subjects\" AS \"t1\" JOIN \"registration_subjects\" AS \"t2\" ON \"t1\".\"subject_key\" = \"t2\".\"learner_subject_key\" GROUP BY \"t1\".\"subject_label\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0549": "SELECT \"t1\".\"additional_name\" AS \"last_name\" FROM \"learners\" AS \"t1\" JOIN \"locations\" AS \"t2\" ON \"t1\".\"present_location_key\" = \"t2\".\"location_key\" WHERE \"t2\".\"province_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"additional_name\" AS \"last_name\" FROM \"learners\" AS \"t3\" JOIN \"registrations\" AS \"t4\" ON \"t3\".\"learner_key\" = \"t4\".\"learner_key\"",
+    "student_transcripts_tracking__challenge_v0__q0550": "SELECT \"t1\".\"additional_name\" AS \"last_name\" FROM \"learners\" AS \"t1\" JOIN \"locations\" AS \"t2\" ON \"t1\".\"present_location_key\" = \"t2\".\"location_key\" WHERE \"t2\".\"province_province_county\" = 'NorthCarolina' EXCEPT SELECT DISTINCT \"t3\".\"additional_name\" AS \"last_name\" FROM \"learners\" AS \"t3\" JOIN \"registrations\" AS \"t4\" ON \"t3\".\"learner_key\" = \"t4\".\"learner_key\"",
+    "student_transcripts_tracking__challenge_v0__q0551": "SELECT \"t2\".\"record_day\" AS \"transcript_date\", \"t1\".\"record_key\" AS \"transcript_id\" FROM \"record_entries\" AS \"t1\" JOIN \"academic_records\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"record_key\" HAVING COUNT(*) >= 2",
+    "student_transcripts_tracking__challenge_v0__q0552": "SELECT \"t2\".\"record_day\" AS \"transcript_date\", \"t1\".\"record_key\" AS \"transcript_id\" FROM \"record_entries\" AS \"t1\" JOIN \"academic_records\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"record_key\" HAVING COUNT(*) >= 2",
+    "student_transcripts_tracking__challenge_v0__q0553": "SELECT \"students\".\"mobile_contact\" AS \"cell_mobile_number\" FROM \"learners\" AS \"students\" WHERE \"students\".\"family_name\" = 'Timmothy' AND \"students\".\"additional_name\" = 'Ward'",
+    "student_transcripts_tracking__challenge_v0__q0554": "SELECT \"students\".\"mobile_contact\" AS \"cell_mobile_number\" FROM \"learners\" AS \"students\" WHERE \"students\".\"family_name\" = 'timmothy' AND \"students\".\"additional_name\" = 'ward'",
+    "student_transcripts_tracking__challenge_v0__q0555": "SELECT \"students\".\"family_name\" AS \"first_name\", \"students\".\"given_name\" AS \"middle_name\", \"students\".\"additional_name\" AS \"last_name\" FROM \"learners\" AS \"students\" ORDER BY \"students\".\"day_given_registered\" ASC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0556": "SELECT \"students\".\"family_name\" AS \"first_name\", \"students\".\"given_name\" AS \"middle_name\", \"students\".\"additional_name\" AS \"last_name\" FROM \"learners\" AS \"students\" ORDER BY \"students\".\"day_given_registered\" ASC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0557": "SELECT \"students\".\"family_name\" AS \"first_name\", \"students\".\"given_name\" AS \"middle_name\", \"students\".\"additional_name\" AS \"last_name\" FROM \"learners\" AS \"students\" ORDER BY \"students\".\"day_left\" ASC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0558": "SELECT \"students\".\"family_name\" AS \"first_name\", \"students\".\"given_name\" AS \"middle_name\", \"students\".\"additional_name\" AS \"last_name\" FROM \"learners\" AS \"students\" ORDER BY \"students\".\"day_left\" ASC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0559": "SELECT \"students\".\"family_name\" AS \"first_name\" FROM \"learners\" AS \"students\" WHERE \"students\".\"present_location_key\" <> \"students\".\"lasting_location_key\"",
+    "student_transcripts_tracking__challenge_v0__q0560": "SELECT \"students\".\"family_name\" AS \"first_name\" FROM \"learners\" AS \"students\" WHERE \"students\".\"present_location_key\" <> \"students\".\"lasting_location_key\"",
+    "student_transcripts_tracking__challenge_v0__q0561": "SELECT \"t1\".\"location_key\" AS \"address_id\", \"t1\".\"location_line_one\" AS \"line_1\", \"t1\".\"location_line_two\" AS \"line_2\" FROM \"locations\" AS \"t1\" JOIN \"learners\" AS \"t2\" ON \"t1\".\"location_key\" = \"t2\".\"present_location_key\" GROUP BY \"t1\".\"location_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0562": "SELECT \"t1\".\"location_key\" AS \"address_id\", \"t1\".\"location_line_one\" AS \"line_1\", \"t1\".\"location_line_two\" AS \"line_2\" FROM \"locations\" AS \"t1\" JOIN \"learners\" AS \"t2\" ON \"t1\".\"location_key\" = \"t2\".\"present_location_key\" GROUP BY \"t1\".\"location_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0563": "SELECT AVG(\"transcripts\".\"record_day\") AS \"_col_0\" FROM \"academic_records\" AS \"transcripts\"",
+    "student_transcripts_tracking__challenge_v0__q0564": "SELECT AVG(\"transcripts\".\"record_day\") AS \"_col_0\" FROM \"academic_records\" AS \"transcripts\"",
+    "student_transcripts_tracking__challenge_v0__q0565": "SELECT \"transcripts\".\"record_day\" AS \"transcript_date\", \"transcripts\".\"supplementary_notes\" AS \"other_details\" FROM \"academic_records\" AS \"transcripts\" ORDER BY \"transcript_date\" ASC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0566": "SELECT \"transcripts\".\"record_day\" AS \"transcript_date\", \"transcripts\".\"supplementary_notes\" AS \"other_details\" FROM \"academic_records\" AS \"transcripts\" ORDER BY \"transcript_date\" ASC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0567": "SELECT COUNT(*) AS \"_col_0\" FROM \"academic_records\" AS \"transcripts\"",
+    "student_transcripts_tracking__challenge_v0__q0568": "SELECT COUNT(*) AS \"_col_0\" FROM \"academic_records\" AS \"transcripts\"",
+    "student_transcripts_tracking__challenge_v0__q0569": "SELECT \"transcripts\".\"record_day\" AS \"transcript_date\" FROM \"academic_records\" AS \"transcripts\" ORDER BY \"transcript_date\" DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0570": "SELECT \"transcripts\".\"record_day\" AS \"transcript_date\" FROM \"academic_records\" AS \"transcripts\" ORDER BY \"transcript_date\" DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0571": "SELECT COUNT(*) AS \"_col_0\", \"transcript_contents\".\"learner_subject_key\" AS \"student_course_id\" FROM \"record_entries\" AS \"transcript_contents\" GROUP BY \"transcript_contents\".\"learner_subject_key\" ORDER BY \"_col_0\" DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0572": "SELECT COUNT(*) AS \"_col_0\", \"transcript_contents\".\"learner_subject_key\" AS \"student_course_id\" FROM \"record_entries\" AS \"transcript_contents\" GROUP BY \"transcript_contents\".\"learner_subject_key\" ORDER BY \"_col_0\" DESC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0573": "SELECT \"t2\".\"record_day\" AS \"transcript_date\", \"t1\".\"record_key\" AS \"transcript_id\" FROM \"record_entries\" AS \"t1\" JOIN \"academic_records\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"record_key\" ORDER BY COUNT(*) ASC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0574": "SELECT \"t2\".\"record_day\" AS \"transcript_date\", \"t1\".\"record_key\" AS \"transcript_id\" FROM \"record_entries\" AS \"t1\" JOIN \"academic_records\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"record_key\" ORDER BY COUNT(*) ASC LIMIT 1",
+    "student_transcripts_tracking__challenge_v0__q0575": "SELECT DISTINCT \"t2\".\"term_key\" AS \"semester_id\" FROM \"qualifications\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"qualification_curriculum_key\" = \"t2\".\"qualification_curriculum_key\" WHERE \"t1\".\"qualification_summary_label\" = 'Master' INTERSECT SELECT DISTINCT \"t2\".\"term_key\" AS \"semester_id\" FROM \"qualifications\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"qualification_curriculum_key\" = \"t2\".\"qualification_curriculum_key\" WHERE \"t1\".\"qualification_summary_label\" = 'Bachelor'",
+    "student_transcripts_tracking__challenge_v0__q0576": "SELECT DISTINCT \"t2\".\"term_key\" AS \"semester_id\" FROM \"qualifications\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"qualification_curriculum_key\" = \"t2\".\"qualification_curriculum_key\" WHERE \"t1\".\"qualification_summary_label\" = 'Master' INTERSECT SELECT DISTINCT \"t2\".\"term_key\" AS \"semester_id\" FROM \"qualifications\" AS \"t1\" JOIN \"registrations\" AS \"t2\" ON \"t1\".\"qualification_curriculum_key\" = \"t2\".\"qualification_curriculum_key\" WHERE \"t1\".\"qualification_summary_label\" = 'Bachelor'",
+    "student_transcripts_tracking__challenge_v0__q0577": "SELECT COUNT(DISTINCT \"students\".\"present_location_key\") AS \"_col_0\" FROM \"learners\" AS \"students\"",
+    "student_transcripts_tracking__challenge_v0__q0578": "SELECT COUNT(DISTINCT \"students\".\"present_location_key\") AS \"_col_0\" FROM \"learners\" AS \"students\"",
+    "student_transcripts_tracking__challenge_v0__q0579": "SELECT \"students\".\"supplementary_learner_details\" AS \"other_student_details\" FROM \"learners\" AS \"students\" ORDER BY \"other_student_details\" DESC",
+    "student_transcripts_tracking__challenge_v0__q0580": "SELECT \"students\".\"supplementary_learner_details\" AS \"other_student_details\" FROM \"learners\" AS \"students\" ORDER BY \"other_student_details\" DESC",
+    "student_transcripts_tracking__challenge_v0__q0581": "SELECT \"sections\".\"class_summary\" AS \"section_description\" FROM \"class_sections\" AS \"sections\" WHERE \"sections\".\"class_label\" = 'h'",
+    "student_transcripts_tracking__challenge_v0__q0582": "SELECT \"sections\".\"class_summary\" AS \"section_description\" FROM \"class_sections\" AS \"sections\" WHERE \"sections\".\"class_label\" = 'h'",
+    "student_transcripts_tracking__challenge_v0__q0583": "SELECT \"t1\".\"family_name\" AS \"first_name\" FROM \"learners\" AS \"t1\" JOIN \"locations\" AS \"t2\" ON \"t1\".\"lasting_location_key\" = \"t2\".\"location_key\" WHERE \"t2\".\"nation\" = 'haiti' OR \"t1\".\"mobile_contact\" = '09700166582'",
+    "student_transcripts_tracking__challenge_v0__q0584": "SELECT \"t1\".\"family_name\" AS \"first_name\" FROM \"learners\" AS \"t1\" JOIN \"locations\" AS \"t2\" ON \"t1\".\"lasting_location_key\" = \"t2\".\"location_key\" WHERE \"t2\".\"nation\" = 'haiti' OR \"t1\".\"mobile_contact\" = '09700166582'"
+  },
+  "rewrite_errors": {},
+  "model": "all-MiniLM-L6-v2",
+  "method": "semantic"
+}

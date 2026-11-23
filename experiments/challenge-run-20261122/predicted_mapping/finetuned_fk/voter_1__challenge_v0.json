@@ -1,0 +1,18 @@
+{
+  "tables": {
+    "AREA_CODE_STATE": "dialing_region",
+    "CONTESTANTS": "candidates",
+    "VOTES": "ballots"
+  },
+  "columns": {
+    "AREA_CODE_STATE.area_code": "dialing_region.region_tag",
+    "AREA_CODE_STATE.state": "dialing_region.province",
+    "CONTESTANTS.contestant_number": "candidates.candidate_count",
+    "CONTESTANTS.contestant_name": "candidates.candidate_label",
+    "VOTES.vote_id": "ballots.ballot_key",
+    "VOTES.phone_number": "ballots.contact_number",
+    "VOTES.state": "ballots.province",
+    "VOTES.contestant_number": "ballots.candidate_count",
+    "VOTES.created": "ballots.established"
+  }
+}

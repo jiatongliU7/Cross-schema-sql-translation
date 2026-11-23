@@ -1,0 +1,337 @@
+{
+  "tables": {
+    "airlines": [
+      [
+        "air_carriers",
+        0.7761849164962769
+      ],
+      [
+        "air_trips",
+        0.6707836389541626
+      ],
+      [
+        "airfields",
+        0.601595401763916
+      ]
+    ],
+    "airports": [
+      [
+        "airfields",
+        0.8041056394577026
+      ],
+      [
+        "air_trips",
+        0.6405548453330994
+      ],
+      [
+        "air_carriers",
+        0.6377946734428406
+      ]
+    ],
+    "flights": [
+      [
+        "air_trips",
+        0.746497392654419
+      ],
+      [
+        "air_carriers",
+        0.6581799983978271
+      ],
+      [
+        "airfields",
+        0.6435667872428894
+      ]
+    ]
+  },
+  "columns": {
+    "airlines.uid": [
+      [
+        "air_carriers.record_key",
+        0.8843593597412109
+      ],
+      [
+        "air_trips.carrier",
+        0.8612056970596313
+      ],
+      [
+        "air_carriers.carrier",
+        0.8507314920425415
+      ]
+    ],
+    "airlines.Airline": [
+      [
+        "air_carriers.carrier",
+        0.8916203379631042
+      ],
+      [
+        "air_trips.destination_airfield",
+        0.8800159692764282
+      ],
+      [
+        "air_carriers.nation",
+        0.8776988983154297
+      ]
+    ],
+    "airlines.Abbreviation": [
+      [
+        "air_carriers.carrier",
+        0.8757064938545227
+      ],
+      [
+        "air_trips.destination_airfield",
+        0.8720531463623047
+      ],
+      [
+        "air_carriers.nation",
+        0.8670770525932312
+      ]
+    ],
+    "airlines.Country": [
+      [
+        "air_carriers.nation",
+        0.9065402746200562
+      ],
+      [
+        "air_carriers.carrier",
+        0.8676286339759827
+      ],
+      [
+        "air_trips.destination_airfield",
+        0.8648470640182495
+      ]
+    ],
+    "airports.City": [
+      [
+        "airfields.municipality",
+        0.9019171595573425
+      ],
+      [
+        "airfields.nation",
+        0.8870569467544556
+      ],
+      [
+        "air_trips.destination_airfield",
+        0.8792741894721985
+      ]
+    ],
+    "airports.AirportCode": [
+      [
+        "airfields.airfield_tag",
+        0.8968113660812378
+      ],
+      [
+        "air_trips.destination_airfield",
+        0.8952957391738892
+      ],
+      [
+        "air_trips.origin_airfield",
+        0.8885843753814697
+      ]
+    ],
+    "airports.AirportName": [
+      [
+        "air_trips.destination_airfield",
+        0.8930740356445312
+      ],
+      [
+        "airfields.airfield_label",
+        0.8913733959197998
+      ],
+      [
+        "airfields.airfield_tag",
+        0.891323447227478
+      ]
+    ],
+    "airports.Country": [
+      [
+        "airfields.nation",
+        0.9138803482055664
+      ],
+      [
+        "air_trips.destination_airfield",
+        0.884562611579895
+      ],
+      [
+        "airfields.municipality",
+        0.8809870481491089
+      ]
+    ],
+    "airports.CountryAbbrev": [
+      [
+        "airfields.nation",
+        0.8629665374755859
+      ],
+      [
+        "airfields.airfield_label",
+        0.8381288051605225
+      ],
+      [
+        "airfields.municipality",
+        0.8371159434318542
+      ]
+    ],
+    "flights.Airline": [
+      [
+        "air_trips.destination_airfield",
+        0.880387544631958
+      ],
+      [
+        "air_trips.carrier",
+        0.8795772790908813
+      ],
+      [
+        "air_carriers.record_key",
+        0.876548707485199
+      ]
+    ],
+    "flights.FlightNo": [
+      [
+        "air_trips.trip_number",
+        0.890393853187561
+      ],
+      [
+        "air_trips.carrier",
+        0.8723036050796509
+      ],
+      [
+        "air_trips.destination_airfield",
+        0.8706380128860474
+      ]
+    ],
+    "flights.SourceAirport": [
+      [
+        "air_trips.destination_airfield",
+        0.9292181730270386
+      ],
+      [
+        "air_trips.origin_airfield",
+        0.9184244871139526
+      ],
+      [
+        "airfields.airfield_tag",
+        0.8687480688095093
+      ]
+    ],
+    "flights.DestAirport": [
+      [
+        "air_trips.destination_airfield",
+        0.9114104509353638
+      ],
+      [
+        "air_trips.origin_airfield",
+        0.897231936454773
+      ],
+      [
+        "airfields.nation",
+        0.8562099933624268
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "airlines": "air_carriers",
+      "airports": "airfields",
+      "flights": "air_trips"
+    },
+    "columns": {
+      "airlines.uid": "air_carriers.record_key",
+      "airlines.Airline": "air_carriers.carrier",
+      "airlines.Abbreviation": "air_carriers.short_tag",
+      "airlines.Country": "air_carriers.nation",
+      "airports.City": "airfields.municipality",
+      "airports.AirportCode": "airfields.airfield_tag",
+      "airports.AirportName": "airfields.airfield_label",
+      "airports.Country": "airfields.nation",
+      "airports.CountryAbbrev": "airfields.nation_short_tag",
+      "flights.Airline": "air_trips.carrier",
+      "flights.FlightNo": "air_trips.trip_number",
+      "flights.SourceAirport": "air_trips.origin_airfield",
+      "flights.DestAirport": "air_trips.destination_airfield"
+    }
+  },
+  "q_B": {
+    "flight_2__challenge_v0__q0179": "SELECT \"airlines\".\"nation\" AS \"country\" FROM \"air_carriers\" AS \"airlines\" WHERE \"airlines\".\"carrier\" = 'JetBlue Airways'",
+    "flight_2__challenge_v0__q0180": "SELECT \"airlines\".\"nation\" AS \"country\" FROM \"air_carriers\" AS \"airlines\" WHERE \"airlines\".\"carrier\" = 'JetBlue Airways'",
+    "flight_2__challenge_v0__q0181": "SELECT \"airlines\".\"short_tag\" AS \"abbreviation\" FROM \"air_carriers\" AS \"airlines\" WHERE \"airlines\".\"carrier\" = 'JetBlue Airways'",
+    "flight_2__challenge_v0__q0182": "SELECT \"airlines\".\"short_tag\" AS \"abbreviation\" FROM \"air_carriers\" AS \"airlines\" WHERE \"airlines\".\"carrier\" = 'JetBlue Airways'",
+    "flight_2__challenge_v0__q0183": "SELECT \"airlines\".\"carrier\" AS \"airline\", \"airlines\".\"short_tag\" AS \"abbreviation\" FROM \"air_carriers\" AS \"airlines\" WHERE \"airlines\".\"nation\" = 'USA'",
+    "flight_2__challenge_v0__q0184": "SELECT \"airlines\".\"carrier\" AS \"airline\", \"airlines\".\"short_tag\" AS \"abbreviation\" FROM \"air_carriers\" AS \"airlines\" WHERE \"airlines\".\"nation\" = 'USA'",
+    "flight_2__challenge_v0__q0185": "SELECT \"airports\".\"airfield_tag\" AS \"airportcode\", \"airports\".\"airfield_label\" AS \"airportname\" FROM \"airfields\" AS \"airports\" WHERE \"airports\".\"municipality\" = 'Anthony'",
+    "flight_2__challenge_v0__q0186": "SELECT \"airports\".\"airfield_tag\" AS \"airportcode\", \"airports\".\"airfield_label\" AS \"airportname\" FROM \"airfields\" AS \"airports\" WHERE \"airports\".\"municipality\" = 'Anthony'",
+    "flight_2__challenge_v0__q0187": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_carriers\" AS \"airlines\"",
+    "flight_2__challenge_v0__q0188": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_carriers\" AS \"airlines\"",
+    "flight_2__challenge_v0__q0189": "SELECT COUNT(*) AS \"_col_0\" FROM \"airfields\" AS \"airports\"",
+    "flight_2__challenge_v0__q0190": "SELECT COUNT(*) AS \"_col_0\" FROM \"airfields\" AS \"airports\"",
+    "flight_2__challenge_v0__q0191": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"flights\"",
+    "flight_2__challenge_v0__q0192": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"flights\"",
+    "flight_2__challenge_v0__q0193": "SELECT \"airlines\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"airlines\" WHERE \"airlines\".\"short_tag\" = 'UAL'",
+    "flight_2__challenge_v0__q0194": "SELECT \"airlines\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"airlines\" WHERE \"airlines\".\"short_tag\" = 'UAL'",
+    "flight_2__challenge_v0__q0195": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_carriers\" AS \"airlines\" WHERE \"airlines\".\"nation\" = 'USA'",
+    "flight_2__challenge_v0__q0196": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_carriers\" AS \"airlines\" WHERE \"airlines\".\"nation\" = 'USA'",
+    "flight_2__challenge_v0__q0197": "SELECT \"airports\".\"municipality\" AS \"city\", \"airports\".\"nation\" AS \"country\" FROM \"airfields\" AS \"airports\" WHERE \"airports\".\"airfield_label\" = 'Alton'",
+    "flight_2__challenge_v0__q0198": "SELECT \"airports\".\"municipality\" AS \"city\", \"airports\".\"nation\" AS \"country\" FROM \"airfields\" AS \"airports\" WHERE \"airports\".\"airfield_label\" = 'Alton'",
+    "flight_2__challenge_v0__q0199": "SELECT \"airports\".\"airfield_label\" AS \"airportname\" FROM \"airfields\" AS \"airports\" WHERE \"airports\".\"airfield_tag\" = 'AKO'",
+    "flight_2__challenge_v0__q0200": "SELECT \"airports\".\"airfield_label\" AS \"airportname\" FROM \"airfields\" AS \"airports\" WHERE \"airports\".\"airfield_tag\" = 'AKO'",
+    "flight_2__challenge_v0__q0201": "SELECT \"airports\".\"airfield_label\" AS \"airportname\" FROM \"airfields\" AS \"airports\" WHERE \"airports\".\"municipality\" = 'Aberdeen'",
+    "flight_2__challenge_v0__q0202": "SELECT \"airports\".\"airfield_label\" AS \"airportname\" FROM \"airfields\" AS \"airports\" WHERE \"airports\".\"municipality\" = 'Aberdeen'",
+    "flight_2__challenge_v0__q0203": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"flights\" WHERE \"flights\".\"origin_airfield\" = 'APG'",
+    "flight_2__challenge_v0__q0204": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"flights\" WHERE \"flights\".\"origin_airfield\" = 'APG'",
+    "flight_2__challenge_v0__q0205": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"flights\" WHERE \"flights\".\"destination_airfield\" = 'ATO'",
+    "flight_2__challenge_v0__q0206": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"flights\" WHERE \"flights\".\"destination_airfield\" = 'ATO'",
+    "flight_2__challenge_v0__q0207": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"origin_airfield\" = \"t2\".\"airfield_tag\" WHERE \"t2\".\"municipality\" = 'Aberdeen'",
+    "flight_2__challenge_v0__q0208": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"origin_airfield\" = \"t2\".\"airfield_tag\" WHERE \"t2\".\"municipality\" = 'Aberdeen'",
+    "flight_2__challenge_v0__q0209": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"destination_airfield\" = \"t2\".\"airfield_tag\" WHERE \"t2\".\"municipality\" = 'Aberdeen'",
+    "flight_2__challenge_v0__q0210": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"destination_airfield\" = \"t2\".\"airfield_tag\" WHERE \"t2\".\"municipality\" = 'Aberdeen'",
+    "flight_2__challenge_v0__q0211": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"destination_airfield\" = \"t2\".\"airfield_tag\" JOIN \"airfields\" AS \"t3\" ON \"t1\".\"origin_airfield\" = \"t3\".\"airfield_tag\" WHERE \"t2\".\"municipality\" = 'Ashley' AND \"t3\".\"municipality\" = 'Aberdeen'",
+    "flight_2__challenge_v0__q0212": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"destination_airfield\" = \"t2\".\"airfield_tag\" JOIN \"airfields\" AS \"t3\" ON \"t1\".\"origin_airfield\" = \"t3\".\"airfield_tag\" WHERE \"t2\".\"municipality\" = 'Ashley' AND \"t3\".\"municipality\" = 'Aberdeen'",
+    "flight_2__challenge_v0__q0213": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"t1\" JOIN \"air_carriers\" AS \"t2\" ON \"t1\".\"carrier\" = \"t2\".\"record_key\" WHERE \"t2\".\"carrier\" = 'JetBlue Airways'",
+    "flight_2__challenge_v0__q0214": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"t1\" JOIN \"air_carriers\" AS \"t2\" ON \"t1\".\"carrier\" = \"t2\".\"record_key\" WHERE \"t2\".\"carrier\" = 'JetBlue Airways'",
+    "flight_2__challenge_v0__q0215": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t2\".\"carrier\" = \"t1\".\"record_key\" WHERE \"t1\".\"carrier\" = 'United Airlines' AND \"t2\".\"destination_airfield\" = 'ASY'",
+    "flight_2__challenge_v0__q0216": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t2\".\"carrier\" = \"t1\".\"record_key\" WHERE \"t1\".\"carrier\" = 'United Airlines' AND \"t2\".\"destination_airfield\" = 'ASY'",
+    "flight_2__challenge_v0__q0217": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t2\".\"carrier\" = \"t1\".\"record_key\" WHERE \"t1\".\"carrier\" = 'United Airlines' AND \"t2\".\"origin_airfield\" = 'AHD'",
+    "flight_2__challenge_v0__q0218": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t2\".\"carrier\" = \"t1\".\"record_key\" WHERE \"t1\".\"carrier\" = 'United Airlines' AND \"t2\".\"origin_airfield\" = 'AHD'",
+    "flight_2__challenge_v0__q0219": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"destination_airfield\" = \"t2\".\"airfield_tag\" JOIN \"air_carriers\" AS \"t3\" ON \"t3\".\"record_key\" = \"t1\".\"carrier\" WHERE \"t2\".\"municipality\" = 'Aberdeen' AND \"t3\".\"carrier\" = 'United Airlines'",
+    "flight_2__challenge_v0__q0220": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"destination_airfield\" = \"t2\".\"airfield_tag\" JOIN \"air_carriers\" AS \"t3\" ON \"t3\".\"record_key\" = \"t1\".\"carrier\" WHERE \"t2\".\"municipality\" = 'Aberdeen' AND \"t3\".\"carrier\" = 'United Airlines'",
+    "flight_2__challenge_v0__q0221": "SELECT \"t1\".\"municipality\" AS \"city\" FROM \"airfields\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"airfield_tag\" = \"t2\".\"destination_airfield\" GROUP BY \"t1\".\"municipality\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "flight_2__challenge_v0__q0222": "SELECT \"t1\".\"municipality\" AS \"city\" FROM \"airfields\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"airfield_tag\" = \"t2\".\"destination_airfield\" GROUP BY \"t1\".\"municipality\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "flight_2__challenge_v0__q0223": "SELECT \"t1\".\"municipality\" AS \"city\" FROM \"airfields\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"airfield_tag\" = \"t2\".\"origin_airfield\" GROUP BY \"t1\".\"municipality\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "flight_2__challenge_v0__q0224": "SELECT \"t1\".\"municipality\" AS \"city\" FROM \"airfields\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"airfield_tag\" = \"t2\".\"origin_airfield\" GROUP BY \"t1\".\"municipality\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "flight_2__challenge_v0__q0225": "SELECT \"t1\".\"airfield_tag\" AS \"airportcode\" FROM \"airfields\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"airfield_tag\" = \"t2\".\"destination_airfield\" OR \"t1\".\"airfield_tag\" = \"t2\".\"origin_airfield\" GROUP BY \"t1\".\"airfield_tag\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "flight_2__challenge_v0__q0226": "SELECT \"t1\".\"airfield_tag\" AS \"airportcode\" FROM \"airfields\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"airfield_tag\" = \"t2\".\"destination_airfield\" OR \"t1\".\"airfield_tag\" = \"t2\".\"origin_airfield\" GROUP BY \"t1\".\"airfield_tag\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "flight_2__challenge_v0__q0227": "SELECT \"t1\".\"airfield_tag\" AS \"airportcode\" FROM \"airfields\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"airfield_tag\" = \"t2\".\"destination_airfield\" OR \"t1\".\"airfield_tag\" = \"t2\".\"origin_airfield\" GROUP BY \"t1\".\"airfield_tag\" ORDER BY COUNT(*) LIMIT 1",
+    "flight_2__challenge_v0__q0228": "SELECT \"t1\".\"airfield_tag\" AS \"airportcode\" FROM \"airfields\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"airfield_tag\" = \"t2\".\"destination_airfield\" OR \"t1\".\"airfield_tag\" = \"t2\".\"origin_airfield\" GROUP BY \"t1\".\"airfield_tag\" ORDER BY COUNT(*) LIMIT 1",
+    "flight_2__challenge_v0__q0229": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" GROUP BY \"t1\".\"carrier\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "flight_2__challenge_v0__q0230": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" GROUP BY \"t1\".\"carrier\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "flight_2__challenge_v0__q0231": "SELECT \"t1\".\"short_tag\" AS \"abbreviation\", \"t1\".\"nation\" AS \"country\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" GROUP BY \"t1\".\"carrier\" ORDER BY COUNT(*) LIMIT 1",
+    "flight_2__challenge_v0__q0232": "SELECT \"t1\".\"short_tag\" AS \"abbreviation\", \"t1\".\"nation\" AS \"country\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" GROUP BY \"t1\".\"carrier\" ORDER BY COUNT(*) LIMIT 1",
+    "flight_2__challenge_v0__q0233": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" WHERE \"t2\".\"origin_airfield\" = 'AHD'",
+    "flight_2__challenge_v0__q0234": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" WHERE \"t2\".\"origin_airfield\" = 'AHD'",
+    "flight_2__challenge_v0__q0235": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" WHERE \"t2\".\"destination_airfield\" = 'AHD'",
+    "flight_2__challenge_v0__q0236": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" WHERE \"t2\".\"destination_airfield\" = 'AHD'",
+    "flight_2__challenge_v0__q0237": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" WHERE \"t2\".\"origin_airfield\" = 'APG' INTERSECT SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" WHERE \"t2\".\"origin_airfield\" = 'CVO'",
+    "flight_2__challenge_v0__q0238": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" WHERE \"t2\".\"origin_airfield\" = 'APG' INTERSECT SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" WHERE \"t2\".\"origin_airfield\" = 'CVO'",
+    "flight_2__challenge_v0__q0239": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" WHERE \"t2\".\"origin_airfield\" = 'CVO' EXCEPT SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" WHERE \"t2\".\"origin_airfield\" = 'APG'",
+    "flight_2__challenge_v0__q0240": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" WHERE \"t2\".\"origin_airfield\" = 'CVO' EXCEPT SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" WHERE \"t2\".\"origin_airfield\" = 'APG'",
+    "flight_2__challenge_v0__q0241": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" GROUP BY \"t1\".\"carrier\" HAVING COUNT(*) > 10",
+    "flight_2__challenge_v0__q0242": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" GROUP BY \"t1\".\"carrier\" HAVING COUNT(*) > 10",
+    "flight_2__challenge_v0__q0243": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" GROUP BY \"t1\".\"carrier\" HAVING COUNT(*) < 200",
+    "flight_2__challenge_v0__q0244": "SELECT \"t1\".\"carrier\" AS \"airline\" FROM \"air_carriers\" AS \"t1\" JOIN \"air_trips\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"carrier\" GROUP BY \"t1\".\"carrier\" HAVING COUNT(*) < 200",
+    "flight_2__challenge_v0__q0245": "SELECT \"t1\".\"trip_number\" AS \"flightno\" FROM \"air_trips\" AS \"t1\" JOIN \"air_carriers\" AS \"t2\" ON \"t2\".\"record_key\" = \"t1\".\"carrier\" WHERE \"t2\".\"carrier\" = 'United Airlines'",
+    "flight_2__challenge_v0__q0246": "SELECT \"t1\".\"trip_number\" AS \"flightno\" FROM \"air_trips\" AS \"t1\" JOIN \"air_carriers\" AS \"t2\" ON \"t2\".\"record_key\" = \"t1\".\"carrier\" WHERE \"t2\".\"carrier\" = 'United Airlines'",
+    "flight_2__challenge_v0__q0247": "SELECT \"flights\".\"trip_number\" AS \"flightno\" FROM \"air_trips\" AS \"flights\" WHERE \"flights\".\"origin_airfield\" = 'APG'",
+    "flight_2__challenge_v0__q0248": "SELECT \"flights\".\"trip_number\" AS \"flightno\" FROM \"air_trips\" AS \"flights\" WHERE \"flights\".\"origin_airfield\" = 'APG'",
+    "flight_2__challenge_v0__q0249": "SELECT \"flights\".\"trip_number\" AS \"flightno\" FROM \"air_trips\" AS \"flights\" WHERE \"flights\".\"destination_airfield\" = 'APG'",
+    "flight_2__challenge_v0__q0250": "SELECT \"flights\".\"trip_number\" AS \"flightno\" FROM \"air_trips\" AS \"flights\" WHERE \"flights\".\"destination_airfield\" = 'APG'",
+    "flight_2__challenge_v0__q0251": "SELECT \"t1\".\"trip_number\" AS \"flightno\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"origin_airfield\" = \"t2\".\"airfield_tag\" WHERE \"t2\".\"municipality\" = 'Aberdeen'",
+    "flight_2__challenge_v0__q0252": "SELECT \"t1\".\"trip_number\" AS \"flightno\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"origin_airfield\" = \"t2\".\"airfield_tag\" WHERE \"t2\".\"municipality\" = 'Aberdeen'",
+    "flight_2__challenge_v0__q0253": "SELECT \"t1\".\"trip_number\" AS \"flightno\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"destination_airfield\" = \"t2\".\"airfield_tag\" WHERE \"t2\".\"municipality\" = 'Aberdeen'",
+    "flight_2__challenge_v0__q0254": "SELECT \"t1\".\"trip_number\" AS \"flightno\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"destination_airfield\" = \"t2\".\"airfield_tag\" WHERE \"t2\".\"municipality\" = 'Aberdeen'",
+    "flight_2__challenge_v0__q0255": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"destination_airfield\" = \"t2\".\"airfield_tag\" WHERE \"t2\".\"municipality\" = 'Aberdeen' OR \"t2\".\"municipality\" = 'Abilene'",
+    "flight_2__challenge_v0__q0256": "SELECT COUNT(*) AS \"_col_0\" FROM \"air_trips\" AS \"t1\" JOIN \"airfields\" AS \"t2\" ON \"t1\".\"destination_airfield\" = \"t2\".\"airfield_tag\" WHERE \"t2\".\"municipality\" = 'Aberdeen' OR \"t2\".\"municipality\" = 'Abilene'",
+    "flight_2__challenge_v0__q0257": "SELECT \"airports\".\"airfield_label\" AS \"airportname\" FROM \"airfields\" AS \"airports\" WHERE NOT \"airports\".\"airfield_tag\" IN (SELECT \"flights\".\"origin_airfield\" AS \"sourceairport\" FROM \"air_trips\" AS \"flights\" UNION SELECT \"flights\".\"destination_airfield\" AS \"destairport\" FROM \"air_trips\" AS \"flights\")",
+    "flight_2__challenge_v0__q0258": "SELECT \"airports\".\"airfield_label\" AS \"airportname\" FROM \"airfields\" AS \"airports\" WHERE NOT \"airports\".\"airfield_tag\" IN (SELECT \"flights\".\"origin_airfield\" AS \"sourceairport\" FROM \"air_trips\" AS \"flights\" UNION SELECT \"flights\".\"destination_airfield\" AS \"destairport\" FROM \"air_trips\" AS \"flights\")"
+  },
+  "rewrite_errors": {},
+  "model": "all-MiniLM-L6-v2",
+  "method": "semantic"
+}

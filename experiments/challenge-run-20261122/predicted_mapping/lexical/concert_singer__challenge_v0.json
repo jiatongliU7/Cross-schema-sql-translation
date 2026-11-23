@@ -1,0 +1,31 @@
+{
+  "tables": {
+    "stadium": "vocalist",
+    "singer": "arena",
+    "concert": "recital",
+    "singer_in_concert": "recital_lineup"
+  },
+  "columns": {
+    "stadium.Stadium_ID": "vocalist.track_publication_annum",
+    "stadium.Location": "vocalist.nation",
+    "stadium.Name": "vocalist.label",
+    "stadium.Capacity": "vocalist.vocalist_key",
+    "stadium.Highest": "vocalist.years_old",
+    "stadium.Lowest": "vocalist.track_label",
+    "stadium.Average": "vocalist.masculine_flag",
+    "singer.Singer_ID": "arena.site",
+    "singer.Name": "arena.maximum_value",
+    "singer.Country": "arena.occupancy_limit",
+    "singer.Song_Name": "arena.minimum_value",
+    "singer.Song_release_year": "arena.arena_key",
+    "singer.Age": "arena.label",
+    "singer.Is_male": "arena.mean_value",
+    "concert.concert_ID": "recital.calendar_annum",
+    "concert.concert_Name": "recital.arena_key",
+    "concert.Theme": "recital.recital_key",
+    "concert.Stadium_ID": "recital.topic",
+    "concert.Year": "recital.recital_label",
+    "singer_in_concert.concert_ID": "recital_lineup.vocalist_key",
+    "singer_in_concert.Singer_ID": "recital_lineup.recital_key"
+  }
+}

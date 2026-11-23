@@ -1,0 +1,42 @@
+{
+  "method": "saved",
+  "pair_id": "car_1__challenge_v0",
+  "base_db_id": "car_1",
+  "perturbation": "challenge_semantic_table_and_column_rename",
+  "mapping": {
+    "tables": {
+      "continents": "landmasses",
+      "countries": "nations",
+      "car_makers": "automobile_manufacturers",
+      "model_list": "vehicle_catalog",
+      "car_names": "vehicle_labels",
+      "cars_data": "vehicle_specifications"
+    },
+    "columns": {
+      "continents.ContId": "landmasses.landmass_key",
+      "continents.Continent": "landmasses.landmass",
+      "countries.CountryId": "nations.nation_key",
+      "countries.CountryName": "nations.nation_label",
+      "countries.Continent": "nations.landmass",
+      "car_makers.Id": "automobile_manufacturers.record_key",
+      "car_makers.Maker": "automobile_manufacturers.manufacturer",
+      "car_makers.FullName": "automobile_manufacturers.complete_name",
+      "car_makers.Country": "automobile_manufacturers.nation",
+      "model_list.ModelId": "vehicle_catalog.design_key",
+      "model_list.Maker": "vehicle_catalog.manufacturer",
+      "model_list.Model": "vehicle_catalog.design",
+      "car_names.MakeId": "vehicle_labels.manufacturer_key",
+      "car_names.Model": "vehicle_labels.brand",
+      "car_names.Make": "vehicle_labels.design",
+      "cars_data.Id": "vehicle_specifications.record_key",
+      "cars_data.MPG": "vehicle_specifications.miles_per_gallon",
+      "cars_data.Cylinders": "vehicle_specifications.engine_cylinder_count",
+      "cars_data.Edispl": "vehicle_specifications.engine_displacement",
+      "cars_data.Horsepower": "vehicle_specifications.engine_power",
+      "cars_data.Weight": "vehicle_specifications.mass_value",
+      "cars_data.Accelerate": "vehicle_specifications.acceleration_time",
+      "cars_data.Year": "vehicle_specifications.calendar_annum"
+    }
+  },
+  "error": null
+}

@@ -1,0 +1,23 @@
+{
+  "data_root": "<challenge-data>",
+  "split": "dev",
+  "outdir": "<workspace>/experiments/challenge-run-20261122/evaluation/finetuned_fk_dev",
+  "methods": [
+    "saved"
+  ],
+  "pretrained": "all-MiniLM-L6-v2",
+  "finetuned": null,
+  "mapping_dir": "<workspace>/experiments/challenge-run-20261122/predicted_mapping/finetuned_fk",
+  "top_k": 3,
+  "type_weight": 0.15,
+  "fk_weight": 0.3,
+  "query_timeout": 5,
+  "llm_model": null,
+  "shots": 3,
+  "seed": 4705,
+  "llm_logdir": null,
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "api_key_env": "OPENAI_API_KEY",
+  "max_tokens": 4096,
+  "dry_run": false
+}

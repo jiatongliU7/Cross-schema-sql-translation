@@ -1,0 +1,19 @@
+{
+  "tables": {
+    "poker_player": "card_competitor",
+    "people": "persons"
+  },
+  "columns": {
+    "poker_player.Poker_Player_ID": "card_competitor.card_competitor_key",
+    "poker_player.People_ID": "card_competitor.person_key",
+    "poker_player.Final_Table_Made": "card_competitor.Final_Table_Made",
+    "poker_player.Best_Finish": "card_competitor.top_placement",
+    "poker_player.Money_Rank": "card_competitor.earnings_position",
+    "poker_player.Earnings": "card_competitor.Earnings",
+    "people.People_ID": "persons.person_key",
+    "people.Nationality": "persons.Nationality",
+    "people.Name": "persons.label",
+    "people.Birth_Date": "persons.nativity_day",
+    "people.Height": "persons.stature_value"
+  }
+}

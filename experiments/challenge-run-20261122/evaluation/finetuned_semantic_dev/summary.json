@@ -1,0 +1,64 @@
+{
+  "saved": {
+    "n_queries": 190,
+    "execution_success_rate": 1.0,
+    "execution_accuracy": 0.8,
+    "normalized_exact_match": 0.8,
+    "reference_valid_rate": 1.0,
+    "table_accuracy": 1.0,
+    "column_accuracy": 0.9333333333333333,
+    "changed_table_accuracy": 1.0,
+    "changed_column_accuracy": 0.9333333333333333,
+    "n_pairs": 3,
+    "mapping_failures": 0,
+    "error_counts": {
+      "result_mismatch": 38
+    },
+    "empty_gold_queries": 0,
+    "pair_macro_execution_accuracy": 0.8596677271120537,
+    "base_database_macro_execution_accuracy": 0.8596677271120537,
+    "groups": {
+      "level": {
+        "L2": {
+          "n_queries": 6,
+          "execution_success_rate": 1.0,
+          "execution_accuracy": 1.0,
+          "normalized_exact_match": 1.0,
+          "reference_valid_rate": 1.0
+        },
+        "L3": {
+          "n_queries": 184,
+          "execution_success_rate": 1.0,
+          "execution_accuracy": 0.7934782608695652,
+          "normalized_exact_match": 0.7934782608695652,
+          "reference_valid_rate": 1.0
+        }
+      },
+      "is_join": {
+        "False": {
+          "n_queries": 88,
+          "execution_success_rate": 1.0,
+          "execution_accuracy": 0.9545454545454546,
+          "normalized_exact_match": 0.9545454545454546,
+          "reference_valid_rate": 1.0
+        },
+        "True": {
+          "n_queries": 102,
+          "execution_success_rate": 1.0,
+          "execution_accuracy": 0.6666666666666666,
+          "normalized_exact_match": 0.6666666666666666,
+          "reference_valid_rate": 1.0
+        }
+      },
+      "perturbation": {
+        "challenge_semantic_table_and_column_rename": {
+          "n_queries": 190,
+          "execution_success_rate": 1.0,
+          "execution_accuracy": 0.8,
+          "normalized_exact_match": 0.8,
+          "reference_valid_rate": 1.0
+        }
+      }
+    }
+  }
+}

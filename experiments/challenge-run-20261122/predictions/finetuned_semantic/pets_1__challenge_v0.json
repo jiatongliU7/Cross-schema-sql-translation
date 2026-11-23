@@ -1,0 +1,314 @@
+{
+  "tables": {
+    "Student": [
+      [
+        "learner",
+        0.6400513648986816
+      ],
+      [
+        "companion_animals",
+        0.3205949068069458
+      ],
+      [
+        "pet_ownership",
+        0.1775927096605301
+      ]
+    ],
+    "Has_Pet": [
+      [
+        "pet_ownership",
+        0.7086921334266663
+      ],
+      [
+        "companion_animals",
+        0.647538959980011
+      ],
+      [
+        "learner",
+        0.28098616003990173
+      ]
+    ],
+    "Pets": [
+      [
+        "companion_animals",
+        0.7708700895309448
+      ],
+      [
+        "pet_ownership",
+        0.758575439453125
+      ],
+      [
+        "learner",
+        0.2758732736110687
+      ]
+    ]
+  },
+  "columns": {
+    "Student.StuID": [
+      [
+        "learner.Major",
+        0.515229344367981
+      ],
+      [
+        "learner.learner_key",
+        0.47198134660720825
+      ],
+      [
+        "learner.Advisor",
+        0.41296297311782837
+      ]
+    ],
+    "Student.LName": [
+      [
+        "learner.given_name",
+        0.7053471803665161
+      ],
+      [
+        "learner.family_name",
+        0.6116906404495239
+      ],
+      [
+        "learner.gender_category",
+        0.36516720056533813
+      ]
+    ],
+    "Student.Fname": [
+      [
+        "learner.given_name",
+        0.7032513618469238
+      ],
+      [
+        "learner.family_name",
+        0.5975378751754761
+      ],
+      [
+        "learner.gender_category",
+        0.3707579970359802
+      ]
+    ],
+    "Student.Age": [
+      [
+        "learner.years_old",
+        0.6836740970611572
+      ],
+      [
+        "companion_animals.animal_age",
+        0.5519464015960693
+      ],
+      [
+        "learner.learner_key",
+        0.4480364918708801
+      ]
+    ],
+    "Student.Sex": [
+      [
+        "learner.gender_category",
+        0.6966615915298462
+      ],
+      [
+        "learner.given_name",
+        0.4267254173755646
+      ],
+      [
+        "learner.family_name",
+        0.38192132115364075
+      ]
+    ],
+    "Student.Major": [
+      [
+        "learner.Major",
+        0.7505408525466919
+      ],
+      [
+        "learner.learner_key",
+        0.48262232542037964
+      ],
+      [
+        "learner.Advisor",
+        0.42545926570892334
+      ]
+    ],
+    "Student.Advisor": [
+      [
+        "learner.Advisor",
+        0.8170126676559448
+      ],
+      [
+        "learner.Major",
+        0.556275486946106
+      ],
+      [
+        "learner.learner_key",
+        0.5512508153915405
+      ]
+    ],
+    "Student.city_code": [
+      [
+        "learner.municipality_tag",
+        0.5826801061630249
+      ],
+      [
+        "learner.given_name",
+        0.3113422691822052
+      ],
+      [
+        "learner.family_name",
+        0.28356385231018066
+      ]
+    ],
+    "Has_Pet.StuID": [
+      [
+        "pet_ownership.animal_key",
+        0.6384974122047424
+      ],
+      [
+        "companion_animals.animal_key",
+        0.6080434322357178
+      ],
+      [
+        "companion_animals.mass_value",
+        0.528564453125
+      ]
+    ],
+    "Has_Pet.PetID": [
+      [
+        "pet_ownership.animal_key",
+        0.7253484725952148
+      ],
+      [
+        "companion_animals.animal_key",
+        0.6532293558120728
+      ],
+      [
+        "pet_ownership.learner_key",
+        0.5919821858406067
+      ]
+    ],
+    "Pets.PetID": [
+      [
+        "pet_ownership.animal_key",
+        0.7578229904174805
+      ],
+      [
+        "companion_animals.animal_key",
+        0.7083877325057983
+      ],
+      [
+        "companion_animals.mass_value",
+        0.6236103773117065
+      ]
+    ],
+    "Pets.PetType": [
+      [
+        "companion_animals.animal_category",
+        0.7479239106178284
+      ],
+      [
+        "pet_ownership.animal_key",
+        0.6450768709182739
+      ],
+      [
+        "pet_ownership.learner_key",
+        0.5888230800628662
+      ]
+    ],
+    "Pets.pet_age": [
+      [
+        "companion_animals.animal_age",
+        0.8524792194366455
+      ],
+      [
+        "pet_ownership.animal_key",
+        0.694857120513916
+      ],
+      [
+        "companion_animals.animal_key",
+        0.6578689217567444
+      ]
+    ],
+    "Pets.weight": [
+      [
+        "companion_animals.mass_value",
+        0.6586812734603882
+      ],
+      [
+        "pet_ownership.animal_key",
+        0.6474322080612183
+      ],
+      [
+        "companion_animals.animal_key",
+        0.5992149114608765
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Student": "learner",
+      "Has_Pet": "pet_ownership",
+      "Pets": "companion_animals"
+    },
+    "columns": {
+      "Student.StuID": "learner.learner_key",
+      "Student.LName": "learner.family_name",
+      "Student.Fname": "learner.given_name",
+      "Student.Age": "learner.years_old",
+      "Student.Sex": "learner.gender_category",
+      "Student.Major": "learner.Major",
+      "Student.Advisor": "learner.Advisor",
+      "Student.city_code": "learner.municipality_tag",
+      "Has_Pet.StuID": "pet_ownership.learner_key",
+      "Has_Pet.PetID": "pet_ownership.animal_key",
+      "Pets.PetID": "companion_animals.animal_key",
+      "Pets.PetType": "companion_animals.animal_category",
+      "Pets.pet_age": "companion_animals.animal_age",
+      "Pets.weight": "companion_animals.mass_value"
+    }
+  },
+  "q_B": {
+    "pets_1__challenge_v0__q0045": "SELECT COUNT(*) AS \"_col_0\" FROM \"companion_animals\" AS \"pets\" WHERE \"pets\".\"mass_value\" > 10",
+    "pets_1__challenge_v0__q0046": "SELECT COUNT(*) AS \"_col_0\" FROM \"companion_animals\" AS \"pets\" WHERE \"pets\".\"mass_value\" > 10",
+    "pets_1__challenge_v0__q0047": "SELECT \"pets\".\"mass_value\" AS \"weight\" FROM \"companion_animals\" AS \"pets\" ORDER BY \"pets\".\"animal_age\" LIMIT 1",
+    "pets_1__challenge_v0__q0048": "SELECT \"pets\".\"mass_value\" AS \"weight\" FROM \"companion_animals\" AS \"pets\" ORDER BY \"pets\".\"animal_age\" LIMIT 1",
+    "pets_1__challenge_v0__q0049": "SELECT MAX(\"pets\".\"mass_value\") AS \"_col_0\", \"pets\".\"animal_category\" AS \"pettype\" FROM \"companion_animals\" AS \"pets\" GROUP BY \"pets\".\"animal_category\"",
+    "pets_1__challenge_v0__q0050": "SELECT MAX(\"pets\".\"mass_value\") AS \"_col_0\", \"pets\".\"animal_category\" AS \"pettype\" FROM \"companion_animals\" AS \"pets\" GROUP BY \"pets\".\"animal_category\"",
+    "pets_1__challenge_v0__q0051": "SELECT COUNT(*) AS \"_col_0\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" WHERE \"t1\".\"years_old\" > 20",
+    "pets_1__challenge_v0__q0052": "SELECT COUNT(*) AS \"_col_0\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" WHERE \"t1\".\"years_old\" > 20",
+    "pets_1__challenge_v0__q0053": "SELECT COUNT(*) AS \"_col_0\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t2\".\"animal_key\" = \"t3\".\"animal_key\" WHERE \"t1\".\"gender_category\" = 'F' AND \"t3\".\"animal_category\" = 'dog'",
+    "pets_1__challenge_v0__q0054": "SELECT COUNT(*) AS \"_col_0\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t2\".\"animal_key\" = \"t3\".\"animal_key\" WHERE \"t1\".\"gender_category\" = 'F' AND \"t3\".\"animal_category\" = 'dog'",
+    "pets_1__challenge_v0__q0055": "SELECT COUNT(DISTINCT \"pets\".\"animal_category\") AS \"_col_0\" FROM \"companion_animals\" AS \"pets\"",
+    "pets_1__challenge_v0__q0056": "SELECT COUNT(DISTINCT \"pets\".\"animal_category\") AS \"_col_0\" FROM \"companion_animals\" AS \"pets\"",
+    "pets_1__challenge_v0__q0057": "SELECT DISTINCT \"t1\".\"given_name\" AS \"fname\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'cat' OR \"t3\".\"animal_category\" = 'dog'",
+    "pets_1__challenge_v0__q0058": "SELECT DISTINCT \"t1\".\"given_name\" AS \"fname\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'cat' OR \"t3\".\"animal_category\" = 'dog'",
+    "pets_1__challenge_v0__q0059": "SELECT \"t1\".\"given_name\" AS \"fname\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'cat' INTERSECT SELECT \"t1\".\"given_name\" AS \"fname\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'dog'",
+    "pets_1__challenge_v0__q0060": "SELECT \"t1\".\"given_name\" AS \"fname\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'cat' INTERSECT SELECT \"t1\".\"given_name\" AS \"fname\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'dog'",
+    "pets_1__challenge_v0__q0061": "SELECT \"student\".\"Major\" AS \"major\", \"student\".\"years_old\" AS \"age\" FROM \"learner\" AS \"student\" WHERE NOT \"student\".\"learner_key\" IN (SELECT \"t1\".\"learner_key\" AS \"stuid\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'cat')",
+    "pets_1__challenge_v0__q0062": "SELECT \"student\".\"Major\" AS \"major\", \"student\".\"years_old\" AS \"age\" FROM \"learner\" AS \"student\" WHERE NOT \"student\".\"learner_key\" IN (SELECT \"t1\".\"learner_key\" AS \"stuid\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'cat')",
+    "pets_1__challenge_v0__q0063": "SELECT \"student\".\"learner_key\" AS \"stuid\" FROM \"learner\" AS \"student\" EXCEPT SELECT \"t1\".\"learner_key\" AS \"stuid\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'cat'",
+    "pets_1__challenge_v0__q0064": "SELECT \"student\".\"learner_key\" AS \"stuid\" FROM \"learner\" AS \"student\" EXCEPT SELECT \"t1\".\"learner_key\" AS \"stuid\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'cat'",
+    "pets_1__challenge_v0__q0065": "SELECT \"t1\".\"given_name\" AS \"fname\", \"t1\".\"years_old\" AS \"age\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'dog' AND NOT \"t1\".\"learner_key\" IN (SELECT \"t1\".\"learner_key\" AS \"stuid\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'cat')",
+    "pets_1__challenge_v0__q0066": "SELECT \"t1\".\"given_name\" AS \"fname\", \"t1\".\"years_old\" AS \"age\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'dog' AND NOT \"t1\".\"learner_key\" IN (SELECT \"t1\".\"learner_key\" AS \"stuid\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_category\" = 'cat')",
+    "pets_1__challenge_v0__q0067": "SELECT \"pets\".\"animal_category\" AS \"pettype\", \"pets\".\"mass_value\" AS \"weight\" FROM \"companion_animals\" AS \"pets\" ORDER BY \"pets\".\"animal_age\" LIMIT 1",
+    "pets_1__challenge_v0__q0068": "SELECT \"pets\".\"animal_category\" AS \"pettype\", \"pets\".\"mass_value\" AS \"weight\" FROM \"companion_animals\" AS \"pets\" ORDER BY \"pets\".\"animal_age\" LIMIT 1",
+    "pets_1__challenge_v0__q0069": "SELECT \"pets\".\"animal_key\" AS \"petid\", \"pets\".\"mass_value\" AS \"weight\" FROM \"companion_animals\" AS \"pets\" WHERE \"pets\".\"animal_age\" > 1",
+    "pets_1__challenge_v0__q0070": "SELECT \"pets\".\"animal_key\" AS \"petid\", \"pets\".\"mass_value\" AS \"weight\" FROM \"companion_animals\" AS \"pets\" WHERE \"pets\".\"animal_age\" > 1",
+    "pets_1__challenge_v0__q0071": "SELECT AVG(\"pets\".\"animal_age\") AS \"_col_0\", MAX(\"pets\".\"animal_age\") AS \"_col_1\", \"pets\".\"animal_category\" AS \"pettype\" FROM \"companion_animals\" AS \"pets\" GROUP BY \"pets\".\"animal_category\"",
+    "pets_1__challenge_v0__q0072": "SELECT AVG(\"pets\".\"animal_age\") AS \"_col_0\", MAX(\"pets\".\"animal_age\") AS \"_col_1\", \"pets\".\"animal_category\" AS \"pettype\" FROM \"companion_animals\" AS \"pets\" GROUP BY \"pets\".\"animal_category\"",
+    "pets_1__challenge_v0__q0073": "SELECT AVG(\"pets\".\"mass_value\") AS \"_col_0\", \"pets\".\"animal_category\" AS \"pettype\" FROM \"companion_animals\" AS \"pets\" GROUP BY \"pets\".\"animal_category\"",
+    "pets_1__challenge_v0__q0074": "SELECT AVG(\"pets\".\"mass_value\") AS \"_col_0\", \"pets\".\"animal_category\" AS \"pettype\" FROM \"companion_animals\" AS \"pets\" GROUP BY \"pets\".\"animal_category\"",
+    "pets_1__challenge_v0__q0075": "SELECT DISTINCT \"t1\".\"given_name\" AS \"fname\", \"t1\".\"years_old\" AS \"age\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\"",
+    "pets_1__challenge_v0__q0076": "SELECT DISTINCT \"t1\".\"given_name\" AS \"fname\", \"t1\".\"years_old\" AS \"age\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\"",
+    "pets_1__challenge_v0__q0077": "SELECT \"t2\".\"animal_key\" AS \"petid\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" WHERE \"t1\".\"family_name\" = 'Smith'",
+    "pets_1__challenge_v0__q0078": "SELECT \"t2\".\"animal_key\" AS \"petid\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" WHERE \"t1\".\"family_name\" = 'Smith'",
+    "pets_1__challenge_v0__q0079": "SELECT COUNT(*) AS \"_col_0\", \"t1\".\"learner_key\" AS \"stuid\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" GROUP BY \"t1\".\"learner_key\"",
+    "pets_1__challenge_v0__q0080": "SELECT COUNT(*) AS \"_col_0\", \"t1\".\"learner_key\" AS \"stuid\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" GROUP BY \"t1\".\"learner_key\"",
+    "pets_1__challenge_v0__q0081": "SELECT \"t1\".\"given_name\" AS \"fname\", \"t1\".\"gender_category\" AS \"sex\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" GROUP BY \"t1\".\"learner_key\" HAVING COUNT(*) > 1",
+    "pets_1__challenge_v0__q0082": "SELECT \"t1\".\"given_name\" AS \"fname\", \"t1\".\"gender_category\" AS \"sex\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" GROUP BY \"t1\".\"learner_key\" HAVING COUNT(*) > 1",
+    "pets_1__challenge_v0__q0083": "SELECT \"t1\".\"family_name\" AS \"lname\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_age\" = 3 AND \"t3\".\"animal_category\" = 'cat'",
+    "pets_1__challenge_v0__q0084": "SELECT \"t1\".\"family_name\" AS \"lname\" FROM \"learner\" AS \"t1\" JOIN \"pet_ownership\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"learner_key\" JOIN \"companion_animals\" AS \"t3\" ON \"t3\".\"animal_key\" = \"t2\".\"animal_key\" WHERE \"t3\".\"animal_age\" = 3 AND \"t3\".\"animal_category\" = 'cat'",
+    "pets_1__challenge_v0__q0085": "SELECT AVG(\"student\".\"years_old\") AS \"_col_0\" FROM \"learner\" AS \"student\" WHERE NOT \"student\".\"learner_key\" IN (SELECT \"has_pet\".\"learner_key\" AS \"stuid\" FROM \"pet_ownership\" AS \"has_pet\")",
+    "pets_1__challenge_v0__q0086": "SELECT AVG(\"student\".\"years_old\") AS \"_col_0\" FROM \"learner\" AS \"student\" WHERE NOT \"student\".\"learner_key\" IN (SELECT \"has_pet\".\"learner_key\" AS \"stuid\" FROM \"pet_ownership\" AS \"has_pet\")"
+  },
+  "rewrite_errors": {},
+  "model": "<workspace>/models/spider-run-epoch1",
+  "method": "semantic"
+}

@@ -1,0 +1,769 @@
+{
+  "tables": {
+    "players": [
+      [
+        "competitors",
+        0.6196394562721252
+      ],
+      [
+        "standings",
+        0.6106594800949097
+      ],
+      [
+        "contests",
+        0.5837597250938416
+      ]
+    ],
+    "matches": [
+      [
+        "contests",
+        0.6090540885925293
+      ],
+      [
+        "standings",
+        0.5802234411239624
+      ],
+      [
+        "competitors",
+        0.5581339597702026
+      ]
+    ],
+    "rankings": [
+      [
+        "standings",
+        0.798390805721283
+      ],
+      [
+        "competitors",
+        0.6892309188842773
+      ],
+      [
+        "contests",
+        0.5523867607116699
+      ]
+    ]
+  },
+  "columns": {
+    "players.player_id": [
+      [
+        "standings.tours",
+        0.7444325089454651
+      ],
+      [
+        "standings.competitor_key",
+        0.7410999536514282
+      ],
+      [
+        "standings.standing_position",
+        0.7316566705703735
+      ]
+    ],
+    "players.first_name": [
+      [
+        "competitors.given_name",
+        0.7745022773742676
+      ],
+      [
+        "competitors.family_name",
+        0.7587346434593201
+      ],
+      [
+        "competitors.hand",
+        0.7555341720581055
+      ]
+    ],
+    "players.last_name": [
+      [
+        "competitors.given_name",
+        0.7672296762466431
+      ],
+      [
+        "competitors.hand",
+        0.752518355846405
+      ],
+      [
+        "competitors.family_name",
+        0.7503789663314819
+      ]
+    ],
+    "players.hand": [
+      [
+        "competitors.hand",
+        0.8199478983879089
+      ],
+      [
+        "contests.victor_hand",
+        0.7846152782440186
+      ],
+      [
+        "contests.defeated_hand",
+        0.7659640908241272
+      ]
+    ],
+    "players.birth_date": [
+      [
+        "contests.victor_age",
+        0.7499775886535645
+      ],
+      [
+        "contests.defeated_age",
+        0.7378109693527222
+      ],
+      [
+        "contests.competition_day",
+        0.7291426658630371
+      ]
+    ],
+    "players.country_code": [
+      [
+        "competitors.nation_tag",
+        0.7831388115882874
+      ],
+      [
+        "contests.victor_nation_tag",
+        0.7579859495162964
+      ],
+      [
+        "contests.competition_key",
+        0.7489306330680847
+      ]
+    ],
+    "matches.best_of": [
+      [
+        "competitors.competitor_key",
+        0.7698560953140259
+      ],
+      [
+        "contests.victor_key",
+        0.7646187543869019
+      ],
+      [
+        "competitors.given_name",
+        0.7530708312988281
+      ]
+    ],
+    "matches.draw_size": [
+      [
+        "contests.victor_stature",
+        0.751481294631958
+      ],
+      [
+        "contests.bracket_size",
+        0.7355838418006897
+      ],
+      [
+        "contests.defeated_stature",
+        0.7317116260528564
+      ]
+    ],
+    "matches.loser_age": [
+      [
+        "contests.defeated_age",
+        0.8437097072601318
+      ],
+      [
+        "contests.victor_age",
+        0.8343543410301208
+      ],
+      [
+        "contests.victor_stature",
+        0.777683675289154
+      ]
+    ],
+    "matches.loser_entry": [
+      [
+        "competitors.given_name",
+        0.8215519785881042
+      ],
+      [
+        "contests.competition_key",
+        0.8150833249092102
+      ],
+      [
+        "contests.competition_tier",
+        0.8079603910446167
+      ]
+    ],
+    "matches.loser_hand": [
+      [
+        "competitors.hand",
+        0.8440172672271729
+      ],
+      [
+        "contests.defeated_hand",
+        0.8411381244659424
+      ],
+      [
+        "contests.victor_hand",
+        0.835503101348877
+      ]
+    ],
+    "matches.loser_ht": [
+      [
+        "contests.defeated_key",
+        0.8085614442825317
+      ],
+      [
+        "contests.victor_key",
+        0.8003973960876465
+      ],
+      [
+        "contests.victor_position",
+        0.7972234487533569
+      ]
+    ],
+    "matches.loser_id": [
+      [
+        "contests.defeated_key",
+        0.8133034706115723
+      ],
+      [
+        "contests.victor_key",
+        0.8025288581848145
+      ],
+      [
+        "contests.victor_position",
+        0.7860066294670105
+      ]
+    ],
+    "matches.loser_ioc": [
+      [
+        "contests.competition_key",
+        0.813562273979187
+      ],
+      [
+        "contests.competition_tier",
+        0.8075771927833557
+      ],
+      [
+        "competitors.given_name",
+        0.8050123453140259
+      ]
+    ],
+    "matches.loser_name": [
+      [
+        "competitors.given_name",
+        0.8354638814926147
+      ],
+      [
+        "competitors.family_name",
+        0.8202592134475708
+      ],
+      [
+        "contests.competition_key",
+        0.7950450778007507
+      ]
+    ],
+    "matches.loser_rank": [
+      [
+        "standings.competitor_key",
+        0.8230564594268799
+      ],
+      [
+        "competitors.competitor_key",
+        0.8017247915267944
+      ],
+      [
+        "contests.defeated_position",
+        0.7898212671279907
+      ]
+    ],
+    "matches.loser_rank_points": [
+      [
+        "standings.competitor_key",
+        0.8184964656829834
+      ],
+      [
+        "contests.defeated_position_points",
+        0.7974886298179626
+      ],
+      [
+        "standings.standing_points",
+        0.7934701442718506
+      ]
+    ],
+    "matches.loser_seed": [
+      [
+        "contests.defeated_seed",
+        0.8411195874214172
+      ],
+      [
+        "contests.victor_seed",
+        0.8354935646057129
+      ],
+      [
+        "contests.defeated_key",
+        0.8035411834716797
+      ]
+    ],
+    "matches.match_num": [
+      [
+        "contests.victor_key",
+        0.7588600516319275
+      ],
+      [
+        "competitors.competitor_key",
+        0.758152961730957
+      ],
+      [
+        "contests.victor_stature",
+        0.7486839294433594
+      ]
+    ],
+    "matches.minutes": [
+      [
+        "contests.minutes",
+        0.8439642786979675
+      ],
+      [
+        "standings.standing_day",
+        0.7058629393577576
+      ],
+      [
+        "contests.competition_day",
+        0.7046647071838379
+      ]
+    ],
+    "matches.round": [
+      [
+        "contests.round",
+        0.8312284350395203
+      ],
+      [
+        "contests.points",
+        0.7369524240493774
+      ],
+      [
+        "contests.competition_key",
+        0.7365528345108032
+      ]
+    ],
+    "matches.score": [
+      [
+        "contests.competition_key",
+        0.838930070400238
+      ],
+      [
+        "contests.competition_tier",
+        0.8293498754501343
+      ],
+      [
+        "contests.points",
+        0.8232793807983398
+      ]
+    ],
+    "matches.surface": [
+      [
+        "contests.surface",
+        0.837489902973175
+      ],
+      [
+        "competitors.hand",
+        0.7731591463088989
+      ],
+      [
+        "competitors.given_name",
+        0.7632489204406738
+      ]
+    ],
+    "matches.tourney_date": [
+      [
+        "contests.competition_day",
+        0.8122329711914062
+      ],
+      [
+        "contests.calendar_annum",
+        0.766865611076355
+      ],
+      [
+        "standings.tours",
+        0.7650439739227295
+      ]
+    ],
+    "matches.tourney_id": [
+      [
+        "contests.competition_key",
+        0.8038517236709595
+      ],
+      [
+        "contests.competition_tier",
+        0.801855206489563
+      ],
+      [
+        "contests.competition_label",
+        0.7929773330688477
+      ]
+    ],
+    "matches.tourney_level": [
+      [
+        "contests.competition_tier",
+        0.8194013833999634
+      ],
+      [
+        "contests.competition_key",
+        0.8021777868270874
+      ],
+      [
+        "contests.points",
+        0.786731481552124
+      ]
+    ],
+    "matches.tourney_name": [
+      [
+        "contests.competition_key",
+        0.8079326152801514
+      ],
+      [
+        "contests.competition_tier",
+        0.8043942451477051
+      ],
+      [
+        "competitors.given_name",
+        0.8022239804267883
+      ]
+    ],
+    "matches.winner_age": [
+      [
+        "contests.victor_age",
+        0.8985244035720825
+      ],
+      [
+        "contests.defeated_age",
+        0.8980821371078491
+      ],
+      [
+        "contests.victor_stature",
+        0.8473800420761108
+      ]
+    ],
+    "matches.winner_entry": [
+      [
+        "contests.competition_key",
+        0.8911899328231812
+      ],
+      [
+        "contests.victor_entry_type",
+        0.8877718448638916
+      ],
+      [
+        "contests.defeated_entry_type",
+        0.8736562728881836
+      ]
+    ],
+    "matches.winner_hand": [
+      [
+        "contests.victor_hand",
+        0.9005849361419678
+      ],
+      [
+        "contests.defeated_hand",
+        0.898716926574707
+      ],
+      [
+        "contests.victor_entry_type",
+        0.8607210516929626
+      ]
+    ],
+    "matches.winner_ht": [
+      [
+        "contests.victor_key",
+        0.875679612159729
+      ],
+      [
+        "contests.victor_position",
+        0.8749947547912598
+      ],
+      [
+        "contests.defeated_key",
+        0.8739827871322632
+      ]
+    ],
+    "matches.winner_id": [
+      [
+        "contests.victor_key",
+        0.8783172965049744
+      ],
+      [
+        "contests.defeated_key",
+        0.8754998445510864
+      ],
+      [
+        "contests.victor_position",
+        0.8642888069152832
+      ]
+    ],
+    "matches.winner_ioc": [
+      [
+        "contests.competition_key",
+        0.8849181532859802
+      ],
+      [
+        "contests.victor_entry_type",
+        0.8825682401657104
+      ],
+      [
+        "contests.victor_hand",
+        0.876198410987854
+      ]
+    ],
+    "matches.winner_name": [
+      [
+        "contests.competition_key",
+        0.8772494196891785
+      ],
+      [
+        "contests.victor_entry_type",
+        0.8649907112121582
+      ],
+      [
+        "contests.victor_label",
+        0.8597592711448669
+      ]
+    ],
+    "matches.winner_rank": [
+      [
+        "contests.victor_position",
+        0.8591850996017456
+      ],
+      [
+        "contests.defeated_position",
+        0.8526199460029602
+      ],
+      [
+        "contests.defeated_key",
+        0.8497744798660278
+      ]
+    ],
+    "matches.winner_rank_points": [
+      [
+        "contests.victor_position_points",
+        0.8604741096496582
+      ],
+      [
+        "contests.defeated_position_points",
+        0.854416012763977
+      ],
+      [
+        "contests.victor_position",
+        0.8455226421356201
+      ]
+    ],
+    "matches.winner_seed": [
+      [
+        "contests.victor_seed",
+        0.8991650342941284
+      ],
+      [
+        "contests.defeated_seed",
+        0.8991596698760986
+      ],
+      [
+        "contests.defeated_key",
+        0.8685694932937622
+      ]
+    ],
+    "matches.year": [
+      [
+        "contests.calendar_annum",
+        0.7659292221069336
+      ],
+      [
+        "contests.victor_age",
+        0.7380679249763489
+      ],
+      [
+        "contests.competition_day",
+        0.7167556285858154
+      ]
+    ],
+    "rankings.ranking_date": [
+      [
+        "standings.tours",
+        0.8225754499435425
+      ],
+      [
+        "standings.standing_day",
+        0.8090980648994446
+      ],
+      [
+        "standings.competitor_key",
+        0.7940491437911987
+      ]
+    ],
+    "rankings.ranking": [
+      [
+        "standings.tours",
+        0.8606128692626953
+      ],
+      [
+        "standings.competitor_key",
+        0.8404697179794312
+      ],
+      [
+        "standings.standing_position",
+        0.8359277844429016
+      ]
+    ],
+    "rankings.player_id": [
+      [
+        "standings.competitor_key",
+        0.8085384368896484
+      ],
+      [
+        "standings.tours",
+        0.8041311502456665
+      ],
+      [
+        "standings.standing_position",
+        0.8008159399032593
+      ]
+    ],
+    "rankings.ranking_points": [
+      [
+        "standings.tours",
+        0.8648868203163147
+      ],
+      [
+        "standings.standing_points",
+        0.8576281070709229
+      ],
+      [
+        "standings.competitor_key",
+        0.8427265286445618
+      ]
+    ],
+    "rankings.tours": [
+      [
+        "standings.tours",
+        0.9385287761688232
+      ],
+      [
+        "standings.standing_position",
+        0.7841977477073669
+      ],
+      [
+        "standings.competitor_key",
+        0.7833900451660156
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "players": "competitors",
+      "matches": "contests",
+      "rankings": "standings"
+    },
+    "columns": {
+      "players.player_id": "competitors.competitor_key",
+      "players.first_name": "competitors.family_name",
+      "players.last_name": "competitors.given_name",
+      "players.hand": "competitors.hand",
+      "players.birth_date": "competitors.nativity_day",
+      "players.country_code": "competitors.nation_tag",
+      "matches.best_of": "contests.maximum_rounds",
+      "matches.draw_size": "contests.bracket_size",
+      "matches.loser_age": "contests.defeated_age",
+      "matches.loser_entry": "contests.defeated_entry_type",
+      "matches.loser_hand": "contests.defeated_hand",
+      "matches.loser_ht": "contests.victor_stature",
+      "matches.loser_id": "contests.defeated_key",
+      "matches.loser_ioc": "contests.defeated_nation_tag",
+      "matches.loser_name": "contests.defeated_label",
+      "matches.loser_rank": "contests.defeated_stature",
+      "matches.loser_rank_points": "contests.defeated_position_points",
+      "matches.loser_seed": "contests.defeated_seed",
+      "matches.match_num": "contests.contest_count",
+      "matches.minutes": "contests.minutes",
+      "matches.round": "contests.round",
+      "matches.score": "contests.competition_key",
+      "matches.surface": "contests.surface",
+      "matches.tourney_date": "contests.competition_day",
+      "matches.tourney_id": "contests.points",
+      "matches.tourney_level": "contests.competition_tier",
+      "matches.tourney_name": "contests.competition_label",
+      "matches.winner_age": "contests.victor_age",
+      "matches.winner_entry": "contests.victor_entry_type",
+      "matches.winner_hand": "contests.victor_hand",
+      "matches.winner_ht": "contests.victor_position",
+      "matches.winner_id": "contests.victor_key",
+      "matches.winner_ioc": "contests.victor_nation_tag",
+      "matches.winner_name": "contests.victor_label",
+      "matches.winner_rank": "contests.defeated_position",
+      "matches.winner_rank_points": "contests.victor_position_points",
+      "matches.winner_seed": "contests.victor_seed",
+      "matches.year": "contests.calendar_annum",
+      "rankings.ranking_date": "standings.standing_day",
+      "rankings.ranking": "standings.standing_position",
+      "rankings.player_id": "standings.competitor_key",
+      "rankings.ranking_points": "standings.standing_points",
+      "rankings.tours": "standings.tours"
+    }
+  },
+  "q_B": {
+    "wta_1__challenge_v0__q0429": "SELECT COUNT(*) AS \"_col_0\" FROM \"competitors\" AS \"players\"",
+    "wta_1__challenge_v0__q0430": "SELECT COUNT(*) AS \"_col_0\" FROM \"competitors\" AS \"players\"",
+    "wta_1__challenge_v0__q0431": "SELECT COUNT(*) AS \"_col_0\" FROM \"contests\" AS \"matches\"",
+    "wta_1__challenge_v0__q0432": "SELECT COUNT(*) AS \"_col_0\" FROM \"contests\" AS \"matches\"",
+    "wta_1__challenge_v0__q0433": "SELECT \"players\".\"family_name\" AS \"first_name\", \"players\".\"nativity_day\" AS \"birth_date\" FROM \"competitors\" AS \"players\" WHERE \"players\".\"nation_tag\" = 'USA'",
+    "wta_1__challenge_v0__q0434": "SELECT \"players\".\"family_name\" AS \"first_name\", \"players\".\"nativity_day\" AS \"birth_date\" FROM \"competitors\" AS \"players\" WHERE \"players\".\"nation_tag\" = 'USA'",
+    "wta_1__challenge_v0__q0435": "SELECT AVG(\"matches\".\"defeated_age\") AS \"_col_0\", AVG(\"matches\".\"victor_age\") AS \"_col_1\" FROM \"contests\" AS \"matches\"",
+    "wta_1__challenge_v0__q0436": "SELECT AVG(\"matches\".\"defeated_age\") AS \"_col_0\", AVG(\"matches\".\"victor_age\") AS \"_col_1\" FROM \"contests\" AS \"matches\"",
+    "wta_1__challenge_v0__q0437": "SELECT AVG(\"matches\".\"defeated_position\") AS \"_col_0\" FROM \"contests\" AS \"matches\"",
+    "wta_1__challenge_v0__q0438": "SELECT AVG(\"matches\".\"defeated_position\") AS \"_col_0\" FROM \"contests\" AS \"matches\"",
+    "wta_1__challenge_v0__q0439": "SELECT MIN(\"matches\".\"defeated_stature\") AS \"_col_0\" FROM \"contests\" AS \"matches\"",
+    "wta_1__challenge_v0__q0440": "SELECT MIN(\"matches\".\"defeated_stature\") AS \"_col_0\" FROM \"contests\" AS \"matches\"",
+    "wta_1__challenge_v0__q0441": "SELECT COUNT(DISTINCT \"players\".\"nation_tag\") AS \"_col_0\" FROM \"competitors\" AS \"players\"",
+    "wta_1__challenge_v0__q0442": "SELECT COUNT(DISTINCT \"players\".\"nation_tag\") AS \"_col_0\" FROM \"competitors\" AS \"players\"",
+    "wta_1__challenge_v0__q0443": "SELECT COUNT(DISTINCT \"matches\".\"defeated_label\") AS \"_col_0\" FROM \"contests\" AS \"matches\"",
+    "wta_1__challenge_v0__q0444": "SELECT COUNT(DISTINCT \"matches\".\"defeated_label\") AS \"_col_0\" FROM \"contests\" AS \"matches\"",
+    "wta_1__challenge_v0__q0445": "SELECT \"matches\".\"competition_label\" AS \"tourney_name\" FROM \"contests\" AS \"matches\" GROUP BY \"matches\".\"competition_label\" HAVING COUNT(*) > 10",
+    "wta_1__challenge_v0__q0446": "SELECT \"matches\".\"competition_label\" AS \"tourney_name\" FROM \"contests\" AS \"matches\" GROUP BY \"matches\".\"competition_label\" HAVING COUNT(*) > 10",
+    "wta_1__challenge_v0__q0447": "SELECT \"matches\".\"victor_label\" AS \"winner_name\" FROM \"contests\" AS \"matches\" WHERE \"matches\".\"calendar_annum\" = 2013 INTERSECT SELECT \"matches\".\"victor_label\" AS \"winner_name\" FROM \"contests\" AS \"matches\" WHERE \"matches\".\"calendar_annum\" = 2016",
+    "wta_1__challenge_v0__q0448": "SELECT \"matches\".\"victor_label\" AS \"winner_name\" FROM \"contests\" AS \"matches\" WHERE \"matches\".\"calendar_annum\" = 2013 INTERSECT SELECT \"matches\".\"victor_label\" AS \"winner_name\" FROM \"contests\" AS \"matches\" WHERE \"matches\".\"calendar_annum\" = 2016",
+    "wta_1__challenge_v0__q0449": "SELECT COUNT(*) AS \"_col_0\" FROM \"contests\" AS \"matches\" WHERE \"matches\".\"calendar_annum\" = 2013 OR \"matches\".\"calendar_annum\" = 2016",
+    "wta_1__challenge_v0__q0450": "SELECT COUNT(*) AS \"_col_0\" FROM \"contests\" AS \"matches\" WHERE \"matches\".\"calendar_annum\" = 2013 OR \"matches\".\"calendar_annum\" = 2016",
+    "wta_1__challenge_v0__q0451": "SELECT \"t1\".\"nation_tag\" AS \"country_code\", \"t1\".\"family_name\" AS \"first_name\" FROM \"competitors\" AS \"t1\" JOIN \"contests\" AS \"t2\" ON \"t1\".\"competitor_key\" = \"t2\".\"victor_key\" WHERE \"t2\".\"competition_label\" = 'WTA Championships' INTERSECT SELECT \"t1\".\"nation_tag\" AS \"country_code\", \"t1\".\"family_name\" AS \"first_name\" FROM \"competitors\" AS \"t1\" JOIN \"contests\" AS \"t2\" ON \"t1\".\"competitor_key\" = \"t2\".\"victor_key\" WHERE \"t2\".\"competition_label\" = 'Australian Open'",
+    "wta_1__challenge_v0__q0452": "SELECT \"t1\".\"nation_tag\" AS \"country_code\", \"t1\".\"family_name\" AS \"first_name\" FROM \"competitors\" AS \"t1\" JOIN \"contests\" AS \"t2\" ON \"t1\".\"competitor_key\" = \"t2\".\"victor_key\" WHERE \"t2\".\"competition_label\" = 'WTA Championships' INTERSECT SELECT \"t1\".\"nation_tag\" AS \"country_code\", \"t1\".\"family_name\" AS \"first_name\" FROM \"competitors\" AS \"t1\" JOIN \"contests\" AS \"t2\" ON \"t1\".\"competitor_key\" = \"t2\".\"victor_key\" WHERE \"t2\".\"competition_label\" = 'Australian Open'",
+    "wta_1__challenge_v0__q0453": "SELECT \"players\".\"family_name\" AS \"first_name\", \"players\".\"nation_tag\" AS \"country_code\" FROM \"competitors\" AS \"players\" ORDER BY \"players\".\"nativity_day\" LIMIT 1",
+    "wta_1__challenge_v0__q0454": "SELECT \"players\".\"family_name\" AS \"first_name\", \"players\".\"nation_tag\" AS \"country_code\" FROM \"competitors\" AS \"players\" ORDER BY \"players\".\"nativity_day\" LIMIT 1",
+    "wta_1__challenge_v0__q0455": "SELECT \"players\".\"family_name\" AS \"first_name\", \"players\".\"given_name\" AS \"last_name\" FROM \"competitors\" AS \"players\" ORDER BY \"players\".\"nativity_day\"",
+    "wta_1__challenge_v0__q0456": "SELECT \"players\".\"family_name\" AS \"first_name\", \"players\".\"given_name\" AS \"last_name\" FROM \"competitors\" AS \"players\" ORDER BY \"players\".\"nativity_day\"",
+    "wta_1__challenge_v0__q0457": "SELECT \"players\".\"family_name\" AS \"first_name\", \"players\".\"given_name\" AS \"last_name\" FROM \"competitors\" AS \"players\" WHERE \"players\".\"hand\" = 'L' ORDER BY \"players\".\"nativity_day\"",
+    "wta_1__challenge_v0__q0458": "SELECT \"players\".\"family_name\" AS \"first_name\", \"players\".\"given_name\" AS \"last_name\" FROM \"competitors\" AS \"players\" WHERE \"players\".\"hand\" = 'L' ORDER BY \"players\".\"nativity_day\"",
+    "wta_1__challenge_v0__q0459": "SELECT \"t1\".\"nation_tag\" AS \"country_code\", \"t1\".\"family_name\" AS \"first_name\" FROM \"competitors\" AS \"t1\" JOIN \"standings\" AS \"t2\" ON \"t1\".\"competitor_key\" = \"t2\".\"competitor_key\" ORDER BY \"t2\".\"tours\" DESC LIMIT 1",
+    "wta_1__challenge_v0__q0460": "SELECT \"t1\".\"nation_tag\" AS \"country_code\", \"t1\".\"family_name\" AS \"first_name\" FROM \"competitors\" AS \"t1\" JOIN \"standings\" AS \"t2\" ON \"t1\".\"competitor_key\" = \"t2\".\"competitor_key\" ORDER BY \"t2\".\"tours\" DESC LIMIT 1",
+    "wta_1__challenge_v0__q0461": "SELECT \"matches\".\"calendar_annum\" AS \"year\" FROM \"contests\" AS \"matches\" GROUP BY \"matches\".\"calendar_annum\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "wta_1__challenge_v0__q0462": "SELECT \"matches\".\"calendar_annum\" AS \"year\" FROM \"contests\" AS \"matches\" GROUP BY \"matches\".\"calendar_annum\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "wta_1__challenge_v0__q0463": "SELECT \"matches\".\"victor_label\" AS \"winner_name\", \"matches\".\"victor_position_points\" AS \"winner_rank_points\" FROM \"contests\" AS \"matches\" GROUP BY \"matches\".\"victor_label\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "wta_1__challenge_v0__q0464": "SELECT \"matches\".\"victor_label\" AS \"winner_name\", \"matches\".\"victor_position_points\" AS \"winner_rank_points\" FROM \"contests\" AS \"matches\" GROUP BY \"matches\".\"victor_label\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "wta_1__challenge_v0__q0465": "SELECT \"matches\".\"victor_label\" AS \"winner_name\" FROM \"contests\" AS \"matches\" WHERE \"matches\".\"competition_label\" = 'Australian Open' ORDER BY \"matches\".\"victor_position_points\" DESC LIMIT 1",
+    "wta_1__challenge_v0__q0466": "SELECT \"matches\".\"victor_label\" AS \"winner_name\" FROM \"contests\" AS \"matches\" WHERE \"matches\".\"competition_label\" = 'Australian Open' ORDER BY \"matches\".\"victor_position_points\" DESC LIMIT 1",
+    "wta_1__challenge_v0__q0467": "SELECT \"matches\".\"victor_label\" AS \"winner_name\", \"matches\".\"defeated_label\" AS \"loser_name\" FROM \"contests\" AS \"matches\" ORDER BY \"matches\".\"minutes\" DESC LIMIT 1",
+    "wta_1__challenge_v0__q0468": "SELECT \"matches\".\"victor_label\" AS \"winner_name\", \"matches\".\"defeated_label\" AS \"loser_name\" FROM \"contests\" AS \"matches\" ORDER BY \"matches\".\"minutes\" DESC LIMIT 1",
+    "wta_1__challenge_v0__q0469": "SELECT AVG(\"t2\".\"standing_position\") AS \"_col_0\", \"t1\".\"family_name\" AS \"first_name\" FROM \"competitors\" AS \"t1\" JOIN \"standings\" AS \"t2\" ON \"t1\".\"competitor_key\" = \"t2\".\"competitor_key\" GROUP BY \"t1\".\"family_name\"",
+    "wta_1__challenge_v0__q0470": "SELECT AVG(\"t2\".\"standing_position\") AS \"_col_0\", \"t1\".\"family_name\" AS \"first_name\" FROM \"competitors\" AS \"t1\" JOIN \"standings\" AS \"t2\" ON \"t1\".\"competitor_key\" = \"t2\".\"competitor_key\" GROUP BY \"t1\".\"family_name\"",
+    "wta_1__challenge_v0__q0471": "SELECT SUM(\"t2\".\"standing_points\") AS \"_col_0\", \"t1\".\"family_name\" AS \"first_name\" FROM \"competitors\" AS \"t1\" JOIN \"standings\" AS \"t2\" ON \"t1\".\"competitor_key\" = \"t2\".\"competitor_key\" GROUP BY \"t1\".\"family_name\"",
+    "wta_1__challenge_v0__q0472": "SELECT SUM(\"t2\".\"standing_points\") AS \"_col_0\", \"t1\".\"family_name\" AS \"first_name\" FROM \"competitors\" AS \"t1\" JOIN \"standings\" AS \"t2\" ON \"t1\".\"competitor_key\" = \"t2\".\"competitor_key\" GROUP BY \"t1\".\"family_name\"",
+    "wta_1__challenge_v0__q0473": "SELECT COUNT(*) AS \"_col_0\", \"players\".\"nation_tag\" AS \"country_code\" FROM \"competitors\" AS \"players\" GROUP BY \"players\".\"nation_tag\"",
+    "wta_1__challenge_v0__q0474": "SELECT COUNT(*) AS \"_col_0\", \"players\".\"nation_tag\" AS \"country_code\" FROM \"competitors\" AS \"players\" GROUP BY \"players\".\"nation_tag\"",
+    "wta_1__challenge_v0__q0475": "SELECT \"players\".\"nation_tag\" AS \"country_code\" FROM \"competitors\" AS \"players\" GROUP BY \"players\".\"nation_tag\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "wta_1__challenge_v0__q0476": "SELECT \"players\".\"nation_tag\" AS \"country_code\" FROM \"competitors\" AS \"players\" GROUP BY \"players\".\"nation_tag\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "wta_1__challenge_v0__q0477": "SELECT \"players\".\"nation_tag\" AS \"country_code\" FROM \"competitors\" AS \"players\" GROUP BY \"players\".\"nation_tag\" HAVING COUNT(*) > 50",
+    "wta_1__challenge_v0__q0478": "SELECT \"players\".\"nation_tag\" AS \"country_code\" FROM \"competitors\" AS \"players\" GROUP BY \"players\".\"nation_tag\" HAVING COUNT(*) > 50",
+    "wta_1__challenge_v0__q0479": "SELECT SUM(\"rankings\".\"tours\") AS \"_col_0\", \"rankings\".\"standing_day\" AS \"ranking_date\" FROM \"standings\" AS \"rankings\" GROUP BY \"rankings\".\"standing_day\"",
+    "wta_1__challenge_v0__q0480": "SELECT SUM(\"rankings\".\"tours\") AS \"_col_0\", \"rankings\".\"standing_day\" AS \"ranking_date\" FROM \"standings\" AS \"rankings\" GROUP BY \"rankings\".\"standing_day\"",
+    "wta_1__challenge_v0__q0481": "SELECT COUNT(*) AS \"_col_0\", \"matches\".\"calendar_annum\" AS \"year\" FROM \"contests\" AS \"matches\" GROUP BY \"matches\".\"calendar_annum\"",
+    "wta_1__challenge_v0__q0482": "SELECT COUNT(*) AS \"_col_0\", \"matches\".\"calendar_annum\" AS \"year\" FROM \"contests\" AS \"matches\" GROUP BY \"matches\".\"calendar_annum\"",
+    "wta_1__challenge_v0__q0483": "SELECT DISTINCT \"matches\".\"victor_label\" AS \"winner_name\", \"matches\".\"defeated_position\" AS \"winner_rank\" FROM \"contests\" AS \"matches\" ORDER BY \"matches\".\"victor_age\" LIMIT 3",
+    "wta_1__challenge_v0__q0484": "SELECT DISTINCT \"matches\".\"victor_label\" AS \"winner_name\", \"matches\".\"defeated_position\" AS \"winner_rank\" FROM \"contests\" AS \"matches\" ORDER BY \"matches\".\"victor_age\" LIMIT 3",
+    "wta_1__challenge_v0__q0485": "SELECT COUNT(DISTINCT \"matches\".\"victor_label\") AS \"_col_0\" FROM \"contests\" AS \"matches\" WHERE \"matches\".\"competition_label\" = 'WTA Championships' AND \"matches\".\"victor_hand\" = 'L'",
+    "wta_1__challenge_v0__q0486": "SELECT COUNT(DISTINCT \"matches\".\"victor_label\") AS \"_col_0\" FROM \"contests\" AS \"matches\" WHERE \"matches\".\"competition_label\" = 'WTA Championships' AND \"matches\".\"victor_hand\" = 'L'",
+    "wta_1__challenge_v0__q0487": "SELECT \"t1\".\"family_name\" AS \"first_name\", \"t1\".\"nation_tag\" AS \"country_code\", \"t1\".\"nativity_day\" AS \"birth_date\" FROM \"competitors\" AS \"t1\" JOIN \"contests\" AS \"t2\" ON \"t1\".\"competitor_key\" = \"t2\".\"victor_key\" ORDER BY \"t2\".\"victor_position_points\" DESC LIMIT 1",
+    "wta_1__challenge_v0__q0488": "SELECT \"t1\".\"family_name\" AS \"first_name\", \"t1\".\"nation_tag\" AS \"country_code\", \"t1\".\"nativity_day\" AS \"birth_date\" FROM \"competitors\" AS \"t1\" JOIN \"contests\" AS \"t2\" ON \"t1\".\"competitor_key\" = \"t2\".\"victor_key\" ORDER BY \"t2\".\"victor_position_points\" DESC LIMIT 1",
+    "wta_1__challenge_v0__q0489": "SELECT COUNT(*) AS \"_col_0\", \"players\".\"hand\" AS \"hand\" FROM \"competitors\" AS \"players\" GROUP BY \"players\".\"hand\"",
+    "wta_1__challenge_v0__q0490": "SELECT COUNT(*) AS \"_col_0\", \"players\".\"hand\" AS \"hand\" FROM \"competitors\" AS \"players\" GROUP BY \"players\".\"hand\""
+  },
+  "rewrite_errors": {},
+  "model": "all-MiniLM-L6-v2",
+  "method": "semantic"
+}

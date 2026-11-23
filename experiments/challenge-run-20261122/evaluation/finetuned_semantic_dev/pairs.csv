@@ -1,0 +1,4 @@
+method,pair_id,base_db_id,perturbation,table_correct,table_total,changed_table_correct,changed_table_total,column_correct,column_total,changed_column_correct,changed_column_total,mapping_error,inference_seconds
+saved,battle_death__challenge_v0,battle_death,challenge_semantic_table_and_column_rename,3,3,3,3,18,18,18,18,,0.00028233400007593445
+saved,car_1__challenge_v0,car_1,challenge_semantic_table_and_column_rename,6,6,6,6,21,23,21,23,,0.00045974999738973565
+saved,dog_kennels__challenge_v0,dog_kennels,challenge_semantic_table_and_column_rename,8,8,8,8,45,49,45,49,,0.0005550839996431023

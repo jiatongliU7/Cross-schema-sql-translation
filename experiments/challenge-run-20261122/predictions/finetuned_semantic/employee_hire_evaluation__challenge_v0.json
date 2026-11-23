@@ -1,0 +1,370 @@
+{
+  "tables": {
+    "employee": [
+      [
+        "staff_member",
+        0.710965633392334
+      ],
+      [
+        "recruitment",
+        0.5007531642913818
+      ],
+      [
+        "retail_outlet",
+        0.41889190673828125
+      ]
+    ],
+    "shop": [
+      [
+        "retail_outlet",
+        0.7017401456832886
+      ],
+      [
+        "staff_member",
+        0.34396350383758545
+      ],
+      [
+        "recruitment",
+        0.33518558740615845
+      ]
+    ],
+    "hiring": [
+      [
+        "recruitment",
+        0.7608147859573364
+      ],
+      [
+        "staff_member",
+        0.4330871105194092
+      ],
+      [
+        "retail_outlet",
+        0.3814178705215454
+      ]
+    ],
+    "evaluation": [
+      [
+        "assessment",
+        0.7226781845092773
+      ],
+      [
+        "recruitment",
+        0.4098449945449829
+      ],
+      [
+        "staff_member",
+        0.3853602409362793
+      ]
+    ]
+  },
+  "columns": {
+    "employee.Employee_ID": [
+      [
+        "staff_member.staff_key",
+        0.6948227286338806
+      ],
+      [
+        "recruitment.staff_key",
+        0.6159300208091736
+      ],
+      [
+        "staff_member.years_old",
+        0.5388501286506653
+      ]
+    ],
+    "employee.Name": [
+      [
+        "staff_member.municipality",
+        0.591260552406311
+      ],
+      [
+        "staff_member.label",
+        0.5618072152137756
+      ],
+      [
+        "assessment.staff_key",
+        0.4213014841079712
+      ]
+    ],
+    "employee.Age": [
+      [
+        "staff_member.years_old",
+        0.7504566311836243
+      ],
+      [
+        "recruitment.staff_key",
+        0.5689073801040649
+      ],
+      [
+        "staff_member.staff_key",
+        0.5411648750305176
+      ]
+    ],
+    "employee.City": [
+      [
+        "staff_member.municipality",
+        0.709286093711853
+      ],
+      [
+        "retail_outlet.District",
+        0.5028973817825317
+      ],
+      [
+        "retail_outlet.manager_label",
+        0.44444912672042847
+      ]
+    ],
+    "shop.Shop_ID": [
+      [
+        "retail_outlet.outlet_key",
+        0.5928284525871277
+      ],
+      [
+        "retail_outlet.count_products",
+        0.5756953358650208
+      ],
+      [
+        "retail_outlet.site",
+        0.39708831906318665
+      ]
+    ],
+    "shop.Name": [
+      [
+        "retail_outlet.label",
+        0.5329844951629639
+      ],
+      [
+        "retail_outlet.manager_label",
+        0.48722323775291443
+      ],
+      [
+        "retail_outlet.site",
+        0.484109103679657
+      ]
+    ],
+    "shop.Location": [
+      [
+        "retail_outlet.District",
+        0.6236706972122192
+      ],
+      [
+        "retail_outlet.site",
+        0.6049515604972839
+      ],
+      [
+        "retail_outlet.label",
+        0.5519853830337524
+      ]
+    ],
+    "shop.District": [
+      [
+        "retail_outlet.District",
+        0.8320732116699219
+      ],
+      [
+        "retail_outlet.site",
+        0.5443310737609863
+      ],
+      [
+        "retail_outlet.label",
+        0.5096814036369324
+      ]
+    ],
+    "shop.Number_products": [
+      [
+        "retail_outlet.count_products",
+        0.7386924028396606
+      ],
+      [
+        "retail_outlet.outlet_key",
+        0.5882948637008667
+      ],
+      [
+        "retail_outlet.label",
+        0.3573746681213379
+      ]
+    ],
+    "shop.Manager_name": [
+      [
+        "retail_outlet.manager_label",
+        0.6602413654327393
+      ],
+      [
+        "retail_outlet.label",
+        0.5367498993873596
+      ],
+      [
+        "retail_outlet.District",
+        0.5079010128974915
+      ]
+    ],
+    "hiring.Shop_ID": [
+      [
+        "retail_outlet.outlet_key",
+        0.5481427907943726
+      ],
+      [
+        "recruitment.outlet_key",
+        0.5158456563949585
+      ],
+      [
+        "recruitment.staff_key",
+        0.5012288689613342
+      ]
+    ],
+    "hiring.Employee_ID": [
+      [
+        "recruitment.staff_key",
+        0.7542144060134888
+      ],
+      [
+        "recruitment.outlet_key",
+        0.653605580329895
+      ],
+      [
+        "staff_member.staff_key",
+        0.5820353031158447
+      ]
+    ],
+    "hiring.Start_from": [
+      [
+        "recruitment.Start_from",
+        0.7934900522232056
+      ],
+      [
+        "recruitment.staff_key",
+        0.4330253005027771
+      ],
+      [
+        "recruitment.outlet_key",
+        0.4229845404624939
+      ]
+    ],
+    "hiring.Is_full_time": [
+      [
+        "recruitment.full_schedule_flag",
+        0.6753991842269897
+      ],
+      [
+        "recruitment.staff_key",
+        0.6042951941490173
+      ],
+      [
+        "recruitment.outlet_key",
+        0.5581121444702148
+      ]
+    ],
+    "evaluation.Employee_ID": [
+      [
+        "assessment.staff_key",
+        0.638142466545105
+      ],
+      [
+        "staff_member.municipality",
+        0.5277076959609985
+      ],
+      [
+        "staff_member.label",
+        0.486784428358078
+      ]
+    ],
+    "evaluation.Year_awarded": [
+      [
+        "assessment.annum_awarded",
+        0.655924916267395
+      ],
+      [
+        "assessment.Bonus",
+        0.40106385946273804
+      ],
+      [
+        "assessment.staff_key",
+        0.3823944330215454
+      ]
+    ],
+    "evaluation.Bonus": [
+      [
+        "assessment.Bonus",
+        0.8230041265487671
+      ],
+      [
+        "assessment.annum_awarded",
+        0.42952919006347656
+      ],
+      [
+        "recruitment.outlet_key",
+        0.4166320562362671
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "employee": "staff_member",
+      "shop": "retail_outlet",
+      "hiring": "recruitment",
+      "evaluation": "assessment"
+    },
+    "columns": {
+      "employee.Employee_ID": "staff_member.staff_key",
+      "employee.Name": "staff_member.label",
+      "employee.Age": "staff_member.years_old",
+      "employee.City": "staff_member.municipality",
+      "shop.Shop_ID": "retail_outlet.outlet_key",
+      "shop.Name": "retail_outlet.label",
+      "shop.Location": "retail_outlet.site",
+      "shop.District": "retail_outlet.District",
+      "shop.Number_products": "retail_outlet.count_products",
+      "shop.Manager_name": "retail_outlet.manager_label",
+      "hiring.Shop_ID": "recruitment.outlet_key",
+      "hiring.Employee_ID": "recruitment.staff_key",
+      "hiring.Start_from": "recruitment.Start_from",
+      "hiring.Is_full_time": "recruitment.full_schedule_flag",
+      "evaluation.Employee_ID": "assessment.staff_key",
+      "evaluation.Year_awarded": "assessment.annum_awarded",
+      "evaluation.Bonus": "assessment.Bonus"
+    }
+  },
+  "q_B": {
+    "employee_hire_evaluation__challenge_v0__q0259": "SELECT COUNT(*) AS \"_col_0\" FROM \"staff_member\" AS \"employee\"",
+    "employee_hire_evaluation__challenge_v0__q0260": "SELECT COUNT(*) AS \"_col_0\" FROM \"staff_member\" AS \"employee\"",
+    "employee_hire_evaluation__challenge_v0__q0261": "SELECT \"employee\".\"label\" AS \"name\" FROM \"staff_member\" AS \"employee\" ORDER BY \"employee\".\"years_old\"",
+    "employee_hire_evaluation__challenge_v0__q0262": "SELECT \"employee\".\"label\" AS \"name\" FROM \"staff_member\" AS \"employee\" ORDER BY \"employee\".\"years_old\"",
+    "employee_hire_evaluation__challenge_v0__q0263": "SELECT COUNT(*) AS \"_col_0\", \"employee\".\"municipality\" AS \"city\" FROM \"staff_member\" AS \"employee\" GROUP BY \"employee\".\"municipality\"",
+    "employee_hire_evaluation__challenge_v0__q0264": "SELECT COUNT(*) AS \"_col_0\", \"employee\".\"municipality\" AS \"city\" FROM \"staff_member\" AS \"employee\" GROUP BY \"employee\".\"municipality\"",
+    "employee_hire_evaluation__challenge_v0__q0265": "SELECT \"employee\".\"municipality\" AS \"city\" FROM \"staff_member\" AS \"employee\" WHERE \"employee\".\"years_old\" < 30 GROUP BY \"employee\".\"municipality\" HAVING COUNT(*) > 1",
+    "employee_hire_evaluation__challenge_v0__q0266": "SELECT \"employee\".\"municipality\" AS \"city\" FROM \"staff_member\" AS \"employee\" WHERE \"employee\".\"years_old\" < 30 GROUP BY \"employee\".\"municipality\" HAVING COUNT(*) > 1",
+    "employee_hire_evaluation__challenge_v0__q0267": "SELECT COUNT(*) AS \"_col_0\", \"shop\".\"site\" AS \"location\" FROM \"retail_outlet\" AS \"shop\" GROUP BY \"shop\".\"site\"",
+    "employee_hire_evaluation__challenge_v0__q0268": "SELECT COUNT(*) AS \"_col_0\", \"shop\".\"site\" AS \"location\" FROM \"retail_outlet\" AS \"shop\" GROUP BY \"shop\".\"site\"",
+    "employee_hire_evaluation__challenge_v0__q0269": "SELECT \"shop\".\"manager_label\" AS \"manager_name\", \"shop\".\"District\" AS \"district\" FROM \"retail_outlet\" AS \"shop\" ORDER BY \"shop\".\"count_products\" DESC LIMIT 1",
+    "employee_hire_evaluation__challenge_v0__q0270": "SELECT \"shop\".\"manager_label\" AS \"manager_name\", \"shop\".\"District\" AS \"district\" FROM \"retail_outlet\" AS \"shop\" ORDER BY \"shop\".\"count_products\" DESC LIMIT 1",
+    "employee_hire_evaluation__challenge_v0__q0271": "SELECT MIN(\"shop\".\"count_products\") AS \"_col_0\", MAX(\"shop\".\"count_products\") AS \"_col_1\" FROM \"retail_outlet\" AS \"shop\"",
+    "employee_hire_evaluation__challenge_v0__q0272": "SELECT MIN(\"shop\".\"count_products\") AS \"_col_0\", MAX(\"shop\".\"count_products\") AS \"_col_1\" FROM \"retail_outlet\" AS \"shop\"",
+    "employee_hire_evaluation__challenge_v0__q0273": "SELECT \"shop\".\"label\" AS \"name\", \"shop\".\"site\" AS \"location\", \"shop\".\"District\" AS \"district\" FROM \"retail_outlet\" AS \"shop\" ORDER BY \"shop\".\"count_products\" DESC",
+    "employee_hire_evaluation__challenge_v0__q0274": "SELECT \"shop\".\"label\" AS \"name\", \"shop\".\"site\" AS \"location\", \"shop\".\"District\" AS \"district\" FROM \"retail_outlet\" AS \"shop\" ORDER BY \"shop\".\"count_products\" DESC",
+    "employee_hire_evaluation__challenge_v0__q0275": "SELECT \"shop\".\"label\" AS \"name\" FROM \"retail_outlet\" AS \"shop\" WHERE \"shop\".\"count_products\" > (SELECT AVG(\"shop\".\"count_products\") AS \"_col_0\" FROM \"retail_outlet\" AS \"shop\")",
+    "employee_hire_evaluation__challenge_v0__q0276": "SELECT \"shop\".\"label\" AS \"name\" FROM \"retail_outlet\" AS \"shop\" WHERE \"shop\".\"count_products\" > (SELECT AVG(\"shop\".\"count_products\") AS \"_col_0\" FROM \"retail_outlet\" AS \"shop\")",
+    "employee_hire_evaluation__challenge_v0__q0277": "SELECT \"t1\".\"label\" AS \"name\" FROM \"staff_member\" AS \"t1\" JOIN \"assessment\" AS \"t2\" ON \"t1\".\"staff_key\" = \"t2\".\"staff_key\" GROUP BY \"t2\".\"staff_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "employee_hire_evaluation__challenge_v0__q0278": "SELECT \"t1\".\"label\" AS \"name\" FROM \"staff_member\" AS \"t1\" JOIN \"assessment\" AS \"t2\" ON \"t1\".\"staff_key\" = \"t2\".\"staff_key\" GROUP BY \"t2\".\"staff_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "employee_hire_evaluation__challenge_v0__q0279": "SELECT \"t1\".\"label\" AS \"name\" FROM \"staff_member\" AS \"t1\" JOIN \"assessment\" AS \"t2\" ON \"t1\".\"staff_key\" = \"t2\".\"staff_key\" ORDER BY \"t2\".\"Bonus\" DESC LIMIT 1",
+    "employee_hire_evaluation__challenge_v0__q0280": "SELECT \"t1\".\"label\" AS \"name\" FROM \"staff_member\" AS \"t1\" JOIN \"assessment\" AS \"t2\" ON \"t1\".\"staff_key\" = \"t2\".\"staff_key\" ORDER BY \"t2\".\"Bonus\" DESC LIMIT 1",
+    "employee_hire_evaluation__challenge_v0__q0281": "SELECT \"employee\".\"label\" AS \"name\" FROM \"staff_member\" AS \"employee\" WHERE NOT \"employee\".\"staff_key\" IN (SELECT \"evaluation\".\"staff_key\" AS \"employee_id\" FROM \"assessment\" AS \"evaluation\")",
+    "employee_hire_evaluation__challenge_v0__q0282": "SELECT \"employee\".\"label\" AS \"name\" FROM \"staff_member\" AS \"employee\" WHERE NOT \"employee\".\"staff_key\" IN (SELECT \"evaluation\".\"staff_key\" AS \"employee_id\" FROM \"assessment\" AS \"evaluation\")",
+    "employee_hire_evaluation__challenge_v0__q0283": "SELECT \"t2\".\"label\" AS \"name\" FROM \"recruitment\" AS \"t1\" JOIN \"retail_outlet\" AS \"t2\" ON \"t1\".\"outlet_key\" = \"t2\".\"outlet_key\" GROUP BY \"t1\".\"outlet_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "employee_hire_evaluation__challenge_v0__q0284": "SELECT \"t2\".\"label\" AS \"name\" FROM \"recruitment\" AS \"t1\" JOIN \"retail_outlet\" AS \"t2\" ON \"t1\".\"outlet_key\" = \"t2\".\"outlet_key\" GROUP BY \"t1\".\"outlet_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "employee_hire_evaluation__challenge_v0__q0285": "SELECT \"shop\".\"label\" AS \"name\" FROM \"retail_outlet\" AS \"shop\" WHERE NOT \"shop\".\"outlet_key\" IN (SELECT \"hiring\".\"outlet_key\" AS \"shop_id\" FROM \"recruitment\" AS \"hiring\")",
+    "employee_hire_evaluation__challenge_v0__q0286": "SELECT \"shop\".\"label\" AS \"name\" FROM \"retail_outlet\" AS \"shop\" WHERE NOT \"shop\".\"outlet_key\" IN (SELECT \"hiring\".\"outlet_key\" AS \"shop_id\" FROM \"recruitment\" AS \"hiring\")",
+    "employee_hire_evaluation__challenge_v0__q0287": "SELECT COUNT(*) AS \"_col_0\", \"t2\".\"label\" AS \"name\" FROM \"recruitment\" AS \"t1\" JOIN \"retail_outlet\" AS \"t2\" ON \"t1\".\"outlet_key\" = \"t2\".\"outlet_key\" GROUP BY \"t2\".\"label\"",
+    "employee_hire_evaluation__challenge_v0__q0288": "SELECT COUNT(*) AS \"_col_0\", \"t2\".\"label\" AS \"name\" FROM \"recruitment\" AS \"t1\" JOIN \"retail_outlet\" AS \"t2\" ON \"t1\".\"outlet_key\" = \"t2\".\"outlet_key\" GROUP BY \"t2\".\"label\"",
+    "employee_hire_evaluation__challenge_v0__q0289": "SELECT SUM(\"evaluation\".\"Bonus\") AS \"_col_0\" FROM \"assessment\" AS \"evaluation\"",
+    "employee_hire_evaluation__challenge_v0__q0290": "SELECT SUM(\"evaluation\".\"Bonus\") AS \"_col_0\" FROM \"assessment\" AS \"evaluation\"",
+    "employee_hire_evaluation__challenge_v0__q0291": "SELECT \"hiring\".\"outlet_key\" AS \"shop_id\", \"hiring\".\"staff_key\" AS \"employee_id\", \"hiring\".\"Start_from\" AS \"start_from\", \"hiring\".\"full_schedule_flag\" AS \"is_full_time\" FROM \"recruitment\" AS \"hiring\"",
+    "employee_hire_evaluation__challenge_v0__q0292": "SELECT \"hiring\".\"outlet_key\" AS \"shop_id\", \"hiring\".\"staff_key\" AS \"employee_id\", \"hiring\".\"Start_from\" AS \"start_from\", \"hiring\".\"full_schedule_flag\" AS \"is_full_time\" FROM \"recruitment\" AS \"hiring\"",
+    "employee_hire_evaluation__challenge_v0__q0293": "SELECT \"shop\".\"District\" AS \"district\" FROM \"retail_outlet\" AS \"shop\" WHERE \"shop\".\"count_products\" < 3000 INTERSECT SELECT \"shop\".\"District\" AS \"district\" FROM \"retail_outlet\" AS \"shop\" WHERE \"shop\".\"count_products\" > 10000",
+    "employee_hire_evaluation__challenge_v0__q0294": "SELECT \"shop\".\"District\" AS \"district\" FROM \"retail_outlet\" AS \"shop\" WHERE \"shop\".\"count_products\" < 3000 INTERSECT SELECT \"shop\".\"District\" AS \"district\" FROM \"retail_outlet\" AS \"shop\" WHERE \"shop\".\"count_products\" > 10000",
+    "employee_hire_evaluation__challenge_v0__q0295": "SELECT COUNT(DISTINCT \"shop\".\"site\") AS \"_col_0\" FROM \"retail_outlet\" AS \"shop\"",
+    "employee_hire_evaluation__challenge_v0__q0296": "SELECT COUNT(DISTINCT \"shop\".\"site\") AS \"_col_0\" FROM \"retail_outlet\" AS \"shop\""
+  },
+  "rewrite_errors": {},
+  "model": "<workspace>/models/spider-run-epoch1",
+  "method": "semantic"
+}

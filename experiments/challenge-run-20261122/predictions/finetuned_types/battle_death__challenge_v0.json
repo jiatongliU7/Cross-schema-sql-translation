@@ -1,0 +1,348 @@
+{
+  "tables": {
+    "battle": [
+      [
+        "combat_event",
+        0.7633895874023438
+      ],
+      [
+        "casualty",
+        0.35318678617477417
+      ],
+      [
+        "vessel",
+        0.34651148319244385
+      ]
+    ],
+    "ship": [
+      [
+        "vessel",
+        0.6656315922737122
+      ],
+      [
+        "combat_event",
+        0.36141878366470337
+      ],
+      [
+        "casualty",
+        0.287475049495697
+      ]
+    ],
+    "death": [
+      [
+        "casualty",
+        0.535798192024231
+      ],
+      [
+        "combat_event",
+        0.40003931522369385
+      ],
+      [
+        "vessel",
+        0.3364458382129669
+      ]
+    ]
+  },
+  "columns": {
+    "battle.id": [
+      [
+        "combat_event.record_key",
+        0.7022799253463745
+      ],
+      [
+        "vessel.lost_in_combat",
+        0.5935434103012085
+      ],
+      [
+        "combat_event.outcome",
+        0.4745892286300659
+      ]
+    ],
+    "battle.name": [
+      [
+        "combat_event.label",
+        0.5976380705833435
+      ],
+      [
+        "combat_event.outcome",
+        0.5764023065567017
+      ],
+      [
+        "combat_event.latin_commander",
+        0.5137053728103638
+      ]
+    ],
+    "battle.date": [
+      [
+        "combat_event.event_day",
+        0.7176997661590576
+      ],
+      [
+        "combat_event.outcome",
+        0.5711033344268799
+      ],
+      [
+        "combat_event.label",
+        0.5323564410209656
+      ]
+    ],
+    "battle.bulgarian_commander": [
+      [
+        "combat_event.bulgarian_commander",
+        0.9001250267028809
+      ],
+      [
+        "combat_event.latin_commander",
+        0.72064208984375
+      ],
+      [
+        "combat_event.outcome",
+        0.5569353699684143
+      ]
+    ],
+    "battle.latin_commander": [
+      [
+        "combat_event.latin_commander",
+        0.8710384368896484
+      ],
+      [
+        "combat_event.bulgarian_commander",
+        0.6874123215675354
+      ],
+      [
+        "combat_event.label",
+        0.6055070161819458
+      ]
+    ],
+    "battle.result": [
+      [
+        "combat_event.outcome",
+        0.7549960017204285
+      ],
+      [
+        "combat_event.label",
+        0.6580849885940552
+      ],
+      [
+        "combat_event.latin_commander",
+        0.5951722860336304
+      ]
+    ],
+    "ship.lost_in_battle": [
+      [
+        "vessel.lost_in_combat",
+        0.8165593147277832
+      ],
+      [
+        "vessel.record_key",
+        0.5443148016929626
+      ],
+      [
+        "combat_event.record_key",
+        0.540357232093811
+      ]
+    ],
+    "ship.id": [
+      [
+        "vessel.record_key",
+        0.6942983865737915
+      ],
+      [
+        "vessel.lost_in_combat",
+        0.5667462348937988
+      ],
+      [
+        "vessel.tonnage",
+        0.4890327453613281
+      ]
+    ],
+    "ship.name": [
+      [
+        "vessel.label",
+        0.5515298247337341
+      ],
+      [
+        "vessel.disposition_of_vessel",
+        0.526375412940979
+      ],
+      [
+        "vessel.tonnage",
+        0.49709609150886536
+      ]
+    ],
+    "ship.tonnage": [
+      [
+        "vessel.tonnage",
+        0.8576131463050842
+      ],
+      [
+        "vessel.disposition_of_vessel",
+        0.5889619588851929
+      ],
+      [
+        "vessel.vessel_category",
+        0.5784634947776794
+      ]
+    ],
+    "ship.ship_type": [
+      [
+        "vessel.tonnage",
+        0.6826992630958557
+      ],
+      [
+        "vessel.disposition_of_vessel",
+        0.6649364233016968
+      ],
+      [
+        "vessel.site",
+        0.6265747547149658
+      ]
+    ],
+    "ship.location": [
+      [
+        "vessel.site",
+        0.6142343282699585
+      ],
+      [
+        "vessel.disposition_of_vessel",
+        0.6082817316055298
+      ],
+      [
+        "vessel.tonnage",
+        0.5747113227844238
+      ]
+    ],
+    "ship.disposition_of_ship": [
+      [
+        "vessel.disposition_of_vessel",
+        0.773927628993988
+      ],
+      [
+        "vessel.tonnage",
+        0.5695832371711731
+      ],
+      [
+        "vessel.site",
+        0.5328130722045898
+      ]
+    ],
+    "death.caused_by_ship_id": [
+      [
+        "casualty.caused_by_vessel_key",
+        0.6246675252914429
+      ],
+      [
+        "casualty.killed",
+        0.5791987180709839
+      ],
+      [
+        "vessel.record_key",
+        0.5210422277450562
+      ]
+    ],
+    "death.id": [
+      [
+        "casualty.killed",
+        0.7287440299987793
+      ],
+      [
+        "casualty.record_key",
+        0.6243388652801514
+      ],
+      [
+        "casualty.injured",
+        0.5321128368377686
+      ]
+    ],
+    "death.note": [
+      [
+        "casualty.killed",
+        0.5545397996902466
+      ],
+      [
+        "casualty.annotation",
+        0.5441848635673523
+      ],
+      [
+        "combat_event.outcome",
+        0.4307647943496704
+      ]
+    ],
+    "death.killed": [
+      [
+        "casualty.killed",
+        0.8492153286933899
+      ],
+      [
+        "casualty.record_key",
+        0.644542932510376
+      ],
+      [
+        "casualty.injured",
+        0.5826422572135925
+      ]
+    ],
+    "death.injured": [
+      [
+        "casualty.killed",
+        0.8641420602798462
+      ],
+      [
+        "casualty.injured",
+        0.8465855121612549
+      ],
+      [
+        "casualty.record_key",
+        0.7667706608772278
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "battle": "combat_event",
+      "ship": "vessel",
+      "death": "casualty"
+    },
+    "columns": {
+      "battle.id": "combat_event.record_key",
+      "battle.name": "combat_event.label",
+      "battle.date": "combat_event.event_day",
+      "battle.bulgarian_commander": "combat_event.bulgarian_commander",
+      "battle.latin_commander": "combat_event.latin_commander",
+      "battle.result": "combat_event.outcome",
+      "ship.lost_in_battle": "vessel.lost_in_combat",
+      "ship.id": "vessel.record_key",
+      "ship.name": "vessel.label",
+      "ship.tonnage": "vessel.tonnage",
+      "ship.ship_type": "vessel.vessel_category",
+      "ship.location": "vessel.site",
+      "ship.disposition_of_ship": "vessel.disposition_of_vessel",
+      "death.caused_by_ship_id": "casualty.caused_by_vessel_key",
+      "death.id": "casualty.record_key",
+      "death.note": "casualty.annotation",
+      "death.killed": "casualty.killed",
+      "death.injured": "casualty.injured"
+    }
+  },
+  "q_B": {
+    "battle_death__challenge_v0__q0491": "SELECT COUNT(*) AS \"_col_0\" FROM \"vessel\" AS \"ship\" WHERE \"ship\".\"disposition_of_vessel\" = 'Captured'",
+    "battle_death__challenge_v0__q0492": "SELECT \"ship\".\"label\" AS \"name\", \"ship\".\"tonnage\" AS \"tonnage\" FROM \"vessel\" AS \"ship\" ORDER BY \"name\" DESC",
+    "battle_death__challenge_v0__q0493": "SELECT \"battle\".\"label\" AS \"name\", \"battle\".\"event_day\" AS \"date\" FROM \"combat_event\" AS \"battle\"",
+    "battle_death__challenge_v0__q0494": "SELECT MAX(\"death\".\"killed\") AS \"_col_0\", MIN(\"death\".\"killed\") AS \"_col_1\" FROM \"casualty\" AS \"death\"",
+    "battle_death__challenge_v0__q0495": "SELECT AVG(\"death\".\"injured\") AS \"_col_0\" FROM \"casualty\" AS \"death\"",
+    "battle_death__challenge_v0__q0496": "SELECT \"t1\".\"killed\" AS \"killed\", \"t1\".\"injured\" AS \"injured\" FROM \"casualty\" AS \"t1\" JOIN \"vessel\" AS \"t2\" ON \"t1\".\"caused_by_vessel_key\" = \"t2\".\"record_key\" WHERE \"t2\".\"tonnage\" = 't'",
+    "battle_death__challenge_v0__q0497": "SELECT \"battle\".\"label\" AS \"name\", \"battle\".\"outcome\" AS \"result\" FROM \"combat_event\" AS \"battle\" WHERE \"battle\".\"bulgarian_commander\" <> 'Boril'",
+    "battle_death__challenge_v0__q0498": "SELECT DISTINCT \"t1\".\"record_key\" AS \"id\", \"t1\".\"label\" AS \"name\" FROM \"combat_event\" AS \"t1\" JOIN \"vessel\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"lost_in_combat\" WHERE \"t2\".\"vessel_category\" = 'Brig'",
+    "battle_death__challenge_v0__q0499": "SELECT \"t1\".\"record_key\" AS \"id\", \"t1\".\"label\" AS \"name\" FROM \"combat_event\" AS \"t1\" JOIN \"vessel\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"lost_in_combat\" JOIN \"casualty\" AS \"t3\" ON \"t2\".\"record_key\" = \"t3\".\"caused_by_vessel_key\" GROUP BY \"t1\".\"record_key\" HAVING SUM(\"t3\".\"killed\") > 10",
+    "battle_death__challenge_v0__q0500": "SELECT \"t2\".\"record_key\" AS \"id\", \"t2\".\"label\" AS \"name\" FROM \"casualty\" AS \"t1\" JOIN \"vessel\" AS \"t2\" ON \"t1\".\"caused_by_vessel_key\" = \"t2\".\"record_key\" GROUP BY \"t2\".\"record_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "battle_death__challenge_v0__q0501": "SELECT \"battle\".\"label\" AS \"name\" FROM \"combat_event\" AS \"battle\" WHERE \"battle\".\"bulgarian_commander\" = 'Kaloyan' AND \"battle\".\"latin_commander\" = 'Baldwin I'",
+    "battle_death__challenge_v0__q0502": "SELECT COUNT(DISTINCT \"battle\".\"outcome\") AS \"_col_0\" FROM \"combat_event\" AS \"battle\"",
+    "battle_death__challenge_v0__q0503": "SELECT COUNT(*) AS \"_col_0\" FROM \"combat_event\" AS \"battle\" WHERE NOT \"battle\".\"record_key\" IN (SELECT \"ship\".\"lost_in_combat\" AS \"lost_in_battle\" FROM \"vessel\" AS \"ship\" WHERE \"ship\".\"tonnage\" = '225')",
+    "battle_death__challenge_v0__q0504": "SELECT \"t1\".\"label\" AS \"name\", \"t1\".\"event_day\" AS \"date\" FROM \"combat_event\" AS \"t1\" JOIN \"vessel\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"lost_in_combat\" WHERE \"t2\".\"label\" = 'Lettice' INTERSECT SELECT \"t1\".\"label\" AS \"name\", \"t1\".\"event_day\" AS \"date\" FROM \"combat_event\" AS \"t1\" JOIN \"vessel\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"lost_in_combat\" WHERE \"t2\".\"label\" = 'HMS Atalanta'",
+    "battle_death__challenge_v0__q0505": "SELECT \"battle\".\"label\" AS \"name\", \"battle\".\"outcome\" AS \"result\", \"battle\".\"bulgarian_commander\" AS \"bulgarian_commander\" FROM \"combat_event\" AS \"battle\" EXCEPT SELECT \"t1\".\"label\" AS \"name\", \"t1\".\"outcome\" AS \"result\", \"t1\".\"bulgarian_commander\" AS \"bulgarian_commander\" FROM \"combat_event\" AS \"t1\" JOIN \"vessel\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"lost_in_combat\" WHERE \"t2\".\"site\" = 'English Channel'",
+    "battle_death__challenge_v0__q0506": "SELECT \"death\".\"annotation\" AS \"note\" FROM \"casualty\" AS \"death\" WHERE \"death\".\"annotation\" LIKE '%East%'"
+  },
+  "rewrite_errors": {},
+  "model": "<workspace>/models/spider-run-epoch1",
+  "method": "types"
+}

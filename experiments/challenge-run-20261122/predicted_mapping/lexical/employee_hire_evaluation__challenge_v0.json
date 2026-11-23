@@ -1,0 +1,27 @@
+{
+  "tables": {
+    "employee": "staff_member",
+    "shop": "retail_outlet",
+    "hiring": "recruitment",
+    "evaluation": "assessment"
+  },
+  "columns": {
+    "employee.Employee_ID": "staff_member.years_old",
+    "employee.Name": "staff_member.staff_key",
+    "employee.Age": "staff_member.label",
+    "employee.City": "staff_member.municipality",
+    "shop.Shop_ID": "retail_outlet.site",
+    "shop.Name": "retail_outlet.label",
+    "shop.Location": "retail_outlet.outlet_key",
+    "shop.District": "retail_outlet.District",
+    "shop.Number_products": "retail_outlet.count_products",
+    "shop.Manager_name": "retail_outlet.manager_label",
+    "hiring.Shop_ID": "recruitment.staff_key",
+    "hiring.Employee_ID": "recruitment.outlet_key",
+    "hiring.Start_from": "recruitment.Start_from",
+    "hiring.Is_full_time": "recruitment.full_schedule_flag",
+    "evaluation.Employee_ID": "assessment.staff_key",
+    "evaluation.Year_awarded": "assessment.annum_awarded",
+    "evaluation.Bonus": "assessment.Bonus"
+  }
+}

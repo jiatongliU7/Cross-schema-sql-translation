@@ -1,0 +1,212 @@
+{
+  "tables": {
+    "AREA_CODE_STATE": [
+      [
+        "dialing_region",
+        0.5819292068481445
+      ],
+      [
+        "candidates",
+        0.4309745728969574
+      ],
+      [
+        "ballots",
+        0.4160352945327759
+      ]
+    ],
+    "CONTESTANTS": [
+      [
+        "candidates",
+        0.753482460975647
+      ],
+      [
+        "ballots",
+        0.6627175211906433
+      ],
+      [
+        "dialing_region",
+        0.3304589092731476
+      ]
+    ],
+    "VOTES": [
+      [
+        "ballots",
+        0.8454250693321228
+      ],
+      [
+        "candidates",
+        0.6892512440681458
+      ],
+      [
+        "dialing_region",
+        0.3356313705444336
+      ]
+    ]
+  },
+  "columns": {
+    "AREA_CODE_STATE.area_code": [
+      [
+        "dialing_region.region_tag",
+        0.7926369309425354
+      ],
+      [
+        "ballots.established",
+        0.7301440238952637
+      ],
+      [
+        "ballots.ballot_key",
+        0.7143145203590393
+      ]
+    ],
+    "AREA_CODE_STATE.state": [
+      [
+        "dialing_region.region_tag",
+        0.7724173069000244
+      ],
+      [
+        "dialing_region.province",
+        0.7594861388206482
+      ],
+      [
+        "ballots.province",
+        0.7436184883117676
+      ]
+    ],
+    "CONTESTANTS.contestant_number": [
+      [
+        "candidates.candidate_count",
+        0.835932731628418
+      ],
+      [
+        "ballots.candidate_count",
+        0.8263677954673767
+      ],
+      [
+        "ballots.ballot_key",
+        0.8054991960525513
+      ]
+    ],
+    "CONTESTANTS.contestant_name": [
+      [
+        "candidates.candidate_label",
+        0.8285510540008545
+      ],
+      [
+        "ballots.candidate_count",
+        0.7479511499404907
+      ],
+      [
+        "ballots.established",
+        0.7474744319915771
+      ]
+    ],
+    "VOTES.vote_id": [
+      [
+        "ballots.ballot_key",
+        0.9049173593521118
+      ],
+      [
+        "ballots.established",
+        0.8982040286064148
+      ],
+      [
+        "ballots.candidate_count",
+        0.865088939666748
+      ]
+    ],
+    "VOTES.phone_number": [
+      [
+        "ballots.contact_number",
+        0.8997091054916382
+      ],
+      [
+        "ballots.established",
+        0.8725422024726868
+      ],
+      [
+        "ballots.ballot_key",
+        0.8681038618087769
+      ]
+    ],
+    "VOTES.state": [
+      [
+        "ballots.established",
+        0.862604022026062
+      ],
+      [
+        "ballots.ballot_key",
+        0.8546868562698364
+      ],
+      [
+        "ballots.province",
+        0.8422397375106812
+      ]
+    ],
+    "VOTES.contestant_number": [
+      [
+        "ballots.candidate_count",
+        0.8796615600585938
+      ],
+      [
+        "ballots.ballot_key",
+        0.8597556352615356
+      ],
+      [
+        "ballots.established",
+        0.8506863117218018
+      ]
+    ],
+    "VOTES.created": [
+      [
+        "ballots.established",
+        0.9092079401016235
+      ],
+      [
+        "ballots.ballot_key",
+        0.8777165412902832
+      ],
+      [
+        "ballots.candidate_count",
+        0.850257396697998
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "AREA_CODE_STATE": "dialing_region",
+      "CONTESTANTS": "candidates",
+      "VOTES": "ballots"
+    },
+    "columns": {
+      "AREA_CODE_STATE.area_code": "dialing_region.region_tag",
+      "AREA_CODE_STATE.state": "dialing_region.province",
+      "CONTESTANTS.contestant_number": "candidates.candidate_count",
+      "CONTESTANTS.contestant_name": "candidates.candidate_label",
+      "VOTES.vote_id": "ballots.ballot_key",
+      "VOTES.phone_number": "ballots.contact_number",
+      "VOTES.state": "ballots.province",
+      "VOTES.contestant_number": "ballots.candidate_count",
+      "VOTES.created": "ballots.established"
+    }
+  },
+  "q_B": {
+    "voter_1__challenge_v0__q0687": "SELECT COUNT(*) AS \"_col_0\" FROM \"dialing_region\" AS \"area_code_state\"",
+    "voter_1__challenge_v0__q0688": "SELECT \"contestants\".\"candidate_count\" AS \"contestant_number\", \"contestants\".\"candidate_label\" AS \"contestant_name\" FROM \"candidates\" AS \"contestants\" ORDER BY \"contestant_name\" DESC",
+    "voter_1__challenge_v0__q0689": "SELECT \"votes\".\"ballot_key\" AS \"vote_id\", \"votes\".\"contact_number\" AS \"phone_number\", \"votes\".\"province\" AS \"state\" FROM \"ballots\" AS \"votes\"",
+    "voter_1__challenge_v0__q0690": "SELECT MAX(\"area_code_state\".\"region_tag\") AS \"_col_0\", MIN(\"area_code_state\".\"region_tag\") AS \"_col_1\" FROM \"dialing_region\" AS \"area_code_state\"",
+    "voter_1__challenge_v0__q0691": "SELECT MAX(\"votes\".\"established\") AS \"_col_0\" FROM \"ballots\" AS \"votes\" WHERE \"votes\".\"province\" = 'CA'",
+    "voter_1__challenge_v0__q0692": "SELECT \"contestants\".\"candidate_label\" AS \"contestant_name\" FROM \"candidates\" AS \"contestants\" WHERE \"contestants\".\"candidate_label\" <> 'Jessie Alloway'",
+    "voter_1__challenge_v0__q0693": "SELECT DISTINCT \"votes\".\"province\" AS \"state\", \"votes\".\"established\" AS \"created\" FROM \"ballots\" AS \"votes\"",
+    "voter_1__challenge_v0__q0694": "SELECT \"t1\".\"candidate_count\" AS \"contestant_number\", \"t1\".\"candidate_label\" AS \"contestant_name\" FROM \"candidates\" AS \"t1\" JOIN \"ballots\" AS \"t2\" ON \"t1\".\"candidate_count\" = \"t2\".\"candidate_count\" GROUP BY \"t1\".\"candidate_count\" HAVING COUNT(*) >= 2",
+    "voter_1__challenge_v0__q0695": "SELECT \"t1\".\"candidate_count\" AS \"contestant_number\", \"t1\".\"candidate_label\" AS \"contestant_name\" FROM \"candidates\" AS \"t1\" JOIN \"ballots\" AS \"t2\" ON \"t1\".\"candidate_count\" = \"t2\".\"candidate_count\" GROUP BY \"t1\".\"candidate_count\" ORDER BY COUNT(*) ASC LIMIT 1",
+    "voter_1__challenge_v0__q0696": "SELECT COUNT(*) AS \"_col_0\" FROM \"ballots\" AS \"votes\" WHERE \"votes\".\"province\" = 'NY' OR \"votes\".\"province\" = 'CA'",
+    "voter_1__challenge_v0__q0697": "SELECT COUNT(*) AS \"_col_0\" FROM \"candidates\" AS \"contestants\" WHERE NOT \"contestants\".\"candidate_count\" IN (SELECT \"votes\".\"candidate_count\" AS \"contestant_number\" FROM \"ballots\" AS \"votes\")",
+    "voter_1__challenge_v0__q0698": "SELECT \"t1\".\"region_tag\" AS \"area_code\" FROM \"dialing_region\" AS \"t1\" JOIN \"ballots\" AS \"t2\" ON \"t1\".\"province\" = \"t2\".\"province\" GROUP BY \"t1\".\"region_tag\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "voter_1__challenge_v0__q0699": "SELECT \"t2\".\"established\" AS \"created\", \"t2\".\"province\" AS \"state\", \"t2\".\"contact_number\" AS \"phone_number\" FROM \"candidates\" AS \"t1\" JOIN \"ballots\" AS \"t2\" ON \"t1\".\"candidate_count\" = \"t2\".\"candidate_count\" WHERE \"t1\".\"candidate_label\" = 'Tabatha Gehling'",
+    "voter_1__challenge_v0__q0700": "SELECT \"t3\".\"region_tag\" AS \"area_code\" FROM \"candidates\" AS \"t1\" JOIN \"ballots\" AS \"t2\" ON \"t1\".\"candidate_count\" = \"t2\".\"candidate_count\" JOIN \"dialing_region\" AS \"t3\" ON \"t2\".\"province\" = \"t3\".\"province\" WHERE \"t1\".\"candidate_label\" = 'Tabatha Gehling' INTERSECT SELECT \"t3\".\"region_tag\" AS \"area_code\" FROM \"candidates\" AS \"t1\" JOIN \"ballots\" AS \"t2\" ON \"t1\".\"candidate_count\" = \"t2\".\"candidate_count\" JOIN \"dialing_region\" AS \"t3\" ON \"t2\".\"province\" = \"t3\".\"province\" WHERE \"t1\".\"candidate_label\" = 'Kelly Clauss'",
+    "voter_1__challenge_v0__q0701": "SELECT \"contestants\".\"candidate_label\" AS \"contestant_name\" FROM \"candidates\" AS \"contestants\" WHERE \"contestants\".\"candidate_label\" LIKE '%al%'"
+  },
+  "rewrite_errors": {},
+  "model": "all-MiniLM-L6-v2",
+  "method": "semantic"
+}

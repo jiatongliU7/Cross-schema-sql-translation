@@ -1,0 +1,22 @@
+{
+  "tables": {
+    "airlines": "air_carriers",
+    "airports": "airfields",
+    "flights": "air_trips"
+  },
+  "columns": {
+    "airlines.uid": "air_carriers.record_key",
+    "airlines.Airline": "air_carriers.carrier",
+    "airlines.Abbreviation": "air_carriers.short_tag",
+    "airlines.Country": "air_carriers.nation",
+    "airports.City": "airfields.municipality",
+    "airports.AirportCode": "airfields.airfield_tag",
+    "airports.AirportName": "airfields.airfield_label",
+    "airports.Country": "airfields.nation",
+    "airports.CountryAbbrev": "airfields.nation_short_tag",
+    "flights.Airline": "air_trips.carrier",
+    "flights.FlightNo": "air_trips.trip_number",
+    "flights.SourceAirport": "air_trips.origin_airfield",
+    "flights.DestAirport": "air_trips.destination_airfield"
+  }
+}

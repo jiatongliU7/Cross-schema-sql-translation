@@ -1,0 +1,260 @@
+{
+  "tables": {
+    "museum": [
+      [
+        "gallery",
+        0.4567639231681824
+      ],
+      [
+        "attendance_record",
+        0.36868876218795776
+      ],
+      [
+        "guest",
+        0.36006301641464233
+      ]
+    ],
+    "visitor": [
+      [
+        "guest",
+        0.5866080522537231
+      ],
+      [
+        "attendance_record",
+        0.4922744333744049
+      ],
+      [
+        "gallery",
+        0.34708845615386963
+      ]
+    ],
+    "visit": [
+      [
+        "guest",
+        0.4953795373439789
+      ],
+      [
+        "attendance_record",
+        0.44624704122543335
+      ],
+      [
+        "gallery",
+        0.3724766969680786
+      ]
+    ]
+  },
+  "columns": {
+    "museum.Museum_ID": [
+      [
+        "gallery.gallery_key",
+        0.38786882162094116
+      ],
+      [
+        "attendance_record.gallery_key",
+        0.35964423418045044
+      ],
+      [
+        "guest.record_key",
+        0.3295729160308838
+      ]
+    ],
+    "museum.Name": [
+      [
+        "gallery.label",
+        0.372432142496109
+      ],
+      [
+        "guest.label",
+        0.35471171140670776
+      ],
+      [
+        "attendance_record.guest_key",
+        0.2735580801963806
+      ]
+    ],
+    "museum.Num_of_Staff": [
+      [
+        "gallery.count_of_staff",
+        0.5597953796386719
+      ],
+      [
+        "attendance_record.gallery_key",
+        0.4174545407295227
+      ],
+      [
+        "attendance_record.count_of_ticket",
+        0.39540407061576843
+      ]
+    ],
+    "museum.Open_Year": [
+      [
+        "guest.years_old",
+        0.4774022102355957
+      ],
+      [
+        "gallery.open_annum",
+        0.4427359998226166
+      ],
+      [
+        "attendance_record.guest_key",
+        0.294350266456604
+      ]
+    ],
+    "visitor.ID": [
+      [
+        "guest.record_key",
+        0.5546339750289917
+      ],
+      [
+        "attendance_record.gallery_key",
+        0.4349711239337921
+      ],
+      [
+        "gallery.gallery_key",
+        0.4246383607387543
+      ]
+    ],
+    "visitor.Name": [
+      [
+        "guest.label",
+        0.4594653248786926
+      ],
+      [
+        "attendance_record.guest_key",
+        0.4133056104183197
+      ],
+      [
+        "gallery.label",
+        0.32027098536491394
+      ]
+    ],
+    "visitor.Level_of_membership": [
+      [
+        "guest.Level_of_membership",
+        0.7476220726966858
+      ],
+      [
+        "guest.record_key",
+        0.47006574273109436
+      ],
+      [
+        "attendance_record.count_of_ticket",
+        0.4300626218318939
+      ]
+    ],
+    "visitor.Age": [
+      [
+        "guest.years_old",
+        0.6452336311340332
+      ],
+      [
+        "guest.record_key",
+        0.4309062361717224
+      ],
+      [
+        "attendance_record.gallery_key",
+        0.4246217608451843
+      ]
+    ],
+    "visit.Museum_ID": [
+      [
+        "attendance_record.gallery_key",
+        0.43205586075782776
+      ],
+      [
+        "gallery.gallery_key",
+        0.3919539451599121
+      ],
+      [
+        "attendance_record.count_of_ticket",
+        0.3753179907798767
+      ]
+    ],
+    "visit.visitor_ID": [
+      [
+        "attendance_record.guest_key",
+        0.5199919939041138
+      ],
+      [
+        "guest.label",
+        0.388913094997406
+      ],
+      [
+        "attendance_record.count_of_ticket",
+        0.3361523747444153
+      ]
+    ],
+    "visit.Num_of_Ticket": [
+      [
+        "attendance_record.count_of_ticket",
+        0.630404531955719
+      ],
+      [
+        "guest.record_key",
+        0.46901124715805054
+      ],
+      [
+        "attendance_record.aggregate_spent",
+        0.46640509366989136
+      ]
+    ],
+    "visit.Total_spent": [
+      [
+        "attendance_record.aggregate_spent",
+        0.6188539266586304
+      ],
+      [
+        "attendance_record.count_of_ticket",
+        0.4251675009727478
+      ],
+      [
+        "attendance_record.gallery_key",
+        0.35905537009239197
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "museum": "gallery",
+      "visitor": "guest",
+      "visit": "attendance_record"
+    },
+    "columns": {
+      "museum.Museum_ID": "gallery.gallery_key",
+      "museum.Name": "gallery.label",
+      "museum.Num_of_Staff": "gallery.count_of_staff",
+      "museum.Open_Year": "gallery.open_annum",
+      "visitor.ID": "guest.record_key",
+      "visitor.Name": "guest.label",
+      "visitor.Level_of_membership": "guest.Level_of_membership",
+      "visitor.Age": "guest.years_old",
+      "visit.Museum_ID": "attendance_record.gallery_key",
+      "visit.visitor_ID": "attendance_record.guest_key",
+      "visit.Num_of_Ticket": "attendance_record.count_of_ticket",
+      "visit.Total_spent": "attendance_record.aggregate_spent"
+    }
+  },
+  "q_B": {
+    "museum_visit__challenge_v0__q0411": "SELECT COUNT(*) AS \"_col_0\" FROM \"guest\" AS \"visitor\" WHERE \"visitor\".\"years_old\" < 30",
+    "museum_visit__challenge_v0__q0412": "SELECT \"visitor\".\"label\" AS \"name\" FROM \"guest\" AS \"visitor\" WHERE \"visitor\".\"Level_of_membership\" > 4 ORDER BY \"visitor\".\"Level_of_membership\" DESC",
+    "museum_visit__challenge_v0__q0413": "SELECT AVG(\"visitor\".\"years_old\") AS \"_col_0\" FROM \"guest\" AS \"visitor\" WHERE \"visitor\".\"Level_of_membership\" <= 4",
+    "museum_visit__challenge_v0__q0414": "SELECT \"visitor\".\"label\" AS \"name\", \"visitor\".\"Level_of_membership\" AS \"level_of_membership\" FROM \"guest\" AS \"visitor\" WHERE \"visitor\".\"Level_of_membership\" > 4 ORDER BY \"visitor\".\"years_old\" DESC",
+    "museum_visit__challenge_v0__q0415": "SELECT \"museum\".\"gallery_key\" AS \"museum_id\", \"museum\".\"label\" AS \"name\" FROM \"gallery\" AS \"museum\" ORDER BY \"museum\".\"count_of_staff\" DESC LIMIT 1",
+    "museum_visit__challenge_v0__q0416": "SELECT AVG(\"museum\".\"count_of_staff\") AS \"_col_0\" FROM \"gallery\" AS \"museum\" WHERE \"museum\".\"open_annum\" < 2009",
+    "museum_visit__challenge_v0__q0417": "SELECT \"museum\".\"count_of_staff\" AS \"num_of_staff\", \"museum\".\"open_annum\" AS \"open_year\" FROM \"gallery\" AS \"museum\" WHERE \"museum\".\"label\" = 'Plaza Museum'",
+    "museum_visit__challenge_v0__q0418": "SELECT \"museum\".\"label\" AS \"name\" FROM \"gallery\" AS \"museum\" WHERE \"museum\".\"count_of_staff\" > (SELECT MIN(\"museum\".\"count_of_staff\") AS \"_col_0\" FROM \"gallery\" AS \"museum\" WHERE \"museum\".\"open_annum\" > 2010)",
+    "museum_visit__challenge_v0__q0419": "SELECT \"t1\".\"record_key\" AS \"id\", \"t1\".\"label\" AS \"name\", \"t1\".\"years_old\" AS \"age\" FROM \"guest\" AS \"t1\" JOIN \"attendance_record\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"guest_key\" GROUP BY \"t1\".\"record_key\" HAVING COUNT(*) > 1",
+    "museum_visit__challenge_v0__q0420": "SELECT \"t2\".\"guest_key\" AS \"visitor_id\", \"t1\".\"label\" AS \"name\", \"t1\".\"Level_of_membership\" AS \"level_of_membership\" FROM \"guest\" AS \"t1\" JOIN \"attendance_record\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"guest_key\" GROUP BY \"t2\".\"guest_key\" ORDER BY SUM(\"t2\".\"aggregate_spent\") DESC LIMIT 1",
+    "museum_visit__challenge_v0__q0421": "SELECT \"t2\".\"gallery_key\" AS \"museum_id\", \"t1\".\"label\" AS \"name\" FROM \"gallery\" AS \"t1\" JOIN \"attendance_record\" AS \"t2\" ON \"t1\".\"gallery_key\" = \"t2\".\"gallery_key\" GROUP BY \"t2\".\"gallery_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "museum_visit__challenge_v0__q0422": "SELECT \"museum\".\"label\" AS \"name\" FROM \"gallery\" AS \"museum\" WHERE NOT \"museum\".\"gallery_key\" IN (SELECT \"visit\".\"gallery_key\" AS \"museum_id\" FROM \"attendance_record\" AS \"visit\")",
+    "museum_visit__challenge_v0__q0423": "SELECT \"t1\".\"label\" AS \"name\", \"t1\".\"years_old\" AS \"age\" FROM \"guest\" AS \"t1\" JOIN \"attendance_record\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"guest_key\" ORDER BY \"t2\".\"count_of_ticket\" DESC LIMIT 1",
+    "museum_visit__challenge_v0__q0424": "SELECT AVG(\"visit\".\"count_of_ticket\") AS \"_col_0\", MAX(\"visit\".\"count_of_ticket\") AS \"_col_1\" FROM \"attendance_record\" AS \"visit\"",
+    "museum_visit__challenge_v0__q0425": "SELECT SUM(\"t2\".\"aggregate_spent\") AS \"_col_0\" FROM \"guest\" AS \"t1\" JOIN \"attendance_record\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"guest_key\" WHERE \"t1\".\"Level_of_membership\" = 1",
+    "museum_visit__challenge_v0__q0426": "SELECT \"t1\".\"label\" AS \"name\" FROM \"guest\" AS \"t1\" JOIN \"attendance_record\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"guest_key\" JOIN \"gallery\" AS \"t3\" ON \"t3\".\"gallery_key\" = \"t2\".\"gallery_key\" WHERE \"t3\".\"open_annum\" < 2009 INTERSECT SELECT \"t1\".\"label\" AS \"name\" FROM \"guest\" AS \"t1\" JOIN \"attendance_record\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"guest_key\" JOIN \"gallery\" AS \"t3\" ON \"t3\".\"gallery_key\" = \"t2\".\"gallery_key\" WHERE \"t3\".\"open_annum\" > 2011",
+    "museum_visit__challenge_v0__q0427": "SELECT COUNT(*) AS \"_col_0\" FROM \"guest\" AS \"visitor\" WHERE NOT \"visitor\".\"record_key\" IN (SELECT \"t2\".\"guest_key\" AS \"visitor_id\" FROM \"gallery\" AS \"t1\" JOIN \"attendance_record\" AS \"t2\" ON \"t1\".\"gallery_key\" = \"t2\".\"gallery_key\" WHERE \"t1\".\"open_annum\" > 2010)",
+    "museum_visit__challenge_v0__q0428": "SELECT COUNT(*) AS \"_col_0\" FROM \"gallery\" AS \"museum\" WHERE \"museum\".\"open_annum\" > 2013 OR \"museum\".\"open_annum\" < 2008"
+  },
+  "rewrite_errors": {},
+  "model": "<workspace>/models/spider-run-epoch1",
+  "method": "semantic"
+}

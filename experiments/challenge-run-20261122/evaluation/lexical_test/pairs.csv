@@ -1,0 +1,4 @@
+method,pair_id,base_db_id,perturbation,table_correct,table_total,changed_table_correct,changed_table_total,column_correct,column_total,changed_column_correct,changed_column_total,mapping_error,inference_seconds
+saved,museum_visit__challenge_v0,museum_visit,challenge_semantic_table_and_column_rename,3,3,3,3,7,12,7,12,,9.658300041337498e-05
+saved,student_transcripts_tracking__challenge_v0,student_transcripts_tracking,challenge_semantic_table_and_column_rename,7,11,7,11,14,56,14,56,,0.00024200000189011917
+saved,world_1__challenge_v0,world_1,challenge_semantic_table_and_column_rename,4,4,3,3,10,26,8,24,,0.0002143339988833759

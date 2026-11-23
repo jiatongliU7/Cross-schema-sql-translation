@@ -1,0 +1,28 @@
+{
+  "method": "saved",
+  "pair_id": "museum_visit__challenge_v0",
+  "base_db_id": "museum_visit",
+  "perturbation": "challenge_semantic_table_and_column_rename",
+  "mapping": {
+    "tables": {
+      "museum": "gallery",
+      "visitor": "guest",
+      "visit": "attendance_record"
+    },
+    "columns": {
+      "museum.Museum_ID": "gallery.gallery_key",
+      "museum.Name": "gallery.label",
+      "museum.Num_of_Staff": "gallery.count_of_staff",
+      "museum.Open_Year": "gallery.open_annum",
+      "visitor.ID": "guest.record_key",
+      "visitor.Name": "guest.label",
+      "visitor.Level_of_membership": "guest.Level_of_membership",
+      "visitor.Age": "guest.years_old",
+      "visit.Museum_ID": "attendance_record.gallery_key",
+      "visit.visitor_ID": "attendance_record.guest_key",
+      "visit.Num_of_Ticket": "attendance_record.count_of_ticket",
+      "visit.Total_spent": "attendance_record.aggregate_spent"
+    }
+  },
+  "error": null
+}

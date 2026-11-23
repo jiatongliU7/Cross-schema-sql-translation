@@ -1,0 +1,34 @@
+{
+  "tables": {
+    "TV_Channel": "broadcast_network",
+    "TV_series": "television_program",
+    "Cartoon": "animated_program"
+  },
+  "columns": {
+    "TV_Channel.id": "broadcast_network.nation",
+    "TV_Channel.series_name": "broadcast_network.program_label",
+    "TV_Channel.Country": "broadcast_network.record_key",
+    "TV_Channel.Language": "broadcast_network.tongue",
+    "TV_Channel.Content": "broadcast_network.body_text",
+    "TV_Channel.Pixel_aspect_ratio_PAR": "broadcast_network.display_pixel_ratio",
+    "TV_Channel.Hight_definition_TV": "broadcast_network.high_definition_flag",
+    "TV_Channel.Pay_per_view_PPV": "broadcast_network.paid_viewing_flag",
+    "TV_Channel.Package_Option": "broadcast_network.Package_Option",
+    "TV_series.id": "television_program.record_key",
+    "TV_series.Episode": "television_program.Episode",
+    "TV_series.Air_Date": "television_program.air_day",
+    "TV_series.Rating": "television_program.portion",
+    "TV_series.Share": "television_program.assessment_score",
+    "TV_series.18_49_Rating_Share": "television_program.adult_demographic_portion",
+    "TV_series.Viewers_m": "television_program.audience_millions",
+    "TV_series.Weekly_Rank": "television_program.seven_day_position",
+    "TV_series.Channel": "television_program.network",
+    "Cartoon.id": "animated_program.record_key",
+    "Cartoon.Title": "animated_program.network",
+    "Cartoon.Directed_by": "animated_program.Directed_by",
+    "Cartoon.Written_by": "animated_program.Written_by",
+    "Cartoon.Original_air_date": "animated_program.original_air_day",
+    "Cartoon.Production_code": "animated_program.production_tag",
+    "Cartoon.Channel": "animated_program.heading"
+  }
+}

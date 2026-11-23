@@ -1,0 +1,651 @@
+{
+  "tables": {
+    "Ref_Feature_Types": [
+      [
+        "asset_amenities",
+        0.29492196440696716
+      ],
+      [
+        "realty_assets",
+        0.2492014616727829
+      ],
+      [
+        "optional_amenities",
+        0.22748816013336182
+      ]
+    ],
+    "Ref_Property_Types": [
+      [
+        "realty_assets",
+        0.3711148798465729
+      ],
+      [
+        "asset_amenities",
+        0.36386972665786743
+      ],
+      [
+        "optional_amenities",
+        0.27444106340408325
+      ]
+    ],
+    "Other_Available_Features": [
+      [
+        "optional_amenities",
+        0.45327311754226685
+      ],
+      [
+        "asset_amenities",
+        0.37885555624961853
+      ],
+      [
+        "amenity_category_lookup",
+        0.2639802396297455
+      ]
+    ],
+    "Properties": [
+      [
+        "realty_assets",
+        0.4917982816696167
+      ],
+      [
+        "asset_amenities",
+        0.46097564697265625
+      ],
+      [
+        "optional_amenities",
+        0.3713075816631317
+      ]
+    ],
+    "Other_Property_Features": [
+      [
+        "asset_amenities",
+        0.4811635911464691
+      ],
+      [
+        "optional_amenities",
+        0.45597630739212036
+      ],
+      [
+        "realty_assets",
+        0.4119756817817688
+      ]
+    ]
+  },
+  "columns": {
+    "Ref_Feature_Types.feature_type_code": [
+      [
+        "realty_assets.apt_amenity_2",
+        0.2701372504234314
+      ],
+      [
+        "amenity_category_lookup.amenity_category_tag",
+        0.26339197158813477
+      ],
+      [
+        "realty_assets.apt_amenity_1",
+        0.2623937726020813
+      ]
+    ],
+    "Ref_Feature_Types.feature_type_name": [
+      [
+        "amenity_category_lookup.amenity_category_label",
+        0.28718215227127075
+      ],
+      [
+        "realty_assets.asset_label",
+        0.2762936055660248
+      ],
+      [
+        "realty_assets.apt_amenity_2",
+        0.24907004833221436
+      ]
+    ],
+    "Ref_Property_Types.property_type_code": [
+      [
+        "realty_assets.fld_amenity_2",
+        0.39232566952705383
+      ],
+      [
+        "realty_assets.fld_amenity_3",
+        0.3896360993385315
+      ],
+      [
+        "realty_assets.fld_amenity_1",
+        0.3824043571949005
+      ]
+    ],
+    "Ref_Property_Types.property_type_description": [
+      [
+        "asset_amenities.asset_amenity_summary",
+        0.4354700744152069
+      ],
+      [
+        "realty_assets.oth_amenity_2",
+        0.4067094922065735
+      ],
+      [
+        "realty_assets.oth_amenity_1",
+        0.3956350088119507
+      ]
+    ],
+    "Other_Available_Features.feature_id": [
+      [
+        "optional_amenities.amenity_key",
+        0.31163644790649414
+      ],
+      [
+        "asset_amenities.asset_key",
+        0.2993942201137543
+      ],
+      [
+        "asset_amenities.amenity_key",
+        0.2822122573852539
+      ]
+    ],
+    "Other_Available_Features.feature_type_code": [
+      [
+        "optional_amenities.amenity_category_tag",
+        0.29906678199768066
+      ],
+      [
+        "realty_assets.apt_amenity_2",
+        0.2625356614589691
+      ],
+      [
+        "amenity_category_lookup.amenity_category_tag",
+        0.25464218854904175
+      ]
+    ],
+    "Other_Available_Features.feature_name": [
+      [
+        "realty_assets.supplementary_asset_details",
+        0.27706092596054077
+      ],
+      [
+        "realty_assets.apt_amenity_2",
+        0.2722795903682709
+      ],
+      [
+        "amenity_category_lookup.amenity_category_label",
+        0.25735607743263245
+      ]
+    ],
+    "Other_Available_Features.feature_description": [
+      [
+        "optional_amenities.amenity_summary",
+        0.3407365381717682
+      ],
+      [
+        "asset_amenities.asset_amenity_summary",
+        0.3298931121826172
+      ],
+      [
+        "realty_assets.supplementary_asset_details",
+        0.31975942850112915
+      ]
+    ],
+    "Properties.property_id": [
+      [
+        "realty_assets.asset_key",
+        0.5171665549278259
+      ],
+      [
+        "asset_amenities.asset_key",
+        0.4698019027709961
+      ],
+      [
+        "asset_amenities.amenity_key",
+        0.4593735933303833
+      ]
+    ],
+    "Properties.property_type_code": [
+      [
+        "realty_assets.fld_amenity_2",
+        0.4222760796546936
+      ],
+      [
+        "realty_assets.hse_amenity_2",
+        0.420113205909729
+      ],
+      [
+        "realty_assets.fld_amenity_3",
+        0.41714030504226685
+      ]
+    ],
+    "Properties.date_on_market": [
+      [
+        "realty_assets.day_on_market",
+        0.7070630788803101
+      ],
+      [
+        "realty_assets.day_sold",
+        0.6530218124389648
+      ],
+      [
+        "realty_assets.asset_key",
+        0.4542027711868286
+      ]
+    ],
+    "Properties.date_sold": [
+      [
+        "realty_assets.day_sold",
+        0.7494900226593018
+      ],
+      [
+        "realty_assets.day_on_market",
+        0.5871624946594238
+      ],
+      [
+        "realty_assets.agreed_sale_cost",
+        0.5378971099853516
+      ]
+    ],
+    "Properties.property_name": [
+      [
+        "realty_assets.asset_label",
+        0.43477773666381836
+      ],
+      [
+        "realty_assets.oth_amenity_2",
+        0.41016411781311035
+      ],
+      [
+        "realty_assets.oth_amenity_1",
+        0.40479737520217896
+      ]
+    ],
+    "Properties.property_address": [
+      [
+        "realty_assets.oth_amenity_2",
+        0.44912248849868774
+      ],
+      [
+        "realty_assets.oth_amenity_3",
+        0.4439760446548462
+      ],
+      [
+        "realty_assets.asset_location",
+        0.44281846284866333
+      ]
+    ],
+    "Properties.room_count": [
+      [
+        "realty_assets.space_quantity",
+        0.4985150098800659
+      ],
+      [
+        "asset_amenities.amenity_key",
+        0.460530161857605
+      ],
+      [
+        "asset_amenities.asset_key",
+        0.45414823293685913
+      ]
+    ],
+    "Properties.vendor_requested_price": [
+      [
+        "realty_assets.vendor_asked_cost",
+        0.7472171783447266
+      ],
+      [
+        "realty_assets.buyer_proposed_cost",
+        0.6119982004165649
+      ],
+      [
+        "realty_assets.agreed_sale_cost",
+        0.5902783870697021
+      ]
+    ],
+    "Properties.buyer_offered_price": [
+      [
+        "realty_assets.buyer_proposed_cost",
+        0.7368289232254028
+      ],
+      [
+        "realty_assets.agreed_sale_cost",
+        0.7227029800415039
+      ],
+      [
+        "realty_assets.vendor_asked_cost",
+        0.5222655534744263
+      ]
+    ],
+    "Properties.agreed_selling_price": [
+      [
+        "realty_assets.agreed_sale_cost",
+        0.7901319265365601
+      ],
+      [
+        "realty_assets.buyer_proposed_cost",
+        0.6688947677612305
+      ],
+      [
+        "realty_assets.day_sold",
+        0.5673009753227234
+      ]
+    ],
+    "Properties.apt_feature_1": [
+      [
+        "realty_assets.apt_amenity_1",
+        0.641533374786377
+      ],
+      [
+        "realty_assets.apt_amenity_2",
+        0.6239539384841919
+      ],
+      [
+        "realty_assets.apt_amenity_3",
+        0.6008645296096802
+      ]
+    ],
+    "Properties.apt_feature_2": [
+      [
+        "realty_assets.apt_amenity_2",
+        0.6514503359794617
+      ],
+      [
+        "realty_assets.apt_amenity_1",
+        0.6239218711853027
+      ],
+      [
+        "realty_assets.apt_amenity_3",
+        0.6047288179397583
+      ]
+    ],
+    "Properties.apt_feature_3": [
+      [
+        "realty_assets.apt_amenity_3",
+        0.6680822372436523
+      ],
+      [
+        "realty_assets.apt_amenity_2",
+        0.6299748420715332
+      ],
+      [
+        "realty_assets.apt_amenity_1",
+        0.6281248331069946
+      ]
+    ],
+    "Properties.fld_feature_1": [
+      [
+        "realty_assets.fld_amenity_1",
+        0.6307821869850159
+      ],
+      [
+        "realty_assets.fld_amenity_2",
+        0.6276152729988098
+      ],
+      [
+        "realty_assets.fld_amenity_3",
+        0.6138863563537598
+      ]
+    ],
+    "Properties.fld_feature_2": [
+      [
+        "realty_assets.fld_amenity_2",
+        0.6387607455253601
+      ],
+      [
+        "realty_assets.fld_amenity_1",
+        0.6178339719772339
+      ],
+      [
+        "realty_assets.fld_amenity_3",
+        0.6116053462028503
+      ]
+    ],
+    "Properties.fld_feature_3": [
+      [
+        "realty_assets.fld_amenity_3",
+        0.6520459651947021
+      ],
+      [
+        "realty_assets.fld_amenity_2",
+        0.6318575143814087
+      ],
+      [
+        "realty_assets.fld_amenity_1",
+        0.62447190284729
+      ]
+    ],
+    "Properties.hse_feature_1": [
+      [
+        "realty_assets.hse_amenity_1",
+        0.6389297246932983
+      ],
+      [
+        "realty_assets.hse_amenity_2",
+        0.6363372206687927
+      ],
+      [
+        "realty_assets.hse_amenity_3",
+        0.6185234785079956
+      ]
+    ],
+    "Properties.hse_feature_2": [
+      [
+        "realty_assets.hse_amenity_2",
+        0.6482084393501282
+      ],
+      [
+        "realty_assets.hse_amenity_1",
+        0.6260356903076172
+      ],
+      [
+        "realty_assets.hse_amenity_3",
+        0.6177850365638733
+      ]
+    ],
+    "Properties.hse_feature_3": [
+      [
+        "realty_assets.hse_amenity_3",
+        0.6613736152648926
+      ],
+      [
+        "realty_assets.hse_amenity_2",
+        0.6406117677688599
+      ],
+      [
+        "realty_assets.hse_amenity_1",
+        0.6315432190895081
+      ]
+    ],
+    "Properties.oth_feature_1": [
+      [
+        "realty_assets.oth_amenity_1",
+        0.5237637162208557
+      ],
+      [
+        "realty_assets.oth_amenity_2",
+        0.5141006708145142
+      ],
+      [
+        "realty_assets.oth_amenity_3",
+        0.49393677711486816
+      ]
+    ],
+    "Properties.oth_feature_2": [
+      [
+        "realty_assets.oth_amenity_2",
+        0.5344288945198059
+      ],
+      [
+        "realty_assets.oth_amenity_1",
+        0.5028566718101501
+      ],
+      [
+        "realty_assets.oth_amenity_3",
+        0.49563586711883545
+      ]
+    ],
+    "Properties.oth_feature_3": [
+      [
+        "realty_assets.oth_amenity_3",
+        0.5541535019874573
+      ],
+      [
+        "realty_assets.oth_amenity_2",
+        0.5226503610610962
+      ],
+      [
+        "realty_assets.oth_amenity_1",
+        0.5109246969223022
+      ]
+    ],
+    "Properties.shp_feature_1": [
+      [
+        "realty_assets.shp_amenity_1",
+        0.5881830453872681
+      ],
+      [
+        "realty_assets.shp_amenity_2",
+        0.5791100263595581
+      ],
+      [
+        "realty_assets.shp_amenity_3",
+        0.5570521354675293
+      ]
+    ],
+    "Properties.shp_feature_2": [
+      [
+        "realty_assets.shp_amenity_2",
+        0.5948214530944824
+      ],
+      [
+        "realty_assets.shp_amenity_1",
+        0.57240229845047
+      ],
+      [
+        "realty_assets.shp_amenity_3",
+        0.5560908317565918
+      ]
+    ],
+    "Properties.shp_feature_3": [
+      [
+        "realty_assets.shp_amenity_3",
+        0.6114935874938965
+      ],
+      [
+        "realty_assets.shp_amenity_2",
+        0.5868997573852539
+      ],
+      [
+        "realty_assets.shp_amenity_1",
+        0.5813818573951721
+      ]
+    ],
+    "Properties.other_property_details": [
+      [
+        "realty_assets.oth_amenity_2",
+        0.5068783164024353
+      ],
+      [
+        "realty_assets.supplementary_asset_details",
+        0.4952264428138733
+      ],
+      [
+        "realty_assets.shp_amenity_2",
+        0.4950874447822571
+      ]
+    ],
+    "Other_Property_Features.property_id": [
+      [
+        "asset_amenities.asset_key",
+        0.45312222838401794
+      ],
+      [
+        "asset_amenities.amenity_key",
+        0.44388216733932495
+      ],
+      [
+        "realty_assets.asset_key",
+        0.43869537115097046
+      ]
+    ],
+    "Other_Property_Features.feature_id": [
+      [
+        "asset_amenities.asset_key",
+        0.38490545749664307
+      ],
+      [
+        "asset_amenities.amenity_key",
+        0.37379616498947144
+      ],
+      [
+        "realty_assets.asset_key",
+        0.3727378249168396
+      ]
+    ],
+    "Other_Property_Features.property_feature_description": [
+      [
+        "asset_amenities.asset_amenity_summary",
+        0.42909324169158936
+      ],
+      [
+        "realty_assets.apt_amenity_2",
+        0.39750075340270996
+      ],
+      [
+        "optional_amenities.amenity_summary",
+        0.382388174533844
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Ref_Feature_Types": "amenity_category_lookup",
+      "Ref_Property_Types": "asset_category_lookup",
+      "Other_Available_Features": "optional_amenities",
+      "Properties": "realty_assets",
+      "Other_Property_Features": "asset_amenities"
+    },
+    "columns": {
+      "Ref_Feature_Types.feature_type_code": "amenity_category_lookup.amenity_category_tag",
+      "Ref_Feature_Types.feature_type_name": "amenity_category_lookup.amenity_category_label",
+      "Ref_Property_Types.property_type_code": "asset_category_lookup.asset_category_tag",
+      "Ref_Property_Types.property_type_description": "asset_category_lookup.asset_category_summary",
+      "Other_Available_Features.feature_id": "optional_amenities.amenity_key",
+      "Other_Available_Features.feature_type_code": "optional_amenities.amenity_category_tag",
+      "Other_Available_Features.feature_name": "optional_amenities.amenity_label",
+      "Other_Available_Features.feature_description": "optional_amenities.amenity_summary",
+      "Properties.property_id": "realty_assets.asset_key",
+      "Properties.property_type_code": "realty_assets.asset_category_tag",
+      "Properties.date_on_market": "realty_assets.day_on_market",
+      "Properties.date_sold": "realty_assets.day_sold",
+      "Properties.property_name": "realty_assets.asset_label",
+      "Properties.property_address": "realty_assets.asset_location",
+      "Properties.room_count": "realty_assets.space_quantity",
+      "Properties.vendor_requested_price": "realty_assets.vendor_asked_cost",
+      "Properties.buyer_offered_price": "realty_assets.buyer_proposed_cost",
+      "Properties.agreed_selling_price": "realty_assets.agreed_sale_cost",
+      "Properties.apt_feature_1": "realty_assets.apt_amenity_1",
+      "Properties.apt_feature_2": "realty_assets.apt_amenity_2",
+      "Properties.apt_feature_3": "realty_assets.apt_amenity_3",
+      "Properties.fld_feature_1": "realty_assets.fld_amenity_1",
+      "Properties.fld_feature_2": "realty_assets.fld_amenity_2",
+      "Properties.fld_feature_3": "realty_assets.fld_amenity_3",
+      "Properties.hse_feature_1": "realty_assets.hse_amenity_1",
+      "Properties.hse_feature_2": "realty_assets.hse_amenity_2",
+      "Properties.hse_feature_3": "realty_assets.hse_amenity_3",
+      "Properties.oth_feature_1": "realty_assets.oth_amenity_1",
+      "Properties.oth_feature_2": "realty_assets.oth_amenity_2",
+      "Properties.oth_feature_3": "realty_assets.oth_amenity_3",
+      "Properties.shp_feature_1": "realty_assets.shp_amenity_1",
+      "Properties.shp_feature_2": "realty_assets.shp_amenity_2",
+      "Properties.shp_feature_3": "realty_assets.shp_amenity_3",
+      "Properties.other_property_details": "realty_assets.supplementary_asset_details",
+      "Other_Property_Features.property_id": "asset_amenities.amenity_key",
+      "Other_Property_Features.feature_id": "asset_amenities.asset_key",
+      "Other_Property_Features.property_feature_description": "asset_amenities.asset_amenity_summary"
+    }
+  },
+  "q_B": {
+    "real_estate_properties__challenge_v0__q1030": "SELECT COUNT(*) AS \"_col_0\" FROM \"optional_amenities\" AS \"other_available_features\"",
+    "real_estate_properties__challenge_v0__q1031": "SELECT \"t2\".\"amenity_category_label\" AS \"feature_type_name\" FROM \"optional_amenities\" AS \"t1\" JOIN \"amenity_category_lookup\" AS \"t2\" ON \"t1\".\"amenity_category_tag\" = \"t2\".\"amenity_category_tag\" WHERE \"t1\".\"amenity_label\" = 'AirCon'",
+    "real_estate_properties__challenge_v0__q1032": "SELECT \"t2\".\"asset_category_summary\" AS \"property_type_description\" FROM \"realty_assets\" AS \"t1\" JOIN \"asset_category_lookup\" AS \"t2\" ON \"t1\".\"asset_category_tag\" = \"t2\".\"asset_category_tag\" GROUP BY \"t1\".\"asset_category_tag\"",
+    "real_estate_properties__challenge_v0__q1033": "SELECT \"properties\".\"asset_label\" AS \"property_name\" FROM \"realty_assets\" AS \"properties\" WHERE \"properties\".\"asset_category_tag\" = 'House' UNION SELECT \"properties\".\"asset_label\" AS \"property_name\" FROM \"realty_assets\" AS \"properties\" WHERE \"properties\".\"asset_category_tag\" = 'Apartment' AND \"properties\".\"space_quantity\" > 1"
+  },
+  "rewrite_errors": {},
+  "model": "<workspace>/models/spider-run-epoch1",
+  "method": "semantic"
+}

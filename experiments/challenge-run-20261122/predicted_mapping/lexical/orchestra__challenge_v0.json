@@ -1,0 +1,33 @@
+{
+  "tables": {
+    "conductor": "music_director",
+    "orchestra": "ensemble",
+    "performance": "rendition",
+    "show": "production"
+  },
+  "columns": {
+    "conductor.Conductor_ID": "music_director.director_key",
+    "conductor.Name": "music_director.years_old",
+    "conductor.Age": "music_director.label",
+    "conductor.Nationality": "music_director.Nationality",
+    "conductor.Year_of_Work": "music_director.annum_of_work",
+    "orchestra.Orchestra_ID": "ensemble.ensemble_key",
+    "orchestra.Orchestra": "ensemble.ensemble",
+    "orchestra.Conductor_ID": "ensemble.entry_firm",
+    "orchestra.Record_Company": "ensemble.director_key",
+    "orchestra.Year_of_Founded": "ensemble.annum_of_founded",
+    "orchestra.Major_Record_Format": "ensemble.major_entry_format",
+    "performance.Performance_ID": "rendition.certified_audience_millions",
+    "performance.Orchestra_ID": "rendition.portion",
+    "performance.Type": "rendition.event_day",
+    "performance.Date": "rendition.category",
+    "performance.Official_ratings_in_millions": "rendition.seven_day_position",
+    "performance.Weekly_rank": "rendition.ensemble_key",
+    "performance.Share": "rendition.rendition_key",
+    "show.Show_ID": "production.production_key",
+    "show.Performance_ID": "production.rendition_key",
+    "show.If_first_show": "production.if_given_production",
+    "show.Result": "production.outcome",
+    "show.Attendance": "production.Attendance"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "tables": {
+    "Student": "learner",
+    "Has_Pet": "pet_ownership",
+    "Pets": "companion_animals"
+  },
+  "columns": {
+    "Student.StuID": "learner.years_old",
+    "Student.LName": "learner.family_name",
+    "Student.Fname": "learner.given_name",
+    "Student.Age": "learner.learner_key",
+    "Student.Sex": "learner.gender_category",
+    "Student.Major": "learner.Major",
+    "Student.Advisor": "learner.Advisor",
+    "Student.city_code": "learner.municipality_tag",
+    "Has_Pet.StuID": "pet_ownership.animal_key",
+    "Has_Pet.PetID": "pet_ownership.learner_key",
+    "Pets.PetID": "companion_animals.mass_value",
+    "Pets.PetType": "companion_animals.animal_key",
+    "Pets.pet_age": "companion_animals.animal_age",
+    "Pets.weight": "companion_animals.animal_category"
+  }
+}

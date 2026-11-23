@@ -1,0 +1,221 @@
+{
+  "tables": {
+    "Highschooler": [
+      [
+        "secondary_student",
+        0.27586206896551724
+      ],
+      [
+        "social_connection",
+        0.27586206896551724
+      ],
+      [
+        "preferences",
+        0.17391304347826086
+      ]
+    ],
+    "Friend": [
+      [
+        "preferences",
+        0.47058823529411764
+      ],
+      [
+        "secondary_student",
+        0.2608695652173913
+      ],
+      [
+        "social_connection",
+        0.2608695652173913
+      ]
+    ],
+    "Likes": [
+      [
+        "preferences",
+        0.25
+      ],
+      [
+        "secondary_student",
+        0.18181818181818182
+      ],
+      [
+        "social_connection",
+        0.18181818181818182
+      ]
+    ]
+  },
+  "columns": {
+    "Highschooler.ID": [
+      [
+        "secondary_student.grade",
+        0.2857142857142857
+      ],
+      [
+        "secondary_student.record_key",
+        0.16666666666666666
+      ],
+      [
+        "preferences.preferred_key",
+        0.13333333333333333
+      ]
+    ],
+    "Highschooler.name": [
+      [
+        "secondary_student.grade",
+        0.4444444444444444
+      ],
+      [
+        "secondary_student.label",
+        0.4444444444444444
+      ],
+      [
+        "preferences.learner_key",
+        0.26666666666666666
+      ]
+    ],
+    "Highschooler.grade": [
+      [
+        "secondary_student.grade",
+        1.0
+      ],
+      [
+        "secondary_student.record_key",
+        0.4
+      ],
+      [
+        "secondary_student.label",
+        0.4
+      ]
+    ],
+    "Friend.student_id": [
+      [
+        "preferences.learner_key",
+        0.2857142857142857
+      ],
+      [
+        "social_connection.learner_key",
+        0.2857142857142857
+      ],
+      [
+        "secondary_student.grade",
+        0.26666666666666666
+      ]
+    ],
+    "Friend.friend_id": [
+      [
+        "preferences.preferred_key",
+        0.45454545454545453
+      ],
+      [
+        "secondary_student.record_key",
+        0.42105263157894735
+      ],
+      [
+        "preferences.learner_key",
+        0.3
+      ]
+    ],
+    "Likes.student_id": [
+      [
+        "preferences.learner_key",
+        0.2857142857142857
+      ],
+      [
+        "social_connection.learner_key",
+        0.2857142857142857
+      ],
+      [
+        "secondary_student.grade",
+        0.26666666666666666
+      ]
+    ],
+    "Likes.liked_id": [
+      [
+        "preferences.learner_key",
+        0.3157894736842105
+      ],
+      [
+        "social_connection.learner_key",
+        0.3157894736842105
+      ],
+      [
+        "secondary_student.label",
+        0.3076923076923077
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "Highschooler": "secondary_student",
+      "Friend": "preferences",
+      "Likes": "social_connection"
+    },
+    "columns": {
+      "Highschooler.ID": "secondary_student.record_key",
+      "Highschooler.name": "secondary_student.label",
+      "Highschooler.grade": "secondary_student.grade",
+      "Friend.student_id": "preferences.learner_key",
+      "Friend.friend_id": "preferences.preferred_key",
+      "Likes.student_id": "social_connection.learner_key",
+      "Likes.liked_id": "social_connection.connection_key"
+    }
+  },
+  "q_B": {
+    "network_1__challenge_v0__q0862": "SELECT COUNT(*) AS \"_col_0\" FROM \"secondary_student\" AS \"highschooler\"",
+    "network_1__challenge_v0__q0863": "SELECT COUNT(*) AS \"_col_0\" FROM \"secondary_student\" AS \"highschooler\"",
+    "network_1__challenge_v0__q0864": "SELECT \"highschooler\".\"label\" AS \"name\", \"highschooler\".\"grade\" AS \"grade\" FROM \"secondary_student\" AS \"highschooler\"",
+    "network_1__challenge_v0__q0865": "SELECT \"highschooler\".\"label\" AS \"name\", \"highschooler\".\"grade\" AS \"grade\" FROM \"secondary_student\" AS \"highschooler\"",
+    "network_1__challenge_v0__q0866": "SELECT \"highschooler\".\"grade\" AS \"grade\" FROM \"secondary_student\" AS \"highschooler\"",
+    "network_1__challenge_v0__q0867": "SELECT \"highschooler\".\"grade\" AS \"grade\" FROM \"secondary_student\" AS \"highschooler\"",
+    "network_1__challenge_v0__q0868": "SELECT \"highschooler\".\"grade\" AS \"grade\" FROM \"secondary_student\" AS \"highschooler\" WHERE \"highschooler\".\"label\" = 'Kyle'",
+    "network_1__challenge_v0__q0869": "SELECT \"highschooler\".\"grade\" AS \"grade\" FROM \"secondary_student\" AS \"highschooler\" WHERE \"highschooler\".\"label\" = 'Kyle'",
+    "network_1__challenge_v0__q0870": "SELECT \"highschooler\".\"label\" AS \"name\" FROM \"secondary_student\" AS \"highschooler\" WHERE \"highschooler\".\"grade\" = 10",
+    "network_1__challenge_v0__q0871": "SELECT \"highschooler\".\"label\" AS \"name\" FROM \"secondary_student\" AS \"highschooler\" WHERE \"highschooler\".\"grade\" = 10",
+    "network_1__challenge_v0__q0872": "SELECT \"highschooler\".\"record_key\" AS \"id\" FROM \"secondary_student\" AS \"highschooler\" WHERE \"highschooler\".\"label\" = 'Kyle'",
+    "network_1__challenge_v0__q0873": "SELECT \"highschooler\".\"record_key\" AS \"id\" FROM \"secondary_student\" AS \"highschooler\" WHERE \"highschooler\".\"label\" = 'Kyle'",
+    "network_1__challenge_v0__q0874": "SELECT COUNT(*) AS \"_col_0\" FROM \"secondary_student\" AS \"highschooler\" WHERE \"highschooler\".\"grade\" = 9 OR \"highschooler\".\"grade\" = 10",
+    "network_1__challenge_v0__q0875": "SELECT COUNT(*) AS \"_col_0\" FROM \"secondary_student\" AS \"highschooler\" WHERE \"highschooler\".\"grade\" = 9 OR \"highschooler\".\"grade\" = 10",
+    "network_1__challenge_v0__q0876": "SELECT \"highschooler\".\"grade\" AS \"grade\", COUNT(*) AS \"_col_1\" FROM \"secondary_student\" AS \"highschooler\" GROUP BY \"highschooler\".\"grade\"",
+    "network_1__challenge_v0__q0877": "SELECT \"highschooler\".\"grade\" AS \"grade\", COUNT(*) AS \"_col_1\" FROM \"secondary_student\" AS \"highschooler\" GROUP BY \"highschooler\".\"grade\"",
+    "network_1__challenge_v0__q0878": "SELECT \"highschooler\".\"grade\" AS \"grade\" FROM \"secondary_student\" AS \"highschooler\" GROUP BY \"highschooler\".\"grade\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "network_1__challenge_v0__q0879": "SELECT \"highschooler\".\"grade\" AS \"grade\" FROM \"secondary_student\" AS \"highschooler\" GROUP BY \"highschooler\".\"grade\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "network_1__challenge_v0__q0880": "SELECT \"highschooler\".\"grade\" AS \"grade\" FROM \"secondary_student\" AS \"highschooler\" GROUP BY \"highschooler\".\"grade\" HAVING COUNT(*) >= 4",
+    "network_1__challenge_v0__q0881": "SELECT \"highschooler\".\"grade\" AS \"grade\" FROM \"secondary_student\" AS \"highschooler\" GROUP BY \"highschooler\".\"grade\" HAVING COUNT(*) >= 4",
+    "network_1__challenge_v0__q0882": "SELECT \"friend\".\"learner_key\" AS \"student_id\", COUNT(*) AS \"_col_1\" FROM \"preferences\" AS \"friend\" GROUP BY \"friend\".\"learner_key\"",
+    "network_1__challenge_v0__q0883": "SELECT \"friend\".\"learner_key\" AS \"student_id\", COUNT(*) AS \"_col_1\" FROM \"preferences\" AS \"friend\" GROUP BY \"friend\".\"learner_key\"",
+    "network_1__challenge_v0__q0884": "SELECT \"t2\".\"label\" AS \"name\", COUNT(*) AS \"_col_1\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"learner_key\"",
+    "network_1__challenge_v0__q0885": "SELECT \"t2\".\"label\" AS \"name\", COUNT(*) AS \"_col_1\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"learner_key\"",
+    "network_1__challenge_v0__q0886": "SELECT \"t2\".\"label\" AS \"name\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"learner_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "network_1__challenge_v0__q0887": "SELECT \"t2\".\"label\" AS \"name\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"learner_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "network_1__challenge_v0__q0888": "SELECT \"t2\".\"label\" AS \"name\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"learner_key\" HAVING COUNT(*) >= 3",
+    "network_1__challenge_v0__q0889": "SELECT \"t2\".\"label\" AS \"name\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"learner_key\" HAVING COUNT(*) >= 3",
+    "network_1__challenge_v0__q0890": "SELECT \"t3\".\"label\" AS \"name\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" JOIN \"secondary_student\" AS \"t3\" ON \"t1\".\"preferred_key\" = \"t3\".\"record_key\" WHERE \"t2\".\"label\" = 'Kyle'",
+    "network_1__challenge_v0__q0891": "SELECT \"t3\".\"label\" AS \"name\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" JOIN \"secondary_student\" AS \"t3\" ON \"t1\".\"preferred_key\" = \"t3\".\"record_key\" WHERE \"t2\".\"label\" = 'Kyle'",
+    "network_1__challenge_v0__q0892": "SELECT COUNT(*) AS \"_col_0\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" WHERE \"t2\".\"label\" = 'Kyle'",
+    "network_1__challenge_v0__q0893": "SELECT COUNT(*) AS \"_col_0\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" WHERE \"t2\".\"label\" = 'Kyle'",
+    "network_1__challenge_v0__q0894": "SELECT \"highschooler\".\"record_key\" AS \"id\" FROM \"secondary_student\" AS \"highschooler\" EXCEPT SELECT \"friend\".\"learner_key\" AS \"student_id\" FROM \"preferences\" AS \"friend\"",
+    "network_1__challenge_v0__q0895": "SELECT \"highschooler\".\"record_key\" AS \"id\" FROM \"secondary_student\" AS \"highschooler\" EXCEPT SELECT \"friend\".\"learner_key\" AS \"student_id\" FROM \"preferences\" AS \"friend\"",
+    "network_1__challenge_v0__q0896": "SELECT \"highschooler\".\"label\" AS \"name\" FROM \"secondary_student\" AS \"highschooler\" EXCEPT SELECT \"t2\".\"label\" AS \"name\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\"",
+    "network_1__challenge_v0__q0897": "SELECT \"highschooler\".\"label\" AS \"name\" FROM \"secondary_student\" AS \"highschooler\" EXCEPT SELECT \"t2\".\"label\" AS \"name\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\"",
+    "network_1__challenge_v0__q0898": "SELECT \"friend\".\"learner_key\" AS \"student_id\" FROM \"preferences\" AS \"friend\" INTERSECT SELECT \"likes\".\"connection_key\" AS \"liked_id\" FROM \"social_connection\" AS \"likes\"",
+    "network_1__challenge_v0__q0899": "SELECT \"friend\".\"learner_key\" AS \"student_id\" FROM \"preferences\" AS \"friend\" INTERSECT SELECT \"likes\".\"connection_key\" AS \"liked_id\" FROM \"social_connection\" AS \"likes\"",
+    "network_1__challenge_v0__q0900": "SELECT \"t2\".\"label\" AS \"name\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" INTERSECT SELECT \"t2\".\"label\" AS \"name\" FROM \"social_connection\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"connection_key\" = \"t2\".\"record_key\"",
+    "network_1__challenge_v0__q0901": "SELECT \"t2\".\"label\" AS \"name\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" INTERSECT SELECT \"t2\".\"label\" AS \"name\" FROM \"social_connection\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"connection_key\" = \"t2\".\"record_key\"",
+    "network_1__challenge_v0__q0902": "SELECT \"likes\".\"learner_key\" AS \"student_id\", COUNT(*) AS \"_col_1\" FROM \"social_connection\" AS \"likes\" GROUP BY \"likes\".\"learner_key\"",
+    "network_1__challenge_v0__q0903": "SELECT \"likes\".\"learner_key\" AS \"student_id\", COUNT(*) AS \"_col_1\" FROM \"social_connection\" AS \"likes\" GROUP BY \"likes\".\"learner_key\"",
+    "network_1__challenge_v0__q0904": "SELECT \"t2\".\"label\" AS \"name\", COUNT(*) AS \"_col_1\" FROM \"social_connection\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"learner_key\"",
+    "network_1__challenge_v0__q0905": "SELECT \"t2\".\"label\" AS \"name\", COUNT(*) AS \"_col_1\" FROM \"social_connection\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"learner_key\"",
+    "network_1__challenge_v0__q0906": "SELECT \"t2\".\"label\" AS \"name\" FROM \"social_connection\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"learner_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "network_1__challenge_v0__q0907": "SELECT \"t2\".\"label\" AS \"name\" FROM \"social_connection\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"learner_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "network_1__challenge_v0__q0908": "SELECT \"t2\".\"label\" AS \"name\" FROM \"social_connection\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"learner_key\" HAVING COUNT(*) >= 2",
+    "network_1__challenge_v0__q0909": "SELECT \"t2\".\"label\" AS \"name\" FROM \"social_connection\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"learner_key\" HAVING COUNT(*) >= 2",
+    "network_1__challenge_v0__q0910": "SELECT \"t2\".\"label\" AS \"name\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" WHERE \"t2\".\"grade\" > 5 GROUP BY \"t1\".\"learner_key\" HAVING COUNT(*) >= 2",
+    "network_1__challenge_v0__q0911": "SELECT \"t2\".\"label\" AS \"name\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" WHERE \"t2\".\"grade\" > 5 GROUP BY \"t1\".\"learner_key\" HAVING COUNT(*) >= 2",
+    "network_1__challenge_v0__q0912": "SELECT COUNT(*) AS \"_col_0\" FROM \"social_connection\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" WHERE \"t2\".\"label\" = 'Kyle'",
+    "network_1__challenge_v0__q0913": "SELECT COUNT(*) AS \"_col_0\" FROM \"social_connection\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\" WHERE \"t2\".\"label\" = 'Kyle'",
+    "network_1__challenge_v0__q0914": "SELECT AVG(\"highschooler\".\"grade\") AS \"_col_0\" FROM \"secondary_student\" AS \"highschooler\" WHERE \"highschooler\".\"record_key\" IN (SELECT \"t1\".\"learner_key\" AS \"student_id\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\")",
+    "network_1__challenge_v0__q0915": "SELECT AVG(\"highschooler\".\"grade\") AS \"_col_0\" FROM \"secondary_student\" AS \"highschooler\" WHERE \"highschooler\".\"record_key\" IN (SELECT \"t1\".\"learner_key\" AS \"student_id\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\")",
+    "network_1__challenge_v0__q0916": "SELECT MIN(\"highschooler\".\"grade\") AS \"_col_0\" FROM \"secondary_student\" AS \"highschooler\" WHERE NOT \"highschooler\".\"record_key\" IN (SELECT \"t1\".\"learner_key\" AS \"student_id\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\")",
+    "network_1__challenge_v0__q0917": "SELECT MIN(\"highschooler\".\"grade\") AS \"_col_0\" FROM \"secondary_student\" AS \"highschooler\" WHERE NOT \"highschooler\".\"record_key\" IN (SELECT \"t1\".\"learner_key\" AS \"student_id\" FROM \"preferences\" AS \"t1\" JOIN \"secondary_student\" AS \"t2\" ON \"t1\".\"learner_key\" = \"t2\".\"record_key\")"
+  },
+  "rewrite_errors": {}
+}

@@ -1,0 +1,542 @@
+{
+  "tables": {
+    "continents": [
+      [
+        "nations",
+        0.35294117647058826
+      ],
+      [
+        "landmasses",
+        0.3
+      ],
+      [
+        "vehicle_labels",
+        0.25
+      ]
+    ],
+    "countries": [
+      [
+        "nations",
+        0.375
+      ],
+      [
+        "landmasses",
+        0.3157894736842105
+      ],
+      [
+        "automobile_manufacturers",
+        0.30303030303030304
+      ]
+    ],
+    "car_makers": [
+      [
+        "landmasses",
+        0.5
+      ],
+      [
+        "automobile_manufacturers",
+        0.4117647058823529
+      ],
+      [
+        "vehicle_labels",
+        0.3333333333333333
+      ]
+    ],
+    "model_list": [
+      [
+        "landmasses",
+        0.3
+      ],
+      [
+        "automobile_manufacturers",
+        0.29411764705882354
+      ],
+      [
+        "vehicle_labels",
+        0.25
+      ]
+    ],
+    "car_names": [
+      [
+        "landmasses",
+        0.5263157894736842
+      ],
+      [
+        "nations",
+        0.375
+      ],
+      [
+        "vehicle_labels",
+        0.34782608695652173
+      ]
+    ],
+    "cars_data": [
+      [
+        "vehicle_catalog",
+        0.4166666666666667
+      ],
+      [
+        "vehicle_labels",
+        0.2608695652173913
+      ],
+      [
+        "nations",
+        0.25
+      ]
+    ]
+  },
+  "columns": {
+    "continents.ContId": [
+      [
+        "vehicle_specifications.acceleration_time",
+        0.4166666666666667
+      ],
+      [
+        "vehicle_specifications.record_key",
+        0.35294117647058826
+      ],
+      [
+        "automobile_manufacturers.record_key",
+        0.35294117647058826
+      ]
+    ],
+    "continents.Continent": [
+      [
+        "vehicle_specifications.acceleration_time",
+        0.46153846153846156
+      ],
+      [
+        "vehicle_specifications.engine_displacement",
+        0.42857142857142855
+      ],
+      [
+        "vehicle_specifications.engine_cylinder_count",
+        0.4
+      ]
+    ],
+    "countries.CountryId": [
+      [
+        "vehicle_specifications.record_key",
+        0.4
+      ],
+      [
+        "automobile_manufacturers.record_key",
+        0.4
+      ],
+      [
+        "vehicle_specifications.acceleration_time",
+        0.37037037037037035
+      ]
+    ],
+    "countries.CountryName": [
+      [
+        "automobile_manufacturers.complete_name",
+        0.64
+      ],
+      [
+        "vehicle_specifications.acceleration_time",
+        0.41379310344827586
+      ],
+      [
+        "vehicle_specifications.record_key",
+        0.36363636363636365
+      ]
+    ],
+    "countries.Continent": [
+      [
+        "vehicle_specifications.acceleration_time",
+        0.46153846153846156
+      ],
+      [
+        "vehicle_specifications.engine_displacement",
+        0.42857142857142855
+      ],
+      [
+        "vehicle_specifications.engine_cylinder_count",
+        0.4
+      ]
+    ],
+    "car_makers.Id": [
+      [
+        "vehicle_labels.brand",
+        0.2857142857142857
+      ],
+      [
+        "vehicle_labels.design",
+        0.25
+      ],
+      [
+        "vehicle_catalog.design",
+        0.25
+      ]
+    ],
+    "car_makers.Maker": [
+      [
+        "vehicle_catalog.manufacturer",
+        0.47058823529411764
+      ],
+      [
+        "landmasses.landmass_key",
+        0.47058823529411764
+      ],
+      [
+        "automobile_manufacturers.manufacturer",
+        0.47058823529411764
+      ]
+    ],
+    "car_makers.FullName": [
+      [
+        "automobile_manufacturers.complete_name",
+        0.5454545454545454
+      ],
+      [
+        "landmasses.landmass",
+        0.35294117647058826
+      ],
+      [
+        "nations.landmass",
+        0.35294117647058826
+      ]
+    ],
+    "car_makers.Country": [
+      [
+        "vehicle_specifications.record_key",
+        0.47058823529411764
+      ],
+      [
+        "automobile_manufacturers.record_key",
+        0.47058823529411764
+      ],
+      [
+        "vehicle_specifications.engine_cylinder_count",
+        0.35714285714285715
+      ]
+    ],
+    "model_list.ModelId": [
+      [
+        "vehicle_labels.design",
+        0.42857142857142855
+      ],
+      [
+        "vehicle_catalog.design",
+        0.42857142857142855
+      ],
+      [
+        "vehicle_catalog.design_key",
+        0.3333333333333333
+      ]
+    ],
+    "model_list.Maker": [
+      [
+        "vehicle_catalog.manufacturer",
+        0.47058823529411764
+      ],
+      [
+        "landmasses.landmass_key",
+        0.47058823529411764
+      ],
+      [
+        "automobile_manufacturers.manufacturer",
+        0.47058823529411764
+      ]
+    ],
+    "model_list.Model": [
+      [
+        "vehicle_specifications.record_key",
+        0.4
+      ],
+      [
+        "automobile_manufacturers.record_key",
+        0.4
+      ],
+      [
+        "vehicle_labels.design",
+        0.36363636363636365
+      ]
+    ],
+    "car_names.MakeId": [
+      [
+        "landmasses.landmass_key",
+        0.42105263157894735
+      ],
+      [
+        "vehicle_specifications.mass_value",
+        0.35294117647058826
+      ],
+      [
+        "nations.nation_key",
+        0.35294117647058826
+      ]
+    ],
+    "car_names.Model": [
+      [
+        "vehicle_specifications.record_key",
+        0.4
+      ],
+      [
+        "automobile_manufacturers.record_key",
+        0.4
+      ],
+      [
+        "vehicle_labels.design",
+        0.36363636363636365
+      ]
+    ],
+    "car_names.Make": [
+      [
+        "landmasses.landmass_key",
+        0.5
+      ],
+      [
+        "vehicle_specifications.mass_value",
+        0.42857142857142855
+      ],
+      [
+        "nations.nation_key",
+        0.42857142857142855
+      ]
+    ],
+    "cars_data.Id": [
+      [
+        "vehicle_labels.brand",
+        0.2857142857142857
+      ],
+      [
+        "vehicle_labels.design",
+        0.25
+      ],
+      [
+        "vehicle_catalog.design",
+        0.25
+      ]
+    ],
+    "cars_data.MPG": [
+      [
+        "vehicle_specifications.miles_per_gallon",
+        0.3157894736842105
+      ],
+      [
+        "automobile_manufacturers.complete_name",
+        0.25
+      ],
+      [
+        "vehicle_labels.design",
+        0.2222222222222222
+      ]
+    ],
+    "cars_data.Cylinders": [
+      [
+        "vehicle_specifications.engine_cylinder_count",
+        0.5333333333333333
+      ],
+      [
+        "landmasses.landmass",
+        0.47058823529411764
+      ],
+      [
+        "nations.landmass",
+        0.47058823529411764
+      ]
+    ],
+    "cars_data.Edispl": [
+      [
+        "vehicle_specifications.engine_displacement",
+        0.48
+      ],
+      [
+        "vehicle_specifications.miles_per_gallon",
+        0.36363636363636365
+      ],
+      [
+        "vehicle_labels.design",
+        0.3333333333333333
+      ]
+    ],
+    "cars_data.Horsepower": [
+      [
+        "vehicle_specifications.engine_power",
+        0.5454545454545454
+      ],
+      [
+        "vehicle_specifications.miles_per_gallon",
+        0.3076923076923077
+      ],
+      [
+        "vehicle_specifications.record_key",
+        0.3
+      ]
+    ],
+    "cars_data.Weight": [
+      [
+        "vehicle_labels.design",
+        0.5
+      ],
+      [
+        "vehicle_catalog.design",
+        0.5
+      ],
+      [
+        "vehicle_catalog.design_key",
+        0.375
+      ]
+    ],
+    "cars_data.Accelerate": [
+      [
+        "vehicle_specifications.acceleration_time",
+        0.7407407407407407
+      ],
+      [
+        "automobile_manufacturers.complete_name",
+        0.43478260869565216
+      ],
+      [
+        "vehicle_specifications.calendar_annum",
+        0.4166666666666667
+      ]
+    ],
+    "cars_data.Year": [
+      [
+        "vehicle_specifications.calendar_annum",
+        0.3333333333333333
+      ],
+      [
+        "vehicle_catalog.manufacturer",
+        0.25
+      ],
+      [
+        "vehicle_specifications.engine_power",
+        0.25
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "continents": "landmasses",
+      "countries": "nations",
+      "car_makers": "automobile_manufacturers",
+      "model_list": "vehicle_catalog",
+      "car_names": "vehicle_labels",
+      "cars_data": "vehicle_specifications"
+    },
+    "columns": {
+      "continents.ContId": "landmasses.landmass",
+      "continents.Continent": "landmasses.landmass_key",
+      "countries.CountryId": "nations.nation_label",
+      "countries.CountryName": "nations.landmass",
+      "countries.Continent": "nations.nation_key",
+      "car_makers.Id": "automobile_manufacturers.nation",
+      "car_makers.Maker": "automobile_manufacturers.manufacturer",
+      "car_makers.FullName": "automobile_manufacturers.complete_name",
+      "car_makers.Country": "automobile_manufacturers.record_key",
+      "model_list.ModelId": "vehicle_catalog.design_key",
+      "model_list.Maker": "vehicle_catalog.manufacturer",
+      "model_list.Model": "vehicle_catalog.design",
+      "car_names.MakeId": "vehicle_labels.brand",
+      "car_names.Model": "vehicle_labels.design",
+      "car_names.Make": "vehicle_labels.manufacturer_key",
+      "cars_data.Id": "vehicle_specifications.record_key",
+      "cars_data.MPG": "vehicle_specifications.miles_per_gallon",
+      "cars_data.Cylinders": "vehicle_specifications.engine_cylinder_count",
+      "cars_data.Edispl": "vehicle_specifications.engine_displacement",
+      "cars_data.Horsepower": "vehicle_specifications.engine_power",
+      "cars_data.Weight": "vehicle_specifications.mass_value",
+      "cars_data.Accelerate": "vehicle_specifications.acceleration_time",
+      "cars_data.Year": "vehicle_specifications.calendar_annum"
+    }
+  },
+  "q_B": {
+    "car_1__challenge_v0__q0087": "SELECT COUNT(*) AS \"_col_0\" FROM \"landmasses\" AS \"continents\"",
+    "car_1__challenge_v0__q0088": "SELECT COUNT(*) AS \"_col_0\" FROM \"landmasses\" AS \"continents\"",
+    "car_1__challenge_v0__q0089": "SELECT \"t1\".\"landmass\" AS \"contid\", \"t1\".\"landmass_key\" AS \"continent\", COUNT(*) AS \"_col_2\" FROM \"landmasses\" AS \"t1\" JOIN \"nations\" AS \"t2\" ON \"t1\".\"landmass\" = \"t2\".\"nation_key\" GROUP BY \"t1\".\"landmass\"",
+    "car_1__challenge_v0__q0090": "SELECT \"t1\".\"landmass\" AS \"contid\", \"t1\".\"landmass_key\" AS \"continent\", COUNT(*) AS \"_col_2\" FROM \"landmasses\" AS \"t1\" JOIN \"nations\" AS \"t2\" ON \"t1\".\"landmass\" = \"t2\".\"nation_key\" GROUP BY \"t1\".\"landmass\"",
+    "car_1__challenge_v0__q0091": "SELECT COUNT(*) AS \"_col_0\" FROM \"nations\" AS \"countries\"",
+    "car_1__challenge_v0__q0092": "SELECT COUNT(*) AS \"_col_0\" FROM \"nations\" AS \"countries\"",
+    "car_1__challenge_v0__q0093": "SELECT \"t1\".\"complete_name\" AS \"fullname\", \"t1\".\"nation\" AS \"id\", COUNT(*) AS \"_col_2\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"manufacturer\" GROUP BY \"t1\".\"nation\"",
+    "car_1__challenge_v0__q0094": "SELECT \"t1\".\"complete_name\" AS \"fullname\", \"t1\".\"nation\" AS \"id\", COUNT(*) AS \"_col_2\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"manufacturer\" GROUP BY \"t1\".\"nation\"",
+    "car_1__challenge_v0__q0095": "SELECT \"t1\".\"design\" AS \"model\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_specifications\" AS \"t2\" ON \"t1\".\"brand\" = \"t2\".\"record_key\" ORDER BY \"t2\".\"engine_power\" ASC LIMIT 1",
+    "car_1__challenge_v0__q0096": "SELECT \"t1\".\"design\" AS \"model\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_specifications\" AS \"t2\" ON \"t1\".\"brand\" = \"t2\".\"record_key\" ORDER BY \"t2\".\"engine_power\" ASC LIMIT 1",
+    "car_1__challenge_v0__q0097": "SELECT \"t1\".\"design\" AS \"model\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_specifications\" AS \"t2\" ON \"t1\".\"brand\" = \"t2\".\"record_key\" WHERE \"t2\".\"mass_value\" < (SELECT AVG(\"cars_data\".\"mass_value\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\")",
+    "car_1__challenge_v0__q0098": "SELECT \"t1\".\"design\" AS \"model\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_specifications\" AS \"t2\" ON \"t1\".\"brand\" = \"t2\".\"record_key\" WHERE \"t2\".\"mass_value\" < (SELECT AVG(\"cars_data\".\"mass_value\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\")",
+    "car_1__challenge_v0__q0099": "SELECT DISTINCT \"t1\".\"manufacturer\" AS \"maker\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"manufacturer\" JOIN \"vehicle_labels\" AS \"t3\" ON \"t2\".\"design\" = \"t3\".\"design\" JOIN \"vehicle_specifications\" AS \"t4\" ON \"t3\".\"brand\" = \"t4\".\"record_key\" WHERE \"t4\".\"calendar_annum\" = '1970'",
+    "car_1__challenge_v0__q0100": "SELECT DISTINCT \"t1\".\"manufacturer\" AS \"maker\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"manufacturer\" JOIN \"vehicle_labels\" AS \"t3\" ON \"t2\".\"design\" = \"t3\".\"design\" JOIN \"vehicle_specifications\" AS \"t4\" ON \"t3\".\"brand\" = \"t4\".\"record_key\" WHERE \"t4\".\"calendar_annum\" = '1970'",
+    "car_1__challenge_v0__q0101": "SELECT \"t2\".\"manufacturer_key\" AS \"make\", \"t1\".\"calendar_annum\" AS \"year\" FROM \"vehicle_specifications\" AS \"t1\" JOIN \"vehicle_labels\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"brand\" WHERE \"t1\".\"calendar_annum\" = (SELECT MIN(\"cars_data\".\"calendar_annum\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\")",
+    "car_1__challenge_v0__q0102": "SELECT \"t2\".\"manufacturer_key\" AS \"make\", \"t1\".\"calendar_annum\" AS \"year\" FROM \"vehicle_specifications\" AS \"t1\" JOIN \"vehicle_labels\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"brand\" WHERE \"t1\".\"calendar_annum\" = (SELECT MIN(\"cars_data\".\"calendar_annum\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\")",
+    "car_1__challenge_v0__q0103": "SELECT DISTINCT \"t1\".\"design\" AS \"model\" FROM \"vehicle_catalog\" AS \"t1\" JOIN \"vehicle_labels\" AS \"t2\" ON \"t1\".\"design\" = \"t2\".\"design\" JOIN \"vehicle_specifications\" AS \"t3\" ON \"t2\".\"brand\" = \"t3\".\"record_key\" WHERE \"t3\".\"calendar_annum\" > 1980",
+    "car_1__challenge_v0__q0104": "SELECT DISTINCT \"t1\".\"design\" AS \"model\" FROM \"vehicle_catalog\" AS \"t1\" JOIN \"vehicle_labels\" AS \"t2\" ON \"t1\".\"design\" = \"t2\".\"design\" JOIN \"vehicle_specifications\" AS \"t3\" ON \"t2\".\"brand\" = \"t3\".\"record_key\" WHERE \"t3\".\"calendar_annum\" > 1980",
+    "car_1__challenge_v0__q0105": "SELECT \"t1\".\"landmass_key\" AS \"continent\", COUNT(*) AS \"_col_1\" FROM \"landmasses\" AS \"t1\" JOIN \"nations\" AS \"t2\" ON \"t1\".\"landmass\" = \"t2\".\"nation_key\" JOIN \"automobile_manufacturers\" AS \"t3\" ON \"t2\".\"nation_label\" = \"t3\".\"record_key\" GROUP BY \"t1\".\"landmass_key\"",
+    "car_1__challenge_v0__q0106": "SELECT \"t1\".\"landmass_key\" AS \"continent\", COUNT(*) AS \"_col_1\" FROM \"landmasses\" AS \"t1\" JOIN \"nations\" AS \"t2\" ON \"t1\".\"landmass\" = \"t2\".\"nation_key\" JOIN \"automobile_manufacturers\" AS \"t3\" ON \"t2\".\"nation_label\" = \"t3\".\"record_key\" GROUP BY \"t1\".\"landmass_key\"",
+    "car_1__challenge_v0__q0107": "SELECT \"t2\".\"landmass\" AS \"countryname\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"nations\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"nation_label\" GROUP BY \"t1\".\"record_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "car_1__challenge_v0__q0108": "SELECT \"t2\".\"landmass\" AS \"countryname\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"nations\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"nation_label\" GROUP BY \"t1\".\"record_key\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "car_1__challenge_v0__q0109": "SELECT COUNT(*) AS \"_col_0\", \"t2\".\"complete_name\" AS \"fullname\" FROM \"vehicle_catalog\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"manufacturer\" = \"t2\".\"nation\" GROUP BY \"t2\".\"nation\"",
+    "car_1__challenge_v0__q0110": "SELECT COUNT(*) AS \"_col_0\", \"t2\".\"complete_name\" AS \"fullname\", \"t2\".\"nation\" AS \"id\" FROM \"vehicle_catalog\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"manufacturer\" = \"t2\".\"nation\" GROUP BY \"t2\".\"nation\"",
+    "car_1__challenge_v0__q0111": "SELECT \"t1\".\"acceleration_time\" AS \"accelerate\" FROM \"vehicle_specifications\" AS \"t1\" JOIN \"vehicle_labels\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"brand\" WHERE \"t2\".\"manufacturer_key\" = 'amc hornet sportabout (sw)'",
+    "car_1__challenge_v0__q0112": "SELECT \"t1\".\"acceleration_time\" AS \"accelerate\" FROM \"vehicle_specifications\" AS \"t1\" JOIN \"vehicle_labels\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"brand\" WHERE \"t2\".\"manufacturer_key\" = 'amc hornet sportabout (sw)'",
+    "car_1__challenge_v0__q0113": "SELECT COUNT(*) AS \"_col_0\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"nations\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"nation_label\" WHERE \"t2\".\"landmass\" = 'france'",
+    "car_1__challenge_v0__q0114": "SELECT COUNT(*) AS \"_col_0\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"nations\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"nation_label\" WHERE \"t2\".\"landmass\" = 'france'",
+    "car_1__challenge_v0__q0115": "SELECT COUNT(*) AS \"_col_0\" FROM \"vehicle_catalog\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"manufacturer\" = \"t2\".\"nation\" JOIN \"nations\" AS \"t3\" ON \"t2\".\"record_key\" = \"t3\".\"nation_label\" WHERE \"t3\".\"landmass\" = 'usa'",
+    "car_1__challenge_v0__q0116": "SELECT COUNT(*) AS \"_col_0\" FROM \"vehicle_catalog\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"manufacturer\" = \"t2\".\"nation\" JOIN \"nations\" AS \"t3\" ON \"t2\".\"record_key\" = \"t3\".\"nation_label\" WHERE \"t3\".\"landmass\" = 'usa'",
+    "car_1__challenge_v0__q0117": "SELECT AVG(\"cars_data\".\"miles_per_gallon\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"engine_cylinder_count\" = 4",
+    "car_1__challenge_v0__q0118": "SELECT AVG(\"cars_data\".\"miles_per_gallon\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"engine_cylinder_count\" = 4",
+    "car_1__challenge_v0__q0119": "SELECT MIN(\"cars_data\".\"mass_value\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"engine_cylinder_count\" = 8 AND \"cars_data\".\"calendar_annum\" = 1974",
+    "car_1__challenge_v0__q0120": "SELECT MIN(\"cars_data\".\"mass_value\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"engine_cylinder_count\" = 8 AND \"cars_data\".\"calendar_annum\" = 1974",
+    "car_1__challenge_v0__q0121": "SELECT \"model_list\".\"manufacturer\" AS \"maker\", \"model_list\".\"design\" AS \"model\" FROM \"vehicle_catalog\" AS \"model_list\"",
+    "car_1__challenge_v0__q0122": "SELECT \"model_list\".\"manufacturer\" AS \"maker\", \"model_list\".\"design\" AS \"model\" FROM \"vehicle_catalog\" AS \"model_list\"",
+    "car_1__challenge_v0__q0123": "SELECT \"t1\".\"landmass\" AS \"countryname\", \"t1\".\"nation_label\" AS \"countryid\" FROM \"nations\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"nation_label\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"nation_label\" HAVING COUNT(*) >= 1",
+    "car_1__challenge_v0__q0124": "SELECT \"t1\".\"landmass\" AS \"countryname\", \"t1\".\"nation_label\" AS \"countryid\" FROM \"nations\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"nation_label\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"nation_label\" HAVING COUNT(*) >= 1",
+    "car_1__challenge_v0__q0125": "SELECT COUNT(*) AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"engine_power\" > 150",
+    "car_1__challenge_v0__q0126": "SELECT COUNT(*) AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"engine_power\" > 150",
+    "car_1__challenge_v0__q0127": "SELECT AVG(\"cars_data\".\"mass_value\") AS \"_col_0\", \"cars_data\".\"calendar_annum\" AS \"year\" FROM \"vehicle_specifications\" AS \"cars_data\" GROUP BY \"cars_data\".\"calendar_annum\"",
+    "car_1__challenge_v0__q0128": "SELECT AVG(\"cars_data\".\"mass_value\") AS \"_col_0\", \"cars_data\".\"calendar_annum\" AS \"year\" FROM \"vehicle_specifications\" AS \"cars_data\" GROUP BY \"cars_data\".\"calendar_annum\"",
+    "car_1__challenge_v0__q0129": "SELECT \"t1\".\"landmass\" AS \"countryname\" FROM \"nations\" AS \"t1\" JOIN \"landmasses\" AS \"t2\" ON \"t1\".\"nation_key\" = \"t2\".\"landmass\" JOIN \"automobile_manufacturers\" AS \"t3\" ON \"t1\".\"nation_label\" = \"t3\".\"record_key\" WHERE \"t2\".\"landmass_key\" = 'europe' GROUP BY \"t1\".\"landmass\" HAVING COUNT(*) >= 3",
+    "car_1__challenge_v0__q0130": "SELECT \"t1\".\"landmass\" AS \"countryname\" FROM \"nations\" AS \"t1\" JOIN \"landmasses\" AS \"t2\" ON \"t1\".\"nation_key\" = \"t2\".\"landmass\" JOIN \"automobile_manufacturers\" AS \"t3\" ON \"t1\".\"nation_label\" = \"t3\".\"record_key\" WHERE \"t2\".\"landmass_key\" = 'europe' GROUP BY \"t1\".\"landmass\" HAVING COUNT(*) >= 3",
+    "car_1__challenge_v0__q0131": "SELECT \"t2\".\"engine_power\" AS \"horsepower\", \"t1\".\"manufacturer_key\" AS \"make\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_specifications\" AS \"t2\" ON \"t1\".\"brand\" = \"t2\".\"record_key\" WHERE \"t2\".\"engine_cylinder_count\" = 3 ORDER BY \"t2\".\"engine_power\" DESC LIMIT 1",
+    "car_1__challenge_v0__q0132": "SELECT \"t2\".\"engine_power\" AS \"horsepower\", \"t1\".\"manufacturer_key\" AS \"make\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_specifications\" AS \"t2\" ON \"t1\".\"brand\" = \"t2\".\"record_key\" WHERE \"t2\".\"engine_cylinder_count\" = 3 ORDER BY \"t2\".\"engine_power\" DESC LIMIT 1",
+    "car_1__challenge_v0__q0133": "SELECT \"t1\".\"design\" AS \"model\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_specifications\" AS \"t2\" ON \"t1\".\"brand\" = \"t2\".\"record_key\" ORDER BY \"t2\".\"miles_per_gallon\" DESC LIMIT 1",
+    "car_1__challenge_v0__q0134": "SELECT \"t1\".\"design\" AS \"model\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_specifications\" AS \"t2\" ON \"t1\".\"brand\" = \"t2\".\"record_key\" ORDER BY \"t2\".\"miles_per_gallon\" DESC LIMIT 1",
+    "car_1__challenge_v0__q0135": "SELECT AVG(\"cars_data\".\"engine_power\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"calendar_annum\" < 1980",
+    "car_1__challenge_v0__q0136": "SELECT AVG(\"cars_data\".\"engine_power\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"calendar_annum\" < 1980",
+    "car_1__challenge_v0__q0137": "SELECT AVG(\"t2\".\"engine_displacement\") AS \"_col_0\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_specifications\" AS \"t2\" ON \"t1\".\"brand\" = \"t2\".\"record_key\" WHERE \"t1\".\"design\" = 'volvo'",
+    "car_1__challenge_v0__q0138": "SELECT AVG(\"t2\".\"engine_displacement\") AS \"_col_0\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_specifications\" AS \"t2\" ON \"t1\".\"brand\" = \"t2\".\"record_key\" WHERE \"t1\".\"design\" = 'volvo'",
+    "car_1__challenge_v0__q0139": "SELECT MAX(\"cars_data\".\"acceleration_time\") AS \"_col_0\", \"cars_data\".\"engine_cylinder_count\" AS \"cylinders\" FROM \"vehicle_specifications\" AS \"cars_data\" GROUP BY \"cars_data\".\"engine_cylinder_count\"",
+    "car_1__challenge_v0__q0140": "SELECT MAX(\"cars_data\".\"acceleration_time\") AS \"_col_0\", \"cars_data\".\"engine_cylinder_count\" AS \"cylinders\" FROM \"vehicle_specifications\" AS \"cars_data\" GROUP BY \"cars_data\".\"engine_cylinder_count\"",
+    "car_1__challenge_v0__q0141": "SELECT \"car_names\".\"design\" AS \"model\" FROM \"vehicle_labels\" AS \"car_names\" GROUP BY \"car_names\".\"design\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "car_1__challenge_v0__q0142": "SELECT \"car_names\".\"design\" AS \"model\" FROM \"vehicle_labels\" AS \"car_names\" GROUP BY \"car_names\".\"design\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "car_1__challenge_v0__q0143": "SELECT COUNT(*) AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"engine_cylinder_count\" > 4",
+    "car_1__challenge_v0__q0144": "SELECT COUNT(*) AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"engine_cylinder_count\" > 4",
+    "car_1__challenge_v0__q0145": "SELECT COUNT(*) AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"calendar_annum\" = 1980",
+    "car_1__challenge_v0__q0146": "SELECT COUNT(*) AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"calendar_annum\" = 1980",
+    "car_1__challenge_v0__q0147": "SELECT COUNT(*) AS \"_col_0\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"manufacturer\" WHERE \"t1\".\"complete_name\" = 'American Motor Company'",
+    "car_1__challenge_v0__q0148": "SELECT COUNT(*) AS \"_col_0\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"manufacturer\" WHERE \"t1\".\"complete_name\" = 'American Motor Company'",
+    "car_1__challenge_v0__q0149": "SELECT \"t1\".\"complete_name\" AS \"fullname\", \"t1\".\"nation\" AS \"id\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"manufacturer\" GROUP BY \"t1\".\"nation\" HAVING COUNT(*) > 3",
+    "car_1__challenge_v0__q0150": "SELECT \"t1\".\"complete_name\" AS \"fullname\", \"t1\".\"nation\" AS \"id\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"manufacturer\" GROUP BY \"t1\".\"nation\" HAVING COUNT(*) > 3",
+    "car_1__challenge_v0__q0151": "SELECT DISTINCT \"t2\".\"design\" AS \"model\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"design\" = \"t2\".\"design\" JOIN \"automobile_manufacturers\" AS \"t3\" ON \"t2\".\"manufacturer\" = \"t3\".\"nation\" JOIN \"vehicle_specifications\" AS \"t4\" ON \"t1\".\"brand\" = \"t4\".\"record_key\" WHERE \"t3\".\"complete_name\" = 'General Motors' OR \"t4\".\"mass_value\" > 3500",
+    "car_1__challenge_v0__q0152": "SELECT DISTINCT \"t2\".\"design\" AS \"model\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"design\" = \"t2\".\"design\" JOIN \"automobile_manufacturers\" AS \"t3\" ON \"t2\".\"manufacturer\" = \"t3\".\"nation\" JOIN \"vehicle_specifications\" AS \"t4\" ON \"t1\".\"brand\" = \"t4\".\"record_key\" WHERE \"t3\".\"complete_name\" = 'General Motors' OR \"t4\".\"mass_value\" > 3500",
+    "car_1__challenge_v0__q0153": "SELECT DISTINCT \"cars_data\".\"calendar_annum\" AS \"year\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"mass_value\" BETWEEN 3000 AND 4000",
+    "car_1__challenge_v0__q0154": "SELECT DISTINCT \"cars_data\".\"calendar_annum\" AS \"year\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"mass_value\" BETWEEN 3000 AND 4000",
+    "car_1__challenge_v0__q0155": "SELECT \"t1\".\"engine_power\" AS \"horsepower\" FROM \"vehicle_specifications\" AS \"t1\" ORDER BY \"t1\".\"acceleration_time\" DESC LIMIT 1",
+    "car_1__challenge_v0__q0156": "SELECT \"t1\".\"engine_power\" AS \"horsepower\" FROM \"vehicle_specifications\" AS \"t1\" ORDER BY \"t1\".\"acceleration_time\" DESC LIMIT 1",
+    "car_1__challenge_v0__q0157": "SELECT \"t1\".\"engine_cylinder_count\" AS \"cylinders\" FROM \"vehicle_specifications\" AS \"t1\" JOIN \"vehicle_labels\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"brand\" WHERE \"t2\".\"design\" = 'volvo' ORDER BY \"t1\".\"acceleration_time\" ASC LIMIT 1",
+    "car_1__challenge_v0__q0158": "SELECT \"t1\".\"engine_cylinder_count\" AS \"cylinders\" FROM \"vehicle_specifications\" AS \"t1\" JOIN \"vehicle_labels\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"brand\" WHERE \"t2\".\"design\" = 'volvo' ORDER BY \"t1\".\"acceleration_time\" ASC LIMIT 1",
+    "car_1__challenge_v0__q0159": "SELECT COUNT(*) AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"acceleration_time\" > (SELECT \"cars_data\".\"acceleration_time\" AS \"accelerate\" FROM \"vehicle_specifications\" AS \"cars_data\" ORDER BY \"cars_data\".\"engine_power\" DESC LIMIT 1)",
+    "car_1__challenge_v0__q0160": "SELECT COUNT(*) AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"acceleration_time\" > (SELECT \"cars_data\".\"acceleration_time\" AS \"accelerate\" FROM \"vehicle_specifications\" AS \"cars_data\" ORDER BY \"cars_data\".\"engine_power\" DESC LIMIT 1)",
+    "car_1__challenge_v0__q0161": "SELECT COUNT(*) AS \"_col_0\" FROM \"nations\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"nation_label\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"nation_label\" HAVING COUNT(*) > 2",
+    "car_1__challenge_v0__q0162": "SELECT COUNT(*) AS \"_col_0\" FROM \"nations\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"nation_label\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"nation_label\" HAVING COUNT(*) > 2",
+    "car_1__challenge_v0__q0163": "SELECT COUNT(*) AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"engine_cylinder_count\" > 6",
+    "car_1__challenge_v0__q0164": "SELECT COUNT(*) AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"engine_cylinder_count\" > 6",
+    "car_1__challenge_v0__q0165": "SELECT \"t1\".\"design\" AS \"model\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_specifications\" AS \"t2\" ON \"t1\".\"brand\" = \"t2\".\"record_key\" WHERE \"t2\".\"engine_cylinder_count\" = 4 ORDER BY \"t2\".\"engine_power\" DESC LIMIT 1",
+    "car_1__challenge_v0__q0166": "SELECT \"t1\".\"design\" AS \"model\" FROM \"vehicle_labels\" AS \"t1\" JOIN \"vehicle_specifications\" AS \"t2\" ON \"t1\".\"brand\" = \"t2\".\"record_key\" WHERE \"t2\".\"engine_cylinder_count\" = 4 ORDER BY \"t2\".\"engine_power\" DESC LIMIT 1",
+    "car_1__challenge_v0__q0167": "SELECT \"t2\".\"brand\" AS \"makeid\", \"t2\".\"manufacturer_key\" AS \"make\" FROM \"vehicle_specifications\" AS \"t1\" JOIN \"vehicle_labels\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"brand\" WHERE \"t1\".\"engine_power\" > (SELECT MIN(\"cars_data\".\"engine_power\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\") AND \"t1\".\"engine_cylinder_count\" <= 3",
+    "car_1__challenge_v0__q0168": "SELECT \"t2\".\"brand\" AS \"makeid\", \"t2\".\"manufacturer_key\" AS \"make\" FROM \"vehicle_specifications\" AS \"t1\" JOIN \"vehicle_labels\" AS \"t2\" ON \"t1\".\"record_key\" = \"t2\".\"brand\" WHERE \"t1\".\"engine_power\" > (SELECT MIN(\"cars_data\".\"engine_power\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\") AND \"t1\".\"engine_cylinder_count\" < 4",
+    "car_1__challenge_v0__q0169": "SELECT MAX(\"cars_data\".\"miles_per_gallon\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"engine_cylinder_count\" = 8 OR \"cars_data\".\"calendar_annum\" < 1980",
+    "car_1__challenge_v0__q0170": "SELECT MAX(\"cars_data\".\"miles_per_gallon\") AS \"_col_0\" FROM \"vehicle_specifications\" AS \"cars_data\" WHERE \"cars_data\".\"engine_cylinder_count\" = 8 OR \"cars_data\".\"calendar_annum\" < 1980",
+    "car_1__challenge_v0__q0171": "SELECT DISTINCT \"t1\".\"design\" AS \"model\" FROM \"vehicle_catalog\" AS \"t1\" JOIN \"vehicle_labels\" AS \"t2\" ON \"t1\".\"design\" = \"t2\".\"design\" JOIN \"vehicle_specifications\" AS \"t3\" ON \"t2\".\"brand\" = \"t3\".\"record_key\" JOIN \"automobile_manufacturers\" AS \"t4\" ON \"t1\".\"manufacturer\" = \"t4\".\"nation\" WHERE \"t3\".\"mass_value\" < 3500 AND \"t4\".\"complete_name\" <> 'Ford Motor Company'",
+    "car_1__challenge_v0__q0172": "SELECT DISTINCT \"t1\".\"design\" AS \"model\" FROM \"vehicle_catalog\" AS \"t1\" JOIN \"vehicle_labels\" AS \"t2\" ON \"t1\".\"design\" = \"t2\".\"design\" JOIN \"vehicle_specifications\" AS \"t3\" ON \"t2\".\"brand\" = \"t3\".\"record_key\" JOIN \"automobile_manufacturers\" AS \"t4\" ON \"t1\".\"manufacturer\" = \"t4\".\"nation\" WHERE \"t3\".\"mass_value\" < 3500 AND \"t4\".\"complete_name\" <> 'Ford Motor Company'",
+    "car_1__challenge_v0__q0173": "SELECT \"countries\".\"landmass\" AS \"countryname\" FROM \"nations\" AS \"countries\" EXCEPT SELECT \"t1\".\"landmass\" AS \"countryname\" FROM \"nations\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"nation_label\" = \"t2\".\"record_key\"",
+    "car_1__challenge_v0__q0174": "SELECT \"countries\".\"landmass\" AS \"countryname\" FROM \"nations\" AS \"countries\" EXCEPT SELECT \"t1\".\"landmass\" AS \"countryname\" FROM \"nations\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"nation_label\" = \"t2\".\"record_key\"",
+    "car_1__challenge_v0__q0175": "SELECT \"t1\".\"nation\" AS \"id\", \"t1\".\"manufacturer\" AS \"maker\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"manufacturer\" GROUP BY \"t1\".\"nation\" HAVING COUNT(*) >= 2 INTERSECT SELECT \"t1\".\"nation\" AS \"id\", \"t1\".\"manufacturer\" AS \"maker\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"manufacturer\" JOIN \"vehicle_labels\" AS \"t3\" ON \"t2\".\"design\" = \"t3\".\"design\" GROUP BY \"t1\".\"nation\" HAVING COUNT(*) > 3",
+    "car_1__challenge_v0__q0176": "SELECT \"t1\".\"nation\" AS \"id\", \"t1\".\"manufacturer\" AS \"maker\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"manufacturer\" GROUP BY \"t1\".\"nation\" HAVING COUNT(*) >= 2 INTERSECT SELECT \"t1\".\"nation\" AS \"id\", \"t1\".\"manufacturer\" AS \"maker\" FROM \"automobile_manufacturers\" AS \"t1\" JOIN \"vehicle_catalog\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"manufacturer\" JOIN \"vehicle_labels\" AS \"t3\" ON \"t2\".\"design\" = \"t3\".\"design\" GROUP BY \"t1\".\"nation\" HAVING COUNT(*) > 3",
+    "car_1__challenge_v0__q0177": "SELECT \"t1\".\"nation_label\" AS \"countryid\", \"t1\".\"landmass\" AS \"countryname\" FROM \"nations\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"nation_label\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"nation_label\" HAVING COUNT(*) > 3 UNION SELECT \"t1\".\"nation_label\" AS \"countryid\", \"t1\".\"landmass\" AS \"countryname\" FROM \"nations\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"nation_label\" = \"t2\".\"record_key\" JOIN \"vehicle_catalog\" AS \"t3\" ON \"t2\".\"nation\" = \"t3\".\"manufacturer\" WHERE \"t3\".\"design\" = 'fiat'",
+    "car_1__challenge_v0__q0178": "SELECT \"t1\".\"nation_label\" AS \"countryid\", \"t1\".\"landmass\" AS \"countryname\" FROM \"nations\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"nation_label\" = \"t2\".\"record_key\" GROUP BY \"t1\".\"nation_label\" HAVING COUNT(*) > 3 UNION SELECT \"t1\".\"nation_label\" AS \"countryid\", \"t1\".\"landmass\" AS \"countryname\" FROM \"nations\" AS \"t1\" JOIN \"automobile_manufacturers\" AS \"t2\" ON \"t1\".\"nation_label\" = \"t2\".\"record_key\" JOIN \"vehicle_catalog\" AS \"t3\" ON \"t2\".\"nation\" = \"t3\".\"manufacturer\" WHERE \"t3\".\"design\" = 'fiat'"
+  },
+  "rewrite_errors": {}
+}

@@ -1,0 +1,217 @@
+{
+  "tables": {
+    "singer": [
+      [
+        "track",
+        0.18181818181818182
+      ],
+      [
+        "vocalist",
+        0.14285714285714285
+      ]
+    ],
+    "song": [
+      [
+        "vocalist",
+        0.16666666666666666
+      ],
+      [
+        "track",
+        0.0
+      ]
+    ]
+  },
+  "columns": {
+    "singer.Singer_ID": [
+      [
+        "track.heading",
+        0.375
+      ],
+      [
+        "track.revenue",
+        0.25
+      ],
+      [
+        "track.Highest_Position",
+        0.24
+      ]
+    ],
+    "singer.Name": [
+      [
+        "vocalist.label",
+        0.4444444444444444
+      ],
+      [
+        "track.revenue",
+        0.36363636363636365
+      ],
+      [
+        "vocalist.nativity_annum",
+        0.3333333333333333
+      ]
+    ],
+    "singer.Birth_Year": [
+      [
+        "track.vocalist_key",
+        0.36363636363636365
+      ],
+      [
+        "vocalist.vocalist_key",
+        0.36363636363636365
+      ],
+      [
+        "track.heading",
+        0.35294117647058826
+      ]
+    ],
+    "singer.Net_Worth_Millions": [
+      [
+        "vocalist.wealth_millions",
+        0.7272727272727273
+      ],
+      [
+        "track.Highest_Position",
+        0.47058823529411764
+      ],
+      [
+        "vocalist.nativity_annum",
+        0.25
+      ]
+    ],
+    "singer.Citizenship": [
+      [
+        "vocalist.Citizenship",
+        1.0
+      ],
+      [
+        "track.vocalist_key",
+        0.34782608695652173
+      ],
+      [
+        "vocalist.vocalist_key",
+        0.34782608695652173
+      ]
+    ],
+    "song.Song_ID": [
+      [
+        "track.heading",
+        0.2857142857142857
+      ],
+      [
+        "track.Highest_Position",
+        0.2608695652173913
+      ],
+      [
+        "vocalist.Citizenship",
+        0.2222222222222222
+      ]
+    ],
+    "song.Title": [
+      [
+        "vocalist.label",
+        0.4
+      ],
+      [
+        "vocalist.Citizenship",
+        0.375
+      ],
+      [
+        "vocalist.nativity_annum",
+        0.3157894736842105
+      ]
+    ],
+    "song.Singer_ID": [
+      [
+        "track.heading",
+        0.375
+      ],
+      [
+        "track.revenue",
+        0.25
+      ],
+      [
+        "track.Highest_Position",
+        0.24
+      ]
+    ],
+    "song.Sales": [
+      [
+        "vocalist.label",
+        0.4
+      ],
+      [
+        "track.vocalist_key",
+        0.35294117647058826
+      ],
+      [
+        "vocalist.vocalist_key",
+        0.35294117647058826
+      ]
+    ],
+    "song.Highest_Position": [
+      [
+        "track.Highest_Position",
+        1.0
+      ],
+      [
+        "track.heading",
+        0.34782608695652173
+      ],
+      [
+        "vocalist.wealth_millions",
+        0.3225806451612903
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "singer": "vocalist",
+      "song": "track"
+    },
+    "columns": {
+      "singer.Singer_ID": "vocalist.nativity_annum",
+      "singer.Name": "vocalist.label",
+      "singer.Birth_Year": "vocalist.vocalist_key",
+      "singer.Net_Worth_Millions": "vocalist.wealth_millions",
+      "singer.Citizenship": "vocalist.Citizenship",
+      "song.Song_ID": "track.heading",
+      "song.Title": "track.track_key",
+      "song.Singer_ID": "track.revenue",
+      "song.Sales": "track.vocalist_key",
+      "song.Highest_Position": "track.Highest_Position"
+    }
+  },
+  "q_B": {
+    "singer__challenge_v0__q1000": "SELECT COUNT(*) AS \"_col_0\" FROM \"vocalist\" AS \"singer\"",
+    "singer__challenge_v0__q1001": "SELECT COUNT(*) AS \"_col_0\" FROM \"vocalist\" AS \"singer\"",
+    "singer__challenge_v0__q1002": "SELECT \"singer\".\"label\" AS \"name\" FROM \"vocalist\" AS \"singer\" ORDER BY \"singer\".\"wealth_millions\" ASC",
+    "singer__challenge_v0__q1003": "SELECT \"singer\".\"label\" AS \"name\" FROM \"vocalist\" AS \"singer\" ORDER BY \"singer\".\"wealth_millions\" ASC",
+    "singer__challenge_v0__q1004": "SELECT \"singer\".\"vocalist_key\" AS \"birth_year\", \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"vocalist\" AS \"singer\"",
+    "singer__challenge_v0__q1005": "SELECT \"singer\".\"vocalist_key\" AS \"birth_year\", \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"vocalist\" AS \"singer\"",
+    "singer__challenge_v0__q1006": "SELECT \"singer\".\"label\" AS \"name\" FROM \"vocalist\" AS \"singer\" WHERE \"singer\".\"Citizenship\" <> 'France'",
+    "singer__challenge_v0__q1007": "SELECT \"singer\".\"label\" AS \"name\" FROM \"vocalist\" AS \"singer\" WHERE \"singer\".\"Citizenship\" <> 'France'",
+    "singer__challenge_v0__q1008": "SELECT \"singer\".\"label\" AS \"name\" FROM \"vocalist\" AS \"singer\" WHERE \"singer\".\"vocalist_key\" = 1948 OR \"singer\".\"vocalist_key\" = 1949",
+    "singer__challenge_v0__q1009": "SELECT \"singer\".\"label\" AS \"name\" FROM \"vocalist\" AS \"singer\" WHERE \"singer\".\"vocalist_key\" = 1948 OR \"singer\".\"vocalist_key\" = 1949",
+    "singer__challenge_v0__q1010": "SELECT \"singer\".\"label\" AS \"name\" FROM \"vocalist\" AS \"singer\" ORDER BY \"singer\".\"wealth_millions\" DESC LIMIT 1",
+    "singer__challenge_v0__q1011": "SELECT \"singer\".\"label\" AS \"name\" FROM \"vocalist\" AS \"singer\" ORDER BY \"singer\".\"wealth_millions\" DESC LIMIT 1",
+    "singer__challenge_v0__q1012": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\", COUNT(*) AS \"_col_1\" FROM \"vocalist\" AS \"singer\" GROUP BY \"singer\".\"Citizenship\"",
+    "singer__challenge_v0__q1013": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\", COUNT(*) AS \"_col_1\" FROM \"vocalist\" AS \"singer\" GROUP BY \"singer\".\"Citizenship\"",
+    "singer__challenge_v0__q1014": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"vocalist\" AS \"singer\" GROUP BY \"singer\".\"Citizenship\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "singer__challenge_v0__q1015": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"vocalist\" AS \"singer\" GROUP BY \"singer\".\"Citizenship\" ORDER BY COUNT(*) DESC LIMIT 1",
+    "singer__challenge_v0__q1016": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\", MAX(\"singer\".\"wealth_millions\") AS \"_col_1\" FROM \"vocalist\" AS \"singer\" GROUP BY \"singer\".\"Citizenship\"",
+    "singer__challenge_v0__q1017": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\", MAX(\"singer\".\"wealth_millions\") AS \"_col_1\" FROM \"vocalist\" AS \"singer\" GROUP BY \"singer\".\"Citizenship\"",
+    "singer__challenge_v0__q1018": "SELECT \"t2\".\"track_key\" AS \"title\", \"t1\".\"label\" AS \"name\" FROM \"vocalist\" AS \"t1\" JOIN \"track\" AS \"t2\" ON \"t1\".\"nativity_annum\" = \"t2\".\"revenue\"",
+    "singer__challenge_v0__q1019": "SELECT \"t2\".\"track_key\" AS \"title\", \"t1\".\"label\" AS \"name\" FROM \"vocalist\" AS \"t1\" JOIN \"track\" AS \"t2\" ON \"t1\".\"nativity_annum\" = \"t2\".\"revenue\"",
+    "singer__challenge_v0__q1020": "SELECT DISTINCT \"t1\".\"label\" AS \"name\" FROM \"vocalist\" AS \"t1\" JOIN \"track\" AS \"t2\" ON \"t1\".\"nativity_annum\" = \"t2\".\"revenue\" WHERE \"t2\".\"vocalist_key\" > 300000",
+    "singer__challenge_v0__q1021": "SELECT DISTINCT \"t1\".\"label\" AS \"name\" FROM \"vocalist\" AS \"t1\" JOIN \"track\" AS \"t2\" ON \"t1\".\"nativity_annum\" = \"t2\".\"revenue\" WHERE \"t2\".\"vocalist_key\" > 300000",
+    "singer__challenge_v0__q1022": "SELECT \"t1\".\"label\" AS \"name\" FROM \"vocalist\" AS \"t1\" JOIN \"track\" AS \"t2\" ON \"t1\".\"nativity_annum\" = \"t2\".\"revenue\" GROUP BY \"t1\".\"label\" HAVING COUNT(*) > 1",
+    "singer__challenge_v0__q1023": "SELECT \"t1\".\"label\" AS \"name\" FROM \"vocalist\" AS \"t1\" JOIN \"track\" AS \"t2\" ON \"t1\".\"nativity_annum\" = \"t2\".\"revenue\" GROUP BY \"t1\".\"label\" HAVING COUNT(*) > 1",
+    "singer__challenge_v0__q1024": "SELECT \"t1\".\"label\" AS \"name\", SUM(\"t2\".\"vocalist_key\") AS \"_col_1\" FROM \"vocalist\" AS \"t1\" JOIN \"track\" AS \"t2\" ON \"t1\".\"nativity_annum\" = \"t2\".\"revenue\" GROUP BY \"t1\".\"label\"",
+    "singer__challenge_v0__q1025": "SELECT \"t1\".\"label\" AS \"name\", SUM(\"t2\".\"vocalist_key\") AS \"_col_1\" FROM \"vocalist\" AS \"t1\" JOIN \"track\" AS \"t2\" ON \"t1\".\"nativity_annum\" = \"t2\".\"revenue\" GROUP BY \"t1\".\"label\"",
+    "singer__challenge_v0__q1026": "SELECT \"singer\".\"label\" AS \"name\" FROM \"vocalist\" AS \"singer\" WHERE NOT \"singer\".\"nativity_annum\" IN (SELECT \"song\".\"revenue\" AS \"singer_id\" FROM \"track\" AS \"song\")",
+    "singer__challenge_v0__q1027": "SELECT \"singer\".\"label\" AS \"name\" FROM \"vocalist\" AS \"singer\" WHERE NOT \"singer\".\"nativity_annum\" IN (SELECT \"song\".\"revenue\" AS \"singer_id\" FROM \"track\" AS \"song\")",
+    "singer__challenge_v0__q1028": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"vocalist\" AS \"singer\" WHERE \"singer\".\"vocalist_key\" < 1945 INTERSECT SELECT \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"vocalist\" AS \"singer\" WHERE \"singer\".\"vocalist_key\" > 1955",
+    "singer__challenge_v0__q1029": "SELECT \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"vocalist\" AS \"singer\" WHERE \"singer\".\"vocalist_key\" < 1945 INTERSECT SELECT \"singer\".\"Citizenship\" AS \"citizenship\" FROM \"vocalist\" AS \"singer\" WHERE \"singer\".\"vocalist_key\" > 1955"
+  },
+  "rewrite_errors": {}
+}

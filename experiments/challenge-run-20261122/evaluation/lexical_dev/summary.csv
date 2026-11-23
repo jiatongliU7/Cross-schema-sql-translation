@@ -1,0 +1,2 @@
+method,n_queries,execution_success_rate,execution_accuracy,normalized_exact_match,reference_valid_rate,table_accuracy,column_accuracy,changed_table_accuracy,changed_column_accuracy,n_pairs,mapping_failures,empty_gold_queries,pair_macro_execution_accuracy,base_database_macro_execution_accuracy
+saved,190,1.0,0.29473684210526313,0.28421052631578947,1.0,1.0,0.5111111111111111,1.0,0.5111111111111111,3,0,0,0.37941852244609403,0.37941852244609403

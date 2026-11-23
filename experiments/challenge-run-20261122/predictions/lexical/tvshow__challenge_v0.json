@@ -1,0 +1,497 @@
+{
+  "tables": {
+    "TV_Channel": [
+      [
+        "broadcast_network",
+        0.2962962962962963
+      ],
+      [
+        "animated_program",
+        0.23076923076923078
+      ],
+      [
+        "television_program",
+        0.21428571428571427
+      ]
+    ],
+    "TV_series": [
+      [
+        "broadcast_network",
+        0.3076923076923077
+      ],
+      [
+        "television_program",
+        0.2962962962962963
+      ],
+      [
+        "animated_program",
+        0.24
+      ]
+    ],
+    "Cartoon": [
+      [
+        "animated_program",
+        0.2608695652173913
+      ],
+      [
+        "broadcast_network",
+        0.25
+      ],
+      [
+        "television_program",
+        0.24
+      ]
+    ]
+  },
+  "columns": {
+    "TV_Channel.id": [
+      [
+        "television_program.Episode",
+        0.4444444444444444
+      ],
+      [
+        "television_program.air_day",
+        0.4444444444444444
+      ],
+      [
+        "animated_program.Directed_by",
+        0.3076923076923077
+      ]
+    ],
+    "TV_Channel.series_name": [
+      [
+        "animated_program.Written_by",
+        0.38095238095238093
+      ],
+      [
+        "television_program.assessment_score",
+        0.37037037037037035
+      ],
+      [
+        "television_program.portion",
+        0.3333333333333333
+      ]
+    ],
+    "TV_Channel.Country": [
+      [
+        "television_program.record_key",
+        0.47058823529411764
+      ],
+      [
+        "animated_program.record_key",
+        0.47058823529411764
+      ],
+      [
+        "broadcast_network.record_key",
+        0.47058823529411764
+      ]
+    ],
+    "TV_Channel.Language": [
+      [
+        "broadcast_network.tongue",
+        0.5714285714285714
+      ],
+      [
+        "animated_program.heading",
+        0.4
+      ],
+      [
+        "broadcast_network.Package_Option",
+        0.36363636363636365
+      ]
+    ],
+    "TV_Channel.Content": [
+      [
+        "broadcast_network.body_text",
+        0.5
+      ],
+      [
+        "broadcast_network.tongue",
+        0.46153846153846156
+      ],
+      [
+        "animated_program.production_tag",
+        0.38095238095238093
+      ]
+    ],
+    "TV_Channel.Pixel_aspect_ratio_PAR": [
+      [
+        "broadcast_network.display_pixel_ratio",
+        0.5365853658536586
+      ],
+      [
+        "animated_program.production_tag",
+        0.3888888888888889
+      ],
+      [
+        "broadcast_network.Package_Option",
+        0.3888888888888889
+      ]
+    ],
+    "TV_Channel.Hight_definition_TV": [
+      [
+        "broadcast_network.high_definition_flag",
+        0.8205128205128205
+      ],
+      [
+        "animated_program.production_tag",
+        0.42424242424242425
+      ],
+      [
+        "television_program.adult_demographic_portion",
+        0.4090909090909091
+      ]
+    ],
+    "TV_Channel.Pay_per_view_PPV": [
+      [
+        "broadcast_network.paid_viewing_flag",
+        0.48484848484848486
+      ],
+      [
+        "broadcast_network.display_pixel_ratio",
+        0.45714285714285713
+      ],
+      [
+        "broadcast_network.Package_Option",
+        0.3333333333333333
+      ]
+    ],
+    "TV_Channel.Package_Option": [
+      [
+        "broadcast_network.Package_Option",
+        1.0
+      ],
+      [
+        "television_program.portion",
+        0.5714285714285714
+      ],
+      [
+        "broadcast_network.nation",
+        0.5
+      ]
+    ],
+    "TV_series.id": [
+      [
+        "television_program.Episode",
+        0.4444444444444444
+      ],
+      [
+        "television_program.air_day",
+        0.4444444444444444
+      ],
+      [
+        "animated_program.Directed_by",
+        0.3076923076923077
+      ]
+    ],
+    "TV_series.Episode": [
+      [
+        "television_program.Episode",
+        1.0
+      ],
+      [
+        "television_program.record_key",
+        0.47058823529411764
+      ],
+      [
+        "animated_program.record_key",
+        0.47058823529411764
+      ]
+    ],
+    "TV_series.Air_Date": [
+      [
+        "television_program.air_day",
+        0.8
+      ],
+      [
+        "animated_program.original_air_day",
+        0.5
+      ],
+      [
+        "animated_program.Directed_by",
+        0.42105263157894735
+      ]
+    ],
+    "TV_series.Rating": [
+      [
+        "broadcast_network.nation",
+        0.6666666666666666
+      ],
+      [
+        "television_program.portion",
+        0.6153846153846154
+      ],
+      [
+        "animated_program.heading",
+        0.6153846153846154
+      ]
+    ],
+    "TV_series.Share": [
+      [
+        "television_program.Episode",
+        0.3333333333333333
+      ],
+      [
+        "television_program.air_day",
+        0.3333333333333333
+      ],
+      [
+        "animated_program.heading",
+        0.3333333333333333
+      ]
+    ],
+    "TV_series.18_49_Rating_Share": [
+      [
+        "television_program.assessment_score",
+        0.35294117647058826
+      ],
+      [
+        "animated_program.original_air_day",
+        0.35294117647058826
+      ],
+      [
+        "broadcast_network.paid_viewing_flag",
+        0.34285714285714286
+      ]
+    ],
+    "TV_series.Viewers_m": [
+      [
+        "animated_program.Directed_by",
+        0.4
+      ],
+      [
+        "television_program.audience_millions",
+        0.38461538461538464
+      ],
+      [
+        "broadcast_network.paid_viewing_flag",
+        0.38461538461538464
+      ]
+    ],
+    "TV_series.Weekly_Rank": [
+      [
+        "television_program.seven_day_position",
+        0.3448275862068966
+      ],
+      [
+        "animated_program.heading",
+        0.3333333333333333
+      ],
+      [
+        "broadcast_network.display_pixel_ratio",
+        0.3333333333333333
+      ]
+    ],
+    "TV_series.Channel": [
+      [
+        "animated_program.heading",
+        0.42857142857142855
+      ],
+      [
+        "broadcast_network.nation",
+        0.3076923076923077
+      ],
+      [
+        "broadcast_network.tongue",
+        0.3076923076923077
+      ]
+    ],
+    "Cartoon.id": [
+      [
+        "television_program.Episode",
+        0.4444444444444444
+      ],
+      [
+        "television_program.air_day",
+        0.4444444444444444
+      ],
+      [
+        "animated_program.Directed_by",
+        0.3076923076923077
+      ]
+    ],
+    "Cartoon.Title": [
+      [
+        "animated_program.Written_by",
+        0.4
+      ],
+      [
+        "broadcast_network.nation",
+        0.36363636363636365
+      ],
+      [
+        "broadcast_network.tongue",
+        0.36363636363636365
+      ]
+    ],
+    "Cartoon.Directed_by": [
+      [
+        "animated_program.Directed_by",
+        1.0
+      ],
+      [
+        "television_program.record_key",
+        0.5714285714285714
+      ],
+      [
+        "animated_program.Written_by",
+        0.5714285714285714
+      ]
+    ],
+    "Cartoon.Written_by": [
+      [
+        "animated_program.Written_by",
+        1.0
+      ],
+      [
+        "animated_program.Directed_by",
+        0.5714285714285714
+      ],
+      [
+        "television_program.record_key",
+        0.4
+      ]
+    ],
+    "Cartoon.Original_air_date": [
+      [
+        "animated_program.original_air_day",
+        0.9090909090909091
+      ],
+      [
+        "television_program.air_day",
+        0.5
+      ],
+      [
+        "broadcast_network.program_label",
+        0.4
+      ]
+    ],
+    "Cartoon.Production_code": [
+      [
+        "animated_program.production_tag",
+        0.7586206896551724
+      ],
+      [
+        "television_program.portion",
+        0.5454545454545454
+      ],
+      [
+        "television_program.Episode",
+        0.45454545454545453
+      ]
+    ],
+    "Cartoon.Channel": [
+      [
+        "animated_program.heading",
+        0.42857142857142855
+      ],
+      [
+        "broadcast_network.nation",
+        0.3076923076923077
+      ],
+      [
+        "broadcast_network.tongue",
+        0.3076923076923077
+      ]
+    ]
+  },
+  "selected_mapping": {
+    "tables": {
+      "TV_Channel": "broadcast_network",
+      "TV_series": "television_program",
+      "Cartoon": "animated_program"
+    },
+    "columns": {
+      "TV_Channel.id": "broadcast_network.nation",
+      "TV_Channel.series_name": "broadcast_network.program_label",
+      "TV_Channel.Country": "broadcast_network.record_key",
+      "TV_Channel.Language": "broadcast_network.tongue",
+      "TV_Channel.Content": "broadcast_network.body_text",
+      "TV_Channel.Pixel_aspect_ratio_PAR": "broadcast_network.display_pixel_ratio",
+      "TV_Channel.Hight_definition_TV": "broadcast_network.high_definition_flag",
+      "TV_Channel.Pay_per_view_PPV": "broadcast_network.paid_viewing_flag",
+      "TV_Channel.Package_Option": "broadcast_network.Package_Option",
+      "TV_series.id": "television_program.record_key",
+      "TV_series.Episode": "television_program.Episode",
+      "TV_series.Air_Date": "television_program.air_day",
+      "TV_series.Rating": "television_program.portion",
+      "TV_series.Share": "television_program.assessment_score",
+      "TV_series.18_49_Rating_Share": "television_program.adult_demographic_portion",
+      "TV_series.Viewers_m": "television_program.audience_millions",
+      "TV_series.Weekly_Rank": "television_program.seven_day_position",
+      "TV_series.Channel": "television_program.network",
+      "Cartoon.id": "animated_program.record_key",
+      "Cartoon.Title": "animated_program.network",
+      "Cartoon.Directed_by": "animated_program.Directed_by",
+      "Cartoon.Written_by": "animated_program.Written_by",
+      "Cartoon.Original_air_date": "animated_program.original_air_day",
+      "Cartoon.Production_code": "animated_program.production_tag",
+      "Cartoon.Channel": "animated_program.heading"
+    }
+  },
+  "q_B": {
+    "tvshow__challenge_v0__q0585": "SELECT \"cartoon\".\"network\" AS \"title\" FROM \"animated_program\" AS \"cartoon\" ORDER BY \"title\"",
+    "tvshow__challenge_v0__q0586": "SELECT \"cartoon\".\"network\" AS \"title\" FROM \"animated_program\" AS \"cartoon\" ORDER BY \"title\"",
+    "tvshow__challenge_v0__q0587": "SELECT \"cartoon\".\"network\" AS \"title\" FROM \"animated_program\" AS \"cartoon\" WHERE \"cartoon\".\"Directed_by\" = 'Ben Jones'",
+    "tvshow__challenge_v0__q0588": "SELECT \"cartoon\".\"network\" AS \"title\" FROM \"animated_program\" AS \"cartoon\" WHERE \"cartoon\".\"Directed_by\" = 'Ben Jones'",
+    "tvshow__challenge_v0__q0589": "SELECT COUNT(*) AS \"_col_0\" FROM \"animated_program\" AS \"cartoon\" WHERE \"cartoon\".\"Written_by\" = 'Joseph Kuhr'",
+    "tvshow__challenge_v0__q0590": "SELECT COUNT(*) AS \"_col_0\" FROM \"animated_program\" AS \"cartoon\" WHERE \"cartoon\".\"Written_by\" = 'Joseph Kuhr'",
+    "tvshow__challenge_v0__q0591": "SELECT \"cartoon\".\"network\" AS \"title\", \"cartoon\".\"Directed_by\" AS \"directed_by\" FROM \"animated_program\" AS \"cartoon\" ORDER BY \"cartoon\".\"original_air_day\"",
+    "tvshow__challenge_v0__q0592": "SELECT \"cartoon\".\"network\" AS \"title\", \"cartoon\".\"Directed_by\" AS \"directed_by\" FROM \"animated_program\" AS \"cartoon\" ORDER BY \"cartoon\".\"original_air_day\"",
+    "tvshow__challenge_v0__q0593": "SELECT \"cartoon\".\"network\" AS \"title\" FROM \"animated_program\" AS \"cartoon\" WHERE \"cartoon\".\"Directed_by\" = 'Ben Jones' OR \"cartoon\".\"Directed_by\" = 'Brandon Vietti'",
+    "tvshow__challenge_v0__q0594": "SELECT \"cartoon\".\"network\" AS \"title\" FROM \"animated_program\" AS \"cartoon\" WHERE \"cartoon\".\"Directed_by\" = 'Ben Jones' OR \"cartoon\".\"Directed_by\" = 'Brandon Vietti'",
+    "tvshow__challenge_v0__q0595": "SELECT \"tv_channel\".\"record_key\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"broadcast_network\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"record_key\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "tvshow__challenge_v0__q0596": "SELECT \"tv_channel\".\"record_key\" AS \"country\", COUNT(*) AS \"_col_1\" FROM \"broadcast_network\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"record_key\" ORDER BY \"_col_1\" DESC LIMIT 1",
+    "tvshow__challenge_v0__q0597": "SELECT COUNT(DISTINCT \"tv_channel\".\"program_label\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"body_text\") AS \"_col_1\" FROM \"broadcast_network\" AS \"tv_channel\"",
+    "tvshow__challenge_v0__q0598": "SELECT COUNT(DISTINCT \"tv_channel\".\"program_label\") AS \"_col_0\", COUNT(DISTINCT \"tv_channel\".\"body_text\") AS \"_col_1\" FROM \"broadcast_network\" AS \"tv_channel\"",
+    "tvshow__challenge_v0__q0599": "SELECT \"tv_channel\".\"body_text\" AS \"content\" FROM \"broadcast_network\" AS \"tv_channel\" WHERE \"tv_channel\".\"program_label\" = 'Sky Radio'",
+    "tvshow__challenge_v0__q0600": "SELECT \"tv_channel\".\"body_text\" AS \"content\" FROM \"broadcast_network\" AS \"tv_channel\" WHERE \"tv_channel\".\"program_label\" = 'Sky Radio'",
+    "tvshow__challenge_v0__q0601": "SELECT \"tv_channel\".\"Package_Option\" AS \"package_option\" FROM \"broadcast_network\" AS \"tv_channel\" WHERE \"tv_channel\".\"program_label\" = 'Sky Radio'",
+    "tvshow__challenge_v0__q0602": "SELECT \"tv_channel\".\"Package_Option\" AS \"package_option\" FROM \"broadcast_network\" AS \"tv_channel\" WHERE \"tv_channel\".\"program_label\" = 'Sky Radio'",
+    "tvshow__challenge_v0__q0603": "SELECT COUNT(*) AS \"_col_0\" FROM \"broadcast_network\" AS \"tv_channel\" WHERE \"tv_channel\".\"tongue\" = 'English'",
+    "tvshow__challenge_v0__q0604": "SELECT COUNT(*) AS \"_col_0\" FROM \"broadcast_network\" AS \"tv_channel\" WHERE \"tv_channel\".\"tongue\" = 'English'",
+    "tvshow__challenge_v0__q0605": "SELECT \"tv_channel\".\"tongue\" AS \"language\", COUNT(*) AS \"_col_1\" FROM \"broadcast_network\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"tongue\" ORDER BY \"_col_1\" ASC LIMIT 1",
+    "tvshow__challenge_v0__q0606": "SELECT \"tv_channel\".\"tongue\" AS \"language\", COUNT(*) AS \"_col_1\" FROM \"broadcast_network\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"tongue\" ORDER BY \"_col_1\" ASC LIMIT 1",
+    "tvshow__challenge_v0__q0607": "SELECT \"tv_channel\".\"tongue\" AS \"language\", COUNT(*) AS \"_col_1\" FROM \"broadcast_network\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"tongue\"",
+    "tvshow__challenge_v0__q0608": "SELECT \"tv_channel\".\"tongue\" AS \"language\", COUNT(*) AS \"_col_1\" FROM \"broadcast_network\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"tongue\"",
+    "tvshow__challenge_v0__q0609": "SELECT \"t1\".\"program_label\" AS \"series_name\" FROM \"broadcast_network\" AS \"t1\" JOIN \"animated_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"heading\" WHERE \"t2\".\"network\" = 'The Rise of the Blue Beetle!'",
+    "tvshow__challenge_v0__q0610": "SELECT \"t1\".\"program_label\" AS \"series_name\" FROM \"broadcast_network\" AS \"t1\" JOIN \"animated_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"heading\" WHERE \"t2\".\"network\" = 'The Rise of the Blue Beetle!'",
+    "tvshow__challenge_v0__q0611": "SELECT \"t2\".\"network\" AS \"title\" FROM \"broadcast_network\" AS \"t1\" JOIN \"animated_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"heading\" WHERE \"t1\".\"program_label\" = 'Sky Radio'",
+    "tvshow__challenge_v0__q0612": "SELECT \"t2\".\"network\" AS \"title\" FROM \"broadcast_network\" AS \"t1\" JOIN \"animated_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"heading\" WHERE \"t1\".\"program_label\" = 'Sky Radio'",
+    "tvshow__challenge_v0__q0613": "SELECT \"tv_series\".\"Episode\" AS \"episode\" FROM \"television_program\" AS \"tv_series\" ORDER BY \"tv_series\".\"portion\"",
+    "tvshow__challenge_v0__q0614": "SELECT \"tv_series\".\"Episode\" AS \"episode\" FROM \"television_program\" AS \"tv_series\" ORDER BY \"tv_series\".\"portion\"",
+    "tvshow__challenge_v0__q0615": "SELECT \"tv_series\".\"Episode\" AS \"episode\", \"tv_series\".\"portion\" AS \"rating\" FROM \"television_program\" AS \"tv_series\" ORDER BY \"rating\" DESC LIMIT 3",
+    "tvshow__challenge_v0__q0616": "SELECT \"tv_series\".\"Episode\" AS \"episode\", \"tv_series\".\"portion\" AS \"rating\" FROM \"television_program\" AS \"tv_series\" ORDER BY \"rating\" DESC LIMIT 3",
+    "tvshow__challenge_v0__q0617": "SELECT MAX(\"tv_series\".\"assessment_score\") AS \"_col_0\", MIN(\"tv_series\".\"assessment_score\") AS \"_col_1\" FROM \"television_program\" AS \"tv_series\"",
+    "tvshow__challenge_v0__q0618": "SELECT MAX(\"tv_series\".\"assessment_score\") AS \"_col_0\", MIN(\"tv_series\".\"assessment_score\") AS \"_col_1\" FROM \"television_program\" AS \"tv_series\"",
+    "tvshow__challenge_v0__q0619": "SELECT \"tv_series\".\"air_day\" AS \"air_date\" FROM \"television_program\" AS \"tv_series\" WHERE \"tv_series\".\"Episode\" = 'A Love of a Lifetime'",
+    "tvshow__challenge_v0__q0620": "SELECT \"tv_series\".\"air_day\" AS \"air_date\" FROM \"television_program\" AS \"tv_series\" WHERE \"tv_series\".\"Episode\" = 'A Love of a Lifetime'",
+    "tvshow__challenge_v0__q0621": "SELECT \"tv_series\".\"seven_day_position\" AS \"weekly_rank\" FROM \"television_program\" AS \"tv_series\" WHERE \"tv_series\".\"Episode\" = 'A Love of a Lifetime'",
+    "tvshow__challenge_v0__q0622": "SELECT \"tv_series\".\"seven_day_position\" AS \"weekly_rank\" FROM \"television_program\" AS \"tv_series\" WHERE \"tv_series\".\"Episode\" = 'A Love of a Lifetime'",
+    "tvshow__challenge_v0__q0623": "SELECT \"t1\".\"program_label\" AS \"series_name\" FROM \"broadcast_network\" AS \"t1\" JOIN \"television_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"network\" WHERE \"t2\".\"Episode\" = 'A Love of a Lifetime'",
+    "tvshow__challenge_v0__q0624": "SELECT \"t1\".\"program_label\" AS \"series_name\" FROM \"broadcast_network\" AS \"t1\" JOIN \"television_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"network\" WHERE \"t2\".\"Episode\" = 'A Love of a Lifetime'",
+    "tvshow__challenge_v0__q0625": "SELECT \"t2\".\"Episode\" AS \"episode\" FROM \"broadcast_network\" AS \"t1\" JOIN \"television_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"network\" WHERE \"t1\".\"program_label\" = 'Sky Radio'",
+    "tvshow__challenge_v0__q0626": "SELECT \"t2\".\"Episode\" AS \"episode\" FROM \"broadcast_network\" AS \"t1\" JOIN \"television_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"network\" WHERE \"t1\".\"program_label\" = 'Sky Radio'",
+    "tvshow__challenge_v0__q0627": "SELECT COUNT(*) AS \"_col_0\", \"cartoon\".\"Directed_by\" AS \"directed_by\" FROM \"animated_program\" AS \"cartoon\" GROUP BY \"cartoon\".\"Directed_by\"",
+    "tvshow__challenge_v0__q0628": "SELECT COUNT(*) AS \"_col_0\", \"cartoon\".\"Directed_by\" AS \"directed_by\" FROM \"animated_program\" AS \"cartoon\" GROUP BY \"cartoon\".\"Directed_by\"",
+    "tvshow__challenge_v0__q0629": "SELECT \"cartoon\".\"production_tag\" AS \"production_code\", \"cartoon\".\"heading\" AS \"channel\" FROM \"animated_program\" AS \"cartoon\" ORDER BY \"cartoon\".\"original_air_day\" DESC LIMIT 1",
+    "tvshow__challenge_v0__q0630": "SELECT \"cartoon\".\"production_tag\" AS \"production_code\", \"cartoon\".\"heading\" AS \"channel\" FROM \"animated_program\" AS \"cartoon\" ORDER BY \"cartoon\".\"original_air_day\" DESC LIMIT 1",
+    "tvshow__challenge_v0__q0631": "SELECT \"tv_channel\".\"Package_Option\" AS \"package_option\", \"tv_channel\".\"program_label\" AS \"series_name\" FROM \"broadcast_network\" AS \"tv_channel\" WHERE \"tv_channel\".\"high_definition_flag\" = 'yes'",
+    "tvshow__challenge_v0__q0632": "SELECT \"tv_channel\".\"Package_Option\" AS \"package_option\", \"tv_channel\".\"program_label\" AS \"series_name\" FROM \"broadcast_network\" AS \"tv_channel\" WHERE \"tv_channel\".\"high_definition_flag\" = 'yes'",
+    "tvshow__challenge_v0__q0633": "SELECT \"t1\".\"record_key\" AS \"country\" FROM \"broadcast_network\" AS \"t1\" JOIN \"animated_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"heading\" WHERE \"t2\".\"Written_by\" = 'Todd Casey'",
+    "tvshow__challenge_v0__q0634": "SELECT \"t1\".\"record_key\" AS \"country\" FROM \"broadcast_network\" AS \"t1\" JOIN \"animated_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"heading\" WHERE \"t2\".\"Written_by\" = 'Todd Casey'",
+    "tvshow__challenge_v0__q0635": "SELECT \"tv_channel\".\"record_key\" AS \"country\" FROM \"broadcast_network\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"record_key\" AS \"country\" FROM \"broadcast_network\" AS \"t1\" JOIN \"animated_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"heading\" WHERE \"t2\".\"Written_by\" = 'Todd Casey'",
+    "tvshow__challenge_v0__q0636": "SELECT \"tv_channel\".\"record_key\" AS \"country\" FROM \"broadcast_network\" AS \"tv_channel\" EXCEPT SELECT \"t1\".\"record_key\" AS \"country\" FROM \"broadcast_network\" AS \"t1\" JOIN \"animated_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"heading\" WHERE \"t2\".\"Written_by\" = 'Todd Casey'",
+    "tvshow__challenge_v0__q0637": "SELECT \"t1\".\"program_label\" AS \"series_name\", \"t1\".\"record_key\" AS \"country\" FROM \"broadcast_network\" AS \"t1\" JOIN \"animated_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"heading\" WHERE \"t2\".\"Directed_by\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"program_label\" AS \"series_name\", \"t1\".\"record_key\" AS \"country\" FROM \"broadcast_network\" AS \"t1\" JOIN \"animated_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"heading\" WHERE \"t2\".\"Directed_by\" = 'Ben Jones'",
+    "tvshow__challenge_v0__q0638": "SELECT \"t1\".\"program_label\" AS \"series_name\", \"t1\".\"record_key\" AS \"country\" FROM \"broadcast_network\" AS \"t1\" JOIN \"animated_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"heading\" WHERE \"t2\".\"Directed_by\" = 'Michael Chang' INTERSECT SELECT \"t1\".\"program_label\" AS \"series_name\", \"t1\".\"record_key\" AS \"country\" FROM \"broadcast_network\" AS \"t1\" JOIN \"animated_program\" AS \"t2\" ON \"t1\".\"nation\" = \"t2\".\"heading\" WHERE \"t2\".\"Directed_by\" = 'Ben Jones'",
+    "tvshow__challenge_v0__q0639": "SELECT \"tv_channel\".\"display_pixel_ratio\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"record_key\" AS \"country\" FROM \"broadcast_network\" AS \"tv_channel\" WHERE \"tv_channel\".\"tongue\" <> 'English'",
+    "tvshow__challenge_v0__q0640": "SELECT \"tv_channel\".\"display_pixel_ratio\" AS \"pixel_aspect_ratio_par\", \"tv_channel\".\"record_key\" AS \"country\" FROM \"broadcast_network\" AS \"tv_channel\" WHERE \"tv_channel\".\"tongue\" <> 'English'",
+    "tvshow__challenge_v0__q0641": "SELECT \"tv_channel\".\"nation\" AS \"id\" FROM \"broadcast_network\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"record_key\" HAVING COUNT(*) > 2",
+    "tvshow__challenge_v0__q0642": "SELECT \"tv_channel\".\"nation\" AS \"id\" FROM \"broadcast_network\" AS \"tv_channel\" GROUP BY \"tv_channel\".\"record_key\" HAVING COUNT(*) > 2",
+    "tvshow__challenge_v0__q0643": "SELECT \"tv_channel\".\"nation\" AS \"id\" FROM \"broadcast_network\" AS \"tv_channel\" EXCEPT SELECT \"cartoon\".\"heading\" AS \"channel\" FROM \"animated_program\" AS \"cartoon\" WHERE \"cartoon\".\"Directed_by\" = 'Ben Jones'",
+    "tvshow__challenge_v0__q0644": "SELECT \"tv_channel\".\"nation\" AS \"id\" FROM \"broadcast_network\" AS \"tv_channel\" EXCEPT SELECT \"cartoon\".\"heading\" AS \"channel\" FROM \"animated_program\" AS \"cartoon\" WHERE \"cartoon\".\"Directed_by\" = 'Ben Jones'",
+    "tvshow__challenge_v0__q0645": "SELECT \"tv_channel\".\"Package_Option\" AS \"package_option\" FROM \"broadcast_network\" AS \"tv_channel\" WHERE NOT \"tv_channel\".\"nation\" IN (SELECT \"cartoon\".\"heading\" AS \"channel\" FROM \"animated_program\" AS \"cartoon\" WHERE \"cartoon\".\"Directed_by\" = 'Ben Jones')",
+    "tvshow__challenge_v0__q0646": "SELECT \"tv_channel\".\"Package_Option\" AS \"package_option\" FROM \"broadcast_network\" AS \"tv_channel\" WHERE NOT \"tv_channel\".\"nation\" IN (SELECT \"cartoon\".\"heading\" AS \"channel\" FROM \"animated_program\" AS \"cartoon\" WHERE \"cartoon\".\"Directed_by\" = 'Ben Jones')"
+  },
+  "rewrite_errors": {}
+}
