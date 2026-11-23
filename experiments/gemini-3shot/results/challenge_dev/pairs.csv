@@ -1,0 +1,4 @@
+method,pair_id,base_db_id,perturbation,table_correct,table_total,changed_table_correct,changed_table_total,column_correct,column_total,changed_column_correct,changed_column_total,mapping_error
+gemini_3shot,battle_death__challenge_v0,battle_death,challenge_semantic_table_and_column_rename,3,3,3,3,18,18,18,18,
+gemini_3shot,car_1__challenge_v0,car_1,challenge_semantic_table_and_column_rename,6,6,6,6,23,23,23,23,
+gemini_3shot,dog_kennels__challenge_v0,dog_kennels,challenge_semantic_table_and_column_rename,8,8,8,8,49,49,49,49,

@@ -1,6 +1,6 @@
 # Shared handoff format
 
-This contract supports the toy example and future Spider/Dr.Spider pairs. Database names and labels in the toy are artificial. The toy databases are created locally with `tests/fixtures/make_toy.py`; they are not Spider data.
+This contract supports the toy example and the recorded Spider-derived schema pairs. Database names and labels in the toy are artificial. The toy databases are created locally with `tests/fixtures/make_toy.py`; they are not Spider data.
 
 ```text
 data/
@@ -16,13 +16,28 @@ data/
 predictions/<method>/<pair_id>.json
 ```
 
-`splits.json` is `{"train": [...], "dev": [...], "test": [...]}`. Each pair's `metadata.json` must contain `db_id`, the original database identifier. The loader rejects duplicate pair IDs and a db_id occurring across splits. Verify IDs/provenance manually to detect the same data under different identifiers.
+`splits.json` is `{"train": [...], "dev": [...], "test": [...]}`. A toy pair can provide `metadata.json` with `db_id`, the original database identifier. For committed Spider-derived pairs this file is optional: the handoff loader falls back to `schema_A.json`'s `db_id`. The team batch/Gemini loader instead uses `splits.json.metadata.pairs[*].base_db_id` (or the pair-ID prefix). The loader rejects duplicate pair IDs and a db_id occurring across splits. Verify IDs/provenance manually to detect the same data under different identifiers.
 
-Schemas use the output of `python -m sqltranslate.cli schema DATABASE`, with `tables` (name, columns with name/type/pk) and `fks` (each edge contains ordered child/parent column pairs). Sequence order is not a correspondence; shuffle schema_B's tables and columns, without changing the named FK edges. Gold mappings use `{ "tables": {"source": "target"}, "columns": {"source_table.column": "target_table.column"} }`. Dr.Spider positional mappings are **candidates**, not automatically verified ground truth.
+Schemas accept either the committed Spider-style `tables` plus `primary_keys`/`foreign_keys` representation or the output of `python -m sqltranslate.cli schema DATABASE`, with `tables` (name, columns with name/type/pk) and `fks` (each edge contains ordered child/parent column pairs). Sequence order is not a correspondence; shuffle schema_B's tables and columns, without changing the named FK edges. Gold mappings use `{ "tables": {"source": "target"}, "columns": {"source_table.column": "target_table.column"} }`. Dr.Spider positional mappings are **candidates**, not automatically verified ground truth.
 
 Each line of `queries.jsonl` contains `qid`, `q_A`, `gold_q_B`, `is_join` (boolean), and `level` (string). IDs must be unique within a pair. Level labels must be defined and validated for the study; the toy levels merely exercise the interface.
 
-Each prediction JSON contains `tables` and `columns` mapping source identifiers to ranked `[target, score]` lists; `selected_mapping` contains one chosen mapping in the gold format; `q_B` maps query IDs to rewritten SQL. Optional `rewrite_errors` records exceptions. Candidate scores are similarities rather than probabilities. With the existing implementation, FK reranking is a local search over internal score matrices; `--top-k` bounds column swap candidates but does not constrain table swaps. Thus the final selected mapping need not be limited to the globally displayed top-k lists.
+Handoff-format prediction JSON contains `tables` and `columns` mapping source identifiers to ranked `[target, score]` lists; `selected_mapping` contains one chosen mapping in the gold format; `q_B` maps query IDs to rewritten SQL. Optional `rewrite_errors` records exceptions. Candidate scores are similarities rather than probabilities. With the existing implementation, FK reranking is a local search over internal score matrices; `--top-k` bounds column swap candidates but does not constrain table swaps. Thus the final selected mapping need not be limited to the globally displayed top-k lists.
+
+## Prediction formats are distinct
+
+| Consumer | Prediction fields |
+| --- | --- |
+| `python -m handoff.evaluate` | Ranked candidate lists, `selected_mapping`, and generated `q_B` SQL |
+| `evaluate_pipeline.py --methods saved` | Top-level string-to-string `tables` and `columns` mappings |
+| Gemini batch | API cache plus checkpoint `mapping`; SQL is rewritten during evaluation |
+
+Do not pass ranked candidate objects to the saved-mapping evaluator. The challenge
+experiment provides the compatible simplified format in
+`experiments/challenge-run-20261122/predicted_mapping/<method>/<pair_id>.json`.
+The richer `predictions/` directory is a different representation. See
+[Gemini reproduction](GEMINI_EVALUATION.md) for the LLM workflow and
+[dataset groups](DATASET.md) for standard/challenge split counts.
 
 ## Run the handoff smoke test
 
@@ -46,4 +61,4 @@ Gold and predicted SQL are executed on **the same target DB**; duplicate counts 
 
 ## Current boundaries
 
-The scripts do not automatically create reviewed real Spider/Dr.Spider labels, validate difficulty levels, or train on a held-out split. `schema_A.json`/`schema_B.json` must reflect the SQLite schemas; check consistency before experiments. Database-dependent query errors and unsupported rewrites are recorded, not silently removed. The toy tests establish interface behavior, not model quality.
+The toy smoke tests do not establish model quality or validate the full dataset. Recorded dataset builders, audits and training experiments are separate workflows; see the dataset and experiment guides. Their existence is not proof of semantic correspondence or broad schema diversity. `schema_A.json`/`schema_B.json` must reflect the SQLite schemas; check consistency before experiments. Database-dependent query errors and unsupported rewrites are recorded, not silently removed. The toy tests establish interface behavior, not model quality.

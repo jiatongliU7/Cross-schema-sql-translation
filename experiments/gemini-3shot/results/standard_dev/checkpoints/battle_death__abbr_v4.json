@@ -1,0 +1,72 @@
+{
+  "pair": {
+    "method": "gemini_3shot",
+    "pair_id": "battle_death__abbr_v4",
+    "base_db_id": "battle_death",
+    "perturbation": "abbreviation",
+    "table_correct": 3,
+    "table_total": 3,
+    "changed_table_correct": 0,
+    "changed_table_total": 0,
+    "column_correct": 18,
+    "column_total": 18,
+    "changed_column_correct": 1,
+    "changed_column_total": 1,
+    "mapping_error": null
+  },
+  "mapping": {
+    "tables": {
+      "battle": "battle",
+      "ship": "ship",
+      "death": "death"
+    },
+    "columns": {
+      "battle.id": "battle.id",
+      "battle.name": "battle.name",
+      "battle.date": "battle.date",
+      "battle.bulgarian_commander": "battle.bulgarian_commander",
+      "battle.latin_commander": "battle.latin_commander",
+      "battle.result": "battle.result",
+      "ship.lost_in_battle": "ship.lost_in_battle",
+      "ship.id": "ship.id",
+      "ship.name": "ship.name",
+      "ship.tonnage": "ship.tonnage",
+      "ship.ship_type": "ship.ship_type",
+      "ship.location": "ship.location",
+      "ship.disposition_of_ship": "ship.dos",
+      "death.caused_by_ship_id": "death.caused_by_ship_id",
+      "death.id": "death.id",
+      "death.note": "death.note",
+      "death.killed": "death.killed",
+      "death.injured": "death.injured"
+    }
+  },
+  "queries": [
+    {
+      "method": "gemini_3shot",
+      "pair_id": "battle_death__abbr_v4",
+      "base_db_id": "battle_death",
+      "perturbation": "abbreviation",
+      "qid": "battle_death__abbr_v4__q0491",
+      "q_A": "SELECT count(*) FROM ship WHERE disposition_of_ship = 'Captured'",
+      "gold_q_B": "SELECT COUNT(*) AS \"_col_0\" FROM \"ship\" AS \"ship\" WHERE \"ship\".\"dos\" = 'Captured'",
+      "level": "L2",
+      "is_join": false,
+      "predicted_sql": "SELECT COUNT(*) AS \"_col_0\" FROM \"ship\" AS \"ship\" WHERE \"ship\".\"dos\" = 'Captured'",
+      "execution_success": true,
+      "execution_correct": true,
+      "normalized_exact_match": true,
+      "cross_database_correct": true,
+      "reference_valid": true,
+      "empty_gold": false,
+      "error_stage": null,
+      "error": null,
+      "reference_error": null,
+      "prediction_error": null,
+      "ordered": false,
+      "gold_rows": 1,
+      "source_rows": 1,
+      "predicted_rows": 1
+    }
+  ]
+}

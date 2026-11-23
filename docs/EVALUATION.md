@@ -4,6 +4,22 @@ Run commands from the repository root using Python 3.10+ with `requirements.txt`
 installed. Neural baselines additionally need `requirements-neural.txt` and the
 model weights. Use the complete existing `data/` dataset (including SQLite files).
 
+## Current experiment entry points
+
+- Recorded Gemini 3-shot dev results and frozen protocol: [Gemini experiment](../experiments/gemini-3shot/README.md).
+- Native Gemini reproduction, group separation and resumable requests: [Gemini workflow](GEMINI_EVALUATION.md).
+- SBERT/lexical standard results: [standard experiment](../experiments/spider-run/README.md).
+- SBERT/lexical challenge results: [challenge experiment](../experiments/challenge-run-20261122/README.md).
+
+The generic commands below read every pair in the supplied split. Latest
+`data/splits.json` has 32 dev pairs: 29 standard (925 queries) plus 3 challenge
+(190 queries). Do not publish the combined result as a standard or challenge
+score. `evaluate_pipeline.py` has no `--group` option; pass a separately prepared
+group-filtered data view, keeping the original database split assignments. The
+native Gemini runner supports explicit `--group standard` or `--group challenge`.
+It freezes its three demonstrations rather than resampling from an expanded
+training split.
+
 ## 1. Check the pipeline on development data
 
 ```bash
@@ -13,11 +29,13 @@ python evaluate_pipeline.py --data-root data --split dev \
 
 The oracle passes gold mappings through the same public `rewrite.rewrite()` used
 by data generation. Other predictors receive only schema JSON documents and a
-pair ID. Evaluation reads gold labels only after prediction. JSON presentation
+pair ID. Gold labels are loaded and validated during dataset preflight, but are not passed
+to the predictor. They are used for validation and subsequent scoring. JSON presentation
 order, including shuffled target columns, is preserved for model input.
 
-The selected dataset has unchanged table names. Table accuracy is a pipeline
-check, not evidence of learning table renaming. Unchanged columns can inflate
+The standard group has unchanged table names, so its table accuracy is a pipeline
+check rather than evidence of learning table renaming. The challenge group does
+rename ordinary tables, making its table accuracy informative. Unchanged columns can inflate
 overall column accuracy: report **changed_column_accuracy** beside overall
 column accuracy. A changed element means `source_identifier != gold_target`.
 
@@ -77,7 +95,8 @@ python evaluate_pipeline.py --split dev --methods llm --llm-model YOUR_MODEL \
 
 The default endpoint is Chat Completions compatible. Override `--endpoint` and
 `--api-key-env` for another compatible service. The provider must support the
-request parameters (temperature, max_tokens and JSON response format). No API
+request parameters (temperature, max_tokens and JSON response format). This generic interface is separate from the native Gemini runner, which retries
+only transport/service failures and checkpoints completed pairs. No API
 call is made until this command is explicitly run with a key. Default generation
 limit is 4096 tokens; set `--max-tokens` appropriately on dev. Non-stop finish
 reasons, invalid JSON and invalid mappings are failures. There are no automatic
@@ -91,8 +110,10 @@ repeat charges. Failed/dry-run logs are not automatically retried: use a new
 logdir deliberately. Report any deliberate retries. Compute monetary cost from
 recorded token usage and the provider's applicable pricing; no price is assumed.
 
-Freeze model ID, shot count, examples, prompt, and generation parameters on dev,
-then run test once with the frozen settings and `--split test`.
+Freeze model ID, shot count, examples, prompt, and generation parameters on dev.
+Upstream test results have already been inspected, so subsequent test comparisons
+are exploratory and must not be described as completely untouched final testing.
+Do not tune on test. The native Gemini runner currently evaluates dev only.
 
 ## Output and metric definitions
 
@@ -152,7 +173,7 @@ reference mismatch, wrong executable mappings, failure denominators, split
 leakage, changed-only metrics and mocked LLM logging/cache/validation. Live LLM
 quality, neural accuracy and research results require actual dataset/model runs.
 
-## Verified development run (2026-11-22)
+## Historical initial oracle/lexical development run (2026-11-22)
 
 Upstream source/data snapshot: `e46d4667fe001ac68cf20593eaa3e2f52accc764`.
 Python 3.12; NumPy 1.26.4; SciPy 1.13.1; SQLGlot 30.0.0.
@@ -167,7 +188,9 @@ Python 3.12; NumPy 1.26.4; SciPy 1.13.1; SQLGlot 30.0.0.
 Lexical made 170 result mismatches. These dev scores are preliminary baselines,
 not final test results. A 3-shot dry run prepared 29 requests using three distinct
 training databases; the model name is a placeholder and no API call was made.
-No pretrained/fine-tuned SBERT or live LLM evaluation was performed.
+No pretrained/fine-tuned SBERT or live LLM evaluation was performed **in that
+initial smoke/baseline run**. Later SBERT experiments and complete Gemini dev
+results are linked above; this historical table is not the current full comparison.
 Only development SQLite data and the three selected training demonstration
 schema/mapping documents were downloaded into this local source snapshot.
 The complete test data and remaining training data must be supplied before

@@ -1,0 +1,49 @@
+{
+  "group": "challenge",
+  "protocol_sha256": "6fbf71b1cb9e159aa6fc010449475fa9c4043af9ebc83fef010b214086db8f02",
+  "split": "dev",
+  "model": "gemini-3.1-flash-lite",
+  "shots": 3,
+  "seed": 4705,
+  "max_output_tokens": 8192,
+  "interval": 15,
+  "max_attempts_per_invocation": 3,
+  "example_pair_ids": [
+    "network_1__abbr_v2",
+    "concert_singer__syn_v3",
+    "employee_hire_evaluation__syn_v3"
+  ],
+  "examples_sha256": "270f72b138b6372741dfa41c3fa662d91ca7c8fd0eac3ad9636e4b01ee16c0c6",
+  "splits_sha256": "44c19bf76c2af3feaec7526da9673f9673417a9b874a6cf7e1d5114003f619f2",
+  "dataset_sha256": {
+    "battle_death__challenge_v0": {
+      "schema_A.json": "8ffdb9164f8f72a73c0d462bd04c232bccaaddd72de1daa9ea0f3a0cff579c7e",
+      "schema_B.json": "cf63470252fa6e23e5aec745ebdf10fc854e7d43b9975c5ec67b131f3d1e12bc",
+      "gold_mapping.json": "fcfd0643ce28e4711091ba63f27cd25a332b5193f7a6cd2ad9a2137729c6de94",
+      "queries.jsonl": "6b592d4eb461f53e8602bc5ba9e4cd31a6e74acf23f6830c0af11935876503f2",
+      "db_A.sqlite": "9f5ca4d4e92353aff0926b7072b9449a91dd596371495f42065e260fe29e932f",
+      "db_B.sqlite": "832784c2b1380a3600f0d5b17b54a9d3b37b52e26eadeb29606ee2b2332b943c"
+    },
+    "car_1__challenge_v0": {
+      "schema_A.json": "82d525b50d2a5daf8013d470f9db19e2b2be4013ff828003812511488ee78e41",
+      "schema_B.json": "bd4d26aae778716ba4284c4814599d5145c8eaafdc6c20d66e46a015a3515508",
+      "gold_mapping.json": "7f459471bd0ed3e31f3efc78c46dbb1e68ee6469cb4102aa5a8e50d8c1717218",
+      "queries.jsonl": "19c3875a3b3dd1ae2922795f9669cb3db0794f321ea0c360c707e8f93e94b3af",
+      "db_A.sqlite": "378377f82d2c6f64439fdc2c728c8b3a78feb3592cb4689076e77940b7b59007",
+      "db_B.sqlite": "c8809ef79c67135a6be77b09dd43e6d872c9c0dceec80663ef301f90f7be65d8"
+    },
+    "dog_kennels__challenge_v0": {
+      "schema_A.json": "dd6d282b225dff1b95f0febcd667d3af977610d72d174857b4a2d0969912a299",
+      "schema_B.json": "54ca37e95efa9984d4919419da63a842246b0c63874b7c3bae0fcde428b8b4ac",
+      "gold_mapping.json": "052a0c8f4b33ff35b0f53df480cdd75e46b0390476d4f6dd508d4746d9c11419",
+      "queries.jsonl": "adcb8fa15436b7b81a49c968d29f4d3668d12fcd8b965430dfd4725c2717d02f",
+      "db_A.sqlite": "19743427ae7e391f8f848f6e45baeb672eaa6de85ef83c8cefb6149c8175da6d",
+      "db_B.sqlite": "42ad958ae4ae7f086a154f61c09ad3c445818d7c7178d066bcd211fd538ca026"
+    }
+  },
+  "adapter_sha256": "357e9107740ff274e3ce184faa4eaaa2acfb383ae78db1da1bfaa0a0e3d38c0c",
+  "prompt_sha256": "f3e811045f5e9f59ea57694c01e3173b33c038691e3badad81c46fc2bbb5d13b",
+  "evaluator_sha256": "bab6b55117409fe85f6e047f3c3c48f4ed2ca2586e7d06daa6dc69406dd6a24a",
+  "rewriter_sha256": "62b35ca43a358fb1b737b2b5023a5282092e581703c9c0173018fe1eff82092d",
+  "sql_rewriter_sha256": "ebef4e8d0a94a8e7d07189006bde363af093326499dee64eb5cf97580338ef21"
+}
